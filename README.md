@@ -9,16 +9,11 @@
     color: white;
     padding: 15px 0;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  .nav-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
   }
 
   #nav-menu a {
@@ -44,9 +39,9 @@
     display: none;
     cursor: pointer;
     font-size: 18px;
+    z-index: 1100;
     position: absolute;
     right: 20px;
-    z-index: 1100;
   }
 
   #nav-links {
@@ -62,7 +57,7 @@
       background-color: #008080;
       width: 100%;
       position: absolute;
-      top: 60px;
+      top: 100%;
       left: 0;
       padding: 15px 0;
       z-index: 1000;
@@ -83,11 +78,9 @@
 </style>
 
 <div id="nav-menu">
-  <div class="nav-container">
-    <span id="nav-menu-toggle">☰</span>
-    <div id="nav-links">
-      <!-- Navigation Links will be dynamically populated -->
-    </div>
+  <span id="nav-menu-toggle">☰</span>
+  <div id="nav-links">
+    <!-- Navigation Links will be dynamically populated -->
   </div>
 </div>
 
