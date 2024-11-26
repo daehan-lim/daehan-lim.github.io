@@ -1,27 +1,21 @@
-title: "Penjan Antonio Eng Lim | Android & Frontend Developer Portfolio"
-description: "Software Developer with 2.5 years of experience in Kotlin, Java, and modern Android development. Expertise in mobile app architecture, ML integration, and cross-platform development."
-author: "Penjan Antonio Eng Lim"
+title: "ENG LIM PENJAN ANTONIO (임대한) | Mobile Developer"
+description: "Software developer with 2.5 years of experience spearheading mobile application development across telecom and enterprise sectors, using modern development practices and Kotlin/Java. Experience with AI/ML research enabling development of efficient and scalable applications."
+remote_theme: just-the-docs/just-the-docs
+color_scheme: light
+
+# SEO
+author: "ENG LIM PENJAN ANTONIO"
 url: "https://daehan-lim.github.io"
-linkedin: "penjan-a-eng-lim"
-email: "penjan.eng@gmail.com"
-location: "Seoul, South Korea"
-
-# SEO-specific settings
-lang: "en"
-keywords: >-
-  android developer, mobile developer, kotlin developer, 
-  frontend developer, software engineer, mobile app development, 
-  android architecture, MVVM, jetpack compose, material design, 
-  cross-platform development, flutter, react native, 
-  UI/UX development, Seoul tech jobs, Korean, Machine Learning
-
-# Social media
-social:
-  name: Penjan Antonio Eng Lim
-  links:
-    - https://linkedin.com/in/penjan-a-eng-lim
-
-# Jekyll SEO settings
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# Navigation
+aux_links:
+  "LinkedIn":
+    - "https://linkedin.com/in/penjan-a-eng-lim"
+  "GitHub":
+    - "https://github.com/daehan-lim"
+
+search_enabled: true
+heading_anchors: true
