@@ -10,12 +10,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Navigation
-aux_links:
-  "LinkedIn":
-    - "https://linkedin.com/in/penjan-a-eng-lim"
-  "GitHub":
-    - "https://github.com/daehan-lim"
 
 search_enabled: false
 heading_anchors: true
