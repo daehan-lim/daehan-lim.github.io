@@ -35,11 +35,15 @@
 
   /* Responsive Menu */
   #nav-menu-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 18px;
-    margin-left: 20px;
-    z-index: 1100; /* Ensure the toggle button is above the menu */
+      display: none;
+      cursor: pointer;
+      font-size: 18px;
+      margin-right: 20px; /* Changed from margin-left to margin-right */
+      z-index: 1100; /* Ensure the toggle button stays on top */
+      position: absolute; /* Add absolute positioning */
+      right: 15px; /* Align it to the right */
+      top: 50%; /* Vertically center within the navbar */
+      transform: translateY(-50%); /* Adjust for perfect vertical centering */
   }
 
   #nav-links {
@@ -134,6 +138,7 @@
           top: target.offsetTop - 75, // Offset for navbar height
           behavior: 'smooth'
         });
+        navLinksContainer.classList.remove('active'); // Collapse the dropdown
       });
     });
   });
