@@ -28,6 +28,11 @@
     color: #f1c40f;
   }
 
+  /* Hide duplicate H1 heading */
+  h1:first-of-type {
+    display: none; /* Hide first auto-generated H1 */
+  }
+
   /* Adjust content padding for the fixed navbar */
   body {
     padding-top: 75px; /* Adjusted for taller navbar */
@@ -54,9 +59,9 @@
       background-color: #008080; /* Match navbar background */
       width: 100%;
       position: absolute;
-      top: 75px; /* Adjusted for taller navbar */
+      top: 0; /* Remove white space */
       left: 0;
-      padding-bottom: 15px; /* Add spacing at the bottom */
+      padding: 15px 0; /* Add spacing around links */
     }
 
     #nav-links.active {
@@ -64,7 +69,7 @@
     }
 
     #nav-links a {
-      margin: 10px 0; /* Added vertical spacing */
+      margin: 15px 0; /* Added vertical spacing */
     }
 
     #nav-menu-toggle {
@@ -86,12 +91,7 @@
     const toggle = document.getElementById("nav-menu-toggle");
     const headings = document.querySelectorAll("h2");
 
-    // Filter out the first H1 to avoid duplication
-    if (headings.length > 0 && headings[0].tagName === "H1") {
-      headings[0].remove(); // Remove any duplicate H1 heading added accidentally
-    }
-
-    // Create navigation links dynamically, excluding subheadings (###)
+    // Filter out subheadings (###) and ensure no duplicate H1
     headings.forEach((heading, index) => {
       if (heading.tagName === "H3") return; // Skip ### subheadings
 
@@ -128,6 +128,7 @@
     });
   });
 </script>
+
 
 
 # ENG LIM PENJAN ANTONIO (임대한)
