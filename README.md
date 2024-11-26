@@ -1,18 +1,18 @@
 <style>
   /* Navigation Menu Styles */
   #nav-menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #008080;
-      color: white;
-      padding: 15px 0;
-      z-index: 1000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #008080;
+    color: white;
+    padding: 15px;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   #nav-menu a {
@@ -30,47 +30,51 @@
 
   /* Adjust content padding for the fixed navbar */
   body {
-    padding-top: 75px; /* Adjusted for taller navbar */
+    padding-top: 75px;
   }
 
   /* Responsive Menu */
   #nav-menu-toggle {
-      display: none;
-      cursor: pointer;
-      font-size: 18px;
-      margin-right: 20px;
-      z-index: 1100;
+    display: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 15px;
+    z-index: 1100;
+    position: absolute;
+    right: 0;
   }
 
   #nav-links {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
   }
 
   @media (max-width: 768px) {
     #nav-links {
-      display: none; /* Hide links initially on mobile */
+      display: none;
       flex-direction: column;
       align-items: center;
-      background-color: #008080; /* Match navbar background */
+      background-color: #008080;
       width: 100%;
       position: absolute;
-      top: 60px; /* Space below the navbar */
+      top: 60px;
       left: 0;
-      padding: 15px 0; /* Add spacing around links */
-      z-index: 1000; /* Ensure it doesn't overlap the toggle button */
+      padding: 15px 0;
+      z-index: 1000;
     }
 
     #nav-links.active {
-      display: flex; /* Show links when active */
+      display: flex;
     }
 
     #nav-links a {
-      margin: 15px 0; /* Added vertical spacing */
+      margin: 15px 0;
     }
 
     #nav-menu-toggle {
-      display: block; /* Show hamburger menu */
+      display: block;
     }
   }
 </style>
