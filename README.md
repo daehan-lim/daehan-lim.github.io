@@ -5,12 +5,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #0077B5;
+    background-color: #34495e; /* Changed to a darker, professional tone */
     color: white;
-    padding: 10px 20px;
+    padding: 10px 0;
     z-index: 1000;
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Center the buttons */
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
@@ -25,32 +25,67 @@
   }
 
   #nav-menu a:hover {
-    color: #FFD700;
+    color: #f1c40f;
   }
 
-  /* For mobile devices */
+  /* Adjust content padding for the fixed navbar */
+  body {
+    padding-top: 60px; /* Ensure content is not hidden by the nav bar */
+  }
+
+  /* Responsive Menu */
+  #nav-menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 20px;
+  }
+
+  #nav-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   @media (max-width: 768px) {
-    #nav-menu {
+    #nav-links {
+      display: none; /* Hide links initially on mobile */
       flex-direction: column;
-      padding: 10px;
+      align-items: center;
+      background-color: #34495e; /* Match navbar background */
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
     }
 
-    #nav-menu a {
-      margin: 5px 0;
+    #nav-links.active {
+      display: flex; /* Show links when active */
+    }
+
+    #nav-menu-toggle {
+      display: block; /* Show hamburger menu */
     }
   }
 </style>
 
 <div id="nav-menu">
-  <!-- Navigation Links will be dynamically populated -->
+  <span id="nav-menu-toggle">☰</span>
+  <div id="nav-links">
+    <!-- Navigation Links will be dynamically populated -->
+  </div>
 </div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const navMenu = document.getElementById("nav-menu");
+    const navLinksContainer = document.getElementById("nav-links");
     const headings = document.querySelectorAll("h2");
+    const toggle = document.getElementById("nav-menu-toggle");
 
+    // Create navigation links dynamically
     headings.forEach((heading, index) => {
+      // Create a clean title without emojis for the nav bar
+      const cleanText = heading.textContent.replace(/[\u{1F300}-\u{1FAF6}]/gu, '').trim();
+
       // Create an ID for each heading if not already present
       if (!heading.id) {
         heading.id = "section-" + index;
@@ -59,11 +94,29 @@
       // Create navigation link
       const navLink = document.createElement("a");
       navLink.href = "#" + heading.id;
-      navLink.textContent = heading.textContent;
-      navMenu.appendChild(navLink);
+      navLink.textContent = cleanText;
+      navLinksContainer.appendChild(navLink);
+    });
+
+    // Add click event for hamburger toggle
+    toggle.addEventListener("click", () => {
+      navLinksContainer.classList.toggle("active");
+    });
+
+    // Adjust scroll behavior to account for fixed navbar height
+    document.querySelectorAll('#nav-links a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        window.scrollTo({
+          top: target.offsetTop - 60, // Offset for navbar height
+          behavior: 'smooth'
+        });
+      });
     });
   });
 </script>
+
 
 # ENG LIM PENJAN ANTONIO (임대한)
 
