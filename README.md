@@ -13,7 +13,6 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
   }
 
   #nav-menu a {
@@ -32,6 +31,7 @@
   /* Adjust content padding for the fixed navbar */
   body {
     padding-top: 75px;
+    margin: 0;
   }
 
   /* Responsive Menu */
@@ -39,9 +39,9 @@
     display: none;
     cursor: pointer;
     font-size: 18px;
-    z-index: 1100;
     position: absolute;
     right: 20px;
+    z-index: 1100;
   }
 
   #nav-links {
@@ -57,7 +57,7 @@
       background-color: #008080;
       width: 100%;
       position: absolute;
-      top: 100%;
+      top: 45px;
       left: 0;
       padding: 15px 0;
       z-index: 1000;
