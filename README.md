@@ -3,7 +3,7 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%230077B5&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Penjan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
 
 <div align="center">
-  <a href="https://daehan-lim.github.io/docs/RESUME_ENG_LIM_PENJAN_ANTONIO.pdf">
+  <a href="https://daehan-lim.github.io/assets/RESUME_ENG_LIM_PENJAN_ANTONIO.pdf">
     <img src="https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=readme&logoColor=white" alt="Resume Badge">
   </a>
   <a href="https://linkedin.com/in/penjan-a-eng-lim">
