@@ -5,14 +5,20 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #008080; /* Updated to requested teal color */
+    background-color: #008080;
     color: white;
-    padding: 15px 0; /* Adjusted navbar height */
+    padding: 15px 0;
     z-index: 1000;
-    display: flex;
-    justify-content: center; /* Center the buttons */
-    align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   #nav-menu a {
@@ -30,7 +36,7 @@
 
   /* Adjust content padding for the fixed navbar */
   body {
-    padding-top: 75px; /* Adjusted for taller navbar */
+    padding-top: 75px;
   }
 
   /* Responsive Menu */
@@ -38,8 +44,9 @@
     display: none;
     cursor: pointer;
     font-size: 18px;
-    margin-left: 20px;
-    z-index: 1100; /* Ensure the toggle button is above the menu */
+    position: absolute;
+    right: 20px;
+    z-index: 1100;
   }
 
   #nav-links {
@@ -49,36 +56,38 @@
 
   @media (max-width: 768px) {
     #nav-links {
-      display: none; /* Hide links initially on mobile */
+      display: none;
       flex-direction: column;
       align-items: center;
-      background-color: #008080; /* Match navbar background */
+      background-color: #008080;
       width: 100%;
       position: absolute;
-      top: 60px; /* Space below the navbar */
+      top: 60px;
       left: 0;
-      padding: 15px 0; /* Add spacing around links */
-      z-index: 1000; /* Ensure it doesn't overlap the toggle button */
+      padding: 15px 0;
+      z-index: 1000;
     }
 
     #nav-links.active {
-      display: flex; /* Show links when active */
+      display: flex;
     }
 
     #nav-links a {
-      margin: 15px 0; /* Added vertical spacing */
+      margin: 15px 0;
     }
 
     #nav-menu-toggle {
-      display: block; /* Show hamburger menu */
+      display: block;
     }
   }
 </style>
 
 <div id="nav-menu">
-  <span id="nav-menu-toggle">☰</span>
-  <div id="nav-links">
-    <!-- Navigation Links will be dynamically populated -->
+  <div class="nav-container">
+    <span id="nav-menu-toggle">☰</span>
+    <div id="nav-links">
+      <!-- Navigation Links will be dynamically populated -->
+    </div>
   </div>
 </div>
 
@@ -96,45 +105,39 @@
 
     // Create navigation links dynamically, excluding subheadings (###)
     headings.forEach((heading, index) => {
-      if (heading.tagName === "H3") return; // Skip ### subheadings
+      if (heading.tagName === "H3") return;
 
-      // Create a clean title without emojis for the nav bar
       const cleanText = heading.textContent.replace(/[\u{1F300}-\u{1FAF6}]/gu, '').trim();
 
-      // Create an ID for each heading if not already present
       if (!heading.id) {
         heading.id = "section-" + index;
       }
 
-      // Create navigation link
       const navLink = document.createElement("a");
       navLink.href = "#" + heading.id;
       navLink.textContent = cleanText;
       navLinksContainer.appendChild(navLink);
     });
 
-    // Add click event for hamburger toggle
     toggle.addEventListener("click", () => {
       navLinksContainer.classList.toggle("active");
     });
 
-    // Ensure navbar stays visible when menu is expanded
     document.addEventListener("click", (e) => {
       if (e.target !== toggle && !navLinksContainer.contains(e.target)) {
         navLinksContainer.classList.remove("active");
       }
     });
 
-    // Adjust scroll behavior to account for fixed navbar height
     document.querySelectorAll('#nav-links a').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         window.scrollTo({
-          top: target.offsetTop - 75, // Offset for navbar height
+          top: target.offsetTop - 75,
           behavior: 'smooth'
         });
-        navLinksContainer.classList.remove('active'); // Collapse the dropdown
+        navLinksContainer.classList.remove('active');
       });
     });
   });
