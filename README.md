@@ -3,18 +3,20 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%230077B5&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Penjan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
 
 <div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/penjan-a-eng-lim)
-[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:penjan.eng@gmail.com)
-
-![Location](https://img.shields.io/badge/🌏_Location-Seoul,_Korea-1F6FEB?style=flat-square)
-![Citizenship](https://img.shields.io/badge/📍_Citizenship-South_Korea_|_Cuba-1F6FEB?style=flat-square)
-![Available](https://img.shields.io/badge/✓_Status-Available_for_Hire-success?style=flat-square)
-
-![English](https://img.shields.io/badge/🗣_English-Fluent_(TOEIC_950)-2ea44f?style=flat-square)
-![Korean](https://img.shields.io/badge/🗣_Korean-Advanced_(TOPIK_6)-2ea44f?style=flat-square)
-![Spanish](https://img.shields.io/badge/🗣_Spanish-Native-2ea44f?style=flat-square)
-
+  <a href="https://linkedin.com/in/penjan-a-eng-lim">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+  </a>
+  <a href="mailto:penjan.eng@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
+  </a>
+  <span style="display: block; height: 5px;"></span>
+  <img src="https://img.shields.io/badge/🌏_Location-Seoul,_Korea-1F6FEB?style=flat-square" alt="Location Badge">
+  <img src="https://img.shields.io/badge/📍_Citizenship-South_Korea_|_Cuba-1F6FEB?style=flat-square" alt="Citizenship Badge">
+  <img src="https://img.shields.io/badge/✓_Status-Available_for_Hire-success?style=flat-square" alt="Availability Badge">
+  <span style="display: block; height: 5px;"></span>
+  <img src="https://img.shields.io/badge/🗣_English-Fluent_(TOEIC_950)-2ea44f?style=flat-square" alt="English Language Badge">
+  <img src="https://img.shields.io/badge/🗣_Korean-Advanced_(TOPIK_6)-2ea44f?style=flat-square" alt="Korean Language Badge">
+  <img src="https://img.shields.io/badge/🗣_Spanish-Native-2ea44f?style=flat-square" alt="Spanish Language Badge">
 </div>
 
 ## 👋 About Me
@@ -260,10 +262,12 @@ Software developer with 2.5 years of experience spearheading mobile application 
 I'm always interested in discussing Android development, machine learning applications, or potential collaborations. Feel free to reach out!
 
 <div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/penjan-a-eng-lim)
-[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:penjan.eng@gmail.com)
-
+  <a href="https://linkedin.com/in/penjan-a-eng-lim">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+  </a>
+  <a href="mailto:penjan.eng@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
+  </a>
 </div>
 
 ---
