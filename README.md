@@ -46,6 +46,7 @@
   #nav-links {
     display: flex;
     flex-wrap: wrap;
+    padding-right: 20px;
   }
 
   @media (max-width: 768px) {
@@ -77,12 +78,7 @@
 </style>
 
 <div id="nav-menu">
-  <!-- Branding or central navigation links (optional) -->
-  <div style="margin-left: 20px;">
-    <a href="#">Home</a> <!-- You can leave this empty or add any branding -->
-  </div>
-
-<span id="nav-menu-toggle">☰</span>
+  <span id="nav-menu-toggle">☰</span>
   <div id="nav-links">
     <!-- Navigation Links will be dynamically populated -->
   </div>
