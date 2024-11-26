@@ -5,13 +5,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #008080;
+    background-color: #008080; /* Navbar color */
     color: white;
-    padding: 15px 0;
+    padding: 15px 0; /* Navbar height */
     z-index: 1000;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Vertically align items */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
@@ -30,20 +30,19 @@
 
   /* Adjust content padding for the fixed navbar */
   body {
-    padding-top: 75px;
-    margin: 0;
+    padding-top: 75px; /* Adjusted for taller navbar */
   }
 
-  /* Responsive Menu */
+  /* Hamburger Menu (Toggle Button) */
   #nav-menu-toggle {
     display: none;
     cursor: pointer;
     font-size: 18px;
-    position: absolute;
-    right: 20px;
-    z-index: 1100;
+    margin-right: 20px; /* Move to the right */
+    z-index: 1100; /* Ensure toggle is above menu items */
   }
 
+  /* Navigation Links */
   #nav-links {
     display: flex;
     flex-wrap: wrap;
@@ -51,34 +50,39 @@
 
   @media (max-width: 768px) {
     #nav-links {
-      display: none;
+      display: none; /* Hide links initially on mobile */
       flex-direction: column;
       align-items: center;
-      background-color: #008080;
+      background-color: #008080; /* Match navbar background */
       width: 100%;
       position: absolute;
-      top: 45px;
+      top: 60px; /* Space below navbar */
       left: 0;
-      padding: 15px 0;
-      z-index: 1000;
+      padding: 15px 0; /* Add spacing around links */
+      z-index: 1000; /* Ensure it doesn't overlap the toggle button */
     }
 
     #nav-links.active {
-      display: flex;
+      display: flex; /* Show links when active */
     }
 
     #nav-links a {
-      margin: 15px 0;
+      margin: 15px 0; /* Added vertical spacing */
     }
 
     #nav-menu-toggle {
-      display: block;
+      display: block; /* Show hamburger menu */
     }
   }
 </style>
 
 <div id="nav-menu">
-  <span id="nav-menu-toggle">☰</span>
+  <!-- Branding or central navigation links (optional) -->
+  <div style="margin-left: 20px;">
+    <a href="#">Home</a> <!-- You can leave this empty or add any branding -->
+  </div>
+
+<span id="nav-menu-toggle">☰</span>
   <div id="nav-links">
     <!-- Navigation Links will be dynamically populated -->
   </div>
@@ -98,39 +102,38 @@
 
     // Create navigation links dynamically, excluding subheadings (###)
     headings.forEach((heading, index) => {
-      if (heading.tagName === "H3") return;
+      if (heading.tagName === "H3") return; // Skip ### subheadings
 
+      // Create a clean title without emojis for the nav bar
       const cleanText = heading.textContent.replace(/[\u{1F300}-\u{1FAF6}]/gu, '').trim();
 
+      // Create an ID for each heading if not already present
       if (!heading.id) {
         heading.id = "section-" + index;
       }
 
+      // Create navigation link
       const navLink = document.createElement("a");
       navLink.href = "#" + heading.id;
       navLink.textContent = cleanText;
       navLinksContainer.appendChild(navLink);
     });
 
+    // Add click event for hamburger toggle
     toggle.addEventListener("click", () => {
       navLinksContainer.classList.toggle("active");
     });
 
-    document.addEventListener("click", (e) => {
-      if (e.target !== toggle && !navLinksContainer.contains(e.target)) {
-        navLinksContainer.classList.remove("active");
-      }
-    });
-
+    // Adjust scroll behavior to account for fixed navbar height
     document.querySelectorAll('#nav-links a').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         window.scrollTo({
-          top: target.offsetTop - 75,
+          top: target.offsetTop - 75, // Offset for navbar height
           behavior: 'smooth'
         });
-        navLinksContainer.classList.remove('active');
+        navLinksContainer.classList.remove('active'); // Collapse the dropdown
       });
     });
   });
