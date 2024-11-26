@@ -78,7 +78,11 @@
 </style>
 
 <div id="nav-menu">
-  <span id="nav-menu-toggle">☰</span>
+  <div style="margin-left: 20px;">
+    <a href="#"></a> 
+  </div>
+
+<span id="nav-menu-toggle">☰</span>
   <div id="nav-links">
     <!-- Navigation Links will be dynamically populated -->
   </div>
