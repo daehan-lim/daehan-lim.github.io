@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #008080; /* Navbar color */
+    background-color: #21427D; /* Navbar color */
     color: white;
     padding: 15px 0; /* Navbar height */
     z-index: 1000;
@@ -54,7 +54,7 @@
       display: none; /* Hide links initially on mobile */
       flex-direction: column;
       align-items: center;
-      background-color: #008080; /* Match navbar background */
+      background-color: #21427D; /* Match navbar background */
       width: 100%;
       position: absolute;
       top: 60px; /* Space below navbar */
