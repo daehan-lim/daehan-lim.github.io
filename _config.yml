@@ -1,4 +1,4 @@
-title: "Software Developer Portfolio"
+title: "My Portfolio"
 description: "Software developer with 2.5 years of experience spearheading mobile application development across telecom and enterprise sectors, using modern development practices and Kotlin/Java. Experience with AI/ML research enabling development of efficient and scalable applications."
 remote_theme: just-the-docs/just-the-docs
 color_scheme: light
@@ -10,23 +10,25 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# To remove Just the Docs footer
 footer_content: ""
 
-# Navigation behavior
 aux_links:
-  "LinkedIn":
+  "💼 LinkedIn":
     - "https://linkedin.com/in/penjan-a-eng-lim"
-  "GitHub":
-    - "https://github.com/daehan-lim"
+  "📧 Gmail":
+    - "mailto:penjan.eng@gmail.com"
+  "📄 Resume":
+    - "https://daehan-lim.github.io/docs/RESUME_ENG_LIM_PENJAN_ANTONIO.pdf"
 
-# Disable search everywhere
+aux_links_new_tab: true
+
+# Navigation settings
 search_enabled: false
-# Make headers anchor in place instead of new pages
 heading_anchors: true
-has_toc: false
-# Tell Jekyll this is a single page
-collections:
-  pages:
-    permalink: "/:path/"
-    output: true
+nav_external_links: true
+
+# For better navigation structure
+kramdown:
+  parse_block_html: true
+  auto_ids: true
+  toc_levels: 2..3
