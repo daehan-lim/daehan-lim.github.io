@@ -1,18 +1,18 @@
 <style>
   /* Navigation Menu Styles */
   #nav-menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #008080;
-      color: white;
-      padding: 15px 0;
-      z-index: 1000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #008080; /* Updated to requested teal color */
+    color: white;
+    padding: 15px 0; /* Adjusted navbar height */
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   #nav-menu a {
@@ -35,11 +35,11 @@
 
   /* Responsive Menu */
   #nav-menu-toggle {
-      display: none;
-      cursor: pointer;
-      font-size: 18px;
-      margin-right: 20px;
-      z-index: 1100;
+    display: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 20px;
+    z-index: 1100; /* Ensure the toggle button is above the menu */
   }
 
   #nav-links {
@@ -134,6 +134,7 @@
           top: target.offsetTop - 75, // Offset for navbar height
           behavior: 'smooth'
         });
+        navLinksContainer.classList.remove('active'); // Collapse the dropdown
       });
     });
   });
