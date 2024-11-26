@@ -5,15 +5,16 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #34495e; /* Changed to a darker, professional tone */
+    background-color: #008080;
     color: white;
-    padding: 10px 0;
+    padding: 15px 0; 
     z-index: 1000;
     display: flex;
-    justify-content: center; /* Center the buttons */
+    justify-content: center; 
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
+
 
   #nav-menu a {
     color: white;
@@ -30,7 +31,7 @@
 
   /* Adjust content padding for the fixed navbar */
   body {
-    padding-top: 60px; /* Ensure content is not hidden by the nav bar */
+    padding-top: 75px; /* Adjusted for taller navbar */
   }
 
   /* Responsive Menu */
@@ -51,10 +52,10 @@
       display: none; /* Hide links initially on mobile */
       flex-direction: column;
       align-items: center;
-      background-color: #34495e; /* Match navbar background */
+      background-color: #2c3e50; /* Match navbar background */
       width: 100%;
       position: absolute;
-      top: 60px;
+      top: 75px; /* Adjusted for taller navbar */
       left: 0;
     }
 
@@ -81,8 +82,10 @@
     const headings = document.querySelectorAll("h2");
     const toggle = document.getElementById("nav-menu-toggle");
 
-    // Create navigation links dynamically
+    // Create navigation links dynamically, excluding the first H1 heading and subheadings (###)
     headings.forEach((heading, index) => {
+      if (index === 0 || heading.tagName === "H3") return; // Skip the first H1 and ### headings
+
       // Create a clean title without emojis for the nav bar
       const cleanText = heading.textContent.replace(/[\u{1F300}-\u{1FAF6}]/gu, '').trim();
 
@@ -109,14 +112,13 @@
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         window.scrollTo({
-          top: target.offsetTop - 60, // Offset for navbar height
+          top: target.offsetTop - 75, // Offset for navbar height
           behavior: 'smooth'
         });
       });
     });
   });
 </script>
-
 
 # ENG LIM PENJAN ANTONIO (임대한)
 
