@@ -272,7 +272,4 @@ I'm always interested in discussing Android development, machine learning applic
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
   </a>
 </div>
-
----
-
-*Portfolio last updated: November 2024*
+<br>
