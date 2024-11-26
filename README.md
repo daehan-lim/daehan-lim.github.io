@@ -114,7 +114,36 @@ Software developer with 2.5 years of experience spearheading mobile application 
 ### Yellow Pages
 *Enterprise-scale mobile directory revolutionizing business search with sophisticated offline capabilities (2020)*
 
-[carousel remains as is]
+<div style="background: linear-gradient(135deg, #1e3c72, #2a5298); padding: 15px; border-radius: 15px; box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);">
+  <div style="display: flex; overflow-x: auto; gap: 30px; padding: 10px 5px;">
+    <!-- Home -->
+    <div style="text-align: center; min-width: 220px;">
+      <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Search businesses, access emergency numbers and business directories</p>
+      <img src="images/main.jpg" alt="Main screen" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
+    </div>
+    <!-- Green Pages -->
+    <div style="text-align: center; min-width: 220px;">
+      <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Find government procedures, requirements and service schedules</p>
+      <img src="images/green_home.jpg" alt="Green Pages" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
+    </div>
+    <!-- Info Home -->
+    <div style="text-align: center; min-width: 220px;">
+      <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Browse phone services, customer support and international calls</p>
+      <img src="images/information_home.jpg" alt="Information Pages" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
+    </div>
+    <!-- Mobile Internet -->
+    <div style="text-align: center; min-width: 220px;">
+      <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Explore mobile internet plans, connection settings and service options</p>
+      <img src="images/information_mobile_internet.jpg" alt="Mobile Internet" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
+    </div>
+    <!-- Ad Space -->
+    <div style="text-align: center; min-width: 220px;">
+      <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Request advertising space, promote business and increase visibility</p>
+      <img src="images/publicity.jpg" alt="Advertising Portal" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
+    </div>
+  </div>
+</div>
+<br>
 
 **Overview:**
 - Developed Cuba's first comprehensive Yellow Pages Android app for ETECSA
