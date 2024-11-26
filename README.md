@@ -51,48 +51,37 @@ Software developer with 2.5 years of experience spearheading mobile application 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 [![HTML/CSS](https://img.shields.io/badge/HTML/CSS-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![OpenAI API](https://img.shields.io/badge/OpenAI-API-412991?style=for-the-badge&logo=openai&logoColor=white)](https://platform.openai.com/)
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com)
 [![MOCKK](https://img.shields.io/badge/mockk-2496ED?style=for-the-badge)](https://mockk.io)
+[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
 
 
 
 ## 📂 Projects Overview
 
-### 📱 Mobile Development
+### 📱 Mobile Applications
+- 📰 [Cubadebate News Reader](#cubadebate-news-reader) - News platform with personalized content delivery (2021) [🔗](https://github.com/daehan-lim/cubadebate)
+- ⛽ [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021) [🔗](https://github.com/daehan-lim/gas-manager)
+- 👨‍💼 [ACME Field Service](#acme-field-service) - Service management solution (2021) [🔗](https://github.com/daehan-lim/acme-field)
 - 📱 [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020) [🔗](https://github.com/daehan-lim/yellow-pages)
-- 📰 [Cubadebate Reader](#cubadebate) - News platform with advanced caching (2021) [🔗](https://github.com/daehan-lim/cubadebate)
-- ⛽ [Gas Consumption Manager](#gas-manager) - National utility tracking system (2021) [🔗](https://github.com/daehan-lim/gas-manager)
-- 👨‍💼 [ACME Field Service](#acme-field) - Service management solution (2021) [🔗](https://github.com/daehan-lim/acme-field)
-- 🏛️ [Government Portal](#gov-portal) - Official platform application (2020) [🔗](https://github.com/daehan-lim/gov-portal)
+- 🏛️ [Government Portal](#government-portal) - Official government platform application (2021) [🔗](https://github.com/daehan-lim/gov-portal)
 - 🗺️ [GISMAP](#gismap) - Advanced GIS system with offline capabilities (2019) [🔗](https://github.com/daehan-lim/gismap)
 
 ### 🔬 Research & ML
-- 🤝 [Federated Learning for Random Forest](#federated-learning) - Privacy-preserving distributed learning system (2023) [🔗](https://github.com/daehan-lim/federated-rf)
-- 📊 [RoBERTa News Classification](#roberta) - Enhanced topic classification with synthetic data (2024) [🔗](https://github.com/daehan-lim/roberta-news)
-- 🏥 [Medical Data Classifier](#medical-classifier) - Patient mortality prediction system (2023) [🔗](https://github.com/daehan-lim/associative-classifier)
-- 🔍 [Information Retrieval Engine](#ir-system) - Document indexing and search system (2023) [🔗](https://github.com/daehan-lim/ir-system)
+- 🤝 [Federated Learning for Random Forest](#federated-learning-for-random-forest) - Privacy-preserving distributed learning system (2024) [🔗](https://github.com/daehan-lim/federated-rf)
+- 📊 [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024) [🔗](https://github.com/daehan-lim/roberta-news)
+- 🏥 [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023) [🔗](https://github.com/daehan-lim/associative-classifier)
+- 🔍 [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2022) [🔗](https://github.com/daehan-lim/ir-system)
 
 ## 📝 Project Details
 
 ## 📱 Mobile Applications
 
-### Yellow Pages
-*Enterprise-scale mobile directory revolutionizing business search with sophisticated offline capabilities (2020)*
-
-[carousel remains as is]
-
-**Overview:**
-- Developed Cuba's first comprehensive Yellow Pages Android app for ETECSA
-- Engineered custom offline vector mapping system reducing data usage by 85%
-- Implemented hybrid online/offline search system with automated background synchronization
-- Built proximity-based entity search with real-time GPS navigation
-- Created custom UI components for efficient data presentation
-- Tech: Android SDK, Java, SQLite, VTM Maps, GraphHopper, Material Design
-
-[🔗 View Details](https://github.com/daehan-lim/yellow-pages)
-
-### Cubadebate Reader
+### Cubadebate News Reader
 *Feature-rich news platform enabling personalized content delivery and comprehensive offline access (2021)*
 
 [Image Placeholder: News feed and article view screenshots]
@@ -122,6 +111,22 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 [🔗 View Details](https://github.com/daehan-lim/gas-manager)
 
+### Yellow Pages
+*Enterprise-scale mobile directory revolutionizing business search with sophisticated offline capabilities (2020)*
+
+[carousel remains as is]
+
+**Overview:**
+- Developed Cuba's first comprehensive Yellow Pages Android app for ETECSA
+- Engineered custom offline vector mapping system reducing data usage by 85%
+- Implemented hybrid online/offline search system with automated background synchronization
+- Built proximity-based entity search with real-time GPS navigation
+- Created custom UI components for efficient data presentation
+- Tech: Android SDK, Java, SQLite, VTM Maps, GraphHopper, Material Design
+
+[🔗 View Details](https://github.com/daehan-lim/yellow-pages)
+
+
 ### ACME Field Service
 *Comprehensive service management solution for field technicians (2021)*
 
@@ -137,7 +142,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 [🔗 View Details](https://github.com/daehan-lim/acme-field)
 
 ### Government Portal
-*Official platform application modernizing government services (2020)*
+*Official government platform application modernizing government services (2021)*
 
 [Image Placeholder: Portal interface]
 
@@ -208,7 +213,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 [🔗 View Details](https://github.com/daehan-lim/associative-classifier)
 
-### Information Retrieval Engine
+### Information Retrieval System
 *Sophisticated document indexing and search system (2023)*
 
 [Image Placeholder: System interface]
