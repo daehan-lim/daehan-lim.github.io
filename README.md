@@ -1,3 +1,70 @@
+<style>
+  /* Navigation Menu Styles */
+  #nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0077B5;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  #nav-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+
+  #nav-menu a:hover {
+    color: #FFD700;
+  }
+
+  /* For mobile devices */
+  @media (max-width: 768px) {
+    #nav-menu {
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    #nav-menu a {
+      margin: 5px 0;
+    }
+  }
+</style>
+
+<div id="nav-menu">
+  <!-- Navigation Links will be dynamically populated -->
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navMenu = document.getElementById("nav-menu");
+    const headings = document.querySelectorAll("h2");
+
+    headings.forEach((heading, index) => {
+      // Create an ID for each heading if not already present
+      if (!heading.id) {
+        heading.id = "section-" + index;
+      }
+
+      // Create navigation link
+      const navLink = document.createElement("a");
+      navLink.href = "#" + heading.id;
+      navLink.textContent = heading.textContent;
+      navMenu.appendChild(navLink);
+    });
+  });
+</script>
+
 # ENG LIM PENJAN ANTONIO (임대한)
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%230077B5&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Penjan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
