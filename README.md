@@ -5,16 +5,15 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #008080;
+    background-color: #008080; /* Updated to requested teal color */
     color: white;
-    padding: 15px 0; 
+    padding: 15px 0; /* Increased height */
     z-index: 1000;
     display: flex;
-    justify-content: center; 
+    justify-content: center; /* Center the buttons */
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
-
 
   #nav-menu a {
     color: white;
@@ -52,15 +51,20 @@
       display: none; /* Hide links initially on mobile */
       flex-direction: column;
       align-items: center;
-      background-color: #2c3e50; /* Match navbar background */
+      background-color: #008080; /* Match navbar background */
       width: 100%;
       position: absolute;
       top: 75px; /* Adjusted for taller navbar */
       left: 0;
+      padding-bottom: 15px; /* Add spacing at the bottom */
     }
 
     #nav-links.active {
       display: flex; /* Show links when active */
+    }
+
+    #nav-links a {
+      margin: 10px 0; /* Added vertical spacing */
     }
 
     #nav-menu-toggle {
@@ -79,12 +83,17 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const navLinksContainer = document.getElementById("nav-links");
-    const headings = document.querySelectorAll("h2");
     const toggle = document.getElementById("nav-menu-toggle");
+    const headings = document.querySelectorAll("h2");
 
-    // Create navigation links dynamically, excluding the first H1 heading and subheadings (###)
+    // Filter out the first H1 to avoid duplication
+    if (headings.length > 0 && headings[0].tagName === "H1") {
+      headings[0].remove(); // Remove any duplicate H1 heading added accidentally
+    }
+
+    // Create navigation links dynamically, excluding subheadings (###)
     headings.forEach((heading, index) => {
-      if (index === 0 || heading.tagName === "H3") return; // Skip the first H1 and ### headings
+      if (heading.tagName === "H3") return; // Skip ### subheadings
 
       // Create a clean title without emojis for the nav bar
       const cleanText = heading.textContent.replace(/[\u{1F300}-\u{1FAF6}]/gu, '').trim();
@@ -119,6 +128,7 @@
     });
   });
 </script>
+
 
 # ENG LIM PENJAN ANTONIO (임대한)
 
