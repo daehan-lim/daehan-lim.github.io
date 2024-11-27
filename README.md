@@ -241,7 +241,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 ## 📱 Mobile Applications
 
-### Cubadebate News Reader
+### [Cubadebate News Reader](https://github.com/daehan-lim/cubadebate)
 *Feature-rich news platform enabling personalized content delivery and comprehensive offline access (2021)*
 
 [Image Placeholder: News feed and article view screenshots]
