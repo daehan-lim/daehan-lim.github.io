@@ -247,13 +247,28 @@ Software developer with 2.5 years of experience spearheading mobile application 
 [Image Placeholder: News feed and article view screenshots]
 
 **Overview:**
-- Built customizable news feed system with dynamic category and topic selection
-- Implemented sophisticated offline caching for full articles including images
-- Created real-time topic management system with analytics and auto-reordering
-- Integrated keyword search, text-to-speech, and voice recognition capabilities
-- Developed multi-level commenting interface with real-time updates
-- Built infinite scroll with efficient data loading and SMS subscription system
-- Tech: Kotlin, MVVM, Room, Coroutines, Material Design
+- Built customizable news feed system with dynamic category and topic selection interfaces, enabling personalized content delivery
+- Implemented offline caching for bookmarking full articles, including images
+- Designed real-time topic management system with dynamic search, post count analytics, and automatic list reordering
+- Integrated in-article keyword search, text-to-speech capability and voice recognition, 
+- Built multi-level commenting interface, infinite scroll with efficient data loading, and SMS subscriptions
+
+**Tech Stack:**
+
+[![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white&style=for-the-badge)](https://kotlinlang.org)
+[![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com)
+[![MVVM](https://img.shields.io/badge/MVVM-FF5252?style=for-the-badge)](https://developer.android.com/topic/architecture)
+[![Material Design](https://img.shields.io/badge/Material%20Design-%234285F4?logo=material-design&logoColor=white&style=for-the-badge)](https://m3.material.io)
+[![Room](https://img.shields.io/badge/Room-003B57?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/training/data-storage/room)
+[![Coroutines](https://img.shields.io/badge/Coroutines-7F52FF?logo=kotlin&logoColor=white&style=for-the-badge)](https://kotlinlang.org/docs/coroutines-overview.html)
+[![Retrofit](https://img.shields.io/badge/Retrofit-48B983?logo=square&logoColor=white&style=for-the-badge)](https://square.github.io/retrofit)
+[![JetPack](https://img.shields.io/badge/Jetpack-3DDC84?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/jetpack)
+[![LiveData](https://img.shields.io/badge/LiveData-2196F3?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/topic/libraries/architecture/livedata)
+[![Moshi](https://img.shields.io/badge/Moshi-000000?logo=android&logoColor=white&style=for-the-badge)](https://github.com/square/moshi)
+[![Data Binding](https://img.shields.io/badge/Data%20Binding-3DDC84?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/topic/libraries/data-binding)
+[![View Binding](https://img.shields.io/badge/View%20Binding-3DDC84?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/topic/libraries/view-binding)
+[![Navigation](https://img.shields.io/badge/Navigation-6200EE?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/guide/navigation)
+<br>
 
 [🔗 View Details](https://github.com/daehan-lim/cubadebate)
 
