@@ -256,7 +256,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 **Watch the demo**
 
-<iframe width="238" height="489" src="https://www.youtube.com/embed/4SEpMDPFkHw" frameborder="0" allowfullscreen></iframe>
+<iframe width="238" height="510" src="https://www.youtube.com/embed/4SEpMDPFkHw" frameborder="0" allowfullscreen></iframe>
 <br><br>
 
 **Overview:**
