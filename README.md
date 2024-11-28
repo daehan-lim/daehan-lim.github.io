@@ -244,7 +244,15 @@ Software developer with 2.5 years of experience spearheading mobile application 
 ### [Cubadebate News Reader](https://github.com/daehan-lim/cubadebate)
 *Feature-rich news platform enabling personalized content delivery and comprehensive offline access (2021)*
 
-[Image Placeholder: News feed and article view screenshots]
+<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
+  <img src="images/news_feed.svg" width="240" style="margin-right: 5px;" />
+  <img src="images/news_details.svg" width="240" style="margin-right: 5px;" />
+  <img src="images/comments.svg" width="240" style="margin-right: 5px;" />
+  <img src="images/news_feed.svg" width="240" style="margin-right: 5px;" />
+  <img src="images/news_details.svg" width="240" style="margin-right: 5px;" />
+  <img src="images/comments.svg" width="240" />
+</div>
+<br>
 
 **Overview:**
 - Built customizable news feed system with dynamic category and topic selection interfaces, enabling personalized content delivery
