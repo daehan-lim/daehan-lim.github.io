@@ -254,6 +254,8 @@ Software developer with 2.5 years of experience spearheading mobile application 
 </div>
 <br>
 
+<iframe width="320" height="570" src="https://www.youtube.com/embed/4SEpMDPFkHw" frameborder="0" allowfullscreen></iframe>
+
 **Overview:**
 - Built customizable news feed system with dynamic category and topic selection interfaces, enabling personalized content delivery
 - Implemented offline caching for bookmarking full articles, including images
