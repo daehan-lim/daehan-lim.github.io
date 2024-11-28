@@ -254,7 +254,10 @@ Software developer with 2.5 years of experience spearheading mobile application 
 </div>
 <br>
 
-<iframe width="320" height="570" src="https://www.youtube.com/embed/4SEpMDPFkHw" frameborder="0" allowfullscreen></iframe>
+**Watch the demo**
+
+<iframe width="238" height="489" src="https://www.youtube.com/embed/4SEpMDPFkHw" frameborder="0" allowfullscreen></iframe>
+<br><br>
 
 **Overview:**
 - Built customizable news feed system with dynamic category and topic selection interfaces, enabling personalized content delivery
