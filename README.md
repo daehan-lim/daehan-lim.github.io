@@ -246,11 +246,13 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
   <img src="images/news_feed.svg" width="240" style="margin-right: 5px;" />
-  <img src="images/news_details.svg" width="240" style="margin-right: 5px;" />
-  <img src="images/comments.svg" width="240" style="margin-right: 5px;" />
-  <img src="images/news_feed.svg" width="240" style="margin-right: 5px;" />
-  <img src="images/news_details.svg" width="240" style="margin-right: 5px;" />
-  <img src="images/comments.svg" width="240" />
+  <img src="images/news_article.svg" width="240" style="margin-right: 5px;" />
+  <img src="images/replies.png" width="240" style="margin-right: 5px;" />
+  <img src="images/categories.png" width="240" style="margin-right: 5px;" />
+  <img src="images/topics.png" width="240" style="margin-right: 5px;" />
+  <img src="images/sms.png" width="240" style="margin-right: 5px;" />
+  <img src="images/search.svg" width="240" style="margin-right: 5px;" />
+  <img src="images/saved.png" width="240"  />
 </div>
 <br>
 
