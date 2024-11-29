@@ -260,7 +260,6 @@ Software developer with 2.5 years of experience spearheading mobile application 
 <div style="border: 4px solid #ccc; border-radius: 12px; padding: 4px; width: fit-content; margin: 0 auto;">
   <iframe width="236" height="486" src="https://www.youtube.com/embed/4SEpMDPFkHw" frameborder="0" allowfullscreen></iframe>
 </div>
-
 <br><br>
 
 **Overview:**
@@ -300,6 +299,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
   <img src="images/gas/offices.png" width="240" style="margin-right: 5px;" />
   <img src="images/gas/video.png" width="240" />
 </div>
+<br>
 
 **Overview:**
 - Engineered comprehensive utility management app for the National Manufactured Gas Company
@@ -323,6 +323,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
   <img src="images/acme/calendar_sync.png" width="240" style="margin-right: 5px;" /> 
   <img src="images/acme/maps.png" width="240" />
 </div>
+<br>
 
 **Overview:**
 - Fully offline-capable service ticket management app with responsive design implementation
