@@ -228,7 +228,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - 👨‍💼 [ACME App](#acme-app) - Service ticket management solution (2021) [🔗](https://github.com/daehan-lim/acme-field)
 - 📱 [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020) [🔗](https://github.com/daehan-lim/yellow-pages)
 - 🏛️ [Government Portal](#government-portal) - Official government platform application (2021) [🔗](https://github.com/daehan-lim/gov-portal)
-- 🗺️ [GISMAP](#gismap) - Advanced GIS system with offline capabilities (2019) [🔗](https://github.com/daehan-lim/gismap)
+- 🗺️ [ETECSA](#etecsa) - Advanced GIS system with offline capabilities (2019) [🔗](https://github.com/daehan-lim/etecsa-browser)
 
 ### 🔬 Research & ML
 - 🤝 [Federated Learning for Random Forest](#federated-learning-for-random-forest) - Privacy-preserving distributed learning system (2024) [🔗](https://arxiv.org/abs/2407.19193)
@@ -374,7 +374,10 @@ Software developer with 2.5 years of experience spearheading mobile application 
 ### Government Portal
 *Official government platform application modernizing government services (2021)*
 
-[Image Placeholder: Portal interface]
+<div style="border: 4px solid #ccc; border-radius: 12px; padding: 0px; width: fit-content; margin: 0;">
+  <img src="images/portal/portal.jpg" width="240">
+</div>
+
 
 **Overview:**
 - Modernized legacy codebase implementing MVVM architecture with Jetpack components
@@ -382,24 +385,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Implemented comprehensive data validation and error handling
 - Tech: Kotlin, MVVM, Jetpack, Retrofit2, Material Design
 
-[🔗 View Details](https://github.com/daehan-lim/gov-portal)
-
----
-
-### GISMAP
-*Advanced geospatial information system for offline navigation (2019)*
-
-[Image Placeholder: GIS interface]
-
-**Overview:**
-- Implemented real-time GPS navigation with multiple orientation modes
-- Created custom geocoding system and optimal route calculation
-- Built proximity-based POI search with multi-layer thematic mapping
-- Developed efficient memory management for large spatial datasets
-- Created custom tile caching system for improved performance
-- Tech: Java, SpatiaLite, SQLite, Osmdroid, Custom UI Components
-
-[🔗 View Details](https://github.com/daehan-lim/gismap)
+[🔗 View Details](#)
 
 ---
 
@@ -410,7 +396,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 *Patent Pending (Appl. No. 10-2024-0001659)*
 
-<img src="images/random_forest.png">
+<img src="images/random_forest.png" width="650">
 
 **Overview:**
 
@@ -427,7 +413,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 ### RoBERTa News Classification
 *Enhanced topic classification model with synthetic data augmentation (2024)*
 
-<img src="images/roberta_architecture.png">
+<img src="images/roberta_architecture.png" width="350">
 
 **Overview:**
 - Developed machine learning model for classifying sports news articles into 5 distinct categories using [RoBERTa](https://huggingface.co/docs/transformers/en/model_doc/roberta) and [BBC Sport dataset](http://mlg.ucd.ie/datasets/bbc.html)
