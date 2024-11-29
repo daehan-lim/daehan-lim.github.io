@@ -228,7 +228,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - 👨‍💼 [ACME App](#acme-app) - Service ticket management solution (2021) [🔗](https://github.com/daehan-lim/acme-field)
 - 📱 [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020) [🔗](https://github.com/daehan-lim/yellow-pages)
 - 🏛️ [Government Portal](#government-portal) - Official government platform application (2021) [🔗](https://github.com/daehan-lim/gov-portal)
-- 🗺️ [ETECSA](#etecsa) - Advanced GIS system with offline capabilities (2019) [🔗](https://github.com/daehan-lim/etecsa-browser)
+- 🗺️ [ETECSA (coming soon)](#etecsa) - To be updated (2020) 🔗
 
 ### 🔬 Research & ML
 - 🤝 [Federated Learning for Random Forest](#federated-learning-for-random-forest) - Privacy-preserving distributed learning system (2024) [🔗](https://arxiv.org/abs/2407.19193)
@@ -377,7 +377,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 <div style="border: 4px solid #ccc; border-radius: 12px; padding: 0px; width: fit-content; margin: 0;">
   <img src="images/portal/portal.jpg" width="240">
 </div>
-
+<br>
 
 **Overview:**
 - Modernized legacy codebase implementing MVVM architecture with Jetpack components
