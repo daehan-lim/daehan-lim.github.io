@@ -304,6 +304,20 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 [🔗 View Details](https://github.com/daehan-lim/gas-manager)
 
+### ACME App
+*Android ticket management app with custom calendar, offline functionality, and location services (2021)*
+
+[Image Placeholder: Service dashboard]
+
+**Overview:**
+- Fully offline-capable service ticket management app with responsive design implementation
+- Implemented interactive calendar with custom event visualization and Android Calendar Provider API integration
+- Google Maps integration for directions to ticket locations and address search.
+- Created user registration and authentication flows with input validation and error feedback
+- Tech: Kotlin, Clean Architecture, Google Calendar API, Material Design
+
+[🔗 View Details](https://github.com/daehan-lim/acme-field)
+
 ### Yellow Pages
 *Enterprise-scale mobile directory revolutionizing business search with sophisticated offline capabilities (2020)*
 
@@ -312,27 +326,27 @@ Software developer with 2.5 years of experience spearheading mobile application 
     <!-- Home -->
     <div style="text-align: center; min-width: 220px;">
       <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Search businesses, access emergency numbers and business directories</p>
-      <img src="images/main.jpg" alt="Main screen" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
+      <img src="images/yellow_pages/main.jpg" alt="Main screen" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
     </div>
     <!-- Green Pages -->
     <div style="text-align: center; min-width: 220px;">
       <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Find government procedures, requirements and service schedules</p>
-      <img src="images/green_home.jpg" alt="Green Pages" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
+      <img src="images/yellow_pages/green_home.jpg" alt="Green Pages" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
     </div>
     <!-- Info Home -->
     <div style="text-align: center; min-width: 220px;">
       <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Browse phone services, customer support and international calls</p>
-      <img src="images/information_home.jpg" alt="Information Pages" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
+      <img src="images/yellow_pages/information_home.jpg" alt="Information Pages" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
     </div>
     <!-- Mobile Internet -->
     <div style="text-align: center; min-width: 220px;">
       <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Explore mobile internet plans, connection settings and service options</p>
-      <img src="images/information_mobile_internet.jpg" alt="Mobile Internet" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
+      <img src="images/yellow_pages/information_mobile_internet.jpg" alt="Mobile Internet" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
     </div>
     <!-- Ad Space -->
     <div style="text-align: center; min-width: 220px;">
       <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Request advertising space, promote business and increase visibility</p>
-      <img src="images/publicity.jpg" alt="Advertising Portal" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
+      <img src="images/yellow_pages/publicity.jpg" alt="Advertising Portal" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
     </div>
   </div>
 </div>
@@ -347,21 +361,6 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Tech: Android SDK, Java, SQLite, VTM Maps, GraphHopper, Material Design
 
 [🔗 View Details](https://github.com/daehan-lim/yellow-pages)
-
-
-### ACME Field Service
-*Comprehensive service management solution for field technicians (2021)*
-
-[Image Placeholder: Service dashboard]
-
-**Overview:**
-- Developed interactive dashboard for real-time ticket management
-- Implemented comprehensive calendar system with Google Calendar sync
-- Created dynamic work ticket system with customer information management
-- Built integrated navigation system with location services
-- Tech: Kotlin, Clean Architecture, Google Calendar API, Material Design
-
-[🔗 View Details](https://github.com/daehan-lim/acme-field)
 
 ### Government Portal
 *Official government platform application modernizing government services (2021)*
