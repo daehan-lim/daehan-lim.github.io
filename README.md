@@ -196,7 +196,6 @@ Software developer with 2.5 years of experience spearheading mobile application 
 [![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)](https://junit.org)
 [![Espresso](https://img.shields.io/badge/Espresso-FF5722?style=for-the-badge)](https://developer.android.com/training/testing/espresso)
 [![Navigation](https://img.shields.io/badge/Navigation-6200EE?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/guide/navigation)
-[![WorkManager](https://img.shields.io/badge/WorkManager-FF5722?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/topic/libraries/architecture/workmanager)
 [![Maps & Location](https://img.shields.io/badge/Maps_&_Location-4285F4?style=for-the-badge&logo=google-maps&logoColor=white)](https://developers.google.com/maps/documentation/android-sdk)
 
 ### Data Management & Storage
@@ -226,7 +225,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 ### 📱 Mobile Applications
 - 📰 [Cubadebate News Reader](#cubadebate-news-reader) - News platform with personalized content delivery (2021) [🔗](https://github.com/daehan-lim/cubadebate)
 - ⛽ [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021) [🔗](https://github.com/daehan-lim/gas-manager)
-- 👨‍💼 [ACME Field Service](#acme-field-service) - Service management solution (2021) [🔗](https://github.com/daehan-lim/acme-field)
+- 👨‍💼 [ACME Field Service](#acme-field-service) - Service ticket management solution (2021) [🔗](https://github.com/daehan-lim/acme-field)
 - 📱 [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020) [🔗](https://github.com/daehan-lim/yellow-pages)
 - 🏛️ [Government Portal](#government-portal) - Official government platform application (2021) [🔗](https://github.com/daehan-lim/gov-portal)
 - 🗺️ [GISMAP](#gismap) - Advanced GIS system with offline capabilities (2019) [🔗](https://github.com/daehan-lim/gismap)
@@ -242,7 +241,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 ## 📱 Mobile Applications
 
 ### [Cubadebate News Reader](https://github.com/daehan-lim/cubadebate)
-*Feature-rich news platform enabling personalized content delivery and comprehensive offline access (2021)*
+*Feature-rich news reader app enabling personalized content delivery and comprehensive offline access (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
   <img src="images/news_feed.svg" width="240" style="margin-right: 5px;" />
@@ -256,7 +255,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 </div>
 <br>
 
-**Watch the demo**
+**Video Walkthrough**
 
 <div style="border: 4px solid #ccc; border-radius: 12px; padding: 4px; width: fit-content; margin: 0 auto;">
   <iframe width="236" height="486" src="https://www.youtube.com/embed/4SEpMDPFkHw" frameborder="0" allowfullscreen></iframe>
