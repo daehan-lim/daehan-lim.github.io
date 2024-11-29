@@ -244,14 +244,14 @@ Software developer with 2.5 years of experience spearheading mobile application 
 *Feature-rich news reader app enabling personalized content delivery and comprehensive offline access (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="images/news_feed.svg" width="240" style="margin-right: 5px;" />
-  <img src="images/news_article.svg" width="240" style="margin-right: 5px;" />
-  <img src="images/replies.png" width="240" style="margin-right: 5px;" />
-  <img src="images/categories.png" width="240" style="margin-right: 5px;" />
-  <img src="images/topics.png" width="240" style="margin-right: 5px;" />
-  <img src="images/sms.png" width="240" style="margin-right: 5px;" />
-  <img src="images/search.svg" width="240" style="margin-right: 5px;" />
-  <img src="images/saved.png" width="240"  />
+  <img src="images/cubadebate/news_feed.svg" width="240" style="margin-right: 5px;" />
+  <img src="images/cubadebate/news_article.svg" width="240" style="margin-right: 5px;" />
+  <img src="images/cubadebate/replies.png" width="240" style="margin-right: 5px;" />
+  <img src="images/cubadebate/categories.png" width="240" style="margin-right: 5px;" />
+  <img src="images/cubadebate/topics.png" width="240" style="margin-right: 5px;" />
+  <img src="images/cubadebate/sms.png" width="240" style="margin-right: 5px;" />
+  <img src="images/cubadebate/search.svg" width="240" style="margin-right: 5px;" />
+  <img src="images/cubadebate/saved.png" width="240"  />
 </div>
 <br>
 
@@ -292,7 +292,14 @@ Software developer with 2.5 years of experience spearheading mobile application 
 ### Gas Consumption Manager
 *National utility tracking system for automated consumption management (2021)*
 
-[Image Placeholder: Dashboard view]
+<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
+  <img src="images/gas/main.png" width="240" style="margin-right: 5px;" />
+  <img src="images/gas/calendar.png" width="240" style="margin-right: 5px;" />
+  <img src="images/gas/chart.png" width="240" style="margin-right: 5px;" />
+  <img src="images/gas/filter.png" width="240" style="margin-right: 5px;" />
+  <img src="images/gas/offices.png" width="240" style="margin-right: 5px;" />
+  <img src="images/gas/video.png" width="240" />
+</div>
 
 **Overview:**
 - Engineered comprehensive utility management app for the National Manufactured Gas Company
@@ -306,7 +313,16 @@ Software developer with 2.5 years of experience spearheading mobile application 
 ### ACME App
 *Android ticket management app with custom calendar, offline functionality, and location services (2021)*
 
-[Image Placeholder: Service dashboard]
+<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
+  <img src="images/acme/login.png" width="240" style="margin-right: 5px;" />
+  <img src="images/acme/signup.png" width="240" style="margin-right: 5px;" />
+  <img src="images/acme/dashboard.png" width="240" style="margin-right: 5px;" />
+  <img src="images/acme/ticket_details.png" width="240" style="margin-right: 5px;" />
+  <img src="images/acme/edit.png" width="240" style="margin-right: 5px;" />
+  <img src="images/acme/calendar.png" width="240" style="margin-right: 5px;" />
+  <img src="images/acme/calendar_sync.png" width="240" style="margin-right: 5px;" /> 
+  <img src="images/acme/maps.png" width="240" />
+</div>
 
 **Overview:**
 - Fully offline-capable service ticket management app with responsive design implementation
