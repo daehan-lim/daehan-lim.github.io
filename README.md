@@ -354,12 +354,12 @@ Software developer with 2.5 years of experience spearheading mobile application 
 <br>
 
 **Overview:**
-- Developed Cuba's first comprehensive Yellow Pages Android app for ETECSA
-- Engineered custom offline vector mapping system reducing data usage by 85%
-- Implemented hybrid online/offline search system with automated background synchronization
-- Built proximity-based entity search with real-time GPS navigation
-- Created custom UI components for efficient data presentation
-- **Tech Stack**: Android, Java, SQLite, VTM Maps, GraphHopper, Gradle
+- Developed Cuba's first Yellow Pages mobile app, implementing enterprise-grade API integration for real-time business search
+- Engineered offline vector mapping system reducing data usage by 85% through embedded map files for business geolocalization
+- Implemented automated background synchronization for offline access to government services and telephone information sections
+- Built responsive search interface with dynamic filters and efficient pagination handling
+- Executed comprehensive software testing, including unit, UI and compatibility tests, optimizing reliability and user experience
+- **Tech Stack**: Android, Java, SQLite, VTM Maps, WebView, HTML, CSS, JavaScript, SharedPreferences
 
 [🔗 View Details](https://github.com/daehan-lim/yellow-pages)
 
