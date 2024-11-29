@@ -383,7 +383,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Modernized legacy codebase implementing MVVM architecture with Jetpack components
 - Engineered responsive REST API integration using Retrofit2 and Moshi
 - Implemented comprehensive data validation and error handling
-- Tech: Kotlin, MVVM, Jetpack, Retrofit2, Material Design
+- **Tech Stack**: Kotlin, MVVM, Jetpack, Retrofit2, Material Design
 
 [🔗 View Details](#)
 
@@ -404,7 +404,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Developed collaborative tree construction mechanism where clients iteratively contribute to growing and refining the model ensemble
 - Developed parallel processing system for efficient ensemble model training across multiple clients simultaneously
 - Demonstrated system effectiveness through extensive testing across 7 benchmark datasets, achieving superior performance compared to baseline approaches
-- Tech Stack: Python, NumPy, scikit-learn, Matplotlib, multiprocessing, Graphviz
+- **Tech Stack**: Python, NumPy, scikit-learn, Matplotlib, multiprocessing, Graphviz
 
 [🔗 View Details](https://arxiv.org/abs/2407.19193)
 
