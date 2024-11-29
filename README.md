@@ -466,6 +466,8 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 [🔗 View Details](https://github.com/daehan-lim/ir-system)
 
+---
+
 ## 📫 Let's Connect!
 
 I'm always interested in discussing Android development, machine learning applications, or potential collaborations. Feel free to reach out!
