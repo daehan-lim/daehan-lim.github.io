@@ -268,23 +268,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Designed real-time topic management system with dynamic search, post count analytics, and automatic list reordering
 - Integrated in-article keyword search, text-to-speech capability and voice recognition, 
 - Built multi-level commenting interface, infinite scroll with efficient data loading, and SMS subscriptions
-
-**Tech Stack:**
-
-[![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white&style=for-the-badge)](https://kotlinlang.org)
-[![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com)
-[![MVVM](https://img.shields.io/badge/MVVM-FF5252?style=for-the-badge)](https://developer.android.com/topic/architecture)
-[![Material Design](https://img.shields.io/badge/Material%20Design-%234285F4?logo=material-design&logoColor=white&style=for-the-badge)](https://m3.material.io)
-[![Room](https://img.shields.io/badge/Room-003B57?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/training/data-storage/room)
-[![Coroutines](https://img.shields.io/badge/Coroutines-7F52FF?logo=kotlin&logoColor=white&style=for-the-badge)](https://kotlinlang.org/docs/coroutines-overview.html)
-[![Retrofit](https://img.shields.io/badge/Retrofit-48B983?logo=square&logoColor=white&style=for-the-badge)](https://square.github.io/retrofit)
-[![JetPack](https://img.shields.io/badge/Jetpack-3DDC84?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/jetpack)
-[![LiveData](https://img.shields.io/badge/LiveData-2196F3?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/topic/libraries/architecture/livedata)
-[![Moshi](https://img.shields.io/badge/Moshi-000000?logo=android&logoColor=white&style=for-the-badge)](https://github.com/square/moshi)
-[![Data Binding](https://img.shields.io/badge/Data%20Binding-3DDC84?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/topic/libraries/data-binding)
-[![View Binding](https://img.shields.io/badge/View%20Binding-3DDC84?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/topic/libraries/view-binding)
-[![Navigation](https://img.shields.io/badge/Navigation-6200EE?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/guide/navigation)
-<br>
+- **Tech Stack:**: Android, Kotlin, MVVM, Room, Retrofit, Moshi, Navigation, Material Design, Glide, JSoup, Coroutines, ViewBinding
 
 [🔗 View Details](https://github.com/daehan-lim/cubadebate)
 
@@ -306,7 +290,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Implemented offline data persistence with automated consumption calculations
 - Created interactive visualization tools and reporting system
 - Built streamlined communication channels with company offices
-- Tech: Kotlin, Room, MVVM, Custom Charts, Material Design
+- **Tech Stack**: Android, Kotlin, MVVM, Room, Jetpack, MPAndroidChart, Material Design, Coroutines
 
 [🔗 View Details](https://github.com/daehan-lim/gas-manager)
 
@@ -330,7 +314,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Implemented interactive calendar with custom event visualization and Android Calendar Provider API integration
 - Google Maps integration for directions to ticket locations and address search.
 - Created user registration and authentication flows with input validation and error feedback
-- Tech: Kotlin, Clean Architecture, Google Calendar API, Material Design
+- **Tech Stack**: Android, Kotlin, MVVM, Jetpack, Google Maps, Room, Material Design.
 
 [🔗 View Details](https://github.com/daehan-lim/acme-field)
 
@@ -374,7 +358,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Implemented hybrid online/offline search system with automated background synchronization
 - Built proximity-based entity search with real-time GPS navigation
 - Created custom UI components for efficient data presentation
-- Tech: Android SDK, Java, SQLite, VTM Maps, GraphHopper, Material Design
+- **Tech Stack**: Android, Java, SQLite, VTM Maps, GraphHopper, Gradle
 
 [🔗 View Details](https://github.com/daehan-lim/yellow-pages)
 
