@@ -455,8 +455,9 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 [🔗 View Details](https://github.com/daehan-lim/associative-classifier)
 
----
+<!--
 
+---
 ### Information Retrieval System
 *Sophisticated document indexing and search system (2023)*
 
@@ -469,14 +470,17 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Tech: Python, NLTK, SpaCy, Information Retrieval
 
 [🔗 View Details](https://github.com/daehan-lim/ir-system)
-
+-->
 ---
 
-## 📫 Let's Connect!
+## 📫 Contact Information
 
-I'm always interested in discussing Android development, machine learning applications, or potential collaborations. Feel free to reach out!
+Feel free to review my resume or reach out through LinkedIn or email for professional opportunities.
 
 <div align="center">
+  <a href="/assets/Resume_ENG_LIM_PENJAN_ANTONIO.pdf">
+    <img src="https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=readme&logoColor=white" alt="Resume Badge">
+  </a>
   <a href="https://linkedin.com/in/penjan-a-eng-lim">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
   </a>
