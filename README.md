@@ -224,8 +224,8 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 ### 📱 Mobile Applications
 - 📰 [Cubadebate News Reader](#cubadebate-news-reader) - News platform with personalized content delivery (2021) [🔗](https://github.com/daehan-lim/cubadebate)
-- ⛽ [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021) [🔗](https://github.com/daehan-lim/gas-manager)
-- 👨‍💼 [ACME Field Service](#acme-field-service) - Service ticket management solution (2021) [🔗](https://github.com/daehan-lim/acme-field)
+- ⛽ [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021) [🔗](https://github.com/daehan-lim/gas-consumption-manager)
+- 👨‍💼 [ACME App](#acme-app) - Service ticket management solution (2021) [🔗](https://github.com/daehan-lim/acme-field)
 - 📱 [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020) [🔗](https://github.com/daehan-lim/yellow-pages)
 - 🏛️ [Government Portal](#government-portal) - Official government platform application (2021) [🔗](https://github.com/daehan-lim/gov-portal)
 - 🗺️ [GISMAP](#gismap) - Advanced GIS system with offline capabilities (2019) [🔗](https://github.com/daehan-lim/gismap)
@@ -293,7 +293,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Built streamlined communication channels with company offices
 - **Tech Stack**: Android, Kotlin, MVVM, Room, Jetpack, MPAndroidChart, Material Design, Coroutines
 
-[🔗 View Details](https://github.com/daehan-lim/gas-manager)
+[🔗 View Details](https://github.com/daehan-lim/gas-consumption-manager)
 
 ### ACME App
 *Android ticket management app with custom calendar, offline functionality, and location services (2021)*
@@ -317,7 +317,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Created user registration and authentication flows with input validation and error feedback
 - **Tech Stack**: Android, Kotlin, MVVM, Jetpack, Google Maps, Room, Material Design.
 
-[🔗 View Details](https://github.com/daehan-lim/acme-field)
+[🔗 View Details](https://github.com/daehan-lim/acme)
 
 ### Yellow Pages
 *Enterprise-scale mobile directory revolutionizing business search with sophisticated offline capabilities (2020)*
