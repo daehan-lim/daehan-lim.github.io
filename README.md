@@ -273,6 +273,8 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 [🔗 View Details](https://github.com/daehan-lim/cubadebate)
 
+---
+
 ### Gas Consumption Manager
 *National utility tracking system for automated consumption management (2021)*
 
@@ -294,6 +296,8 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - **Tech Stack**: Android, Kotlin, MVVM, Room, Jetpack, MPAndroidChart, Material Design, Coroutines
 
 [🔗 View Details](https://github.com/daehan-lim/gas-consumption-manager)
+
+---
 
 ### ACME App
 *Android ticket management app with custom calendar, offline functionality, and location services (2021)*
@@ -318,6 +322,8 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - **Tech Stack**: Android, Kotlin, MVVM, Jetpack, Google Maps, Room, Material Design.
 
 [🔗 View Details](https://github.com/daehan-lim/acme)
+
+---
 
 ### Yellow Pages
 *Enterprise-scale mobile directory revolutionizing business search with sophisticated offline capabilities (2020)*
@@ -363,6 +369,8 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 [🔗 View Details](https://github.com/daehan-lim/yellow-pages)
 
+---
+
 ### Government Portal
 *Official government platform application modernizing government services (2021)*
 
@@ -375,6 +383,8 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Tech: Kotlin, MVVM, Jetpack, Retrofit2, Material Design
 
 [🔗 View Details](https://github.com/daehan-lim/gov-portal)
+
+---
 
 ### GISMAP
 *Advanced geospatial information system for offline navigation (2019)*
@@ -408,6 +418,8 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 [🔗 View Details](https://github.com/daehan-lim/federated-rf)
 
+---
+
 ### RoBERTa News Classification
 *Enhanced topic classification system with synthetic data augmentation (2024)*
 
@@ -420,6 +432,8 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Tech: Python, PyTorch, Transformers, GPT-4, Streamlit
 
 [🔗 View Details](https://github.com/daehan-lim/roberta-news)
+
+---
 
 ### Medical Data Classifier
 *Novel associative classifier for patient mortality prediction (2023)*
@@ -434,6 +448,8 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Tech: Python, scikit-learn, Healthcare ML
 
 [🔗 View Details](https://github.com/daehan-lim/associative-classifier)
+
+---
 
 ### Information Retrieval System
 *Sophisticated document indexing and search system (2023)*
