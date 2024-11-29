@@ -231,7 +231,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - 🗺️ [GISMAP](#gismap) - Advanced GIS system with offline capabilities (2019) [🔗](https://github.com/daehan-lim/gismap)
 
 ### 🔬 Research & ML
-- 🤝 [Federated Learning for Random Forest](#federated-learning-for-random-forest) - Privacy-preserving distributed learning system (2024) [🔗](https://github.com/daehan-lim/federated-rf)
+- 🤝 [Federated Learning for Random Forest](#federated-learning-for-random-forest) - Privacy-preserving distributed learning system (2024) [🔗](https://arxiv.org/abs/2407.19193)
 - 📊 [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024) [🔗](https://github.com/daehan-lim/roberta-news)
 - 🏥 [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023) [🔗](https://github.com/daehan-lim/associative-classifier)
 - 🔍 [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2022) [🔗](https://github.com/daehan-lim/ir-system)
@@ -406,48 +406,52 @@ Software developer with 2.5 years of experience spearheading mobile application 
 ## 🔬 Research & ML Projects
 
 ### Federated Learning for Random Forest
-*Novel privacy-preserving approach for distributed random forest construction (2023)*
+*Privacy-preserving distributed learning system for collaborative model training (2023)*
 
-[Image Placeholder: System architecture]
+*Patent Pending (Appl. No. 10-2024-0001659)*
+
+<img src="images/random_forest.png">
 
 **Overview:**
-- Developed novel ensemble construction method improving accuracy by 10% on non-IID data
-- Created privacy-preserving node computation strategy maintaining data confidentiality
-- Implemented efficient client-server communication protocol
-- Patent Application: 10-2024-0001659
-- Published in Expert Systems with Applications (SCIE Journal)
-- Tech: Python, PyTorch, Distributed Systems
 
-[🔗 View Details](https://github.com/daehan-lim/federated-rf)
+- Designed and implemented a federated learning system for random forests enabling privacy-preserving distributed model training across multiple clients
+- Developed collaborative tree construction mechanism where clients iteratively contribute to growing and refining the model ensemble
+- Developed parallel processing system for efficient ensemble model training across multiple clients simultaneously
+- Demonstrated system effectiveness through extensive testing across 7 benchmark datasets, achieving superior performance compared to baseline approaches
+- Tech Stack: Python, NumPy, scikit-learn, Matplotlib, multiprocessing, Graphviz
+
+[🔗 View Details](https://arxiv.org/abs/2407.19193)
 
 ---
 
 ### RoBERTa News Classification
-*Enhanced topic classification system with synthetic data augmentation (2024)*
+*Enhanced topic classification model with synthetic data augmentation (2024)*
 
-[Image Placeholder: Model architecture]
+<img src="images/roberta_architecture.png">
 
 **Overview:**
-- Improved classification accuracy from 93.5% to 99.5% using synthetic data
-- Implemented sophisticated prompt engineering for GPT-4 data generation
-- Created web-based demonstration platform using Streamlit
-- Tech: Python, PyTorch, Transformers, GPT-4, Streamlit
+- Developed machine learning model for classifying sports news articles into 5 distinct categories using [RoBERTa](https://huggingface.co/docs/transformers/en/model_doc/roberta) and [BBC Sport dataset](http://mlg.ucd.ie/datasets/bbc.html)
+- Augmented limited training data using GPT-4 generated articles and prompt engineering techniques, improving classification accuracy to 99.5%
+- Executed comprehensive experiments evaluating model performance under various data configurations and training conditions
+- Developed and deployed web application using Streamlit enabling real-time article classification with detailed performance visualizations
+- **Tech Stack**: Python, PyTorch, Hugging Face Transformers, GPT-4, Streamlit
 
-[🔗 View Details](https://github.com/daehan-lim/roberta-news)
+[🔗 View Details](https://github.com/daehan-lim/roberta-sport-news-classifier)
 
 ---
 
 ### Medical Data Classifier
-*Novel associative classifier for patient mortality prediction (2023)*
+*Novel classification system for patient mortality prediction using electronic health records (2023)*
 
-[Image Placeholder: System diagram]
+<img src="images/associative_classifier.png" width="420px">
 
 **Overview:**
-- Developed custom associative classifier outperforming CBA and CMAR baselines
-- Implemented novel rule pruning strategy for improved interpretability
-- Created comprehensive evaluation framework for healthcare data
-- Published in Korea Computer Congress
-- Tech: Python, scikit-learn, Healthcare ML
+
+- Developed custom associative classifier tailored for unbalanced healthcare datasets
+- Generated interpretable rules for medical experts to validate predictions
+- Implemented efficient rule-pruning strategy for improved interpretability
+- Achieved superior performance metrics compared to traditional classifiers
+- **Tech Stack**: Python, NumPy, Pandas, scikit-learn, Jupyter
 
 [🔗 View Details](https://github.com/daehan-lim/associative-classifier)
 
