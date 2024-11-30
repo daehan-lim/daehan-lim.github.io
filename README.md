@@ -390,7 +390,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Engineered reusable WebView components with JavaScript injection for seamless integration of government web services
 - **Tech Stack**: Android, Kotlin, MVVM, Retrofit2, Room, Jetpack, ViewPager2, WebView, JavaScript, Coroutines
 
-[🔗 View Details](#)
+[🔗 View Details](https://github.com/daehan-lim/government-portal-app)
 
 ---
 
