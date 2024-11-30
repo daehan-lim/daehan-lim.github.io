@@ -457,7 +457,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 [🔗 View Details](https://github.com/daehan-lim/ir-system)
 -->
----
+<br>
 
 ## 📫 Contact Information
 
