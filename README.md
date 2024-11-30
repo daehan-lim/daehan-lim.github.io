@@ -226,7 +226,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - [Cubadebate News Reader](#cubadebate-news-reader) - News platform with personalized content delivery (2021) [🔗](https://github.com/daehan-lim/cubadebate)
 - [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021) [🔗](https://github.com/daehan-lim/gas-consumption-manager)
 - [ACME App](#acme-app) - Service ticket management solution (2021) [🔗](https://github.com/daehan-lim/acme)
-- [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020) [🔗]()
+- [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020) [🔗](https://github.com/daehan-lim/cuban-yellow-pages)
 - [Government Portal](#government-portal) - Official government platform application (2021) [🔗](https://github.com/daehan-lim/government-portal-app)
 - [Etecsa Browser (update needed)](#etecsa-browser) - To be added (2020) 🔗
 
