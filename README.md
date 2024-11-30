@@ -235,6 +235,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - 📊 [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024) [🔗](https://github.com/daehan-lim/roberta-news)
 - 🏥 [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023) [🔗](https://github.com/daehan-lim/associative-classifier)
 - 🔍 [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2022) [🔗](https://github.com/daehan-lim/ir-system)
+- [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2023) [🔗](assets/information_retrieval_report.pdf)
 
 ## 📝 Project Details
 
@@ -446,22 +447,20 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 [🔗 View Details](https://github.com/daehan-lim/associative-classifier)
 
-<!--
-
 ---
-### Information Retrieval System
-*Sophisticated document indexing and search system (2023)*
 
-[Image Placeholder: System interface]
+### Information Retrieval System
+*Efficient implementation of Boolean and ranked document retrieval (2023)*
 
 **Overview:**
 - Implemented SPIMI-based inverted indexing for efficient document processing
-- Created complex Boolean query system with TF-IDF ranking
-- Developed custom preprocessing pipeline using NLTK and SpaCy
-- Tech: Python, NLTK, SpaCy, Information Retrieval
+- Enabled Boolean query processing (AND, OR, NOT) for precise document filtering
+- Implemented ranked retrieval using TF-IDF weighting and cosine similarity for relevance-based ranking
+- Evaluated system performance on a small document corpus, showcasing efficient retrieval capabilities
+- **Tech Stack**: Python, NLTK, SpaCy, NumPy, contractions
 
-[🔗 View Details](https://github.com/daehan-lim/ir-system)
--->
+[🔗 View Details](assets/information_retrieval_report.pdf)
+
 <br>
 
 ## 📫 Contact Information
