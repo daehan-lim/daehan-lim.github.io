@@ -269,7 +269,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Designed real-time topic management system with dynamic search, post count analytics, and automatic list reordering
 - Integrated in-article keyword search, text-to-speech capability and voice recognition, 
 - Built multi-level commenting interface, infinite scroll with efficient data loading, and SMS subscriptions
-- **Tech Stack:**: Android, Kotlin, MVVM, Room, Retrofit, Moshi, Navigation, Material Design, Glide, JSoup, Coroutines, ViewBinding
+- **Tech Stack:** Android, Kotlin, MVVM, Room, Retrofit, Moshi, Navigation, Material Design, Glide, JSoup, Coroutines, ViewBinding
 
 [🔗 View Details](https://github.com/daehan-lim/cubadebate)
 
