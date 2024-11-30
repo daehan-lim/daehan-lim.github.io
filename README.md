@@ -275,7 +275,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 ---
 
-### Gas Consumption Manager
+### [Gas Consumption Manager](https://github.com/daehan-lim/gas-consumption-manager)
 *National utility tracking system for automated consumption management (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
@@ -299,7 +299,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 ---
 
-### ACME App
+### [ACME App](https://github.com/daehan-lim/acme)
 *Android ticket management app with custom calendar, offline functionality, and location services (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
@@ -325,7 +325,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 ---
 
-### Yellow Pages
+### [Yellow Pages](https://github.com/daehan-lim/cuban-yellow-pages)
 *Enterprise-scale mobile directory revolutionizing business search with sophisticated offline capabilities (2020)*
 
 <div style="background: linear-gradient(135deg, #1e3c72, #2a5298); padding: 15px; border-radius: 15px; box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);">
@@ -371,7 +371,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 ---
 
-### Government Portal
+### [Government Portal](https://github.com/daehan-lim/government-portal-app)
 *Android app for the official [government portal](https://www.redpinar.gob.cu/) of the city of Pinar del Rio, Cuba (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
@@ -396,7 +396,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 ## 🔬 Research & ML Projects
 
-### Federated Learning for Random Forest
+### [Federated Learning for Random Forest](https://arxiv.org/abs/2407.19193)
 *Privacy-preserving distributed learning system for collaborative model training (2023)*
 
 *Patent Pending (Appl. No. 10-2024-0001659)*
@@ -415,7 +415,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 ---
 
-### RoBERTa News Classification
+### [RoBERTa News Classification](https://github.com/daehan-lim/roberta-sport-news-classifier)
 *Enhanced topic classification model with synthetic data augmentation (2024)*
 
 <img src="images/roberta_architecture.png" width="350">
@@ -431,7 +431,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 ---
 
-### Medical Data Classifier
+### [Medical Data Classifier](https://github.com/daehan-lim/associative-classifier)
 *Novel classification system for patient mortality prediction using electronic health records (2023)*
 
 <img src="images/associative_classifier.png" width="420px">
@@ -448,7 +448,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 ---
 
-### Information Retrieval System
+### [Information Retrieval System](assets/information_retrieval_report.pdf)
 *Efficient implementation of Boolean and ranked document retrieval (2023)*
 
 **Overview:**
