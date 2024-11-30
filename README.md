@@ -222,19 +222,18 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 ## 📂 Projects Overview
 
-### 📱 Mobile Applications
-- 📰 [Cubadebate News Reader](#cubadebate-news-reader) - News platform with personalized content delivery (2021) [🔗](https://github.com/daehan-lim/cubadebate)
-- ⛽ [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021) [🔗](https://github.com/daehan-lim/gas-consumption-manager)
-- 👨‍💼 [ACME App](#acme-app) - Service ticket management solution (2021) [🔗](https://github.com/daehan-lim/acme)
-- 📱 [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020) [🔗]()
-- 🏛️ [Government Portal](#government-portal) - Official government platform application (2021) [🔗](https://github.com/daehan-lim/government-portal-app)
-- 🗺️ [Etecsa Browser (update needed)](#etecsa) - To be added (2020) 🔗
+**Mobile Applications**
+- [Cubadebate News Reader](#cubadebate-news-reader) - News platform with personalized content delivery (2021) [🔗](https://github.com/daehan-lim/cubadebate)
+- [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021) [🔗](https://github.com/daehan-lim/gas-consumption-manager)
+- [ACME App](#acme-app) - Service ticket management solution (2021) [🔗](https://github.com/daehan-lim/acme)
+- [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020) [🔗]()
+- [Government Portal](#government-portal) - Official government platform application (2021) [🔗](https://github.com/daehan-lim/government-portal-app)
+- [Etecsa Browser (update needed)](#etecsa-browser) - To be added (2020) 🔗
 
-### 🔬 Research & ML
-- 🤝 [Federated Learning for Random Forest](#federated-learning-for-random-forest) - Privacy-preserving distributed learning system (2024) [🔗](https://arxiv.org/abs/2407.19193)
-- 📊 [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024) [🔗](https://github.com/daehan-lim/roberta-news)
-- 🏥 [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023) [🔗](https://github.com/daehan-lim/associative-classifier)
-- 🔍 [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2022) [🔗](https://github.com/daehan-lim/ir-system)
+**Research & ML**
+- [Federated Learning for Random Forest](#federated-learning-for-random-forest) - Privacy-preserving distributed learning system (2024) [🔗](https://arxiv.org/abs/2407.19193)
+- [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024) [🔗](https://github.com/daehan-lim/roberta-news)
+- [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023) [🔗](https://github.com/daehan-lim/associative-classifier)
 - [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2023) [🔗](assets/information_retrieval_report.pdf)
 
 ## 📝 Project Details
