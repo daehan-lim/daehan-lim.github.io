@@ -228,7 +228,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - [ACME App](#acme-app) - Service ticket management solution (2021) [🔗](https://github.com/daehan-lim/acme)
 - [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020) [🔗](https://github.com/daehan-lim/cuban-yellow-pages)
 - [Government Portal](#government-portal) - Official government platform application (2021) [🔗](https://github.com/daehan-lim/government-portal-app)
-- [Etecsa Browser (update needed)](#etecsa-browser) - To be added (2020) 🔗
+<!-- [Etecsa Browser (update needed)](#etecsa-browser) - To be added (2020) 🔗-->
 
 **Research & ML**
 - [Federated Learning for Random Forest](#federated-learning-for-random-forest) - Privacy-preserving distributed learning system (2023) [🔗](https://arxiv.org/abs/2407.19193)
