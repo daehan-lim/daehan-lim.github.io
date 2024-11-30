@@ -365,7 +365,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Implemented automated background synchronization for offline access to government services and telephone information sections
 - Built responsive search interface with dynamic filters and efficient pagination handling
 - Executed comprehensive software testing, including unit, UI and compatibility tests, optimizing reliability and user experience
-- **Tech Stack**: Android, Java, SQLite, VTM Maps, WebView, HTML, CSS, JavaScript, SharedPreferences
+- **Tech Stack**: Android, Java, SQLite, VTM Maps, WebView, HTML, JavaScript, SharedPreferences, JUnit
 
 [🔗 View Details](https://github.com/daehan-lim/cuban-yellow-pages)
 
