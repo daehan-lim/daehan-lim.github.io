@@ -233,7 +233,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 **Research & ML**
 - [Federated Learning for Random Forest](#federated-learning-for-random-forest) - Privacy-preserving distributed learning system (2024) [🔗](https://arxiv.org/abs/2407.19193)
 - [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024) [🔗](https://github.com/daehan-lim/roberta-sport-news-classifier)
-- [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023) [🔗](https://github.com/daehan-lim/associative-classifier)
+- [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023) [🔗](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 - [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2023) [🔗](assets/information_retrieval_report.pdf)
 
 ## 📝 Project Details
@@ -431,7 +431,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 ---
 
-### [Medical Data Classifier](https://github.com/daehan-lim/associative-classifier)
+### [Medical Data Classifier](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 *Novel classification system for patient mortality prediction using electronic health records (2023)*
 
 <img src="images/associative_classifier.png" width="420px">
@@ -444,7 +444,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Achieved superior performance metrics compared to traditional classifiers
 - **Tech Stack**: Python, NumPy, Pandas, scikit-learn, Jupyter
 
-[🔗 View Details](https://github.com/daehan-lim/associative-classifier)
+[🔗 View Details](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 
 ---
 
