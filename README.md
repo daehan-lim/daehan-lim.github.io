@@ -372,18 +372,23 @@ Software developer with 2.5 years of experience spearheading mobile application 
 ---
 
 ### Government Portal
-*Official government platform application modernizing government services (2021)*
+*Android app for the official [government portal](https://www.redpinar.gob.cu/) of the city of Pinar del Rio, Cuba (2021)*
 
-<div style="border: 4px solid #ccc; border-radius: 12px; padding: 0px; width: fit-content; margin: 0;">
-  <img src="images/portal/portal.jpg" width="240">
+<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
+  <img src="images/portal/menu.png" width="240" style="margin-right: 5px;" />
+  <img src="images/portal/delegado.png" width="240" style="margin-right: 5px;" />
+  <img src="images/portal/form.png" width="240" style="margin-right: 5px;" />
+  <img src="images/portal/code.png" width="240" style="margin-right: 5px;" />
+  <img src="images/portal/guide.png" width="240" /> 
 </div>
 <br>
 
 **Overview:**
-- Modernized legacy codebase implementing MVVM architecture with Jetpack components
-- Engineered responsive REST API integration using Retrofit2 and Moshi
-- Implemented comprehensive data validation and error handling
-- **Tech Stack**: Kotlin, MVVM, Jetpack, Retrofit2, Material Design
+- Modernized legacy codebase by integrating MVVM architecture, Coroutines and JetPack components, improving code maintainability and development workflow
+- Designed and implemented delegate management system with form validation, data caching, and error handling using Retrofit2, Moshi, and Room
+- Built classified ads integration featuring image carousels, offline caching, and responsive UI using custom RecyclerView adapters and data binding
+- Engineered reusable WebView components with JavaScript injection for seamless integration of government web services
+- **Tech Stack**: Android, Kotlin, MVVM, Retrofit2, Room, Jetpack, ViewPager2, WebView, JavaScript, Coroutines
 
 [🔗 View Details](#)
 
