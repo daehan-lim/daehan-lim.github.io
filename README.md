@@ -231,10 +231,10 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - [Etecsa Browser (update needed)](#etecsa-browser) - To be added (2020) 🔗
 
 **Research & ML**
-- [Federated Learning for Random Forest](#federated-learning-for-random-forest) - Privacy-preserving distributed learning system (2024) [🔗](https://arxiv.org/abs/2407.19193)
+- [Federated Learning for Random Forest](#federated-learning-for-random-forest) - Privacy-preserving distributed learning system (2023) [🔗](https://arxiv.org/abs/2407.19193)
 - [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024) [🔗](https://github.com/daehan-lim/roberta-sport-news-classifier)
 - [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023) [🔗](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
-- [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2023) [🔗](assets/information_retrieval_report.pdf)
+- [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2024) [🔗](assets/information_retrieval_report.pdf)
 
 ## 📝 Project Details
 
@@ -449,7 +449,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 ---
 
 ### [Information Retrieval System](assets/information_retrieval_report.pdf)
-*Efficient implementation of Boolean and ranked document retrieval (2023)*
+*Efficient implementation of Boolean and ranked document retrieval (2024)*
 
 **Overview:**
 - Implemented SPIMI-based inverted indexing for efficient document processing
