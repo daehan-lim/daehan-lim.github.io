@@ -223,7 +223,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 ## 📂 Projects Overview
 
 **Mobile Applications**
-- [Cubadebate News Reader](#cubadebate-news-reader) - News platform with personalized content delivery (2021) [🔗](https://github.com/daehan-lim/cubadebate)
+- [Cubadebate News Reader](#cubadebate-news-reader) - News platform with personalized content delivery (2021) [🔗](https://github.com/daehan-lim/cubadebate-app)
 - [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021) [🔗](https://github.com/daehan-lim/gas-consumption-manager)
 - [ACME App](#acme-app) - Service ticket management solution (2021) [🔗](https://github.com/daehan-lim/acme)
 - [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020) [🔗](https://github.com/daehan-lim/cuban-yellow-pages)
@@ -240,7 +240,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 
 ## 📱 Mobile Applications
 
-### [Cubadebate News Reader](https://github.com/daehan-lim/cubadebate)
+### [Cubadebate News Reader](https://github.com/daehan-lim/cubadebate-app)
 *Feature-rich news reader app enabling personalized content delivery and comprehensive offline access (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
@@ -271,7 +271,7 @@ Software developer with 2.5 years of experience spearheading mobile application 
 - Built multi-level commenting interface, infinite scroll with efficient data loading, and SMS subscriptions
 - **Tech Stack:** Android, Kotlin, MVVM, Room, Retrofit, Moshi, Navigation, Material Design, Glide, JSoup, Coroutines, ViewBinding
 
-[🔗 View Details](https://github.com/daehan-lim/cubadebate)
+[🔗 View Details](https://github.com/daehan-lim/cubadebate-app)
 
 ---
 
