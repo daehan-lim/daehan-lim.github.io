@@ -178,7 +178,7 @@
 </div>
 
 ## 👋 About Me
-Software developer with 2.5 years of experience spearheading mobile application development across telecom and enterprise sectors, using modern development practices and Kotlin/Java. Proven track record of successfully leading development teams and driving adoption of modern architectural patterns and Android best practices across multiple successful applications. Advanced expertise in data processing and algorithm optimization from AI/ML research background, enabling development of highly efficient and scalable mobile applications.
+Software developer with nearly 3 years of professional experience spearheading mobile application development across telecom and enterprise sectors, using modern development practices and Kotlin/Java. Experienced in driving adoption of modern architectural patterns and Android best practices across multiple successful applications. Advanced expertise in data processing and algorithm optimization from AI/ML research background, enabling development of highly efficient and scalable mobile applications.
 
 ## 🛠️ Technical Skills
 
