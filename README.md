@@ -106,6 +106,8 @@
 
 <span id="nav-menu-toggle">☰</span>
   <div id="nav-links">
+    <a href="/" style="margin-left: auto;">EN</a>
+    <a href="/kr" style="margin-right: 20px;">KR</a>
     <!-- Navigation Links will be dynamically populated -->
   </div>
 </div>
@@ -197,6 +199,13 @@
   <img src="https://img.shields.io/badge/🗣_English-Fluent_(TOEIC_950)-2ea44f?style=flat-square" alt="English Language Badge">
   <img src="https://img.shields.io/badge/🗣_Korean-Advanced_(TOPIK_6)-2ea44f?style=flat-square" alt="Korean Language Badge">
   <img src="https://img.shields.io/badge/🗣_Spanish-Native-2ea44f?style=flat-square" alt="Spanish Language Badge">
+  <span style="display: block; height: 5px;"></span>
+  <a href="/">
+    <img src="https://img.shields.io/badge/🌐_English-Active-0077B5?style=flat-square" alt="English Version">
+  </a>
+  <a href="/kr">
+    <img src="https://img.shields.io/badge/🌐_한국어-Switch-D14836?style=flat-square" alt="Korean Version">
+  </a>
 </div>
 
 ## 👋 About Me
