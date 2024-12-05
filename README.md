@@ -79,8 +79,8 @@
 
 <div id="nav-menu">
   <div style="margin-left: 20px;">
-    <a href="https://englim.me">EN</a>
-    <a href="/kr">KR</a> 
+    <a href="/" class="active">EN</a>
+    <a href="/kr">KR</a>
   </div>
 
 <span id="nav-menu-toggle">☰</span>

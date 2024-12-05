@@ -28,6 +28,10 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  #nav-menu a.active {
+    color: #f1c40f; /* Same yellow as your hover effect */
+  }
+
   #nav-menu a:hover {
     color: #f1c40f;
   }
@@ -83,7 +87,8 @@
 
 <div id="nav-menu">
   <div style="margin-left: 20px;">
-    <a href="#"></a> 
+    <a href="/">EN</a>
+    <a href="/kr" class="active">KR</a>
   </div>
 
 <span id="nav-menu-toggle">☰</span>
