@@ -186,12 +186,12 @@
   <img src="https://img.shields.io/badge/🗣_스페인어-모국어-2ea44f?style=flat-square" alt="Spanish Language Badge">
 </div>
 
-## 👋 요약
+## 👋 소개
 Software developer with nearly 3 years of professional experience spearheading mobile application development across telecom and enterprise sectors, using modern development practices and Kotlin/Java. Experienced in driving adoption of modern architectural patterns and Android best practices across multiple successful applications. Advanced expertise in data processing and algorithm optimization from AI/ML research background, enabling development of highly efficient and scalable mobile applications.
 
-## 🛠️ Technical Skills
+## 🛠️ 보유 기술
 
-### Core Android Development
+### 안드로이드 개발 핵심 역량
 [![Android](https://img.shields.io/badge/Android-3DDC84?logo=Android&logoColor=white&style=for-the-badge)](https://developer.android.com)
 [![KOTLIN](https://img.shields.io/badge/KOTLIN-7F52FF?logo=KOTLIN&logoColor=white&style=for-the-badge)](https://kotlinlang.org)
 [![JAVA](https://img.shields.io/badge/JAVA-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com)
@@ -207,15 +207,16 @@ Software developer with nearly 3 years of professional experience spearheading m
 [![Navigation](https://img.shields.io/badge/Navigation-6200EE?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/guide/navigation)
 [![Maps & Location](https://img.shields.io/badge/Maps_&_Location-4285F4?style=for-the-badge&logo=google-maps&logoColor=white)](https://developers.google.com/maps/documentation/android-sdk)
 
-### Data Management & Storage
+### 데이터베이스 및 네트워킹
 [![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sql&logoColor=white)](https://www.sqlite.org)
 [![SQLITE](https://img.shields.io/badge/SQLite-003B57?logo=SQLite&logoColor=white&style=for-the-badge)](https://www.sqlite.org)
 [![ROOM](https://img.shields.io/badge/Room-003B57?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/training/data-storage/room)
 [![SharedPreferences](https://img.shields.io/badge/SharedPreferences-4CAF50?style=for-the-badge)](https://developer.android.com/training/data-storage/shared-preferences)
 [![RETROFIT](https://img.shields.io/badge/retrofit-67b586?logo=square&logoColor=white&style=for-the-badge)](https://square.github.io/retrofit)
 [![MOSHI](https://img.shields.io/badge/Moshi-67b586?style=for-the-badge)](https://github.com/square/moshi)
+[![REST API](https://img.shields.io/badge/REST_API-1E90FF?style=for-the-badge)](https://restfulapi.net)
 
-### Additional Languages & Tools
+### 기타 프로그래밍 언어 및 도구
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 [![HTML/CSS](https://img.shields.io/badge/HTML/CSS-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -229,9 +230,9 @@ Software developer with nearly 3 years of professional experience spearheading m
 
 
 
-## 📂 Projects Overview
+## 📂 프로젝트 개요
 
-**Mobile Applications**
+**모바일 애플리케이션**
 - [Cubadebate News Reader](#cubadebate-news-reader) - News platform with personalized content delivery (2021) [🔗](https://github.com/daehan-lim/cubadebate-app)
 - [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021) [🔗](https://github.com/daehan-lim/gas-consumption-manager)
 - [ACME App](#acme-app) - Service ticket management solution (2021) [🔗](https://github.com/daehan-lim/acme)
@@ -239,15 +240,15 @@ Software developer with nearly 3 years of professional experience spearheading m
 - [Government Portal](#government-portal) - Official government platform application (2021) [🔗](https://github.com/daehan-lim/government-portal-app)
 <!-- [Etecsa Browser (update needed)](#etecsa-browser) - To be added (2020) 🔗-->
 
-**Research & ML**
+**연구 및 머신러닝 프로젝트**
 - [Federated Learning for Random Forest](#federated-learning-for-random-forest) - Privacy-preserving distributed learning system (2023) [🔗](https://arxiv.org/abs/2407.19193)
 - [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024) [🔗](https://github.com/daehan-lim/roberta-sport-news-classifier)
 - [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023) [🔗](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 - [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2024) [🔗](assets/information_retrieval_report.pdf)
 
-## 📝 Project Details
+## 📝 프로젝트 상세
 
-## 📱 Mobile Applications
+## 📱 모바일 애플리케이션
 
 ### [Cubadebate News Reader](https://github.com/daehan-lim/cubadebate-app)
 *Feature-rich news reader app enabling personalized content delivery and comprehensive offline access (2021)*
@@ -403,7 +404,7 @@ Software developer with nearly 3 years of professional experience spearheading m
 
 ---
 
-## 🔬 Research & ML Projects
+## 🔬 연구 및 머신러닝 프로젝트
 
 ### [Federated Learning for Random Forest](https://arxiv.org/abs/2407.19193)
 *Privacy-preserving distributed learning system for collaborative model training (2023)*
@@ -471,7 +472,7 @@ Software developer with nearly 3 years of professional experience spearheading m
 
 <br>
 
-## 📫 Contact Information
+## 📫 연락처
 
 Feel free to review my resume or reach out through LinkedIn or email for professional opportunities.
 

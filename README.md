@@ -206,6 +206,7 @@ Software developer with nearly 3 years of professional experience spearheading m
 [![SharedPreferences](https://img.shields.io/badge/SharedPreferences-4CAF50?style=for-the-badge)](https://developer.android.com/training/data-storage/shared-preferences)
 [![RETROFIT](https://img.shields.io/badge/retrofit-67b586?logo=square&logoColor=white&style=for-the-badge)](https://square.github.io/retrofit)
 [![MOSHI](https://img.shields.io/badge/Moshi-67b586?style=for-the-badge)](https://github.com/square/moshi)
+[![REST API](https://img.shields.io/badge/REST_API-1E90FF?style=for-the-badge)](https://restfulapi.net)
 
 ### Additional Languages & Tools
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
