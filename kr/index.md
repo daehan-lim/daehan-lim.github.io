@@ -243,6 +243,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com)
 [![MOCKK](https://img.shields.io/badge/mockk-2496ED?style=for-the-badge)](https://mockk.io)
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
+<br>
 
 ## 📂 프로젝트 개요
 
