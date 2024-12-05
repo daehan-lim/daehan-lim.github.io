@@ -1,9 +1,3 @@
----
-title: "ENG LIM PENJAN ANTONIO (임대한) - Software Developer Portfolio"
-description: "Software developer with 3 years of experience in mobile app development, expertise in Kotlin/Java, and background in AI/ML research. View my projects and experience."
-image: /assets/preview.png
----
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="title" content="ENG LIM PENJAN ANTONIO (임대한) - Software Developer Portfolio">
