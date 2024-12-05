@@ -17,6 +17,14 @@
     font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
 
+  .ko {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    word-break: keep-all;
+    letter-spacing: -0.3px;
+    line-height: 1.8;
+  }
+
   #nav-menu a {
     color: white;
     text-decoration: none;
@@ -187,6 +195,12 @@
 </div>
 
 ## 👋 소개
+<p class="ko">
+3년간 모바일 애플리케이션 개발과 2년간의 머신러닝 연구 경험을 통해 확장 가능하고 사용자 중심의 애플리케이션을 설계하고 개발한 경력을 보유하고 있습니다. Kotlin과 Java를 활용한 통신 및 엔터프라이즈 애플리케이션 개발에 전문성을 갖추었으며, 최신 아키텍처(MVVM, Jetpack 등)를 도입해 안정적이고 유지 보수성이 높은 애플리케이션을 구현했습니다. 또한, 머신러닝 연구 경험을 통해 복잡한 데이터 처리, 알고리즘 최적화, 분산 시스템 설계 경험을 쌓았으며, 이러한 역량을 바탕으로 효율적이고 확장 가능한 솔루션을 제공하는 데 강점을 가지고 있습니다.
+</p>
+
+모바일 및 소프트웨어 개발자로서 약 3년간 통신 및 엔터프라이즈 분야에서 현대적인 기술 스택(Kotlin/Java)을 활용해 다수의 성공적인 애플리케이션을 설계 및 개발했습니다. 특히, 최신 아키텍처 패턴(MVVM, Jetpack 등)과 안드로이드 개발 모범 사례를 도입하여 코드 품질과 유지 보수성을 향상시킨 경험이 있습니다. AI/ML 연구를 통해 데이터 처리 및 알고리즘 최적화 역량을 갖추고 있으며, 이를 기반으로 효율적이고 확장 가능한 애플리케이션 개발에 강점을 가지고 있습니다.
+
 Software developer with nearly 3 years of professional experience spearheading mobile application development across telecom and enterprise sectors, using modern development practices and Kotlin/Java. Experienced in driving adoption of modern architectural patterns and Android best practices across multiple successful applications. Advanced expertise in data processing and algorithm optimization from AI/ML research background, enabling development of highly efficient and scalable mobile applications.
 
 ## 🛠️ 보유 기술
