@@ -1,9 +1,9 @@
----
+~~---
 layout: default
 title: "엥림펜잔안토니오 (임대한)"
 description: "모바일 앱 개발 3년 경력과 AI/ML 연구 배경을 갖춘 소프트웨어 개발자입니다."
 lang: ko-KR
----
+---~~
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');

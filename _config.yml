@@ -1,8 +1,27 @@
+defaults:
+  -
+    scope:
+      path: "" # For all files
+    values:
+      lang: "en-US"
+      title: "ENG LIM PENJAN ANTONIO (임대한)"
+      description: "Software developer with 3 years of experience in mobile app development, expertise in Kotlin/Java, and background in AI/ML research. View my projects and experience."
+      author: "ENG LIM PENJAN ANTONIO"
+      image: /assets/preview.png
+      keywords: "Software Developer, Mobile Development, Android Developer, Kotlin, Java, Software Engineer, Machine Learning, AI Research, Seoul, South Korea"
+  -
+    scope:
+      path: "kr" # For files in kr directory
+    values:
+      lang: "ko-KR"
+      title: "엥림펜잔안토니오 (임대한)"
+      description: "모바일 앱 개발 3년 경력과 AI/ML 연구 배경을 갖춘 소프트웨어 개발자입니다."
+      keywords: "소프트웨어 개발자, 모바일 개발, 안드로이드 개발자, 코틀린, 자바, 소프트웨어 엔지니어, 머신러닝, AI 연구, 서울, 대한민국"
+
 title: "ENG LIM PENJAN ANTONIO (임대한)"
 description: "Software developer with 3 years of experience in mobile app development, expertise in Kotlin/Java, and background in AI/ML research. View my projects and experience."
-url: "https://englim.me" # Update with your actual URL
+url: "https://englim.me"
 author: "ENG LIM PENJAN ANTONIO"
-lang: "en-US"
 
 # Plugins
 plugins:
