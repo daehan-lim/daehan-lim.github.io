@@ -1,25 +1,3 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="title" content="엥림펜잔안토니오 (임대한) - 소프트웨어 개발자 포트폴리오">
-<meta name="description" content="Software developer with 3 years of experience in mobile app development, expertise in Kotlin/Java, and background in AI/ML research. View my projects and experience.">
-<meta name="keywords" content="Software Developer, Mobile Development, Android Developer, Kotlin, Java, Software Engineer, Machine Learning, AI Research, Seoul, South Korea">
-<meta name="author" content="엥림펜잔안토니오">
-<meta name="language" content="English">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://englim.me/kr/">
-<meta property="og:title" content="엥림펜잔안토니오 (임대한) - 소프트웨어 개발자 포트폴리오">
-<meta property="og:description" content="Software developer with 3 years of experience in mobile app development, expertise in Kotlin/Java, and background in AI/ML research. View my projects and experience.">
-<meta property="og:image" content="https://englim.me/assets/preview.png">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://englim.me/kr/">
-<meta property="twitter:title" content="엥림펜잔안토니오 (임대한) - 소프트웨어 개발자 포트폴리오">
-<meta property="twitter:description" content="Software developer with 3 years of experience in mobile app development, expertise in Kotlin/Java, and background in AI/ML research. View my projects and experience.">
-<meta property="twitter:image" content="https://englim.me/assets/preview.png">
-
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
   /* Navigation Menu Styles */

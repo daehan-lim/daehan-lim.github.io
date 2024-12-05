@@ -3,7 +3,6 @@ description: "Software developer with 3 years of experience in mobile app develo
 url: "https://englim.me" # Update with your actual URL
 author: "ENG LIM PENJAN ANTONIO"
 lang: "en-US"
-theme: jekyll-theme-minimal # Optional, pick any Jekyll theme if you'd like a styled layout
 
 # Plugins
 plugins:

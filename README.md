@@ -1,25 +1,3 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="title" content="ENG LIM PENJAN ANTONIO (임대한) - Software Developer Portfolio">
-<meta name="description" content="Software developer with 3 years of experience in mobile app development, expertise in Kotlin/Java, and background in AI/ML research. View my projects and experience.">
-<meta name="keywords" content="Software Developer, Mobile Development, Android Developer, Kotlin, Java, Software Engineer, Machine Learning, AI Research, Seoul, South Korea">
-<meta name="author" content="ENG LIM PENJAN ANTONIO">
-<meta name="language" content="English">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://englim.me/">
-<meta property="og:title" content="ENG LIM PENJAN ANTONIO (임대한) - Software Developer Portfolio">
-<meta property="og:description" content="Software developer with 3 years of experience in mobile app development, expertise in Kotlin/Java, and background in AI/ML research. View my projects and experience.">
-<meta property="og:image" content="https://englim.me/assets/preview.png">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://englim.me/">
-<meta property="twitter:title" content="ENG LIM PENJAN ANTONIO (임대한) - Software Developer Portfolio">
-<meta property="twitter:description" content="Software developer with 3 years of experience in mobile app development, expertise in Kotlin/Java, and background in AI/ML research. View my projects and experience.">
-<meta property="twitter:image" content="https://englim.me/assets/preview.png">
-
 <style>
   /* Navigation Menu Styles */
   #nav-menu {
@@ -106,8 +84,6 @@
 
 <span id="nav-menu-toggle">☰</span>
   <div id="nav-links">
-    <a href="/" style="margin-left: auto;">EN</a>
-    <a href="/kr" style="margin-right: 20px;">KR</a>
     <!-- Navigation Links will be dynamically populated -->
   </div>
 </div>
@@ -199,13 +175,6 @@
   <img src="https://img.shields.io/badge/🗣_English-Fluent_(TOEIC_950)-2ea44f?style=flat-square" alt="English Language Badge">
   <img src="https://img.shields.io/badge/🗣_Korean-Advanced_(TOPIK_6)-2ea44f?style=flat-square" alt="Korean Language Badge">
   <img src="https://img.shields.io/badge/🗣_Spanish-Native-2ea44f?style=flat-square" alt="Spanish Language Badge">
-  <span style="display: block; height: 5px;"></span>
-  <a href="/">
-    <img src="https://img.shields.io/badge/🌐_English-Active-0077B5?style=flat-square" alt="English Version">
-  </a>
-  <a href="/kr">
-    <img src="https://img.shields.io/badge/🌐_한국어-Switch-D14836?style=flat-square" alt="Korean Version">
-  </a>
 </div>
 
 ## 👋 About Me
