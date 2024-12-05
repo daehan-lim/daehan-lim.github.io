@@ -244,14 +244,14 @@ Software developer with nearly 3 years of professional experience spearheading m
 *Feature-rich news reader app enabling personalized content delivery and comprehensive offline access (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="images/cubadebate/news_feed.svg" width="240" style="margin-right: 5px;" />
-  <img src="images/cubadebate/news_article.svg" width="240" style="margin-right: 5px;" />
-  <img src="images/cubadebate/replies.png" width="240" style="margin-right: 5px;" />
-  <img src="images/cubadebate/categories.png" width="240" style="margin-right: 5px;" />
-  <img src="images/cubadebate/topics.png" width="240" style="margin-right: 5px;" />
-  <img src="images/cubadebate/sms.png" width="240" style="margin-right: 5px;" />
-  <img src="images/cubadebate/search.svg" width="240" style="margin-right: 5px;" />
-  <img src="images/cubadebate/saved.png" width="240"  />
+  <img src="../images/cubadebate/news_feed.svg" width="240" style="margin-right: 5px;" />
+  <img src="../images/cubadebate/news_article.svg" width="240" style="margin-right: 5px;" />
+  <img src="../images/cubadebate/replies.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/cubadebate/categories.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/cubadebate/topics.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/cubadebate/sms.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/cubadebate/search.svg" width="240" style="margin-right: 5px;" />
+  <img src="../images/cubadebate/saved.png" width="240"  />
 </div>
 <br>
 
@@ -279,12 +279,12 @@ Software developer with nearly 3 years of professional experience spearheading m
 *National utility tracking system for automated consumption management (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="images/gas/main.png" width="240" style="margin-right: 5px;" />
-  <img src="images/gas/calendar.png" width="240" style="margin-right: 5px;" />
-  <img src="images/gas/chart.png" width="240" style="margin-right: 5px;" />
-  <img src="images/gas/filter.png" width="240" style="margin-right: 5px;" />
-  <img src="images/gas/offices.png" width="240" style="margin-right: 5px;" />
-  <img src="images/gas/video.png" width="240" />
+  <img src="../images/gas/main.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/gas/calendar.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/gas/chart.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/gas/filter.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/gas/offices.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/gas/video.png" width="240" />
 </div>
 <br>
 
@@ -303,14 +303,14 @@ Software developer with nearly 3 years of professional experience spearheading m
 *Android ticket management app with custom calendar, offline functionality, and location services (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="images/acme/login.png" width="240" style="margin-right: 5px;" />
-  <img src="images/acme/signup.png" width="240" style="margin-right: 5px;" />
-  <img src="images/acme/dashboard.png" width="240" style="margin-right: 5px;" />
-  <img src="images/acme/ticket_details.png" width="240" style="margin-right: 5px;" />
-  <img src="images/acme/edit.png" width="240" style="margin-right: 5px;" />
-  <img src="images/acme/calendar.png" width="240" style="margin-right: 5px;" />
-  <img src="images/acme/calendar_sync.png" width="240" style="margin-right: 5px;" /> 
-  <img src="images/acme/maps.png" width="240" />
+  <img src="../images/acme/login.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/acme/signup.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/acme/dashboard.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/acme/ticket_details.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/acme/edit.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/acme/calendar.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/acme/calendar_sync.png" width="240" style="margin-right: 5px;" /> 
+  <img src="../images/acme/maps.png" width="240" />
 </div>
 <br>
 
@@ -333,27 +333,27 @@ Software developer with nearly 3 years of professional experience spearheading m
     <!-- Home -->
     <div style="text-align: center; min-width: 220px;">
       <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Search businesses, access emergency numbers and business directories</p>
-      <img src="images/yellow_pages/main.jpg" alt="Main screen" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
+      <img src="../images/yellow_pages/main.jpg" alt="Main screen" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
     </div>
     <!-- Green Pages -->
     <div style="text-align: center; min-width: 220px;">
       <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Find government procedures, requirements and service schedules</p>
-      <img src="images/yellow_pages/green_home.jpg" alt="Green Pages" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
+      <img src="../images/yellow_pages/green_home.jpg" alt="Green Pages" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
     </div>
     <!-- Info Home -->
     <div style="text-align: center; min-width: 220px;">
       <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Browse phone services, customer support and international calls</p>
-      <img src="images/yellow_pages/information_home.jpg" alt="Information Pages" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
+      <img src="../images/yellow_pages/information_home.jpg" alt="Information Pages" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
     </div>
     <!-- Mobile Internet -->
     <div style="text-align: center; min-width: 220px;">
       <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Explore mobile internet plans, connection settings and service options</p>
-      <img src="images/yellow_pages/information_mobile_internet.jpg" alt="Mobile Internet" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
+      <img src="../images/yellow_pages/information_mobile_internet.jpg" alt="Mobile Internet" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
     </div>
     <!-- Ad Space -->
     <div style="text-align: center; min-width: 220px;">
       <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Request advertising space, promote business and increase visibility</p>
-      <img src="images/yellow_pages/publicity.jpg" alt="Advertising Portal" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
+      <img src="../images/yellow_pages/publicity.jpg" alt="Advertising Portal" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
     </div>
   </div>
 </div>
@@ -375,11 +375,11 @@ Software developer with nearly 3 years of professional experience spearheading m
 *Android app for the official [government portal](https://www.redpinar.gob.cu/) of the city of Pinar del Rio, Cuba (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="images/portal/menu.png" width="240" style="margin-right: 5px;" />
-  <img src="images/portal/delegado.png" width="240" style="margin-right: 5px;" />
-  <img src="images/portal/form.png" width="240" style="margin-right: 5px;" />
-  <img src="images/portal/code.png" width="240" style="margin-right: 5px;" />
-  <img src="images/portal/guide.png" width="240" /> 
+  <img src="../images/portal/menu.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/portal/delegado.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/portal/form.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/portal/code.png" width="240" style="margin-right: 5px;" />
+  <img src="../images/portal/guide.png" width="240" /> 
 </div>
 <br>
 
@@ -401,7 +401,7 @@ Software developer with nearly 3 years of professional experience spearheading m
 
 *Patent Pending (Appl. No. 10-2024-0001659)*
 
-<img src="images/random_forest.png" width="650">
+<img src="../images/random_forest.png" width="650">
 
 **Overview:**
 
@@ -418,7 +418,7 @@ Software developer with nearly 3 years of professional experience spearheading m
 ### [RoBERTa News Classification](https://github.com/daehan-lim/roberta-sport-news-classifier)
 *Enhanced topic classification model with synthetic data augmentation (2024)*
 
-<img src="images/roberta_architecture.png" width="350">
+<img src="../images/roberta_architecture.png" width="350">
 
 **Overview:**
 - Developed machine learning model for classifying sports news articles into 5 distinct categories using [RoBERTa](https://huggingface.co/docs/transformers/en/model_doc/roberta) and [BBC Sport dataset](http://mlg.ucd.ie/datasets/bbc.html)
@@ -434,7 +434,7 @@ Software developer with nearly 3 years of professional experience spearheading m
 ### [Medical Data Classifier](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 *Novel classification system for patient mortality prediction using electronic health records (2023)*
 
-<img src="images/associative_classifier.png" width="420px">
+<img src="../images/associative_classifier.png" width="420px">
 
 **Overview:**
 
@@ -458,7 +458,7 @@ Software developer with nearly 3 years of professional experience spearheading m
 - Evaluated system performance on a small document corpus, showcasing efficient retrieval capabilities
 - **Tech Stack**: Python, NLTK, SpaCy, NumPy, contractions
 
-[🔗 View Details](assets/information_retrieval_report.pdf)
+[🔗 View Details](../assets/information_retrieval_report.pdf)
 
 <br>
 
@@ -467,7 +467,7 @@ Software developer with nearly 3 years of professional experience spearheading m
 Feel free to review my resume or reach out through LinkedIn or email for professional opportunities.
 
 <div align="center">
-  <a href="/assets/Resume_ENG_LIM_PENJAN_ANTONIO.pdf">
+  <a href="../assets/Resume_ENG_LIM_PENJAN_ANTONIO.pdf">
     <img src="https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=readme&logoColor=white" alt="Resume Badge">
   </a>
   <a href="https://linkedin.com/in/penjan-a-eng-lim">
