@@ -1,4 +1,5 @@
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
   /* Navigation Menu Styles */
   #nav-menu {
     position: fixed;
@@ -13,15 +14,18 @@
     justify-content: space-between; /* Space between items */
     align-items: center; /* Vertically align items */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
 
   #nav-menu a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
-    font-weight: bold;
     font-size: 14px;
     transition: color 0.3s ease;
+    font-weight: 700; /* Increase from bold to 700 */
+    -webkit-font-smoothing: antialiased; /* Better text rendering */
+    -moz-osx-font-smoothing: grayscale;
   }
 
   #nav-menu a:hover {
