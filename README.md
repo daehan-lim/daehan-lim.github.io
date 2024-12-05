@@ -1,3 +1,25 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="title" content="ENG LIM PENJAN ANTONIO (임대한) - Software Developer Portfolio">
+<meta name="description" content="Software developer with 3 years of experience in mobile app development, expertise in Kotlin/Java, and background in AI/ML research. View my projects and experience.">
+<meta name="keywords" content="Software Developer, Mobile Development, Android Developer, Kotlin, Java, Software Engineer, Machine Learning, AI Research, Seoul, South Korea">
+<meta name="author" content="ENG LIM PENJAN ANTONIO">
+<meta name="language" content="English">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://englim.me/">
+<meta property="og:title" content="ENG LIM PENJAN ANTONIO (임대한) - Software Developer Portfolio">
+<meta property="og:description" content="Software developer with 3 years of experience in mobile app development, expertise in Kotlin/Java, and background in AI/ML research. View my projects and experience.">
+<meta property="og:image" content="https://englim.me/assets/preview.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://englim.me/">
+<meta property="twitter:title" content="ENG LIM PENJAN ANTONIO (임대한) - Software Developer Portfolio">
+<meta property="twitter:description" content="Software developer with 3 years of experience in mobile app development, expertise in Kotlin/Java, and background in AI/ML research. View my projects and experience.">
+<meta property="twitter:image" content="https://englim.me/assets/preview.png">
+
 <style>
   /* Navigation Menu Styles */
   #nav-menu {
