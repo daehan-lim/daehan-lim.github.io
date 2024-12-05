@@ -196,11 +196,13 @@
 
 ## 👋 소개
 <p class="ko">
-약 3년간 모바일 애플리케이션 개발과 2년간의 머신러닝 연구 경험을 통해 확장 가능하고 사용자 중심의 애플리케이션을 설계하고 개발한 경력을 보유하고 있습니다. Kotlin과 Java를 활용한 통신 및 엔터프라이즈 애플리케이션 개발에 전문성을 갖추었으며, 최신 아키텍처(MVVM, Jetpack 등)를 도입해 안정적이고 유지 보수성이 높은 애플리케이션을 구현했습니다. 또한, 머신러닝 연구 경험을 통해 복잡한 데이터 처리, 알고리즘 최적화, 분산 시스템 설계 경험을 쌓았으며, 이러한 역량을 바탕으로 효율적이고 확장 가능한 솔루션을 제공하는 데 강점을 가지고 있습니다.
+약 3년간 모바일 애플리케이션 개발과 2년간의 머신러닝 연구 경험을 통해 확장 가능하고 사용자 중심의 애플리케이션을 설계하고 개발한 경력을 보유하고 있습니다. Kotlin과 Java를 활용한 통신 및 엔터프라이즈 애플리케이션 개발에 전문성을 갖추었으며, 최신 아키텍처(MVVM, Jetpack 등)를 도입해 안정적이고 유지 보수성이 높은 애플리케이션을 구현했습니다. 머신러닝 연구 경험을 통해 고도화된 데이터 처리, 알고리즘 최적화, 분산 시스템 설계 경험을 쌓았으며, 이를 활영하여 효율적이고 확장 가능한 모바일 솔루션을 제공할 수 있습니다.
 </p>
 
 <!--
-Software developer with nearly 3 years of professional experience spearheading mobile application development across telecom and enterprise sectors, using modern development practices and Kotlin/Java. Experienced in driving adoption of modern architectural patterns and Android best practices across multiple successful applications. Advanced expertise in data processing and algorithm optimization from AI/ML research background, enabling development of highly efficient and scalable mobile applications.
+약 3년간 확장 가능하고 사용자 중심의 모바일 애플리케이션을 개발한 경험과 2년간 AI/ML 배경을 활용한 데이터 처리, 알고리즘 최적화, 분산 시스템 설계의 실무 경험을 보유하고 있습니다. 통신 및 엔터프라이즈 분야에서 모바일 애플리케이션 개발을 주도하며, 코드 유지 보수성과 개발 효율성을 높이기 위해 현대적인 아키텍처와 개발 모범 사례를 도입했습니다. Java, Kotlin, Python, JavaScript에 능숙하며, 깊은 기술적 전문성과 혁신적인 문제 해결 능력을 결합하여 신뢰할 수 있고 고성능의 모바일 솔루션을 제공합니다.
+
+Cuban-Korean Software developer with nearly 3 years of experience building scalable, user-centric mobile applications and 2 years of hands-on expertise in advanced data processing, algorithm optimization, and distributed systems, leveraging an AI/ML background. Spearheaded mobile application development across telecom and enterprise sectors,  driving adoption of modern architectural patterns and development best practices to enhance code maintainability and development efficiency. Proficient in Java, Kotlin, Python, and JavaScript, combines technical expertise with innovative problem-solving to deliver reliable, high-performing mobile solutions.
 -->
 
 ## 🛠️ 보유 기술
@@ -241,8 +243,6 @@ Software developer with nearly 3 years of professional experience spearheading m
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com)
 [![MOCKK](https://img.shields.io/badge/mockk-2496ED?style=for-the-badge)](https://mockk.io)
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
-
-
 
 ## 📂 프로젝트 개요
 
