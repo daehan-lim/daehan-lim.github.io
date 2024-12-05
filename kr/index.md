@@ -163,13 +163,13 @@
 
 <div align="center">
   <a href="/assets/Resume_ENG_LIM_PENJAN_ANTONIO.pdf">
-    <img src="https://img.shields.io/badge/-레슈메-4285F4?style=for-the-badge&logo=readme&logoColor=white" alt="Resume Badge">
+    <img src="https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=readme&logoColor=white" alt="Resume Badge">
   </a>
   <a href="https://linkedin.com/in/penjan-a-eng-lim">
-    <img src="https://img.shields.io/badge/-링크드인-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
   </a>
   <a href="mailto:penjan.eng@gmail.com">
-    <img src="https://img.shields.io/badge/-이메일-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
   </a>
   <span style="display: block; height: 5px;"></span>
   <img src="https://img.shields.io/badge/🌏_위치-서울,_대한민국-1F6FEB?style=flat-square" alt="Location Badge">
