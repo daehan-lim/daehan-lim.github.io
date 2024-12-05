@@ -488,7 +488,9 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 
 ## 📫 연락처
 
-Feel free to review my resume or reach out through LinkedIn or email for professional opportunities.
+<p class="ko">
+채용 및 협업 문의는 언제든 환영합니다. 아래 링크를 통해 이력서를 확인하거나 링크드인이나 이메일로 연락해 주실 수 있습니다.
+</p>
 
 <div align="center">
   <a href="../assets/Resume_ENG_LIM_PENJAN_ANTONIO.pdf">
