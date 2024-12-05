@@ -1,0 +1,14 @@
+title: "ENG LIM PENJAN ANTONIO (임대한)"
+description: "Software developer with 3 years of experience in mobile app development, expertise in Kotlin/Java, and background in AI/ML research. View my projects and experience."
+url: "https://englim.me" # Update with your actual URL
+author: "ENG LIM PENJAN ANTONIO"
+lang: "en-US"
+theme: jekyll-theme-minimal # Optional, pick any Jekyll theme if you'd like a styled layout
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+
+# Allow custom includes
+include:
+  - _includes/head-custom.html
