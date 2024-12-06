@@ -29,7 +29,7 @@
     color: white;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 17px;
+    font-size: 16px;
     transition: color 0.3s ease;
     font-weight: 700; /* Increase from bold to 700 */
     -webkit-font-smoothing: antialiased; /* Better text rendering */
