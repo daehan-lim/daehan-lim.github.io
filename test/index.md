@@ -195,7 +195,7 @@
 
 ## 👋 소개
 <p class="ko">
-약 3년간 모바일 애플리케이션 개발과 2년간의 머신러닝 연구 경험을 통해 확장 가능하고 사용자 중심의 애플리케이션을 설계하고 개발한 경력을 보유하고 있습니다. Kotlin과 Java를 활용한 통신 및 엔터프라이즈 애플리케이션 개발에 전문성을 갖추었으며, 최신 아키텍처(MVVM, Jetpack 등)를 도입해 안정적이고 유지 보수성이 높은 애플리케이션을 구현했습니다. 머신러닝 연구 경험을 통해 고도화된 데이터 처리, 알고리즘 최적화, 분산 시스템 설계 경험을 쌓았으며, 이를 활영하여 효율적이고 확장 가능한 모바일 솔루션을 제공할 수 있습니다.
+약 3년간 모바일 애플리케이션 개발과 2년간의 머신러닝 연구 경험을 통해 확장 가능하고 사용자 중심의 애플리케이션을 설계하고 개발한 경력을 보유하고 있습니다. Kotlin과 Java를 활용한 통신 및 엔터프라이즈 애플리케이션 개발에 전문성을 갖추었으며, 최신 아키텍처(MVVM, Jetpack 등)를 도입해 안정적이고 유지 보수성이 높은 애플리케이션을 구현했습니다. 머신러닝 연구 경험을 통해 고도화된 데이터 처리, 알고리즘 최적화, 분산 시스템 설계 경험을 쌓았으며, 이를 활용하여 효율적이고 확장 가능한 모바일 솔루션을 제공할 수 있습니다.
 </p>
 
 <br>
@@ -206,7 +206,7 @@
 Cuban-Korean Software developer with nearly 3 years of experience building scalable, user-centric mobile applications and 2 years of hands-on expertise in advanced data processing, algorithm optimization, and distributed systems, leveraging an AI/ML background. Spearheaded mobile application development across telecom and enterprise sectors,  driving adoption of modern architectural patterns and development best practices to enhance code maintainability and development efficiency. Proficient in Java, Kotlin, Python, and JavaScript, combines technical expertise with innovative problem-solving to deliver reliable, high-performing mobile solutions.
 -->
 
-## 🛠️ 보유 기술
+## 🛠️ 보유 스킬
 
 ### 안드로이드 개발 핵심 역량
 [![Android](https://img.shields.io/badge/Android-3DDC84?logo=Android&logoColor=white&style=for-the-badge)](https://developer.android.com)
@@ -249,24 +249,23 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 ## 📂 프로젝트 개요 (목록?)
 
 **모바일 애플리케이션**
-- [Cubadebate News Reader](#cubadebate-news-reader) - News platform with personalized content delivery (2021) [🔗](https://github.com/daehan-lim/cubadebate-app)
-- [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021) [🔗](https://github.com/daehan-lim/gas-consumption-manager)
-- [ACME App](#acme-app) - Service ticket management solution (2021) [🔗](https://github.com/daehan-lim/acme)
-- [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020) [🔗](https://github.com/daehan-lim/cuban-yellow-pages)
-- [Government Portal](#government-portal) - Official government platform application (2021) [🔗](https://github.com/daehan-lim/government-portal-app)
-<!-- [Etecsa Browser (update needed)](#etecsa-browser) - To be added (2020) 🔗-->
+- [Cubadebate 뉴스 앱](#cubadebate-news-reader) - 맞춤형 콘텐츠 제공 및 오프라인 저장 기능을 갖춘 뉴스 앱 (2021) [🔗](https://github.com/daehan-lim/cubadebate-app)
+- [가스 소비(사용량?) 관리 앱](#gas-consumption-manager) - 공공 유틸리티 추적 시스템 (2021) [🔗](https://github.com/daehan-lim/gas-consumption-manager)
+- [ACME 앱](#acme-app) - 서비스 티켓 관리 솔루션 (2021) [🔗](https://github.com/daehan-lim/acme)
+- [Yellow Pages](#yellow-pages) - 오프라인 지도(맵핑?) 기능이 포함된 전화번호부 모바일 앱 (2020) [🔗](https://github.com/daehan-lim/cuban-yellow-pages)
+- [정부 포털 앱](#government-portal) - 공식 정부 대표 플랫폼 애플리케이션 (2021) [🔗](https://github.com/daehan-lim/government-portal-app)
 
-**연구 및 머신러닝 프로젝트**
-- [Federated Learning for Random Forest](#federated-learning-for-random-forest) - Privacy-preserving distributed learning system (2023) [🔗](https://arxiv.org/abs/2407.19193)
-- [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024) [🔗](https://github.com/daehan-lim/roberta-sport-news-classifier)
-- [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023) [🔗](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
-- [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2024) [🔗](assets/information_retrieval_report.pdf)
+**연구 및 머신러닝**
+- [연합학습 기반 랜덤 포레스트](#federated-learning-for-random-forest) - 프라이버시(를?) 보호(하는?) 분산 학습 시스템 (2023) [🔗](https://arxiv.org/abs/2407.19193)
+- [RoBERTa 뉴스 분류](#roberta-news-classification) - 합성 데이터를 활용해 성능을 개선한 주제 분류 모델 (2024) [🔗](https://github.com/daehan-lim/roberta-sport-news-classifier)
+- [의료 데이터 분류기](#medical-data-classifier) - 환자 사망률 예측 시스템 (2023) [🔗](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
+- [정보 검색 시스템](#information-retrieval-system) - 문서 색인(화?) 및 검색 시스템 (2024) [🔗](assets/information_retrieval_report.pdf)
 
 ## 📝 프로젝트 상세
 
 ## 📱 모바일 애플리케이션
 
-### [Cubadebate News Reader](https://github.com/daehan-lim/cubadebate-app)
+### [Cubadebate 뉴스 앱](https://github.com/daehan-lim/cubadebate-app)
 *Feature-rich news reader app enabling personalized content delivery and comprehensive offline access (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
