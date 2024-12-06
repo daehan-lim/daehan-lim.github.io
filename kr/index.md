@@ -22,15 +22,14 @@
     font-weight: 400;
     word-break: keep-all;
     letter-spacing: -0.3px;
-    line-height: 1.8;
-    font-size: 1.5em;
+    line-height: 1.8; 
   }
 
   #nav-menu a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 14px;
+    font-size: 17px;
     transition: color 0.3s ease;
     font-weight: 700; /* Increase from bold to 700 */
     -webkit-font-smoothing: antialiased; /* Better text rendering */
