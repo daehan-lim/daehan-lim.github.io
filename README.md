@@ -328,7 +328,7 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 ---
 
 ### [Yellow Pages](https://github.com/daehan-lim/cuban-yellow-pages)
-*Enterprise-scale mobile directory revolutionizing business search with sophisticated offline capabilities (2020)*
+*Mobile business directory app for Cuba's telecommunications company combining business search with essential telecom services (2020)*
 
 <div style="background: linear-gradient(135deg, #1e3c72, #2a5298); padding: 15px; border-radius: 15px; box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);">
   <div style="display: flex; overflow-x: auto; gap: 30px; padding: 10px 5px;">
