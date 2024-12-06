@@ -23,7 +23,7 @@
     word-break: keep-all;
     letter-spacing: -0.3px;
     line-height: 1.8;
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 
   #nav-menu a {
