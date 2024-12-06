@@ -33,3 +33,6 @@ logs/
 
 # Personal IDE settings
 *.iml
+
+Gemfile
+_site/
