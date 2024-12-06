@@ -267,9 +267,9 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 
 **Overview:**
 - Built customizable news feed system with dynamic category and topic selection interfaces, enabling personalized content delivery
-- Implemented offline caching for bookmarking full articles, including images
-- Designed real-time topic management system with dynamic search, post count analytics, and automatic list reordering
-- Integrated in-article keyword search, text-to-speech capability and voice recognition, 
+- Implemented offline caching for bookmarking full articles including images, reducing data usage
+- Designed real-time topic management system with dynamic search, post count display, and automatic list reordering
+- Integrated in-article text search, text-to-speech capability and voice recognition, 
 - Built multi-level commenting interface, infinite scroll with efficient data loading, and SMS subscriptions
 - **Tech Stack:** Android, Kotlin, MVVM, Room, Retrofit, Moshi, Navigation, Material Design, Glide, JSoup, Coroutines, ViewBinding
 
