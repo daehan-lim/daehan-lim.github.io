@@ -266,7 +266,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 ## 📱 모바일 애플리케이션
 
 ### [Cubadebate 뉴스 앱](https://github.com/daehan-lim/cubadebate-app)
-*Feature-rich news reader app enabling personalized content delivery and comprehensive offline access (2021)*
+*사용자 맞춤형 뉴스 제공, 오프라인 저장, TTS 및 고급 검색 기능 등을 탑재한 뉴스 앱 (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
   <img src="../images/cubadebate/news_feed.svg" width="240" style="margin-right: 5px;" />
@@ -288,12 +288,12 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 <br><br>
 -->
 
-**Overview:**
-- Built customizable news feed system with dynamic category and topic selection interfaces, enabling personalized content delivery
-- Implemented offline caching for bookmarking full articles, including images
-- Designed real-time topic management system with dynamic search, post count analytics, and automatic list reordering
-- Integrated in-article keyword search, text-to-speech capability and voice recognition, 
-- Built multi-level commenting interface, infinite scroll with efficient data loading, and SMS subscriptions
+**개요:**
+- 동적 카테고리 및 주제 선택 인터페이스로 맞춤형 뉴스 피드 시스템 구축
+- Room DB를 활용해 이미지를 포함한 전체 기사의 오프라인 저장으로 데이터 사용량 최적화
+- 실시간 주제 관리 시스템에 동적 검색과 자동 목록 재정렬 기능 구현
+- 기사 내 텍스트 검색, 음성합성(TTS) 및 음성 인식 기능 통합
+- 다중 레벨 댓글 인터페이스와 효율적으로 데이터를 로딩하는 무한 스크롤, SMS 구독 등의 기능 구현
 - **Tech Stack:** Android, Kotlin, MVVM, Room, Retrofit, Moshi, Navigation, Material Design, Glide, JSoup, Coroutines, ViewBinding
 
 [🔗 View Details](https://github.com/daehan-lim/cubadebate-app)
