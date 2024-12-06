@@ -159,7 +159,7 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%230077B5&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Penjan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
 
 <div align="center">
-  <a href="/assets/Resume_ENG_LIM_PENJAN_ANTONIO.pdf">
+  <a href="/assets/Resume_Penjan_Antonio_Eng_Lim.pdf">
     <img src="https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=readme&logoColor=white" alt="Resume Badge">
   </a>
   <a href="https://linkedin.com/in/penjan-a-eng-lim">
@@ -225,7 +225,7 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 ## 📂 Projects Overview
 
 **Mobile Applications**
-- [Cubadebate News Reader](#cubadebate-news-reader) - News platform with personalized content delivery (2021) [🔗](https://github.com/daehan-lim/cubadebate-app)
+- [Cubadebate News Reader](#cubadebate-news-reader) - News app with personalized content delivery (2021) [🔗](https://github.com/daehan-lim/cubadebate-app)
 - [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021) [🔗](https://github.com/daehan-lim/gas-consumption-manager)
 - [ACME App](#acme-app) - Service ticket management solution (2021) [🔗](https://github.com/daehan-lim/acme)
 - [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020) [🔗](https://github.com/daehan-lim/cuban-yellow-pages)
@@ -469,7 +469,7 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 Feel free to review my resume or reach out through LinkedIn or email for professional opportunities.
 
 <div align="center">
-  <a href="/assets/Resume_ENG_LIM_PENJAN_ANTONIO.pdf">
+  <a href="/assets/Resume_Penjan_Antonio_Eng_Lim.pdf">
     <img src="https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=readme&logoColor=white" alt="Resume Badge">
   </a>
   <a href="https://linkedin.com/in/penjan-a-eng-lim">
