@@ -391,9 +391,9 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 
 **Overview:**
 - Modernized legacy codebase by integrating MVVM architecture, Coroutines and JetPack components, improving code maintainability and development workflow
-- Designed and implemented delegate management system with form validation, data caching, and error handling using Retrofit2, Moshi, and Room
-- Built classified ads integration featuring image carousels, offline caching, and responsive UI using custom RecyclerView adapters and data binding
-- Engineered reusable WebView components with JavaScript injection for seamless integration of government web services
+- Built classified ad feed featuring API integration, offline data caching, real-time synchronization, image carousels, and network status monitoring, improving user accessibility
+- Designed and implemented district representative portal with features like request submission, meeting schedule management and status tracking using Retrofit/Moshi, automating administrative processes
+- Integrated provincial council web portal, optimizing desktop UI for mobile through JavaScript injection and WebView customization
 - **Tech Stack**: Android, Kotlin, MVVM, Retrofit2, Room, Jetpack, ViewPager2, WebView, JavaScript, Coroutines
 
 [🔗 View Details](https://github.com/daehan-lim/government-portal-app)
