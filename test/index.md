@@ -418,10 +418,6 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 - 지역 매물 피드 시스템 구현: API 연동과 오프라인 데이터 캐싱, 실시간 동기화, 이미지 캐러셀, 네트워크 상태 모니터링으로 사용자 접근성 개선
 - 지역구 대표자 관리 시스템: Retrofit/Moshi 활용하여 민원 신청, 회의 일정 관리, 처리 현황 추적 등 주요 기능 구현으로 행정 업무 자동화
 - 시도의회 포털 통합: JavaScript 인젝션 및 WebView 커스터마이징으로 데스크톱 중심 UI를 모바일용으로 최적화
-<!-- - Retrofit2와 Moshi를 활용한 REST API 통합으로 폼 검증 및 오류 처리 기능을 갖춘 대리인 관리 시스템 구현
-- Retrofit2, Moshi, Room을 활용한 REST API 통합 및 대리인 관리 시스템 구현으로 폼 검증, 데이터 캐싱, 오류 처리 구현
-- 외부 API 연동을 통한 지역 매물 정보 피드 개발 및 오프라인 데이터 캐싱, 이미지 캐러셀, 실시간 동기화 기능 구현
--->
 - **기술 스택**: Android, Kotlin, MVVM, Retrofit2, Room, Jetpack, ViewPager2, WebView, JavaScript, Coroutines
 
 [🔗 상세보기](https://github.com/daehan-lim/government-portal-app)
