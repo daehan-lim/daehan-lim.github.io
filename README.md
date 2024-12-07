@@ -24,6 +24,10 @@
     transition: color 0.3s ease;
   }
 
+  #nav-menu > div:first-child a { 
+      margin: 0 10px;
+  }
+
   #nav-menu a:hover {
     color: #f1c40f;
   }

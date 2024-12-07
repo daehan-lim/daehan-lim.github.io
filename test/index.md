@@ -29,11 +29,16 @@
     color: white;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 16px;
+    font-size: 15px;
     transition: color 0.3s ease;
     font-weight: 700; /* Increase from bold to 700 */
     -webkit-font-smoothing: antialiased; /* Better text rendering */
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  #nav-menu > div:first-child a {
+    font-size: 14px;
+    margin: 0 10px;
   }
 
   #nav-menu a.active {
