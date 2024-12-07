@@ -356,7 +356,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 ---
 
 ### [Yellow Pages](https://github.com/daehan-lim/cuban-yellow-pages)
-*전화번호부 검색과 통신 서비스를 제공하는 쿠바 국영 통신사의 모바일 디렉터리 솔루션 (2020)*
+*전화번호부 검색과 통신 서비스를 제공하는 쿠바 국영 통신사의 최초의 모바일 디렉터리 앱 (2020)*
 
 <div style="background: linear-gradient(135deg, #1e3c72, #2a5298); padding: 15px; border-radius: 15px; box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);">
   <div style="display: flex; overflow-x: auto; gap: 30px; padding: 10px 5px;">
@@ -390,11 +390,11 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 <br>
 
 **개요:**
-- Developed Cuba's first Yellow Pages mobile app, implementing enterprise-grade API integration for real-time business search
-- Engineered offline vector mapping system reducing data usage by 85% through embedded map files for business geolocalization
-- Implemented automated background synchronization for offline access to government services and telephone information sections
-- Built responsive search interface with dynamic filters and efficient pagination handling
-- Executed comprehensive software testing, including unit, UI and compatibility tests, optimizing reliability and user experience
+- 엔터프라이즈급 API를 활용하여(활용한?) 실시간 전화번호부 검색 시스템 구현
+- 내장 지도 파일을 활용한 벡터 매핑 시스템으로 (구현으로?) 데이터 사용량 85% 절감
+- 정부 업무 안내와 전화 서비스 정보의 오프라인 접근을 위한 자동 백그라운드 동기화 개발(구현?)
+- 동적 필터와 효율적인 페이징 처리가 적용된 반응형 검색 인터페이스 구축
+- Unit, UI, 호환성 테스트를 통해 안정성(신뢰성?)과 사용자 경험 최적화
 - **기술 스택**: Android, Java, SQLite, VTM Maps, WebView, HTML, JavaScript, SharedPreferences, JUnit
 
 [🔗 상세보기](https://github.com/daehan-lim/cuban-yellow-pages)
