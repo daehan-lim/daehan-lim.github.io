@@ -402,7 +402,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 ---
 
 ### [정부 포털 앱](https://github.com/daehan-lim/government-portal-app)
-*Android app for the official [government portal](https://www.redpinar.gob.cu/) of the city of Pinar del Rio, Cuba (2021)*
+*쿠바 피나르 델 리오 시의 공식 [정부 대표 포털](https://www.redpinar.gob.cu/) 안드로이드 앱 (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
   <img src="../images/portal/menu.png" width="240" style="margin-right: 5px;" />
@@ -414,10 +414,14 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 <br>
 
 **개요:**
-- Modernized legacy codebase by integrating MVVM architecture, Coroutines and JetPack components, improving code maintainability and development workflow
-- Designed and implemented delegate management system with form validation, data caching, and error handling using Retrofit2, Moshi, and Room
-- Built classified ads integration featuring image carousels, offline caching, and responsive UI using custom RecyclerView adapters and data binding
-- Engineered reusable WebView components with JavaScript injection for seamless integration of government web services
+- MVVM 아키텍처, Coroutines, JetPack 컴포넌트 도입해 레거시 코드 현대화 및 유지보수성 향상
+- 지역 매물 피드 시스템 구현: API 연동과 오프라인 데이터 캐싱, 실시간 동기화, 이미지 캐러셀, 네트워크 상태 모니터링으로 사용자 접근성 개선
+- 지역구 대표자 관리 시스템: Retrofit/Moshi 활용하여 민원 신청, 회의 일정 관리, 처리 현황 추적 등 주요 기능 구현으로 행정 업무 자동화
+- 시도의회 포털 통합: JavaScript 인젝션 및 WebView 커스터마이징으로 데스크톱 중심 UI를 모바일용으로 최적화
+<!-- - Retrofit2와 Moshi를 활용한 REST API 통합으로 폼 검증 및 오류 처리 기능을 갖춘 대리인 관리 시스템 구현
+- Retrofit2, Moshi, Room을 활용한 REST API 통합 및 대리인 관리 시스템 구현으로 폼 검증, 데이터 캐싱, 오류 처리 구현
+- 외부 API 연동을 통한 지역 매물 정보 피드 개발 및 오프라인 데이터 캐싱, 이미지 캐러셀, 실시간 동기화 기능 구현
+-->
 - **기술 스택**: Android, Kotlin, MVVM, Retrofit2, Room, Jetpack, ViewPager2, WebView, JavaScript, Coroutines
 
 [🔗 상세보기](https://github.com/daehan-lim/government-portal-app)
