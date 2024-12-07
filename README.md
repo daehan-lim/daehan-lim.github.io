@@ -272,7 +272,7 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 **Overview:**
 - Built customizable news feed system with dynamic category and topic selection interfaces, enabling personalized content delivery
 - Implemented offline caching for bookmarking full articles including images, reducing data usage
-- Designed real-time topic management system with dynamic search, post count display, and automatic list reordering
+- Designed real-time topic management system with dynamic search, post count display, and automatic list reordering, reducing average content discovery time from 2 minutes to 30 seconds
 - Integrated in-article text search, text-to-speech capability and voice recognition, 
 - Built multi-level commenting interface, infinite scroll with efficient data loading, and SMS subscriptions
 - **Tech Stack:** Android, Kotlin, MVVM, Room, Retrofit, Moshi, Navigation, Material Design, Glide, JSoup, Coroutines, ViewBinding
@@ -322,8 +322,8 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 
 **Overview:**
 - Fully offline-capable service ticket management app with responsive design implementation
-- Implemented interactive calendar with custom event visualization and Android Calendar Provider API integration
-- Google Maps integration for directions to ticket locations and address search.
+- Implemented interactive calendar with custom event visualization and Android Calendar Provider API integration, improving task scheduling efficiency
+- Google Maps integration for directions to ticket locations and address search, helping field technicians locate service addresses without leaving the app
 - Created user registration and authentication flows with input validation and error feedback
 - **Tech Stack**: Android, Kotlin, MVVM, Jetpack, Google Maps, Room, Material Design.
 
