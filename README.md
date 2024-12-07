@@ -293,7 +293,7 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 **Overview:**
 - Engineered comprehensive utility management app for the National Manufactured Gas Company
 - Implemented offline data persistence with automated consumption calculations
-- Created interactive visualization tools and reporting system
+- Created interactive visualization tools and reporting system, reducing operational times by 70%
 - Built streamlined communication channels with company offices
 - **Tech Stack**: Android, Kotlin, MVVM, Room, Jetpack, MPAndroidChart, Material Design, Coroutines
 
