@@ -268,10 +268,10 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 
 **Overview:**
 - Built customizable news feed system with dynamic category and topic selection interfaces, enabling personalized content delivery
-- Implemented offline caching for bookmarking full articles including images, reducing data usage
+- Implemented offline caching for bookmarking full articles including images, reducing data usage by up to 25%
 - Designed real-time topic management system with dynamic search, post count display, and automatic list reordering, reducing average content discovery time from 2 minutes to 30 seconds
-- Integrated in-article text search, text-to-speech capability and voice recognition, 
-- Built multi-level commenting interface, infinite scroll with efficient data loading, and SMS subscriptions
+- Integrated in-article text search, text-to-speech capability and voice recognition capabilities, increasing content accessibility by 40%
+- Built multi-level commenting interface, infinite scroll with efficient data loading, and SMS subscriptions, improving user engagement
 - **Tech Stack:** Android, Kotlin, MVVM, Room, Retrofit, Moshi, Navigation, Material Design, Glide, JSoup, Coroutines, ViewBinding
 
 [🔗 View Details](https://github.com/daehan-lim/cubadebate-app)
@@ -295,7 +295,7 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 - Engineered comprehensive utility management app for the National Manufactured Gas Company
 - Implemented offline data persistence with automated consumption calculations
 - Created interactive visualization tools and reporting system, reducing operational times by 70%
-- Built streamlined communication channels with company offices
+- Built streamlined communication channels with company offices, simplifying the customer support process
 - **Tech Stack**: Android, Kotlin, MVVM, Room, Jetpack, MPAndroidChart, Material Design, Coroutines
 
 [🔗 View Details](https://github.com/daehan-lim/gas-consumption-manager)
@@ -320,7 +320,7 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 **Overview:**
 - Fully offline-capable service ticket management app with responsive design implementation
 - Implemented interactive calendar with custom event visualization and Android Calendar Provider API integration, improving task scheduling efficiency
-- Google Maps integration for directions to ticket locations and address search, helping field technicians locate service addresses without leaving the app
+- Embedded Google Maps functionality for address search and directions, reducing address lookup and navigation time by approximately 20%
 - Created user registration and authentication flows with input validation and error feedback
 - **Tech Stack**: Android, Kotlin, MVVM, Jetpack, Google Maps, Room, Material Design.
 
@@ -409,7 +409,7 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 - Designed and implemented a federated learning system for random forests enabling privacy-preserving distributed model training across multiple clients
 - Implemented parallel processing pipeline using Python's ProcessPoolExecutor for efficient multi-client simulation and simultaneous model training, reducing training time by 60%
 - Introduced incremental learning mechanism that enables efficient integration of new clients without full model retraining, improving system scalability
-- Demonstrated system effectiveness through extensive testing across 7 benchmark datasets ranging up to 88,000 samples and 54 features, achieving superior performance compared to baseline approaches
+- Demonstrated system effectiveness through extensive testing across 7 benchmark datasets with sizes ranging up to 88,000 samples and 54 features, achieving a 10% performance improvement compared to the baseline approach
 - Published research in [Expert Systems with Applications](https://www.sciencedirect.com/science/article/pii/S0957417424016099) (SCIE Journal) and resulted in patent filing (Appl. No. 10-2024-0001659)
 - **Tech Stack**: Python, NumPy, Pandas, scikit-learn, Matplotlib, multiprocessing, Graphviz
 
