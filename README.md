@@ -237,7 +237,7 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 <!-- [Etecsa Browser (update needed)](#etecsa-browser) - To be added (2020) 🔗-->
 
 **Research & ML**
-- [Federated Learning for Random Forest](#federated-learning-for-random-forest) - Privacy-preserving distributed learning system (2023) [🔗](https://arxiv.org/abs/2407.19193)
+- [Privacy-Preserving Federated Random Forest](#privacy-preserving-federated-random-forest) - Privacy-preserving distributed learning system (2023) [🔗](https://arxiv.org/abs/2407.19193)
 - [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024) [🔗](https://github.com/daehan-lim/roberta-sport-news-classifier)
 - [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023) [🔗](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 - [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2024) [🔗](assets/information_retrieval_report.pdf)
@@ -402,10 +402,8 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 
 ## 🔬 Research & ML Projects
 
-### [Federated Learning for Random Forest](https://arxiv.org/abs/2407.19193)
+### [Privacy-Preserving Federated Random Forest](https://arxiv.org/abs/2407.19193)
 *Privacy-preserving distributed learning system for collaborative model training (2023)*
-
-*Patent Pending (Appl. No. 10-2024-0001659)*
 
 <img src="images/random_forest.png" width="650">
 
@@ -413,9 +411,11 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 
 - Designed and implemented a federated learning system for random forests enabling privacy-preserving distributed model training across multiple clients
 - Developed collaborative tree construction mechanism where clients iteratively contribute to growing and refining the model ensemble
-- Developed parallel processing system for efficient ensemble model training across multiple clients simultaneously
-- Demonstrated system effectiveness through extensive testing across 7 benchmark datasets, achieving superior performance compared to baseline approaches
-- **Tech Stack**: Python, NumPy, scikit-learn, Matplotlib, multiprocessing, Graphviz
+- Implemented parallel processing pipeline using Python's ProcessPoolExecutor for efficient multi-client simulation and simultaneous model training
+- Introduced an incremental learning mechanism, enabling efficient integration of new clients without full model retraining
+- Demonstrated system effectiveness through extensive testing across 7 benchmark datasets ranging up to 88,000 samples and 54 features, achieving superior performance compared to baseline approaches
+- Published research in [Expert Systems with Applications](https://www.sciencedirect.com/science/article/pii/S0957417424016099) (SCIE Journal) and resulted in patent filing (Appl. No. 10-2024-0001659)
+- **Tech Stack**: Python, NumPy, Pandas, scikit-learn, Matplotlib, multiprocessing, Graphviz
 
 [🔗 View Details](https://arxiv.org/abs/2407.19193)
 
