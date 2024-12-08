@@ -28,8 +28,8 @@
   #nav-menu a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 15px;
+    margin: 0 16px;
+    font-size: 16px;
     transition: color 0.3s ease;
     font-weight: 700; /* Increase from bold to 700 */
     -webkit-font-smoothing: antialiased; /* Better text rendering */
@@ -261,7 +261,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 - [정부 포털 앱](#정부-포털-앱) - 공식 정부 대표 플랫폼 애플리케이션 (2021) [🔗](https://github.com/daehan-lim/government-portal-app)
 
 **머신러닝 시스템**
-- [연합학습 기반 랜덤 포레스트](#federated-learning-for-random-forest) - 프라이버시(를?) 보호(하는?) 분산 학습 시스템 (2023) [🔗](https://arxiv.org/abs/2407.19193)
+- [연합학습 기반 랜덤 포레스트](#연합학습-기반-랜덤-포레스트) - 개인정보를 보호하는 분산 학습 시스템 (2023) [🔗](https://arxiv.org/abs/2407.19193)
 - [RoBERTa 뉴스 분류](#roberta-news-classification) - 합성 데이터를 활용해 성능을 개선한 주제 분류 모델 (2024) [🔗](https://github.com/daehan-lim/roberta-sport-news-classifier)
 - [의료 데이터 분류기](#medical-data-classifier) - 환자 사망률 예측 시스템 (2023) [🔗](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 - [정보 검색 시스템](#information-retrieval-system) - 문서 색인(화?) 및 검색 시스템 (2024) [🔗](../assets/information_retrieval_report.pdf)
@@ -424,7 +424,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 
 ## 🔬 머신러닝 시스템
 
-### [프라이버시 보장 연합학습 랜덤 포레스트](https://arxiv.org/abs/2407.19193)
+### [연합학습 기반 랜덤 포레스트](https://arxiv.org/abs/2407.19193)
 *분산 환경에서 데이터 보안을 보장하는 협업 학습 시스템 (2023)*
 
 <img src="../images/random_forest.png" width="650" alt="Training process for the privacy-preserving federated random forest model">
