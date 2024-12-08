@@ -225,30 +225,20 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
 
 
-
 ## 📂 Projects Overview
 
 **Mobile Applications**
-- [Cubadebate News Reader](#cubadebate-news-reader) - News app with personalized content delivery (2021)
-  <a href="https://github.com/daehan-lim/cubadebate-app" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
-- [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021)
-  <a href="https://github.com/daehan-lim/gas-consumption-manager" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
-- [ACME App](#acme-app) - Service ticket management solution (2021)
-  <a href="https://github.com/daehan-lim/acme" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
-- [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020)
-  <a href="https://github.com/daehan-lim/cuban-yellow-pages" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
-- [Government Portal](#government-portal) - Official government platform application (2021)
-  <a href="https://github.com/daehan-lim/government-portal-app" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
+- [Cubadebate News Reader](#cubadebate-news-reader) - News app with personalized content delivery (2021)<a href="https://github.com/daehan-lim/cubadebate-app" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021)<a href="https://github.com/daehan-lim/gas-consumption-manager" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [ACME App](#acme-app) - Service ticket management solution (2021)<a href="https://github.com/daehan-lim/acme" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020)<a href="https://github.com/daehan-lim/cuban-yellow-pages" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [Government Portal](#government-portal) - Official government platform application (2021)<a href="https://github.com/daehan-lim/government-portal-app" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 
 **Machine Learning Systems**
-- [Privacy-Preserving Federated Random Forest](#privacy-preserving-federated-random-forest) - Privacy-preserving distributed learning system (2023)
-  <a href="https://arxiv.org/abs/2407.19193" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
-- [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024)
-  <a href="https://github.com/daehan-lim/roberta-sport-news-classifier" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
-- [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023)
-  <a href="https://github.com/daehan-lim/associative-classifier-mortality-prediction" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
-- [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2024)
-  <a href="assets/information_retrieval_report.pdf" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
+- [Privacy-Preserving Federated Random Forest](#privacy-preserving-federated-random-forest) - Privacy-preserving distributed learning system (2023)<a href="https://arxiv.org/abs/2407.19193" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024)<a href="https://github.com/daehan-lim/roberta-sport-news-classifier" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023)<a href="https://github.com/daehan-lim/associative-classifier-mortality-prediction" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2024)<a href="assets/information_retrieval_report.pdf" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 
 
 ## 📱 Mobile Applications
@@ -417,9 +407,8 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 **Overview:**
 
 - Designed and implemented a federated learning system for random forests enabling privacy-preserving distributed model training across multiple clients
-- Developed collaborative tree construction mechanism where clients iteratively contribute to growing and refining the model ensemble
-- Implemented parallel processing pipeline using Python's ProcessPoolExecutor for efficient multi-client simulation and simultaneous model training
-- Introduced an incremental learning mechanism, enabling efficient integration of new clients without full model retraining
+- Implemented parallel processing pipeline using Python's ProcessPoolExecutor for efficient multi-client simulation and simultaneous model training, reducing training time by 60%
+- Introduced incremental learning mechanism that enables efficient integration of new clients without full model retraining, improving system scalability
 - Demonstrated system effectiveness through extensive testing across 7 benchmark datasets ranging up to 88,000 samples and 54 features, achieving superior performance compared to baseline approaches
 - Published research in [Expert Systems with Applications](https://www.sciencedirect.com/science/article/pii/S0957417424016099) (SCIE Journal) and resulted in patent filing (Appl. No. 10-2024-0001659)
 - **Tech Stack**: Python, NumPy, Pandas, scikit-learn, Matplotlib, multiprocessing, Graphviz
@@ -450,7 +439,6 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 <img src="images/associative_classifier.png" width="420px" alt="Associative classifier - rule generation algorithm">
 
 **Overview:**
-
 - Developed custom associative classifier tailored for unbalanced healthcare datasets
 - Generated interpretable rules for medical experts to validate predictions
 - Implemented efficient rule-pruning strategy for improved interpretability
