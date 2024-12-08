@@ -242,8 +242,6 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 - [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023) [🔗](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 - [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2024) [🔗](assets/information_retrieval_report.pdf)
 
-## 📝 Project Details
-
 ## 📱 Mobile Applications
 
 ### [Cubadebate News Reader](https://github.com/daehan-lim/cubadebate-app)

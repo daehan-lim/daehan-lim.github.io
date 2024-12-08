@@ -266,8 +266,6 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 - [의료 데이터 분류기](#medical-data-classifier) - 환자 사망률 예측 시스템 (2023) [🔗](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 - [정보 검색 시스템](#information-retrieval-system) - 문서 색인(화?) 및 검색 시스템 (2024) [🔗](../assets/information_retrieval_report.pdf)
 
-## 📝 프로젝트 상세
-
 ## 📱 모바일 애플리케이션
 
 ### [Cubadebate 뉴스 앱](https://github.com/daehan-lim/cubadebate-app)
