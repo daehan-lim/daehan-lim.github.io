@@ -236,7 +236,7 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 - [Government Portal](#government-portal) - Official government platform application (2021) [🔗](https://github.com/daehan-lim/government-portal-app)
 <!-- [Etecsa Browser (update needed)](#etecsa-browser) - To be added (2020) 🔗-->
 
-**Research & ML**
+**Machine Learning Systems**
 - [Privacy-Preserving Federated Random Forest](#privacy-preserving-federated-random-forest) - Privacy-preserving distributed learning system (2023) [🔗](https://arxiv.org/abs/2407.19193)
 - [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024) [🔗](https://github.com/daehan-lim/roberta-sport-news-classifier)
 - [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023) [🔗](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
@@ -400,7 +400,7 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 
 ---
 
-## 🔬 Research & ML Projects
+## 🔬 Machine Learning Systems
 
 ### [Privacy-Preserving Federated Random Forest](https://arxiv.org/abs/2407.19193)
 *Privacy-preserving distributed learning system for collaborative model training (2023)*
