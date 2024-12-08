@@ -243,20 +243,20 @@
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
 <br>
 
-## 📂 프로젝트 개요
+## 📂 프로젝트 목차
 
 **모바일 애플리케이션**
-- [Cubadebate 뉴스 앱](#cubadebate-뉴스-앱) - 맞춤형 콘텐츠 제공 및 오프라인 저장 기능을 갖춘 뉴스 앱 (2021) [🔗](https://github.com/daehan-lim/cubadebate-app)
-- [가스 소비(사용량?) 관리 앱](#gas-consumption-manager) - 공공 유틸리티 추적 시스템 (2021) [🔗](https://github.com/daehan-lim/gas-consumption-manager)
-- [ACME 앱](#acme-앱) - 서비스 티켓 관리 솔루션 (2021) [🔗](https://github.com/daehan-lim/acme)
-- [Yellow Pages](#yellow-pages) - 오프라인 맵핑 기능이 포함된 전화번호부 모바일 앱 (2020) [🔗](https://github.com/daehan-lim/cuban-yellow-pages)
-- [정부 포털 앱](#정부-포털-앱) - 공식 정부 대표 플랫폼 애플리케이션 (2021) [🔗](https://github.com/daehan-lim/government-portal-app)
+- [Cubadebate 뉴스 앱](#cubadebate-뉴스-앱) - 맞춤형 콘텐츠 제공 및 오프라인 저장 기능을 갖춘 뉴스 앱 (2021)<a href="https://github.com/daehan-lim/cubadebate-app" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [가스 소비 관리 앱](#가스-소비-관리-앱) - 공공 유틸리티 추적 시스템 (2021)<a href="https://github.com/daehan-lim/gas-consumption-manager" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [ACME 앱](#acme-앱) - 서비스 티켓 관리 솔루션 (2021)<a href="https://github.com/daehan-lim/acme" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [Yellow Pages](#yellow-pages) - 오프라인 지도(맵핑?) 기능이 포함된 전화번호부 모바일 앱 (2020)<a href="https://github.com/daehan-lim/cuban-yellow-pages" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [정부 포털 앱](#정부-포털-앱) - 공식 정부 대표 플랫폼 애플리케이션 (2021)<a href="https://github.com/daehan-lim/government-portal-app" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 
 **머신러닝 시스템**
-- [연합학습 기반 랜덤 포레스트](#연합학습-기반-랜덤-포레스트) - 개인정보를 보호하는 분산 학습 시스템 (2023) [🔗](https://arxiv.org/abs/2407.19193)
-- [RoBERTa 뉴스 분류](#roberta-news-classification) - 합성 데이터를 활용해 성능을 개선한 주제 분류 모델 (2024) [🔗](https://github.com/daehan-lim/roberta-sport-news-classifier)
-- [의료 데이터 분류기](#medical-data-classifier) - 환자 사망률 예측 시스템 (2023) [🔗](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
-- [정보 검색 시스템](#information-retrieval-system) - 문서 색인화 및 검색 시스템 (2024) [🔗](../assets/information_retrieval_report.pdf)
+- [연합학습 기반 랜덤 포레스트](#연합학습-기반-랜덤-포레스트) - 개인정보를 보호하는 분산 학습 시스템 (2023)<a href="https://arxiv.org/abs/2407.19193" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [RoBERTa 뉴스 분류](#roberta-news-classification) - 합성 데이터를 활용해 성능을 개선한 주제 분류 모델 (2024)<a href="https://github.com/daehan-lim/roberta-sport-news-classifier" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [의료 데이터 분류기](#medical-data-classifier) - 환자 사망률 예측 시스템 (2023)<a href="https://github.com/daehan-lim/associative-classifier-mortality-prediction" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [정보 검색 시스템](#information-retrieval-system) - 문서 색인(화?) 및 검색 시스템 (2024)<a href="assets/information_retrieval_report.pdf" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 
 ## 📱 모바일 애플리케이션
 
@@ -295,7 +295,7 @@
 
 ---
 
-### [가스 사용량 관리 앱](https://github.com/daehan-lim/gas-consumption-manager)
+### [가스 소비 관리 앱](https://github.com/daehan-lim/gas-consumption-manager)
 *국영 가스 공가의 자동화된 가스 소비 관리 시스템 (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
