@@ -260,7 +260,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 - [Yellow Pages](#yellow-pages) - 오프라인 지도(맵핑?) 기능이 포함된 전화번호부 모바일 앱 (2020) [🔗](https://github.com/daehan-lim/cuban-yellow-pages)
 - [정부 포털 앱](#정부-포털-앱) - 공식 정부 대표 플랫폼 애플리케이션 (2021) [🔗](https://github.com/daehan-lim/government-portal-app)
 
-**연구 및 머신러닝**
+**머신러닝 시스템**
 - [연합학습 기반 랜덤 포레스트](#federated-learning-for-random-forest) - 프라이버시(를?) 보호(하는?) 분산 학습 시스템 (2023) [🔗](https://arxiv.org/abs/2407.19193)
 - [RoBERTa 뉴스 분류](#roberta-news-classification) - 합성 데이터를 활용해 성능을 개선한 주제 분류 모델 (2024) [🔗](https://github.com/daehan-lim/roberta-sport-news-classifier)
 - [의료 데이터 분류기](#medical-data-classifier) - 환자 사망률 예측 시스템 (2023) [🔗](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
@@ -274,14 +274,14 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 *사용자 맞춤형 뉴스 제공, 오프라인 저장, TTS 및 고급 검색 기능 등을 탑재한 뉴스 앱 (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="../images/cubadebate/news_feed.svg" width="240" style="margin-right: 5px;" />
-  <img src="../images/cubadebate/news_article.svg" width="240" style="margin-right: 5px;" />
-  <img src="../images/cubadebate/replies.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/cubadebate/categories.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/cubadebate/topics.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/cubadebate/sms.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/cubadebate/search.svg" width="240" style="margin-right: 5px;" />
-  <img src="../images/cubadebate/saved.png" width="240"  />
+  <img src="../images/cubadebate/news_feed.svg" width="240" style="margin-right: 5px;" alt="Cubadebate news feed screen" />
+  <img src="../images/cubadebate/news_article.svg" width="240" style="margin-right: 5px;" alt="Cubadebate news article screen" />
+  <img src="../images/cubadebate/replies.png" width="240" style="margin-right: 5px;" alt="Cubadebate replies screen" />
+  <img src="../images/cubadebate/categories.png" width="240" style="margin-right: 5px;" alt="Cubadebate categories screen" />
+  <img src="../images/cubadebate/topics.png" width="240" style="margin-right: 5px;" alt="Cubadebate topics screen" />
+  <img src="../images/cubadebate/sms.png" width="240" style="margin-right: 5px;" alt="Cubadebate SMS screen" />
+  <img src="../images/cubadebate/search.svg" width="240" style="margin-right: 5px;" alt="Cubadebate search screen" />
+  <img src="../images/cubadebate/saved.png" width="240"  alt="Cubadebate saved articles screen" />
 </div>
 <br>
 
@@ -309,12 +309,12 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 *국영 가스 공가의 자동화된 가스 소비 관리 시스템 (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="../images/gas/main.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/gas/calendar.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/gas/chart.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/gas/filter.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/gas/offices.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/gas/video.png" width="240" />
+  <img src="../images/gas/main.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager main screen" />
+  <img src="../images/gas/calendar.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager calendar screen" />
+  <img src="../images/gas/chart.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager chart screen" />
+  <img src="../images/gas/filter.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager filter screen" />
+  <img src="../images/gas/offices.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager offices screen" />
+  <img src="../images/gas/video.png" width="240" alt="Gas consumption manager video screen" />
 </div>
 <br>
 
@@ -333,14 +333,14 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 *티켓 관리 시스템에 맞춤형 캘린더와 오프라인 기능, 지도 기능을 통합한 AS 관리 앱 (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="../images/acme/login.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/acme/signup.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/acme/dashboard.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/acme/ticket_details.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/acme/edit.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/acme/calendar.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/acme/calendar_sync.png" width="240" style="margin-right: 5px;" /> 
-  <img src="../images/acme/maps.png" width="240" />
+  <img src="../images/acme/login.png" width="240" style="margin-right: 5px;" alt="ACME app login screen" />
+  <img src="../images/acme/signup.png" width="240" style="margin-right: 5px;" alt="ACME app signup screen" />
+  <img src="../images/acme/dashboard.png" width="240" style="margin-right: 5px;" alt="ACME app dashboard screen" />
+  <img src="../images/acme/ticket_details.png" width="240" style="margin-right: 5px;" alt="ACME app ticket details screen" />
+  <img src="../images/acme/edit.png" width="240" style="margin-right: 5px;" alt="ACME app edit screen" />
+  <img src="../images/acme/calendar.png" width="240" style="margin-right: 5px;" alt="ACME app calendar screen" />
+  <img src="../images/acme/calendar_sync.png" width="240" style="margin-right: 5px;" alt="ACME app calendar sync screen" /> 
+  <img src="../images/acme/maps.png" width="240" alt="ACME app maps screen" />
 </div>
 <br>
 
@@ -405,11 +405,11 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 *쿠바 피나르 델 리오 시의 공식 [정부 대표 포털](https://www.redpinar.gob.cu/) 안드로이드 앱 (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="../images/portal/menu.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/portal/delegado.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/portal/form.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/portal/code.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/portal/guide.png" width="240" /> 
+  <img src="../images/portal/menu.png" width="240" style="margin-right: 5px;" alt="Government portal menu screen"/>
+  <img src="../images/portal/delegado.png" width="240" style="margin-right: 5px;" alt="District representative portal screen"/>
+  <img src="../images/portal/form.png" width="240" style="margin-right: 5px;" alt="Request submission form screen"/>
+  <img src="../images/portal/code.png" width="240" style="margin-right: 5px;" alt="Code input screen"/>
+  <img src="../images/portal/guide.png" width="240" alt="User guide screen"/> 
 </div>
 <br>
 
@@ -424,14 +424,12 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 
 ---
 
-## 🔬 연구 및 머신러닝 프로젝트
+## 🔬 머신러닝 시스템
 
-### [Federated Learning for Random Forest](https://arxiv.org/abs/2407.19193)
-*Privacy-preserving distributed learning system for collaborative model training (2023)*
+### [프라이버시 보장 연합학습 랜덤 포레스트](https://arxiv.org/abs/2407.19193)
+*분산 환경에서 데이터 보안을 보장하는 협업 학습 시스템 (2023)*
 
-*Patent Pending (Appl. No. 10-2024-0001659)*
-
-<img src="../images/random_forest.png" width="650">
+<img src="../images/random_forest.png" width="650" alt="Training process for the privacy-preserving federated random forest model">
 
 **개요:**
 - Designed and implemented a federated learning system for random forests enabling privacy-preserving distributed model training across multiple clients
@@ -447,7 +445,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 ### [RoBERTa News Classification](https://github.com/daehan-lim/roberta-sport-news-classifier)
 *Enhanced topic classification model with synthetic data augmentation (2024)*
 
-<img src="../images/roberta_architecture.png" width="350">
+<img src="../images/roberta_architecture.png" width="350" alt="RoBERTa model architecture">
 
 **개요:**
 - Developed machine learning model for classifying sports news articles into 5 distinct categories using [RoBERTa](https://huggingface.co/docs/transformers/en/model_doc/roberta) and [BBC Sport dataset](http://mlg.ucd.ie/datasets/bbc.html)
@@ -463,7 +461,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 ### [Medical Data Classifier](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 *Novel classification system for patient mortality prediction using electronic health records (2023)*
 
-<img src="../images/associative_classifier.png" width="420px">
+<img src="../images/associative_classifier.png" width="420px" alt="Associative classifier - rule generation algorithm">
 
 **개요:**
 
