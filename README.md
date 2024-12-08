@@ -229,18 +229,27 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 ## 📂 Projects Overview
 
 **Mobile Applications**
-- [Cubadebate News Reader](#cubadebate-news-reader) - News app with personalized content delivery (2021) [🔗](https://github.com/daehan-lim/cubadebate-app)
-- [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021) [🔗](https://github.com/daehan-lim/gas-consumption-manager)
-- [ACME App](#acme-app) - Service ticket management solution (2021) [🔗](https://github.com/daehan-lim/acme)
-- [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020) [🔗](https://github.com/daehan-lim/cuban-yellow-pages)
-- [Government Portal](#government-portal) - Official government platform application (2021) [🔗](https://github.com/daehan-lim/government-portal-app)
-<!-- [Etecsa Browser (update needed)](#etecsa-browser) - To be added (2020) 🔗-->
+- [Cubadebate News Reader](#cubadebate-news-reader) - News app with personalized content delivery (2021)
+  <a href="https://github.com/daehan-lim/cubadebate-app" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
+- [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021)
+  <a href="https://github.com/daehan-lim/gas-consumption-manager" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
+- [ACME App](#acme-app) - Service ticket management solution (2021)
+  <a href="https://github.com/daehan-lim/acme" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
+- [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020)
+  <a href="https://github.com/daehan-lim/cuban-yellow-pages" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
+- [Government Portal](#government-portal) - Official government platform application (2021)
+  <a href="https://github.com/daehan-lim/government-portal-app" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
 
 **Machine Learning Systems**
-- [Privacy-Preserving Federated Random Forest](#privacy-preserving-federated-random-forest) - Privacy-preserving distributed learning system (2023) [🔗](https://arxiv.org/abs/2407.19193)
-- [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024) [🔗](https://github.com/daehan-lim/roberta-sport-news-classifier)
-- [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023) [🔗](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
-- [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2024) [🔗](assets/information_retrieval_report.pdf)
+- [Privacy-Preserving Federated Random Forest](#privacy-preserving-federated-random-forest) - Privacy-preserving distributed learning system (2023)
+  <a href="https://arxiv.org/abs/2407.19193" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
+- [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024)
+  <a href="https://github.com/daehan-lim/roberta-sport-news-classifier" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
+- [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023)
+  <a href="https://github.com/daehan-lim/associative-classifier-mortality-prediction" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
+- [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2024)
+  <a href="assets/information_retrieval_report.pdf" style="color: #21427D; font-size: 23px; text-decoration: none;"><span>&nbsp;⎆</span></a>
+
 
 ## 📱 Mobile Applications
 
