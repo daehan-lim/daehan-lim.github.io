@@ -285,10 +285,10 @@
 
 **핵심 내용:**
 - 동적 카테고리 및 주제 선택 인터페이스로 맞춤형 뉴스 피드 시스템 구축
-- Room DB를 활용해 이미지를 포함한 전체 기사의 오프라인 저장으로 데이터 사용량 최적화
+- Room DB를 활용해 이미지를 포함한 전체 기사의 오프라인 저장으로 데이터 사용량 최대 25% 절감
 - 실시간 주제 관리 시스템에 동적 검색과 게시물 수 표시, 자동 목록 재정렬 기능 구현으로 평균 콘텐츠 검색 시간을 2분에서 30초로 단축
-- 기사 내 텍스트 검색, 음성합성(TTS) 및 음성 인식 기능 통합
-- 다중 레벨 댓글 인터페이스와 효율적으로 데이터를 로딩하는 무한 스크롤, SMS 구독 등의 기능 구현
+- 기사 내 텍스트 검색, 음성합성(TTS) 및 음성 인식 기능 통합으로 접근성을 40% 향상
+- 다중 레벨 댓글 인터페이스와 효율적으로 데이터를 로딩하는 무한 스크롤, SMS 구독 등의 기능 구현으로 사용자 참여도 개선
 - **기술 스택:** Android, Kotlin, MVVM, Room, Retrofit, Moshi, Navigation, Material Design, Glide, JSoup, Coroutines, ViewBinding
 
 [🔗 상세보기](https://github.com/daehan-lim/cubadebate-app)
@@ -312,7 +312,7 @@
 - 국영 가스 공사를 위한 종합 유틸리티 관리 앱 설계 및 개발로 업무 처리 시간 70% 단축
 - Room을 활용한 오프라인 데이터 저장 및 자동 사용량 계산 구현
 - 인터랙티브 데이터 3 도구 및 리포팅 시스템 개발
-- 고객 지원을 위한 영업소 연락처 디렉터리 통합
+- 고객 지원을 위한 영업소 연락처 디렉터리 통합으로 고객 문의 처리 과정 단순화
 - **기술 스택**: Android, Kotlin, MVVM, Room, Jetpack, MPAndroidChart, Material Design, Coroutines
 
 [🔗 상세보기](https://github.com/daehan-lim/gas-consumption-manager)
@@ -337,7 +337,7 @@
 **핵심 내용:**
 - 반응형 디자인이 적용된 오프라인 AS 티켓 관리 앱 구현
 - 맞춤형 이벤트 시각화 및 Android Calendar Provider API를 연동한 인터랙티브 캘린더 개발로 업무 효율성 향상
-- 앱 내 구글 맵 탑재로 티켓 위치 주소 검색과 길안내 소요 시간 단축
+- 앱 내 구글 맵 탑재로 티켓 위치 주소 검색과 길안내 소요 시간 약 20% 단축
 - 안정적인 사용자 인증 시스템 및 오류 처리, 입력값 검증 구현
 - **기술 스택**: Android, Kotlin, MVVM, Jetpack, Google Maps, Room, Material Design.
 
@@ -425,8 +425,8 @@
 - 다중 클라이언트 간 프라이버시를 보장하는 연합학습 기반 랜덤 포레스트 시스템 설계 및 구현
 - ProcessPoolExecutor를 활용한 트리 학습 병렬화로 모델 훈련 시간 60% 단축
 - 전체 모델 재학습 없이 새 클라이언트 추가 및 업데이트 가능한 점진적 학습 메커니즘 도입으로 시스템 확장성 향상
-- 최대 88,000개 샘플, 54개 특성을 포함한 7개 벤치마크 데이터셋에서 기존 접근법 대비 우수한 성능 입증
-- Expert Systems with Applications (SCIE 저널) 논문 게재 및 특허 출원
+- 7개의 데이터셋(최대 88,000개의 샘플, 54개의 특성)에서 기존 접근법 대비 10% 성능 향상 달성
+- Expert Systems with Applications (SCIE 저널) 논문 게재 및 특허 출원 (출원 번호 10-2024-0001659)
 - **기술 스택**: Python, NumPy, scikit-learn, Matplotlib, multiprocessing, Graphviz
 
 [🔗 상세보기](https://arxiv.org/abs/2407.19193)
