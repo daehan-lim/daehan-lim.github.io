@@ -28,12 +28,17 @@
   #nav-menu a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 16px;
     font-size: 16px;
     transition: color 0.3s ease;
     font-weight: 700; /* Increase from bold to 700 */
     -webkit-font-smoothing: antialiased; /* Better text rendering */
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  #nav-menu > div:first-child a {
+    font-size: 14px;
+    margin: 0 10px;
   }
 
   #nav-menu a.active {
@@ -175,7 +180,7 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%230077B5&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Penjan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
 
 <div align="center">
-  <a href="/assets/Resume_Penjan_Antonio_Eng_Lim.pdf">
+  <a href="../assets/Resume_Penjan_Antonio_Eng_Lim.pdf">
     <img src="https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=readme&logoColor=white" alt="Resume Badge">
   </a>
   <a href="https://linkedin.com/in/penjan-a-eng-lim">
@@ -195,16 +200,10 @@
 
 ## 👋 소개
 <p class="ko">
-약 3년간 모바일 애플리케이션 개발과 2년간의 머신러닝 연구 경험을 통해 확장 가능하고 사용자 중심의 애플리케이션을 설계하고 개발한 경력을 보유하고 있습니다. Kotlin과 Java를 활용한 통신 및 엔터프라이즈 애플리케이션 개발에 전문성을 갖추었으며, 최신 아키텍처(MVVM, Jetpack 등)를 도입해 안정적이고 유지 보수성이 높은 애플리케이션을 구현했습니다. 머신러닝 연구 경험을 통해 고도화된 데이터 처리, 알고리즘 최적화, 분산 시스템 설계 경험을 쌓았으며, 이를 활영하여 효율적이고 확장 가능한 모바일 솔루션을 제공할 수 있습니다.
+약 3년간 모바일 애플리케이션 개발 및 2년간의 머신러닝 연구 경험을 통해 확장 가능하고 사용자 중심의 애플리케이션을 설계하고 개발한 경력을 보유하고 있습니다. Kotlin과 Java를 활용한 통신 및 엔터프라이즈 애플리케이션 개발에 전문성을 갖추었으며, 최신 아키텍처(MVVM, Jetpack 등)를 도입해 안정적이고 유지 보수성이 높은 애플리케이션을 구현했습니다. 머신러닝 연구 경험을 통해 고도화된 데이터 처리, 알고리즘 최적화, 분산 시스템 설계 경험을 쌓았으며, 이를 활용하여 효율적이고 확장 가능한 모바일 솔루션을 제공할 수 있습니다. <em>(수 있습니다 라는 부분을 수정)</em>
 </p>
 
-<!--
-약 3년간 확장 가능하고 사용자 중심의 모바일 애플리케이션을 개발한 경험과 2년간 AI/ML 배경을 활용한 데이터 처리, 알고리즘 최적화, 분산 시스템 설계의 실무 경험을 보유하고 있습니다. 통신 및 엔터프라이즈 분야에서 모바일 애플리케이션 개발을 주도하며, 코드 유지 보수성과 개발 효율성을 높이기 위해 현대적인 아키텍처와 개발 모범 사례를 도입했습니다. Java, Kotlin, Python, JavaScript에 능숙하며, 깊은 기술적 전문성과 혁신적인 문제 해결 능력을 결합하여 신뢰할 수 있고 고성능의 모바일 솔루션을 제공합니다.
-
-Cuban-Korean Software developer with nearly 3 years of experience building scalable, user-centric mobile applications and 2 years of hands-on expertise in advanced data processing, algorithm optimization, and distributed systems, leveraging an AI/ML background. Spearheaded mobile application development across telecom and enterprise sectors,  driving adoption of modern architectural patterns and development best practices to enhance code maintainability and development efficiency. Proficient in Java, Kotlin, Python, and JavaScript, combines technical expertise with innovative problem-solving to deliver reliable, high-performing mobile solutions.
--->
-
-## 🛠️ 보유 기술
+## 🛠️ 보유 스킬
 
 ### 안드로이드 개발 핵심 역량
 [![Android](https://img.shields.io/badge/Android-3DDC84?logo=Android&logoColor=white&style=for-the-badge)](https://developer.android.com)
@@ -247,35 +246,32 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 ## 📂 프로젝트 개요
 
 **모바일 애플리케이션**
-- [Cubadebate News Reader](#cubadebate-news-reader) - News platform with personalized content delivery (2021) [🔗](https://github.com/daehan-lim/cubadebate-app)
-- [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021) [🔗](https://github.com/daehan-lim/gas-consumption-manager)
-- [ACME App](#acme-app) - Service ticket management solution (2021) [🔗](https://github.com/daehan-lim/acme)
-- [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020) [🔗](https://github.com/daehan-lim/cuban-yellow-pages)
-- [Government Portal](#government-portal) - Official government platform application (2021) [🔗](https://github.com/daehan-lim/government-portal-app)
-<!-- [Etecsa Browser (update needed)](#etecsa-browser) - To be added (2020) 🔗-->
+- [Cubadebate 뉴스 앱](#cubadebate-뉴스-앱) - 맞춤형 콘텐츠 제공 및 오프라인 저장 기능을 갖춘 뉴스 앱 (2021) [🔗](https://github.com/daehan-lim/cubadebate-app)
+- [가스 소비(사용량?) 관리 앱](#gas-consumption-manager) - 공공 유틸리티 추적 시스템 (2021) [🔗](https://github.com/daehan-lim/gas-consumption-manager)
+- [ACME 앱](#acme-앱) - 서비스 티켓 관리 솔루션 (2021) [🔗](https://github.com/daehan-lim/acme)
+- [Yellow Pages](#yellow-pages) - 오프라인 맵핑 기능이 포함된 전화번호부 모바일 앱 (2020) [🔗](https://github.com/daehan-lim/cuban-yellow-pages)
+- [정부 포털 앱](#정부-포털-앱) - 공식 정부 대표 플랫폼 애플리케이션 (2021) [🔗](https://github.com/daehan-lim/government-portal-app)
 
-**연구 및 머신러닝 프로젝트**
-- [Federated Learning for Random Forest](#federated-learning-for-random-forest) - Privacy-preserving distributed learning system (2023) [🔗](https://arxiv.org/abs/2407.19193)
-- [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024) [🔗](https://github.com/daehan-lim/roberta-sport-news-classifier)
-- [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023) [🔗](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
-- [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2024) [🔗](assets/information_retrieval_report.pdf)
-
-## 📝 프로젝트 상세
+**머신러닝 시스템**
+- [연합학습 기반 랜덤 포레스트](#연합학습-기반-랜덤-포레스트) - 개인정보를 보호하는 분산 학습 시스템 (2023) [🔗](https://arxiv.org/abs/2407.19193)
+- [RoBERTa 뉴스 분류](#roberta-news-classification) - 합성 데이터를 활용해 성능을 개선한 주제 분류 모델 (2024) [🔗](https://github.com/daehan-lim/roberta-sport-news-classifier)
+- [의료 데이터 분류기](#medical-data-classifier) - 환자 사망률 예측 시스템 (2023) [🔗](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
+- [정보 검색 시스템](#information-retrieval-system) - 문서 색인화 및 검색 시스템 (2024) [🔗](../assets/information_retrieval_report.pdf)
 
 ## 📱 모바일 애플리케이션
 
-### [Cubadebate News Reader](https://github.com/daehan-lim/cubadebate-app)
-*Feature-rich news reader app enabling personalized content delivery and comprehensive offline access (2021)*
+### [Cubadebate 뉴스 앱](https://github.com/daehan-lim/cubadebate-app)
+*사용자 맞춤형 뉴스 제공, 오프라인 저장, TTS 및 고급 검색 기능 등을 탑재한 뉴스 앱 (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="../images/cubadebate/news_feed.svg" width="240" style="margin-right: 5px;" />
-  <img src="../images/cubadebate/news_article.svg" width="240" style="margin-right: 5px;" />
-  <img src="../images/cubadebate/replies.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/cubadebate/categories.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/cubadebate/topics.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/cubadebate/sms.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/cubadebate/search.svg" width="240" style="margin-right: 5px;" />
-  <img src="../images/cubadebate/saved.png" width="240"  />
+  <img src="../images/cubadebate/news_feed.svg" width="240" style="margin-right: 5px;" alt="Cubadebate news feed screen" />
+  <img src="../images/cubadebate/news_article.svg" width="240" style="margin-right: 5px;" alt="Cubadebate news article screen" />
+  <img src="../images/cubadebate/replies.png" width="240" style="margin-right: 5px;" alt="Cubadebate replies screen" />
+  <img src="../images/cubadebate/categories.png" width="240" style="margin-right: 5px;" alt="Cubadebate categories screen" />
+  <img src="../images/cubadebate/topics.png" width="240" style="margin-right: 5px;" alt="Cubadebate topics screen" />
+  <img src="../images/cubadebate/sms.png" width="240" style="margin-right: 5px;" alt="Cubadebate SMS screen" />
+  <img src="../images/cubadebate/search.svg" width="240" style="margin-right: 5px;" alt="Cubadebate search screen" />
+  <img src="../images/cubadebate/saved.png" width="240"  alt="Cubadebate saved articles screen" />
 </div>
 <br>
 
@@ -287,70 +283,70 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 <br><br>
 -->
 
-**Overview:**
-- Built customizable news feed system with dynamic category and topic selection interfaces, enabling personalized content delivery
-- Implemented offline caching for bookmarking full articles, including images
-- Designed real-time topic management system with dynamic search, post count analytics, and automatic list reordering
-- Integrated in-article keyword search, text-to-speech capability and voice recognition, 
-- Built multi-level commenting interface, infinite scroll with efficient data loading, and SMS subscriptions
-- **Tech Stack:** Android, Kotlin, MVVM, Room, Retrofit, Moshi, Navigation, Material Design, Glide, JSoup, Coroutines, ViewBinding
+**개요:**
+- 동적 카테고리 및 주제 선택 인터페이스로 맞춤형 뉴스 피드 시스템 구축
+- Room DB를 활용해 이미지를 포함한 전체 기사의 오프라인 저장으로 데이터 사용량 최적화
+- 실시간 주제 관리 시스템에 동적 검색과 게시물 수 표시, 자동 목록 재정렬 기능 구현으로 평균 콘텐츠 검색 시간을 2분에서 30초로 단축
+- 기사 내 텍스트 검색, 음성합성(TTS) 및 음성 인식 기능 통합
+- 다중 레벨 댓글 인터페이스와 효율적으로 데이터를 로딩하는 무한 스크롤, SMS 구독 등의 기능 구현
+- **기술 스택:** Android, Kotlin, MVVM, Room, Retrofit, Moshi, Navigation, Material Design, Glide, JSoup, Coroutines, ViewBinding
 
-[🔗 View Details](https://github.com/daehan-lim/cubadebate-app)
-
----
-
-### [Gas Consumption Manager](https://github.com/daehan-lim/gas-consumption-manager)
-*National utility tracking system for automated consumption management (2021)*
-
-<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="../images/gas/main.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/gas/calendar.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/gas/chart.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/gas/filter.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/gas/offices.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/gas/video.png" width="240" />
-</div>
-<br>
-
-**Overview:**
-- Engineered comprehensive utility management app for the National Manufactured Gas Company
-- Implemented offline data persistence with automated consumption calculations
-- Created interactive visualization tools and reporting system
-- Built streamlined communication channels with company offices
-- **Tech Stack**: Android, Kotlin, MVVM, Room, Jetpack, MPAndroidChart, Material Design, Coroutines
-
-[🔗 View Details](https://github.com/daehan-lim/gas-consumption-manager)
+[🔗 상세보기](https://github.com/daehan-lim/cubadebate-app)
 
 ---
 
-### [ACME App](https://github.com/daehan-lim/acme)
-*Android ticket management app with custom calendar, offline functionality, and location services (2021)*
+### [가스 사용량 관리 앱](https://github.com/daehan-lim/gas-consumption-manager)
+*국영 가스 공가의 자동화된 가스 소비 관리 시스템 (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="../images/acme/login.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/acme/signup.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/acme/dashboard.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/acme/ticket_details.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/acme/edit.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/acme/calendar.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/acme/calendar_sync.png" width="240" style="margin-right: 5px;" /> 
-  <img src="../images/acme/maps.png" width="240" />
+  <img src="../images/gas/main.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager main screen" />
+  <img src="../images/gas/calendar.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager calendar screen" />
+  <img src="../images/gas/chart.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager chart screen" />
+  <img src="../images/gas/filter.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager filter screen" />
+  <img src="../images/gas/offices.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager offices screen" />
+  <img src="../images/gas/video.png" width="240" alt="Gas consumption manager video screen" />
 </div>
 <br>
 
-**Overview:**
-- Fully offline-capable service ticket management app with responsive design implementation
-- Implemented interactive calendar with custom event visualization and Android Calendar Provider API integration
-- Google Maps integration for directions to ticket locations and address search.
-- Created user registration and authentication flows with input validation and error feedback
-- **Tech Stack**: Android, Kotlin, MVVM, Jetpack, Google Maps, Room, Material Design.
+**개요:**
+- 국영 가스 공사를 위한 종합 유틸리티 관리 앱 설계 및 개발로 업무 처리 시간 70% 단축
+- Room을 활용한 오프라인 데이터 저장 및 자동 사용량 계산 구현
+- 인터랙티브 데이터 3 도구 및 리포팅 시스템 개발
+- 고객 지원을 위한 영업소 연락처 디렉터리 통합
+- **기술 스택**: Android, Kotlin, MVVM, Room, Jetpack, MPAndroidChart, Material Design, Coroutines
 
-[🔗 View Details](https://github.com/daehan-lim/acme)
+[🔗 상세보기](https://github.com/daehan-lim/gas-consumption-manager)
+
+---
+
+### [ACME 앱](https://github.com/daehan-lim/acme)
+*티켓 관리 시스템에 맞춤형 캘린더와 오프라인 기능, 지도 기능을 통합한 AS 관리 앱 (2021)*
+
+<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
+  <img src="../images/acme/login.png" width="240" style="margin-right: 5px;" alt="ACME app login screen" />
+  <img src="../images/acme/signup.png" width="240" style="margin-right: 5px;" alt="ACME app signup screen" />
+  <img src="../images/acme/dashboard.png" width="240" style="margin-right: 5px;" alt="ACME app dashboard screen" />
+  <img src="../images/acme/ticket_details.png" width="240" style="margin-right: 5px;" alt="ACME app ticket details screen" />
+  <img src="../images/acme/edit.png" width="240" style="margin-right: 5px;" alt="ACME app edit screen" />
+  <img src="../images/acme/calendar.png" width="240" style="margin-right: 5px;" alt="ACME app calendar screen" />
+  <img src="../images/acme/calendar_sync.png" width="240" style="margin-right: 5px;" alt="ACME app calendar sync screen" /> 
+  <img src="../images/acme/maps.png" width="240" alt="ACME app maps screen" />
+</div>
+<br>
+
+**개요:**
+- 반응형 디자인이 적용된 오프라인 AS 티켓 관리 앱 구현
+- 맞춤형 이벤트 시각화 및 Android Calendar Provider API를 연동한 인터랙티브 캘린더 개발로 업무 효율성 향상
+- 앱 내 구글 맵 탑재로 티켓 위치 주소 검색과 길안내 소요 시간 단축
+- 안정적인 사용자 인증 시스템 및 오류 처리, 입력값 검증 구현
+- **기술 스택**: Android, Kotlin, MVVM, Jetpack, Google Maps, Room, Material Design.
+
+[🔗 상세보기](https://github.com/daehan-lim/acme)
 
 ---
 
 ### [Yellow Pages](https://github.com/daehan-lim/cuban-yellow-pages)
-*Enterprise-scale mobile directory revolutionizing business search with sophisticated offline capabilities (2020)*
+*전화번호부 검색과 통신 서비스를 제공하는 쿠바 국영 통신사의 최초의 모바일 디렉터리 앱 (2020)*
 
 <div style="background: linear-gradient(135deg, #1e3c72, #2a5298); padding: 15px; border-radius: 15px; box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);">
   <div style="display: flex; overflow-x: auto; gap: 30px; padding: 10px 5px;">
@@ -383,106 +379,103 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 </div>
 <br>
 
-**Overview:**
-- Developed Cuba's first Yellow Pages mobile app, implementing enterprise-grade API integration for real-time business search
-- Engineered offline vector mapping system reducing data usage by 85% through embedded map files for business geolocalization
-- Implemented automated background synchronization for offline access to government services and telephone information sections
-- Built responsive search interface with dynamic filters and efficient pagination handling
-- Executed comprehensive software testing, including unit, UI and compatibility tests, optimizing reliability and user experience
-- **Tech Stack**: Android, Java, SQLite, VTM Maps, WebView, HTML, JavaScript, SharedPreferences, JUnit
+**개요:**
+- 엔터프라이즈급 API를 활용하여 실시간 전화번호부 검색 시스템 구현
+- 내장 지도 파일을 활용한 벡터 매핑 시스템 구현으로 데이터 사용량 85% 절감
+- 정부 업무 안내와 전화 서비스 정보의 오프라인 접근을 위한 자동 백그라운드 동기화 개발
+- 동적 필터와 효율적인 페이징 처리가 적용된 반응형 검색 인터페이스 구축
+- Unit, UI, 호환성 테스트를 통해 안정성과 사용자 경험 최적화
+- **기술 스택**: Android, Java, SQLite, VTM Maps, WebView, HTML, JavaScript, SharedPreferences, JUnit
 
-[🔗 View Details](https://github.com/daehan-lim/cuban-yellow-pages)
+[🔗 상세보기](https://github.com/daehan-lim/cuban-yellow-pages)
 
 ---
 
-### [Government Portal](https://github.com/daehan-lim/government-portal-app)
-*Android app for the official [government portal](https://www.redpinar.gob.cu/) of the city of Pinar del Rio, Cuba (2021)*
+### [정부 포털 앱](https://github.com/daehan-lim/government-portal-app)
+*쿠바 피나르 델 리오 시의 공식 [정부 대표 포털](https://www.redpinar.gob.cu/) 안드로이드 앱 (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="../images/portal/menu.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/portal/delegado.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/portal/form.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/portal/code.png" width="240" style="margin-right: 5px;" />
-  <img src="../images/portal/guide.png" width="240" /> 
+  <img src="../images/portal/menu.png" width="240" style="margin-right: 5px;" alt="Government portal menu screen"/>
+  <img src="../images/portal/delegado.png" width="240" style="margin-right: 5px;" alt="District representative portal screen"/>
+  <img src="../images/portal/form.png" width="240" style="margin-right: 5px;" alt="Request submission form screen"/>
+  <img src="../images/portal/code.png" width="240" style="margin-right: 5px;" alt="Code input screen"/>
+  <img src="../images/portal/guide.png" width="240" alt="User guide screen"/> 
 </div>
 <br>
 
-**Overview:**
-- Modernized legacy codebase by integrating MVVM architecture, Coroutines and JetPack components, improving code maintainability and development workflow
-- Designed and implemented delegate management system with form validation, data caching, and error handling using Retrofit2, Moshi, and Room
-- Built classified ads integration featuring image carousels, offline caching, and responsive UI using custom RecyclerView adapters and data binding
-- Engineered reusable WebView components with JavaScript injection for seamless integration of government web services
-- **Tech Stack**: Android, Kotlin, MVVM, Retrofit2, Room, Jetpack, ViewPager2, WebView, JavaScript, Coroutines
+**개요:**
+- MVVM 아키텍처, Coroutines, JetPack 컴포넌트 도입해 레거시 코드 현대화 및 유지보수성 향상
+- 지역 매물 피드 시스템 구현: API 연동과 오프라인 데이터 캐싱, 실시간 동기화, 이미지 캐러셀, 네트워크 상태 모니터링으로 사용자 접근성 개선
+- 지역구 대표자 관리 시스템: Retrofit/Moshi 활용하여 민원 신청, 회의 일정 관리, 처리 현황 추적 등 주요 기능 구현으로 행정 업무 자동화
+- 시도의회 포털 통합: JavaScript 인젝션 및 WebView 커스터마이징으로 데스크톱 중심 UI를 모바일용으로 최적화
+- **기술 스택**: Android, Kotlin, MVVM, Retrofit2, Room, Jetpack, ViewPager2, WebView, JavaScript, Coroutines
 
-[🔗 View Details](https://github.com/daehan-lim/government-portal-app)
+[🔗 상세보기](https://github.com/daehan-lim/government-portal-app)
 
 ---
 
-## 🔬 연구 및 머신러닝 프로젝트
+## 🔬 머신러닝 시스템
 
-### [Federated Learning for Random Forest](https://arxiv.org/abs/2407.19193)
-*Privacy-preserving distributed learning system for collaborative model training (2023)*
+### [연합학습 기반 랜덤 포레스트](https://arxiv.org/abs/2407.19193)
+*분산 환경에서 데이터 보안을 보장하는 협업 학습 시스템 (2023)*
 
-*Patent Pending (Appl. No. 10-2024-0001659)*
+<img src="../images/random_forest.png" width="650" alt="Training process for the privacy-preserving federated random forest model">
 
-<img src="../images/random_forest.png" width="650">
-
-**Overview:**
-
+**개요:**
 - Designed and implemented a federated learning system for random forests enabling privacy-preserving distributed model training across multiple clients
 - Developed collaborative tree construction mechanism where clients iteratively contribute to growing and refining the model ensemble
 - Developed parallel processing system for efficient ensemble model training across multiple clients simultaneously
 - Demonstrated system effectiveness through extensive testing across 7 benchmark datasets, achieving superior performance compared to baseline approaches
-- **Tech Stack**: Python, NumPy, scikit-learn, Matplotlib, multiprocessing, Graphviz
+- **기술 스택**: Python, NumPy, scikit-learn, Matplotlib, multiprocessing, Graphviz
 
-[🔗 View Details](https://arxiv.org/abs/2407.19193)
+[🔗 상세보기](https://arxiv.org/abs/2407.19193)
 
 ---
 
 ### [RoBERTa News Classification](https://github.com/daehan-lim/roberta-sport-news-classifier)
 *Enhanced topic classification model with synthetic data augmentation (2024)*
 
-<img src="../images/roberta_architecture.png" width="350">
+<img src="../images/roberta_architecture.png" width="350" alt="RoBERTa model architecture">
 
-**Overview:**
+**개요:**
 - Developed machine learning model for classifying sports news articles into 5 distinct categories using [RoBERTa](https://huggingface.co/docs/transformers/en/model_doc/roberta) and [BBC Sport dataset](http://mlg.ucd.ie/datasets/bbc.html)
 - Augmented limited training data using GPT-4 generated articles and prompt engineering techniques, improving classification accuracy to 99.5%
 - Executed comprehensive experiments evaluating model performance under various data configurations and training conditions
 - Developed and deployed web application using Streamlit enabling real-time article classification with detailed performance visualizations
-- **Tech Stack**: Python, PyTorch, Hugging Face Transformers, GPT-4, Streamlit
+- **기술 스택**: Python, PyTorch, Hugging Face Transformers, GPT-4, Streamlit
 
-[🔗 View Details](https://github.com/daehan-lim/roberta-sport-news-classifier)
+[🔗 상세보기](https://github.com/daehan-lim/roberta-sport-news-classifier)
 
 ---
 
 ### [Medical Data Classifier](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 *Novel classification system for patient mortality prediction using electronic health records (2023)*
 
-<img src="../images/associative_classifier.png" width="420px">
+<img src="../images/associative_classifier.png" width="420px" alt="Associative classifier - rule generation algorithm">
 
-**Overview:**
+**개요:**
 
 - Developed custom associative classifier tailored for unbalanced healthcare datasets
 - Generated interpretable rules for medical experts to validate predictions
 - Implemented efficient rule-pruning strategy for improved interpretability
 - Achieved superior performance metrics compared to traditional classifiers
-- **Tech Stack**: Python, NumPy, Pandas, scikit-learn, Jupyter
+- **기술 스택**: Python, NumPy, Pandas, scikit-learn, Jupyter
 
-[🔗 View Details](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
+[🔗 상세보기](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 
 ---
 
-### [Information Retrieval System](assets/information_retrieval_report.pdf)
+### [Information Retrieval System](../assets/information_retrieval_report.pdf)
 *Efficient implementation of Boolean and ranked document retrieval (2024)*
 
-**Overview:**
+**개요:**
 - Implemented SPIMI-based inverted indexing for efficient document processing
 - Enabled Boolean query processing (AND, OR, NOT) for precise document filtering
 - Implemented ranked retrieval using TF-IDF weighting and cosine similarity for relevance-based ranking
 - Evaluated system performance on a small document corpus, showcasing efficient retrieval capabilities
-- **Tech Stack**: Python, NLTK, SpaCy, NumPy, contractions
+- **기술 스택**: Python, NLTK, SpaCy, NumPy, contractions
 
-[🔗 View Details](../assets/information_retrieval_report.pdf)
+[🔗 상세보기](../assets/information_retrieval_report.pdf)
 
 <br>
 
