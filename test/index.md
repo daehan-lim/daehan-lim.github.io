@@ -251,20 +251,20 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
 <br>
 
-## 📂 프로젝트 개요 (목록?)
+## 📂 프로젝트 목차
 
 **모바일 애플리케이션**
-- [Cubadebate 뉴스 앱](#cubadebate-뉴스-앱) - 맞춤형 콘텐츠 제공 및 오프라인 저장 기능을 갖춘 뉴스 앱 (2021) [🔗](https://github.com/daehan-lim/cubadebate-app)
-- [가스 소비(사용량?) 관리 앱](#gas-consumption-manager) - 공공 유틸리티 추적 시스템 (2021) [🔗](https://github.com/daehan-lim/gas-consumption-manager)
-- [ACME 앱](#acme-앱) - 서비스 티켓 관리 솔루션 (2021) [🔗](https://github.com/daehan-lim/acme)
-- [Yellow Pages](#yellow-pages) - 오프라인 지도(맵핑?) 기능이 포함된 전화번호부 모바일 앱 (2020) [🔗](https://github.com/daehan-lim/cuban-yellow-pages)
-- [정부 포털 앱](#정부-포털-앱) - 공식 정부 대표 플랫폼 애플리케이션 (2021) [🔗](https://github.com/daehan-lim/government-portal-app)
+- [Cubadebate 뉴스 앱](#cubadebate-뉴스-앱) - 맞춤형 콘텐츠 제공 및 오프라인 저장 기능을 갖춘 뉴스 앱 (2021)<a href="https://github.com/daehan-lim/cubadebate-app" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [가스 소비 관리 앱](#가스-소비-관리-앱) - 공공 유틸리티 추적 시스템 (2021)<a href="https://github.com/daehan-lim/gas-consumption-manager" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [ACME 앱](#acme-앱) - 서비스 티켓 관리 솔루션 (2021)<a href="https://github.com/daehan-lim/acme" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [Yellow Pages](#yellow-pages) - 오프라인 지도 기능이 포함된 전화번호부 모바일 앱 (2020)<a href="https://github.com/daehan-lim/cuban-yellow-pages" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [정부 포털 앱](#정부-포털-앱) - 공식 정부 대표 플랫폼 애플리케이션 (2021)<a href="https://github.com/daehan-lim/government-portal-app" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 
 **머신러닝 시스템**
-- [연합학습 기반 랜덤 포레스트](#연합학습-기반-랜덤-포레스트) - 개인정보를 보호하는 분산 학습 시스템 (2023) [🔗](https://arxiv.org/abs/2407.19193)
-- [RoBERTa 뉴스 분류](#roberta-news-classification) - 합성 데이터를 활용해 성능을 개선한 주제 분류 모델 (2024) [🔗](https://github.com/daehan-lim/roberta-sport-news-classifier)
-- [의료 데이터 분류기](#medical-data-classifier) - 환자 사망률 예측 시스템 (2023) [🔗](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
-- [정보 검색 시스템](#information-retrieval-system) - 문서 색인(화?) 및 검색 시스템 (2024) [🔗](../assets/information_retrieval_report.pdf)
+- [연합학습 기반 랜덤 포레스트](#연합학습-기반-랜덤-포레스트) - 개인정보를 보호하는 분산 학습 시스템 (2023)<a href="https://arxiv.org/abs/2407.19193" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [RoBERTa 뉴스 분류](#roberta-news-classification) - 합성 데이터를 활용해 성능을 개선한 주제 분류 모델 (2024)<a href="https://github.com/daehan-lim/roberta-sport-news-classifier" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [의료 데이터 분류기](#medical-data-classifier) - 환자 사망률 예측 시스템 (2023)<a href="https://github.com/daehan-lim/associative-classifier-mortality-prediction" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [정보 검색 시스템](#information-retrieval-system) - 문서 색인화 및 검색 시스템 (2024)<a href="assets/information_retrieval_report.pdf" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 
 ## 📱 모바일 애플리케이션
 
@@ -291,7 +291,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 <br><br>
 -->
 
-**개요:**
+**핵심 내용:**
 - 동적 카테고리 및 주제 선택 인터페이스로 맞춤형 뉴스 피드 시스템 구축
 - Room DB를 활용해 이미지를 포함한 전체 기사의 오프라인 저장으로 데이터 사용량 최적화
 - 실시간 주제 관리 시스템에 동적 검색과 게시물 수 표시, 자동 목록 재정렬 기능 구현으로 평균 콘텐츠 검색 시간을 2분에서 30초로 단축
@@ -303,7 +303,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 
 ---
 
-### [가스 사용량 관리 앱](https://github.com/daehan-lim/gas-consumption-manager)
+### [가스 소비 관리 앱](https://github.com/daehan-lim/gas-consumption-manager)
 *국영 가스 공가의 자동화된 가스 소비 관리 시스템 (2021)*
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
@@ -316,7 +316,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 </div>
 <br>
 
-**개요:**
+**핵심 내용:**
 - 국영 가스 공사를 위한 종합 유틸리티 관리 앱 설계 및 개발로 업무 처리 시간 70% 단축
 - Room을 활용한 오프라인 데이터 저장 및 자동 사용량 계산 구현
 - 인터랙티브 데이터 3 도구 및 리포팅 시스템 개발
@@ -342,7 +342,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 </div>
 <br>
 
-**개요:**
+**핵심 내용:**
 - 반응형 디자인이 적용된 오프라인 AS 티켓 관리 앱 구현
 - 맞춤형 이벤트 시각화 및 Android Calendar Provider API를 연동한 인터랙티브 캘린더 개발로 업무 효율성 향상
 - 앱 내 구글 맵 탑재로 티켓 위치 주소 검색과 길안내 소요 시간 단축
@@ -387,12 +387,12 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 </div>
 <br>
 
-**개요:**
-- 엔터프라이즈급 API를 활용하여(활용한?) 실시간 전화번호부 검색 시스템 구현
-- 내장 지도 파일을 활용한 벡터 매핑 시스템으로 (구현으로?) 데이터 사용량 85% 절감
-- 정부 업무 안내와 전화 서비스 정보의 오프라인 접근을 위한 자동 백그라운드 동기화 개발(구현?)
+**핵심 내용:**
+- 엔터프라이즈급 API를 활용한 실시간 전화번호부 검색 시스템 구현
+- 내장 지도 파일을 활용한 벡터 매핑 시스템으로 데이터 사용량 85% 절감
+- 정부 업무 안내와 전화 서비스 정보의 오프라인 접근을 위한 자동 백그라운드 동기화 구현
 - 동적 필터와 효율적인 페이징 처리가 적용된 반응형 검색 인터페이스 구축
-- Unit, UI, 호환성 테스트를 통해 안정성(신뢰성?)과 사용자 경험 최적화
+- Unit, UI, 호환성 테스트를 통해 안정성과 사용자 경험 최적화
 - **기술 스택**: Android, Java, SQLite, VTM Maps, WebView, HTML, JavaScript, SharedPreferences, JUnit
 
 [🔗 상세보기](https://github.com/daehan-lim/cuban-yellow-pages)
@@ -411,7 +411,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 </div>
 <br>
 
-**개요:**
+**핵심 내용:**
 - MVVM 아키텍처, Coroutines, JetPack 컴포넌트 도입해 레거시 코드 현대화 및 유지보수성 향상
 - 지역 매물 피드 시스템 구현: API 연동과 오프라인 데이터 캐싱, 실시간 동기화, 이미지 캐러셀, 네트워크 상태 모니터링으로 사용자 접근성 개선
 - 지역구 대표자 관리 시스템: Retrofit/Moshi 활용하여 민원 신청, 회의 일정 관리, 처리 현황 추적 등 주요 기능 구현으로 행정 업무 자동화
@@ -445,7 +445,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 
 <img src="../images/roberta_architecture.png" width="350" alt="RoBERTa model architecture">
 
-**개요:**
+**핵심 내용:**
 - Developed machine learning model for classifying sports news articles into 5 distinct categories using [RoBERTa](https://huggingface.co/docs/transformers/en/model_doc/roberta) and [BBC Sport dataset](http://mlg.ucd.ie/datasets/bbc.html)
 - Augmented limited training data using GPT-4 generated articles and prompt engineering techniques, improving classification accuracy to 99.5%
 - Executed comprehensive experiments evaluating model performance under various data configurations and training conditions
@@ -461,8 +461,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 
 <img src="../images/associative_classifier.png" width="420px" alt="Associative classifier - rule generation algorithm">
 
-**개요:**
-
+**핵심 내용:**
 - Developed custom associative classifier tailored for unbalanced healthcare datasets
 - Generated interpretable rules for medical experts to validate predictions
 - Implemented efficient rule-pruning strategy for improved interpretability
@@ -476,7 +475,7 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 ### [Information Retrieval System](../assets/information_retrieval_report.pdf)
 *Efficient implementation of Boolean and ranked document retrieval (2024)*
 
-**개요:**
+**핵심 내용:**
 - Implemented SPIMI-based inverted indexing for efficient document processing
 - Enabled Boolean query processing (AND, OR, NOT) for precise document filtering
 - Implemented ranked retrieval using TF-IDF weighting and cosine similarity for relevance-based ranking
