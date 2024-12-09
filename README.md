@@ -441,9 +441,9 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 
 **Overview:**
 - Developed custom associative classifier tailored for unbalanced healthcare datasets
-- Generated interpretable rules for medical experts to validate predictions
-- Implemented efficient rule-pruning strategy for improved interpretability
-- Achieved superior performance metrics compared to traditional classifiers
+- Generated interpretable rules for medical decision-making, enabling healthcare experts to validate model predictions
+- Implemented efficient rule-pruning strategy, reducing rule set by 80% for enhanced model interpretability
+- Achieved superior performance metrics compared to traditional classifiers on real-world hospital data
 - **Tech Stack**: Python, NumPy, Pandas, scikit-learn, Jupyter
 
 [🔗 View Details](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
