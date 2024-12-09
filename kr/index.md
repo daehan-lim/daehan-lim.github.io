@@ -254,7 +254,7 @@
 
 **머신러닝 시스템**
 - [연합학습 기반 랜덤 포레스트](#연합학습-기반-랜덤-포레스트) - 개인정보를 보호하는 분산 학습 시스템 (2023)<a href="https://arxiv.org/abs/2407.19193" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
-- [RoBERTa 뉴스 분류](#roberta-news-classification) - 합성 데이터를 활용해 성능을 개선한 주제 분류 모델 (2024)<a href="https://github.com/daehan-lim/roberta-sport-news-classifier" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [RoBERTa 뉴스 분류기](#roberta-뉴스-분류기) - 합성 데이터를 활용해 성능을 개선한 주제 분류 모델 (2024)<a href="https://github.com/daehan-lim/roberta-sport-news-classifier" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 - [의료 데이터 분류기](#medical-data-classifier) - 환자 사망률 예측 시스템 (2023)<a href="https://github.com/daehan-lim/associative-classifier-mortality-prediction" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 - [정보 검색 시스템](#information-retrieval-system) - 문서 색인화 및 검색 시스템 (2024)<a href="assets/information_retrieval_report.pdf" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 
@@ -289,7 +289,7 @@
 - 실시간 주제 관리 시스템에 동적 검색과 게시물 수 표시, 자동 목록 재정렬 기능 구현으로 평균 콘텐츠 검색 시간을 2분에서 30초로 단축
 - 기사 내 텍스트 검색, 음성합성(TTS) 및 음성 인식 기능 통합으로 접근성을 40% 향상
 - 다중 레벨 댓글 인터페이스와 효율적으로 데이터를 로딩하는 무한 스크롤, SMS 구독 등의 기능 구현으로 사용자 참여도 개선
-- **기술 스택:** Android, Kotlin, MVVM, Room, Retrofit, Moshi, Navigation, Material Design, Glide, JSoup, Coroutines, ViewBinding
+- **사용 기술:** Android, Kotlin, MVVM, Room, Retrofit, Moshi, Navigation, Material Design, Glide, JSoup, Coroutines, ViewBinding
 
 [🔗 상세보기](https://github.com/daehan-lim/cubadebate-app)
 
@@ -313,7 +313,7 @@
 - Room을 활용한 오프라인 데이터 저장 및 자동 사용량 계산 구현
 - 인터랙티브 데이터 3 도구 및 리포팅 시스템 개발
 - 고객 지원을 위한 영업소 연락처 디렉터리 통합으로 고객 문의 처리 과정 단순화
-- **기술 스택**: Android, Kotlin, MVVM, Room, Jetpack, MPAndroidChart, Material Design, Coroutines
+- **사용 기술**: Android, Kotlin, MVVM, Room, Jetpack, MPAndroidChart, Material Design, Coroutines
 
 [🔗 상세보기](https://github.com/daehan-lim/gas-consumption-manager)
 
@@ -339,7 +339,7 @@
 - 맞춤형 이벤트 시각화 및 Android Calendar Provider API를 연동한 인터랙티브 캘린더 개발로 업무 효율성 향상
 - 앱 내 구글 맵 탑재로 티켓 위치 주소 검색과 길안내 소요 시간 약 20% 단축
 - 안정적인 사용자 인증 시스템 및 오류 처리, 입력값 검증 구현
-- **기술 스택**: Android, Kotlin, MVVM, Jetpack, Google Maps, Room, Material Design.
+- **사용 기술**: Android, Kotlin, MVVM, Jetpack, Google Maps, Room, Material Design.
 
 [🔗 상세보기](https://github.com/daehan-lim/acme)
 
@@ -385,7 +385,7 @@
 - 정부 업무 안내와 전화 서비스 정보의 오프라인 접근을 위한 자동 백그라운드 동기화 구현
 - 동적 필터와 효율적인 페이징 처리가 적용된 반응형 검색 인터페이스 구축
 - Unit, UI, 호환성 테스트를 통해 안정성과 사용자 경험 최적화
-- **기술 스택**: Android, Java, SQLite, VTM Maps, WebView, HTML, JavaScript, SharedPreferences, JUnit
+- **사용 기술**: Android, Java, SQLite, VTM Maps, WebView, HTML, JavaScript, SharedPreferences, JUnit
 
 [🔗 상세보기](https://github.com/daehan-lim/cuban-yellow-pages)
 
@@ -408,7 +408,7 @@
 - 지역 매물 피드 시스템 구현: API 연동과 오프라인 데이터 캐싱, 실시간 동기화, 이미지 캐러셀, 네트워크 상태 모니터링으로 사용자 접근성 개선
 - 지역구 대표자 관리 시스템: Retrofit/Moshi 활용하여 민원 신청, 회의 일정 관리, 처리 현황 추적 등 주요 기능 구현으로 행정 업무 자동화
 - 시도의회 포털 통합: JavaScript 인젝션 및 WebView 커스터마이징으로 데스크톱 중심 UI를 모바일용으로 최적화
-- **기술 스택**: Android, Kotlin, MVVM, Retrofit2, Room, Jetpack, ViewPager2, WebView, JavaScript, Coroutines
+- **사용 기술**: Android, Kotlin, MVVM, Retrofit2, Room, Jetpack, ViewPager2, WebView, JavaScript, Coroutines
 
 [🔗 상세보기](https://github.com/daehan-lim/government-portal-app)
 
@@ -427,23 +427,24 @@
 - 전체 모델 재학습 없이 새 클라이언트 추가 및 업데이트 가능한 점진적 학습 메커니즘 도입으로 시스템 확장성 향상
 - 7개의 데이터셋(최대 88,000개의 샘플, 54개의 특성)에서 기존 접근법 대비 10% 성능 향상 달성
 - Expert Systems with Applications (SCIE 저널) 논문 게재 및 특허 출원 (출원 번호 10-2024-0001659)
-- **기술 스택**: Python, NumPy, scikit-learn, Matplotlib, multiprocessing, Graphviz
+- **사용 기술**: Python, NumPy, scikit-learn, Matplotlib, multiprocessing, Graphviz
 
 [🔗 상세보기](https://arxiv.org/abs/2407.19193)
 
 ---
 
-### [RoBERTa News Classification](https://github.com/daehan-lim/roberta-sport-news-classifier)
-*Enhanced topic classification model with synthetic data augmentation (2024)*
+### [RoBERTa 뉴스 분류기](https://github.com/daehan-lim/roberta-sport-news-classifier)
+*합성 데이터 증강을 활용한 고도화된 주제 분류 모델 (2024)*
 
 <img src="../images/roberta_architecture.png" width="350" alt="RoBERTa model architecture">
 
 **핵심 내용:**
-- Developed machine learning model for classifying sports news articles into 5 distinct categories using [RoBERTa](https://huggingface.co/docs/transformers/en/model_doc/roberta) and [BBC Sport dataset](http://mlg.ucd.ie/datasets/bbc.html)
-- Augmented limited training data using GPT-4 generated articles and prompt engineering techniques, improving classification accuracy to 99.5%
-- Executed comprehensive experiments evaluating model performance under various data configurations and training conditions
-- Developed and deployed web application using Streamlit enabling real-time article classification with detailed performance visualizations
-- **기술 스택**: Python, PyTorch, Hugging Face Transformers, GPT-4, Streamlit
+- [RoBERTa](https://huggingface.co/docs/transformers/en/model_doc/roberta)와 [BBC Sport](http://mlg.ucd.ie/datasets/bbc.html) 데이터셋을 활용해 스포츠 뉴스를 5개의 카테고리로 분류하는 머신러닝 모델 구현
+- GPT-4로 생성된 합성 데이터 및 프롬프트 엔지니어링 기법 도입으로 분류 정확도 99.5%로 향상
+- Zero-shot 학습 전략 도입으로 합성 데이터의 다양성 및 범용성 확보
+- 다양한 데이터 구성과 훈련 조건에서의 모델 성능 평가를 위한 포괄적 실험 수행
+- 실시간 기사 분류와 성능 시각화를 제공하는 웹 애플리케이션 개발 및 배포로 사용자 접근성 향상
+- **사용 기술**: Python, PyTorch, Hugging Face Transformers, GPT-4, Streamlit
 
 [🔗 상세보기](https://github.com/daehan-lim/roberta-sport-news-classifier)
 
@@ -459,7 +460,7 @@
 - Generated interpretable rules for medical experts to validate predictions
 - Implemented efficient rule-pruning strategy for improved interpretability
 - Achieved superior performance metrics compared to traditional classifiers
-- **기술 스택**: Python, NumPy, Pandas, scikit-learn, Jupyter
+- **사용 기술**: Python, NumPy, Pandas, scikit-learn, Jupyter
 
 [🔗 상세보기](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 
@@ -473,7 +474,7 @@
 - Enabled Boolean query processing (AND, OR, NOT) for precise document filtering
 - Implemented ranked retrieval using TF-IDF weighting and cosine similarity for relevance-based ranking
 - Evaluated system performance on a small document corpus, showcasing efficient retrieval capabilities
-- **기술 스택**: Python, NLTK, SpaCy, NumPy, contractions
+- **사용 기술**: Python, NLTK, SpaCy, NumPy, contractions
 
 [🔗 상세보기](../assets/information_retrieval_report.pdf)
 
