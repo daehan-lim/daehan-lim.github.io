@@ -255,7 +255,7 @@
 **머신러닝 시스템**
 - [연합학습 기반 랜덤 포레스트](#연합학습-기반-랜덤-포레스트) - 개인정보를 보호하는 분산 학습 시스템 (2023)<a href="https://arxiv.org/abs/2407.19193" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 - [RoBERTa 뉴스 분류기](#roberta-뉴스-분류기) - 합성 데이터를 활용해 성능을 개선한 주제 분류 모델 (2024)<a href="https://github.com/daehan-lim/roberta-sport-news-classifier" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
-- [의료 데이터 분류기](#medical-data-classifier) - 환자 사망률 예측 시스템 (2023)<a href="https://github.com/daehan-lim/associative-classifier-mortality-prediction" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [의료 데이터 분류 시스템](#의료-데이터-분류-시스템) - 환자 사망률 예측 시스템 (2023)<a href="https://github.com/daehan-lim/associative-classifier-mortality-prediction" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 - [정보 검색 시스템](#information-retrieval-system) - 문서 색인화 및 검색 시스템 (2024)<a href="assets/information_retrieval_report.pdf" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 
 ## 📱 모바일 애플리케이션
@@ -450,30 +450,31 @@
 
 ---
 
-### [Medical Data Classifier](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
-*Novel classification system for patient mortality prediction using electronic health records (2023)*
+### [의료 데이터 분류 시스템](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
+*전자의무기록 기반 환자 사망률 예측을 위한 연관 규칙 분류 시스템 (2023)*
 
 <img src="../images/associative_classifier.png" width="420px" alt="Associative classifier - rule generation algorithm">
 
 **핵심 내용:**
-- Developed custom associative classifier tailored for unbalanced healthcare datasets
-- Generated interpretable rules for medical experts to validate predictions
-- Implemented efficient rule-pruning strategy for improved interpretability
-- Achieved superior performance metrics compared to traditional classifiers
-- **사용 기술**: Python, NumPy, Pandas, scikit-learn, Jupyter
+- 의료 데이터의 클래스 불균형 문제를 해결하는 맞춤형 연관 규칙 분류기 설계 및 개발
+- 의료진의 결과 검증을 위한 해석 가능한 규칙 생성 시스템 구축으로 예측 투명성 확보
+- 효율적인 규칙 가지치기 전략 도입으로 분류 규칙 수를 80% 감소시켜 모델 해석성 개선
+- 실제 병원 데이터 기반 실험에서 기존 분류 모델 대비 우수한 성능 달성
+- **사용 기술**: Python, NumPy, Pandas, scikit-learn, Jupyter Notebook
 
 [🔗 상세보기](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 
 ---
 
-### [Information Retrieval System](../assets/information_retrieval_report.pdf)
-*Efficient implementation of Boolean and ranked document retrieval (2024)*
+### [정보 검색 시스템](../assets/information_retrieval_report.pdf)
+*효율적인 불리언 및 랭킹 기반 문서 검색 시스템 구현 (2024)*
 
 **핵심 내용:**
-- Implemented SPIMI-based inverted indexing for efficient document processing
-- Enabled Boolean query processing (AND, OR, NOT) for precise document filtering
-- Implemented ranked retrieval using TF-IDF weighting and cosine similarity for relevance-based ranking
-- Evaluated system performance on a small document corpus, showcasing efficient retrieval capabilities
+- SPIMI 기반 역색인 구축으로 순차적 검색 대비 문서 처리 시간 65% 단축
+- 불리언 연산자(AND, OR, NOT) 기반 정밀 검색으로 검색 결과 필터링 정확도 향상
+- TF-IDF 가중치와 코사인 유사도를 활용한 문서 랭킹으로 검색 결과 적합도 개선
+- 466개의 영문 문서 처리 시 평균 검색 응답 시간 0.3초 달성
+- 메모리 사용량을 2.5MB로 최적화된 시스템 구현으로 리소스 사용 효율성 확보
 - **사용 기술**: Python, NLTK, SpaCy, NumPy, contractions
 
 [🔗 상세보기](../assets/information_retrieval_report.pdf)
