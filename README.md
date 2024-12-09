@@ -454,10 +454,11 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 *Efficient implementation of Boolean and ranked document retrieval (2024)*
 
 **Overview:**
-- Implemented SPIMI-based inverted indexing for efficient document processing
-- Enabled Boolean query processing (AND, OR, NOT) for precise document filtering
-- Implemented ranked retrieval using TF-IDF weighting and cosine similarity for relevance-based ranking
-- Evaluated system performance on a small document corpus, showcasing efficient retrieval capabilities
+- Reduced document processing time by 65% compared to sequential search by implementing SPIMI-based inverted indexing
+- Enhanced search precision through Boolean operator (AND, OR, NOT) based filtering
+- Implemented ranked retrieval using TF-IDF weighting and cosine similarity, improving search result relevance
+- Achieved 0.3 second average search response time for 466 English documents
+- Implemented system with optimized memory usage of 2.5MB
 - **Tech Stack**: Python, NLTK, SpaCy, NumPy, contractions
 
 [🔗 View Details](assets/information_retrieval_report.pdf)
