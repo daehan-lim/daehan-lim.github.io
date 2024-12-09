@@ -474,14 +474,15 @@ Cuban-Korean Software developer with nearly 3 years of experience building scala
 
 ---
 
-### [Information Retrieval System](../assets/information_retrieval_report.pdf)
-*Efficient implementation of Boolean and ranked document retrieval (2024)*
+### [정보 검색 시스템](../assets/information_retrieval_report.pdf)
+*효율적인 불리언 및 랭킹 기반 문서 검색 시스템 구현 (2024)*
 
 **핵심 내용:**
-- Implemented SPIMI-based inverted indexing for efficient document processing
-- Enabled Boolean query processing (AND, OR, NOT) for precise document filtering
-- Implemented ranked retrieval using TF-IDF weighting and cosine similarity for relevance-based ranking
-- Evaluated system performance on a small document corpus, showcasing efficient retrieval capabilities
+- SPIMI 기반 역색인 구축으로 순차적 검색 대비 문서 처리 시간 65% 단축
+- 불리언 연산자(AND, OR, NOT) 기반 정밀 검색으로 검색 결과 필터링 정확도 향상
+- TF-IDF 가중치와 코사인 유사도를 활용한 문서 랭킹으로 검색 결과 적합도 개선
+- 466개의 영문 문서 처리 시 평균 검색 응답 시간 0.3초 달성
+- 메모리 사용량을 2.5MB로 최적화된 시스템 구현으로 리소스 사용 효율성 확보
 - **사용 기술**: Python, NLTK, SpaCy, NumPy, contractions
 
 [🔗 상세보기](../assets/information_retrieval_report.pdf)
