@@ -425,6 +425,7 @@ Software developer with nearly 3 years of experience building scalable, user-cen
 **Overview:**
 - Developed machine learning model for classifying sports news articles into 5 distinct categories using [RoBERTa](https://huggingface.co/docs/transformers/en/model_doc/roberta) and [BBC Sport dataset](http://mlg.ucd.ie/datasets/bbc.html)
 - Augmented limited training data using GPT-4 generated articles and prompt engineering techniques, improving classification accuracy to 99.5%
+- Employed zero-shot learning strategy to enhance diversity and versatility of the LLM generated articles
 - Executed comprehensive experiments evaluating model performance under various data configurations and training conditions
 - Developed and deployed web application using Streamlit, enabling real-time article classification with detailed performance visualizations
 - **Tech Stack**: Python, PyTorch, Hugging Face Transformers, GPT-4, Streamlit
