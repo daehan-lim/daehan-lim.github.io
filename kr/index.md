@@ -257,7 +257,7 @@
 - [연합학습 기반 랜덤 포레스트](#연합학습-기반-랜덤-포레스트) - 개인정보를 보호하는 분산 학습 시스템 (2023)<a href="https://arxiv.org/abs/2407.19193" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 - [RoBERTa 뉴스 분류기](#roberta-뉴스-분류기) - 합성 데이터를 활용해 성능을 개선한 주제 분류 모델 (2024)<a href="https://github.com/daehan-lim/roberta-sport-news-classifier" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 - [의료 데이터 분류 시스템](#의료-데이터-분류-시스템) - 환자 사망률 예측 시스템 (2023)<a href="https://github.com/daehan-lim/associative-classifier-mortality-prediction" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
-- [정보 검색 시스템](#information-retrieval-system) - 문서 색인화 및 검색 시스템 (2024)<a href="assets/information_retrieval_report.pdf" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [정보 검색 시스템](#정보-검색-시스템) - 문서 색인화 및 검색 시스템 (2024)<a href="assets/information_retrieval_report.pdf" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 
 ## 📱 모바일 애플리케이션
 
