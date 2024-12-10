@@ -84,7 +84,7 @@
 <div id="nav-menu">
   <div style="margin-left: 20px;">
     <a href="/" class="active">EN</a>
-    <a href="/kr">KR</a>
+    <a href="/test">KR</a>
   </div>
 
 <span id="nav-menu-toggle">☰</span>
