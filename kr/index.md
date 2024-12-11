@@ -17,6 +17,15 @@
     font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
 
+  .markdown-body {
+      font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+      font-weight: 400 !important;
+      word-break: keep-all !important;
+      letter-spacing: -0.3px !important;
+      line-height: 1.8 !important;
+      font-size: 17px !important;
+  }
+
   .ko {
     font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 400;
