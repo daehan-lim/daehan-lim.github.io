@@ -454,7 +454,7 @@
 - ProcessPoolExecutor를 활용한 트리 학습 병렬화로 모델 훈련 시간 60% 단축
 - 전체 모델 재학습 없이 새 클라이언트 추가 및 업데이트 가능한 점진적 학습 메커니즘 도입으로 시스템 확장성 향상
 - 7개의 데이터셋(최대 88,000개의 샘플, 54개의 특성)에서 기존 접근법 대비 10% 성능 향상 달성
-- Expert Systems with Applications (SCIE 저널) 논문 게재 및 특허 출원 (출원 번호 10-2024-0001659)
+- [Expert Systems with Applications](https://www.sciencedirect.com/science/article/pii/S0957417424016099) (SCIE 저널) 논문 게재 및 특허 출원 (출원 번호 10-2024-0001659)
 - **사용 기술**: Python, NumPy, scikit-learn, Matplotlib, multiprocessing, Graphviz
 
 [🔗 상세보기](https://arxiv.org/abs/2407.19193)
