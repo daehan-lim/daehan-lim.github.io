@@ -253,6 +253,7 @@
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
 <br>
 
+<span style="display: block; height: 1px;"></span>
 ## 📂 프로젝트 목차
 
 **모바일 애플리케이션**
@@ -268,6 +269,7 @@
 - [의료 데이터 분류 시스템](#의료-데이터-분류-시스템) - 환자 사망률 예측 시스템 (2023)<a href="https://github.com/daehan-lim/associative-classifier-mortality-prediction" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 - [정보 검색 시스템](#정보-검색-시스템) - 문서 색인화 및 검색 시스템 (2024)<a href="../assets/information_retrieval_report.pdf" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 
+<span style="display: block; height: 1px;"></span>
 ## 📱 모바일 애플리케이션
 
 ### [Cubadebate 뉴스 앱](https://github.com/daehan-lim/cubadebate-app)
