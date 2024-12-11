@@ -287,7 +287,8 @@
 </div>
 <span style="display: block; height: 11px;"></span>
 
-**회사명:** Desoft (쿠바 국영 소프트웨어 개발사)<span style="display: block; height: 5px;"></span>
+**회사명:** Desoft (쿠바 국영 소프트웨어 개발사)
+<span style="display: block; height: 5px;"></span>
 **역할:** UI/UX 설계 및 전체 안드로이드 앱 개발 담당
 
 **핵심 내용:**
@@ -313,7 +314,11 @@
   <img src="../images/gas/offices.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager offices screen" />
   <img src="../images/gas/video.png" width="240" alt="Gas consumption manager video screen" />
 </div>
-<br>
+<span style="display: block; height: 11px;"></span>
+
+**회사명:** Desoft (쿠바 국영 소프트웨어 개발사)
+<span style="display: block; height: 5px;"></span>
+**역할:** 전체 안드로이드 앱 개발 담당
 
 **핵심 내용:**
 - 국영 가스 공사를 위한 종합 유틸리티 관리 앱 설계 및 개발로 업무 처리 시간 70% 단축
@@ -339,7 +344,11 @@
   <img src="../images/acme/calendar_sync.png" width="240" style="margin-right: 5px;" alt="ACME app calendar sync screen" /> 
   <img src="../images/acme/maps.png" width="240" alt="ACME app maps screen" />
 </div>
-<br>
+<span style="display: block; height: 11px;"></span>
+
+**회사명:** Desoft (쿠바 국영 소프트웨어 개발사)
+<span style="display: block; height: 5px;"></span>
+**역할:** 전체 안드로이드 앱 개발 담당
 
 **핵심 내용:**
 - 반응형 디자인이 적용된 오프라인 AS 티켓 관리 앱 구현
@@ -384,7 +393,11 @@
     </div>
   </div>
 </div>
-<br>
+<span style="display: block; height: 11px;"></span>
+
+**회사명:** ETECSA (쿠바 국영 통신사)
+<span style="display: block; height: 5px;"></span>
+**역할:** 안드로이드 앱 주개발자 (AR 모듈 제외)
 
 **핵심 내용:**
 - 엔터프라이즈급 API를 활용한 실시간 전화번호부 검색 시스템 구현
@@ -408,7 +421,11 @@
   <img src="../images/portal/code.png" width="240" style="margin-right: 5px;" alt="Code input screen"/>
   <img src="../images/portal/guide.png" width="240" alt="User guide screen"/> 
 </div>
-<br>
+<span style="display: block; height: 11px;"></span>
+
+**회사명:** Desoft (쿠바 국영 소프트웨어 개발사)
+<span style="display: block; height: 5px;"></span>
+**역할:** 개발 리드, 레거시 코드 현대화 및 시민 서비스 모듈 UI/UX 설계·개발 담당
 
 **핵심 내용:**
 - MVVM 아키텍처, Coroutines, JetPack 컴포넌트 도입해 레거시 코드 현대화 및 유지보수성 향상
@@ -428,6 +445,10 @@
 
 <img src="../images/random_forest.png" width="650" alt="Training process for the privacy-preserving federated random forest model">
 
+**소속:** 충남대학교 데이터마이닝 연구실
+<span style="display: block; height: 5px;"></span>
+**역할:** 전체 시스템 설계 및 구현, 논문 작성, 특허 출원
+
 **핵심 내용:**
 - 다중 클라이언트 간 프라이버시를 보장하는 연합학습 기반 랜덤 포레스트 시스템 설계 및 구현
 - ProcessPoolExecutor를 활용한 트리 학습 병렬화로 모델 훈련 시간 60% 단축
@@ -444,6 +465,10 @@
 *합성 데이터 증강을 활용한 고도화된 주제 분류 모델 (2024)*
 
 <img src="../images/roberta_architecture.png" width="350" alt="RoBERTa model architecture">
+
+**소속:** 충남대학교 데이터마이닝 연구실
+<span style="display: block; height: 5px;"></span>
+**역할:** 분류 모델 구현, 합성 데이터 생성, 웹 애플리케이션 개발 
 
 **핵심 내용:**
 - [RoBERTa](https://huggingface.co/docs/transformers/en/model_doc/roberta)와 [BBC Sport](http://mlg.ucd.ie/datasets/bbc.html) 데이터셋을 활용해 스포츠 뉴스를 5개의 카테고리로 분류하는 머신러닝 모델 구현
@@ -462,6 +487,10 @@
 
 <img src="../images/associative_classifier.png" width="420px" alt="Associative classifier - rule generation algorithm">
 
+**소속:** 충남대학교 데이터마이닝 연구실
+<span style="display: block; height: 5px;"></span>
+**역할:** 전체 시스템 설계 및 구현, 논문 작성
+
 **핵심 내용:**
 - 의료 데이터의 클래스 불균형 문제를 해결하는 맞춤형 연관 규칙 분류기 설계 및 개발
 - 의료진의 결과 검증을 위한 해석 가능한 규칙 생성 시스템 구축으로 예측 투명성 확보
@@ -475,6 +504,10 @@
 
 ### [정보 검색 시스템](../assets/information_retrieval_report.pdf)
 *효율적인 불리언 및 랭킹 기반 문서 검색 시스템 구현 (2024)*
+
+**소속:** 충남대학교
+<span style="display: block; height: 5px;"></span>
+**역할:** 전체 시스템 설계 및 구현, 논문 작성
 
 **핵심 내용:**
 - SPIMI 기반 역색인 구축으로 순차적 검색 대비 문서 처리 시간 65% 단축
