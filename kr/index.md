@@ -285,15 +285,10 @@
   <img src="../images/cubadebate/search.svg" width="240" style="margin-right: 5px;" alt="Cubadebate search screen" />
   <img src="../images/cubadebate/saved.png" width="240"  alt="Cubadebate saved articles screen" />
 </div>
-<br>
+<span style="display: block; height: 11px;"></span>
 
-<!--
-**Video Walkthrough**
-<div style="border: 4px solid #ccc; border-radius: 12px; padding: 4px; width: fit-content; margin: 0 auto;">
-  <iframe width="236" height="486" src="https://www.youtube.com/embed/4SEpMDPFkHw" frameborder="0" allowfullscreen></iframe>
-</div>
-<br><br>
--->
+**회사명:** Desoft (쿠바 국영 소프트웨어 개발사)<span style="display: block; height: 5px;"></span>
+**역할:** UI/UX 설계 및 전체 안드로이드 앱 개발 담당
 
 **핵심 내용:**
 - 동적 카테고리 및 주제 선택 인터페이스로 맞춤형 뉴스 피드 시스템 구축
