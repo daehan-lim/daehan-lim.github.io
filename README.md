@@ -183,7 +183,7 @@
 </div>
 
 ## 👋 About Me
-Software developer with nearly 3 years of experience building scalable, user-centric mobile applications and 2 years of hands-on expertise in advanced data processing, algorithm optimization, and distributed systems, leveraging an AI/ML background. Spearheaded mobile application development across telecom and enterprise sectors, driving adoption of modern architectural patterns and Android best practices to enhance code maintainability and development efficiency. Proficient in Java, Kotlin, Python, and JavaScript, combines technical expertise with innovative problem-solving to deliver reliable, high-performing mobile solutions.
+Software engineer with nearly 3 years of experience building scalable, user-centric mobile applications and 2 years of hands-on expertise in advanced data processing, algorithm optimization, and distributed systems, leveraging an AI/ML background. Spearheaded mobile application development across telecom and enterprise sectors, driving adoption of modern architectural patterns and Android best practices to enhance code maintainability and development efficiency. Proficient in Java, Kotlin, Python, and JavaScript, combining technical expertise with innovative problem-solving to deliver reliable, high-performing mobile solutions.
 
 ## 🛠️ Technical Skills
 
