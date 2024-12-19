@@ -163,7 +163,7 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%230077B5&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Penjan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
 
 <div align="center">
-  <a href="/assets/Resume_Penjan_Antonio_Eng_Lim.pdf">
+  <a href="/assets/Resume.pdf">
     <img src="https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=readme&logoColor=white" alt="Resume Badge">
   </a>
   <a href="https://linkedin.com/in/penjan-a-eng-lim">
@@ -470,7 +470,7 @@ Software engineer with nearly 3 years of experience building scalable, user-cent
 Feel free to review my resume or reach out through LinkedIn or email for professional opportunities.
 
 <div align="center">
-  <a href="/assets/Resume_Penjan_Antonio_Eng_Lim.pdf">
+  <a href="/assets/Resume.pdf">
     <img src="https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=readme&logoColor=white" alt="Resume Badge">
   </a>
   <a href="https://linkedin.com/in/penjan-a-eng-lim">
