@@ -268,7 +268,7 @@ Software engineer with nearly 3 years of experience building scalable, user-cent
 
 **Overview:**
 - Built customizable news feed system with dynamic category and topic selection interfaces, enabling personalized content delivery
-- Implemented offline caching for bookmarking full articles including images, reducing data usage by up to 25%
+- Implemented offline caching for bookmarking full articles including images, reducing data usage by up to 30%
 - Designed real-time topic management system with dynamic search, post count display, and automatic list reordering, reducing average content discovery time from 2 minutes to 30 seconds
 - Integrated in-article text search, text-to-speech capability and voice recognition capabilities, increasing content accessibility by 40%
 - Built multi-level commenting interface, infinite scroll with efficient data loading, and SMS subscriptions, improving user engagement
