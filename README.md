@@ -202,6 +202,11 @@ Software engineer with nearly 3 years of experience building scalable, user-cent
 [![Espresso](https://img.shields.io/badge/Espresso-FF5722?style=for-the-badge)](https://developer.android.com/training/testing/espresso)
 [![Navigation](https://img.shields.io/badge/Navigation-6200EE?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/guide/navigation)
 [![Maps & Location](https://img.shields.io/badge/Maps_&_Location-4285F4?style=for-the-badge&logo=google-maps&logoColor=white)](https://developers.google.com/maps/documentation/android-sdk)
+[![Proguard](https://img.shields.io/badge/Proguard-8DB600?style=for-the-badge)](https://developer.android.com/studio/build/shrink-code)
+[![ViewModel Factory](https://img.shields.io/badge/ViewModel%20Factory-FF4081?style=for-the-badge)](https://developer.android.com/topic/libraries/architecture/viewmodel)
+[![APK Signing](https://img.shields.io/badge/APK_Signing-00C853?style=for-the-badge)](https://developer.android.com/studio/publish/app-signing)
+[![Android Studio](https://img.shields.io/badge/Android_Studio-4285F4?style=for-the-badge&logo=android-studio&logoColor=white)](https://developer.android.com/studio)
+[![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)](https://gradle.org/)
 
 ### Data Management & Storage
 [![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sql&logoColor=white)](https://www.sqlite.org)
@@ -223,7 +228,7 @@ Software engineer with nearly 3 years of experience building scalable, user-cent
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com)
 [![MOCKK](https://img.shields.io/badge/mockk-2496ED?style=for-the-badge)](https://mockk.io)
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
-
+[![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
 
 ## 📂 Projects Overview
 
