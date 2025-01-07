@@ -303,7 +303,7 @@
 - 다중 레벨 댓글 인터페이스와 효율적으로 데이터를 로딩하는 무한 스크롤, SMS 구독 등의 기능 구현으로 사용자 참여도 개선
 - **사용 기술:** Android, Kotlin, Coroutines, MVVM, Room, Retrofit, Moshi, Navigation, Material Design, Glide, JSoup, ViewBinding
 
-[🔗 상세보기](https://github.com/daehan-lim/cubadebate-app)
+[🔗 GitHub에서 보기](https://github.com/daehan-lim/cubadebate-app)
 
 ---
 
@@ -331,7 +331,7 @@
 - 고객 지원을 위한 영업소 연락처 디렉터리 통합으로 고객 문의 처리 과정 단순화
 - **사용 기술**: Android, Kotlin, MVVM, Room, Jetpack, MPAndroidChart, Material Design, Coroutines
 
-[🔗 상세보기](https://github.com/daehan-lim/gas-consumption-manager)
+[🔗 GitHub에서 보기](https://github.com/daehan-lim/gas-consumption-manager)
 
 ---
 
@@ -361,7 +361,7 @@
 - 안정적인 사용자 인증 시스템 및 오류 처리, 입력값 검증 구현
 - **사용 기술**: Android, Kotlin, MVVM, Jetpack, Google Maps, Room, Material Design, Calendar Provider API
 
-[🔗 상세보기](https://github.com/daehan-lim/acme)
+[🔗 GitHub에서 보기](https://github.com/daehan-lim/acme)
 
 ---
 
@@ -411,7 +411,7 @@
 - Unit, UI, 호환성 테스트를 통해 안정성과 사용자 경험 최적화
 - **사용 기술**: Android, Java, SQLite, VTM Maps, WebView, JavaScript, SharedPreferences, JUnit, VTM Maps
 
-[🔗 상세보기](https://github.com/daehan-lim/cuban-yellow-pages)
+[🔗 GitHub에서 보기](https://github.com/daehan-lim/cuban-yellow-pages)
 
 ---
 
@@ -438,7 +438,7 @@
 - 시도의회 포털 통합: JavaScript 인젝션 및 WebView 커스터마이징으로 데스크톱 중심 UI를 모바일용으로 최적화
 - **사용 기술**: Android, Kotlin, Coroutines, MVVM, Retrofit2, Room, Jetpack, ViewPager2, WebView, JavaScript
 
-[🔗 상세보기](https://github.com/daehan-lim/government-portal-app)
+[🔗 GitHub에서 보기](https://github.com/daehan-lim/government-portal-app)
 
 ---
 
