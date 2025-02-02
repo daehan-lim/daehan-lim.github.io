@@ -277,7 +277,7 @@ Software engineer with a strong foundation in mobile app development and data-dr
 - Built multi-level commenting interface, infinite scroll with efficient data loading, and SMS subscriptions, improving user engagement
 - **Tech Stack:** Android, Kotlin, MVVM, Room, Retrofit, Moshi, Navigation, Material Design, Glide, JSoup, Coroutines, ViewBinding
 
-[🔗 View Details](https://github.com/daehan-lim/cubadebate-app)
+[🔗 View on GitHub](https://github.com/daehan-lim/cubadebate-app)
 
 ---
 
