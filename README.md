@@ -301,7 +301,7 @@ Software engineer with a strong foundation in mobile app development and data-dr
 - Built streamlined communication channels with company offices, simplifying the customer support process
 - **Tech Stack**: Android, Kotlin, MVVM, Room, Jetpack, MPAndroidChart, Material Design, Coroutines
 
-[🔗 View Details](https://github.com/daehan-lim/gas-consumption-manager)
+[🔗 View on GitHub](https://github.com/daehan-lim/gas-consumption-manager)
 
 ---
 
@@ -327,7 +327,7 @@ Software engineer with a strong foundation in mobile app development and data-dr
 - Created user registration and authentication flows with input validation and error feedback
 - **Tech Stack**: Android, Kotlin, MVVM, Jetpack, Google Maps, Room, Material Design.
 
-[🔗 View Details](https://github.com/daehan-lim/acme)
+[🔗 View on GitHub](https://github.com/daehan-lim/acme)
 
 ---
 
@@ -373,7 +373,7 @@ Software engineer with a strong foundation in mobile app development and data-dr
 - Executed comprehensive software testing, including unit, UI and compatibility tests, optimizing reliability and user experience
 - **Tech Stack**: Android, Java, SQLite, VTM Maps, WebView, HTML, JavaScript, SharedPreferences, JUnit
 
-[🔗 View Details](https://github.com/daehan-lim/cuban-yellow-pages)
+[🔗 View on GitHub](https://github.com/daehan-lim/cuban-yellow-pages)
 
 ---
 
@@ -396,7 +396,7 @@ Software engineer with a strong foundation in mobile app development and data-dr
 - Integrated provincial council web portal, optimizing desktop UI for mobile through JavaScript injection and WebView customization
 - **Tech Stack**: Android, Kotlin, MVVM, Retrofit2, Room, Jetpack, ViewPager2, WebView, JavaScript, Coroutines
 
-[🔗 View Details](https://github.com/daehan-lim/government-portal-app)
+[🔗 View on GitHub](https://github.com/daehan-lim/government-portal-app)
 
 ---
 
@@ -433,7 +433,7 @@ Software engineer with a strong foundation in mobile app development and data-dr
 - Developed and deployed web application using Streamlit, enabling real-time article classification with detailed performance visualizations
 - **Tech Stack**: Python, PyTorch, Hugging Face Transformers, GPT-4, Streamlit
 
-[🔗 View Details](https://github.com/daehan-lim/roberta-sport-news-classifier)
+[🔗 View on GitHub](https://github.com/daehan-lim/roberta-sport-news-classifier)
 
 ---
 
@@ -449,7 +449,7 @@ Software engineer with a strong foundation in mobile app development and data-dr
 - Achieved superior performance metrics compared to traditional classifiers on real-world hospital data
 - **Tech Stack**: Python, NumPy, Pandas, scikit-learn, Jupyter
 
-[🔗 View Details](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
+[🔗 View on GitHub](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 
 ---
 
