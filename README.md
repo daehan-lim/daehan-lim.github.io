@@ -180,7 +180,7 @@
 </div>
 
 ## 👋 About Me
-Software engineer with a strong foundation in mobile app development and data-driven applications. Experienced in developing robust, maintainable, user-centric Android applications using Kotlin, MVVM, Coroutines, and REST APIs. Also familiar with Flutter for cross-platform development and with JavaScript. Advanced expertise in data processing and algorithm optimization from AI/ML research background, enabling development of highly efficient and scalable mobile applications.
+Software engineer with a strong foundation in mobile app development and data-driven applications. Experienced in developing robust, maintainable, user-centric Android applications using Kotlin, MVVM, Coroutines, Jetpack, and REST APIs. Also familiar with Flutter for cross-platform development and with JavaScript. Advanced expertise in data processing and algorithm optimization from AI/ML research background, enabling development of highly efficient and scalable mobile applications.
 
 ## 🛠️ Technical Skills
 
