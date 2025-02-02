@@ -183,7 +183,7 @@
 </div>
 
 ## 👋 About Me
-Software engineer specializing in building scalable, user-centric mobile applications, with expertise in advanced data processing, algorithm optimization, and distributed systems, leveraging an AI/ML background. Spearheaded mobile application development across telecom and enterprise sectors, driving adoption of modern architectural patterns and Android best practices to enhance code maintainability and development efficiency. Proficient in Java, Kotlin, Python, and JavaScript, combining technical expertise with innovative problem-solving to deliver reliable, high-performing mobile solutions.
+Software engineer with a strong foundation in mobile app development and data-driven applications. Experienced in developing robust, maintainable, user-centric Android applications using Kotlin, MVVM, Coroutines, and REST APIs. Also familiar with Flutter for cross-platform development and with JavaScript. Advanced expertise in data processing and algorithm optimization from AI/ML research background, enabling development of highly efficient and scalable mobile applications.
 
 ## 🛠️ Technical Skills
 
