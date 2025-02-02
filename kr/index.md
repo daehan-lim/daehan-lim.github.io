@@ -189,10 +189,7 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%230077B5&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Penjan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
 
-<div align="center">
-  <a href="../assets/이력서.pdf">
-    <img src="https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=readme&logoColor=white" alt="Resume Badge">
-  </a>
+<div align="center"> 
   <a href="https://linkedin.com/in/penjan-a-eng-lim">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
   </a>
@@ -529,13 +526,10 @@
 ## 📫 연락처
 
 <p class="ko">
-채용 및 협업 문의는 언제든 환영합니다. 아래 링크를 통해 이력서를 확인하거나 링크드인이나 이메일로 연락해 주실 수 있습니다.
+채용 및 협업 문의는 언제든 환영합니다. 아래 링크를 통해 링크드인이나 이메일로 연락해 주실 수 있습니다.
 </p>
 
-<div align="center">
-  <a href="../assets/이력서.pdf">
-    <img src="https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=readme&logoColor=white" alt="Resume Badge">
-  </a>
+<div align="center"> 
   <a href="https://linkedin.com/in/penjan-a-eng-lim">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
   </a>
