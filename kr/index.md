@@ -185,7 +185,7 @@
   });
 </script>
 
-# 엥림펜잔안토니오 (임대한)
+# 임대한 (Penjan)
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%230077B5&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Penjan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
 
