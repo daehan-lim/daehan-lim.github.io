@@ -185,9 +185,11 @@
   });
 </script>
 
-# 임대한 (Penjan)
+# 임대한
+**영문 이름:** ENG LIM PENJAN ANTONIO
+<div style="height: 14px;"></div>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%230077B5&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Penjan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%230077B5&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Daehan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
 
 <div align="center"> 
   <a href="https://linkedin.com/in/penjan-a-eng-lim">
@@ -206,7 +208,9 @@
 </div>
 
 ## 👋 소개
-최신 안드로이드 기술과 성능 최적화, 사용자 경험 개선, 데이터 기반 접근으로 모바일 앱을 혁신하는 소프트웨어 엔지니어입니다. MVVM 아키텍처와 Jetpack 컴포넌트를 도입해 안정적이고 유지 보수성이 높은 애플리케이션을 구현했습니다. 머신러닝 연구를 통해 고도화된 데이터 처리, 알고리즘 최적화, 분산 시스템 구축 경험을 쌓았으며, 이는 모바일 앱의 성능 개선과 확장성 있는 아키텍처 역량을 키우는 데 크게 기여했습니다
+최신 안드로이드 기술과 성능 최적화, 사용자 경험 개선, 데이터 기반 접근으로 모바일 앱을 혁신하는 소프트웨어 엔지니어입니다. MVVM 아키텍처와 Jetpack 컴포넌트를 도입해 안정적이고 유지 보수성이 높은 애플리케이션을 구현했습니다. 머신러닝 연구를 통해 고도화된 데이터 처리, 알고리즘 최적화, 분산 시스템 구축 경험을 쌓았으며, 이는 모바일 앱의 성능 개선과 확장성 있는 아키텍처 역량을 키우는 데 크게 기여했습니다.
+
+**배경**: 대한민국 국적의 쿠바 출신 교포로서 쿠바에서 학업과 초기 커리어를 쌓았으며, 이후 한국에서 정착해 컴퓨터공학 석사 과정을 이수했습니다.
 
 ## 🛠️ 보유 스킬
 
@@ -256,6 +260,18 @@
 <br>
 
 <span style="display: block; height: 1px;"></span>
+
+## 📌 핵심역량
+
+| 핵심역량 | 설명 |
+|---------|------------------------------------------------------------|
+| 🛠️ 문제 해결 능력  | 문제의 핵심을 파악하기 위해 적극적으로 분석하고, 최적의 해결책을 도출하여 성과를 내는 능력 |
+| 📚 자기주도적 학습  | 새로운 기술과 트렌드를 능동적으로 탐구하고 실무에 적용하여 지속적인 성장을 추구하는 태도 |
+| 🤝 협업 능력     | 디자이너, PM, 기획자, 연구실 동료들과 한국어를 포함한 다양한 언어로 원활히 소통하며 성공적인 결과 도출 |
+| 🚀 성능 최적화 역량 | 사용자 경험 향상을 위해 앱 성능을 지속적으로 모니터링하고 최적화하여 실질적인 개선을 이끌어내는 능력 |
+
+<span style="display: block; height: 1px;"></span>
+
 ## 📂 프로젝트 목차
 
 **모바일 애플리케이션**
