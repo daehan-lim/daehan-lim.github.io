@@ -268,6 +268,7 @@
 - [ACME 앱](#acme-앱) - 서비스 티켓 관리 솔루션 (2021)<a href="https://github.com/daehan-lim/acme" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 - [Yellow Pages](#yellow-pages) - 오프라인 지도 기능이 포함된 전화번호부 모바일 앱 (2020)<a href="https://github.com/daehan-lim/cuban-yellow-pages" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 - [정부 포털 앱](#정부-포털-앱) - 공식 정부 대표 플랫폼 애플리케이션 (2021)<a href="https://github.com/daehan-lim/government-portal-app" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [웰니스 트래킹 앱](#웰니스-트래킹-앱) - 개인 성장과 웰빙을 추적하는 Flutter 기반 모바일 앱 (2021)<a href="" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 
 **머신러닝 시스템**
 - [연합학습 기반 랜덤 포레스트](#연합학습-기반-랜덤-포레스트) - 개인정보를 보호하는 분산 학습 시스템 (2023)<a href="https://arxiv.org/abs/2407.19193" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
@@ -441,6 +442,31 @@
 - **사용 기술**: Android, Kotlin, Coroutines, MVVM, Retrofit2, Room, Jetpack, ViewPager2, WebView, JavaScript
 
 [🔗 GitHub에서 보기](https://github.com/daehan-lim/government-portal-app)
+
+---
+
+### [웰니스 트래킹 앱](https://github.com/daehan-lim/wellness-tracker-flutter)
+*개인 성장과 웰빙을 추적하고 시각화하는 Flutter 기반 크로스플랫폼 모바일 앱 개발 (2021)*
+
+<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
+  <img src="../images/flutter/image1.jpg" width="240" style="margin-right: 5px;" />
+  <img src="../images/flutter/image2.jpg" width="240" style="margin-right: 5px;" />
+  <img src="../images/flutter/image3.jpg" width="240" style="margin-right: 5px;" />
+  <img src="../images/flutter/image4.jpg" width="240" /> 
+</div>
+<span style="display: block; height: 11px;"></span>
+
+**역할:** Flutter 기반 앱 개발
+
+**수행 내용:**
+- MVVM 아키텍처 및 Provider 기반 상태관리와 GetIt 기반 의존성 주입 구현으로 코드 유지보수성 향상
+- 토큰 기반 인증 및 Dio를 활용한 REST API 연동 구현
+- SQLite와 SharedPreferences를 활용한 데이터 지속성 관리 구현
+- Material Design 기반의 커스텀 UI 컴포넌트 및 폼 검증 등을 포함한 반응형 레이아웃 구현
+- ReorderableSliverList 기반 드래그 앤 드롭 카테고리 관리 기능 개발
+- **사용 기술**: Flutter, Dart, Provider (MVVM), GetIt, Dio, SQLite, SharedPreferences
+
+[🔗 GitHub에서 보기](https://github.com/daehan-lim/wellness-tracker-flutter)
 
 ---
 

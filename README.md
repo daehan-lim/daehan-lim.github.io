@@ -236,6 +236,7 @@ Software engineer with a strong foundation in mobile app development and data-dr
 - [ACME App](#acme-app) - Service ticket management solution (2021)<a href="https://github.com/daehan-lim/acme" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 - [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020)<a href="https://github.com/daehan-lim/cuban-yellow-pages" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 - [Government Portal](#government-portal) - Official government platform application (2021)<a href="https://github.com/daehan-lim/government-portal-app" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+- [Wellness Tracking App](#wellness-tracking-app) - Cross-platform personal development tracker (2021)<a href="https://github.com/daehan-lim/wellness-tracker-flutter" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 
 **Machine Learning Systems**
 - [Privacy-Preserving Federated Random Forest](#privacy-preserving-federated-random-forest) - Privacy-preserving distributed learning system (2023)<a href="https://arxiv.org/abs/2407.19193" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
@@ -397,6 +398,30 @@ Software engineer with a strong foundation in mobile app development and data-dr
 - **Tech Stack**: Android, Kotlin, MVVM, Retrofit2, Room, Jetpack, ViewPager2, WebView, JavaScript, Coroutines
 
 [🔗 View on GitHub](https://github.com/daehan-lim/government-portal-app)
+
+---
+
+### [Wellness Tracking App](https://github.com/daehan-lim/wellness-tracker-flutter)
+*Cross-platform personal development tracker with real-time analytics and insights (2021)*
+
+<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
+  <img src="images/flutter/image1.jpg" width="240" style="margin-right: 5px;" />
+  <img src="images/flutter/image2.jpg" width="240" style="margin-right: 5px;" />
+  <img src="images/flutter/image3.jpg" width="240" style="margin-right: 5px;" />
+  <img src="images/flutter/image4.jpg" width="240" /> 
+</div>
+<br>
+
+**Overview:**
+
+- Created modular MVVM architecture using Provider for state management and GetIt for dependency injection
+- Implemented secure authentication flow with token management and REST API communication using Dio
+- Developed efficient data persistence layer using SQLite and SharedPreferences
+- Created modular UI components with Material Design and custom form validation with error handling
+- Built dynamic category management system with drag-and-drop reordering using ReorderableSliverList
+- **Tech Stack**: Flutter, Dart, Provider (MVVM), GetIt, Dio, SQLite, SharedPreferences
+
+[🔗 View on GitHub](https://github.com/daehan-lim/wellness-tracker-flutter)
 
 ---
 
