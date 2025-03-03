@@ -203,7 +203,7 @@
   <img src="https://img.shields.io/badge/📍_국적-대한민국-1F6FEB?style=flat-square" alt="Citizenship Badge">
   <span style="display: block; height: 5px;"></span>
   <img src="https://img.shields.io/badge/🗣_영어-최상_(토익_950점)-2ea44f?style=flat-square" alt="English Language Badge">
-  <img src="https://img.shields.io/badge/🗣_한국어-상_(토픽_6급)-2ea44f?style=flat-square" alt="Korean Language Badge">
+  <img src="https://img.shields.io/badge/🗣_한국어-최상_(토픽_6급)-2ea44f?style=flat-square" alt="Korean Language Badge">
   <img src="https://img.shields.io/badge/🗣_스페인어-모국어-2ea44f?style=flat-square" alt="Spanish Language Badge">
 </div>
 
