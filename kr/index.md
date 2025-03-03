@@ -200,7 +200,7 @@
   </a>
   <span style="display: block; height: 5px;"></span>
   <img src="https://img.shields.io/badge/🌏_위치-서울,_대한민국-1F6FEB?style=flat-square" alt="Location Badge">
-  <img src="https://img.shields.io/badge/📍_국적-대한민국_|_쿠바-1F6FEB?style=flat-square" alt="Citizenship Badge">
+  <img src="https://img.shields.io/badge/📍_국적-대한민국-1F6FEB?style=flat-square" alt="Citizenship Badge">
   <span style="display: block; height: 5px;"></span>
   <img src="https://img.shields.io/badge/🗣_영어-최상_(토익_950점)-2ea44f?style=flat-square" alt="English Language Badge">
   <img src="https://img.shields.io/badge/🗣_한국어-상_(토픽_6급)-2ea44f?style=flat-square" alt="Korean Language Badge">
