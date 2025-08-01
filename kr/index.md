@@ -284,13 +284,13 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 - [ACME 앱](#acme-앱) - 서비스 티켓 관리 솔루션 (2021)<a href="https://github.com/daehan-lim/acme" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 - [Yellow Pages](#yellow-pages) - 오프라인 지도 기능이 포함된 전화번호부 모바일 앱 (2020)<a href="https://github.com/daehan-lim/cuban-yellow-pages" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 - [정부 포털 앱](#정부-포털-앱) - 공식 정부 대표 플랫폼 애플리케이션 (2021)<a href="https://github.com/daehan-lim/government-portal-app" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
-- [웰빙 추적 앱](#웰빙-추적-앱) - 개인 성장과 웰빙을 추적하는 Flutter 기반 모바일 앱 (2021)<a href="https://github.com/daehan-lim/wellness-tracker-flutter" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+<!--- [웰빙 추적 앱](#웰빙-추적-앱) - 개인 성장과 웰빙을 추적하는 Flutter 기반 모바일 앱 (2021)<a href="https://github.com/daehan-lim/wellness-tracker-flutter" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>-->
 
 **머신러닝 시스템**
 - [연합학습 기반 랜덤 포레스트](#연합학습-기반-랜덤-포레스트) - 개인정보를 보호하는 분산 학습 시스템 (2023)<a href="https://arxiv.org/abs/2407.19193" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 - [RoBERTa 뉴스 분류기](#roberta-뉴스-분류기) - 합성 데이터를 활용해 성능을 개선한 주제 분류 모델 (2024)<a href="https://github.com/daehan-lim/roberta-sport-news-classifier" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
 - [의료 데이터 분류 시스템](#의료-데이터-분류-시스템) - 환자 사망률 예측 시스템 (2023)<a href="https://github.com/daehan-lim/associative-classifier-mortality-prediction" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
-- [정보 검색 시스템](#정보-검색-시스템) - 문서 색인화 및 검색 시스템 (2024)<a href="../assets/information_retrieval_report.pdf" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
+<!--- [정보 검색 시스템](#정보-검색-시스템) - 문서 색인화 및 검색 시스템 (2024)<a href="../assets/information_retrieval_report.pdf" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>-->
 
 <span style="display: block; height: 1px;"></span>
 ## 📱 모바일 애플리케이션
@@ -461,6 +461,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 
 ---
 
+<!--
 ### [웰빙 추적 앱](https://github.com/daehan-lim/wellness-tracker-flutter)
 *개인 성장과 웰빙을 추적하고 시각화하는 Flutter 기반 크로스플랫폼 모바일 앱 개발 (2021)*
 
@@ -485,6 +486,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 [🔗 GitHub에서 보기](https://github.com/daehan-lim/wellness-tracker-flutter)
 
 ---
+-->
 
 ## 🔬 머신러닝 시스템
 
@@ -550,6 +552,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 
 ---
 
+<!--
 ### [정보 검색 시스템](../assets/information_retrieval_report.pdf)
 *효율적인 불리언 및 랭킹 기반 문서 검색 시스템 구현 (2024)*
 
@@ -566,7 +569,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 - **사용 기술**: Python, NLTK, SpaCy, NumPy, contractions
 
 [🔗 상세보기](../assets/information_retrieval_report.pdf)
-
+-->
 <br>
 
 ## 📫 연락처
