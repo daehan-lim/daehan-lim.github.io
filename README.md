@@ -158,7 +158,9 @@
   });
 </script>
 
-# ENG LIM PENJAN ANTONIO (임대한)
+# Penjan Antonio Eng Lim
+**Previous name:** Penjan Antonio Eng Lim
+<div style="height: 14px;"></div>
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%230077B5&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Penjan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
 
