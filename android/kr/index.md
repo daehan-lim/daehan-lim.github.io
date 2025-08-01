@@ -110,8 +110,8 @@
 
 <div id="nav-menu">
   <div style="margin-left: 20px;">
-    <a href="/">EN</a>
-    <a href="/kr" class="active">KR</a>
+    <a href="/android">EN</a>
+    <a href="/android/kr" class="active">KR</a>
   </div>
 
 <span id="nav-menu-toggle">☰</span>
