@@ -186,6 +186,8 @@
 </script>
 
 # 임대한
+**영문 이름:** Penjan Antonio Eng Lim
+<div style="height: 14px;"></div>
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%230077B5&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Daehan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
 
@@ -204,6 +206,11 @@
   <img src="https://img.shields.io/badge/🗣_한국어-최상_(토픽_6급)-2ea44f?style=flat-square" alt="Korean Language Badge">
   <img src="https://img.shields.io/badge/🗣_스페인어-모국어-2ea44f?style=flat-square" alt="Spanish Language Badge">
 </div>
+
+## 👋 소개
+Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD 파이프라인을 구축해 개발 효율성 70% 향상을 이끌었습니다. Gemini AI 기반 멀티모달 레시피 생성 시스템에서는 프롬프트 엔지니어링과 검증 모델 도입을 통해 부적절한 레시피 생성률을 85%에서 12%로 낮춘 경험이 있습니다. 머신러닝 연구를 통해 고도화된 데이터 처리, 알고리즘 최적화, 분산 시스템 구축 경험을 쌓았으며, 이는 모바일 앱의 성능 개선과 확장성 있는 아키텍처 역량을 키우는 데 크게 기여했습니다.
+
+**배경**: 대한민국 국적의 쿠바 출신 교포로서 쿠바에서 학업과 초기 커리어를 쌓았으며, 이후 한국에서 정착해 컴퓨터공학 석사 과정을 이수했습니다.
 
 ## 🛠️ 보유 스킬
 
