@@ -570,7 +570,6 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 
 [🔗 상세보기](../assets/information_retrieval_report.pdf)
 -->
-<br>
 
 ## 📫 연락처
 
