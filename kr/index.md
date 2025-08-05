@@ -196,6 +196,9 @@
   <a href="mailto:penjan.eng@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
   </a>
+  <a href="https://github.com/daehan-lim">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
+  </a>
   <span style="display: block; height: 5px;"></span>
   <img src="https://img.shields.io/badge/🌏_위치-서울,_대한민국-1F6FEB?style=flat-square" alt="Location Badge">
   <img src="https://img.shields.io/badge/📍_국적-대한민국-1F6FEB?style=flat-square" alt="Citizenship Badge">
