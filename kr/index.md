@@ -17,6 +17,28 @@
     font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
 
+  .image-row {
+    display: flex;
+    overflow-x: auto;
+    border: 2px solid #ccc;
+    padding: 6px;
+    border-radius: 8px;
+    gap: 5px;
+    align-items: flex-start;
+  }
+
+  .image-item {
+    width: 240px !important;
+    height: auto !important;
+    display: block !important;
+    flex-shrink: 0 !important;
+  }
+
+  .linked-image {
+    display: block !important;
+    flex-shrink: 0 !important;
+  }
+
   .markdown-body {
       font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
       font-weight: 400 !important;
@@ -300,18 +322,20 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 ### [Cubadebate 뉴스 앱](https://github.com/daehan-lim/cubadebate-app)
 기존 웹사이트 전용 뉴스 플랫폼을 오프라인 저장, 음성 지원, 개인화 기능 등 안드로이드 네이티브 기능을 활용한 직관적인 모바일 앱으로 전환하여 뉴스 콘텐츠의 모바일 접근성 향상을 위한 프로젝트
 
-<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <a href="https://www.youtube.com/watch?v=4SEpMDPFkHw">
-    <img src="../images/cubadebate/video_play.png" alt="Watch the Video" width="240" />
+<div class="image-row">
+  <!--
+  <a href="https://www.youtube.com/watch?v=4SEpMDPFkHw" target="_blank" class="linked-image">
+    <img src="../images/gas/main.png" alt="Watch the Video" class="image-item" />
   </a>
-  <img src="../images/cubadebate/news_feed.svg" width="240" style="margin-right: 5px;" alt="Cubadebate news feed screen" />
-  <img src="../images/cubadebate/news_article.svg" width="240" style="margin-right: 5px;" alt="Cubadebate news article screen" />
-  <img src="../images/cubadebate/replies.png" width="240" style="margin-right: 5px;" alt="Cubadebate replies screen" />
-  <img src="../images/cubadebate/categories.png" width="240" style="margin-right: 5px;" alt="Cubadebate categories screen" />
-  <img src="../images/cubadebate/topics.png" width="240" style="margin-right: 5px;" alt="Cubadebate topics screen" />
-  <img src="../images/cubadebate/sms.png" width="240" style="margin-right: 5px;" alt="Cubadebate SMS screen" />
-  <img src="../images/cubadebate/search.svg" width="240" style="margin-right: 5px;" alt="Cubadebate search screen" />
-  <img src="../images/cubadebate/saved.png" width="240"  alt="Cubadebate saved articles screen" />
+  -->
+  <img src="../images/cubadebate/news_feed.svg" alt="Cubadebate news feed screen" class="image-item" />
+  <img src="../images/cubadebate/news_article.svg" alt="Cubadebate news article screen" class="image-item" />
+  <img src="../images/cubadebate/replies.png" alt="Cubadebate replies screen" class="image-item" />
+  <img src="../images/cubadebate/categories.png" alt="Cubadebate categories screen" class="image-item" />
+  <img src="../images/cubadebate/topics.png" alt="Cubadebate topics screen" class="image-item" />
+  <img src="../images/cubadebate/sms.png" alt="Cubadebate SMS screen" class="image-item" />
+  <img src="../images/cubadebate/search.svg" alt="Cubadebate search screen" class="image-item" />
+  <img src="../images/cubadebate/saved.png" alt="Cubadebate saved articles screen" class="image-item" />
 </div>
 <span style="display: block; height: 11px;"></span>
 
