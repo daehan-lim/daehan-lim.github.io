@@ -301,6 +301,9 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 기존 웹사이트 전용 뉴스 플랫폼을 오프라인 저장, 음성 지원, 개인화 기능 등 안드로이드 네이티브 기능을 활용한 직관적인 모바일 앱으로 전환하여 뉴스 콘텐츠의 모바일 접근성 향상을 위한 프로젝트
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
+  <a href="https://www.youtube.com/watch?v=4SEpMDPFkHw">
+    <img src="../images/cubadebate/video_play.png" alt="Watch the Video" width="240" />
+  </a>
   <img src="../images/cubadebate/news_feed.svg" width="240" style="margin-right: 5px;" alt="Cubadebate news feed screen" />
   <img src="../images/cubadebate/news_article.svg" width="240" style="margin-right: 5px;" alt="Cubadebate news article screen" />
   <img src="../images/cubadebate/replies.png" width="240" style="margin-right: 5px;" alt="Cubadebate replies screen" />
