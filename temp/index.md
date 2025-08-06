@@ -235,4 +235,51 @@ Target of URI doesn't exist: 'firebase_options.dart'
   2. `Augmentations`를 설정 후 학습
   3. 다양한 데이터를 추가 후 추가 학습
 
-- **모델링 및 모델 개선 방법 학습**
+## ⭐ Features
+
+**1. 주요 기능**
+- 머신 러닝을 활용한 얼굴 인증으로 성별 판별 후 승인 없이 가입 자동화
+- 머신 러닝을 활용한 캐리커쳐 이미지 생성 기능
+- 실시간 채팅 기능
+
+**2. 메인 페이지**
+- 랜덤, 인기, 신규, 근처, 찜 5개의 카테고리별로 유저 정보 제공
+
+**3. 유저 상세 페이지**
+- 유저의 상세 정보 제공
+- 찜, 대화하기, 차단, 사용자 신고 기능
+
+**4. 채팅 페이지**
+- 채팅 목록 제공
+- 실시간 채팅 기능
+
+**5. 마이 페이지**
+- 내 정보 제공
+- 기본 프로필 설정, 캐리커쳐 이미지 생성, 1:1 문의, 회원 탈퇴 메뉴
+
+**6. 로그인/회원가입**
+- 이메일 로그인
+- 닉네임 설정 후 중복 확인을 통과하면 회원가입
+
+## 🖐️ Part
+
+- 프로젝트 리더로서 해당 서비스를 App Store에 출시하기 위해 기획, 개발, 배포, 운영의 모든 과정을 수행
+- 카테고리별로 다양하게 유저를 보여주는 `MainPage` 개발
+- 유저의 상세한 정보를 볼 수 있는 `UserInfo View` 개발
+  - 찜, 채팅, 차단, 신고 기능 구현
+- `Firebase DB`에 사용자 정보 CRUD 구현
+- `Firebase`를 활용한 이메일 로그인 로직 구현
+- `CoreML`을 활용한 회원가입 로직 구현
+  - 오브젝트 탐지, 성별 판별, 캐리커쳐 변환
+
+## 🖼️ Screenshots
+
+<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
+  <img src="../images/gas/main.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager main screen" />
+  <img src="../images/gas/calendar.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager calendar screen" />
+  <img src="../images/gas/chart.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager chart screen" />
+  <img src="../images/gas/filter.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager filter screen" />
+  <img src="../images/gas/offices.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager offices screen" />
+  <img src="../images/gas/video.png" width="240" alt="Gas consumption manager video screen" />
+</div>
+<span style="display: block; height: 11px;"></span>
