@@ -37,3 +37,4 @@ logs/
 Gemfile
 _site/
 Gemfile.lock
+temp/
