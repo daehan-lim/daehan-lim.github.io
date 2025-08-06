@@ -134,3 +134,105 @@
 - **※ 제약 조건**
     - 타인의 사진으로 회원가입하는 것을 막기 위해 회원가입 시 카메라를 통해 사진을 찍은 후 해당 사진으로 성별을 판별
     - 성별 판별 → 캐리커쳐 생성은 앱 내에서 `CoreML` 모델 직접 실행
+      - **절차**
+        1. YOLO 모델을 사용하여 객체 인식을 통해 사람인지 확인
+        2. 성별 판별을 위해 직접 모델링 한 모델로 성별 판별
+        3. `animegan2face` 모델로 사진 → 캐리커쳐로 변환
+
+<div style="text-align: center; margin-top: 10px; margin-bottom: 20px;">
+  <img src="../images/random_forest.png" alt="회원가입 절차 흐름도" style="width: 100%; max-width: 700px; border-radius: 8px; border: 1px solid #ccc;" />
+</div>
+
+
+**3. ModernCollectionView 구현**
+
+- **요구 사항**
+  1. 데이터의 변경 사항을 적용할 때 UI를 부드럽게 업데이트해야 함
+  2. 복잡한 레이아웃을 구현하고 유연하게 관리해야 함
+
+- **의사 결정**
+  1. 데이터 변경 시 부드러운 업데이트를 위해 `DiffableDataSource`를 사용
+  2. 복잡한 레이아웃을 구현하기 위해 `CompositionalLayout`을 사용
+  - **결론**  
+    `DiffableDataSource`와 `CompositionalLayout`를 같이 사용하는 `ModernCollectionView`를 구현하기로 결정
+
+
+![Velog blog post about it](https://velog-readme-stats.vercel.app/api?name=jingni1115)
+
+**4. Swift Concurrency 사용**
+
+- **요구 사항**  
+  비동기 작업 시 효율적으로 데이터를 받아와야 함
+
+- **의사 결정**  
+  여러 개의 비동기 작업을 병렬로 실행하여 성능을 향상시키기 위해, `Swift Concurrency`를 사용하여 동시성 프로그래밍을 구현하기로 결정
+
+```swift
+extension MainPageViewModel {
+    /// 모든 데이터 최신화
+    func fetchMainPageData() {
+        Task {
+            async let random = storeManager.fetchRandomUser()
+            async let rank = storeManager.fetchRanking()
+            async let new = storeManager.fetchNewestUser()
+            async let near = storeManager.fetchNearUser()
+            async let pick = storeManager.fetchPickUsers()
+            async let shutout = storeManager.fetchShutOutUser()
+
+            let randomResult = await random
+            let rankResult = await rank
+            let newResult = await new
+            let nearResult = await near
+            let pickResult = await pick
+            let shutoutResult = await shutout
+        }
+    }
+}
+```
+## 🌱 Troubleshooting
+
+**1. GitHub Actions**
+**문제 상황**  
+- GitHub Actions 워크플로우에서 `firebase_options.dart`가 필요했음  
+- 하지만 보안상 커밋하지 않아, CI에서 파일이 없음  
+- 그 결과 워크플로우 실행 중 빌드 에러 발생
+```
+Target of URI doesn't exist: 'firebase_options.dart'
+```
+### 실패한 시도  
+- 설정 파일 내용을 GitHub Secret에 그대로 붙여넣음  
+- 줄바꿈·특수문자 때문에 파일이 깨짐. 입력 불가능함
+### 접근 방식  
+- GitHub Secret은 멀티라인과 특수문자 처리가 불안정함  
+- 설정 파일을 Base64로 인코딩하면 한 줄 문자열로 안전하게 전달 가능  
+### 최종 해결  
+- 설정 파일들을 Base64로 인코딩  
+- 인코딩된 문자열을 GitHub Secret에 저장  
+- 워크플로우에서 디코딩하여 파일로 복원
+```
+- name: Decode firebase_options.dart  
+  run: |  
+  mkdir -p lib  
+  echo "${{ secrets.FIREBASE_DART_OPTIONS }}" | base64 --decode > lib/firebase_options.dart
+```
+<br>
+
+**2. 이미지를 통한 성별 판별 정확도 향상시키기**
+
+- **문제 상황**  
+  성별 판별 모델의 정확도가 신뢰하기에는 힘든 낮은 수치로 나타나는 문제 발생
+
+<div style="text-align: center; margin-top: 10px; margin-bottom: 10px;">
+  <img src="../images/random_forest.png" alt="성별 판별 정확도 그래프" style="width: 100%; max-width: 700px; border-radius: 8px; border: 1px solid #ccc;" />
+</div>
+
+- **해결**  
+  성별 판별 모델 정확도를 개선하여 정확도를 **74.3% → 88.9%** 개선
+
+
+- **정확도 개선 방법**
+  1. 학습 반복 횟수 증가 후 추가 학습
+  2. `Augmentations`를 설정 후 학습
+  3. 다양한 데이터를 추가 후 추가 학습
+
+- **모델링 및 모델 개선 방법 학습**
