@@ -107,7 +107,7 @@
       display: none; /* Hide links initially on mobile */
       flex-direction: column;
       align-items: center;
-      background-color: #21427D; /* Match navbar background */
+      background-color: #3464e1; /* Match navbar background */
       width: 100%;
       position: absolute;
       top: 60px; /* Space below navbar */
