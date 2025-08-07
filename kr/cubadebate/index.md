@@ -241,4 +241,10 @@
 - 부드러운 애니메이션이 적용된 머티리얼 디자인 기반 UI 설계
 - 웹사이트 대비 접근성 40% 향상
 
-[🔗 GitHub 에서 보기](https://github.com/daehan-lim/cubadebate-app)
+## 시연 영상
+<div align="center"> 
+<a href="https://www.youtube.com/watch?v=4SEpMDPFkHw">
+  <img src="../../images/cubadebate/video_preview.png" alt="Watch the Video" width="230" />
+</a>
+</div>
+<br>
