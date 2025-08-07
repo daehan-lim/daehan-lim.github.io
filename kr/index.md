@@ -236,7 +236,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 <a href="https://github.com/daehan-lim/cubadebate-app" style="text-decoration: none; color: inherit;">
 <div>
   <img src="../images/cubadebate/preview.png" alt="Shopping Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
-  <p><strong>Cubadebate<span style="color: #21427D; font-size: 18px;">&thinsp;⎆</span></strong><br/>
+  <p><strong>Cubadebate<span style="color: #21427D; font-size: 20px;">&thinsp;&thinsp;⎆</span></strong><br/>
     <span style="font-size: 0.9em;">쿠폰 모음 코딩</span><br/>
     <code>Kingfisher</code> <code>Lottie</code> <code>SnapKit</code> <code>Combine</code> <code>SwiftUI</code><br/>
     <small>24.01.29 - 24.02.10 (2주)</small>
@@ -251,7 +251,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
   <p>
     <strong>
       가스 소비 관리 앱
-      <span style="color: #21427D; font-size: 18px;">&thinsp;⎆</span>
+      <span style="color: #21427D; font-size: 20px;">&thinsp;&thinsp;⎆</span>
     </strong><br/>
     <span style="font-size: 0.9em;">공공 유틸리티 추적 시스템</span><br/>
     <code>Alamofire</code> <code>CoreML</code> <code>Combine</code> <code>Firebase</code> <code>SnapKit</code><br/>
@@ -267,7 +267,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
   <p>
     <strong>
       🧮 TipCalculator
-      <span style="color: #21427D; font-size: 18px;">&thinsp;⎆</span>
+      <span style="color: #21427D; font-size: 20px;">&thinsp;&thinsp;⎆</span>
     </strong><br/>
     <span style="font-size: 0.9em;">Combine과 MVVM 패턴을 사용한 팁 계산기</span><br/>
     <code>MVVM</code> <code>Combine</code> <code>CombineCocoa</code> <code>SnapKit</code><br/>
@@ -284,7 +284,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
     <p>
       <strong>
         📰 MobydickNews
-        <span style="color: #21427D; font-size: 18px;">&thinsp;⎆</span>
+        <span style="color: #21427D; font-size: 20px;">&thinsp;&thinsp;⎆</span>
       </strong><br/>
       <span style="font-size: 0.9em;">News API를 사용하는 뉴스 앱</span><br/>
       <code>RxAlamofire</code> <code>RxSwift</code> <code>REST API</code> <code>SnapKit</code><br/>
@@ -301,7 +301,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
     <p>
       <strong>
         📅 플랜비 (PlanBee)
-        <span style="color: #21427D; font-size: 18px;">&thinsp;⎆</span>
+        <span style="color: #21427D; font-size: 20px;">&thinsp;&thinsp;⎆</span>
       </strong><br/>
       <span style="font-size: 0.9em;">할일관리 Todo 앱</span><br/>
       <code>CoreData</code> <code>Combine</code> <code>FSCalendar</code> <code>SwiftLint</code> <code>Firebase</code><br/>
@@ -325,6 +325,9 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
   </a>
   <a href="mailto:penjan.eng@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
+  </a>
+  <a href="https://github.com/daehan-lim">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
   </a>
 </div>
 <br>
