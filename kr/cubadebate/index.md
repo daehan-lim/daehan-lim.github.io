@@ -206,7 +206,7 @@
 **🏢 회사명:** Desoft (쿠바 국영 소프트웨어 개발사)<br>
 **👥 개발 인원:** 1명  
 **💼 역할:** UI/UX 설계 및 전체 안드로이드 앱 개발 담당<br>
-**🛠️ 사용 기술:** `Android`, `Kotlin`, `Coroutines`, `MVVM`, `Room`, `Retrofit`, `Moshi`, `Navigation`, `Material Design`, `Glide`, `Lottie`, `ViewBinding`<br>
+**🛠️ 사용 기술:** `Android` `Kotlin` `Coroutines` `MVVM` `Room` `Retrofit` `Moshi` `Navigation` `Material Design` `Glide` `Lottie` `ViewBinding`<br>
 **🔗 GitHub:** [daehan-lim/cubadebate-app](https://github.com/daehan-lim/cubadebate-app)
 
 
