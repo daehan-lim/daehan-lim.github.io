@@ -233,7 +233,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
 
 <!--Cubadebate-->
-<a href="https://github.com/daehan-lim/cubadebate-app">
+<a href="https://github.com/daehan-lim/cubadebate-app" style="text-decoration: none; color: inherit;">
 <div>
   <img src="../images/cubadebate/preview.png" alt="Shopping Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
   <p><strong>Cubadebate<span style="color: #21427D; font-size: 18px;">&thinsp;⎆</span></strong><br/>
@@ -245,7 +245,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 </a>
 
 <!--가스 소비 관리 앱-->
-<a href="https://github.com/daehan-lim/gas-usage-tracker">
+<a href="https://github.com/daehan-lim/gas-usage-tracker" style="text-decoration: none; color: inherit;">
 <div>
   <img src="../images/gas/preview2.png" alt="Catcher Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
   <p>
@@ -261,7 +261,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 </a>
 
 <!-- TipCalculator Project -->
-<a href="https://github.com/daehan-lim/tip-calculator">
+<a href="https://github.com/daehan-lim/tip-calculator" style="text-decoration: none; color: inherit;">
 <div>
   <img src="../images/cubadebate/preview.png" alt="TipCalculator Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
   <p>
@@ -277,7 +277,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 </a>
 
 <!-- MobydickNews Project -->
-<a href="https://github.com/daehan-lim/mobydick-news">
+<a href="https://github.com/daehan-lim/mobydick-news" style="text-decoration: none; color: inherit;">
   <div>
     <img src="../images/gas/preview2.png" alt="MobydickNews Project"
          style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
@@ -294,7 +294,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 </a>
 
 <!-- PlanBee Project -->
-<a href="https://github.com/daehan-lim/planbee">
+<a href="https://github.com/daehan-lim/planbee" style="text-decoration: none; color: inherit;">
   <div>
     <img src="../images/cubadebate/preview.png" alt="PlanBee Project"
          style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
