@@ -202,7 +202,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
 
 <!--Cubadebate-->
-<a href="https://github.com/daehan-lim/cubadebate-app" style="text-decoration: none; color: inherit;">
+<a href="cubadebate/" style="text-decoration: none; color: inherit;">
 <div>
   <img src="../images/cubadebate/preview.png" alt="Shopping Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
   <p><strong>Cubadebate<span style="color: #21427D; font-size: 20px;">&thinsp;&thinsp;⎆</span></strong><br/>

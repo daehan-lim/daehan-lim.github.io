@@ -196,9 +196,14 @@
 
 </div>
 
+# Cubadebate 뉴스 앱
 
+**📌 앱 소개:** 맞춤형 콘텐츠 제공 및 오프라인 저장 기능을 갖춘 뉴스 앱  
+**🕒 개발 기간:** 23.10.10 ~ 23.11.17 (6주)  
+**👥 개발 인원:** 1명  
+**🛠️ Skills:** <code>Alamofire</code> <code>CoreML</code> <code>Combine</code> <code>Firebase</code> <code>SnapKit</code> <code>MessageKit</code> <code>LicensePlist</code> <code>SDWebImage</code><span style="display: block; height: 5px;"></span> 
+🔗 [GitHub에서 보기](https://github.com/daehan-lim/cubadebate-app)
 
-# [Cubadebate 뉴스 앱](https://github.com/daehan-lim/cubadebate-app)
 기존 웹사이트 전용 뉴스 플랫폼을 오프라인 저장, 음성 지원, 개인화 기능 등 안드로이드 네이티브 기능을 활용한 직관적인 모바일 앱으로 전환하여 뉴스 콘텐츠의 모바일 접근성 향상을 위한 프로젝트
 
 <div class="image-row">
