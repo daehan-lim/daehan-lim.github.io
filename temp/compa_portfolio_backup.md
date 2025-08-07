@@ -4,27 +4,27 @@
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
 
-<!--Cubadebate-->
+<!-- Shopping Project -->
 <div>
-  <img src="../images/cubadebate/preview.png" alt="Shopping Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
-  <p><strong>Cubadebate</strong><br/>
+  <img src="../images/associative_classifier.png" alt="Shopping Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
+  <p><strong>🛒 Shopping</strong><br/>
   <span style="font-size: 0.9em;">쿠폰 모음 코딩</span><br/>
   <code>Kingfisher</code> <code>Lottie</code> <code>SnapKit</code> <code>Combine</code> <code>SwiftUI</code><br/>
   <small>24.01.29 - 24.02.10 (2주)</small></p>
 </div>
 
-<!--가스 소비 관리 앱-->
+<!-- Catcher Project -->
 <div>
-  <img src="../images/gas/preview2.png" alt="Catcher Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
-  <p><strong>가스 소비 관리 앱</strong><br/>
-  <span style="font-size: 0.9em;">공공 유틸리티 추적 시스템</span><br/>
+  <img src="../images/associative_classifier.png" alt="Catcher Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
+  <p><strong>🎭 Catcher (캐처)</strong><br/>
+  <span style="font-size: 0.9em;">미러AI분석을 활용한 카메라 소개팅 앱 서비스</span><br/>
   <code>Alamofire</code> <code>CoreML</code> <code>Combine</code> <code>Firebase</code> <code>SnapKit</code><br/>
   <small>23.10.10 - 23.11.17 (6주)</small></p>
 </div>
 
 <!-- TipCalculator Project -->
 <div>
-  <img src="../images/cubadebate/preview.png" alt="TipCalculator Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
+  <img src="../images/associative_classifier.png" alt="TipCalculator Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
   <p><strong>🧮 TipCalculator</strong><br/>
   <span style="font-size: 0.9em;">Combine과 MVVM 패턴을 사용한 팁 계산기</span><br/>
   <code>MVVM</code> <code>Combine</code> <code>CombineCocoa</code> <code>SnapKit</code><br/>
@@ -33,7 +33,7 @@
 
 <!-- MobydickNews Project -->
 <div>
-  <img src="../images/gas/preview2.png" alt="MobydickNews Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
+  <img src="../images/associative_classifier.png" alt="MobydickNews Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
   <p><strong>📰 MobydickNews</strong><br/>
   <span style="font-size: 0.9em;">News API를 사용하는 뉴스 앱</span><br/>
   <code>RxAlamofire</code> <code>RxSwift</code> <code>REST API</code> <code>SnapKit</code><br/>
@@ -42,7 +42,7 @@
 
 <!-- PlanBee Project -->
 <div>
-  <img src="../images/cubadebate/preview.png" alt="PlanBee Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
+  <img src="../images/associative_classifier.png" alt="PlanBee Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
   <p><strong>📅 플랜비 (PlanBee)</strong><br/>
   <span style="font-size: 0.9em;">할일관리 Todo 앱</span><br/>
   <code>CoreData</code> <code>Combine</code> <code>FSCalendar</code> <code>SwiftLint</code> <code>Firebase</code><br/>
@@ -134,10 +134,10 @@
 - **※ 제약 조건**
     - 타인의 사진으로 회원가입하는 것을 막기 위해 회원가입 시 카메라를 통해 사진을 찍은 후 해당 사진으로 성별을 판별
     - 성별 판별 → 캐리커쳐 생성은 앱 내에서 `CoreML` 모델 직접 실행
-      - **절차**
-        1. YOLO 모델을 사용하여 객체 인식을 통해 사람인지 확인
-        2. 성별 판별을 위해 직접 모델링 한 모델로 성별 판별
-        3. `animegan2face` 모델로 사진 → 캐리커쳐로 변환
+        - **절차**
+            1. YOLO 모델을 사용하여 객체 인식을 통해 사람인지 확인
+            2. 성별 판별을 위해 직접 모델링 한 모델로 성별 판별
+            3. `animegan2face` 모델로 사진 → 캐리커쳐로 변환
 
 <div style="text-align: center; margin-top: 10px; margin-bottom: 20px;">
   <img src="../images/random_forest.png" alt="회원가입 절차 흐름도" style="width: 100%; max-width: 700px; border-radius: 8px; border: 1px solid #ccc;" />
@@ -147,14 +147,14 @@
 **3. ModernCollectionView 구현**
 
 - **요구 사항**
-  1. 데이터의 변경 사항을 적용할 때 UI를 부드럽게 업데이트해야 함
-  2. 복잡한 레이아웃을 구현하고 유연하게 관리해야 함
+    1. 데이터의 변경 사항을 적용할 때 UI를 부드럽게 업데이트해야 함
+    2. 복잡한 레이아웃을 구현하고 유연하게 관리해야 함
 
 - **의사 결정**
-  1. 데이터 변경 시 부드러운 업데이트를 위해 `DiffableDataSource`를 사용
-  2. 복잡한 레이아웃을 구현하기 위해 `CompositionalLayout`을 사용
-  - **결론**  
-    `DiffableDataSource`와 `CompositionalLayout`를 같이 사용하는 `ModernCollectionView`를 구현하기로 결정
+    1. 데이터 변경 시 부드러운 업데이트를 위해 `DiffableDataSource`를 사용
+    2. 복잡한 레이아웃을 구현하기 위해 `CompositionalLayout`을 사용
+    - **결론**  
+      `DiffableDataSource`와 `CompositionalLayout`를 같이 사용하는 `ModernCollectionView`를 구현하기로 결정
 
 
 ![Velog blog post about it](https://velog-readme-stats.vercel.app/api?name=jingni1115)
@@ -192,22 +192,22 @@ extension MainPageViewModel {
 ## 🌱 Troubleshooting
 
 **1. GitHub Actions**
-**문제 상황**  
-- GitHub Actions 워크플로우에서 `firebase_options.dart`가 필요했음  
-- 하지만 보안상 커밋하지 않아, CI에서 파일이 없음  
+**문제 상황**
+- GitHub Actions 워크플로우에서 `firebase_options.dart`가 필요했음
+- 하지만 보안상 커밋하지 않아, CI에서 파일이 없음
 - 그 결과 워크플로우 실행 중 빌드 에러 발생
 ```
 Target of URI doesn't exist: 'firebase_options.dart'
 ```
-### 실패한 시도  
-- 설정 파일 내용을 GitHub Secret에 그대로 붙여넣음  
+### 실패한 시도
+- 설정 파일 내용을 GitHub Secret에 그대로 붙여넣음
 - 줄바꿈·특수문자 때문에 파일이 깨짐. 입력 불가능함
-### 접근 방식  
-- GitHub Secret은 멀티라인과 특수문자 처리가 불안정함  
-- 설정 파일을 Base64로 인코딩하면 한 줄 문자열로 안전하게 전달 가능  
-### 최종 해결  
-- 설정 파일들을 Base64로 인코딩  
-- 인코딩된 문자열을 GitHub Secret에 저장  
+### 접근 방식
+- GitHub Secret은 멀티라인과 특수문자 처리가 불안정함
+- 설정 파일을 Base64로 인코딩하면 한 줄 문자열로 안전하게 전달 가능
+### 최종 해결
+- 설정 파일들을 Base64로 인코딩
+- 인코딩된 문자열을 GitHub Secret에 저장
 - 워크플로우에서 디코딩하여 파일로 복원
 ```
 - name: Decode firebase_options.dart  
@@ -231,9 +231,9 @@ Target of URI doesn't exist: 'firebase_options.dart'
 
 
 - **정확도 개선 방법**
-  1. 학습 반복 횟수 증가 후 추가 학습
-  2. `Augmentations`를 설정 후 학습
-  3. 다양한 데이터를 추가 후 추가 학습
+    1. 학습 반복 횟수 증가 후 추가 학습
+    2. `Augmentations`를 설정 후 학습
+    3. 다양한 데이터를 추가 후 추가 학습
 
 ## ⭐ Features
 
@@ -266,11 +266,11 @@ Target of URI doesn't exist: 'firebase_options.dart'
 - 프로젝트 리더로서 해당 서비스를 App Store에 출시하기 위해 기획, 개발, 배포, 운영의 모든 과정을 수행
 - 카테고리별로 다양하게 유저를 보여주는 `MainPage` 개발
 - 유저의 상세한 정보를 볼 수 있는 `UserInfo View` 개발
-  - 찜, 채팅, 차단, 신고 기능 구현
+    - 찜, 채팅, 차단, 신고 기능 구현
 - `Firebase DB`에 사용자 정보 CRUD 구현
 - `Firebase`를 활용한 이메일 로그인 로직 구현
 - `CoreML`을 활용한 회원가입 로직 구현
-  - 오브젝트 탐지, 성별 판별, 캐리커쳐 변환
+    - 오브젝트 탐지, 성별 판별, 캐리커쳐 변환
 
 ## 🖼️ Screenshots
 
