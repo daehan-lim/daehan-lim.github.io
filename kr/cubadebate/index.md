@@ -188,6 +188,16 @@
   });
 </script>
 
+<div style="position: relative; margin-bottom: 40px;">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&fontSize=45&animation=fadeIn&fontAlignY=38&desc=&descAlignY=51&descAlign=62" alt="Header" style="display: block; width: 100%; height: auto; margin: 0; padding: 0; border-radius: 8px;" />
+
+<img src="../../images/cubadebate/categories.png" alt="Project Icon" style="position: absolute; left: 40px; bottom: -10px; width: 80px; height: 80px; border-radius: 12px; border: 4px solid white; object-fit: cover;" />
+
+</div>
+
+
+
 # [Cubadebate 뉴스 앱](https://github.com/daehan-lim/cubadebate-app)
 기존 웹사이트 전용 뉴스 플랫폼을 오프라인 저장, 음성 지원, 개인화 기능 등 안드로이드 네이티브 기능을 활용한 직관적인 모바일 앱으로 전환하여 뉴스 콘텐츠의 모바일 접근성 향상을 위한 프로젝트
 
