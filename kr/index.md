@@ -17,37 +17,6 @@
     font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
 
-  .image-row {
-    display: flex;
-    overflow-x: auto;
-    border: 2px solid #ccc;
-    padding: 6px;
-    border-radius: 8px;
-    gap: 5px;
-    align-items: flex-start;
-  }
-
-  .image-item {
-    width: 240px !important;
-    height: auto !important;
-    display: block !important;
-    flex-shrink: 0 !important;
-  }
-
-  .linked-image {
-    display: block !important;
-    flex-shrink: 0 !important;
-  }
-
-  .markdown-body {
-      font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
-      font-weight: 400 !important;
-      word-break: keep-all !important;
-      letter-spacing: -0.3px !important;
-      line-height: 1.8 !important;
-      font-size: 17px !important;
-  }
-
   .ko {
     font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 400;
