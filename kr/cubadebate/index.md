@@ -245,6 +245,64 @@
 - 부드러운 애니메이션이 적용된 머티리얼 디자인 기반 UI 설계
 - 웹사이트 대비 **접근성 40% 향상**
 
+## 🤔 기술적 의사결정
+
+**1. 오프라인 저장 아키텍처 선택**
+
+- **요구 사항**  
+  불안정한 네트워크 환경에서도 뉴스 기사를 오프라인으로도 안정적으로 저장하고 접근할 수 있어야 함
+
+- **의사 결정**  
+  `Room Database`를 활용한 포괄적인 캐싱 시스템 구축을 결정
+  - SQLite 기반의 안정성과 Android Jetpack의 통합으로 타입 안전성과 컴파일 타임 검증 보장
+  - 기사 텍스트와 내용, 이미지를 로컬에 저장하는 구조
+  - 북마크 기능을 통해 사용자가 선택한 콘텐츠의 완전한 오프라인 접근 보장
+
+```kotlin
+@Entity(tableName = "posts")
+data class DatabasePost(
+    @PrimaryKey val id: Long,
+    val title: String,
+    val content: String,
+    val imageUrl: String?,
+    val publishedDate: String,
+    val isSaved: Boolean = false
+)
+```
+
+**2. MVVM 아키텍처 도입**
+
+- **요구 사항**  
+  복잡한 뉴스 데이터 흐름과 UI 상태를 체계적으로 관리하고, 네트워크와 로컬 데이터 소스를 효율적으로 통합해야 함
+
+- **의사 결정**  
+  `MVVM`와 `Repository` 패턴을 결합한 계층형 아키텍처 구축을 결정
+  - **관심사 분리**: View-ViewModel-Repository 구조로 각 계층의 책임을 명확히 분리하여 코드 유지보수성 향상
+  - **LiveData 활용**: UI 생명주기를 인식하는 관찰 가능한 데이터로 메모리 누수 방지와 자동 UI 업데이트 보장
+  - **Repository 패턴**: 단일 진실 공급원(Single Source of Truth) 원칙에 따라 네트워크와 로컬 데이터베이스를 추상화하여 데이터 접근 로직 통합 관리
+
+```kotlin
+class PostRepository(private val database: CubadebateDatabase) {
+    suspend fun getPosts(categoryId: Long?): MutableList<Post> {
+        return withContext(Dispatchers.IO) {
+            try {
+                // 네트워크에서 최신 데이터 가져오기 시도
+                val networkPosts = when(categoryId) {
+                    null -> CubadebateApi.retrofitService.getPostsAsync()
+                    else -> CubadebateApi.retrofitService.getPostsByCategoryAsync(categoryId)
+                }.await()
+                
+                // 로컬 DB에 저장 후 반환
+                networkPosts.map { it.mapToPost() }
+            } catch (e: Exception) {
+                // 네트워크 실패 시 로컬 데이터 반환
+                getPostsFromDb(categoryId)
+            }
+        }
+    }
+}
+```
+
 ## 🎞️ 시연 영상
 <div align="center"> 
 <a href="https://www.youtube.com/watch?v=4SEpMDPFkHw">
