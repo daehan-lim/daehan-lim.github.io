@@ -388,5 +388,10 @@ Future<List<String>> uploadImages(List<File> images, String uid) async {
 - **최종 결과**  
   레시피 생성 및 저장 소요 시간이 **45% 단축**되고, 사용자 만족도가 개선되었으며, Firebase 스토리지 비용이 **25% 절감**되는 효과 달성
 
-## 🎞️ 시연 영상 및 스크린샷
-<!-- 시연 영상이나 스크린샷 삽입 위치 -->
+## 🎞️ 시연 영상
+<div align="center"> 
+<a href="https://www.youtube.com/watch?v=0cTYv7v8H4A">
+  <img src="../../images/cooki/video_preview.png" alt="Watch the Video" width="230" />
+</a>
+</div>
+<br>
