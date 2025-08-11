@@ -17,6 +17,7 @@
 }
 
 code .nx,
+code .n,
 code .p {
   color: #24292e !important;
 }
