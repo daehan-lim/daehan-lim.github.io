@@ -18,6 +18,7 @@
 
 code .nx,
 code .n,
+code .py,
 code .p {
   color: #24292e !important;
 }
