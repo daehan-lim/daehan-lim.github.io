@@ -16,10 +16,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-code .nx {
+code .nx,
+code .p {
   color: #24292e !important;
 }
-
 
 .image-row {
   display: flex;
@@ -408,64 +408,6 @@ exports.translateText = onCall({ region: "asia-northeast3" }, async (request) =>
     throw new Error('Translation failed: ' + error.message);
   }
 });
-```
-
-**2. 비동기 언어 감지 및 번역 시스템**
-
-- **요구 사항**  
-  다국어 사용자 환경에서 리뷰 작성 및 열람 시 언어 장벽을 해소해야 함
-
-- **의사 결정**  
-  리뷰 저장과 언어 감지를 분리하여 UX 향상 및 성능 최적화
-    - 리뷰 저장 즉시 UI 응답성 보장을 위해 언어 감지를 백그라운드로 이동
-    - Cloud Functions를 활용한 Google Cloud Translation API 연동
-    - 언어 감지 결과는 비동기적으로 Firestore에 업데이트하여 사용자 대기 시간 제거
-
-```dart
-Future<String> saveReview(Review review) async {
-  final reviewId = await _reviewDataSource.saveReview(review);
-  
-  // 비동기적으로 언어 감지 및 업데이트 실행 (await 없음)
-  _detectLanguageAndUpdate(reviewId, review.text);
-  
-  return reviewId;
-}
-
-void _detectLanguageAndUpdate(String reviewId, String? text) async {
-  if (text == null || text.isEmpty) return;
-  
-  try {
-    final language = await _translationRepository.detectLanguage(text);
-    await _reviewDataSource.updateReviewLanguage(reviewId, language);
-  } catch (e) {
-    _logger.logError('Language detection failed', e);
-  }
-}
-```
-
-**3. 병렬 이미지 처리 및 업로드 최적화**
-
-- **요구 사항**  
-  레시피 생성 및 리뷰 작성 시 다수 이미지의 빠른 처리와 업로드 필요
-
-- **의사 결정**  
-  이미지 압축과 업로드를 병렬화하여 처리 속도 개선
-    - `Future.wait`를 활용한 다중 이미지 병렬 압축 및 업로드
-    - 이미지 생성과 레시피 저장을 동시에 진행하는 비동기 워크플로우 구현
-    - 이미지 품질과 파일 크기의 최적 균형점 도출을 위한 압축 알고리즘 조정
-
-```dart
-Future<List<String>> uploadImages(List<File> images, String uid) async {
-  final compressedImages = await Future.wait(
-    images.map((image) => compressImage(image))
-  );
-  
-  final uploadTasks = compressedImages.map((image) => 
-    _storageDataSource.uploadImage(image, uid)
-  );
-  
-  return await Future.wait(uploadTasks);
-}
 ```
 
 ## 🌱 문제 해결
