@@ -370,7 +370,7 @@ Future<String> _buildRecipePrompt({
 **3. Firebase Cloud Functions 기반 번역 시스템**
 
 - **요구 사항**  
-  다국어 사용자 간 리뷰 소통을 위한 실시간 번역 기능이 필요하며, 클라이언트에서 직접 Google Translation API를 호출하기에는 보안상 API 키 노출 위험이 존재
+  실시간 번역 기능이 필요하며, 클라이언트에서 직접 Google Translation API를 호출하기에는 보안상 API 키 노출 위험이 존재
 
 - **의사 결정**  
   `Firebase Cloud Functions`를 중간 계층으로 활용한 서버리스 번역 시스템 구축을 결정
