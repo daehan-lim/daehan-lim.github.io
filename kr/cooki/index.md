@@ -325,7 +325,7 @@ _recipeGenerationModel = googleAI.generativeModel(
   ),
 );
 ```
-<br>
+<span style="display: block; height: 1px;"></span>
 
 **2. 멀티모달 프롬프트 엔지니어링 아키텍처**
 
@@ -364,6 +364,45 @@ Future<String> _buildRecipePrompt({
   }
   // 텍스트 전용 프롬프트 처리...
 }
+```
+<span style="display: block; height: 1px;"></span>
+
+**3. Firebase Cloud Functions 기반 번역 시스템**
+
+- **요구 사항**  
+  다국어 사용자 간 리뷰 소통을 위한 실시간 번역 기능이 필요하며, 클라이언트에서 직접 Google Translation API를 호출하기에는 보안상 API 키 노출 위험이 존재
+
+- **의사 결정**  
+  `Firebase Cloud Functions`를 중간 계층으로 활용한 서버리스 번역 시스템 구축을 결정
+  - **보안성**: Google Cloud Translation API 인증 정보를 서버 측에서 안전하게 관리
+  - **확장성**: 서버리스 아키텍처로 사용량에 따른 자동 스케일링 및 비용 최적화
+  - **언어 감지**: 번역과 언어 감지를 별도 함수로 분리하여 필요에 따른 선택적 호출 가능
+  - **에러 처리**: Cloud Functions 레벨에서 통합된 오류 처리 및 클라이언트에 구조화된 응답 반환
+
+```javascript
+exports.translateText = onCall({ region: "asia-northeast3" }, async (request) => {
+  try {
+    const { text, targetLanguage, sourceLanguage } = request.data;
+    
+    const translationRequest = {
+      parent: `projects/${projectId}/locations/global`,
+      contents: [text],
+      mimeType: 'text/plain',
+      targetLanguageCode: targetLanguage,
+      ...(sourceLanguage && { sourceLanguageCode: sourceLanguage }),
+    };
+    
+    const [response] = await translationClient.translateText(translationRequest);
+    
+    return {
+      success: true,
+      translatedText: response.translations[0].translatedText,
+      detectedSourceLanguage: response.translations[0].detectedLanguageCode || sourceLanguage
+    };
+  } catch (error) {
+    throw new Error('Translation failed: ' + error.message);
+  }
+});
 ```
 
 **2. 비동기 언어 감지 및 번역 시스템**

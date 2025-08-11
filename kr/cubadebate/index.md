@@ -269,6 +269,7 @@ data class DatabasePost(
     val isSaved: Boolean = false
 )
 ```
+<span style="display: block; height: 1px;"></span>
 
 **2. MVVM 아키텍처 도입**
 
