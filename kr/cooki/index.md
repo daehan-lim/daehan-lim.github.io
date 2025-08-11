@@ -290,27 +290,79 @@
   - 로그 시스템과 Firebase Crashlytics 연동으로 실시간 오류 모니터링 체계 구축
   - 타입 안전성을 위한 DTO 및 Entity 계층 분리로 런타임 오류 방지
 
-
 ## 🧭 기술적 의사결정
 
-**1. Gemini API 활용한 2단계 검증 아키텍처**
+**1. Gemini AI 모델 선택 및 2단계 검증 시스템 구축**
 
 - **요구 사항**  
-  사용자 입력(텍스트/이미지)에 대한 정확한 레시피 생성 및 악의적 프롬프트 차단 필요
+  사용자가 입력한 텍스트나 이미지로부터 높은 품질의 레시피를 안정적으로 생성하면서, 비음식 관련 입력이나 악의적 프롬프트 조작을 효과적으로 차단해야 함
 
 - **의사 결정**  
-  입력 검증과 레시피 생성을 분리한 2단계 검증 아키텍처 설계
-    - **1단계(검증)**: Gemini v1.5-flash 모델로 입력 유효성 빠르게 검증
-    - **2단계(생성)**: 검증된 입력을 Gemini 2.0-flash로 전달하여 고품질 레시피 생성
-    - 악의적 프롬프트 차단을 위한 룰베이스 예외 처리 추가
+  `Gemini 1.5-flash`와 `Gemini 2.0-flash` 모델을 역할별로 분리한 2단계 검증 시스템 구축을 결정
+  - **1단계 검증**: Gemini 1.5-flash로 입력 유효성 검사 전담하여 비레시피성 입력, 명령어 조작, 프롬프트 인젝션 시도를 사전 필터링
+  - **2단계 생성**: Gemini 2.0-flash로 실제 레시피 생성 처리하여 최신 모델의 성능과 안정성 확보
+  - **JSON Schema 강제**: 구조화된 응답 형식으로 파싱 오류 방지 및 일관된 데이터 품질 보장
+  - **토큰 최적화**: 검증 단계에서 간단한 boolean 응답으로 API 비용 절약, 생성 단계에서만 복잡한 레시피 데이터 요청
 
 ```dart
-Future<bool> validateUserInput(String userInput) async {
-  final content = [Content.text(promptConstants.validationPrompt + userInput)];
-  final response = await _geminiValidationModel.generateContent(content);
-  final validationText = response.text ?? '';
-  
-  return validationText.toLowerCase().contains('valid');
+// 검증 모델 설정
+_validationModel = googleAI.generativeModel(
+  model: 'gemini-1.5-flash',
+  generationConfig: GenerationConfig(
+    responseMimeType: 'application/json',
+    responseSchema: Schema.object(
+      properties: {'isValid': Schema.boolean()},
+    ),
+  ),
+);
+
+// 생성 모델 설정  
+_recipeGenerationModel = googleAI.generativeModel(
+  model: 'gemini-2.0-flash',
+  generationConfig: GenerationConfig(
+    responseMimeType: 'application/json',
+    responseSchema: Schema.object(/* 레시피 구조 정의 */),
+  ),
+);
+```
+<br>
+
+**2. 멀티모달 프롬프트 엔지니어링 아키텍처**
+
+- **요구 사항**  
+  텍스트 입력, 이미지 입력, 또는 둘의 조합으로 다양한 상황에 대응하는 레시피 생성이 가능해야 하며, 한국어와 영어 사용자 모두에게 일관된 품질의 결과 제공이 필요
+
+- **의사 결정**  
+  `템플릿 기반 동적 프롬프트 시스템`과 `다국어 마크다운 파일 구조` 도입을 결정
+  - **모듈화된 프롬프트**: 기본 템플릿, 텍스트 컨텍스트, 선호도 섹션을 독립적인 마크다운 파일로 분리하여 유지보수성 향상
+  - **다국어 지원**: `assets/prompts/ko/`, `assets/prompts/en/` 구조로 언어별 프롬프트 관리
+  - **플레이스홀더 시스템**: `__COOKI_*__` 형태의 커스텀 플레이스홀더로 런타임 동적 구성
+  - **Few-shot 학습**: 프롬프트 내 예시 레시피 포함으로 일관된 출력 형식과 품질 확보
+
+```dart
+Future<String> _buildRecipePrompt({
+  String? textInput,
+  Set<String>? preferences,
+  required bool hasImage,
+  required String textOnlyRecipePromptPath,
+  required String imageRecipePromptPath,
+}) async {
+  if (hasImage) {
+    String imagePrompt = await rootBundle.loadString(
+      'assets/prompts/$imageRecipePromptPath',
+    );
+    
+    // 동적 섹션 구성
+    String textContextSection = textInput?.isNotEmpty == true 
+        ? await _buildTextContextSection(textInput!)
+        : '';
+    String preferencesSection = await _buildPreferencesSection(preferences);
+    
+    return imagePrompt
+        .replaceAll(AppConstants.textContextSectionPlaceholder, textContextSection)
+        .replaceAll(AppConstants.preferencesSectionPlaceholder, preferencesSection);
+  }
+  // 텍스트 전용 프롬프트 처리...
 }
 ```
 
