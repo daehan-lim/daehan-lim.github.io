@@ -1,116 +1,121 @@
 <!--suppress CssUnusedSymbol, JSUnusedLocalSymbols -->
 <style>
-  /* Navigation Menu Styles */
-  #nav-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #3464e1; /* Navbar color */
-    color: white;
-    padding: 15px 0; /* Navbar height */
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Vertically align items */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+/* Navigation Menu Styles */
+#nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #3464e1; /* Navbar color */
+  color: white;
+  padding: 15px 0; /* Navbar height */
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Vertically align items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-  .image-row {
-    display: flex;
-    overflow-x: auto;
-    border: 2px solid #ccc;
-    padding: 6px;
-    border-radius: 8px;
-    gap: 5px;
-    align-items: flex-start;
-  }
+code .nx {
+  color: #24292e !important;
+}
 
-  .image-item {
-    width: 240px !important;
-    height: auto !important;
-    display: block !important;
-    flex-shrink: 0 !important;
-  }
 
-  .linked-image {
-    display: block !important;
-    flex-shrink: 0 !important;
-  }
+.image-row {
+  display: flex;
+  overflow-x: auto;
+  border: 2px solid #ccc;
+  padding: 6px;
+  border-radius: 8px;
+  gap: 5px;
+  align-items: flex-start;
+}
 
-  .markdown-body {
-      font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
-      font-weight: 400 !important;
-      word-break: keep-all !important;
-      letter-spacing: -0.3px !important;
-      line-height: 1.8 !important;
-      font-size: 17px !important;
-  }
+.image-item {
+  width: 240px !important;
+  height: auto !important;
+  display: block !important;
+  flex-shrink: 0 !important;
+}
 
-  #nav-menu a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 14px;
-    transition: color 0.3s ease;
-  }
+.linked-image {
+  display: block !important;
+  flex-shrink: 0 !important;
+}
 
-  #nav-menu > div:first-child a { 
-      margin: 0 10px;
-  }
+.markdown-body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-weight: 400 !important;
+    word-break: keep-all !important;
+    letter-spacing: -0.3px !important;
+    line-height: 1.8 !important;
+    font-size: 17px !important;
+}
 
-  #nav-menu a:hover {
-    color: #f1c40f;
-  }
+#nav-menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
 
-  /* Adjust content padding for the fixed navbar */
-  body {
-    padding-top: 75px; /* Adjusted for taller navbar */
-  }
+#nav-menu > div:first-child a { 
+    margin: 0 10px;
+}
 
-  /* Hamburger Menu (Toggle Button) */
-  #nav-menu-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 18px;
-    margin-right: 20px; /* Move to the right */
-    z-index: 1100; /* Ensure toggle is above menu items */
-  }
+#nav-menu a:hover {
+  color: #f1c40f;
+}
 
-  /* Navigation Links */
+/* Adjust content padding for the fixed navbar */
+body {
+  padding-top: 75px; /* Adjusted for taller navbar */
+}
+
+/* Hamburger Menu (Toggle Button) */
+#nav-menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 20px; /* Move to the right */
+  z-index: 1100; /* Ensure toggle is above menu items */
+}
+
+/* Navigation Links */
+#nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
   #nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 20px;
+    display: none; /* Hide links initially on mobile */
+    flex-direction: column;
+    align-items: center;
+    background-color: #3464e1; /* Match navbar background */
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Space below navbar */
+    left: 0;
+    padding: 15px 0; /* Add spacing around links */
+    z-index: 1000; /* Ensure it doesn't overlap the toggle button */
   }
 
-  @media (max-width: 768px) {
-    #nav-links {
-      display: none; /* Hide links initially on mobile */
-      flex-direction: column;
-      align-items: center;
-      background-color: #3464e1; /* Match navbar background */
-      width: 100%;
-      position: absolute;
-      top: 60px; /* Space below navbar */
-      left: 0;
-      padding: 15px 0; /* Add spacing around links */
-      z-index: 1000; /* Ensure it doesn't overlap the toggle button */
-    }
-
-    #nav-links.active {
-      display: flex; /* Show links when active */
-    }
-
-    #nav-links a {
-      margin: 15px 0; /* Added vertical spacing */
-    }
-
-    #nav-menu-toggle {
-      display: block; /* Show hamburger menu */
-    }
+  #nav-links.active {
+    display: flex; /* Show links when active */
   }
+
+  #nav-links a {
+    margin: 15px 0; /* Added vertical spacing */
+  }
+
+  #nav-menu-toggle {
+    display: block; /* Show hamburger menu */
+  }
+}
 </style>
 
 <div id="nav-menu">
