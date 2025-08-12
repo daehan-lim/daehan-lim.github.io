@@ -212,7 +212,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 <!--Cooki-->
 <a href="cooki/" style="text-decoration: none; color: inherit;">
 <div>
-  <img src="../images/cooki/preview.png" alt="Cooki - AI 레시피 커뮤니티 앱" class="project-preview" />
+  <img src="../images/cooki/preview2.png" alt="Cooki - AI 레시피 커뮤니티 앱" class="project-preview" />
   <p><strong>Cooki<span style="color: #21427D; font-size: 19px;">&thinsp;&thinsp;⎆</span></strong><br/>
     <span style="font-size: 0.9em;">AI 레시피 커뮤니티 앱</span><br/> 
     <code>Flutter</code> <code>Riverpod</code> <code>MVVM</code> <code>Firestore</code> <code>Gemini API</code> <code>Dio</code> <code>Cloud Functions</code><br/>
