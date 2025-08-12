@@ -213,7 +213,7 @@ body {
 **🕒 기간:** 2025.06.01 ~ 2025.07.04 (1개월)  
 **📱 플랫폼:** Flutter 크로스 플랫폼 앱 (iOS, Android)  
 **👥 개발 인원:** 3명  
-**💼 역할:** AI 레시피 생성, 레시피 수정, 리뷰 관련 기능, 다국어 지원 개발, 등  
+**💼 역할:** AI 레시피 생성, 레시피 수정, 리뷰 관련 기능, 신고 기능, 다국어 지원 개발, 등  
 **🛠️ 주요 사용 기술:** `Flutter` `Dart` `Firebase` `Riverpod` `MVVM` `Gemini API` `Firestore` `Cloud Functions` `Google Cloud Translation API`  
 **🔗 GitHub:** [flutter-fantastic-four/cooki-app](https://github.com/flutter-fantastic-four/cooki-app)  
 **🔗 App Store:** [apps.apple.com/kr/app/cooki/id6747327839](https://apps.apple.com/kr/app/cooki/id6747327839)
