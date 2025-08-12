@@ -25,11 +25,11 @@ code .p {
 .image-row {
   display: flex;
   overflow-x: auto;
-  padding: 10px; /* slightly more breathing room */
-  gap: 20px; /* more spacing between images */
-  align-items: flex-start;
-  border: none; /* remove outer border */
-  border-radius: 0; /* no outer rounding */
+  padding: 10px !important;
+  gap: 20px !important;
+  align-items: flex-start !important;
+  border: none !important;
+  border-radius: 0 !important;
 }
 
 .image-item {
@@ -37,9 +37,9 @@ code .p {
   height: auto !important;
   display: block !important;
   flex-shrink: 0 !important;
-  border-radius: 20px; /* rounded corners like App Store */
-  border: 1px solid #e0e0e0; /* very light border */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* soft shadow */
+  border-radius: 20px !important; /* force rounded corners */
+  border: 1px solid #e0e0e0 !important; /* force light border */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05) !important; /* force shadow */
 }
 
 .linked-image {
