@@ -25,11 +25,11 @@ code .p {
 .image-row {
   display: flex;
   overflow-x: auto;
-  border: 2px solid #ccc;
-  padding: 6px;
-  border-radius: 8px;
-  gap: 5px;
+  padding: 10px; /* slightly more breathing room */
+  gap: 20px; /* more spacing between images */
   align-items: flex-start;
+  border: none; /* remove outer border */
+  border-radius: 0; /* no outer rounding */
 }
 
 .image-item {
@@ -37,6 +37,9 @@ code .p {
   height: auto !important;
   display: block !important;
   flex-shrink: 0 !important;
+  border-radius: 20px; /* rounded corners like App Store */
+  border: 1px solid #e0e0e0; /* very light border */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* soft shadow */
 }
 
 .linked-image {
@@ -214,6 +217,17 @@ body {
 **🛠️ 사용 기술:** `Flutter` `Dart` `Firebase` `Riverpod` `Clean Architecture` `Gemini API` `Firestore` `Cloud Functions` `Google Cloud Translation API`  
 **🔗 GitHub:** [flutter-fantastic-four/cooki-app](https://github.com/flutter-fantastic-four/cooki-app)  
 **🔗 App Store:** [apps.apple.com/kr/app/cooki/id6747327839](https://apps.apple.com/kr/app/cooki/id6747327839)
+
+<div class="image-row">
+  <img src="../../images/cooki/1_ad.png" alt="1 ad screen" class="image-item" />
+  <img src="../../images/cooki/2_ad.png" alt="2 ad screen" class="image-item" />
+  <img src="../../images/cooki/3_recipe_generation.png" alt="Recipe generation screen" class="image-item" />
+  <img src="../../images/cooki/4_recipe_detail.png" alt="Recipe detail screen" class="image-item" />
+  <img src="../../images/cooki/5_community.png" alt="Community screen" class="image-item" />
+  <img src="../../images/cooki/6_review.png" alt="Review screen" class="image-item" />
+  <img src="../../images/cooki/7_my_recipes.png" alt="My recipes screen" class="image-item" />
+</div>
+
 
 ## 📖 프로젝트 배경
 
