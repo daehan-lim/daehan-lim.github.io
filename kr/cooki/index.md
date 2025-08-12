@@ -369,7 +369,89 @@ _recipeGenerationModel = googleAI.generativeModel(
 ```
 <span style="display: block; height: 1px;"></span>
 
-**2. 멀티모달 프롬프트 엔지니어링 아키텍처**
+**2. Firebase Cloud Functions 기반 번역 시스템**
+
+- **요구 사항**  
+  실시간 번역 기능이 필요하며, 클라이언트에서 직접 Google Translation API를 호출하기에는 보안상 API 키 노출 위험이 존재
+
+- **의사 결정**  
+  `Firebase Cloud Functions`를 중간 계층으로 활용한 서버리스 번역 시스템 구축을 결정
+  - **보안성**: Google Cloud Translation API 인증 정보를 서버 측에서 안전하게 관리
+  - **확장성**: 서버리스 아키텍처로 사용량에 따른 자동 스케일링 및 비용 최적화
+  - **언어 감지**: 번역과 언어 감지를 별도 함수로 분리하여 필요에 따른 선택적 호출 가능
+  - **에러 처리**: Cloud Functions 레벨에서 통합된 오류 처리 및 클라이언트에 구조화된 응답 반환
+
+```javascript
+exports.translateText = onCall({ region: "asia-northeast3" }, async (request) => {
+  try {
+    const { text, targetLanguage, sourceLanguage } = request.data;
+    
+    const translationRequest = {
+      parent: `projects/${projectId}/locations/global`,
+      contents: [text],
+      mimeType: 'text/plain',
+      targetLanguageCode: targetLanguage,
+      ...(sourceLanguage && { sourceLanguageCode: sourceLanguage }),
+    };
+    
+    const [response] = await translationClient.translateText(translationRequest);
+    
+    return {
+      success: true,
+      translatedText: response.translations[0].translatedText,
+      detectedSourceLanguage: response.translations[0].detectedLanguageCode || sourceLanguage
+    };
+  } catch (error) {
+    throw new Error('Translation failed: ' + error.message);
+  }
+});
+```
+<span style="display: block; height: 1px;"></span>
+
+**3. 통합 로깅 및 크래시 모니터링 유틸리티**
+
+- **요구 사항**  
+  협업 환경에서 일관된 에러 처리가 필요하며, 프로덕션 배포 후 사용자 환경의 예외를 개발팀이 신속히 파악·대응할 수 있어야 하고, 로컬 디버깅과 원격 모니터링을 위해 로그 작성 방식을 통일해야 함
+
+- **의사 결정**  
+  `Firebase Crashlytics 연동 로깅 유틸리티` 개발을 결정
+  - **단일 진입점**: 모든 예외 처리에서 `logError()` 함수 하나로 통일된 로깅 방식 제공
+  - **이중 출력**: 개발 중에는 Dart의 `log()` 함수로 즉시 확인, 프로덕션에서는 Crashlytics로 자동 수집
+  - **컨텍스트 정보**: 에러 정보, 스택 트레이스, 선택적 설명을 구조화하여 디버깅 효율성 향상
+  - **재사용성**: 프로젝트 전반에서 동일한 인터페이스로 예외 처리 및 로깅 가능
+
+```dart
+void logError(
+  dynamic error,
+  StackTrace stack, {
+  String? reason,
+  bool fatal = false,
+}) {
+  final message = reason != null 
+      ? '[EXCEPTION] $reason\n$error' 
+      : '[EXCEPTION] $error';
+  log(message, stackTrace: stack);
+
+  FirebaseCrashlytics.instance.recordError(
+    error,
+    stack,
+    reason: reason,
+    fatal: fatal,
+  );
+}
+
+// 사용 예시
+try {
+  final bytes = await imageDownloadRepository.downloadImage(
+    recipe.imageUrl!,
+  );
+  ...
+} catch (e, stack) {
+  logError(e, stack, reason: 'Image download failed');
+}
+```
+
+**4. 멀티모달 프롬프트 엔지니어링 아키텍처**
 
 - **요구 사항**  
   텍스트 입력, 이미지 입력, 또는 둘의 조합으로 다양한 상황에 대응하는 레시피 생성이 가능해야 하며, 한국어와 영어 사용자 모두에게 일관된 품질의 결과 제공이 필요
@@ -406,45 +488,6 @@ Future<String> _buildRecipePrompt({
   }
   // 텍스트 전용 프롬프트 처리...
 }
-```
-<span style="display: block; height: 1px;"></span>
-
-**3. Firebase Cloud Functions 기반 번역 시스템**
-
-- **요구 사항**  
-  실시간 번역 기능이 필요하며, 클라이언트에서 직접 Google Translation API를 호출하기에는 보안상 API 키 노출 위험이 존재
-
-- **의사 결정**  
-  `Firebase Cloud Functions`를 중간 계층으로 활용한 서버리스 번역 시스템 구축을 결정
-  - **보안성**: Google Cloud Translation API 인증 정보를 서버 측에서 안전하게 관리
-  - **확장성**: 서버리스 아키텍처로 사용량에 따른 자동 스케일링 및 비용 최적화
-  - **언어 감지**: 번역과 언어 감지를 별도 함수로 분리하여 필요에 따른 선택적 호출 가능
-  - **에러 처리**: Cloud Functions 레벨에서 통합된 오류 처리 및 클라이언트에 구조화된 응답 반환
-
-```javascript
-exports.translateText = onCall({ region: "asia-northeast3" }, async (request) => {
-  try {
-    const { text, targetLanguage, sourceLanguage } = request.data;
-    
-    const translationRequest = {
-      parent: `projects/${projectId}/locations/global`,
-      contents: [text],
-      mimeType: 'text/plain',
-      targetLanguageCode: targetLanguage,
-      ...(sourceLanguage && { sourceLanguageCode: sourceLanguage }),
-    };
-    
-    const [response] = await translationClient.translateText(translationRequest);
-    
-    return {
-      success: true,
-      translatedText: response.translations[0].translatedText,
-      detectedSourceLanguage: response.translations[0].detectedLanguageCode || sourceLanguage
-    };
-  } catch (error) {
-    throw new Error('Translation failed: ' + error.message);
-  }
-});
 ```
 
 ## 🌱 문제 해결
