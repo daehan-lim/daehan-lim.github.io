@@ -214,7 +214,7 @@ body {
 **📱 플랫폼:** Flutter 크로스 플랫폼 앱 (iOS, Android)  
 **👥 개발 인원:** 3명  
 **💼 역할:** AI 레시피 생성, 레시피 수정, 리뷰 관련 기능, 다국어 지원 개발, 등  
-**🛠️ 사용 기술:** `Flutter` `Dart` `Firebase` `Riverpod` `Clean Architecture` `Gemini API` `Firestore` `Cloud Functions` `Google Cloud Translation API`  
+**🛠️ 주요 사용 기술:** `Flutter` `Dart` `Firebase` `Riverpod` `MVVM` `Gemini API` `Firestore` `Cloud Functions` `Google Cloud Translation API`  
 **🔗 GitHub:** [flutter-fantastic-four/cooki-app](https://github.com/flutter-fantastic-four/cooki-app)  
 **🔗 App Store:** [apps.apple.com/kr/app/cooki/id6747327839](https://apps.apple.com/kr/app/cooki/id6747327839)
 
@@ -235,6 +235,29 @@ body {
 - 특히 냉장고 속 남은 재료로 즉석 요리를 만들고 싶어하는 사용자들이 적절한 레시피를 찾는 데 어려움을 겪고 있으며, 기존 레시피 앱들은 단순 검색 기반으로만 제공되어 이러한 개별적 상황을 반영하지 못하는 한계 보유
 - 이에 따라 생성형 AI를 활용하여 사용자의 보유 재료나 음식 사진을 바탕으로 실시간 맞춤형 레시피를 생성하고, 커뮤니티 기반 경험 공유가 가능한 통합 플랫폼 개발 필요성 확인
 - 요리 진입 장벽을 낮추고 개인 상황에 최적화된 요리 솔루션을 제공함으로써, 누구나 쉽게 요리를 시작하고 즐길 수 있는 환경 조성을 목표로 프로젝트 기획
+
+## 🛠️ Tech Stack
+
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
+[![Riverpod](https://img.shields.io/badge/Riverpod-02569B?style=for-the-badge)](https://riverpod.dev/)
+[![MVVM](https://img.shields.io/badge/MVVM-ed9242?style=for-the-badge)](https://developer.android.com/topic/architecture)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
+[![Firestore](https://img.shields.io/badge/Firestore-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/products/firestore)
+[![Dio](https://img.shields.io/badge/Dio-02569B?style=for-the-badge)](https://pub.dev/packages/dio)
+[![Cloud Functions](https://img.shields.io/badge/Firebase_Cloud_Functions-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)](https://firebase.google.com/products/functions)
+[![Gemini AI](https://img.shields.io/badge/Gemini_AI-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
+[![Crashlytics](https://img.shields.io/badge/Crashlytics-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/products/crashlytics)
+[![Firebase Storage](https://img.shields.io/badge/Firebase_Storage-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/products/storage)
+[![Google Translate API](https://img.shields.io/badge/Google_Translate_API-4285F4?style=for-the-badge&logo=google-translate&logoColor=white)](https://cloud.google.com/translate)
+[![Cached Network Image](https://img.shields.io/badge/Cached_Network_Image-4CAF50?style=for-the-badge)](https://pub.dev/packages/cached_network_image)
+[![Image Picker](https://img.shields.io/badge/Image_Picker-FF9800?style=for-the-badge)](https://pub.dev/packages/image_picker)
+[![Image Compress](https://img.shields.io/badge/Image_Compress-FF5722?style=for-the-badge)](https://pub.dev/packages/flutter_image_compress)
+[![Share Plus](https://img.shields.io/badge/Share_Plus-2196F3?style=for-the-badge)](https://pub.dev/packages/share_plus)
+[![SharedPreferences](https://img.shields.io/badge/SharedPreferences-4CAF50?style=for-the-badge)](https://pub.dev/packages/shared_preferences)
+[![i18n](https://img.shields.io/badge/i18n_다국어_지원-FF6B6B?style=for-the-badge)](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
+[![Speech Recognition](https://img.shields.io/badge/Speech_Recognition-9C27B0?style=for-the-badge)](https://pub.dev/packages/speech_to_text)
+[![Easy Image Viewer](https://img.shields.io/badge/Easy_Image_Viewer-795548?style=for-the-badge)](https://pub.dev/packages/easy_image_viewer)
 
 ## 🌟 수행 내용 및 성과
 
