@@ -1,102 +1,110 @@
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
-  /* Navigation Menu Styles */
-  #nav-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #3464e1; /* Navbar color */
-    color: white;
-    padding: 15px 0; /* Navbar height */
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Vertically align items */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+/* Navigation Menu Styles */
+#nav-menu {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #3464e1; /* Navbar color */
+color: white;
+padding: 15px 0; /* Navbar height */
+z-index: 1000;
+display: flex;
+justify-content: space-between; /* Space between items */
+align-items: center; /* Vertically align items */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
 
-  .ko {
-    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-weight: 400;
-    word-break: keep-all;
-    letter-spacing: -0.3px;
-    line-height: 1.8; 
-    font-size: 17px;
-  }
+.project-preview {
+  width: 100%; /* responsive full width of container */
+  aspect-ratio: 1160 / 663; /* keeps Cubadebate's ratio */
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  object-fit: cover; /* fills space without distortion */
+}
 
-  #nav-menu a {
-    color: white;
-    text-decoration: none;
-    margin: 0 16px;
-    font-size: 16px;
-    transition: color 0.3s ease;
-    font-weight: 700; /* Increase from bold to 700 */
-    -webkit-font-smoothing: antialiased; /* Better text rendering */
-    -moz-osx-font-smoothing: grayscale;
-  }
+.ko {
+font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+font-weight: 400;
+word-break: keep-all;
+letter-spacing: -0.3px;
+line-height: 1.8; 
+font-size: 17px;
+}
 
-  #nav-menu > div:first-child a {
-    font-size: 14px;
-    margin: 0 10px;
-  }
+#nav-menu a {
+color: white;
+text-decoration: none;
+margin: 0 16px;
+font-size: 16px;
+transition: color 0.3s ease;
+font-weight: 700; /* Increase from bold to 700 */
+-webkit-font-smoothing: antialiased; /* Better text rendering */
+-moz-osx-font-smoothing: grayscale;
+}
 
-  #nav-menu a.active {
-    color: #f1c40f; /* Same yellow as your hover effect */
-  }
+#nav-menu > div:first-child a {
+font-size: 14px;
+margin: 0 10px;
+}
 
-  #nav-menu a:hover {
-    color: #f1c40f;
-  }
+#nav-menu a.active {
+color: #f1c40f; /* Same yellow as your hover effect */
+}
 
-  /* Adjust content padding for the fixed navbar */
-  body {
-    padding-top: 75px; /* Adjusted for taller navbar */
-  }
+#nav-menu a:hover {
+color: #f1c40f;
+}
 
-  /* Hamburger Menu (Toggle Button) */
-  #nav-menu-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 18px;
-    margin-right: 20px; /* Move to the right */
-    z-index: 1100; /* Ensure toggle is above menu items */
-  }
+/* Adjust content padding for the fixed navbar */
+body {
+padding-top: 75px; /* Adjusted for taller navbar */
+}
 
-  /* Navigation Links */
-  #nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 20px;
-  }
+/* Hamburger Menu (Toggle Button) */
+#nav-menu-toggle {
+display: none;
+cursor: pointer;
+font-size: 18px;
+margin-right: 20px; /* Move to the right */
+z-index: 1100; /* Ensure toggle is above menu items */
+}
 
-  @media (max-width: 768px) {
-    #nav-links {
-      display: none; /* Hide links initially on mobile */
-      flex-direction: column;
-      align-items: center;
-      background-color: #3464e1; /* Match navbar background */
-      width: 100%;
-      position: absolute;
-      top: 60px; /* Space below navbar */
-      left: 0;
-      padding: 15px 0; /* Add spacing around links */
-      z-index: 1000; /* Ensure it doesn't overlap the toggle button */
-    }
+/* Navigation Links */
+#nav-links {
+display: flex;
+flex-wrap: wrap;
+padding-right: 20px;
+}
 
-    #nav-links.active {
-      display: flex; /* Show links when active */
-    }
+@media (max-width: 768px) {
+#nav-links {
+  display: none; /* Hide links initially on mobile */
+  flex-direction: column;
+  align-items: center;
+  background-color: #3464e1; /* Match navbar background */
+  width: 100%;
+  position: absolute;
+  top: 60px; /* Space below navbar */
+  left: 0;
+  padding: 15px 0; /* Add spacing around links */
+  z-index: 1000; /* Ensure it doesn't overlap the toggle button */
+}
 
-    #nav-links a {
-      margin: 15px 0; /* Added vertical spacing */
-    }
+#nav-links.active {
+  display: flex; /* Show links when active */
+}
 
-    #nav-menu-toggle {
-      display: block; /* Show hamburger menu */
-    }
-  }
+#nav-links a {
+  margin: 15px 0; /* Added vertical spacing */
+}
+
+#nav-menu-toggle {
+  display: block; /* Show hamburger menu */
+}
+}
 </style>
 
 <div id="nav-menu">
@@ -201,14 +209,26 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
 
+<!--Cooki-->
+<a href="cooki/" style="text-decoration: none; color: inherit;">
+<div>
+  <img src="../images/cooki/preview.png" alt="Cooki - AI 레시피 커뮤니티 앱" class="project-preview" />
+  <p><strong>Cooki<span style="color: #21427D; font-size: 19px;">&thinsp;&thinsp;⎆</span></strong><br/>
+    <span style="font-size: 0.9em;">AI 레시피 커뮤니티 앱</span><br/> 
+    <code>Flutter</code> <code>Riverpod</code> <code>MVVM</code> <code>Firestore</code> <code>Gemini API</code> <code>Dio</code> <code>Cloud Functions</code><br/>
+    <small>2025.06.01 ~ 2025.07.04 (1개월)</small>
+  </p>
+</div>
+</a>
+
 <!--Cubadebate-->
 <a href="cubadebate/" style="text-decoration: none; color: inherit;">
 <div>
-  <img src="../images/cubadebate/preview.png" alt="Shopping Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
+  <img src="../images/cubadebate/preview.png" alt="Cubadebate 뉴스 앱" class="project-preview" />
   <p><strong>Cubadebate<span style="color: #21427D; font-size: 19px;">&thinsp;&thinsp;⎆</span></strong><br/>
-    <span style="font-size: 0.9em;">쿠폰 모음 코딩</span><br/>
-    <code>Kingfisher</code> <code>Lottie</code> <code>SnapKit</code> <code>Combine</code> <code>SwiftUI</code><br/>
-    <small>24.01.29 - 24.02.10 (2주)</small>
+    <span style="font-size: 0.9em;">맞춤형 뉴스 플랫폼</span><br/>
+    <code>Android</code> <code>Kotlin</code> <code>Coroutines</code> <code>MVVM</code> <code>Room</code> <code>Retrofit</code> <code>Glide</code> <code>Lottie</code> <code>ViewBinding</code><br/>
+    <small>2021.03 ~ 2021.07</small>
   </p>
 </div>
 </a>
@@ -216,7 +236,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 <!--가스 소비 관리 앱-->
 <a href="https://github.com/daehan-lim/gas-usage-tracker" style="text-decoration: none; color: inherit;">
 <div>
-  <img src="../images/gas/preview2.png" alt="Catcher Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
+  <img src="../images/gas/preview2.png" alt="Catcher Project" class="project-preview" />
   <p>
     <strong>
       가스 소비 관리 앱
