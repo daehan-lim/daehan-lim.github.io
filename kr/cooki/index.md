@@ -310,27 +310,27 @@ body {
   - **JSON Schema 강제**: 구조화된 응답 형식으로 파싱 오류 방지 및 일관된 데이터 품질 보장
   - **토큰 최적화**: 검증 단계에서 간단한 boolean 응답으로 API 비용 절약, 생성 단계에서만 복잡한 레시피 데이터 요청
 
-```dart
-// 검증 모델 설정
-_validationModel = googleAI.generativeModel(
-  model: 'gemini-1.5-flash',
-  generationConfig: GenerationConfig(
-    responseMimeType: 'application/json',
-    responseSchema: Schema.object(
-      properties: {'isValid': Schema.boolean()},
+  ```dart
+  // 검증 모델 설정
+  _validationModel = googleAI.generativeModel(
+    model: 'gemini-1.5-flash',
+    generationConfig: GenerationConfig(
+      responseMimeType: 'application/json',
+      responseSchema: Schema.object(
+        properties: {'isValid': Schema.boolean()},
+      ),
     ),
-  ),
-);
-
-// 생성 모델 설정  
-_recipeGenerationModel = googleAI.generativeModel(
-  model: 'gemini-2.0-flash',
-  generationConfig: GenerationConfig(
-    responseMimeType: 'application/json',
-    responseSchema: Schema.object(/* 레시피 구조 정의 */),
-  ),
-);
-```
+  );
+  
+  // 생성 모델 설정  
+  _recipeGenerationModel = googleAI.generativeModel(
+    model: 'gemini-2.0-flash',
+    generationConfig: GenerationConfig(
+      responseMimeType: 'application/json',
+      responseSchema: Schema.object(/* 레시피 구조 정의 */),
+    ),
+  );
+  ```
 <span style="display: block; height: 1px;"></span>
 
 **2. 멀티모달 프롬프트 엔지니어링 아키텍처**
@@ -345,32 +345,32 @@ _recipeGenerationModel = googleAI.generativeModel(
   - **플레이스홀더 시스템**: `__COOKI_*__` 형태의 커스텀 플레이스홀더로 런타임 동적 구성
   - **Few-shot 학습**: 프롬프트 내 예시 레시피 포함으로 일관된 출력 형식과 품질 확보
 
-```dart
-Future<String> _buildRecipePrompt({
-  String? textInput,
-  Set<String>? preferences,
-  required bool hasImage,
-  required String textOnlyRecipePromptPath,
-  required String imageRecipePromptPath,
-}) async {
-  if (hasImage) {
-    String imagePrompt = await rootBundle.loadString(
-      'assets/prompts/$imageRecipePromptPath',
-    );
-    
-    // 동적 섹션 구성
-    String textContextSection = textInput?.isNotEmpty == true 
-        ? await _buildTextContextSection(textInput!)
-        : '';
-    String preferencesSection = await _buildPreferencesSection(preferences);
-    
-    return imagePrompt
-        .replaceAll(AppConstants.textContextSectionPlaceholder, textContextSection)
-        .replaceAll(AppConstants.preferencesSectionPlaceholder, preferencesSection);
+  ```dart
+  Future<String> _buildRecipePrompt({
+    String? textInput,
+    Set<String>? preferences,
+    required bool hasImage,
+    required String textOnlyRecipePromptPath,
+    required String imageRecipePromptPath,
+  }) async {
+    if (hasImage) {
+      String imagePrompt = await rootBundle.loadString(
+        'assets/prompts/$imageRecipePromptPath',
+      );
+      
+      // 동적 섹션 구성
+      String textContextSection = textInput?.isNotEmpty == true 
+          ? await _buildTextContextSection(textInput!)
+          : '';
+      String preferencesSection = await _buildPreferencesSection(preferences);
+      
+      return imagePrompt
+          .replaceAll(AppConstants.textContextSectionPlaceholder, textContextSection)
+          .replaceAll(AppConstants.preferencesSectionPlaceholder, preferencesSection);
+    }
+    // 텍스트 전용 프롬프트 처리...
   }
-  // 텍스트 전용 프롬프트 처리...
-}
-```
+  ```
 <span style="display: block; height: 1px;"></span>
 
 **3. Firebase Cloud Functions 기반 번역 시스템**
@@ -385,33 +385,69 @@ Future<String> _buildRecipePrompt({
   - **언어 감지**: 번역과 언어 감지를 별도 함수로 분리하여 필요에 따른 선택적 호출 가능
   - **에러 처리**: Cloud Functions 레벨에서 통합된 오류 처리 및 클라이언트에 구조화된 응답 반환
 
-```javascript
-exports.translateText = onCall({ region: "asia-northeast3" }, async (request) => {
-  try {
-    const { text, targetLanguage, sourceLanguage } = request.data;
-    
-    const translationRequest = {
-      parent: `projects/${projectId}/locations/global`,
-      contents: [text],
-      mimeType: 'text/plain',
-      targetLanguageCode: targetLanguage,
-      ...(sourceLanguage && { sourceLanguageCode: sourceLanguage }),
-    };
-    
-    const [response] = await translationClient.translateText(translationRequest);
-    
-    return {
-      success: true,
-      translatedText: response.translations[0].translatedText,
-      detectedSourceLanguage: response.translations[0].detectedLanguageCode || sourceLanguage
-    };
-  } catch (error) {
-    throw new Error('Translation failed: ' + error.message);
-  }
-});
-```
+  ```javascript
+  exports.translateText = onCall({ region: "asia-northeast3" }, async (request) => {
+    try {
+      const { text, targetLanguage, sourceLanguage } = request.data;
+      
+      const translationRequest = {
+        parent: `projects/${projectId}/locations/global`,
+        contents: [text],
+        mimeType: 'text/plain',
+        targetLanguageCode: targetLanguage,
+        ...(sourceLanguage && { sourceLanguageCode: sourceLanguage }),
+      };
+      
+      const [response] = await translationClient.translateText(translationRequest);
+      
+      return {
+        success: true,
+        translatedText: response.translations[0].translatedText,
+        detectedSourceLanguage: response.translations[0].detectedLanguageCode || sourceLanguage
+      };
+    } catch (error) {
+      throw new Error('Translation failed: ' + error.message);
+    }
+  });
+  ```
 
 ## 🌱 문제 해결
+
+**1. 리뷰 언어 감지 최적화**
+
+- **문제 상황**  
+  리뷰 작성 시 언어 감지 API 호출이 동기적으로 처리되어 사용자가 리뷰 저장 완료까지 3초 이상 대기해야 하는 사용성 문제 발생
+
+- **해결 과정**
+  - 리뷰 작성 플로우 분석 결과 언어 감지가 리뷰 저장의 필수 전제 조건이 아님을 확인
+  - 사용자 경험 우선순위를 고려하여 리뷰 저장과 언어 감지 작업을 분리하는 방안 검토
+  - 언어 감지 결과가 즉시 필요하지 않고 번역 기능 사용 시에만 필요함을 파악
+  ```dart
+  // 기존 동기 처리 방식
+  await saveReview(review);
+  await detectAndUpdateLanguage(reviewId); // UI 블로킹
+  
+  // 개선된 비동기 처리 방식
+  final reviewId = await saveReview(review);
+  detectAndUpdateLanguage(reviewId); // await 제거로 백그라운드 실행
+  ```
+
+- **해결 방법**
+  - 리뷰 저장 완료 후 언어 감지를 백그라운드에서 비동기 실행하도록 변경
+  - `await` 키워드 제거로 언어 감지가 UI 블로킹 없이 별도 스레드에서 처리
+  - 기존 리뷰 수정 시에도 reviewId를 미리 확보하여 일관된 처리 플로우 유지
+  - 언어 감지 실패 시에도 리뷰 기본 기능에는 영향 없도록 오류 격리
+
+- **최종 결과**  
+  리뷰 작성 완료 시간을 **약 3초 단축**하였고 번역 기능의 정확도는 유지하면서도 즉각적인 리뷰 저장 경험 제공
+
+**3. 다중 이미지 병렬 업로드 시 파일명 충돌 문제**
+- **문제 상황**: 여러 이미지를 동시에 압축·업로드할 때 Firebase Storage에서 HTTP 400 오류 발생, 특히 3장 이상 선택 시 빈번
+- **초기 점검**: Firebase Storage 규칙·할당량 점검, 네트워크 상태 확인 → 모두 정상
+- **원인 분석**: 파일명 생성이 `DateTime.now().millisecondsSinceEpoch` 기반이라 병렬 처리 시 동일 값 발생, 압축·업로드 과정 모두에서 중복 가능성 확인
+- **해결**: 파일명 생성 로직을 `millisecondsSinceEpoch` → `microsecondsSinceEpoch`로 변경해 1000배 높은 정밀도 확보
+- **결과**: 충돌 오류 **100% 해결**, 이미지의 안정적인 병렬 업로드 지원으로 사용자 경험 향상
+
 
 **1. AI 레시피 생성의 정확도와 관련성 향상**
 
