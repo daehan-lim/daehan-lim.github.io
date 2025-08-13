@@ -346,8 +346,7 @@ body {
   - Firebase Crashlytics 연동으로 실시간 오류 추적 및 안정성 모니터링 체계 구축
   - 전역 에러 핸들링 시스템으로 앱 크래시 방지 및 사용자 경험 개선
 
-
-## 트러블슈팅 및 문제 해결
+### 트러블슈팅 및 문제 해결
 - **GitHub Actions Firebase 설정 문제 해결**
   - CI 환경에서 `firebase_options.dart` 파일 부재로 인한 빌드 실패 문제 분석
   - 3개 Firebase 설정 파일의 개별 Base64 인코딩을 통한 GitHub Secrets 안전한 전달 방식 고안 
