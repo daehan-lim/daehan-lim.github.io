@@ -27,6 +27,10 @@ code .p {
   color: #24292e !important;
 }
 
+code.language-plaintext.highlighter-rouge {
+  color: #a5535d !important;
+}
+
 .image-row {
   display: flex;
   overflow-x: auto;
@@ -211,7 +215,7 @@ body {
 # ShareLingo - 언어교류 SNS 앱
 
 ## 📝 개요
-**📌 앱 소개:** 언어 학습자들이 서로 연결되어 게시물을 공유하고 상호작용하는 SNS 앱 
+**📌 앱 소개:** 언어 학습자들이 서로 연결되어 게시물을 공유하고 상호작용하는 SNS 앱  
 **🕒 기간:** 2025.05.16 ~ 2025.05.27 (2주)  
 **📱 플랫폼:** Flutter 크로스 플랫폼 앱 (Android, iOS)  
 **👥 개발 인원:** 4명  
@@ -339,7 +343,7 @@ body {
   - 이름, 생년월일, 언어 정보, 자기소개, 취미, 위치 등 다차원적 사용자 정보 관리
 
 - **Google Maps Static API 활용 프로필 배경**
-  - Google Maps Static API를 활용하여 사용자 위치 중심의 개인화된 지도를 프로필 배경으로 적용
+  - `Google Maps Static API`를 활용하여 사용자 위치 중심의 개인화된 지도를 프로필 배경으로 적용
   - 사용자 프라이버시 보호를 위한 줌 레벨 제한으로 정확한 주소가 아닌 대략적인 지역만 표시하여 위치 정보 보안 강화
   - 지도 로딩 실패 시 기본 이미지로 자동 대체되는 Fallback 구현
 
@@ -349,7 +353,7 @@ body {
   - 각 단계별 실시간 유효성 검증(성인 인증, 모국어와 학습 언어 중복 방지 등)을 통해 데이터 품질 확보
 
 - **정확한 위치 기반 매칭 시스템 구현**
-  - GPS 좌표를 읍면동 단위로 변환하는 VWorld API 연동으로 정확한 지역 정보 제공
+  - GPS 좌표를 읍면동 단위로 변환하는 `VWorld API` 연동으로 정확한 지역 정보 제공
   - 위치 권한 거부 시나리오를 포함한 다양한 상황에 대응하는 안정적인 위치 서비스 구현
   - 위치 정보 기반 근처 사용자 필터링 기능으로 지역 커뮤니티 형성 지원
 
@@ -373,29 +377,29 @@ body {
 
 ### 이용약관 및 개인정보보호
   - 앱 최초 실행 시 이용약관 및 개인정보처리방침 동의 절차 구현
-  - SharedPreferences를 활용한 동의 상태 영구 저장으로 재동의 요구 방지
-  - URL Launcher를 활용한 인앱 브라우저로 이용약관 및 개인정보처리방침 제공 및 설정 페이지에서도 접근 가능하도록 구현
+  - `SharedPreferences`를 활용한 동의 상태 영구 저장으로 재동의 요구 방지
+  - `URL Launcher`를 활용한 인앱 브라우저로 이용약관 및 개인정보처리방침 제공 및 설정 페이지에서도 접근 가능하도록 구현
 
 ### UI/UX 최적화 및 인터페이스 개발
-  - CachedNetworkImage를 활용한 이미지 캐싱 시스템으로 반복 로딩 시간 단축 및 데이터 사용량 절약
-  - Firebase Crashlytics를 활용한 실시간 오류 추적 시스템 구축
+  - `CachedNetworkImage`를 활용한 이미지 캐싱 시스템으로 반복 로딩 시간 단축 및 데이터 사용량 절약
+  - `Firebase Crashlytics`를 활용한 실시간 오류 추적 시스템 구축
     - 전역 에러 핸들링을 통해 예상치 못한 앱 크래시를 방지하고 사용자 경험 개선
 
 ### 클린 아키텍처 및 테스트 주도 개발
 - **완전한 클린 아키텍처 구현**
   - 데이터, 도메인, 프레젠테이션 레이어 간의 명확한 계층 분리 구현
   - 의존성 주입 패턴을 통해 모든 클래스가 생성자를 통해 필요한 의존성을 받아 테스트 시 Mock 객체 주입 가능 
-  - Repository 패턴으로 데이터 접근 추상화를 통해 Firebase에서 다른 백엔드로 전환 시에도 비즈니스 로직 변경 없이 대응 가능
+  - `Repository` 패턴으로 데이터 접근 추상화를 통해 `Firebase`에서 다른 백엔드로 전환 시에도 비즈니스 로직 변경 없이 대응 가능
 
 - **단위 테스트 시스템 구현**
-  - 핵심 인증 로직에 대한 단위 테스트 작성으로 LoginViewModel, SignInUseCase, AuthRepository, DataSource 계층의 신뢰성 확보
-  - Mocktail을 활용한 외부 의존성 격리로 Firebase나 Google Sign-In 없이도 독립적인 테스트 실행 환경 구축
+  - 인증 로직 전 계층에 대한 단위 테스트 작성으로 코드 안정성과 신뢰성 확보
+  - `Mocktail`을 활용한 외부 의존성 격리로 `Firebase`나 `Google Sign-In` 없이도 독립적인 테스트 실행 환경 구축
   - 성공/실패 케이스와 사용자 로그인 취소 등 다양한 시나리오 테스트 커버리지 확보
   - Provider 오버라이드를 통한 테스트 환경에서의 Mock 의존성 주입으로 격리된 테스트 환경 구축
 
 ### 상태 관리 및 데이터 흐름 아키텍처
 - **Riverpod 기반 전역 상태 관리 시스템**
-  - NotifierProvider와 AutoDisposeNotifier를 활용한 생명주기 관리로 메모리 누수 방지
+  - `NotifierProvider`와 AutoDisposeNotifier를 활용한 생명주기 관리로 메모리 누수 방지
   - UserGlobalViewModel을 통한 전역 사용자 상태 관리로 앱 전체에서 일관된 사용자 정보 접근
   - 기능별 ViewModel 분리(LoginViewModel, OnboardingViewModel, EditProfileViewModel)로 관심사 분리 및 코드 재사용성 향상
 
