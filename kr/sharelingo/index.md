@@ -385,10 +385,10 @@ body {
   - `Firebase Crashlytics`를 활용한 실시간 오류 추적 시스템 구축
     - 전역 에러 핸들링을 통해 예상치 못한 앱 크래시를 방지하고 사용자 경험 개선
 
-### 클린 아키텍처 및 테스트 주도 개발
+### 아키텍처 및 테스트 주도 개발
 - **완전한 클린 아키텍처 구현**
   - 데이터, 도메인, 프레젠테이션 레이어 간의 명확한 계층 분리 구현
-  - 의존성 주입 패턴을 통해 모든 클래스가 생성자를 통해 필요한 의존성을 받아 테스트 시 Mock 객체 주입 가능 
+  - Riverpod을 활용한 의존성 주입 패턴으로 모든 클래스가 생성자를 통해 필요한 의존성을 받아 테스트 시 Mock 객체 주입 가능 
   - `Repository` 패턴으로 데이터 접근 추상화를 통해 `Firebase`에서 다른 백엔드로 전환 시에도 비즈니스 로직 변경 없이 대응 가능
 
 - **단위 테스트 시스템 구현**
@@ -397,17 +397,10 @@ body {
   - 성공/실패 케이스와 사용자 로그인 취소 등 다양한 시나리오 테스트 커버리지 확보
   - Provider 오버라이드를 통한 테스트 환경에서의 Mock 의존성 주입으로 격리된 테스트 환경 구축
 
-### 상태 관리 및 데이터 흐름 아키텍처
-- **Riverpod 기반 전역 상태 관리 시스템**
-  - `NotifierProvider`와 AutoDisposeNotifier를 활용한 생명주기 관리로 메모리 누수 방지
-  - UserGlobalViewModel을 통한 전역 사용자 상태 관리로 앱 전체에서 일관된 사용자 정보 접근
-  - 기능별 ViewModel 분리(LoginViewModel, OnboardingViewModel, EditProfileViewModel)로 관심사 분리 및 코드 재사용성 향상
-
-- **타입 안전성 및 데이터 변환 시스템**
-  - DTO(Data Transfer Object)와 Entity 계층 완전 분리로 데이터베이스 스키마 변경이 비즈니스 로직에 미치는 영향 최소화
-  - UserDto의 fromMap, toMap, fromEntity, toEntity 메소드를 통한 안전한 데이터 변환 보장
+- **타입 안전성 및 데이터 변환**
+  - DTO와 Entity 계층 완전 분리로 데이터베이스 스키마 변경이 비즈니스 로직에 미치는 영향 최소화
+  - DTO의 fromMap, toMap, fromEntity, toEntity 메소드를 통한 안전한 데이터 변환 보장
   - Timestamp와 DateTime 간의 자동 변환으로 Firebase 데이터 타입과 Dart 네이티브 타입 간 매끄러운 연동
-  - null 안전성을 고려한 옵셔널 필드 처리로 런타임 에러 방지
 
 ## 🎞️ 시연 영상
 <div align="center"> 
