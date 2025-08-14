@@ -525,36 +525,7 @@ exports.syncUserUpdates = functions.firestore
 
 ## 🌱 문제 해결
 
-**1. GitHub Actions에서 Firebase 설정 파일 부재 문제**
-
-- **문제 상황**  
-  GitHub Actions 워크플로우에서 `firebase_options.dart` 파일이 필요하지만 보안상 Git에 커밋할 수 없어 CI 빌드 시 `Target of URI doesn't exist: firebase_options.dart` 오류 발생
-
-- **초기 시도**
-  - 설정 파일 내용을 GitHub Secret에 그대로 붙여넣음
-  - 줄바꿈·특수문자 때문에 파일이 깨짐. 입력 불가능함
-
-- **문제 분석**  
-  GitHub Secrets는 멀티라인과 특수문자 처리가 불안정하며, iOS/Android 플랫폼별로 다른 형식의 설정 파일이 필요함을 확인
-
-- **해결 방안 도출**:  
-  Base64 인코딩을 통해 바이너리 안전 문자열로 변환하면 한 줄로 저장 가능하고 디코딩 시 원본 복원됨을 검증
-
-- **해결 방법**
-  - 3개 Firebase 설정 파일을 각각 Base64로 인코딩하여 GitHub Secrets에 저장
-  - 워크플로우에서 플랫폼별 디렉토리 자동 생성 후 디코딩하여 파일로 복원
-
-```yml
-- name: Decode firebase_options.dart  
-  run: |  
-    mkdir -p lib  
-    echo "${{ secrets.FIREBASE_DART_OPTIONS }}" | base64 --decode > lib/firebase_options.dart
-```
-
-- **최종 결과**  
-  Firebase 설정 파일 부재로 인한 빌드 실패 문제를 완전히 해결하여 안정적인 자동화 환경 구축
-
-**2. 온보딩 사용자 경험 최적화**
+**1. 온보딩 사용자 경험 최적화**
 
 - **문제 상황**  
   위치 권한 거부 시 앱 사용이 제한되거나 오류가 발생하여 사용자가 앱을 이탈하는 문제 발생. 특히 일시적 거부와 영구적 거부를 구분하지 않아 적절한 안내 메시지 제공 불가
@@ -570,7 +541,7 @@ exports.syncUserUpdates = functions.firestore
     - `deniedTemporarily`: 일시적 거부 - 권한 재요청 안내
     - `deniedForever`: 영구적 거부 - 설정 앱 이동 안내
     - `error`: 기술적 오류 - 재시도 또는 위치 없이 진행 안내
-  - "위치 없이 진행하기" 옵션 추가로 앱 사용 연속성 보장
+  - "위치 없이 진행하기" 버튼 추가로 앱 사용 연속성 보장
 
 ```dart
 enum LocationStatus { success, deniedTemporarily, deniedForever, error }
@@ -609,49 +580,51 @@ Future<(LocationStatus, Position?)> getPosition() async {
 - **최종 결과**  
   온보딩 완료율을 **35% 향상**시키고, 권한 상태별 맞춤 안내로 사용자 경험 개선
 
+**2. GitHub Actions에서 Firebase 설정 파일 부재 문제**
+
+- **문제 상황**  
+  GitHub Actions 워크플로우에서 `firebase_options.dart` 파일이 필요하지만 보안상 Git에 커밋할 수 없어 CI 빌드 시 `Target of URI doesn't exist: firebase_options.dart` 오류 발생
+
+- **초기 시도**
+  - 설정 파일 내용을 GitHub Secret에 그대로 붙여넣음
+  - 줄바꿈·특수문자 때문에 파일이 깨짐. 입력 불가능함
+
+- **문제 분석**  
+  GitHub Secrets는 멀티라인과 특수문자 처리가 불안정하며, iOS/Android 플랫폼별로 다른 형식의 설정 파일이 필요함을 확인
+
+- **해결 방안 도출**:  
+  Base64 인코딩을 통해 바이너리 안전 문자열로 변환하면 한 줄로 저장 가능하고 디코딩 시 원본 복원됨을 검증
+
+- **해결 방법**
+  - 3개 Firebase 설정 파일을 각각 Base64로 인코딩하여 GitHub Secrets에 저장
+  - 워크플로우에서 플랫폼별 디렉토리 자동 생성 후 디코딩하여 파일로 복원
+
+```yml
+- name: Decode firebase_options.dart  
+  run: |  
+    mkdir -p lib  
+    echo "${{ secrets.FIREBASE_DART_OPTIONS }}" | base64 --decode > lib/firebase_options.dart
+```
+
+- **최종 결과**  
+  Firebase 설정 파일 부재로 인한 빌드 실패 문제를 완전히 해결하여 안정적인 자동화 환경 구축
+
 **3. 프로필 수정 시 데이터 동기화 최적화**
 
 - **문제 상황**  
-  사용자가 프로필 정보를 수정할 때 해당 사용자의 모든 게시물과 댓글에 반영되어야 하는데, 클라이언트에서 직접 처리 시 네트워크 오류나 앱 종료로 인한 부분 업데이트 실패로 데이터 불일치 발생
+  사용자가 프로필 정보를 수정할 때 해당 사용자의 모든 게시물과 댓글에 반영되어야 하는데, 클라이언트에서 직접 처리하면 네트워크 오류나 앱 종료로 인한 부분 업데이트 실패로 데이터 불일치 가능성 존재
 
 - **해결 과정**
-  - **문제 범위 확인**: 사용자 프로필 변경 시 관련 게시물(수십 개)과 댓글(수백 개)의 일괄 업데이트 필요
-  - **클라이언트 처리의 한계**: 대량 업데이트 중 네트워크 끊김이나 앱 종료 시 일부만 업데이트되어 데이터 불일치 발생
+  - **클라이언트 처리의 한계**: 대량 업데이트 중 네트워크 끊김이나 앱 종료 시 일부만 업데이트되어 데이터 불일치 가능성을 확인
   - **서버 사이드 처리 검토**: Firebase Cloud Functions의 트랜잭션 기반 처리로 완전성 보장 가능
 
 - **해결 방법**
   - Cloud Functions에서 사용자 정보 변경 감지 시 자동으로 관련 데이터 동기화
   - `collectionGroup` 쿼리로 모든 서브컬렉션의 댓글을 효율적으로 조회 및 업데이트
   - Promise.all을 통한 병렬 처리로 업데이트 성능 최적화
-  - 클라이언트에서는 프로필 저장 후 즉시 UI 업데이트하여 사용자 경험 향상
-
-```javascript
-exports.syncUserUpdates = functions.firestore
-  .document("users/{userId}")
-  .onUpdate(async (change, context) => {
-    const userId = context.params.userId;
-    const newData = change.after.data();
-    
-    // 병렬 처리로 성능 최적화
-    const [postsSnapshot, commentsSnapshot] = await Promise.all([
-      db.collection("posts").where("uid", "==", userId).get(),
-      db.collectionGroup("comments").where("uid", "==", userId).get()
-    ]);
-    
-    const updates = [
-      ...postsSnapshot.docs.map(doc => doc.ref.update(newData)),
-      ...commentsSnapshot.docs.map(doc => doc.ref.update({
-        userName: newData.name,
-        userProfileImage: newData.profileImage,
-      }))
-    ];
-    
-    return Promise.all(updates);
-  });
-```
 
 - **최종 결과**  
-  프로필 수정 시 데이터 일관성을 **100% 보장**하고, 사용자는 프로필 변경 후 즉시 다른 화면으로 이동 가능한 매끄러운 사용자 경험 제공
+  프로필 수정 시 데이터 일관성을 보장
 
 ## 🎞️ 시연 영상
 <div align="center"> 
