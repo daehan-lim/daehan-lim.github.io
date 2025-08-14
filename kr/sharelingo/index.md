@@ -308,7 +308,6 @@ body {
 │   ├── widgets/                       # 공통 위젯
 │   └── user_global_view_model.dart    # 전역 사용자 뷰모델
 
-├── firebase_service.dart              # Firebase 서비스 설정
 ├── main.dart                          # 앱 진입점
 ```
 
