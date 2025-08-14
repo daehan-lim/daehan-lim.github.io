@@ -419,6 +419,7 @@ exports.translateText = onCall({ region: "asia-northeast3" }, async (request) =>
   - **이중 출력**: 개발 중에는 Dart의 `log()` 함수로 즉시 확인, 프로덕션에서는 Crashlytics로 자동 수집
   - **컨텍스트 정보**: 에러 정보, 스택 트레이스, 선택적 설명을 구조화하여 디버깅 효율성 향상
   - **재사용성**: 프로젝트 전반에서 동일한 인터페이스로 예외 처리 및 로깅 가능
+  - **프레임워크 레벨 예외 포착**: `runZonedGuarded`를 활용해 Flutter 프레임워크 레벨 예외를 감지하고 로깅하여 앱 크래시를 예방
 
 ```dart
 void logError(
