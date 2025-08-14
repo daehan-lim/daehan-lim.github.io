@@ -23,6 +23,10 @@ code .p {
   color: #24292e !important;
 }
 
+.language-plaintext.highlighter-rouge > .highlight > pre.highlight > code {
+  color: black !important;
+}
+
 .image-row {
   display: flex;
   overflow-x: auto;
@@ -265,7 +269,7 @@ body {
 [![URL Launcher](https://img.shields.io/badge/URL_Launcher-2196F3?style=for-the-badge)](https://pub.dev/packages/url_launcher)
 
 ## 📋 프로젝트 구조
-```bash
+```
 ├── app/                               # 앱 전체 설정 및 공통 상수, 테마 등
 │   ├── constants/                     # 앱 상수 정의
 │   │   ├── app_colors.dart            # 색상 정의
