@@ -24,7 +24,7 @@ code .p {
 }
 
 .language-plaintext.highlighter-rouge > .highlight > pre.highlight > code {
-  color: black !important;
+  color: #24292e !important;
 }
 
 .image-row {
