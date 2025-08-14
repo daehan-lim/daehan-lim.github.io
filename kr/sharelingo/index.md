@@ -221,7 +221,8 @@ body {
 **👥 개발 인원:** 4명  
 **💼 역할:** 팀 리더, CI/CD 파이프라인 구축, 인증 시스템, 프로필 관리, 피드 필터링, Google Maps 연동, 온보딩 플로우 개발  
 **🛠️ 주요 사용 기술:** `Flutter` `Firebase` `Riverpod` `Clean Architecture` `Google OAuth` `Firestore` `Cloud Functions` `GitHub Actions` `VWorld API`  
-**🔗 GitHub:** [zero-to-one-flutter/flutter-share-lingo](https://github.com/zero-to-one-flutter/flutter-share-lingo)
+**🔗 GitHub:** [zero-to-one-flutter/flutter-share-lingo](https://github.com/zero-to-one-flutter/flutter-share-lingo)  
+**🔗 Play Store:** [ShareLingo on Play Store](https://play.google.com/store/apps/details?id=com.zerotoone.sharelingo&hl=kr)
 
 <div class="image-row">
   <!--
@@ -482,45 +483,6 @@ String? calculateDistanceFrom(GeoPoint? otherLocation) {
   final distanceKm = userLocation.distanceFrom(otherLocation);
   return '${distanceKm.toStringAsFixed(1)} km';
 }
-```
-<span style="display: block; height: 1px;"></span>
-
-**3. Firebase Cloud Functions 기반 백엔드 자동화**
-
-- **요구 사항**  
-  사용자 프로필 변경 시 관련된 모든 게시물과 댓글의 정보를 일관되게 유지해야 하며, 클라이언트에서 직접 처리하기에는 네트워크 오류나 앱 종료 시 데이터 불일치 위험 존재
-
-- **의사 결정**  
-  `Firebase Cloud Functions`를 활용한 서버 사이드 자동화 시스템 구축을 결정
-  - **데이터 일관성**: 서버 측에서 트랜잭션 기반 처리로 부분 업데이트 실패 방지
-  - **성능 최적화**: `collectionGroup` 쿼리로 모든 서브컬렉션의 댓글을 한 번에 조회 및 업데이트
-  - **확장성**: 서버리스 아키텍처로 사용량 증가에 따른 자동 스케일링
-  - **안정성**: 클라이언트 앱 상태와 무관하게 데이터 무결성 보장
-
-```javascript
-exports.syncUserUpdates = functions.firestore
-  .document("users/{userId}")
-  .onUpdate(async (change, context) => {
-    const userId = context.params.userId;
-    const newData = change.after.data();
-    
-    // 게시물 업데이트
-    const postsSnapshot = await db.collection("posts").where("uid", "==", userId).get();
-    const postUpdates = postsSnapshot.docs.map(doc => doc.ref.update({
-      userName: newData.name,
-      userProfileImage: newData.profileImage,
-      // 기타 사용자 정보...
-    }));
-
-    // collectionGroup으로 모든 댓글 일괄 업데이트
-    const commentsSnapshot = await db.collectionGroup("comments").where("uid", "==", userId).get();
-    const commentUpdates = commentsSnapshot.docs.map(doc => doc.ref.update({
-      userName: newData.name,
-      userProfileImage: newData.profileImage,
-    }));
-
-    return Promise.all([...postUpdates, ...commentUpdates]);
-  });
 ```
 
 ## 🌱 문제 해결
