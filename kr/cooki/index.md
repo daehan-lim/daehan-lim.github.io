@@ -227,7 +227,7 @@ body {
   <img src="../../images/cooki/6_review.png" alt="Review screen" class="image-item" />
   <img src="../../images/cooki/7_my_recipes.png" alt="My recipes screen" class="image-item" />
 </div>
-
+<span style="display: block; height: 11px;"></span>
 
 ## 📖 프로젝트 배경
 
