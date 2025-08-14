@@ -226,14 +226,15 @@ body {
 
 <div class="image-row">
   <img src="../../images/sharelingo/1_login.png" alt="1 login screen" class="image-item" />
+  <img src="../../images/sharelingo/7_my_profile.png" alt="7 my profile screen" class="image-item" />
+  <img src="../../images/sharelingo/8_my_profile_posts.png" alt="8 my profile posts screen" class="image-item" />
+  <img src="../../images/sharelingo/9_edit_profile.png" alt="9 edit profile screen" class="image-item" />
   <img src="../../images/sharelingo/2_onboarding_date.png" alt="2 onboarding date screen" class="image-item" />
   <img src="../../images/sharelingo/3_onboarding_name.png" alt="3 onboarding name screen" class="image-item" />
   <img src="../../images/sharelingo/4_onboarding_language.png" alt="4 onboarding language screen" class="image-item" />
   <img src="../../images/sharelingo/5_onboarding_language_selection.png" alt="5 onboarding language selection screen" class="image-item" />
+  <img src="../../images/sharelingo/6_self_intro.png" alt="11 self intro screen" class="image-item" />
   <img src="../../images/sharelingo/6_onboarding_location.png" alt="6 onboarding location screen" class="image-item" />
-  <img src="../../images/sharelingo/7_my_profile.png" alt="7 my profile screen" class="image-item" />
-  <img src="../../images/sharelingo/8_my_profile_posts.png" alt="8 my profile posts screen" class="image-item" />
-  <img src="../../images/sharelingo/9_edit_profile.png" alt="9 edit profile screen" class="image-item" />
   <img src="../../images/sharelingo/10_settings.png" alt="10 settings screen" class="image-item" /> 
 </div>
 <span style="display: block; height: 11px;"></span>
