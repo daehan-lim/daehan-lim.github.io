@@ -213,7 +213,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
   <img src="../images/sharelingo/preview.png" alt="ShareLingo - 언어교류 SNS 앱" class="project-preview" />
   <p><strong>ShareLingo<span style="color: #21427D; font-size: 19px;">&thinsp;&thinsp;⎆</span></strong><br/>
     <span style="font-size: 0.9em;">언어교류 SNS 앱</span><br/> 
-    <code>Flutter</code> <code>Firebase</code> <code>Riverpod</code> <code>Clean Architecture</code> <code>Google OAuth</code> <code>Cloud Functions</code> <code>CI/CD</code><br/>
+    <code>Flutter</code> <code>Firebase</code> <code>Riverpod</code> <code>Clean Architecture</code> <code>Google OAuth</code> <code>CI/CD</code><br/>
     <small>2025.05.16 ~ 2025.05.27 (2주)</small>
   </p>
 </div>
