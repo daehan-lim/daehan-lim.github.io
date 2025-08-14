@@ -264,6 +264,54 @@ body {
 [![SharedPreferences](https://img.shields.io/badge/SharedPreferences-4CAF50?style=for-the-badge)](https://pub.dev/packages/shared_preferences)
 [![URL Launcher](https://img.shields.io/badge/URL_Launcher-2196F3?style=for-the-badge)](https://pub.dev/packages/url_launcher)
 
+## 📋 프로젝트 구조
+```
+├── app/                               # 앱 전체 설정 및 공통 상수, 테마 등
+│   ├── constants/                     # 앱 상수 정의
+│   │   ├── app_colors.dart            # 색상 정의
+│   │   ├── app_constants.dart         # 상수 값 정의 (언어 목록, 태그 등)
+│   │   └── app_styles.dart            # 스타일 정의
+│   └── theme.dart                     # 앱 테마 설정
+
+├── core/                              # 앱 전체에서 사용되는 핵심 기능 및 유틸리티
+│   ├── exceptions/                    # 앱 전체에서 사용되는 예외 클래스
+│   ├── extensions/                    # 확장 메서드 정의
+│   ├── providers/                     # 공통 프로바이더
+│   ├── ui_validators/                 # UI 유효성 검사기
+│   └── utils/                         # 유틸리티 함수
+│       ├── dialogue_util.dart         # 다이얼로그 관련 유틸리티
+│       ├── format_time_ago.dart       # 시간 포맷팅 유틸리티
+│       ├── general_utils.dart         # 일반 유틸리티 함수
+│       ├── geolocator_util.dart       # 위치 관련 유틸리티
+│       ├── logger.dart                # 로깅 유틸리티
+│       ├── map_url_util.dart          # 지도 URL 생성 유틸리티
+│       ├── navigation_util.dart       # 네비게이션 관련 유틸리티
+│       ├── snackbar_util.dart         # 스낵바 관련 유틸리티
+│       └── throttler_util.dart        # 스로틀링 유틸리티
+
+├── data/                              # 데이터 관련 클래스 및 데이터 액세스 계층
+│   ├── data_source/                   # 데이터 소스 클래스
+│   ├── dto/                           # 데이터 전송 객체
+│   └── repository/                    # 리포지토리 구현체
+
+├── domain/                            # 비즈니스 로직 및 엔티티 정의
+│   ├── entity/                        # 도메인 엔티티
+│   ├── repository/                    # 리포지토리 인터페이스
+│   └── usecase/                       # 유스케이스
+
+├── presentation/                      # UI 관련 코드
+│   ├── pages/                         # 앱 화면
+│   │   ├── home/                      # 홈 화면 (예시)
+│   │   │   ├── home_page.dart         # 홈 페이지
+│   │   │   ├── home_view_model.dart   # 홈 뷰모델
+│   │   │   └── widgets/               # 홈 화면 관련 위젯들
+│   ├── widgets/                       # 공통 위젯
+│   └── user_global_view_model.dart    # 전역 사용자 뷰모델
+
+├── firebase_service.dart              # Firebase 서비스 설정
+├── main.dart                          # 앱 진입점
+```
+
 ## 🌟 수행 내용 및 성과
 
 ### 팀 리딩 및 CI/CD 파이프라인 구축
@@ -329,6 +377,30 @@ body {
   - CachedNetworkImage를 활용한 이미지 캐싱 시스템으로 반복 로딩 시간 단축 및 데이터 사용량 절약
   - Firebase Crashlytics를 활용한 실시간 오류 추적 시스템 구축
     - 전역 에러 핸들링을 통해 예상치 못한 앱 크래시를 방지하고 사용자 경험 개선
+
+### 클린 아키텍처 및 테스트 주도 개발
+- **완전한 클린 아키텍처 구현**
+  - 데이터, 도메인, 프레젠테이션 레이어 간의 명확한 계층 분리 구현
+  - 의존성 주입 패턴을 통해 모든 클래스가 생성자를 통해 필요한 의존성을 받아 테스트 시 Mock 객체 주입 가능 
+  - Repository 패턴으로 데이터 접근 추상화를 통해 Firebase에서 다른 백엔드로 전환 시에도 비즈니스 로직 변경 없이 대응 가능
+
+- **단위 테스트 시스템 구현**
+  - 핵심 인증 로직에 대한 단위 테스트 작성으로 LoginViewModel, SignInUseCase, AuthRepository, DataSource 계층의 신뢰성 확보
+  - Mocktail을 활용한 외부 의존성 격리로 Firebase나 Google Sign-In 없이도 독립적인 테스트 실행 환경 구축
+  - 성공/실패 케이스와 사용자 로그인 취소 등 다양한 시나리오 테스트 커버리지 확보
+  - Provider 오버라이드를 통한 테스트 환경에서의 Mock 의존성 주입으로 격리된 테스트 환경 구축
+
+### 상태 관리 및 데이터 흐름 아키텍처
+- **Riverpod 기반 전역 상태 관리 시스템**
+  - NotifierProvider와 AutoDisposeNotifier를 활용한 생명주기 관리로 메모리 누수 방지
+  - UserGlobalViewModel을 통한 전역 사용자 상태 관리로 앱 전체에서 일관된 사용자 정보 접근
+  - 기능별 ViewModel 분리(LoginViewModel, OnboardingViewModel, EditProfileViewModel)로 관심사 분리 및 코드 재사용성 향상
+
+- **타입 안전성 및 데이터 변환 시스템**
+  - DTO(Data Transfer Object)와 Entity 계층 완전 분리로 데이터베이스 스키마 변경이 비즈니스 로직에 미치는 영향 최소화
+  - UserDto의 fromMap, toMap, fromEntity, toEntity 메소드를 통한 안전한 데이터 변환 보장
+  - Timestamp와 DateTime 간의 자동 변환으로 Firebase 데이터 타입과 Dart 네이티브 타입 간 매끄러운 연동
+  - null 안전성을 고려한 옵셔널 필드 처리로 런타임 에러 방지
 
 ## 🎞️ 시연 영상
 <div align="center"> 
