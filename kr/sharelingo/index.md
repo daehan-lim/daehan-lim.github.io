@@ -522,9 +522,6 @@ exports.syncUserUpdates = functions.firestore
     return Promise.all([...postUpdates, ...commentUpdates]);
   });
 ```
-<span style="display: block; height: 1px;"></span>
-
-
 
 ## 🌱 문제 해결
 
@@ -560,43 +557,57 @@ exports.syncUserUpdates = functions.firestore
 **2. 온보딩 사용자 경험 최적화**
 
 - **문제 상황**  
-  초기 온보딩 과정에서 사용자가 중간에 이탈하는 비율이 높고, 특히 위치 권한 요청 단계에서 거부 시 앱 사용이 제한되는 것으로 인식하여 가입을 포기하는 사례 빈발
+  위치 권한 거부 시 앱 사용이 제한되거나 오류가 발생하여 사용자가 앱을 이탈하는 문제 발생. 특히 일시적 거부와 영구적 거부를 구분하지 않아 적절한 안내 메시지 제공 불가
 
 - **해결 과정**
-  - **사용자 피드백 분석**: 위치 권한이 필수가 아님에도 불구하고 필수로 인식되는 UX 문제 확인
-  - **권한 거부 시나리오 검토**: 위치 없이도 기본 기능 사용 가능함을 명확히 안내 필요
-  - **온보딩 플로우 재설계**: 각 단계별 스킵 옵션과 설명 개선
+  - Geolocator 패키지의 권한 상태별 시나리오 분석
+  - 위치 기능이 필수가 아닌 선택적 기능임을 확인하여 권한 거부 시에도 앱 사용 가능하도록 설계 방향 결정
+  - 사용자에게 명확한 상황 설명과 대안 제시 필요성 파악
 
 - **해결 방법**
-  - "위치 없이 진행하기" 버튼 추가로 위치 권한이 선택사항임을 명확히 표시
-  - 위치 권한 거부 시에도 온보딩 완료 후 회원가입이 정상적으로 진행되도록 플로우 수정
-  - 각 온보딩 단계별 설명 텍스트 개선으로 사용자 이해도 향상
-  - `PopScope`를 활용한 뒤로가기 제어로 실수로 인한 데이터 손실 방지
+  - 위치 권한 상태를 4가지로 세분화하여 각각에 맞는 사용자 안내 메시지 제공
+    - `success`: 정상적인 위치 정보 획득
+    - `deniedTemporarily`: 일시적 거부 - 권한 재요청 안내
+    - `deniedForever`: 영구적 거부 - 설정 앱 이동 안내
+    - `error`: 기술적 오류 - 재시도 또는 위치 없이 진행 안내
+  - "위치 없이 진행하기" 옵션 추가로 앱 사용 연속성 보장
 
 ```dart
-Future<void> _onSkipPressed(BuildContext context) async {
-  // 위치 정보 없이도 회원가입 완료 가능
-  await _saveUserAndNavigate(context);
-}
+enum LocationStatus { success, deniedTemporarily, deniedForever, error }
 
-Widget _buildBottomLayout(LocationState state) {
-  return Column(
-    children: [
-      ElevatedButton(
-        onPressed: () => _onEnableLocationPressed(context),
-        child: Text('위치 사용하기'),
+Future<(LocationStatus, Position?)> getPosition() async {
+  try {
+    final permission = await Geolocator.checkPermission();
+    
+    if (permission == LocationPermission.denied || 
+        permission == LocationPermission.deniedForever) {
+      final requested = await Geolocator.requestPermission();
+      
+      if (requested == LocationPermission.denied) {
+        return (LocationStatus.deniedTemporarily, null);
+      }
+      
+      if (requested == LocationPermission.deniedForever) {
+        return (LocationStatus.deniedForever, null);
+      }
+    }
+    
+    final position = await Geolocator.getCurrentPosition(
+      locationSettings: const LocationSettings(
+        accuracy: LocationAccuracy.high,
+        distanceFilter: 100,
       ),
-      TextButton(
-        onPressed: () => _onSkipPressed(context),
-        child: Text('위치 없이 진행하기'), // 스킵 옵션 명확히 표시
-      ),
-    ],
-  );
+    );
+    
+    return (LocationStatus.success, position);
+  } catch (e) {
+    return (LocationStatus.error, null);
+  }
 }
 ```
 
 - **최종 결과**  
-  온보딩 완료율을 **35% 향상**시키고, 위치 기반 기능 사용률도 자발적 권한 허용으로 인해 오히려 증가하는 결과 달성
+  온보딩 완료율을 **35% 향상**시키고, 권한 상태별 맞춤 안내로 사용자 경험 개선
 
 **3. 프로필 수정 시 데이터 동기화 최적화**
 
