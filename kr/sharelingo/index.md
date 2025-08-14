@@ -412,14 +412,17 @@ body {
 **1. 클린 아키텍처와 의존성 주입 패턴 도입**
 
 - **요구 사항**  
-  4명 팀 프로젝트에서 각 팀원이 독립적으로 개발할 수 있도록 코드 결합도를 낮추고, 테스트 가능한 구조로 설계하며, 추후 백엔드 변경(Firebase → 다른 서비스) 시에도 비즈니스 로직 변경 없이 대응 가능해야 함
+  팀 개발 시 복잡한 기능을 체계적으로 관리하고 코드 충돌을 최소화하며, 향후 확장과 유지보수를 고려한 확장 가능한 아키텍처 필요
 
 - **의사 결정**  
   `Clean Architecture` 패턴과 `Riverpod` 기반 의존성 주입 시스템 구축을 결정
-  - **계층 분리**: Data Source, Repository, UseCase, Entity, Presentation 레이어 간 명확한 책임 분리
+  - **계층 분리**: Presentation, Domain, Data 레이어 간 명확한 책임 분리
+    - **Presentation**: UI 위젯, ViewModel, 사용자 상호작용 처리
+    - **Domain**: 비즈니스 로직(UseCase), 엔티티, Repository 인터페이스 정의
+    - **Data**: 외부 데이터 소스(Firebase, API), Repository 구현체, DTO
   - **의존성 역전**: Repository 인터페이스를 Domain 레이어에 정의하고 Data 레이어에서 구현하여 상위 계층이 하위 계층에 의존하지 않도록 설계
   - **테스트 가능성**: 모든 클래스가 생성자 주입 방식으로 의존성을 받아 Mock 객체 주입을 통한 단위 테스트 환경 구축
-  - **팀 협업 효율성**: 각 계층별로 팀원 작업 분담이 가능하며, 인터페이스 기반으로 병렬 개발 지원
+  - **팀 협업 표준화**: 전체 프로젝트에서 동일한 패턴을 따르도록 하여 코드 일관성 확보 및 코드 리뷰 효율성 향상
 
 ```dart
 // Repository 인터페이스 (Domain Layer)
@@ -450,41 +453,39 @@ final authRepositoryProvider = Provider<AuthRepository>(
 ```
 <span style="display: block; height: 1px;"></span>
 
-**2. VWorld API 기반 위치 서비스 선택**
+**2. 사용자 간 거리 계산을 위한 GeoPoint Extension 설계**
 
 - **요구 사항**  
-  한국 사용자 대상 서비스에서 GPS 좌표를 읍면동 단위의 정확한 행정구역으로 변환하여 지역 기반 사용자 매칭이 필요하며, Google Maps API 대비 비용 효율적인 솔루션 필요
+  근처 탭 기능에서 사용자들이 실제로 얼마나 가까이 있는지 직관적으로 보여주고, 프로필에서 다른 사용자와의 거리를 표시하여 지역 기반 언어 교환의 실용성을 높여야 함
 
 - **의사 결정**  
-  국토교통부 `VWorld API` 연동을 통한 위치 서비스 구축을 결정
-  - **정확성**: 한국 행정구역 데이터의 공식 소스로 읍면동 단위 정확한 변환 지원
-  - **비용 효율성**: 무료 API 제공으로 초기 스타트업 단계에서 비용 부담 없음
-  - **데이터 신뢰성**: 정부 공식 데이터로 행정구역 변경사항이 실시간 반영
-  - **프라이버시**: 정확한 주소가 아닌 읍면동 수준으로 개인정보 보호와 서비스 요구사항 균형
+  `GeoPoint Extension` 방식으로 거리 계산 로직을 구현하기로 결정
+  - **확장성**: GeoPoint 객체에 직접 메서드를 추가하여 어디서든 `geoPoint.distanceFrom(otherPoint)` 형태로 간단히 사용 가능
+  - **성능**: 클라이언트 측 계산으로 서버 요청 없이 즉시 거리 정보 제공
+  - **정확성**: Geolocator 패키지의 `distanceBetween` 메서드 활용으로 지구 곡률을 고려한 정확한 거리 계산
+  - **사용성**: "3.2 km" 형태의 포맷팅된 문자열 반환으로 UI에서 바로 표시 가능
 
 ```dart
-Future<String?> getDistrictByCoordinates(double latitude, double longitude) async {
-  try {
-    final response = await _dio.get('/data', queryParameters: {
-      'request': 'GetFeature',
-      'key': vworldApiKey,
-      'data': 'LT_C_ADEMD_INFO',
-      'geomFilter': 'POINT($longitude $latitude)',
-      'geometry': false,
-      'size': 100,
-    });
-
-    return VworldDistrictDto.fromJson(response.data)
-        .response?.result?.featureCollection?.features
-        .first.properties?.fullNm;
-  } on DioException catch (e) {
-    throw NetworkException(e.toString());
+extension GeoPointExtensions on GeoPoint {
+  String distanceFrom(GeoPoint other) {
+    final distanceInMeters = Geolocator.distanceBetween(
+      latitude, longitude, other.latitude, other.longitude,
+    );
+    final distanceInKm = distanceInMeters / 1000;
+    return '${distanceInKm.toStringAsFixed(1)} km';
   }
+}
+
+// UserGlobalViewModel에서 활용
+String? calculateDistanceFrom(GeoPoint? otherLocation) {
+  final userLocation = state?.location;
+  if (userLocation == null || otherLocation == null) return null;
+  return userLocation.distanceFrom(otherLocation);
 }
 ```
 <span style="display: block; height: 1px;"></span>
 
-**3. Firebase Cloud Functions 기반 백엔드 자동화**
+**2. Firebase Cloud Functions 기반 백엔드 자동화**
 
 - **요구 사항**  
   사용자 프로필 변경 시 관련된 모든 게시물과 댓글의 정보를 일관되게 유지해야 하며, 클라이언트에서 직접 처리하기에는 네트워크 오류나 앱 종료 시 데이터 불일치 위험 존재
@@ -523,34 +524,7 @@ exports.syncUserUpdates = functions.firestore
 ```
 <span style="display: block; height: 1px;"></span>
 
-**4. GitHub Actions 기반 CI/CD 파이프라인**
 
-- **요구 사항**  
-  4명 팀 프로젝트에서 코드 품질 일관성 유지와 QA 테스트를 위한 자동 빌드가 필요하며, Firebase 보안 설정 파일을 안전하게 관리하면서도 CI 환경에서 빌드 가능해야 함
-
-- **의사 결정**  
-  브랜치별 역할 분리와 Base64 인코딩 기반 보안 파일 관리 시스템을 결정
-  - **브랜치 전략**: `master` 브랜치는 테스트/분석 전용, `test-apk` 브랜치는 APK 빌드 전용으로 분리
-  - **보안 관리**: Firebase 설정 파일들을 Base64 인코딩하여 GitHub Secrets에 저장 후 워크플로우에서 디코딩
-  - **품질 관리**: 모든 PR에 대해 `flutter analyze`와 단위 테스트 자동 실행
-  - **배포 자동화**: APK 빌드 후 GitHub Artifacts로 자동 업로드하여 QA 팀 접근성 향상
-
-```yaml
-- name: Decode firebase_options.dart
-  run: |
-    mkdir -p lib
-    echo "${{ secrets.FIREBASE_DART_OPTIONS }}" | base64 --decode > lib/firebase_options.dart
-
-- name: Decode google-services.json
-  run: |
-    echo "${{ secrets.FIREBASE_GOOGLE_SERVICES_JSON }}" | base64 --decode > android/app/google-services.json
-
-- name: Analyze project
-  run: flutter analyze
-
-- name: Run tests
-  run: flutter test
-```
 
 ## 🌱 문제 해결
 
@@ -585,46 +559,7 @@ echo "${{ secrets.FIREBASE_GOOGLE_PLIST }}" | base64 --decode > ios/Runner/Googl
 - **최종 결과**  
   CI/CD 파이프라인 빌드 성공률을 **95%로 향상**시키고, 보안을 유지하면서도 안정적인 크로스 플랫폼 빌드 환경 구축
 
-**2. 피드 필터링 성능 최적화**
-
-- **문제 상황**  
-  "추천", "동급생", "근처" 탭에서 복잡한 Firestore 쿼리로 인해 초기 로딩 시간이 길어지고, 특히 사용자 수가 증가할수록 응답 시간이 기하급수적으로 증가하는 성능 문제 발생
-
-- **해결 과정**
-  - **쿼리 분석**: 여러 필드에 대한 복합 조건(`where` 절 3개 이상)으로 인한 성능 저하 확인
-  - **인덱스 최적화**: Firestore 콘솔에서 복합 인덱스 생성으로 쿼리 성능 개선
-  - **클라이언트 측 필터링**: 자신의 게시물 제외 로직을 서버 쿼리가 아닌 클라이언트에서 처리하여 쿼리 복잡도 감소
-
-- **해결 방법**
-  - Firestore 복합 인덱스 구성: `(userNativeLanguage, userTargetLanguage, createdAt)`, `(userDistrict, createdAt)`
-  - 페이지네이션 최적화: `startAfter`를 활용한 커서 기반 페이징으로 대용량 데이터 효율적 처리
-  - 자신의 게시물 제외 로직을 클라이언트 측에서 `where((post) => post.uid != user.id)` 필터링으로 변경
-
-```dart
-Query<Map<String, dynamic>> _applyFilter(Query<Map<String, dynamic>> base, String? filter, AppUser? user) {
-  if (filter == 'recommended' && user != null) {
-    return base
-        .where('userNativeLanguage', isEqualTo: user.targetLanguage)
-        .where('userTargetLanguage', isEqualTo: user.nativeLanguage);
-  } else if (filter == 'nearby' && user?.district != null) {
-    return base.where('userDistrict', isEqualTo: user.district);
-  }
-  return base;
-}
-
-// 클라이언트 측 자신의 게시물 제외
-List<PostDto> _excludeSelf(List<PostDto> posts, String? filter, AppUser? user) {
-  if (filter != null && user != null) {
-    return posts.where((post) => post.uid != user.id).toList();
-  }
-  return posts;
-}
-```
-
-- **최종 결과**  
-  피드 로딩 응답 시간을 **50% 단축**하고, 사용자 증가에도 안정적인 성능을 유지하는 확장 가능한 필터링 시스템 구축
-
-**3. 온보딩 사용자 경험 최적화**
+**2. 온보딩 사용자 경험 최적화**
 
 - **문제 상황**  
   초기 온보딩 과정에서 사용자가 중간에 이탈하는 비율이 높고, 특히 위치 권한 요청 단계에서 거부 시 앱 사용이 제한되는 것으로 인식하여 가입을 포기하는 사례 빈발
@@ -665,7 +600,7 @@ Widget _buildBottomLayout(LocationState state) {
 - **최종 결과**  
   온보딩 완료율을 **35% 향상**시키고, 위치 기반 기능 사용률도 자발적 권한 허용으로 인해 오히려 증가하는 결과 달성
 
-**4. 프로필 수정 시 데이터 동기화 최적화**
+**3. 프로필 수정 시 데이터 동기화 최적화**
 
 - **문제 상황**  
   사용자가 프로필 정보를 수정할 때 해당 사용자의 모든 게시물과 댓글에 반영되어야 하는데, 클라이언트에서 직접 처리 시 네트워크 오류나 앱 종료로 인한 부분 업데이트 실패로 데이터 불일치 발생
