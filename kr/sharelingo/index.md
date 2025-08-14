@@ -455,24 +455,23 @@ final authRepositoryProvider = Provider<AuthRepository>(
 
 **2. 사용자 간 거리 계산을 위한 GeoPoint Extension 설계**
 
-- **요구 사항**  
-  근처 탭 기능에서 사용자들이 실제로 얼마나 가까이 있는지 직관적으로 보여주고, 프로필에서 다른 사용자와의 거리를 표시하여 지역 기반 언어 교환의 실용성을 높여야 함
+- **요구 사항**
+  사용자들이 실제로 얼마나 가까이 있는지 직관적으로 표시 필요
 
-- **의사 결정**  
+- **의사 결정**
   `GeoPoint Extension` 방식으로 거리 계산 로직을 구현하기로 결정
-  - **확장성**: GeoPoint 객체에 직접 메서드를 추가하여 어디서든 `geoPoint.distanceFrom(otherPoint)` 형태로 간단히 사용 가능
+  - **확장성**: `GeoPoint` 객체에 직접 메서드를 추가하여 어디서든 `geoPoint.distanceFrom(otherPoint)` 형태로 간단히 사용 가능
   - **성능**: 클라이언트 측 계산으로 서버 요청 없이 즉시 거리 정보 제공
   - **정확성**: Geolocator 패키지의 `distanceBetween` 메서드 활용으로 지구 곡률을 고려한 정확한 거리 계산
-  - **사용성**: "3.2 km" 형태의 포맷팅된 문자열 반환으로 UI에서 바로 표시 가능
+  - **표현 분리**: 거리의 포맷팅(예: `"3.2 km"`)은 ViewModel/UI 계층에서 처리하여 로직과 표현을 분리
 
 ```dart
-extension GeoPointExtensions on GeoPoint {
-  String distanceFrom(GeoPoint other) {
+extension GeoPointExtensions on GeoPoint {  
+  double distanceFrom(GeoPoint other) {
     final distanceInMeters = Geolocator.distanceBetween(
       latitude, longitude, other.latitude, other.longitude,
     );
-    final distanceInKm = distanceInMeters / 1000;
-    return '${distanceInKm.toStringAsFixed(1)} km';
+    return distanceInMeters / 1000;
   }
 }
 
@@ -480,12 +479,13 @@ extension GeoPointExtensions on GeoPoint {
 String? calculateDistanceFrom(GeoPoint? otherLocation) {
   final userLocation = state?.location;
   if (userLocation == null || otherLocation == null) return null;
-  return userLocation.distanceFrom(otherLocation);
+  final distanceKm = userLocation.distanceFrom(otherLocation);
+  return '${distanceKm.toStringAsFixed(1)} km';
 }
 ```
 <span style="display: block; height: 1px;"></span>
 
-**2. Firebase Cloud Functions 기반 백엔드 자동화**
+**3. Firebase Cloud Functions 기반 백엔드 자동화**
 
 - **요구 사항**  
   사용자 프로필 변경 시 관련된 모든 게시물과 댓글의 정보를 일관되게 유지해야 하며, 클라이언트에서 직접 처리하기에는 네트워크 오류나 앱 종료 시 데이터 불일치 위험 존재
@@ -531,33 +531,31 @@ exports.syncUserUpdates = functions.firestore
 **1. GitHub Actions에서 Firebase 설정 파일 부재 문제**
 
 - **문제 상황**  
-  GitHub Actions 워크플로우에서 `firebase_options.dart` 파일이 필요하지만 보안상 Git에 커밋할 수 없어 CI 빌드 시 "Target of URI doesn't exist: 'firebase_options.dart'" 오류가 지속적으로 발생
+  GitHub Actions 워크플로우에서 `firebase_options.dart` 파일이 필요하지만 보안상 Git에 커밋할 수 없어 CI 빌드 시 `Target of URI doesn't exist: firebase_options.dart` 오류 발생
 
-- **해결 과정**
-  - **초기 시도**: Firebase 설정 파일 내용을 GitHub Secret에 직접 붙여넣기 → 줄바꿈과 특수문자로 인한 파일 깨짐 현상 발생
-  - **문제 분석**: GitHub Secrets는 멀티라인과 특수문자 처리가 불안정하며, iOS/Android 플랫폼별로 다른 형식의 설정 파일이 필요함을 확인
-  - **해결 방안 도출**: Base64 인코딩을 통해 바이너리 안전 문자열로 변환하면 한 줄로 저장 가능하고 디코딩 시 원본 복원됨을 검증
+- **초기 시도**
+  - 설정 파일 내용을 GitHub Secret에 그대로 붙여넣음
+  - 줄바꿈·특수문자 때문에 파일이 깨짐. 입력 불가능함
+
+- **문제 분석**  
+  GitHub Secrets는 멀티라인과 특수문자 처리가 불안정하며, iOS/Android 플랫폼별로 다른 형식의 설정 파일이 필요함을 확인
+
+- **해결 방안 도출**:  
+  Base64 인코딩을 통해 바이너리 안전 문자열로 변환하면 한 줄로 저장 가능하고 디코딩 시 원본 복원됨을 검증
 
 - **해결 방법**
   - 3개 Firebase 설정 파일을 각각 Base64로 인코딩하여 GitHub Secrets에 저장
   - 워크플로우에서 플랫폼별 디렉토리 자동 생성 후 디코딩하여 파일로 복원
-  - 크로스 플랫폼 빌드를 위한 iOS Runner 디렉토리 생성 로직 추가
 
-```bash
-# 로컬에서 인코딩
-base64 -i lib/firebase_options.dart | pbcopy
-base64 -i android/app/google-services.json | pbcopy
-base64 -i ios/Runner/GoogleService-Info.plist | pbcopy
-
-# 워크플로우에서 디코딩
-mkdir -p lib ios/Runner
-echo "${{ secrets.FIREBASE_DART_OPTIONS }}" | base64 --decode > lib/firebase_options.dart
-echo "${{ secrets.FIREBASE_GOOGLE_SERVICES_JSON }}" | base64 --decode > android/app/google-services.json
-echo "${{ secrets.FIREBASE_GOOGLE_PLIST }}" | base64 --decode > ios/Runner/GoogleService-Info.plist
+```yml
+- name: Decode firebase_options.dart  
+  run: |  
+    mkdir -p lib  
+    echo "${{ secrets.FIREBASE_DART_OPTIONS }}" | base64 --decode > lib/firebase_options.dart
 ```
 
 - **최종 결과**  
-  CI/CD 파이프라인 빌드 성공률을 **95%로 향상**시키고, 보안을 유지하면서도 안정적인 크로스 플랫폼 빌드 환경 구축
+  Firebase 설정 파일 부재로 인한 빌드 실패 문제를 완전히 해결하여 안정적인 자동화 환경 구축
 
 **2. 온보딩 사용자 경험 최적화**
 
