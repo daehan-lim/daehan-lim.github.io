@@ -588,8 +588,8 @@ Future<(LocationStatus, Position?)> getPosition() async {
 
 ## 🎞️ 시연 영상
 <div align="center"> 
-<a href="https://www.youtube.com/watch?v=4SEpMDPFkHw">
-  <img src="../../images/cubadebate/video_preview.png" alt="Watch the Video" width="230" />
+<a href="https://www.youtube.com/watch?v=z3Bbhermz1M">
+  <img src="../../images/sharelingo/video_preview.png" alt="Watch the Video" width="230" />
 </a>
 </div>
 <br>
