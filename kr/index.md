@@ -211,7 +211,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 <a href="sharelingo/" style="text-decoration: none; color: inherit;">
 <div>
   <img src="../images/sharelingo/preview.png" alt="ShareLingo - 언어교류 SNS 앱" class="project-preview" />
-  <p><strong>ShareLingo<span style="color: #21427D; font-size: 19px;">&thinsp;&thinsp;⎆</span></strong><br/>
+  <p><strong>ShareLingo<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">언어교류 SNS 앱</span><br/> 
     <code>Flutter</code> <code>Firebase</code> <code>Riverpod</code> <code>Clean Architecture</code> <code>Google OAuth</code> <code>CI/CD</code><br/>
     <small>2025.05.16 ~ 2025.05.27 (2주)</small>
@@ -224,7 +224,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 <a href="cooki/" style="text-decoration: none; color: inherit;">
 <div>
   <img src="../images/cooki/preview.png" alt="Cooki - AI 레시피 커뮤니티 앱" class="project-preview" />
-  <p><strong>Cooki<span style="color: #21427D; font-size: 19px;">&thinsp;&thinsp;⎆</span></strong><br/>
+  <p><strong>Cooki<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">AI 레시피 커뮤니티 앱</span><br/> 
     <code>Flutter</code> <code>Riverpod</code> <code>MVVM</code> <code>Firestore</code> <code>Gemini API</code> <code>Dio</code> <code>Cloud Functions</code><br/>
     <small>2025.06.01 ~ 2025.07.04 (1개월)</small>
@@ -236,7 +236,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 <a href="cubadebate/" style="text-decoration: none; color: inherit;">
 <div>
   <img src="../images/cubadebate/preview.png" alt="Cubadebate 뉴스 앱" class="project-preview" />
-  <p><strong>Cubadebate<span style="color: #21427D; font-size: 19px;">&thinsp;&thinsp;⎆</span></strong><br/>
+  <p><strong>Cubadebate<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">맞춤형 뉴스 플랫폼</span><br/>
     <code>Android</code> <code>Kotlin</code> <code>Coroutines</code> <code>MVVM</code> <code>Room</code> <code>Retrofit</code> <code>Glide</code> <code>Lottie</code> <code>ViewBinding</code><br/>
     <small>2021.03 ~ 2021.07</small>
@@ -251,7 +251,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
   <p>
     <strong>
       가스 소비 관리 앱
-      <span style="color: #21427D; font-size: 19px;">&thinsp;&thinsp;⎆</span>
+      <span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span>
     </strong><br/>
     <span style="font-size: 0.9em;">공공 유틸리티 추적 시스템</span><br/>
     <code>Alamofire</code> <code>CoreML</code> <code>Combine</code> <code>Firebase</code> <code>SnapKit</code><br/>
@@ -267,7 +267,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
   <p>
     <strong>
       🧮 TipCalculator
-      <span style="color: #21427D; font-size: 19px;">&thinsp;&thinsp;⎆</span>
+      <span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span>
     </strong><br/>
     <span style="font-size: 0.9em;">Combine과 MVVM 패턴을 사용한 팁 계산기</span><br/>
     <code>MVVM</code> <code>Combine</code> <code>CombineCocoa</code> <code>SnapKit</code><br/>
@@ -284,7 +284,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
     <p>
       <strong>
         📰 MobydickNews
-        <span style="color: #21427D; font-size: 19px;">&thinsp;&thinsp;⎆</span>
+        <span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span>
       </strong><br/>
       <span style="font-size: 0.9em;">News API를 사용하는 뉴스 앱</span><br/>
       <code>RxAlamofire</code> <code>RxSwift</code> <code>REST API</code> <code>SnapKit</code><br/>
@@ -301,7 +301,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
     <p>
       <strong>
         📅 플랜비 (PlanBee)
-        <span style="color: #21427D; font-size: 19px;">&thinsp;&thinsp;⎆</span>
+        <span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span>
       </strong><br/>
       <span style="font-size: 0.9em;">할일관리 Todo 앱</span><br/>
       <code>CoreData</code> <code>Combine</code> <code>FSCalendar</code> <code>SwiftLint</code> <code>Firebase</code><br/>
