@@ -207,6 +207,18 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
 
+<!--FilmMind-->
+<a href="filmmind/" style="text-decoration: none; color: inherit;">
+<div>
+  <img src="../images/filmmind/preview.png" alt="FilmMind - 영화 정보 앱" class="project-preview" />
+  <p><strong>FilmMind<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
+    <span style="font-size: 0.9em;">영화 정보 앱</span><br/> 
+    <code>Flutter</code><br/>
+    <small>2025.05.13 ~ 2025.05.15 (3일)</small>
+  </p>
+</div>
+</a>
+
 <!--ShareLingo-->
 <a href="sharelingo/" style="text-decoration: none; color: inherit;">
 <div>
