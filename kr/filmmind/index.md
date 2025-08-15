@@ -226,12 +226,12 @@ body {
 
 <div class="image-row">
   <img src="../../images/filmmind/1_home.png" alt="1 home screen" class="image-item" />
-  <img src="../../images/filmmind/2_home_loading.png" alt="2 home loading screen" class="image-item" />
+  <img src="../../images/filmmind/7_home_scroll.png" alt="7 home scroll screen" class="image-item" />
   <img src="../../images/filmmind/3_detail.png" alt="3 detail screen" class="image-item" />
   <img src="../../images/filmmind/4_detail_loading.png" alt="4 detail loading screen" class="image-item" />
   <img src="../../images/filmmind/5_detail_scroll1.png" alt="5 detail scroll 1 screen" class="image-item" />
   <img src="../../images/filmmind/6_detail_scroll2.png" alt="6 detail scroll 2 screen" class="image-item" />
-  <img src="../../images/filmmind/7_home_scroll.png" alt="7 home scroll screen" class="image-item" />
+  <img src="../../images/filmmind/2_home_loading.png" alt="2 home loading screen" class="image-item" />
   <img src="../../images/filmmind/8_naver.png" alt="8 Naver screen" class="image-item" />
   <img src="../../images/filmmind/9_google.png" alt="9 Google screen" class="image-item" />
 
