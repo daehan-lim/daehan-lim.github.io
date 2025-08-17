@@ -215,14 +215,13 @@ body {
 # FilmMind - 영화 정보 앱
 
 ## 📝 개요
-**📌 앱 소개:** 언어 학습자들이 서로 연결되어 게시물을 공유하고 상호작용하는 SNS 앱  
-**🕒 기간:** 2025.05.16 ~ 2025.05.27 (2주)  
-**📱 플랫폼:** Flutter 크로스 플랫폼 앱 (Android, iOS)  
-**👥 개발 인원:** 4명  
-**💼 역할:** 팀 리더, CI/CD 파이프라인 구축, 인증 시스템, 프로필 관리, 피드 필터링, Google Maps 연동, 온보딩 플로우 개발  
-**🛠️ 주요 사용 기술:** `Flutter` `Firebase` `Riverpod` `Clean Architecture` `Google OAuth` `Firestore` `Cloud Functions` `GitHub Actions` `VWorld API`  
-**🔗 GitHub:** [zero-to-one-flutter/flutter-share-lingo](https://github.com/zero-to-one-flutter/flutter-share-lingo)  
-**🔗 Play Store:** [ShareLingo on Play Store](https://play.google.com/store/apps/details?id=com.zerotoone.sharelingo&hl=kr)
+**📌 앱 소개:** TMDB API를 활용한 영화 정보 조회 및 추천 앱  
+**🕒 기간:** 2025.05.13 ~ 2025.05.15 (3일)  
+**📱 플랫폼:** Flutter 크로스 플랫폼 앱 (iOS, Android)  
+**👥 개발 인원:** 1명 (개인 프로젝트)  
+**💼 역할:** 앱 전체 설계 및 개발, API 연동, 성능 최적화  
+**🛠️ 주요 사용 기술:** `Flutter` `Dart` `TMDB API` `Riverpod` `Clean Architecture` `Dio` `GitHub Actions` `Hero Animation` `Shimmer`    
+**🔗 GitHub:** [daehan-lim/flutter-film-mind-app](https://github.com/daehan-lim/flutter-film-mind-app)
 
 <div class="image-row">
   <img src="../../images/filmmind/1_home.png" alt="1 home screen" class="image-item" />
@@ -587,8 +586,8 @@ Future<(LocationStatus, Position?)> getPosition() async {
 
 ## 🎞️ 시연 영상
 <div align="center"> 
-<a href="https://www.youtube.com/watch?v=z3Bbhermz1M">
-  <img src="../../images/sharelingo/video_preview.png" alt="Watch the Video" width="230" />
+<a href="https://www.youtube.com/watch?v=OKqoMnWGQ5o">
+  <img src="../../images/filmmind/video_preview.png" alt="Watch the Video" width="230" />
 </a>
 </div>
 <br>
