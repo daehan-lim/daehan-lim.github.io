@@ -237,6 +237,22 @@ body {
 </div>
 <span style="display: block; height: 11px;"></span>
 
+## 🛠️ Tech Stack
+
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
+[![Riverpod](https://img.shields.io/badge/Riverpod-02569B?style=for-the-badge)](https://riverpod.dev/)
+[![Clean Architecture](https://img.shields.io/badge/Clean_Architecture-4CAF50?style=for-the-badge)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+[![MVVM](https://img.shields.io/badge/MVVM-ed9242?style=for-the-badge)](https://developer.android.com/topic/architecture)
+[![Dio](https://img.shields.io/badge/Dio-02569B?style=for-the-badge)](https://pub.dev/packages/dio)
+[![TMDB API](https://img.shields.io/badge/TMDB_API-01B4E4?style=for-the-badge&logo=themoviedatabase&logoColor=white)](https://www.themoviedb.org/documentation/api)
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions)
+[![Cached Network Image](https://img.shields.io/badge/Cached_Network_Image-4CAF50?style=for-the-badge)](https://pub.dev/packages/cached_network_image)
+[![Shimmer](https://img.shields.io/badge/Shimmer-FF9800?style=for-the-badge)](https://pub.dev/packages/shimmer)
+[![URL Launcher](https://img.shields.io/badge/URL_Launcher-2196F3?style=for-the-badge)](https://pub.dev/packages/url_launcher)
+[![Flutter Dotenv](https://img.shields.io/badge/Flutter_Dotenv-4CAF50?style=for-the-badge)](https://pub.dev/packages/flutter_dotenv)
+[![Flutter SVG](https://img.shields.io/badge/Flutter_SVG-FF6B6B?style=for-the-badge)](https://pub.dev/packages/flutter_svg)
+
 ## 🌟 수행 내용 및 성과
 
 ### Clean Architecture 기반 확장 가능한 앱 구조 설계
