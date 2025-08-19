@@ -18,8 +18,19 @@
 
 code .nx,
 code .n,
+code .py,
 code .p {
   color: #24292e !important;
+}
+
+.language-plaintext.highlighter-rouge > .highlight > pre.highlight > code {
+  color: #24292e !important;
+}
+
+code.language-plaintext.highlighter-rouge {
+  color: #EB5757 !important;                 /* strong red text */
+  border-radius: 4px;                        /* rounded corners */
+  padding: 0.2em 0.4em;                      /* small breathing space */
 }
 
 .image-row {

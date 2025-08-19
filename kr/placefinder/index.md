@@ -223,7 +223,7 @@ body {
 **👥 개발 인원:** 1명 (개인 프로젝트)    
 **💼 역할:** 앱 전체 설계 및 개발, API 연동, 위치 기반 서비스 구현  
 **🛠️ 주요 사용 기술:** `Flutter` `Dart` `Naver Local API` `VWorld API` `Riverpod` `Geolocator` `InAppWebView` `URL Launcher` `Dio`    
-**🔗 GitHub:** [어디든GO 프로젝트](https://github.com/username/eoideungo)
+**🔗 GitHub:** [daehan-lim/flutter-place-finder](https://github.com/daehan-lim/flutter-place-finder)
 
 ## 📖 프로젝트 설명
 

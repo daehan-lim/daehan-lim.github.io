@@ -28,7 +28,9 @@ code .p {
 }
 
 code.language-plaintext.highlighter-rouge {
-  color: #a5535d !important;
+  color: #EB5757 !important;                 /* strong red text */
+  border-radius: 4px;                        /* rounded corners */
+  padding: 0.2em 0.4em;                      /* small breathing space */
 }
 
 .image-row {
