@@ -225,6 +225,20 @@ body {
 **🛠️ 주요 사용 기술:** `Flutter` `Dart` `Naver Local API` `VWorld API` `Riverpod` `Geolocator` `InAppWebView` `URL Launcher` `Dio`    
 **🔗 GitHub:** [daehan-lim/flutter-place-finder](https://github.com/daehan-lim/flutter-place-finder)
 
+<div class="image-row">
+  <img src="../../images/placefinder/1_home.png" alt="Home screen" class="image-item" />
+  <img src="../../images/placefinder/2_web_view.png" alt="Web view screen" class="image-item" />
+  <img src="../../images/placefinder/3_naver.png" alt="Naver screen" class="image-item" />
+  <img src="../../images/placefinder/4_no_results.png" alt="No results screen" class="image-item" />
+  <img src="../../images/placefinder/5_offline.png" alt="Offline screen" class="image-item" />
+  <img src="../../images/placefinder/6_apple_maps.png" alt="Apple Maps screen" class="image-item" />
+  <img src="../../images/placefinder/7_map_selection.png" alt="Map selection screen" class="image-item" />
+  <img src="../../images/placefinder/8_naver_map.png" alt="Naver Map screen" class="image-item" />
+  <img src="../../images/placefinder/9_google_map.png" alt="Google Map screen" class="image-item" />
+  <img src="../../images/placefinder/10_kakao_map.png" alt="Kakao Map screen" class="image-item" />
+</div>
+<span style="display: block; height: 11px;"></span>
+
 ## 📖 프로젝트 설명
 
 어디든GO는 네이버 지역 검색 API와 VWorld API를 활용하여 사용자가 장소명이나 주소로 검색할 수 있는 위치 기반 검색 애플리케이션입니다. GPS를 통한 현재 위치 기반 검색과 다양한 지도 앱 연동을 지원하며, 사용자가 직관적으로 주변 장소를 탐색하고 상세 정보에 접근할 수 있는 모바일 환경을 제공합니다.
