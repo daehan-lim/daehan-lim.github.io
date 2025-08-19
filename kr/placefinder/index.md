@@ -226,16 +226,16 @@ body {
 **🔗 GitHub:** [daehan-lim/flutter-place-finder](https://github.com/daehan-lim/flutter-place-finder)
 
 <div class="image-row">
-  <img src="../../images/placefinder/1_home.png" alt="Home screen" class="image-item" />
-  <img src="../../images/placefinder/2_web_view.png" alt="Web view screen" class="image-item" />
-  <img src="../../images/placefinder/3_naver.png" alt="Naver screen" class="image-item" />
-  <img src="../../images/placefinder/4_no_results.png" alt="No results screen" class="image-item" />
-  <img src="../../images/placefinder/5_offline.png" alt="Offline screen" class="image-item" />
-  <img src="../../images/placefinder/6_apple_maps.png" alt="Apple Maps screen" class="image-item" />
-  <img src="../../images/placefinder/7_map_selection.png" alt="Map selection screen" class="image-item" />
-  <img src="../../images/placefinder/8_naver_map.png" alt="Naver Map screen" class="image-item" />
-  <img src="../../images/placefinder/9_google_map.png" alt="Google Map screen" class="image-item" />
-  <img src="../../images/placefinder/10_kakao_map.png" alt="Kakao Map screen" class="image-item" />
+  <img src="../../images/placefinder/1_home_.png" alt="Home screen" class="image-item" />
+  <img src="../../images/placefinder/2_web_view_.png" alt="Web view screen" class="image-item" />
+  <img src="../../images/placefinder/3_naver_.png" alt="Naver screen" class="image-item" />
+  <img src="../../images/placefinder/4_no_results_.png" alt="No results screen" class="image-item" />
+  <img src="../../images/placefinder/5_offline_.png" alt="Offline screen" class="image-item" />
+  <img src="../../images/placefinder/6_apple_maps_.png" alt="Apple Maps screen" class="image-item" />
+  <img src="../../images/placefinder/7_map_selection_.png" alt="Map selection screen" class="image-item" />
+  <img src="../../images/placefinder/8_naver_map_.png" alt="Naver Map screen" class="image-item" />
+  <img src="../../images/placefinder/9_google_map_.png" alt="Google Map screen" class="image-item" />
+  <img src="../../images/placefinder/10_kakao_map_.png" alt="Kakao Map screen" class="image-item" />
 </div>
 <span style="display: block; height: 11px;"></span>
 
