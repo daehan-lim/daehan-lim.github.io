@@ -358,4 +358,92 @@ body {
   - `StringFormatUtils`, `SnackbarUtil` 등 공통 유틸리티 클래스로 코드 중복 제거
   - 일관된 앱 테마와 색상 시스템으로 디자인 통일성 확보
 
+## 🌱 트러블슈팅
+
+**1. iOS 지도 앱 연동 Silent Failure 문제**
+
+- **문제 상황**  
+  iOS에서 네이버 지도가 설치되지 않은 상태에서 `launchUrl()`을 통해 커스텀 스킴(`nmap://`)을 실행하면 아무런 반응 없이 조용히 실패하고, `try/catch`로 설정한 `Apple Maps` fallback도 실행되지 않는 silent failure 발생. 콘솔에도 아무런 예외 로그가 찍히지 않아 사용자가 아무 피드백도 받지 못하는 상황
+
+- **초기 시도**  
+  Android에서 `canLaunchUrl()`이 실행 가능한 `geo:` URI임에도 불구하고 `false`를 반환하는 문제를 경험했던 바탕으로, iOS에서도 `canLaunchUrl()`이 신뢰하기 어려울 것이라 판단하여 양쪽 플랫폼 모두 `try/catch` 방식으로 실패 처리를 시도
+
+### 3. 첫 번째 시도: try/catch 기반 예외 처리
+
+처음에 try/catch 방식을 선택하게 된 이유는, 이전에 Android에서 겪었던 다음 문제 때문이었습니다.:
+
+```dart
+if (await canLaunchUrl(Uri.parse('geo:0,0?q=$encoded'))) {
+```
+
+위 코드를 실행했을 때, 분명히 실행 가능한 URI임에도 불구하고 `false`를 반환하고 있었습니다.
+
+이 경험을 바탕으로,
+> “iOS에서도 `canLaunchUrl()`은 신뢰하기 어렵지 않을까?”
+
+라는 생각이 들어, 아예 양쪽 플랫폼 모두 `try/catch` 방식으로 실패 처리를 하기로 했습니다.
+
+하지만 예상과 달리, iOS에서는 이 방식이 전혀 통하지 않았습니다:
+
+- `launchUrl()`은 Naver Map이 설치되어 있지 않더라도 예외를 던지지 않음
+- 따라서 `catch` 블록이 실행되지 않음
+- fallback으로 준비한 Apple Maps 실행도 무시됨
+
+---
+
+### 4. 최종 해결책: canLaunchUrl() 선 체크
+
+---
+
+공식 문서와 GitHub 이슈들을 살펴본 결과, 핵심은 다음과 같았습니다:
+
+> `launchUrl()`은 플랫폼에 따라 실패 시 동작이 다를 수 있습니다.
+> 특히 iOS에서는, 처리할 앱이 없는 경우에도 예외를 던지지 않고 조용히 실패하며, 별다른 반응 없이 호출이 끝날 경우가 있습니다.
+
+따라서 실제로 `launchUrl()`을 호출하기 전에 `canLaunchUrl()`로 실행 가능 여부를 반드시 사전 체크해야 fallback이 작동합니다.
+
+이를 반영한 구조로 코드를 다음과 같이 수정했습니다:
+
+```dart
+static Future<void> openInMap(String queryAddress) async {
+  final encoded = Uri.encodeComponent(queryAddress);
+
+  if (Platform.isIOS) {
+    final appName = 'your.package.name';
+    final naverUri = Uri.parse(
+      'nmap://search?query=$encoded&appname=$appName',
+    );
+
+    if (await canLaunchUrl(naverUri)) {
+      await launchUrl(naverUri, mode: LaunchMode.externalApplication);    
+    } else {
+      print('Naver Map not available. Falling back to Apple Maps');
+      final appleUri = Uri.parse('http://maps.apple.com/?q=$encoded');
+      if (await canLaunchUrl(appleUri)) {
+        await launchUrl(appleUri, mode: LaunchMode.externalApplication);
+      } else {
+        print('Failed to open Apple Maps');
+      }
+    }
+  } else {
+    final geoUri = Uri.parse('geo:0,0?q=$encoded');
+    try {
+      await launchUrl(geoUri, mode: LaunchMode.externalApplication);
+    } catch (e) {
+      print('Could not launch map: $e');
+    }
+  }
+}
+```
+
+---
+
+## 🧪 결과 확인
+
+---
+
+- iOS에서 Naver Map이 설치되어 있지 않은 경우, 이제는 Apple Maps로 정상적으로 fallback됩니다.
+- Android에서도 기존 방식대로 잘 작동하며, `geo:` 스킴을 통해 Google Maps 또는 다른 앱이 실행됩니다.
+
+
 <br><br><br>
