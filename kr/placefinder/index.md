@@ -29,7 +29,6 @@ code .p {
 
 code.language-plaintext.highlighter-rouge {
   color: #EB5757 !important;                 /* strong red text */
-  background: rgba(135, 131, 120, 0.15);     /* soft gray background */
   border-radius: 4px;                        /* rounded corners */
   padding: 0.2em 0.4em;                      /* small breathing space */
 }
