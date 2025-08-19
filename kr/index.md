@@ -213,12 +213,11 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
   <img src="../images/sharelingo/preview.png" alt="ShareLingo - 언어교류 SNS 앱" class="project-preview" />
   <p><strong>ShareLingo<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">언어교류 SNS 앱</span><br/> 
-    <code>Flutter</code> <code>Firebase</code> <code>Riverpod</code> <code>Clean Architecture</code> <code>Google OAuth</code> <code>CI/CD</code><br/>
+    <code>Flutter</code> <code>Clean Architecture</code> <code>Google OAuth</code> <code>CI/CD</code> <code>Firebase</code> <code>Riverpod</code><br/>
     <small>2025.05.16 ~ 2025.05.27 (2주)</small>
   </p>
 </div>
 </a>
-
 
 <!--Cooki-->
 <a href="cooki/" style="text-decoration: none; color: inherit;">
@@ -226,7 +225,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
   <img src="../images/cooki/preview.png" alt="Cooki - AI 레시피 커뮤니티 앱" class="project-preview" />
   <p><strong>Cooki<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">AI 레시피 커뮤니티 앱</span><br/> 
-    <code>Flutter</code> <code>Riverpod</code> <code>MVVM</code> <code>Firestore</code> <code>Gemini API</code> <code>Dio</code> <code>Cloud Functions</code><br/>
+    <code>Flutter</code> <code>Gemini API</code> <code>Dio</code> <code>Cloud Functions</code> <code>Riverpod</code> <code>MVVM</code> <code>Firestore</code><br/>
     <small>2025.06.01 ~ 2025.07.04 (1개월)</small>
   </p>
 </div>
@@ -250,7 +249,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
   <img src="../images/filmmind/preview.png" alt="FilmMind - 영화 정보 앱" class="project-preview" />
   <p><strong>FilmMind<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">영화 정보 앱</span><br/> 
-    <code>Flutter</code><br/>
+    <code>Flutter</code> <code>Riverpod</code> <code>Dio</code> <code>Clean Architecture</code> <code>GitHub Actions</code> <code>TMDB API</code><br/>
     <small>2025.05.13 ~ 2025.05.15 (3일)</small>
   </p>
 </div>
