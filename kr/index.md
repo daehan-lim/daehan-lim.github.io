@@ -272,56 +272,6 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 </div>
 </a>
 
-<!-- TipCalculator Project -->
-<a href="https://github.com/daehan-lim/tip-calculator" style="text-decoration: none; color: inherit;">
-<div>
-  <img src="../images/cubadebate/preview.png" alt="TipCalculator Project" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
-  <p>
-    <strong>
-      🧮 TipCalculator
-      <span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span>
-    </strong><br/>
-    <span style="font-size: 0.9em;">Combine과 MVVM 패턴을 사용한 팁 계산기</span><br/>
-    <code>MVVM</code> <code>Combine</code> <code>CombineCocoa</code> <code>SnapKit</code><br/>
-    <small>23.09.12 - 23.09.18 (1주)</small>
-  </p>
-</div>
-</a>
-
-<!-- MobydickNews Project -->
-<a href="https://github.com/daehan-lim/mobydick-news" style="text-decoration: none; color: inherit;">
-  <div>
-    <img src="../images/gas/preview2.png" alt="MobydickNews Project"
-         style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
-    <p>
-      <strong>
-        📰 MobydickNews
-        <span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span>
-      </strong><br/>
-      <span style="font-size: 0.9em;">News API를 사용하는 뉴스 앱</span><br/>
-      <code>RxAlamofire</code> <code>RxSwift</code> <code>REST API</code> <code>SnapKit</code><br/>
-      <small>23.08.25 - 23.09.10 (2주)</small>
-    </p>
-  </div>
-</a>
-
-<!-- PlanBee Project -->
-<a href="https://github.com/daehan-lim/planbee" style="text-decoration: none; color: inherit;">
-  <div>
-    <img src="../images/cubadebate/preview.png" alt="PlanBee Project"
-         style="width: 100%; border-radius: 8px; border: 1px solid #ddd;" />
-    <p>
-      <strong>
-        📅 플랜비 (PlanBee)
-        <span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span>
-      </strong><br/>
-      <span style="font-size: 0.9em;">할일관리 Todo 앱</span><br/>
-      <code>CoreData</code> <code>Combine</code> <code>FSCalendar</code> <code>SwiftLint</code> <code>Firebase</code><br/>
-      <small>23.07.10 - 23.08.02 (4주)</small>
-    </p>
-  </div>
-</a>
-
 </div>
 
 
