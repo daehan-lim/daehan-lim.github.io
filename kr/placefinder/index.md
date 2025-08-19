@@ -360,90 +360,95 @@ body {
 
 ## 🌱 트러블슈팅
 
-**1. iOS 지도 앱 연동 Silent Failure 문제**
+**iOS 지도 앱 연동 Silent Failure 문제**
 
 - **문제 상황**  
-  iOS에서 네이버 지도가 설치되지 않은 상태에서 `launchUrl()`을 통해 커스텀 스킴(`nmap://`)을 실행하면 아무런 반응 없이 조용히 실패하고, `try/catch`로 설정한 `Apple Maps` fallback도 실행되지 않는 silent failure 발생. 콘솔에도 아무런 예외 로그가 찍히지 않아 사용자가 아무 피드백도 받지 못하는 상황
+  - iOS에서 네이버 지도가 설치되지 않은 상태에서 `launchUrl()`을 통해 커스텀 스킴(`nmap://`)을 실행하면 아무런 반응 없이 조용히 실패 
+  - `try/catch`로 설정한 `Apple Maps` fallback도 실행되지 않는 silent failure 발생 
+  - 콘솔에도 아무런 예외 로그가 찍히지 않아 사용자가 아무 피드백도 받지 못하는 상황
 
-- **초기 시도**  
-  Android에서 `canLaunchUrl()`이 실행 가능한 `geo:` URI임에도 불구하고 `false`를 반환하는 문제를 경험했던 바탕으로, iOS에서도 `canLaunchUrl()`이 신뢰하기 어려울 것이라 판단하여 양쪽 플랫폼 모두 `try/catch` 방식으로 실패 처리를 시도
+- **초기 접근 방식을 선택한 배경**  
+  - 이전 Android 개발에서 `canLaunchUrl()`의 신뢰성 문제를 경험함. 실행 가능한 `geo:` URI에 대해서도 `false`를 반환하는 현상을 겪었던 것이 주요 원인
 
-### 3. 첫 번째 시도: try/catch 기반 예외 처리
+  ```dart
+  if (await canLaunchUrl(Uri.parse('geo:0,0?q=$encoded'))) {
+    // 분명히 실행 가능한 URI임에도 불구하고 false를 반환
+  }
+  ```
 
-처음에 try/catch 방식을 선택하게 된 이유는, 이전에 Android에서 겪었던 다음 문제 때문이었습니다.:
+  - 이러한 Android에서의 경험을 바탕으로 iOS에서도 `canLaunchUrl()`이 신뢰하기 어려울 것이라 판단하여 양쪽 플랫폼 모두 `try/catch` 방식으로 실패 처리를 선택
 
-```dart
-if (await canLaunchUrl(Uri.parse('geo:0,0?q=$encoded'))) {
-```
-
-위 코드를 실행했을 때, 분명히 실행 가능한 URI임에도 불구하고 `false`를 반환하고 있었습니다.
-
-이 경험을 바탕으로,
-> “iOS에서도 `canLaunchUrl()`은 신뢰하기 어렵지 않을까?”
-
-라는 생각이 들어, 아예 양쪽 플랫폼 모두 `try/catch` 방식으로 실패 처리를 하기로 했습니다.
-
-하지만 예상과 달리, iOS에서는 이 방식이 전혀 통하지 않았습니다:
-
-- `launchUrl()`은 Naver Map이 설치되어 있지 않더라도 예외를 던지지 않음
-- 따라서 `catch` 블록이 실행되지 않음
-- fallback으로 준비한 Apple Maps 실행도 무시됨
-
----
-
-### 4. 최종 해결책: canLaunchUrl() 선 체크
-
----
-
-공식 문서와 GitHub 이슈들을 살펴본 결과, 핵심은 다음과 같았습니다:
-
-> `launchUrl()`은 플랫폼에 따라 실패 시 동작이 다를 수 있습니다.
-> 특히 iOS에서는, 처리할 앱이 없는 경우에도 예외를 던지지 않고 조용히 실패하며, 별다른 반응 없이 호출이 끝날 경우가 있습니다.
-
-따라서 실제로 `launchUrl()`을 호출하기 전에 `canLaunchUrl()`로 실행 가능 여부를 반드시 사전 체크해야 fallback이 작동합니다.
-
-이를 반영한 구조로 코드를 다음과 같이 수정했습니다:
-
-```dart
-static Future<void> openInMap(String queryAddress) async {
-  final encoded = Uri.encodeComponent(queryAddress);
-
-  if (Platform.isIOS) {
-    final appName = 'your.package.name';
-    final naverUri = Uri.parse(
-      'nmap://search?query=$encoded&appname=$appName',
-    );
-
-    if (await canLaunchUrl(naverUri)) {
-      await launchUrl(naverUri, mode: LaunchMode.externalApplication);    
-    } else {
-      print('Naver Map not available. Falling back to Apple Maps');
-      final appleUri = Uri.parse('http://maps.apple.com/?q=$encoded');
-      if (await canLaunchUrl(appleUri)) {
-        await launchUrl(appleUri, mode: LaunchMode.externalApplication);
-      } else {
-        print('Failed to open Apple Maps');
+- **초기 구현 및 실패 원인**
+  ```dart
+  static Future<void> openInMap(String queryAddress) async {
+    ...
+    if (Platform.isIOS) { 
+      final naverUri = Uri.parse('nmap://search?query=$encoded&appname=$appName');
+      try {
+        await launchUrl(naverUri, mode: LaunchMode.externalApplication);
+      } catch (e) {
+        log('Failed to open Naver Maps. Falling back to Apple Maps: $e');
+        final appleUri = Uri.parse('http://maps.apple.com/?q=$encoded');
+        try {
+          await launchUrl(appleUri, mode: LaunchMode.externalApplication);
+        } catch (e2) {
+          log('Failed to open Apple Maps: $e2');
+        }
       }
     }
-  } else {
-    final geoUri = Uri.parse('geo:0,0?q=$encoded');
-    try {
-      await launchUrl(geoUri, mode: LaunchMode.externalApplication);
-    } catch (e) {
-      print('Could not launch map: $e');
+  }
+  ```
+
+  - 예상과 달리 iOS에서는 이 방식이 전혀 통하지 않음을 확인:
+  - `launchUrl()`은 Naver Map이 설치되어 있지 않더라도 예외를 던지지 않음
+  - 따라서 `catch` 블록이 실행되지 않음
+  - fallback으로 준비한 `Apple Maps` 실행도 무시됨
+
+- **플랫폼별 동작 차이 분석**  
+  공식 문서와 GitHub 이슈 검토 결과 핵심 차이점을 파악:
+  - **iOS**: 처리할 앱이 없는 경우에도 예외를 던지지 않고 조용히 실패하며, 별다른 반응 없이 호출이 끝나는 경우 존재
+  - **Android**: `geo:` 스킴 등에 대해 예외 기반 처리가 상대적으로 안정적으로 작동
+  - iOS에서는 실제로 `launchUrl()` 호출 전에 `canLaunchUrl()`로 실행 가능 여부를 반드시 사전 체크해야 fallback이 정상 작동
+
+- **최종 해결 방법**  
+  플랫폼별 특성에 맞는 분기 처리로 해결:
+
+  ```dart
+  static Future<void> openInMap(String queryAddress) async {
+    ...
+    if (Platform.isIOS) { 
+      final naverUri = Uri.parse('nmap://search?query=$encoded&appname=$appName');
+      if (await canLaunchUrl(naverUri)) {
+        await launchUrl(naverUri, mode: LaunchMode.externalApplication);
+        log('opened in Naver Map');
+      } else {
+        log('Naver Map not available. Falling back to Apple Maps');
+        final appleUri = Uri.parse('http://maps.apple.com/?q=$encoded');
+        if (await canLaunchUrl(appleUri)) {
+          await launchUrl(appleUri, mode: LaunchMode.externalApplication);
+        } else {
+          log('Failed to open Apple Maps');
+        }
+      }
+    } else {
+      // Android: 기존 try/catch 방식 유지 (geo 스킴에서 안정적으로 작동)
+      final geoUri = Uri.parse('geo:0,0?q=$encoded');
+      try {
+        await launchUrl(geoUri, mode: LaunchMode.externalApplication);
+      } catch (e) {
+        log('Could not launch map: $e');
+      }
     }
   }
-}
-```
+  ```
 
----
+- **배운 점**
+  - **플랫폼별 URL 스킴 처리 차이**: Android와 iOS는 외부 앱 연동 실패 시 완전히 다른 방식으로 동작
+  - **iOS에서 canLaunchUrl()의 중요성**: Android에서의 신뢰성 문제와 달리 iOS에서는 필수적인 사전 체크 도구로 활용해야 함
+  - **크로스 플랫폼 개발 시 주의점**: 한 플랫폼에서의 경험을 다른 플랫폼에 그대로 적용하면 안 되며, 각 플랫폼의 고유한 특성을 이해하고 대응해야 함
+  - **Silent Failure 디버깅**: 예외가 발생하지 않는 상황에서의 문제 해결 접근법
 
-## 🧪 결과 확인
-
----
-
-- iOS에서 Naver Map이 설치되어 있지 않은 경우, 이제는 Apple Maps로 정상적으로 fallback됩니다.
-- Android에서도 기존 방식대로 잘 작동하며, `geo:` 스킴을 통해 Google Maps 또는 다른 앱이 실행됩니다.
-
+- **최종 결과**  
+  iOS에서 네이버 지도 미설치 시 Apple Maps로 정상 fallback되며, 플랫폼별 최적화된 지도 앱 연동으로 안정적인 지도 실행 환경 구축
 
 <br><br><br>
