@@ -255,6 +255,18 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 </div>
 </a>
 
+<!--어디든GO-->
+<a href="placefinder/" style="text-decoration: none; color: inherit;">
+<div>
+  <img src="../images/placefinder/preview.png" alt="어디든GO - 지역 검색 앱" class="project-preview" />
+  <p><strong>어디든GO<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
+    <span style="font-size: 0.9em;">지역 검색 앱</span><br/> 
+    <code>Flutter</code> <code>Geolocator</code> <code>InAppWebView</code> <code>Naver API</code> <code>VWorld API</code> <code>Riverpod</code><br/>
+    <small>2025.04.20 ~ 2025.04.22 (3일)</small>
+  </p>
+</div>
+</a>
+
 <!--가스 소비 관리 앱-->
 <a href="https://github.com/daehan-lim/gas-usage-tracker" style="text-decoration: none; color: inherit;">
 <div>
