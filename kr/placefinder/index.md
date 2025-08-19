@@ -28,7 +28,7 @@ code .p {
 }
 
 code.language-plaintext.highlighter-rouge {
-  color: #a5535d !important;
+  color: #005cc5 !important; /* GitHub blue for keywords */
 }
 
 .image-row {
