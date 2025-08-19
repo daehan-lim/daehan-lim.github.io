@@ -232,16 +232,17 @@ body {
 
 ## 🛠️ Tech Stack
 
-[![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/)
-[![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org/)
-[![Coroutines](https://img.shields.io/badge/Coroutines-0095D5?style=for-the-badge)](https://kotlinlang.org/docs/coroutines-overview.html)
-[![MVVM](https://img.shields.io/badge/MVVM-ed9242?style=for-the-badge)](https://developer.android.com/topic/architecture)
-[![Room](https://img.shields.io/badge/Room-4CAF50?style=for-the-badge)](https://developer.android.com/training/data-storage/room)
-[![Navigation](https://img.shields.io/badge/Navigation-2196F3?style=for-the-badge)](https://developer.android.com/guide/navigation)
-[![MPAndroidChart](https://img.shields.io/badge/MPAndroidChart-FF9800?style=for-the-badge)](https://github.com/PhilJay/MPAndroidChart)
-[![Material Design](https://img.shields.io/badge/Material_Design-757575?style=for-the-badge&logo=material-design&logoColor=white)](https://material.io/design)
-[![Data Binding](https://img.shields.io/badge/Data_Binding-4CAF50?style=for-the-badge)](https://developer.android.com/topic/libraries/data-binding)
-[![Jetpack](https://img.shields.io/badge/Jetpack-4285F4?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/jetpack)
+[![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white&style=for-the-badge)](https://kotlinlang.org)
+[![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com)
+[![MVVM](https://img.shields.io/badge/MVVM-FF5252?style=for-the-badge)](https://developer.android.com/topic/architecture)
+[![Material Design](https://img.shields.io/badge/Material%20Design-%234285F4?logo=material-design&logoColor=white&style=for-the-badge)](https://m3.material.io)
+[![Jetpack](https://img.shields.io/badge/Jetpack-F57C00?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/jetpack)
+[![Coroutines](https://img.shields.io/badge/Coroutines-7F52FF?logo=kotlin&logoColor=white&style=for-the-badge)](https://kotlinlang.org/docs/coroutines-overview.html)
+[![Navigation](https://img.shields.io/badge/Navigation-AB47BC?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/guide/navigation)
+[![LiveData](https://img.shields.io/badge/LiveData-3F51B5?style=for-the-badge)](https://developer.android.com/topic/libraries/architecture/livedata)
+[![Room Database](https://img.shields.io/badge/Room-3DDC84?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/training/data-storage/room)
+[![Lifecycle](https://img.shields.io/badge/Lifecycle-2196F3?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/jetpack/androidx/releases/lifecycle)
+[![MPAndroidChart](https://img.shields.io/badge/MP%20Android%20Chart-2196F3?style=for-the-badge)](https://github.com/PhilJay/MPAndroidChart)
 
 ## 📋 프로젝트 구조
 
