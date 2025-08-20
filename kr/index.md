@@ -17,6 +17,12 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
+code.language-plaintext.highlighter-rouge {
+  color: #EB5757 !important;                 /* strong red text */
+  border-radius: 4px;                        /* rounded corners */
+  padding: 0.2em 0.4em;                      /* small breathing space */
+}
+
 .project-preview {
   width: 100%; /* responsive full width of container */
   aspect-ratio: 1160 / 663; /* keeps Cubadebate's ratio */
