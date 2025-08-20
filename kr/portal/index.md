@@ -239,7 +239,7 @@ body {
 
 ## 📖 프로젝트 배경
 
-쿠바 피나르 델 리오 시의 기존 웹사이트 전용 정부 포털을 시민들이 모바일에서도 원활하게 이용할 수 있도록 하기 위한 안드로이드 앱 개발 필요성이 대두되었습니다. 기존 시스템은 데스크톱 환경에 최적화되어 있어 모바일 사용자들이 민원 신청, 지역 정보 조회, 행정 서비스 이용 시 불편함을 겪고 있었습니다. 특히 지역구 대표자 정보 접근, 민원 처리 현황 추적, 지역 매물 정보 확인 등 핵심 행정 서비스의 모바일 접근성 개선이 시급한 상황이었습니다. 이에 따라 레거시 코드를 현대적 아키텍처로 개선하고 시민 중심의 직관적인 모바일 서비스를 제공하는 정부 포털 앱 개발 프로젝트를 진행하게 되었습니다.
+쿠바 피나르 델 리오 시의 기존 웹사이트 전용 정부 포털을 시민들이 모바일에서도 원활하게 이용할 수 있도록 하기 위한 안드로이드 앱 개발 필요성이 대두되었습니다. 기존 시스템은 데스크톱 환경에 최적화되어 있어 모바일 사용자들이 민원 신청, 지역 정보 조회, 행정 서비스 이용 시 불편함을 겪고 있었습니다. 특히 지역구 대표자 정보 접근, 민원 처리 현황 추적, 지역 매물 정보 확인 등 핵심 행정 서비스의 모바일 접근성 개선이 시급한 상황이었습니다. 이에 따라 시민 중심의 직관적인 모바일 서비스를 제공하는 정부 포털 앱 개발 프로젝트를 진행하게 되었으며, 프로젝트 과정에서 기존 레거시 코드베이스의 현대화 작업을 담당하게 되었습니다.
 
 ## 🛠️ Tech Stack
 
@@ -249,7 +249,6 @@ body {
 [![RETROFIT](https://img.shields.io/badge/retrofit-67b586?logo=square&logoColor=white&style=for-the-badge)](https://square.github.io/retrofit)
 [![Jetpack](https://img.shields.io/badge/Jetpack-F57C00?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/jetpack)
 [![Coroutines](https://img.shields.io/badge/Coroutines-7F52FF?logo=kotlin&logoColor=white&style=for-the-badge)](https://kotlinlang.org/docs/coroutines-overview.html)
-[![Material Design](https://img.shields.io/badge/Material%20Design-4285F4?logo=material-design&logoColor=white&style=for-the-badge)](https://material.io/design)
 [![ViewPager2](https://img.shields.io/badge/ViewPager2-7CB342?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/jetpack/androidx/releases/viewpager2)
 [![LiveData](https://img.shields.io/badge/LiveData-3F51B5?style=for-the-badge)](https://developer.android.com/topic/libraries/architecture/livedata)
 [![DataBinding](https://img.shields.io/badge/DataBinding-7CB342?style=for-the-badge)](https://developer.android.com/topic/libraries/data-binding)
@@ -258,6 +257,7 @@ body {
 [![WebView](https://img.shields.io/badge/WebView-4285F4?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/reference/android/webkit/WebView)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://www.w3.org/html/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Material Design](https://img.shields.io/badge/Material%20Design-4285F4?logo=material-design&logoColor=white&style=for-the-badge)](https://material.io/design)
 
 ## 📋 프로젝트 구조
 
