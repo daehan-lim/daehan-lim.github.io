@@ -297,6 +297,18 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 </div>
 </a>
 
+<!--정부 포털 앱-->
+<a href="portal/" style="text-decoration: none; color: inherit;">
+<div>
+ <img src="../images/portal/preview.png" alt="정부 포털 앱" class="project-preview" />
+ <p><strong>정부 포털 앱<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
+   <span style="font-size: 0.9em;">쿠바 피나르 델 리오 시 공식 정부 모바일 포털</span><br/> 
+   <code>Android</code> <code>Kotlin</code> <code>Room</code> <code>Retrofit2</code> <code>MVVM</code> <code>ViewPager2</code> <code>WebView</code> <code>Coroutines</code><br/>
+   <small>2021.02 ~ 2021.04 (3개월)</small>
+ </p>
+</div>
+</a>
+
 </div>
 
 
