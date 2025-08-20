@@ -285,7 +285,7 @@ body {
 │       ├── savedpost/               # 저장된 게시글 관련 엔티티
 │       │   ├── SavedPost.kt         # 저장된 게시글 메인 엔티티
 │       │   ├── SavedCategory.kt     # 저장된 게시글 카테고리
-│       │   └── (기타 저장된 게시글 관련 엔티티)
+│       │   └── ...(기타 저장된 게시글 관련 엔티티)
 │       ├── ...(기타 엔티티들)
 │
 ├── model/                           # 데이터 모델 클래스
@@ -295,7 +295,7 @@ body {
 │   │   │   └── ResponseComment.kt   # 댓글 응답 모델
 │   │   ├── post/                    # 게시글 API 모델
 │   │   │   ├── NetworkPost.kt       # 네트워크 게시글 모델
-│   │   │   └── ... (기타 API 모델들)
+│   │   │   └── ...(기타 API 모델들)
 │   ├── categories/                  # 카테고리 관련 모델
 │   │   └── MyCategoriesGridViewItem.kt
 │   ├── comment/                     # 댓글 도메인 모델
