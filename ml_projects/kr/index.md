@@ -273,20 +273,4 @@ body {
 
 [🔗 상세보기](../../assets/information_retrieval_report.pdf)
 
-<br>
-
-## 📫 연락처
-
-<p class="ko">
-채용 및 협업 문의는 언제든 환영합니다. 아래 링크를 통해 링크드인이나 이메일로 연락해 주실 수 있습니다.
-</p>
-
-<div align="center"> 
-  <a href="https://linkedin.com/in/penjan-a-eng-lim">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
-  </a>
-  <a href="mailto:penjan.eng@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
-  </a>
-</div>
-<br>
+<br><br>
