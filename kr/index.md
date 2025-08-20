@@ -338,9 +338,9 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
     <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">정보 검색 시스템</span>
   </div>
   <div style="margin-top: 20px;">
-    <a href="/ml_projects/kr" style="display: inline-block; background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 700; font-size: 1.1em; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+    <div style="display: inline-block; background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; font-weight: 700; font-size: 1.1em; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
       머신러닝 프로젝트 보기 →
-    </a>
+    </div>
   </div>
 </div>
 </a>
