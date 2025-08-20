@@ -209,7 +209,7 @@ padding-right: 20px;
 ## 👋 소개
 Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD 파이프라인을 구축해 개발 효율성 70% 향상을 이끌었습니다. Gemini AI 기반 멀티모달 레시피 생성 시스템에서는 프롬프트 엔지니어링과 검증 모델 도입을 통해 부적절한 레시피 생성률을 85%에서 12%로 낮춘 경험이 있습니다. 머신러닝 연구를 통해 고도화된 데이터 처리, 알고리즘 최적화, 분산 시스템 구축 경험을 쌓았으며, 이는 모바일 앱의 성능 개선과 확장성 있는 아키텍처 역량을 키우는 데 크게 기여했습니다.
 
-## 📂 프로젝트 목차
+## 📱 모바일 애플리케이션
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
 
@@ -323,6 +323,27 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 
 </div>
 
+## 🔬 머신러닝 프로젝트
+
+<a href="/ml_projects/kr" style="text-decoration: none; color: inherit;">
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; padding: 25px; margin: 20px auto; max-width: 800px; text-align: center; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);">
+  <div style="color: white; margin-bottom: 15px;">
+    <h3 style="margin: 0; font-size: 1.3em; font-weight: 700;">🎓 AI/ML 프로젝트</h3>
+    <p style="color: white; margin: 10px 0 0 0; opacity: 0.9; font-size: 1.1em;">충남대학교 석사과정 중 수행한 머신러닝 프로젝트</p>
+  </div>
+  <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
+    <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">연합학습</span>
+    <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">NLP 분류 모델</span>
+    <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">의료 데이터 분석기</span>
+    <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">정보 검색 시스템</span>
+  </div>
+  <div style="margin-top: 20px;">
+    <a href="/ml_projects/kr" style="display: inline-block; background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 700; font-size: 1.1em; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+      머신러닝 프로젝트 보기 →
+    </a>
+  </div>
+</div>
+</a>
 
 ## 📫 연락처
 
