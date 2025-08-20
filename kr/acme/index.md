@@ -211,7 +211,7 @@ body {
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&fontSize=45&animation=fadeIn&fontAlignY=38&desc=&descAlignY=51&descAlign=62" alt="Header" style="display: block; width: 100%; height: auto; margin: 0; padding: 0; border-radius: 8px;" />
 
 <div style="position:absolute;left:40px;bottom:-10px;width:80px;height:80px;background:#fafafa;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,0.15);">
-<img src="../../images/gas/app_icon.png" alt="Project Icon" style="max-width:90%;max-height:90%;object-fit:contain;" />
+<img src="../../images/acme/app_icon.png" alt="Project Icon" style="max-width:100%;max-height:100%;object-fit:contain;" />
 </div>
 
 </div>
@@ -226,6 +226,18 @@ body {
 **💼 역할:** 전체 안드로이드 앱 개발 담당  
 **🛠️ 주요 사용 기술:** `Android` `Kotlin` `MVVM` `Jetpack` `Room` `Calendar Provider API` `Data Binding` `WebView`  
 **🔗 GitHub:** [daehan-lim/acme](https://github.com/daehan-lim/acme)
+
+<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
+  <img src="../../images/acme/dashboard.png" width="240" style="margin-right: 5px;" alt="ACME app dashboard screen" />
+  <img src="../../images/acme/ticket_details.png" width="240" style="margin-right: 5px;" alt="ACME app ticket details screen" />
+  <img src="../../images/acme/calendar.png" width="240" style="margin-right: 5px;" alt="ACME app calendar screen" />
+  <img src="../../images/acme/calendar_sync.png" width="240" style="margin-right: 5px;" alt="ACME app calendar sync screen" /> 
+  <img src="../../images/acme/login.png" width="240" style="margin-right: 5px;" alt="ACME app login screen" />
+  <img src="../../images/acme/signup.png" width="240" style="margin-right: 5px;" alt="ACME app signup screen" />
+  <img src="../../images/acme/edit.png" width="240" style="margin-right: 5px;" alt="ACME app edit screen" />
+  <img src="../../images/acme/maps.png" width="240" alt="ACME app maps screen" />
+</div>
+<span style="display: block; height: 11px;"></span>
 
 ## 🛠️ Tech Stack
 
