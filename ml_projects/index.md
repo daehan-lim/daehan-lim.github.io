@@ -1,90 +1,90 @@
 <style>
-  /* Navigation Menu Styles */
-  #nav-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #3464e1; /* Navbar color */
-    color: white;
-    padding: 15px 0; /* Navbar height */
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Vertically align items */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+/* Navigation Menu Styles */
+#nav-menu {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #3464e1; /* Navbar color */
+color: white;
+padding: 15px 0; /* Navbar height */
+z-index: 1000;
+display: flex;
+justify-content: space-between; /* Space between items */
+align-items: center; /* Vertically align items */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-  #nav-menu a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 14px;
-    transition: color 0.3s ease;
-  }
+#nav-menu a {
+color: white;
+text-decoration: none;
+margin: 0 15px;
+font-weight: bold;
+font-size: 14px;
+transition: color 0.3s ease;
+}
 
-  #nav-menu > div:first-child a { 
-      margin: 0 10px;
-  }
+#nav-menu > div:first-child a { 
+  margin: 0 10px;
+}
 
-  #nav-menu a:hover {
-    color: #f1c40f;
-  }
+#nav-menu a:hover {
+  color: #f1c40f;
+}
 
-  /* Adjust content padding for the fixed navbar */
-  body {
-    padding-top: 75px; /* Adjusted for taller navbar */
-  }
+/* Adjust content padding for the fixed navbar */
+body {
+  padding-top: 65px; /* Adjusted for taller navbar */
+}
 
-  /* Hamburger Menu (Toggle Button) */
-  #nav-menu-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 18px;
-    margin-right: 20px; /* Move to the right */
-    z-index: 1100; /* Ensure toggle is above menu items */
-  }
+/* Hamburger Menu (Toggle Button) */
+#nav-menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 20px; /* Move to the right */
+  z-index: 1100; /* Ensure toggle is above menu items */
+}
 
-  /* Navigation Links */
-  #nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 20px;
-  }
+/* Navigation Links */
+#nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 20px;
+}
 
-  @media (max-width: 768px) {
-    #nav-links {
-      display: none; /* Hide links initially on mobile */
-      flex-direction: column;
-      align-items: center;
-      background-color: #21427D; /* Match navbar background */
-      width: 100%;
-      position: absolute;
-      top: 60px; /* Space below navbar */
-      left: 0;
-      padding: 15px 0; /* Add spacing around links */
-      z-index: 1000; /* Ensure it doesn't overlap the toggle button */
-    }
+@media (max-width: 768px) {
+#nav-links {
+  display: none; /* Hide links initially on mobile */
+  flex-direction: column;
+  align-items: center;
+  background-color: #21427D; /* Match navbar background */
+  width: 100%;
+  position: absolute;
+  top: 60px; /* Space below navbar */
+  left: 0;
+  padding: 15px 0; /* Add spacing around links */
+  z-index: 1000; /* Ensure it doesn't overlap the toggle button */
+}
 
-    #nav-links.active {
-      display: flex; /* Show links when active */
-    }
+#nav-links.active {
+  display: flex; /* Show links when active */
+}
 
-    #nav-links a {
-      margin: 15px 0; /* Added vertical spacing */
-    }
+#nav-links a {
+  margin: 15px 0; /* Added vertical spacing */
+}
 
-    #nav-menu-toggle {
-      display: block; /* Show hamburger menu */
-    }
-  }
+#nav-menu-toggle {
+  display: block; /* Show hamburger menu */
+}
+}
 </style>
 
 <div id="nav-menu">
   <div style="margin-left: 20px;">
-    <a href="/" class="active">EN</a>
-    <a href="/kr">KR</a>
+    <a href="/ml_projects" class="active">EN</a>
+    <a href="/ml_projects/kr">KR</a>
   </div>
 
 <span id="nav-menu-toggle">☰</span>
@@ -229,7 +229,7 @@
 - Implemented system with optimized memory usage of 2.5MB
 - **Tech Stack**: Python, NLTK, SpaCy, NumPy, contractions
 
-[🔗 View Details](assets/information_retrieval_report.pdf)
+[🔗 View Details](../assets/information_retrieval_report.pdf)
 
 ## 📫 Contact Information
 
