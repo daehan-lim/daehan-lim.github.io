@@ -244,7 +244,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
   <p><strong>Cubadebate<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">맞춤형 뉴스 플랫폼</span><br/>
     <code>Android</code> <code>Kotlin</code> <code>Coroutines</code> <code>MVVM</code> <code>Room</code> <code>Retrofit</code> <code>Glide</code> <code>Lottie</code> <code>ViewBinding</code><br/>
-    <small>2021.03 ~ 2021.07</small>
+    <small>2021.03.15 ~ 2021.06.30 (3.5개월)</small>
   </p>
 </div>
 </a>
