@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #21427D; /* Navbar color */
+    background-color: #3464e1; /* Navbar color */
     color: white;
     padding: 15px 0; /* Navbar height */
     z-index: 1000;
