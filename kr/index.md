@@ -298,7 +298,7 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 </a>
 
 <!--Yellow Pages-->
-<a href="yellow-pages/" style="text-decoration: none; color: inherit;">
+<a href="yellow_pages/" style="text-decoration: none; color: inherit;">
 <div>
  <img src="../images/yellow_pages/preview.png" alt="Yellow Pages - 쿠바 전화번호부 앱" class="project-preview" />
  <p><strong>Yellow Pages<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
