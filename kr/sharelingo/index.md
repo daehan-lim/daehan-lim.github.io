@@ -243,7 +243,7 @@ body {
 
 ## 📖 프로젝트 배경
 
-- 전 세계 약 [15억](https://www.thoughtco.com/how-many-people-learn-english-globally-1210367) 명의 언어 학습자 중 [68%](https://www.lingomelo.com/blog-page/language-learning-statistics)가 문법에, [53%](https://www.lingomelo.com/blog-page/language-learning-statistics)가 어휘 습득에 어려움을 겪고 있으며, 특히 원어민과의 실제 대화 기회 부족으로 인한 실전 경험 부족 문제가 심각한 상황
+- 전 세계 약 [15억](https://www.thoughtco.com/how-many-people-learn-english-globally-1210367) 명의 언어 학습자 중 [68%](https://www.lingomelo.com/blog-page/language-learning-statistics)가 문법에, [53%](https://www.lingomelo.com/blog-page/language-learning-statistics)가 어휘 습득에 어려움을 겪고 있으며, 특히 원어민과 실제로 대화할 기회가 적어 실전 경험 부족이 큰 문제로 나타나는 상황
 - 소셜 미디어 형태의 언어 학습 플랫폼이 학습자들에게 자연스러운 언어 연습 환경과 문화적 교류 기회를 제공하여 전통적인 학습 방법을 보완하는 역할 수행
 - 언어 학습자들이 자신의 모국어와 학습 언어 조합에 맞는 적절한 교환 파트너를 효율적으로 찾아 서로 도움을 주고받을 수 있는 매칭 시스템 필요
 - 언어 조합 기반 스마트 필터링과 지역별 매칭을 통해 효과적인 언어 교환 파트너를 연결하고, 소셜 피드 형태의 자연스러운 언어 연습 환경을 제공함으로써 언어 학습자들의 실전 소통 능력 향상을 목표로 프로젝트 기획
