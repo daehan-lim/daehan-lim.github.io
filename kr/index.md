@@ -17,7 +17,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-code.language-plaintext.highlighter-rouge {
+code {
   color: #EB5757 !important;                 /* strong red text */
   border-radius: 4px;                        /* rounded corners */
   padding: 0.2em 0.4em;                      /* small breathing space */
@@ -302,8 +302,8 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 <div>
  <img src="../images/portal/preview.png" alt="정부 포털 앱" class="project-preview" />
  <p><strong>정부 포털 앱<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
-   <span style="font-size: 0.9em;">쿠바 피나르 델 리오 시 공식 정부 모바일 포털</span><br/> 
-   <code>Android</code> <code>Kotlin</code> <code>Room</code> <code>Retrofit2</code> <code>MVVM</code> <code>ViewPager2</code> <code>WebView</code> <code>Coroutines</code><br/>
+   <span style="font-size: 0.9em;">공식 정부 대표 플랫폼 애플리케이션</span><br/> 
+   <code>Android</code> <code>Kotlin</code> <code>Coroutines</code> <code>Retrofit</code> <code>Room</code> <code>MVVM</code> <code>WebView</code> <code>ViewPager2</code><br/>
    <small>2021.02 ~ 2021.04 (3개월)</small>
  </p>
 </div>
