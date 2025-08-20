@@ -241,79 +241,35 @@ body {
 
 ## 📖 프로젝트 배경
 
-쿠바에서는 인터넷 데이터 요금이 매우 비싸고 네트워크 연결이 불안정한 환경으로 인해 기존 Yellow Pages 웹사이트의 모바일 접근성이 크게 제한되었습니다. 특히 정부 업무 안내와 전화 서비스 정보에 대한 모바일 접근이 어려워 국민들이 불편을 겪고 있었습니다. 이에 ETECSA에서는 데이터 사용량을 최소화하면서도 완전한 기능을 제공하는 모바일 전용 전화번호부 앱의 필요성을 인식하게 되었습니다. 본 프로젝트는 학부 졸업 논문 프로젝트로 시작되어 전국 컴퓨터공학 경진대회에서 수상하며 ETECSA의 첫 모바일 전화번호부 앱으로 공식 채택되었습니다.
+쿠바에서는 인터넷 데이터 요금이 매우 비싸고 네트워크 연결이 불안정한 환경으로 인해 기존 웹사이트의 모바일 접근성이 크게 제한되었습니다. 웹사이트는 항상 온라인 연결이 필요하여 오프라인 정보 조회가 불가능했고, 사업체 위치 시각화나 직접 통화 연결 등 모바일 디바이스의 고유 기능들을 활용하지 못하는 한계가 있었습니다. 특히 정부 업무 안내와 통신 서비스 정보에 대한 오프라인 접근이 어려워 국민들이 불편을 겪고 있었습니다. 이에 ETECSA에서는 공식 데이터를 기반으로 하면서도 오프라인 기능과 모바일 최적화를 통해 데이터 사용량을 최소화하는 모바일 전화번호부 솔루션의 필요성을 인식하게 되었습니다.
 
 ## 🛠️ Tech Stack
 
-## 📖 프로젝트 배경
-
-쿠바 피나르 델 리오 시의 기존 웹사이트 전용 정부 포털을 시민들이 모바일에서도 원활하게 이용할 수 있도록 하기 위한 안드로이드 앱 개발 필요성이 대두되었습니다. 기존 시스템은 데스크톱 환경에 최적화되어 있어 모바일 사용자들이 민원 신청, 지역 정보 조회, 행정 서비스 이용 시 불편함을 겪고 있었습니다. 특히 지역구 대표자 정보 접근, 민원 처리 현황 추적, 지역 매물 정보 확인 등 핵심 행정 서비스의 모바일 접근성 개선이 시급한 상황이었습니다. 이에 따라 시민 중심의 직관적인 모바일 서비스를 제공하는 정부 포털 앱 개발 프로젝트를 진행하게 되었으며, 프로젝트 과정에서 기존 레거시 코드베이스의 현대화 작업을 담당하게 되었습니다.
-
-## 🛠️ Tech Stack
-
-[![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white&style=for-the-badge)](https://kotlinlang.org)
-[![MVVM](https://img.shields.io/badge/MVVM-FF5252?style=for-the-badge)](https://developer.android.com/topic/architecture)
-[![Room](https://img.shields.io/badge/Room-00796B?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/training/data-storage/room)
-[![RETROFIT](https://img.shields.io/badge/retrofit-67b586?logo=square&logoColor=white&style=for-the-badge)](https://square.github.io/retrofit)
-[![Jetpack](https://img.shields.io/badge/Jetpack-F57C00?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/jetpack)
-[![Coroutines](https://img.shields.io/badge/Coroutines-7F52FF?logo=kotlin&logoColor=white&style=for-the-badge)](https://kotlinlang.org/docs/coroutines-overview.html)
-[![ViewPager2](https://img.shields.io/badge/ViewPager2-7CB342?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/jetpack/androidx/releases/viewpager2)
-[![LiveData](https://img.shields.io/badge/LiveData-3F51B5?style=for-the-badge)](https://developer.android.com/topic/libraries/architecture/livedata)
-[![DataBinding](https://img.shields.io/badge/DataBinding-7CB342?style=for-the-badge)](https://developer.android.com/topic/libraries/data-binding)
-[![ViewBinding](https://img.shields.io/badge/ViewBinding-7CB342?style=for-the-badge)](https://developer.android.com/topic/libraries/view-binding)
-[![Moshi](https://img.shields.io/badge/Moshi-4CAF50?style=for-the-badge)](https://github.com/square/moshi)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+[![Android SDK](https://img.shields.io/badge/Android%20SDK-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com)
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+![VTM Maps](https://img.shields.io/badge/VTM%20Maps-4A90E2?style=for-the-badge)
 [![WebView](https://img.shields.io/badge/WebView-4285F4?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/reference/android/webkit/WebView)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://www.w3.org/html/)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Material Design](https://img.shields.io/badge/Material%20Design-4285F4?logo=material-design&logoColor=white&style=for-the-badge)](https://material.io/design)
+[![SharedPreferences](https://img.shields.io/badge/SharedPreferences-4CAF50?style=for-the-badge)](https://developer.android.com/training/data-storage/shared-preferences)
+![Gradle](https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=Gradle&logoColor=white)
+[![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)](https://junit.org)
+[![Apache HTTP](https://img.shields.io/badge/Apache%20HTTP%20Client-D22128?style=for-the-badge&logo=apache&logoColor=white)](https://hc.apache.org/httpcomponents-client-ga/)
+![Material Design](https://img.shields.io/badge/Material%20Design-%234285F4.svg?style=for-the-badge&logo=material-design&logoColor=white)
 
-## 📋 프로젝트 구조
-
-```
-├── data/                              # 데이터 레이어
-│   ├── database/                      # Room 로컬 데이터베이스
-│   │   └── classifieddatabase/        # 지역 매물 데이터베이스
-│   │       ├── Classified.kt          # 매물 정보 엔티티
-│   │       ├── ClassifiedDao.kt       # 데이터 액세스 객체
-│   │       └── ClassifiedDatabase.kt  # 데이터베이스 설정
-│   ├── model/                         # 데이터 모델 클래스
-│   │   ├── DelegateData.kt           # 지역구 대표자 정보
-│   │   ├── ClassifiedApi.kt          # 매물 API 응답 모델
-│   │   ├── Municipality.kt           # 행정구역 모델
-│   │   └── gestiondelegado/          # 대표자 관리 모델
-│   └── network/                       # 네트워크 통신 레이어
-│       └── PortalGobiernoApiService.kt # REST API 서비스
-├── ui/                               # 프레젠테이션 레이어
-│   ├── classified/                   # 지역 매물 기능
-│   │   ├── ClassifiedFragment.kt     # 매물 목록 화면
-│   │   ├── ClassifiedViewModel.kt    # 매물 비즈니스 로직
-│   │   ├── ClassifiedAdapter.kt      # RecyclerView 어댑터
-│   │   └── classifieddetail/         # 매물 상세 정보
-│   ├── gestiondelegado/              # 지역구 대표자 관리
-│   │   ├── GestionDelegadoFragment.kt # 대표자 메뉴 화면
-│   │   └── gestiondelegadosection/   # 대표자 서비스 탭
-│   │       ├── GestionSectionActivity.kt # ViewPager2 기반 탭 화면
-│   │       ├── GestionSectionViewModel.kt # 공통 비즈니스 로직
-│   │       ├── DelegadoDataFragment.kt    # 대표자 정보 조회
-│   │       ├── DispatchFragment.kt        # 온라인 민원 신청
-│   │       └── ProcedureFollowUpFragment.kt # 민원 처리 추적
-│   └── goverment/                    # 정부 서비스 WebView
-│       └── GovernmentFragment.kt     # JavaScript 인젝션 WebView
-├── misc/                            # 유틸리티 및 공통 기능
-│   ├── Util.kt                      # 날짜 형식화 등 유틸리티
-│   └── Converters.kt                # Room 타입 컨버터
-└── BindingUtils.kt                  # 데이터 바인딩 어댑터
-```
 
 ## 🌟 주요업무
-- MVVM 아키텍처, 코루틴, JetPack 컴포넌트를 도입해 레거시 코드 현대화
-- 지역구 대표자 관리 시스템: Retrofit/Moshi 활용 민원 신청, 회의 일정 관리, 처리 현황 추적 등 주요 기능 구현으로 행정 업무 자동화
-- 지역 매물 피드 시스템 구현: API 연동과 오프라인 데이터 캐싱, 실시간 동기화, 이미지 캐러셀, 네트워크 상태 모니터링 기능 통합
-- 시도의회 포털 통합: JavaScript 인젝션 및 WebView 커스터마이징으로 데스크톱 중심 UI를 모바일용으로 최적화
+- 엔터프라이즈급 API를 활용한 실시간 전화번호부 검색 시스템 구현
+- 내장 지도 파일 기반 벡터 매핑 시스템으로 오프라인 위치 정보 제공
+- 정부 업무 안내와 전화 서비스 정보의 오프라인 접근 및 자동 백그라운드 동기화 구현
+- 동적 필터와 효율적인 페이징 처리가 적용된 반응형 검색 인터페이스 구축
+- Unit, UI, 호환성 테스트를 통해 안정성과 사용자 경험 최적화
 
 ## 🚀 주요성과
-- 레거시 코드 현대화로 앱 안정성 및 유지보수성 향상
-- 행정 업무 자동화로 민원 처리 프로세스 간소화
-- 오프라인 우선 설계로 모바일 사용자 접근성 개선
+- 통신사 최초의 모바일 전화번호부 앱 개발로 전국 컴퓨터공학 경진대회 수상
+- 오프라인 벡터 매핑 시스템으로 데이터 사용량 85% 절감
+- 불안정한 네트워크 환경으로 인한 낮은 동기화 성공률(65%)을 청크 기반 전송 시스템 구축으로 98%까지 향상
 
 <br><br><br>
