@@ -283,7 +283,7 @@ body {
 
 ## 🌟 수행 내용 및 성과
 
-### Room 데이터베이스 기반 오프라인 데이터 관리 시스템 구현
+### Room 데이터베이스 기반 오프라인 데이터 관리 및 사용량 데이터 저장
 - **MVVM 아키텍처와 Repository 패턴 적용**
   - `ConsumptionDao`를 통한 데이터 액세스 레이어 추상화 및 비즈니스 로직 분리
   - `Coroutines`와 `suspend` 함수를 활용한 비동기 데이터베이스 작업 처리로 UI 스레드 블로킹 방지
@@ -292,7 +292,6 @@ body {
 
 - **효율적인 데이터 CRUD 작업 구현**
   - 월별 소비량 조회, 연도별 데이터 필터링, 최신 검침값 자동 연동 등 복합 쿼리 최적화
-  - `upsert` 로직(insert/update 분기 처리)으로 중복 데이터 방지 및 데이터 무결성 보장
   - 이전 달 검침값 자동 연동으로 연속성 있는 데이터 입력 환경 구현
 
 ### 가스 사용량 자동 계산 및 검증 시스템 개발
@@ -304,20 +303,18 @@ body {
 - **자동 사용량 계산 및 요금 산정**
   - `PAYMENT_COEFFICIENT` 상수(2.5)를 활용한 일관된 요금 계산 로직 구현
   - 가스 사용량(㎥)과 요금(페소) 간 실시간 변환 계산으로 즉시 결과 확인 가능
-  - HTML 포맷팅을 통한 계산 결과의 가독성 있는 표시 및 `AlertDialog`를 통한 명확한 결과 제시
+  - HTML 포맷팅을 통한 계산 결과의 표시 및 `AlertDialog`를 통한 결과 제시
 
 ### MPAndroidChart 기반 인터랙티브 데이터 시각화 구현
 - **연도별/월별 소비 패턴 분석 차트**
-  - `BarChart`를 활용한 월별 가스 소비량 시각화 및 2초 애니메이션 효과로 사용자 경험 향상
+  - `BarChart`를 활용한 월별 가스 소비량 시각화 및 애니메이션 효과로 사용자 경험 향상
   - 페소/㎥ 단위 전환 필터링 기능으로 다양한 관점의 데이터 분석 지원
-  - `ValueFormatter`를 통한 X축 월별 라벨링(스페인어) 및 동적 Y축 스케일링 구현
 
 - **반응형 차트 UI 및 사용자 인터랙션**
   - 세로/가로 모드에 따른 차트 레이아웃 자동 조정 및 라벨 밀도 최적화
   - `MonthPickerDialog`를 활용한 직관적인 연도 선택 인터페이스 구현
-  - 데이터가 없는 월의 경우 `null` 값 처리로 차트 연속성 유지
 
-### VideoView 기반 동영상 가이드 시스템 구현
+### VideoView 기반 가스 계량기 검침 방법 학습을 위한 동영상 가이드
 - **전체화면 지원 동영상 플레이어 개발**
   - `MediaController`를 커스터마이징하여 전체화면 버튼 추가 및 화면 회전 제어 구현
   - 세로/가로 모드 자동 전환 시 `SystemUI` 숨김 처리로 몰입형 시청 환경 제공
@@ -329,47 +326,27 @@ body {
   - `raw` 리소스를 활용한 오프라인 동영상 재생으로 네트워크 의존성 제거
 
 ### RecyclerView 기반 영업소 연락처 디렉터리 구현
-- **전화 및 이메일 연동 기능**
+  - 고객 지원을 위한 영업소 연락처 디렉터리 통합으로 고객 문의 처리 과정 단순화
   - `Intent.ACTION_CALL`과 `Intent.ACTION_SENDTO`를 활용한 네이티브 앱 연동
   - `CALL_PHONE` 권한 동적 요청 및 권한 거부 시 대체 다이얼 액션 제공
-  - `Paint.UNDERLINE_TEXT_FLAG`를 적용한 클릭 가능한 연락처 UI 시각화
-
-- **Data Binding 기반 동적 UI 렌더링**
   - `@BindingAdapter`를 활용한 재사용 가능한 뷰 바인딩 로직 구현
-  - 연락처 정보 유무에 따른 동적 뷰 가시성 제어(`View.VISIBLE`/`View.GONE`)
-  - 쿠바 8개 주요 영업소 정보를 하드코딩하여 오프라인 접근 보장
-
-### Navigation Component 기반 앱 구조 설계
-- **Bottom Navigation과 Fragment 기반 화면 전환**
-  - `setupWithNavController()`를 통한 자동 네비게이션 상태 관리
-  - 멀티라인 Bottom Navigation 텍스트 처리로 긴 메뉴명의 가독성 확보
-  - `onBackPressed()` 오버라이드를 통한 앱 종료 확인 다이얼로그 구현
-
-- **Toolbar 기반 일관된 액션바 설계**
-  - 각 화면별 적절한 타이틀 설정 및 `elevation` 제거로 플랫 디자인 적용
-  - History, About 기능으로의 즉시 접근을 위한 옵션 메뉴 구현
-  - 스페인어 로케일(`es_ES`) 설정으로 현지화된 사용자 인터페이스 제공
 
 ### 사용자 경험 최적화 및 접근성 향상
-- **스플래시 스크린 및 브랜딩 강화**
-  - 2초 딜레이와 전체화면 처리를 통한 브랜드 인지도 향상
-  - 가스 공사 로고와 브랜드 컬러를 활용한 일관된 시각적 아이덴티티 구축
-
-- **소셜 미디어 및 외부 링크 연동**
-  - Facebook, Instagram, Twitter, Telegram, LinkedIn 등 6개 플랫폼 연동
+  - Bottom Navigation과 Fragment 기반 화면 전환
+    - `setupWithNavController()`를 통한 자동 네비게이션 상태 관리
+    - `onBackPressed()` 오버라이드를 통한 앱 종료 확인 다이얼로그 구현
+  - Toolbar 기반 일관된 액션바 설계
+    - History, About 기능으로의 즉시 접근을 위한 옵션 메뉴 등 구현
+  - Custom Font(`segoe_ui`, `seguisb`) 적용으로 차별화된 타이포그래피 구현
+  - 가스 공사 로고와 브랜드 컬러를 활용한 스플래시 화면 구현
+  - Facebook, Instagram, Twitter, Telegram, LinkedIn 등 6개 소셜 미디어 플랫폼 연동
   - `Intent.ACTION_VIEW`를 통한 외부 브라우저 연동으로 추가 정보 접근 경로 제공
-  - Desoft 및 EnTuMovil 파트너십 로고 표시로 신뢰성 강화
 
 ### 개발 효율성 및 코드 품질 향상
 - **Data Binding과 ViewBinding 적용**
   - XML 레이아웃과 Kotlin 코드 간 타입 안전성 확보 및 `findViewById()` 제거
   - `@{viewModel.property}` 문법을 통한 선언적 UI 업데이트 구현
   - `executePendingBindings()`를 활용한 즉시 바인딩 처리로 UI 깜빡임 방지
-
-- **Material Design 적용 및 일관된 스타일링**
-  - `TextInputLayout`, `MaterialButton` 등 Material Components 적용
-  - 프라이머리 컬러 기반 일관된 색상 체계 구축 및 다크 그레이 계열 보조 색상 활용
-  - Custom Font(`segoe_ui`, `seguisb`) 적용으로 차별화된 타이포그래피 구현
 
 ### 성과 및 개선 효과
 - **업무 처리 시간 70% 단축**: 수기 계산에서 자동 계산으로 전환하여 가스 요금 산정 시간 대폭 감소
