@@ -288,11 +288,23 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 <!--ACME-->
 <a href="acme/" style="text-decoration: none; color: inherit;">
 <div>
- <img src="../images/acme/preview2.png" alt="ACME - AS 관리 안드로이드 앱" class="project-preview" />
+ <img src="../images/acme/preview.png" alt="ACME - AS 관리 안드로이드 앱" class="project-preview" />
  <p><strong>ACME<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
    <span style="font-size: 0.9em;">서비스 티켓 관리 솔루션</span><br/> 
    <code>Android</code> <code>Kotlin</code> <code>Room</code> <code>Google Maps API</code> <code>Calendar Provider API</code> <code>MVVM</code> <code>Coroutines</code><br/>
    <small>2021.05 ~ 2021.06</small>
+ </p>
+</div>
+</a>
+
+<!--Yellow Pages-->
+<a href="yellow-pages/" style="text-decoration: none; color: inherit;">
+<div>
+ <img src="../images/yellow_pages/preview.png" alt="Yellow Pages - 쿠바 전화번호부 앱" class="project-preview" />
+ <p><strong>Yellow Pages<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
+   <span style="font-size: 0.9em;">쿠바 전화번호부 앱</span><br/> 
+   <code>Android</code> <code>Java</code> <code>VTM Maps</code> <code>SQLite</code> <code>WebView</code> <code>JUnit</code> <code>Apache HTTP</code><br/>
+   <small>2019.04 ~ 2020.05</small>
  </p>
 </div>
 </a>
