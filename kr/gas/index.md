@@ -210,7 +210,9 @@ body {
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&fontSize=45&animation=fadeIn&fontAlignY=38&desc=&descAlignY=51&descAlign=62" alt="Header" style="display: block; width: 100%; height: auto; margin: 0; padding: 0; border-radius: 8px;" />
 
-<img src="../../images/placefinder/app_logo.png" alt="Project Icon" style="position: absolute; left: 40px; bottom: -10px; width: 80px; height: 80px; border-radius: 20px; object-fit: cover;" />
+<div style="position:absolute;left:40px;bottom:-10px;width:80px;height:80px;background:#fafafa;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,0.15);">
+<img src="../../images/gas/app_icon.png" alt="Project Icon" style="max-width:90%;max-height:90%;object-fit:contain;" />
+</div>
 
 </div>
 
@@ -222,8 +224,8 @@ body {
 **📱 플랫폼:** Android 네이티브 앱  
 **🏢 회사명:** Desoft (쿠바 국영 소프트웨어 개발사)  
 **👥 개발 인원:** 1명  
-**💼 역할:** 전체 안드로이드 앱 개발 및 UI/UX 설계 담당  
-**🛠️ 사용 기술:** `Android` `Kotlin` `Coroutines` `MVVM` `Room` `Navigation` `MPAndroidChart` `Material Design` `Data Binding` `VideoView` `Jetpack`  
+**💼 역할:** 전체 안드로이드 앱 개발 담당  
+**🛠️ 사용 기술:** `Android` `Kotlin` `Coroutines` `MVVM` `Room` `VideoView` `Jetpack` `Material Design` `Data Binding` `Navigation` `MPAndroidChart`  
 **🔗 GitHub:** [daehan-lim/gas-consumption-manager](https://github.com/daehan-lim/gas-consumption-manager)
 
 ## 📖 프로젝트 배경
