@@ -228,6 +228,16 @@ body {
 **🛠️ 사용 기술:** `Android` `Kotlin` `Coroutines` `MVVM` `Room` `VideoView` `Jetpack` `Material Design` `Data Binding` `Navigation` `MPAndroidChart`  
 **🔗 GitHub:** [daehan-lim/gas-consumption-manager](https://github.com/daehan-lim/gas-consumption-manager)
 
+<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
+  <img src="../../images/gas/main.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager main screen" />
+  <img src="../../images/gas/calendar.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager calendar screen" />
+  <img src="../../images/gas/chart.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager chart screen" />
+  <img src="../../images/gas/filter.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager filter screen" />
+  <img src="../../images/gas/offices.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager offices screen" />
+  <img src="../../images/gas/video.png" width="240" alt="Gas consumption manager video screen" />
+</div>
+<span style="display: block; height: 11px;"></span>
+
 ## 📖 프로젝트 배경
 
 쿠바 국영 가스 공사에서 기존의 수기식 가스 사용량 기록 및 계산 프로세스로 인한 업무 효율성 저하와 사용자 불편을 해결하기 위해 모바일 자동화 솔루션의 필요성이 대두되었습니다. 기존 시스템은 가스 계량기 검침부터 요금 계산까지 모든 과정이 수동으로 이루어져 시간이 많이 소요되고 계산 오류가 발생할 가능성이 높았습니다. 또한 가스 계량기 검침 방법에 대한 교육 자료와 고객 지원 체계가 체계적으로 구축되지 않아 사용자들이 어려움을 겪고 있었습니다. 이에 따라 사용량 자동 계산, 데이터 시각화, 오프라인 우선 설계를 통한 종합적인 가스 소비 관리 앱 개발 프로젝트를 기획하게 되었습니다.

@@ -268,17 +268,13 @@ Flutter 크로스플랫폼 앱 개발자로서 4인 팀을 리드하며 CI/CD �
 </a>
 
 <!--가스 소비 관리 앱-->
-<a href="https://github.com/daehan-lim/gas-usage-tracker" style="text-decoration: none; color: inherit;">
+<a href="gas/" style="text-decoration: none; color: inherit;">
 <div>
-  <img src="../images/gas/preview2.png" alt="Catcher Project" class="project-preview" />
-  <p>
-    <strong>
-      가스 소비 관리 앱
-      <span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span>
-    </strong><br/>
+  <img src="../images/gas/preview2.png" alt="가스 소비 관리 앱" class="project-preview" />
+  <p><strong>가스 소비 관리 앱<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">공공 유틸리티 추적 시스템</span><br/>
-    <code>Alamofire</code> <code>CoreML</code> <code>Combine</code> <code>Firebase</code> <code>SnapKit</code><br/>
-    <small>23.10.10 - 23.11.17 (6주)</small>
+    <code>Android</code> <code>Kotlin</code> <code>Jetpack</code> <code>Room</code> <code>MVVM</code> <code>Coroutines</code> <code>VideoView</code><br/>
+    <small>2021.02.20 ~ 2021.03.18 (1개월)</small>
   </p>
 </div>
 </a>
