@@ -2,23 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 /* Navigation Menu Styles */
 #nav-menu {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-background-color: #3464e1; /* Navbar color */
-color: white;
-padding: 15px 0; /* Navbar height */
-z-index: 1000;
-display: flex;
-justify-content: space-between; /* Space between items */
-align-items: center; /* Vertically align items */
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #3464e1; /* Navbar color */
+  color: white;
+  padding: 15px 0; /* Navbar height */
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Vertically align items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 code {
-  color: #EB5757 !important;                 /* strong red text */
+  background: #f5f5f5;
+  color: #3464e1;
   border-radius: 4px;                        /* rounded corners */
   padding: 0.2em 0.4em;                      /* small breathing space */
 }
@@ -41,41 +42,41 @@ font-size: 17px;
 }
 
 #nav-menu a {
-color: white;
-text-decoration: none;
-margin: 0 16px;
-font-size: 16px;
-transition: color 0.3s ease;
-font-weight: 700; /* Increase from bold to 700 */
--webkit-font-smoothing: antialiased; /* Better text rendering */
--moz-osx-font-smoothing: grayscale;
+  color: white;
+  text-decoration: none;
+  margin: 0 16px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  font-weight: 700; /* Increase from bold to 700 */
+  -webkit-font-smoothing: antialiased; /* Better text rendering */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #nav-menu > div:first-child a {
-font-size: 14px;
-margin: 0 10px;
+  font-size: 14px;
+  margin: 0 10px;
 }
 
 #nav-menu a.active {
-color: #f1c40f; /* Same yellow as your hover effect */
+  color: #f1c40f; /* Same yellow as the hover effect */
 }
 
 #nav-menu a:hover {
-color: #f1c40f;
+  color: #f1c40f;
 }
 
 /* Adjust content padding for the fixed navbar */
 body {
-padding-top: 50px; /* Adjusted for taller navbar */
+  padding-top: 50px; /* Adjusted for taller navbar */
 }
 
 /* Hamburger Menu (Toggle Button) */
 #nav-menu-toggle {
-display: none;
-cursor: pointer;
-font-size: 18px;
-margin-right: 20px; /* Move to the right */
-z-index: 1100; /* Ensure toggle is above menu items */
+  display: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 20px; /* Move to the right */
+  z-index: 1100; /* Ensure toggle is above menu items */
 }
 
 /* Navigation Links */
@@ -83,6 +84,24 @@ z-index: 1100; /* Ensure toggle is above menu items */
 display: flex;
 flex-wrap: wrap;
 padding-right: 20px;
+}
+
+/* ===== Project Cards ===== */
+.project-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.project-card p {
+  margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -215,11 +234,15 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 
 ## 📱 모바일 애플리케이션
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+<div style="
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); /* WIDER MIN WIDTH (was 280px) */
+  gap: 28px; /* more breathing room */
+">
 
 <!--ShareLingo-->
 <a href="sharelingo/" style="text-decoration: none; color: inherit;">
-<div>
+<div class="project-card">
   <img src="../images/sharelingo/preview.png" alt="ShareLingo - 언어교류 SNS 앱" class="project-preview" />
   <p><strong>ShareLingo<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">언어교류 SNS 앱</span><br/> 
@@ -231,7 +254,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 
 <!--Cooki-->
 <a href="cooki/" style="text-decoration: none; color: inherit;">
-<div>
+<div class="project-card">
   <img src="../images/cooki/preview.png" alt="Cooki - AI 레시피 커뮤니티 앱" class="project-preview" />
   <p><strong>Cooki<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">AI 레시피 커뮤니티 앱</span><br/> 
@@ -243,7 +266,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 
 <!--Cubadebate-->
 <a href="cubadebate/" style="text-decoration: none; color: inherit;">
-<div>
+<div class="project-card">
   <img src="../images/cubadebate/preview.png" alt="Cubadebate 뉴스 앱" class="project-preview" />
   <p><strong>Cubadebate<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">맞춤형 뉴스 플랫폼</span><br/>
@@ -255,7 +278,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 
 <!--FilmMind-->
 <a href="filmmind/" style="text-decoration: none; color: inherit;">
-<div>
+<div class="project-card">
   <img src="../images/filmmind/preview.png" alt="FilmMind - 영화 정보 앱" class="project-preview" />
   <p><strong>FilmMind<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">영화 정보 앱</span><br/> 
@@ -267,7 +290,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 
 <!--어디든GO-->
 <a href="placefinder/" style="text-decoration: none; color: inherit;">
-<div>
+<div class="project-card">
   <img src="../images/placefinder/preview.png" alt="어디든GO - 지역 검색 앱" class="project-preview" />
   <p><strong>어디든GO<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">지역 검색 앱</span><br/> 
@@ -279,7 +302,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 
 <!--가스 소비 관리 앱-->
 <a href="gas/" style="text-decoration: none; color: inherit;">
-<div>
+<div class="project-card">
   <img src="../images/gas/preview2.png" alt="가스 소비 관리 앱" class="project-preview" />
   <p><strong>가스 소비 관리 앱<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">공공 유틸리티 추적 시스템</span><br/>
@@ -291,7 +314,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 
 <!--ACME-->
 <a href="acme/" style="text-decoration: none; color: inherit;">
-<div>
+<div class="project-card">
  <img src="../images/acme/preview.png" alt="ACME - AS 관리 안드로이드 앱" class="project-preview" />
  <p><strong>ACME<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
    <span style="font-size: 0.9em;">서비스 티켓 관리 솔루션</span><br/> 
@@ -303,7 +326,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 
 <!--Yellow Pages-->
 <a href="yellow_pages/" style="text-decoration: none; color: inherit;">
-<div>
+<div class="project-card">
  <img src="../images/yellow_pages/preview.png" alt="Yellow Pages - 쿠바 전화번호부 앱" class="project-preview" />
  <p><strong>Yellow Pages<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
    <span style="font-size: 0.9em;">쿠바 전화번호부 앱</span><br/> 
@@ -315,7 +338,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 
 <!--정부 포털 앱-->
 <a href="portal/" style="text-decoration: none; color: inherit;">
-<div>
+<div class="project-card">
  <img src="../images/portal/preview.png" alt="정부 포털 앱" class="project-preview" />
  <p><strong>정부 포털 앱<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
    <span style="font-size: 0.9em;">공식 정부 대표 플랫폼 애플리케이션</span><br/> 
