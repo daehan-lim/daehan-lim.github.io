@@ -18,32 +18,46 @@
 }
 
 .intro-wrapper {
-  background: linear-gradient(135deg, rgba(52, 100, 225, 0.05) 0%, rgba(118, 75, 162, 0.08) 100%);
+  background: #f5f7fd;
   border-radius: 16px;
-  padding: 25px 30px;
-  margin: 20px 0 30px 0;
-  box-shadow: 0 10px 40px rgba(105, 81, 175, 0.15);
-  border: 1px solid rgba(105, 81, 175, 0.15);
+  padding: 13px 30px 13px 35px;
+  margin: 30px 0;
   position: relative;
+  box-shadow: 0 8px 40px rgba(105, 81, 175, 0.12);
+  transition: all 0.3s ease;
+  border-left: 5px solid transparent;
+  background-clip: padding-box;
 }
 
 .intro-wrapper::before {
   content: '';
   position: absolute;
-  top: 0;
   left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(135deg, #3464e1 0%, #764ba2 100%);
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background: linear-gradient(180deg, #3464e1 0%, #764ba2 50%, #f093fb 100%);
+  border-radius: 16px 0 0 16px;
+}
+
+.intro-wrapper:hover {
+  transform: translateX(8px);
+  box-shadow: 0 12px 50px rgba(105, 81, 175, 0.18);
 }
 
 .intro-wrapper .ko {
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
   line-height: 1.7;
+  color: #4a5568;
+  transition: color 0.3s ease;
 }
 
 .intro-wrapper .ko:last-child {
   margin-bottom: 0;
+}
+
+.intro-wrapper:hover .ko {
+  color: #2d3748;
 }
 
 h1, h2 {
