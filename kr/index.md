@@ -17,33 +17,6 @@
   font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-.intro-wrapper {
-  padding: 0 0 0 25px;
-  margin: 30px 0;
-  position: relative;
-  border-left: 6px solid transparent;
-}
-
-.intro-wrapper::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 6px;
-  background: linear-gradient(180deg, #3464e1 0%, #764ba2 50%, #f093fb 100%);
-  border-radius: 3px;
-}
-
-.intro-wrapper .ko {
-  margin: 0 0 10px 0;
-  font-size: 16px;
-}
-
-.intro-wrapper .ko:last-child {
-  margin-bottom: 0;
-}
-
 h1, h2 {
   color: #6951af !important;
 }
@@ -276,22 +249,11 @@ body {
 </div>
 
 ## 👋 소개
+Flutter 크로스플랫폼 앱 개발자로서 4명으로 구성된 팀을 리드하며 CI/CD 파이프라인 구축과 팀 코드 리뷰 프로세스 도입을 통해 수동 검수 시간 50% 단축을 이끌었습니다. 네이티브 Android 개발 배경을 바탕으로 플랫폼별 최적화에 강점을 보유하고 있습니다.  
 
-<div class="intro-wrapper">
+AI 석사 학위와 Gemini API 연동 경험을 통해 모바일 앱에 생성형 AI 기능을 효과적으로 통합할 수 있고, 레시피 생성 시스템에서 프롬프트 엔지니어링과 검증 모델 도입을 통해 적합하지 않은 레시피 생성률을 85%에서 12%로 낮춘 경험이 있습니다.  
 
-<p class="ko">
-Flutter 크로스플랫폼 앱 개발자로서 4명으로 구성된 팀을 리드하며 CI/CD 파이프라인 구축과 팀 코드 리뷰 프로세스 도입을 통해 수동 검수 시간 50% 단축을 이끌었습니다. 네이티브 Android 개발 배경을 바탕으로 플랫폼별 최적화에 강점을 보유하고 있습니다.
-</p>
-
-<p class="ko">
-AI 석사 학위와 Gemini API 연동 경험을 통해 모바일 앱에 생성형 AI 기능을 효과적으로 통합할 수 있고, 레시피 생성 시스템에서 프롬프트 엔지니어링과 검증 모델 도입을 통해 적합하지 않은 레시피 생성률을 85%에서 12%로 낮춘 경험이 있습니다.
-</p>
-
-<p class="ko">
 Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양한 모바일 기능을 구현하여 Play Store와 App Store에 성공적으로 앱을 배포했으며, 성능 최적화를 통해 AI 처리 시간 40% 단축과 API 비용 35% 절감을 달성했습니다.
-</p>
-
-</div>
 
 ## 📱 모바일 애플리케이션
 
