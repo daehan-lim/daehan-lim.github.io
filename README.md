@@ -25,9 +25,9 @@
 }
 
 #nav-menu > div:first-child a {
-  font-size: 14px;
-  margin: 0 10px;
-  padding: 6px 12px;
+  font-size: 13px;
+  margin: 0 7px;
+  padding: 5px 11px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;

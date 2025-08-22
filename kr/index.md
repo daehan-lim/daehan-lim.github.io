@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #3464e1; /* Navbar color */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Navbar color */
   color: white;
   padding: 15px 0; /* Navbar height */
   z-index: 1000;
@@ -53,9 +53,9 @@ code {
 }
 
 #nav-menu > div:first-child a {
-  font-size: 14px;
-  margin: 0 10px;
-  padding: 6px 12px;
+  font-size: 13px;
+  margin: 0 7px;
+  padding: 5px 11px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
