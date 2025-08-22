@@ -15,8 +15,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   color: #6951af !important;
+}
+
+h1 {
+  font-size: 36px !important;
 }
 
 #nav-menu a {
