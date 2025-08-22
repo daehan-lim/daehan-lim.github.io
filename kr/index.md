@@ -17,6 +17,10 @@
   font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #6951af !important;
+}
+
 code {
   background: #f5f5f5;
   color: #3464e1;
@@ -226,7 +230,7 @@ body {
 
 # 임대한
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%230077B5&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Daehan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23764ba2&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Daehan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
 
 <div align="center"> 
   <a href="https://linkedin.com/in/penjan-a-eng-lim">

@@ -15,6 +15,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #6951af !important;
+}
+
 #nav-menu a {
   color: white;
   text-decoration: none;
@@ -200,7 +204,7 @@ body {
 **Previous name:** Penjan Antonio Eng Lim
 <div style="height: 14px;"></div>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%230077B5&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Daehan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23764ba2&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Daehan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
 
 <div align="center"> 
   <a href="https://linkedin.com/in/penjan-a-eng-lim">
