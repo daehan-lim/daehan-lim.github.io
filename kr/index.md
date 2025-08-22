@@ -18,15 +18,10 @@
 }
 
 .intro-wrapper {
-  background: #f5f7fd;
-  border-radius: 16px;
-  padding: 10px 25px 10px 25px;
+  padding: 0 0 0 25px;
   margin: 30px 0;
   position: relative;
-  box-shadow: 0 8px 40px rgba(105, 81, 175, 0.12);
-  transition: all 0.3s ease;
-  /*border-left: 5px solid transparent;*/
-  background-clip: padding-box;
+  border-left: 6px solid transparent;
 }
 
 .intro-wrapper::before {
@@ -37,27 +32,16 @@
   bottom: 0;
   width: 6px;
   background: linear-gradient(180deg, #3464e1 0%, #764ba2 50%, #f093fb 100%);
-  border-radius: 12px 0 0 16px;
-}
-
-.intro-wrapper:hover {
-  transform: translateX(8px);
-  box-shadow: 0 12px 50px rgba(105, 81, 175, 0.18);
+  border-radius: 3px;
 }
 
 .intro-wrapper .ko {
   margin: 0 0 10px 0;
-  line-height: 1.7;
-  color: #4a5568;
-  transition: color 0.3s ease;
+  font-size: 16px;
 }
 
 .intro-wrapper .ko:last-child {
   margin-bottom: 0;
-}
-
-.intro-wrapper:hover .ko {
-  color: #2d3748;
 }
 
 h1, h2 {
