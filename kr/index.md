@@ -33,12 +33,12 @@ code {
 }
 
 .ko {
-font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-font-weight: 400;
-word-break: keep-all;
-letter-spacing: -0.3px;
-line-height: 1.8; 
-font-size: 17px;
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  word-break: keep-all;
+  letter-spacing: -0.3px;
+  line-height: 1.8; 
+  font-size: 17px;
 }
 
 #nav-menu a {
@@ -88,36 +88,36 @@ body {
 
 /* Navigation Links */
 #nav-links {
-display: flex;
-flex-wrap: wrap;
-padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 20px;
 }
 
 @media (max-width: 768px) {
-#nav-links {
-  display: none; /* Hide links initially on mobile */
-  flex-direction: column;
-  align-items: center;
-  background-color: #3464e1; /* Match navbar background */
-  width: 100%;
-  position: absolute;
-  top: 60px; /* Space below navbar */
-  left: 0;
-  padding: 15px 0; /* Add spacing around links */
-  z-index: 1000; /* Ensure it doesn't overlap the toggle button */
-}
-
-#nav-links.active {
-  display: flex; /* Show links when active */
-}
-
-#nav-links a {
-  margin: 15px 0; /* Added vertical spacing */
-}
-
-#nav-menu-toggle {
-  display: block; /* Show hamburger menu */
-}
+  #nav-links {
+    display: none; /* Hide links initially on mobile */
+    flex-direction: column;
+    align-items: center;
+    background-color: #3464e1; /* Match navbar background */
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Space below navbar */
+    left: 0;
+    padding: 15px 0; /* Add spacing around links */
+    z-index: 1000; /* Ensure it doesn't overlap the toggle button */
+  }
+  
+  #nav-links.active {
+    display: flex; /* Show links when active */
+  }
+  
+  #nav-links a {
+    margin: 15px 0; /* Added vertical spacing */
+  }
+  
+  #nav-menu-toggle {
+    display: block; /* Show hamburger menu */
+  }
 }
 </style>
 
@@ -206,11 +206,13 @@ padding-right: 20px;
       if (enButton) enButton.classList.remove('active');
       if (krButton) krButton.classList.remove('active');
       
-      // Add active class based on current path
-      if (currentPath === '/' || currentPath === '/index.html' || currentPath.endsWith('/')) {
-        if (enButton) enButton.classList.add('active');
-      } else if (currentPath.includes('/kr')) {
+      // Check for KR pages first (more specific)
+      if (currentPath.includes('/kr')) {
         if (krButton) krButton.classList.add('active');
+      } 
+      // Then check for EN pages (root, index, etc.)
+      else if (currentPath === '/' || currentPath === '/index.html' || currentPath === '') {
+        if (enButton) enButton.classList.add('active');
       }
     }
 

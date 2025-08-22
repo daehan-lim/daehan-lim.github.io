@@ -1,89 +1,101 @@
 <style>
-  /* Navigation Menu Styles */
-  #nav-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #3464e1; /* Navbar color */
-    color: white;
-    padding: 15px 0; /* Navbar height */
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Vertically align items */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+/* Navigation Menu Styles */
+#nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #3464e1; /* Navbar color */
+  color: white;
+  padding: 15px 0; /* Navbar height */
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Vertically align items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-  #nav-menu a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 14px;
-    transition: color 0.3s ease;
-  }
+#nav-menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
 
-  #nav-menu > div:first-child a { 
-      margin: 0 10px;
-  }
+#nav-menu > div:first-child a {
+  font-size: 14px;
+  margin: 0 10px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
 
-  #nav-menu a:hover {
-    color: #f1c40f;
-  }
+#nav-menu > div:first-child a.active {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  transform: translateY(-1px);
+}
 
-  /* Adjust content padding for the fixed navbar */
-  body {
-    padding-top: 75px; /* Adjusted for taller navbar */
-  }
+#nav-menu > div:first-child a:hover {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
 
-  /* Hamburger Menu (Toggle Button) */
-  #nav-menu-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 18px;
-    margin-right: 20px; /* Move to the right */
-    z-index: 1100; /* Ensure toggle is above menu items */
-  }
+/* Adjust content padding for the fixed navbar */
+body {
+  padding-top: 75px; /* Adjusted for taller navbar */
+}
 
-  /* Navigation Links */
+/* Hamburger Menu (Toggle Button) */
+#nav-menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 20px; /* Move to the right */
+  z-index: 1100; /* Ensure toggle is above menu items */
+}
+
+/* Navigation Links */
+#nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
   #nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 20px;
+    display: none; /* Hide links initially on mobile */
+    flex-direction: column;
+    align-items: center;
+    background-color: #21427D; /* Match navbar background */
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Space below navbar */
+    left: 0;
+    padding: 15px 0; /* Add spacing around links */
+    z-index: 1000; /* Ensure it doesn't overlap the toggle button */
   }
 
-  @media (max-width: 768px) {
-    #nav-links {
-      display: none; /* Hide links initially on mobile */
-      flex-direction: column;
-      align-items: center;
-      background-color: #21427D; /* Match navbar background */
-      width: 100%;
-      position: absolute;
-      top: 60px; /* Space below navbar */
-      left: 0;
-      padding: 15px 0; /* Add spacing around links */
-      z-index: 1000; /* Ensure it doesn't overlap the toggle button */
-    }
-
-    #nav-links.active {
-      display: flex; /* Show links when active */
-    }
-
-    #nav-links a {
-      margin: 15px 0; /* Added vertical spacing */
-    }
-
-    #nav-menu-toggle {
-      display: block; /* Show hamburger menu */
-    }
+  #nav-links.active {
+    display: flex; /* Show links when active */
   }
+  
+  #nav-links a {
+    margin: 15px 0; /* Added vertical spacing */
+  }
+  
+  #nav-menu-toggle {
+    display: block; /* Show hamburger menu */
+  }
+}
 </style>
 
 <div id="nav-menu">
   <div style="margin-left: 20px;">
-    <a href="/" class="active">EN</a>
+    <a href="/">EN</a>
     <a href="/kr">KR</a>
   </div>
 
@@ -155,6 +167,32 @@
         adjustScroll(e, this.getAttribute('href'));
       });
     });
+
+    // Fix EN/KR active states based on current page
+    function updateLanguageButtons() {
+      const currentPath = window.location.pathname;
+      const enButton = document.querySelector('a[href="/"]');
+      const krButton = document.querySelector('a[href="/kr"]');
+      
+      // Remove active class from both buttons first
+      if (enButton) enButton.classList.remove('active');
+      if (krButton) krButton.classList.remove('active');
+      
+      // Check for KR pages first (more specific)
+      if (currentPath.includes('/kr')) {
+        if (krButton) krButton.classList.add('active');
+      } 
+      // Then check for EN pages (root, index, etc.)
+      else if (currentPath === '/' || currentPath === '/index.html' || currentPath === '') {
+        if (enButton) enButton.classList.add('active');
+      }
+    }
+
+    // Update buttons on page load
+    updateLanguageButtons();
+
+    // Update buttons when navigation occurs (for SPAs)
+    window.addEventListener('popstate', updateLanguageButtons);
   });
 </script>
 
