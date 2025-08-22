@@ -15,6 +15,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
+h1, h2 {
+  color: #6951af !important;
+}
+
   #nav-menu a {
     color: white;
     text-decoration: none;
