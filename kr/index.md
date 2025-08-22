@@ -236,8 +236,8 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 
 <div style="
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); /* WIDER MIN WIDTH (was 280px) */
-  gap: 28px; /* more breathing room */
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); /* WIDER MIN WIDTH (was 280px) */
+  gap: 24px; /* more breathing room */
 ">
 
 <!--ShareLingo-->
