@@ -19,17 +19,21 @@ font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans
 }
 
 code {
-  color: #EB5757 !important;
-  background: rgba(235, 87, 87, 0.1);
-  border-radius: 4px;
-  padding: 0.2em 0.4em;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  color: #495057 !important;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 0.3em 0.6em;
+  font-size: 0.8em;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .project-preview {
   width: 100%;
   aspect-ratio: 1160 / 663;
-  border-radius: 8px;
-  border: 1px solid #ddd;
+  border-radius: 8px 8px 0 0;
+  border: none;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -102,42 +106,54 @@ flex-wrap: wrap;
 padding-right: 20px;
 }
 
-/* Project Cards - Subtle improvements */
+/* Project Cards - Enhanced but not flashy */
 .project-grid-item {
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   overflow: hidden;
+  position: relative;
+}
+
+.project-grid-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-grid-item:hover::before {
+  opacity: 1;
 }
 
 .project-grid-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
 .project-grid-item p {
-  padding: 15px;
+  padding: 18px;
   margin: 0;
 }
 
-/* Tech stack styling - more subtle */
-code {
-  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-  color: #1976d2 !important;
-  border-radius: 4px;
-  padding: 0.2em 0.4em;
-  font-size: 0.85em;
-  font-weight: 500;
+.project-grid-item strong {
+  color: #2d3748;
+  font-size: 1.1rem;
 }
 
 /* Typography improvements */
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   font-weight: 700;
   margin: 40px 0 20px 0;
-  text-align: center;
+  text-align: left;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -151,11 +167,22 @@ h2 {
   color: #2d3748;
 }
 
-/* Subtle section styling */
+/* Project date styling */
+small {
+  background: rgba(52, 100, 225, 0.1);
+  color: #3464e1;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid rgba(52, 100, 225, 0.2);
+}
+
+/* Section styling with reduced padding */
 .intro-section {
   background: #ffffff;
   border-radius: 12px;
-  padding: 30px;
+  padding: 20px 30px;
   margin: 30px 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   border-left: 4px solid;
@@ -165,12 +192,31 @@ h2 {
 .contact-section {
   background: #ffffff;
   border-radius: 12px;
-  padding: 30px;
+  padding: 20px 30px;
   margin: 30px 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   text-align: center;
   border-left: 4px solid;
   border-image: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) 1;
+}
+
+/* Modern enhancements */
+.social-links a img,
+.contact-links a img {
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.social-links a:hover img,
+.contact-links a:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Improve typing SVG container */
+.typing-container img {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(102, 126, 234, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -201,6 +247,16 @@ h2 {
 
 .project-grid-item {
   margin: 20px 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.intro-section,
+.contact-section {
+  padding: 15px 20px;
 }
 }
 </style>
@@ -325,18 +381,22 @@ h2 {
 
 # 임대한
 
+<div class="typing-container">
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23667eea&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Daehan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
+</div>
 
 <div align="center"> 
-  <a href="https://linkedin.com/in/penjan-a-eng-lim">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
-  </a>
-  <a href="mailto:penjan.eng@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
-  </a>
-  <a href="https://github.com/daehan-lim">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
-  </a>
+  <div class="social-links">
+    <a href="https://linkedin.com/in/penjan-a-eng-lim">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+    </a>
+    <a href="mailto:penjan.eng@gmail.com">
+      <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
+    </a>
+    <a href="https://github.com/daehan-lim">
+      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
+    </a>
+  </div>
 </div>
 
 ## 👋 소개
@@ -415,15 +475,17 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 </p>
 
 <div align="center"> 
-  <a href="https://linkedin.com/in/penjan-a-eng-lim">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
-  </a>
-  <a href="mailto:penjan.eng@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
-  </a>
-  <a href="https://github.com/daehan-lim">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
-  </a>
+  <div class="contact-links">
+    <a href="https://linkedin.com/in/penjan-a-eng-lim">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+    </a>
+    <a href="mailto:penjan.eng@gmail.com">
+      <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
+    </a>
+    <a href="https://github.com/daehan-lim">
+      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
+    </a>
+  </div>
 </div>
 <br>
 
@@ -437,16 +499,36 @@ document.addEventListener("DOMContentLoaded", function() {
       div.style.cssText = `
         background: #ffffff;
         border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         transition: all 0.3s ease;
-        border: 1px solid rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.06);
         overflow: hidden;
+        position: relative;
         padding: 0;
       `;
       
+      // Add gradient top border
+      const gradientBorder = document.createElement('div');
+      gradientBorder.style.cssText = `
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      `;
+      div.appendChild(gradientBorder);
+      
       const p = div.querySelector('p');
       if (p) {
-        p.style.cssText = 'padding: 15px; margin: 0;';
+        p.style.cssText = 'padding: 18px; margin: 0;';
+      }
+
+      const strong = div.querySelector('strong');
+      if (strong) {
+        strong.style.cssText = 'color: #2d3748; font-size: 1.1rem;';
       }
     });
 
@@ -455,17 +537,25 @@ document.addEventListener("DOMContentLoaded", function() {
     projectLinks.forEach(link => {
       link.addEventListener('mouseenter', () => {
         const div = link.querySelector('div');
+        const gradientBorder = div.querySelector('div:last-child');
         if (div) {
-          div.style.transform = 'translateY(-4px)';
-          div.style.boxShadow = '0 8px 30px rgba(0, 0, 0, 0.12)';
+          div.style.transform = 'translateY(-3px)';
+          div.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.12)';
+          if (gradientBorder) {
+            gradientBorder.style.opacity = '1';
+          }
         }
       });
       
       link.addEventListener('mouseleave', () => {
         const div = link.querySelector('div');
+        const gradientBorder = div.querySelector('div:last-child');
         if (div) {
           div.style.transform = 'translateY(0)';
-          div.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.08)';
+          div.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.08)';
+          if (gradientBorder) {
+            gradientBorder.style.opacity = '0';
+          }
         }
       });
     });
