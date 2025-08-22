@@ -55,14 +55,21 @@ font-size: 17px;
 #nav-menu > div:first-child a {
   font-size: 14px;
   margin: 0 10px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
 }
 
-#nav-menu a.active {
-  color: #f1c40f; /* Same yellow as the hover effect */
+#nav-menu > div:first-child a.active {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  transform: translateY(-1px);
 }
 
-#nav-menu a:hover {
-  color: #f1c40f;
+#nav-menu > div:first-child a:hover {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
 }
 
 /* Adjust content padding for the fixed navbar */
@@ -117,7 +124,7 @@ padding-right: 20px;
 <div id="nav-menu">
   <div style="margin-left: 20px;">
     <a href="/">EN</a>
-    <a href="/kr" class="active">KR</a>
+    <a href="/kr">KR</a>
   </div>
 
 <span id="nav-menu-toggle">☰</span>
@@ -188,6 +195,30 @@ padding-right: 20px;
         adjustScroll(e, this.getAttribute('href'));
       });
     });
+
+    // Fix EN/KR active states based on current page
+    function updateLanguageButtons() {
+      const currentPath = window.location.pathname;
+      const enButton = document.querySelector('a[href="/"]');
+      const krButton = document.querySelector('a[href="/kr"]');
+      
+      // Remove active class from both buttons first
+      if (enButton) enButton.classList.remove('active');
+      if (krButton) krButton.classList.remove('active');
+      
+      // Add active class based on current path
+      if (currentPath === '/' || currentPath === '/index.html' || currentPath.endsWith('/')) {
+        if (enButton) enButton.classList.add('active');
+      } else if (currentPath.includes('/kr')) {
+        if (krButton) krButton.classList.add('active');
+      }
+    }
+
+    // Update buttons on page load
+    updateLanguageButtons();
+
+    // Update buttons when navigation occurs (for SPAs)
+    window.addEventListener('popstate', updateLanguageButtons);
   });
 </script>
 
