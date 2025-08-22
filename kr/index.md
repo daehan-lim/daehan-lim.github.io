@@ -6,9 +6,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Navbar color */
+  background: linear-gradient(135deg, #3464e1 0%, #764ba2 100%); /* Navbar color */
   color: white;
-  padding: 15px 0; /* Navbar height */
+  padding: 19px 0; /* Navbar height */
   z-index: 1000;
   display: flex;
   justify-content: space-between; /* Space between items */
