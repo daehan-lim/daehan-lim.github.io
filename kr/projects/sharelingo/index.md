@@ -214,7 +214,7 @@ body {
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&fontSize=45&animation=fadeIn&fontAlignY=38&desc=&descAlignY=51&descAlign=62" alt="Header" style="display: block; width: 100%; height: auto; margin: 0; padding: 0; border-radius: 8px;" />
 
-<img src="../../images/sharelingo/app_icon.png" alt="Project Icon" style="position: absolute; left: 40px; bottom: -10px; width: 80px; height: 80px; border-radius: 20px; object-fit: cover;" />
+<img src="../../../images/sharelingo/app_icon.png" alt="Project Icon" style="position: absolute; left: 40px; bottom: -10px; width: 80px; height: 80px; border-radius: 20px; object-fit: cover;" />
 
 </div>
 
@@ -231,17 +231,17 @@ body {
 **🔗 Play Store:** [ShareLingo on Play Store](https://play.google.com/store/apps/details?id=com.zerotoone.sharelingo&hl=kr)
 
 <div class="image-row">
-  <img src="../../images/sharelingo/1_login.png" alt="1 login screen" class="image-item" />
-  <img src="../../images/sharelingo/7_my_profile.png" alt="7 my profile screen" class="image-item" />
-  <img src="../../images/sharelingo/8_my_profile_posts.png" alt="8 my profile posts screen" class="image-item" />
-  <img src="../../images/sharelingo/9_edit_profile.png" alt="9 edit profile screen" class="image-item" />
-  <img src="../../images/sharelingo/2_onboarding_date.png" alt="2 onboarding date screen" class="image-item" />
-  <img src="../../images/sharelingo/3_onboarding_name.png" alt="3 onboarding name screen" class="image-item" />
-  <img src="../../images/sharelingo/4_onboarding_language.png" alt="4 onboarding language screen" class="image-item" />
-  <img src="../../images/sharelingo/5_onboarding_language_selection.png" alt="5 onboarding language selection screen" class="image-item" />
-  <img src="../../images/sharelingo/6_self_intro.png" alt="11 self intro screen" class="image-item" />
-  <img src="../../images/sharelingo/6_onboarding_location.png" alt="6 onboarding location screen" class="image-item" />
-  <img src="../../images/sharelingo/10_settings.png" alt="10 settings screen" class="image-item" /> 
+  <img src="../../../images/sharelingo/1_login.png" alt="1 login screen" class="image-item" />
+  <img src="../../../images/sharelingo/7_my_profile.png" alt="7 my profile screen" class="image-item" />
+  <img src="../../../images/sharelingo/8_my_profile_posts.png" alt="8 my profile posts screen" class="image-item" />
+  <img src="../../../images/sharelingo/9_edit_profile.png" alt="9 edit profile screen" class="image-item" />
+  <img src="../../../images/sharelingo/2_onboarding_date.png" alt="2 onboarding date screen" class="image-item" />
+  <img src="../../../images/sharelingo/3_onboarding_name.png" alt="3 onboarding name screen" class="image-item" />
+  <img src="../../../images/sharelingo/4_onboarding_language.png" alt="4 onboarding language screen" class="image-item" />
+  <img src="../../../images/sharelingo/5_onboarding_language_selection.png" alt="5 onboarding language selection screen" class="image-item" />
+  <img src="../../../images/sharelingo/6_self_intro.png" alt="11 self intro screen" class="image-item" />
+  <img src="../../../images/sharelingo/6_onboarding_location.png" alt="6 onboarding location screen" class="image-item" />
+  <img src="../../../images/sharelingo/10_settings.png" alt="10 settings screen" class="image-item" /> 
 </div>
 <span style="display: block; height: 11px;"></span>
 
@@ -595,7 +595,7 @@ Future<(LocationStatus, Position?)> getPosition() async {
 ## 🎞️ 시연 영상
 <div align="center"> 
 <a href="https://www.youtube.com/watch?v=z3Bbhermz1M">
-  <img src="../../images/sharelingo/video_preview.png" alt="Watch the Video" width="230" />
+  <img src="../../../images/sharelingo/video_preview.png" alt="Watch the Video" width="230" />
 </a>
 </div>
 <br>

@@ -110,8 +110,8 @@ body {
 
 <div id="nav-menu">
   <div style="margin-left: 20px;">
-    <a href="/ml_projects">EN</a>
-    <a href="/ml_projects/kr" class="active">KR</a>
+    <a href="/projects/ml_projects">EN</a>
+    <a href="/projects/ml_projects/kr" class="active">KR</a>
   </div>
 
 <span id="nav-menu-toggle">☰</span>

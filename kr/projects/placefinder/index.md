@@ -214,7 +214,7 @@ body {
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&fontSize=45&animation=fadeIn&fontAlignY=38&desc=&descAlignY=51&descAlign=62" alt="Header" style="display: block; width: 100%; height: auto; margin: 0; padding: 0; border-radius: 8px;" />
 
-<img src="../../images/placefinder/app_logo.png" alt="Project Icon" style="position: absolute; left: 40px; bottom: -10px; width: 80px; height: 80px; border-radius: 20px; object-fit: cover;" />
+<img src="../../../images/placefinder/app_logo.png" alt="Project Icon" style="position: absolute; left: 40px; bottom: -10px; width: 80px; height: 80px; border-radius: 20px; object-fit: cover;" />
 
 </div>
 
@@ -230,16 +230,16 @@ body {
 **🔗 GitHub:** [daehan-lim/flutter-place-finder](https://github.com/daehan-lim/flutter-place-finder)
 
 <div class="image-row">
-  <img src="../../images/placefinder/1_home_.png" alt="Home screen" class="image-item" />
-  <img src="../../images/placefinder/2_web_view_.png" alt="Web view screen" class="image-item" />
-  <img src="../../images/placefinder/3_naver_.png" alt="Naver screen" class="image-item" />
-  <img src="../../images/placefinder/4_no_results_.png" alt="No results screen" class="image-item" />
-  <img src="../../images/placefinder/5_offline_.png" alt="Offline screen" class="image-item" />
-  <img src="../../images/placefinder/6_apple_maps_.png" alt="Apple Maps screen" class="image-item" />
-  <img src="../../images/placefinder/7_map_selection_.png" alt="Map selection screen" class="image-item" />
-  <img src="../../images/placefinder/8_naver_map_.png" alt="Naver Map screen" class="image-item" />
-  <img src="../../images/placefinder/9_google_map_.png" alt="Google Map screen" class="image-item" />
-  <img src="../../images/placefinder/10_kakao_map_.png" alt="Kakao Map screen" class="image-item" />
+  <img src="../../../images/placefinder/1_home_.png" alt="Home screen" class="image-item" />
+  <img src="../../../images/placefinder/2_web_view_.png" alt="Web view screen" class="image-item" />
+  <img src="../../../images/placefinder/3_naver_.png" alt="Naver screen" class="image-item" />
+  <img src="../../../images/placefinder/4_no_results_.png" alt="No results screen" class="image-item" />
+  <img src="../../../images/placefinder/5_offline_.png" alt="Offline screen" class="image-item" />
+  <img src="../../../images/placefinder/6_apple_maps_.png" alt="Apple Maps screen" class="image-item" />
+  <img src="../../../images/placefinder/7_map_selection_.png" alt="Map selection screen" class="image-item" />
+  <img src="../../../images/placefinder/8_naver_map_.png" alt="Naver Map screen" class="image-item" />
+  <img src="../../../images/placefinder/9_google_map_.png" alt="Google Map screen" class="image-item" />
+  <img src="../../../images/placefinder/10_kakao_map_.png" alt="Kakao Map screen" class="image-item" />
 </div>
 <span style="display: block; height: 11px;"></span>
 
