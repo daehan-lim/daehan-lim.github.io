@@ -114,7 +114,7 @@ body {
     display: none; /* Hide links initially on mobile */
     flex-direction: column;
     align-items: center;
-    background-color: #3464e1; /* Match navbar background */
+    background: linear-gradient(135deg, #3464e1 0%, #764ba2 100%); /* Match navbar background */
     width: 100%;
     position: absolute;
     top: 60px; /* Space below navbar */
