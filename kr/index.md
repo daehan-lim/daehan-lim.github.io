@@ -286,7 +286,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 <!--Cubadebate-->
 <a href="cubadebate/" style="text-decoration: none; color: inherit;">
 <div>
-  <img src="../images/cubadebate/preview.png" alt="Cubadebate 뉴스 앱" class="project-preview" />
+  <img src="../images/cubadebate/preview2.png" alt="Cubadebate 뉴스 앱" class="project-preview" />
   <p><strong>Cubadebate<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">맞춤형 뉴스 플랫폼</span><br/>
     <code>Android</code> <code>Kotlin</code> <code>Coroutines</code> <code>MVVM</code> <code>Room</code> <code>Retrofit</code> <code>Glide</code> <code>Lottie</code> <code>ViewBinding</code><br/>
