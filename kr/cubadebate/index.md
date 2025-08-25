@@ -214,7 +214,7 @@ body {
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&fontSize=45&animation=fadeIn&fontAlignY=38&desc=&descAlignY=51&descAlign=62" alt="Header" style="display: block; width: 100%; height: auto; margin: 0; padding: 0; border-radius: 8px;" />
 
-<img src="../../../images/cubadebate/categories.png" alt="Project Icon" style="position: absolute; left: 40px; bottom: -10px; width: 80px; height: 80px; border-radius: 12px; border: 4px solid white; object-fit: cover;" />
+<img src="../../images/cubadebate/categories.png" alt="Project Icon" style="position: absolute; left: 40px; bottom: -10px; width: 80px; height: 80px; border-radius: 12px; border: 4px solid white; object-fit: cover;" />
 
 </div>
 
@@ -237,14 +237,14 @@ body {
     <img src="../images/gas/main.png" alt="Watch the Video" class="image-item" />
   </a>
   -->
-  <img src="../../../images/cubadebate/news_feed.svg" alt="Cubadebate news feed screen" class="image-item" />
-  <img src="../../../images/cubadebate/news_article.svg" alt="Cubadebate news article screen" class="image-item" />
-  <img src="../../../images/cubadebate/replies.png" alt="Cubadebate replies screen" class="image-item" />
-  <img src="../../../images/cubadebate/categories.png" alt="Cubadebate categories screen" class="image-item" />
-  <img src="../../../images/cubadebate/topics.png" alt="Cubadebate topics screen" class="image-item" />
-  <img src="../../../images/cubadebate/sms.png" alt="Cubadebate SMS screen" class="image-item" />
-  <img src="../../../images/cubadebate/search.svg" alt="Cubadebate search screen" class="image-item" />
-  <img src="../../../images/cubadebate/saved.png" alt="Cubadebate saved articles screen" class="image-item" />
+  <img src="../../images/cubadebate/news_feed.svg" alt="Cubadebate news feed screen" class="image-item" />
+  <img src="../../images/cubadebate/news_article.svg" alt="Cubadebate news article screen" class="image-item" />
+  <img src="../../images/cubadebate/replies.png" alt="Cubadebate replies screen" class="image-item" />
+  <img src="../../images/cubadebate/categories.png" alt="Cubadebate categories screen" class="image-item" />
+  <img src="../../images/cubadebate/topics.png" alt="Cubadebate topics screen" class="image-item" />
+  <img src="../../images/cubadebate/sms.png" alt="Cubadebate SMS screen" class="image-item" />
+  <img src="../../images/cubadebate/search.svg" alt="Cubadebate search screen" class="image-item" />
+  <img src="../../images/cubadebate/saved.png" alt="Cubadebate saved articles screen" class="image-item" />
 </div>
 <span style="display: block; height: 11px;"></span>
 
@@ -447,7 +447,7 @@ class PostRepository(private val database: CubadebateDatabase) {
 ## 🎞️ 시연 영상
 <div align="center"> 
 <a href="https://www.youtube.com/watch?v=4SEpMDPFkHw">
-  <img src="../../../images/cubadebate/video_preview.png" alt="Watch the Video" width="230" />
+  <img src="../../images/cubadebate/video_preview.png" alt="Watch the Video" width="230" />
 </a>
 </div>
 <br>
