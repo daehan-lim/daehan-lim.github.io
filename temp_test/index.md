@@ -1,805 +1,148 @@
+<!--suppress CssUnusedSymbol, JSUnusedLocalSymbols -->
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
-
-:root {
-  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --accent-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  --tech-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  --card-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  --card-hover-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-  --text-primary: #2d3748;
-  --text-secondary: #718096;
-  --bg-primary: #ffffff;
-  --bg-secondary: #f7fafc;
-  --border-radius: 16px;
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* Navigation Menu Styles */
 #nav-menu {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  color: var(--text-primary);
-  padding: 15px 0;
+  background: linear-gradient(135deg, #3464e1 0%, #764ba2 100%); /* Navbar color */
+  color: white;
+  padding: 15px 0; /* Navbar height */
   z-index: 1000;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-  font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  transition: var(--transition);
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Vertically align items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+  color: #6951af !important;
+}
+
+code .nx,
+code .n,
+code .py,
+code .p {
+  color: #24292e !important;
+}
+
+.language-plaintext.highlighter-rouge > .highlight > pre.highlight > code {
+  color: #24292e !important;
+}
+
+code.language-plaintext.highlighter-rouge {
+  color: #EB5757 !important;                 /* strong red text */
+  border-radius: 4px;                        /* rounded corners */
+  padding: 0.2em 0.4em;                      /* small breathing space */
+}
+
+.image-row {
+  display: flex;
+  overflow-x: auto;
+  border: 2px solid #ccc;
+  padding: 6px;
+  border-radius: 8px;
+  gap: 5px;
+  align-items: flex-start;
+}
+
+.image-item {
+  width: 240px !important;
+  height: auto !important;
+  display: block !important;
+  flex-shrink: 0 !important;
+}
+
+.linked-image {
+  display: block !important;
+  flex-shrink: 0 !important;
+}
+
+.markdown-body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-weight: 400 !important;
+    word-break: keep-all !important;
+    letter-spacing: -0.3px !important;
+    line-height: 1.8 !important;
+    font-size: 17px !important;
 }
 
 #nav-menu a {
-  color: var(--text-primary);
-  text-decoration: none;
-  margin: 0 16px;
-  font-size: 15px;
-  font-weight: 500;
-  transition: var(--transition);
-  position: relative;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#nav-menu > div:first-child a {
-  font-size: 13px;
-  margin: 0 10px;
-  padding: 6px 12px;
-  border-radius: 20px;
-  background: var(--bg-secondary);
-  transition: var(--transition);
-}
-
-#nav-menu > div:first-child a.active {
-  background: var(--primary-gradient);
   color: white;
-  transform: translateY(-1px);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+#nav-menu > div:first-child a { 
+    margin: 0 10px;
 }
 
 #nav-menu a:hover {
-  color: #667eea;
-  transform: translateY(-1px);
+  color: #f1c40f;
 }
 
-#nav-menu a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -5px;
-  left: 50%;
-  background: var(--primary-gradient);
-  transition: var(--transition);
-  transform: translateX(-50%);
-}
-
-#nav-menu a:hover::after {
-  width: 100%;
-}
-
+/* Adjust content padding for the fixed navbar */
 body {
-  padding-top: 80px;
-  font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  line-height: 1.7;
-  color: var(--text-primary);
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  min-height: 100vh;
+  padding-top: 75px; /* Adjusted for taller navbar */
 }
 
-/* Hero Section */
-.hero-section {
-  background: var(--primary-gradient);
-  padding: 80px 20px;
-  text-align: center;
-  color: white;
-  margin: -80px -20px 60px -20px;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="white" opacity="0.1"><polygon points="0,0 1000,0 1000,60 0,100"/></svg>');
-  background-size: 100% 100%;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.hero-section h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin: 0 0 20px 0;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  animation: fadeInUp 1s ease-out;
-}
-
-.hero-section .subtitle {
-  font-size: 1.3rem;
-  opacity: 0.95;
-  font-weight: 300;
-  margin-bottom: 40px;
-  animation: fadeInUp 1s ease-out 0.2s both;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
-  animation: fadeInUp 1s ease-out 0.4s both;
-}
-
-.social-links a {
-  transform: scale(1.1);
-  transition: var(--transition);
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.social-links a:hover {
-  transform: scale(1.2) translateY(-3px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-}
-
-/* Content Container */
-.content-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Modern Card Design */
-.modern-card {
-  background: var(--bg-primary);
-  border-radius: var(--border-radius);
-  padding: 30px;
-  margin: 40px auto;
-  box-shadow: var(--card-shadow);
-  transition: var(--transition);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  position: relative;
-  overflow: hidden;
-}
-
-.modern-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: var(--primary-gradient);
-}
-
-.modern-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--card-hover-shadow);
-}
-
-/* Section Headings */
-h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin: 60px 0 40px 0;
-  text-align: center;
-  background: var(--primary-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  position: relative;
-}
-
-h2::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background: var(--accent-gradient);
-  border-radius: 2px;
-}
-
-/* Introduction Section */
-.intro-section {
-  background: var(--bg-primary);
-  border-radius: var(--border-radius);
-  padding: 40px;
-  margin: 40px auto;
-  box-shadow: var(--card-shadow);
-  position: relative;
-  overflow: hidden;
-}
-
-.intro-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: var(--tech-gradient);
-}
-
-/* Projects Grid */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-  margin: 40px 0;
-}
-
-.project-card {
-  background: var(--bg-primary);
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  box-shadow: var(--card-shadow);
-  transition: var(--transition);
-  text-decoration: none;
-  color: inherit;
-  position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.project-card:hover {
-  transform: translateY(-12px) scale(1.02);
-  box-shadow: var(--card-hover-shadow);
-  text-decoration: none;
-  color: inherit;
-}
-
-.project-preview {
-  width: 100%;
-  aspect-ratio: 1160 / 663;
-  object-fit: cover;
-  transition: var(--transition);
-}
-
-.project-card:hover .project-preview {
-  transform: scale(1.05);
-}
-
-.project-info {
-  padding: 25px;
-  position: relative;
-}
-
-.project-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin: 0 0 8px 0;
-  color: var(--text-primary);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.project-description {
-  color: var(--text-secondary);
-  font-size: 1rem;
-  margin: 0 0 15px 0;
-  font-weight: 500;
-}
-
-.tech-stack {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 15px 0 10px 0;
-}
-
-.tech-tag {
-  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-  color: #1976d2;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  border: 1px solid rgba(25, 118, 210, 0.2);
-  transition: var(--transition);
-}
-
-.tech-tag:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.2);
-}
-
-.project-date {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  margin-top: 15px;
-  font-weight: 400;
-}
-
-/* ML Projects Section */
-.ml-projects-card {
-  background: var(--primary-gradient);
-  border-radius: var(--border-radius);
-  padding: 40px;
-  margin: 40px auto;
-  max-width: 800px;
-  text-align: center;
-  box-shadow: var(--card-shadow);
-  color: white;
-  position: relative;
-  overflow: hidden;
-  transition: var(--transition);
-}
-
-.ml-projects-card::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-  animation: float 6s ease-in-out infinite;
-}
-
-.ml-title {
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin: 0 0 15px 0;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.ml-subtitle {
-  font-size: 1.1rem;
-  opacity: 0.95;
-  font-weight: 400;
-  margin: 0 0 25px 0;
-}
-
-.ml-tags {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin: 25px 0;
-}
-
-.ml-tag {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(10px);
-  padding: 10px 18px;
-  border-radius: 25px;
-  color: white;
-  font-size: 0.9rem;
-  font-weight: 500;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: var(--transition);
-}
-
-.ml-tag:hover {
-  background: rgba(255, 255, 255, 0.35);
-  transform: translateY(-3px);
-}
-
-.ml-cta {
-  display: inline-block;
-  background: white;
-  color: #667eea;
-  padding: 16px 35px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.1rem;
-  transition: var(--transition);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  margin-top: 25px;
-  position: relative;
-  z-index: 2;
-}
-
-.ml-cta:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-  color: #667eea;
-  text-decoration: none;
-}
-
-/* Contact Section */
-.contact-section {
-  background: var(--bg-primary);
-  border-radius: var(--border-radius);
-  padding: 40px;
-  margin: 60px auto 40px auto;
-  text-align: center;
-  box-shadow: var(--card-shadow);
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: var(--accent-gradient);
-}
-
-.contact-description {
-  font-size: 1.1rem;
-  color: var(--text-secondary);
-  margin: 0 0 30px 0;
-  line-height: 1.6;
-}
-
-.contact-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.contact-links a {
-  transition: var(--transition);
-  border-radius: 12px;
-  overflow: hidden;
-  opacity: 0.9;
-}
-
-.contact-links a:hover {
-  transform: scale(1.1) translateY(-3px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-  opacity: 1;
-}
-
-/* Code styling */
-code {
-  background: var(--tech-gradient);
-  color: white !important;
-  border-radius: 6px;
-  padding: 4px 8px;
-  font-weight: 500;
-  font-size: 0.85rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Korean text styling */
-.ko {
-  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-weight: 400;
-  word-break: keep-all;
-  letter-spacing: -0.3px;
-  line-height: 1.8;
-  font-size: 17px;
-}
-
-/* Hamburger Menu */
+/* Hamburger Menu (Toggle Button) */
 #nav-menu-toggle {
   display: none;
   cursor: pointer;
-  font-size: 20px;
-  margin-right: 20px;
-  z-index: 1100;
-  color: var(--text-primary);
-  padding: 8px;
-  border-radius: 8px;
-  transition: var(--transition);
+  font-size: 18px;
+  margin-right: 20px; /* Move to the right */
+  z-index: 1100; /* Ensure toggle is above menu items */
 }
 
-#nav-menu-toggle:hover {
-  background: var(--bg-secondary);
-}
-
+/* Navigation Links */
 #nav-links {
   display: flex;
   flex-wrap: wrap;
   padding-right: 20px;
 }
 
-/* Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes float {
-  0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
-  50% { transform: translate(-50%, -50%) rotate(180deg); }
-}
-
-.fade-in {
-  animation: fadeInUp 0.8s ease-out;
-}
-
-/* Typing SVG Container */
-.typing-container {
-  margin: 20px 0;
-  position: relative;
-  z-index: 2;
-}
-
-/* Mobile Responsive */
 @media (max-width: 768px) {
-  .hero-section h1 {
-    font-size: 2.5rem;
-  }
-  
-  .hero-section .subtitle {
-    font-size: 1.1rem;
-  }
-  
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .ml-projects-card {
-    padding: 30px 20px;
-  }
-  
-  .ml-tags {
-    gap: 8px;
-  }
-  
-  .ml-tag {
-    padding: 8px 14px;
-    font-size: 0.85rem;
-  }
-
   #nav-links {
-    display: none;
+    display: none; /* Hide links initially on mobile */
     flex-direction: column;
     align-items: center;
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(20px);
+    background: linear-gradient(135deg, #3464e1 0%, #764ba2 100%); /* Match navbar background */
     width: 100%;
     position: absolute;
-    top: 70px;
+    top: 60px; /* Space below navbar */
     left: 0;
-    padding: 20px 0;
-    border-radius: 0 0 16px 16px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 15px 0; /* Add spacing around links */
+    z-index: 1000; /* Ensure it doesn't overlap the toggle button */
   }
 
   #nav-links.active {
-    display: flex;
+    display: flex; /* Show links when active */
   }
 
   #nav-links a {
-    margin: 10px 0;
-    padding: 10px 20px;
-    border-radius: 8px;
-    transition: var(--transition);
-  }
-
-  #nav-links a:hover {
-    background: var(--bg-secondary);
+    margin: 15px 0; /* Added vertical spacing */
   }
 
   #nav-menu-toggle {
-    display: block;
+    display: block; /* Show hamburger menu */
   }
-
-  .contact-links {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-section {
-    padding: 60px 15px;
-  }
-  
-  .hero-section h1 {
-    font-size: 2rem;
-  }
-  
-  .modern-card, .intro-section, .contact-section {
-    padding: 25px 20px;
-  }
-  
-  .content-container {
-    padding: 0 15px;
-  }
-}
-
-/* Scroll behavior improvement */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Enhanced hover effects for better interactivity */
-.project-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transition: left 0.5s;
-}
-
-.project-card:hover::before {
-  left: 100%;
 }
 </style>
 
 <div id="nav-menu">
   <div style="margin-left: 20px;">
-    <a href="/">EN</a>
-    <a href="/kr" class="active">KR</a>
+    <a href="/" class="active"></a> 
   </div>
 
 <span id="nav-menu-toggle">☰</span>
   <div id="nav-links">
     <!-- Navigation Links will be dynamically populated -->
   </div>
-</div>
-
-<div class="hero-section">
-  <div class="hero-content">
-    <h1>임대한</h1>
-    <p class="subtitle">Flutter 앱 개발자 & AI 솔루션 전문가</p>
-    <div class="typing-container">
-      <div style="display: flex; justify-content: center;">
-        <img src="https://readme-typing-svg.herokuapp.com?color=%23FFFFFF&size=20&width=500&height=40&lines=Welcome+to+my+portfolio!;I'm+Daehan%2C+innovating+digital+solutions" alt="Typing animation" style="border-radius: 8px;">
-      </div>
-    </div>
-    <div class="social-links">
-      <a href="https://linkedin.com/in/penjan-a-eng-lim">
-        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
-      </a>
-      <a href="mailto:penjan.eng@gmail.com">
-        <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
-      </a>
-      <a href="https://github.com/daehan-lim">
-        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
-      </a>
-    </div>
-  </div>
-</div>
-
-<div class="content-container">
-
-<div class="intro-section fade-in">
-
-## 👋 소개
-
-<p class="ko">
-Flutter 크로스플랫폼 앱 개발자로서 4명으로 구성된 팀을 리드하며 CI/CD 파이프라인 구축과 팀 코드 리뷰 프로세스 도입을 통해 수동 검수 시간 50% 단축을 이끌었습니다. 네이티브 Android 개발 배경을 바탕으로 플랫폼별 최적화에 강점을 보유하고 있습니다.
-</p>
-
-<p class="ko">
-AI 석사 학위와 Gemini API 연동 경험을 통해 모바일 앱에 생성형 AI 기능을 효과적으로 통합할 수 있고, 레시피 생성 시스템에서 프롬프트 엔지니어링과 검증 모델 도입을 통해 적합하지 않은 레시피 생성률을 85%에서 12%로 낮춘 경험이 있습니다.
-</p>
-
-<p class="ko">
-Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양한 모바일 기능을 구현하여 Play Store와 App Store에 성공적으로 앱을 배포했으며, 성능 최적화를 통해 AI 처리 시간 40% 단축과 API 비용 35% 절감을 달성했습니다.
-</p>
-
-</div>
-
-## 📱 모바일 애플리케이션
-
-<div class="projects-grid">
-
-<!--ShareLingo-->
-<a href="sharelingo/" class="project-card">
-  <img src="../images/sharelingo/preview.png" alt="ShareLingo - 언어교류 SNS 앱" class="project-preview" />
-  <div class="project-info">
-    <h3 class="project-title">ShareLingo <span style="color: #21427D; font-size: 15px;">🔗</span></h3>
-    <p class="project-description">언어교류 SNS 앱</p>
-    <div class="tech-stack">
-      <span class="tech-tag">Flutter</span>
-      <span class="tech-tag">Clean Architecture</span>
-      <span class="tech-tag">Google OAuth</span>
-      <span class="tech-tag">CI/CD</span>
-      <span class="tech-tag">Firebase</span>
-      <span class="tech-tag">Riverpod</span>
-    </div>
-    <p class="project-date">2025.05.16 ~ 2025.05.27 (2주)</p>
-  </div>
-</a>
-
-<!--Cooki-->
-<a href="cooki/" class="project-card">
-  <img src="../images/cooki/preview.png" alt="Cooki - AI 레시피 커뮤니티 앱" class="project-preview" />
-  <div class="project-info">
-    <h3 class="project-title">Cooki <span style="color: #21427D; font-size: 15px;">🔗</span></h3>
-    <p class="project-description">AI 레시피 커뮤니티 앱</p>
-    <div class="tech-stack">
-      <span class="tech-tag">Flutter</span>
-      <span class="tech-tag">Gemini API</span>
-      <span class="tech-tag">Dio</span>
-      <span class="tech-tag">Cloud Functions</span>
-      <span class="tech-tag">Riverpod</span>
-      <span class="tech-tag">MVVM</span>
-      <span class="tech-tag">Firestore</span>
-    </div>
-    <p class="project-date">2025.06.01 ~ 2025.07.04 (1개월)</p>
-  </div>
-</a>
-
-<!--Cubadebate-->
-<a href="cubadebate/" class="project-card">
-  <img src="../images/cubadebate/preview.png" alt="Cubadebate 뉴스 앱" class="project-preview" />
-  <div class="project-info">
-    <h3 class="project-title">Cubadebate <span style="color: #21427D; font-size: 15px;">🔗</span></h3>
-    <p class="project-description">맞춤형 뉴스 플랫폼</p>
-    <div class="tech-stack">
-      <span class="tech-tag">Android</span>
-      <span class="tech-tag">Kotlin</span>
-      <span class="tech-tag">Coroutines</span>
-      <span class="tech-tag">MVVM</span>
-      <span class="tech-tag">Room</span>
-      <span class="tech-tag">Retrofit</span>
-      <span class="tech-tag">Glide</span>
-      <span class="tech-tag">Lottie</span>
-      <span class="tech-tag">ViewBinding</span>
-    </div>
-    <p class="project-date">2021.03.15 ~ 2021.06.30 (3.5개월)</p>
-  </div>
-</a>
-
-</div>
-
-## 🔬 머신러닝 프로젝트
-
-<div class="ml-projects-card">
-  <h3 class="ml-title">🎓 AI/ML 프로젝트</h3>
-  <p class="ml-subtitle">충남대학교 석사과정 중 수행한 머신러닝 프로젝트</p>
-  <div class="ml-tags">
-    <span class="ml-tag">연합학습</span>
-    <span class="ml-tag">NLP 분류 모델</span>
-    <span class="ml-tag">의료 데이터 분석기</span>
-    <span class="ml-tag">정보 검색 시스템</span>
-  </div>
-  <a href="/ml_projects/kr" class="ml-cta">
-    머신러닝 프로젝트 보기 →
-  </a>
-</div>
-
-## 📫 연락처
-
-<div class="contact-section">
-  <p class="contact-description ko">
-    채용 및 협업 문의는 언제든 환영합니다. 아래 링크를 통해 링크드인이나 이메일로 연락해 주실 수 있습니다.
-  </p>
-  <div class="contact-links">
-    <a href="https://linkedin.com/in/penjan-a-eng-lim">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
-    </a>
-    <a href="mailto:penjan.eng@gmail.com">
-      <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
-    </a>
-    <a href="https://github.com/daehan-lim">
-      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
-    </a>
-  </div>
-</div>
-
 </div>
 
 <script>
@@ -844,7 +187,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
       const target = document.querySelector(href);
       if (target) {
         window.scrollTo({
-          top: target.offsetTop - 100, // Offset for navbar height
+          top: target.offsetTop - 75, // Offset for navbar height
           behavior: 'smooth'
         });
       }
@@ -858,30 +201,220 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
       });
     });
 
-    // Handle all markdown links with hash anchors
+    // Handle all Markdown links with hash anchors
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         adjustScroll(e, this.getAttribute('href'));
       });
     });
-
-    // Add intersection observer for fade-in animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in');
-        }
-      });
-    }, observerOptions);
-
-    // Observe all cards for animation
-    document.querySelectorAll('.project-card, .modern-card, .ml-projects-card, .contact-section').forEach(card => {
-      observer.observe(card);
-    });
   });
 </script>
+
+<div style="position: relative; margin-bottom: 40px;">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&fontSize=45&animation=fadeIn&fontAlignY=38&desc=&descAlignY=51&descAlign=62" alt="Header" style="display: block; width: 100%; height: auto; margin: 0; padding: 0; border-radius: 8px;" />
+
+<img src="../../images/filmmind/app_logo.png" alt="Project Icon" style="position: absolute; left: 40px; bottom: -10px; width: 80px; height: 80px; border-radius: 20px; object-fit: cover;" />
+
+</div>
+
+# FilmMind - 영화 정보 앱
+
+## 📝 개요
+**📌 앱 소개:** TMDB API를 활용한 영화 정보 조회 및 추천 앱  
+**🕒 기간:** 2025.05.13 ~ 2025.05.15 (3일)  
+**📱 플랫폼:** Flutter 크로스 플랫폼 앱 (iOS, Android)  
+**👥 개발 인원:** 1명 (개인 프로젝트)  
+**💼 역할:** 앱 전체 설계 및 개발, API 연동, 성능 최적화  
+**🛠️ 주요 사용 기술:** `Flutter` `Dart` `TMDB API` `Riverpod` `Clean Architecture` `Dio` `GitHub Actions` `Hero Animation` `Shimmer`    
+**🔗 GitHub:** [daehan-lim/flutter-film-mind-app](https://github.com/daehan-lim/flutter-film-mind-app)
+
+<div class="image-row">
+  <img src="../images/temp_cooki/1.png" alt="1 home screen" class="image-item" />
+  <img src="../images/temp_cooki/2.png" alt="7 home scroll screen" class="image-item" />
+  <img src="../images/temp_cooki/3.png" alt="3 detail screen" class="image-item" />
+  <img src="../images/filmmind/4_detail_loading.png" alt="4 detail loading screen" class="image-item" />
+  <img src="../images/filmmind/5_detail_scroll1.png" alt="5 detail scroll 1 screen" class="image-item" />
+  <img src="../images/filmmind/6_detail_scroll2.png" alt="6 detail scroll 2 screen" class="image-item" />
+  <img src="../images/filmmind/2_home_loading.png" alt="2 home loading screen" class="image-item" />
+  <img src="../images/filmmind/8_naver.png" alt="8 Naver screen" class="image-item" />
+  <img src="../images/filmmind/9_google.png" alt="9 Google screen" class="image-item" />
+
+</div>
+<span style="display: block; height: 11px;"></span>
+
+## 📖 프로젝트 설명
+
+FilmMind는 TMDB API를 활용하여 현재 상영작, 인기 영화, 평점 높은 영화, 개봉 예정작 등 다양한 카테고리의 영화 정보를 제공하는 Flutter 기반 모바일 애플리케이션입니다. Clean Architecture 패턴과 MVVM 구조를 적용하여 확장 가능하고 유지보수가 용이하도록 설계되었으며, Hero Animation을 통한 자연스러운 화면 전환과 Google/Naver 검색 연동 기능을 통해 사용자가 영화 정보를 직관적으로 탐색하고 추가 정보에 접근할 수 있는 환경을 제공합니다.
+
+## 🛠️ Tech Stack
+
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
+[![Riverpod](https://img.shields.io/badge/Riverpod-02569B?style=for-the-badge)](https://riverpod.dev/)
+[![Clean Architecture](https://img.shields.io/badge/Clean_Architecture-4CAF50?style=for-the-badge)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+[![MVVM](https://img.shields.io/badge/MVVM-ed9242?style=for-the-badge)](https://developer.android.com/topic/architecture)
+[![Dio](https://img.shields.io/badge/Dio-02569B?style=for-the-badge)](https://pub.dev/packages/dio)
+[![TMDB API](https://img.shields.io/badge/TMDB_API-01B4E4?style=for-the-badge&logo=themoviedatabase&logoColor=white)](https://www.themoviedb.org/documentation/api)
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions)
+[![Cached Network Image](https://img.shields.io/badge/Cached_Network_Image-4CAF50?style=for-the-badge)](https://pub.dev/packages/cached_network_image)
+[![Shimmer](https://img.shields.io/badge/Shimmer-FF9800?style=for-the-badge)](https://pub.dev/packages/shimmer)
+[![URL Launcher](https://img.shields.io/badge/URL_Launcher-2196F3?style=for-the-badge)](https://pub.dev/packages/url_launcher)
+[![Flutter Dotenv](https://img.shields.io/badge/Flutter_Dotenv-4CAF50?style=for-the-badge)](https://pub.dev/packages/flutter_dotenv)
+[![Flutter SVG](https://img.shields.io/badge/Flutter_SVG-FF6B6B?style=for-the-badge)](https://pub.dev/packages/flutter_svg)
+
+## 📋 프로젝트 구조
+``` 
+├── app/                               # 앱 전체에서 설정 및 공통 상수, 테마 등  
+│   ├── constants/                     # 앱 상수 정의  
+│   │   ├── app_colors.dart            # 색상 정의  
+│   │   ├── app_constants.dart         # 상수 값 정의  
+│   │   └── app_styles.dart            # 스타일 정의  
+│   └── theme.dart                     # 앱 테마 설정  
+
+├── core/                              # 앱 전체에서 사용되는 핵심 기능 및 유틸리티  
+│   ├── exceptions/                    # 앱 전체에서 사용되는 예외 클래스  
+│   │   └── data_exceptions.dart       # 데이터 관련 예외 클래스  
+│   ├── extensions/                    # 확장 메서드 정의  
+│   │   ├── date_extensions.dart       # 날짜 관련 확장 메서드  
+│   │   └── number_extensions.dart     # 숫자 관련 확장 메서드  
+│   ├── providers/                     # 공통 프로바이더  
+│   │   └── repository_providers.dart  # 리포지토리 프로바이더  
+│   └── utils/                         # 유틸리티 함수  
+│       ├── navigation_util.dart       # 네비게이션 관련 유틸리티  
+│       ├── snackbar_util.dart         # 스낵바 관련 유틸리티  
+│       └── dialogue_util.dart         # 다이얼로그 관련 유틸리티  
+
+├── data/                              # 데이터 관련 클래스 및 데이터 액세스 계층  
+│   ├── data_source/                   # 데이터 소스 클래스 
+│   ├── dto/                           # 데이터 전송 객체 
+│   └── repository/                    # 리포지토리 구현체 
+
+├── domain/                            # 비즈니스 로직 및 엔티티 정의  
+│   ├── entity/                        # 도메인 엔티티 
+│   ├── repository/                    # 리포지토리 인터페이스
+│   └── usecase/                       # 유스케이스 
+
+├── presentation/                      # UI 관련 코드  
+│   ├── pages/                         # 앱 화면  
+│   │   ├── home/                      # 홈 화면  
+│   │   │   ├── home_page.dart         # 홈 페이지 위젯  
+│   │   │   ├── home_view_model.dart   # 홈 화면 뷰모델  
+│   │   │   └── widgets/               # 홈 화면 관련 위젯 
+│   │   └── detail/                    # 상세 화면 
+│   └── widgets/                       # 공통 위젯 
+
+└── main.dart                          # 앱 진입점  
+```
+
+
+## 🌟 수행 내용 및 성과
+
+### Clean Architecture 기반 앱 구조 설계
+- **계층형 아키텍처 구현**
+    - `Domain`, `Data`, `Presentation` 계층 분리를 통한 관심사 분리 및 의존성 역전 원칙 적용
+    - `Riverpod`을 활용한 전역 상태 관리와 `Provider` 기반 의존성 주입 구현
+    - `MVVM` 패턴 적용으로 UI와 비즈니스 로직 분리 및 단방향 데이터 플로우 구축
+    - `Repository` 패턴과 `UseCase` 계층으로 비즈니스 로직 캡슐화 및 테스트 가능한 코드 구조 구축
+
+### TMDB API 연동 및 영화 데이터 처리
+- 현재 상영작, 인기 영화, 평점 높은 영화, 개봉 예정작 등 4개 카테고리 데이터 실시간 조회
+- `Dio` HTTP 클라이언트와 `Bearer Token` 인증을 통한 안정적인 API 통신 구현
+- 개별 영화 상세 조회 API 연동으로 장르, 제작사, 예산, 수익, 상영시간 등 종합 정보 제공
+- 통화 포맷팅과 숫자 포맷팅 `Extension`을 활용한 예산/수익 정보의 가독성 있는 표시
+
+### UI/UX 및 애니메이션 구현
+- **Hero Animation 기반 화면 전환**
+    - 카테고리별 고유 태그를 활용한 `Hero Animation` 구현으로 영화 포스터 클릭 시 자연스러운 화면 전환 효과 제공
+    - 메인 화면에서 상세 화면으로의 시각적 연속성 확보 및 네이티브 앱 수준의 사용자 경험 달성
+    - 여러 카테고리에서 동일 영화 선택 시에도 올바른 `Hero` 태그 매칭으로 애니메이션 충돌 방지
+
+- **UI/UX 개선**
+    - 영화 상세 페이지에서 팝업 메뉴를 통한 구글 및 네이버 검색 연동으로 추가 영화 정보 조회 기능
+    - URL 인코딩과 인앱 브라우저 구현으로 앱 내에서 끊김 없는 검색 경험 제공
+    - `CachedNetworkImage`를 활용한 이미지 캐싱으로 반복 로딩 시간 단축 및 데이터 사용량 절약
+    - `Shimmer` 로딩 애니메이션 구현으로 데이터 로딩 중 인지된 성능 향상 및 사용자 대기 경험 개선
+    - `Transform.translate`를 활용한 인기 영화 랭킹 숫자 오버레이 디자인으로 시각적 임팩트 강화
+    - 수평 스크롤 `ListView`와 카테고리별 차별화된 레이아웃으로 효율적인 공간 활용
+    - 기본 다크 모드 적용으로 영화 포스터의 시각적 몰입감 강화 및 사용자 눈의 피로 감소
+
+### 전계층 단위 테스트 구현
+- `DataSource`부터 `ViewModel`까지 모든 계층에 대한 단위 테스트 작성으로 비즈니스 로직 안정성 확보
+- JSON 파싱, API 통신, 데이터 변환 과정의 테스트 케이스 구현으로 데이터 처리 신뢰성 보장
+- `Mocktail`을 활용한 의존성 모킹과 `Provider` 오버라이드로 외부 API 의존성 없는 격리된 테스트 환경 구축
+
+### GitHub Actions를 통한 CI 파이프라인
+- `Pull Request` 및 `Push` 이벤트 기반 자동화된 테스트 실행 및 코드 품질 검증으로 수동 검수 시간 단축
+- 환경 변수 기반 API 키 보안 관리 및 `GitHub Secrets`를 통한 민감 정보 보호
+- Flutter 의존성 설치부터 APK 아티팩트 업로드까지 완전 자동화된 워크플로우 구현
+
+### 개발 효율성 및 코드 품질
+- 재사용 가능한 위젯 컴포넌트화로 코드 중복 감소 및 유지보수 효율성 향상
+- `Extension` 메서드를 활용한 코드 가독성 향상
+- 공통 스타일과 테마 시스템 구축으로 디자인 일관성 확보
+- `Entity`와 `DTO` 분리를 통한 외부 API 의존성 최소화 및 도메인 모델 보호
+
+## 🌱 트러블슈팅
+
+**1. Hero Animation 태그 중복 충돌 문제**
+
+- **문제 상황**  
+  Flutter로 영화 정보 앱을 개발하면서 `Hero Animation`을 사용하여 영화 포스터 클릭 시 홈 화면에서 상세 화면으로 자연스럽게 전환되도록 구현했으나, `There are multiple heroes that share the same tag within a subtree` 오류가 발생하며 애니메이션이 제대로 작동하지 않는 문제 발생
+
+- **원인 분석**
+    - 초기에는 영화 ID만을 기반으로 `'movie-image-${movie.id}'` 형태의 `Hero` 태그를 생성
+    - 같은 영화가 '현재 상영중', '인기순', '평점 높은순', '개봉예정' 등 여러 카테고리에 중복 출현하면서 동일한 `Hero` 태그가 한 화면에 여러 개 존재
+    - Flutter는 한 화면 내에서 모든 `Hero` 태그가 고유해야 한다는 제약 조건을 위반
+
+- **해결 방법**
+    - 영화 ID와 카테고리명을 조합한 `'movie-image-${movie.id}-$categoryName'` 형태의 고유 태그 생성 시스템 구현
+    - 영화 상세 페이지 이동 시 카테고리 정보도 함께 전달하여 동일한 태그 형식으로 `Hero Animation` 매칭
+    - 각 카테고리별로 독립적인 `Hero` 태그를 가지도록 하여 중복 문제 완전 해결
+
+```dart
+// 수정된 Hero 태그 생성
+Hero(
+  tag: 'movie-image-${movie.id}-$categoryName',
+  child: AppCachedImage(imageUrl: movie.getPosterUrl()),
+)
+```
+
+- **최종 결과**  
+  같은 영화가 여러 카테고리에 출현해도 각각 고유한 `Hero` 태그를 가지게 되어 충돌 없이 자연스러운 애니메이션 전환 구현
+
+**2. GitHub Actions에서 TMDB API 키 보안 관리**
+
+- **문제 상황**  
+  CI 파이프라인에서 `TMDB Bearer Token`이 필요하지만 코드에 하드코딩할 수 없어 빌드 시 환경 변수 부재로 실패하는 문제 발생
+
+- **해결 과정**
+    - Flutter의 `flutter_dotenv` 패키지가 런타임에 `.env` (환경 변수) 파일을 요구함을 파악
+    - 환경 변수 파일은 보안상 Git에 커밋 불가능함을 확인
+    - `GitHub Secrets`를 활용한 안전한 환경 변수 관리 방법 검토
+
+- **해결 방법**
+    - GitHub Repository Settings에서 `TMDB_BEARER_TOKEN`을 Secret으로 등록
+    - `GitHub Actions` 워크플로우에서 Secret을 환경 변수로 주입하여 `.env` 파일 동적 생성
+
+```yml
+- name: Create .env file
+  run: |
+    echo "TMDB_BEARER_TOKEN=${{ secrets.TMDB_BEARER_TOKEN }}" > .env
+
+- name: Install dependencies
+  run: flutter pub get
+
+- name: Run tests
+  run: flutter test
+```
+
+- **최종 결과**  
+  API 키 노출 위험 없이 자동화된 CI 파이프라인에서 안정적인 빌드 및 테스트 실행 환경 구축
+
+## 🎞️ 시연 영상
+<div align="center"> 
+<a href="https://www.youtube.com/watch?v=OKqoMnWGQ5o">
+  <img src="../../images/filmmind/video_preview.png" alt="Watch the Video" width="230" />
+</a>
+</div>
+<br>
