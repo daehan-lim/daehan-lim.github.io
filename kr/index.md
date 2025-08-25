@@ -274,7 +274,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 <!--Cooki-->
 <a href="cooki/" style="text-decoration: none; color: inherit;">
 <div>
-  <img src="../images/cooki/preview.png" alt="Cooki - AI 레시피 커뮤니티 앱" class="project-preview" />
+  <img src="../images/cooki/preview2.png" alt="Cooki - AI 레시피 커뮤니티 앱" class="project-preview" />
   <p><strong>Cooki<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">AI 레시피 커뮤니티 앱</span><br/> 
     <code>Flutter</code> <code>Gemini API</code> <code>Dio</code> <code>Cloud Functions</code> <code>Riverpod</code> <code>MVVM</code> <code>Firestore</code><br/>
