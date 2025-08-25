@@ -260,7 +260,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
 
 <!--ShareLingo-->
-<a href="sharelingo/" style="text-decoration: none; color: inherit;">
+<a href="../projects/sharelingo/kr/" style="text-decoration: none; color: inherit;">
 <div>
   <img src="../images/sharelingo/preview.png" alt="ShareLingo - 언어교류 SNS 앱" class="project-preview" />
   <p><strong>ShareLingo<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
@@ -272,7 +272,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 </a>
 
 <!--Cooki-->
-<a href="cooki/" style="text-decoration: none; color: inherit;">
+<a href="../projects/cooki/kr/" style="text-decoration: none; color: inherit;">
 <div>
   <img src="../images/cooki/preview2.png" alt="Cooki - AI 레시피 커뮤니티 앱" class="project-preview" />
   <p><strong>Cooki<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
@@ -284,7 +284,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 </a>
 
 <!--Cubadebate-->
-<a href="cubadebate/" style="text-decoration: none; color: inherit;">
+<a href="../projects/cubadebate/kr/" style="text-decoration: none; color: inherit;">
 <div>
   <img src="../images/cubadebate/preview2.png" alt="Cubadebate 뉴스 앱" class="project-preview" />
   <p><strong>Cubadebate<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
@@ -296,7 +296,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 </a>
 
 <!--FilmMind-->
-<a href="filmmind/" style="text-decoration: none; color: inherit;">
+<a href="../projects/filmmind/kr/" style="text-decoration: none; color: inherit;">
 <div>
   <img src="../images/filmmind/preview.png" alt="FilmMind - 영화 정보 앱" class="project-preview" />
   <p><strong>FilmMind<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
@@ -308,7 +308,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 </a>
 
 <!--어디든GO-->
-<a href="placefinder/" style="text-decoration: none; color: inherit;">
+<a href="../projects/placefinder/kr/" style="text-decoration: none; color: inherit;">
 <div>
   <img src="../images/placefinder/preview.png" alt="어디든GO - 지역 검색 앱" class="project-preview" />
   <p><strong>어디든GO<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
@@ -320,7 +320,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 </a>
 
 <!--가스 소비 관리 앱-->
-<a href="gas/" style="text-decoration: none; color: inherit;">
+<a href="../projects/gas/kr/" style="text-decoration: none; color: inherit;">
 <div>
   <img src="../images/gas/preview2.png" alt="가스 소비 관리 앱" class="project-preview" />
   <p><strong>가스 소비 관리 앱<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
@@ -332,7 +332,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 </a>
 
 <!--ACME-->
-<a href="acme/" style="text-decoration: none; color: inherit;">
+<a href="../projects/acme/kr/" style="text-decoration: none; color: inherit;">
 <div>
  <img src="../images/acme/preview.png" alt="ACME - AS 관리 안드로이드 앱" class="project-preview" />
  <p><strong>ACME<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
@@ -344,7 +344,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 </a>
 
 <!--Yellow Pages-->
-<a href="yellow_pages/" style="text-decoration: none; color: inherit;">
+<a href="../projects/yellow_pages/kr/" style="text-decoration: none; color: inherit;">
 <div>
  <img src="../images/yellow_pages/preview.png" alt="Yellow Pages - 쿠바 전화번호부 앱" class="project-preview" />
  <p><strong>Yellow Pages<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
@@ -356,7 +356,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
 </a>
 
 <!--정부 포털 앱-->
-<a href="portal/" style="text-decoration: none; color: inherit;">
+<a href="../projects/portal/kr/" style="text-decoration: none; color: inherit;">
 <div>
  <img src="../images/portal/preview.png" alt="정부 포털 앱" class="project-preview" />
  <p><strong>정부 포털 앱<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
@@ -383,7 +383,7 @@ Firebase 백엔드 연동, 위치 기반 서비스, 다국어 지원 등 다양�
     <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">정보 검색 시스템</span>
   </div>
   <div style="margin-top: 20px;">
-    <a href="/ml_projects/kr" style="display: inline-block; background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 700; font-size: 1.1em; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+    <a href="/projects/ml_projects/kr" style="display: inline-block; background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 700; font-size: 1.1em; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
       머신러닝 프로젝트 보기 →
     </a>
   </div>

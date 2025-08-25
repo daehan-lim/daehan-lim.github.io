@@ -215,7 +215,7 @@ body {
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&fontSize=45&animation=fadeIn&fontAlignY=38&desc=&descAlignY=51&descAlign=62" alt="Header" style="display: block; width: 100%; height: auto; margin: 0; padding: 0; border-radius: 8px;" />
 
 <div style="position:absolute;left:40px;bottom:-10px;width:80px;height:80px;background:#fafafa;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,0.15);">
-<img src="../../images/gas/app_icon.png" alt="Project Icon" style="max-width:90%;max-height:90%;object-fit:contain;" />
+<img src="../../../images/gas/app_icon.png" alt="Project Icon" style="max-width:90%;max-height:90%;object-fit:contain;" />
 </div>
 
 </div>
@@ -233,12 +233,12 @@ body {
 **🔗 GitHub:** [daehan-lim/gas-consumption-manager](https://github.com/daehan-lim/gas-consumption-manager)
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="../../images/gas/main.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager main screen" />
-  <img src="../../images/gas/calendar.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager calendar screen" />
-  <img src="../../images/gas/chart.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager chart screen" />
-  <img src="../../images/gas/filter.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager filter screen" />
-  <img src="../../images/gas/offices.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager offices screen" />
-  <img src="../../images/gas/video.png" width="240" alt="Gas consumption manager video screen" />
+  <img src="../../../images/gas/main.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager main screen" />
+  <img src="../../../images/gas/calendar.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager calendar screen" />
+  <img src="../../../images/gas/chart.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager chart screen" />
+  <img src="../../../images/gas/filter.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager filter screen" />
+  <img src="../../../images/gas/offices.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager offices screen" />
+  <img src="../../../images/gas/video.png" width="240" alt="Gas consumption manager video screen" />
 </div>
 <span style="display: block; height: 11px;"></span>
 

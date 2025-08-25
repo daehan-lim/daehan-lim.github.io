@@ -83,8 +83,8 @@ body {
 
 <div id="nav-menu">
   <div style="margin-left: 20px;">
-    <a href="/ml_projects" class="active">EN</a>
-    <a href="/ml_projects/kr">KR</a>
+    <a href="/projects/ml_projects_projects" class="active">EN</a>
+    <a href="/projects/ml_projects_projects/kr">KR</a>
   </div>
 
 <span id="nav-menu-toggle">☰</span>
@@ -170,7 +170,7 @@ body {
 ## [Privacy-Preserving Federated Random Forest](https://arxiv.org/abs/2407.19193)
 *Privacy-preserving distributed learning system for collaborative model training (2023)*
 
-<img src="../images/random_forest.png" width="650" alt="Training process for the privacy-preserving federated random forest model">
+<img src="../../images/random_forest.png" width="650" alt="Training process for the privacy-preserving federated random forest model">
 
 **Overview:**
 
@@ -188,7 +188,7 @@ body {
 ## [RoBERTa News Classification](https://github.com/daehan-lim/roberta-sport-news-classifier)
 *Enhanced topic classification model with synthetic data augmentation (2024)*
 
-<img src="../images/roberta_architecture.png" width="350" alt="RoBERTa model architecture">
+<img src="../../images/roberta_architecture.png" width="350" alt="RoBERTa model architecture">
 
 **Overview:**
 - Developed machine learning model for classifying sports news articles into 5 distinct categories using [RoBERTa](https://huggingface.co/docs/transformers/en/model_doc/roberta) and [BBC Sport dataset](http://mlg.ucd.ie/datasets/bbc.html)
@@ -205,7 +205,7 @@ body {
 ## [Medical Data Classifier](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 *Novel classification system for patient mortality prediction using electronic health records (2023)*
 
-<img src="../images/associative_classifier.png" width="420px" alt="Associative classifier - rule generation algorithm">
+<img src="../../images/associative_classifier.png" width="420px" alt="Associative classifier - rule generation algorithm">
 
 **Overview:**
 - Developed custom associative classifier tailored for unbalanced healthcare datasets
@@ -218,7 +218,7 @@ body {
 
 ---
 
-## [Information Retrieval System](../assets/information_retrieval_report.pdf)
+## [Information Retrieval System](../../assets/information_retrieval_report.pdf)
 *Efficient implementation of Boolean and ranked document retrieval (2024)*
 
 **Overview:**
@@ -229,6 +229,6 @@ body {
 - Implemented system with optimized memory usage of 2.5MB
 - **Tech Stack**: Python, NLTK, SpaCy, NumPy, contractions
 
-[🔗 View Details](../assets/information_retrieval_report.pdf)
+[🔗 View Details](../../assets/information_retrieval_report.pdf)
 
 <br><br>
