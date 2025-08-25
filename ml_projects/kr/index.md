@@ -110,8 +110,8 @@ body {
 
 <div id="nav-menu">
   <div style="margin-left: 20px;">
-    <a href="/projects/ml_projects_projects">EN</a>
-    <a href="/projects/ml_projects_projects/kr" class="active">KR</a>
+    <a href="/ml_projects">EN</a>
+    <a href="/ml_projects/kr" class="active">KR</a>
   </div>
 
 <span id="nav-menu-toggle">☰</span>
@@ -197,7 +197,7 @@ body {
 ## [연합학습 기반 랜덤 포레스트](https://arxiv.org/abs/2407.19193)
 *분산 환경에서 데이터 보안을 보장하는 협업 학습 시스템 (2023)*
 
-<img src="../../../images/random_forest.png" width="650" alt="Training process for the privacy-preserving federated random forest model">
+<img src="../../images/random_forest.png" width="650" alt="Training process for the privacy-preserving federated random forest model">
 
 **소속:** 충남대학교 데이터마이닝 연구실
 <span style="display: block; height: 5px;"></span>
@@ -218,7 +218,7 @@ body {
 ## [RoBERTa 뉴스 분류기](https://github.com/daehan-lim/roberta-sport-news-classifier)
 *합성 데이터 증강을 활용한 고도화된 주제 분류 모델 (2024)*
 
-<img src="../../../images/roberta_architecture.png" width="350" alt="RoBERTa model architecture">
+<img src="../../images/roberta_architecture.png" width="350" alt="RoBERTa model architecture">
 
 **소속:** 충남대학교 데이터마이닝 연구실
 <span style="display: block; height: 5px;"></span>
@@ -239,7 +239,7 @@ body {
 ## [의료 데이터 분류 시스템](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
 *전자의무기록 기반 환자 사망률 예측을 위한 연관 규칙 분류 시스템 (2023)*
 
-<img src="../../../images/associative_classifier.png" width="420px" alt="Associative classifier - rule generation algorithm">
+<img src="../../images/associative_classifier.png" width="420px" alt="Associative classifier - rule generation algorithm">
 
 **소속:** 충남대학교 데이터마이닝 연구실
 <span style="display: block; height: 5px;"></span>
@@ -256,7 +256,7 @@ body {
 
 ---
 
-## [정보 검색 시스템](../../../assets/information_retrieval_report.pdf)
+## [정보 검색 시스템](../../assets/information_retrieval_report.pdf)
 *효율적인 불리언 및 랭킹 기반 문서 검색 시스템 구현 (2024)*
 
 **소속:** 충남대학교
@@ -271,6 +271,6 @@ body {
 - 메모리 사용량을 2.5MB로 최적화된 시스템 구현으로 리소스 사용 효율성 확보
 - **사용 기술**: Python, NLTK, SpaCy, NumPy, contractions
 
-[🔗 상세보기](../../../assets/information_retrieval_report.pdf)
+[🔗 상세보기](../../assets/information_retrieval_report.pdf)
 
 <br><br>

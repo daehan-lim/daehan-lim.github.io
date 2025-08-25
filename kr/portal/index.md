@@ -215,110 +215,101 @@ body {
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&fontSize=45&animation=fadeIn&fontAlignY=38&desc=&descAlignY=51&descAlign=62" alt="Header" style="display: block; width: 100%; height: auto; margin: 0; padding: 0; border-radius: 8px;" />
 
 <div style="position:absolute;left:40px;bottom:-10px;width:80px;height:80px;background:white;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,0.15);">
-<img src="../../../images/acme/app_icon.png" alt="Project Icon" style="max-width:100%;max-height:100%;object-fit:contain;" />
+<img src="../../images/portal/app_icon.png" alt="Project Icon" style="max-width:70%;max-height:70%;object-fit:contain;" />
 </div>
 
 </div>
 
-# ACME - 서비스 티켓 관리 솔루션
+# 정부 포털 앱
 
 ## 📝 개요
-**📌 앱 소개:** 티켓 관리 시스템에 맞춤형 캘린더와 오프라인 기능, 지도 기능을 통합한 AS 관리 안드로이드 앱  
-**🕒 기간:** 2021.05 ~ 2021.06   
-**📱 플랫폼:** Android 네이티브 앱   
-**👥 개발 인원:** 1명  
-**💼 역할:** 전체 안드로이드 앱 개발 담당  
-**🛠️ 주요 사용 기술:** `Android` `Kotlin` `MVVM` `Jetpack` `Room` `Calendar Provider API` `Data Binding` `WebView`  
-**🔗 GitHub:** [daehan-lim/acme](https://github.com/daehan-lim/acme)
+**📌 앱 소개:** 쿠바 피나르 델 리오 시의 공식 정부 대표 포털 안드로이드 앱  
+**🕒 기간:** 2021.02 ~ 2021.04  
+**📱 플랫폼:** Android 네이티브 앱  
+**🏢 회사명:** Desoft (쿠바 국영 소프트웨어 개발사)  
+**👥 개발 인원:** 2명  
+**💼 역할:** 레거시 코드 현대화 및 시민 서비스 모듈 UI/UX 설계·개발 담당  
+**🛠️ 사용 기술:** `Kotlin` `MVVM` `Retrofit` `Room` `Jetpack` `ViewPager2` `WebView` `JavaScript` `Coroutines` `Moshi`    
+**🔗 GitHub:** [daehan-lim/government-portal-app](https://github.com/daehan-lim/government-portal-app)
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="../../../images/acme/dashboard.png" width="240" style="margin-right: 5px;" alt="ACME app dashboard screen" />
-  <img src="../../../images/acme/ticket_details.png" width="240" style="margin-right: 5px;" alt="ACME app ticket details screen" />
-  <img src="../../../images/acme/calendar.png" width="240" style="margin-right: 5px;" alt="ACME app calendar screen" />
-  <img src="../../../images/acme/calendar_sync.png" width="240" style="margin-right: 5px;" alt="ACME app calendar sync screen" /> 
-  <img src="../../../images/acme/login.png" width="240" style="margin-right: 5px;" alt="ACME app login screen" />
-  <img src="../../../images/acme/signup.png" width="240" style="margin-right: 5px;" alt="ACME app signup screen" />
-  <img src="../../../images/acme/edit.png" width="240" style="margin-right: 5px;" alt="ACME app edit screen" />
-  <img src="../../../images/acme/maps.png" width="240" alt="ACME app maps screen" />
+  <img src="../../images/portal/menu.png" width="240" style="margin-right: 5px;" alt="Government portal menu screen"/>
+  <img src="../../images/portal/delegado.png" width="240" style="margin-right: 5px;" alt="District representative portal screen"/>
+  <img src="../../images/portal/form.png" width="240" style="margin-right: 5px;" alt="Request submission form screen"/>
+  <img src="../../images/portal/code.png" width="240" style="margin-right: 5px;" alt="Code input screen"/>
+  <img src="../../images/portal/guide.png" width="240" alt="User guide screen"/> 
 </div>
 <span style="display: block; height: 11px;"></span>
+
+## 📖 프로젝트 배경
+
+쿠바 피나르 델 리오 시의 기존 웹사이트 전용 정부 포털을 시민들이 모바일에서도 원활하게 이용할 수 있도록 하기 위한 안드로이드 앱 개발 필요성이 대두되었습니다. 기존 시스템은 데스크톱 환경에 최적화되어 있어 모바일 사용자들이 민원 신청, 지역 정보 조회, 행정 서비스 이용 시 불편함을 겪고 있었습니다. 특히 지역구 대표자 정보 접근, 민원 처리 현황 추적, 지역 매물 정보 확인 등 핵심 행정 서비스의 모바일 접근성 개선이 시급한 상황이었습니다. 이에 따라 시민 중심의 직관적인 모바일 서비스를 제공하는 정부 포털 앱 개발 프로젝트를 진행하게 되었으며, 프로젝트 과정에서 기존 레거시 코드베이스의 현대화 작업을 담당하게 되었습니다.
 
 ## 🛠️ Tech Stack
 
 [![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white&style=for-the-badge)](https://kotlinlang.org)
 [![MVVM](https://img.shields.io/badge/MVVM-FF5252?style=for-the-badge)](https://developer.android.com/topic/architecture)
 [![Room](https://img.shields.io/badge/Room-00796B?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/training/data-storage/room)
+[![RETROFIT](https://img.shields.io/badge/retrofit-67b586?logo=square&logoColor=white&style=for-the-badge)](https://square.github.io/retrofit)
 [![Jetpack](https://img.shields.io/badge/Jetpack-F57C00?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/jetpack)
 [![Coroutines](https://img.shields.io/badge/Coroutines-7F52FF?logo=kotlin&logoColor=white&style=for-the-badge)](https://kotlinlang.org/docs/coroutines-overview.html)
-[![Navigation](https://img.shields.io/badge/Navigation-AB47BC?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/guide/navigation)
-[![Material Dialogs](https://img.shields.io/badge/Material%20Dialogs-795548?style=for-the-badge)](https://github.com/afollestad/material-dialogs)
-[![Calendar View](https://img.shields.io/badge/Calendar%20View-F4511E?style=for-the-badge)](https://github.com/kizitonwose/CalendarView)
-[![ViewBinding](https://img.shields.io/badge/ViewBinding-7CB342?style=for-the-badge)](https://developer.android.com/topic/libraries/view-binding)
-[![DataBinding](https://img.shields.io/badge/DataBinding-7CB342?style=for-the-badge)](https://developer.android.com/topic/libraries/data-binding)
-[![Google Maps](https://img.shields.io/badge/Google%20Maps-2196F3?style=for-the-badge)](https://maps.google.com)
-[![Lottie](https://img.shields.io/badge/Lottie-029C87?logo=lottie&logoColor=white&style=for-the-badge)](https://airbnb.io/lottie/#/)
-[![CardView](https://img.shields.io/badge/CardView-FF6F61?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/jetpack/androidx/releases/cardview)
+[![ViewPager2](https://img.shields.io/badge/ViewPager2-7CB342?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/jetpack/androidx/releases/viewpager2)
 [![LiveData](https://img.shields.io/badge/LiveData-3F51B5?style=for-the-badge)](https://developer.android.com/topic/libraries/architecture/livedata)
+[![DataBinding](https://img.shields.io/badge/DataBinding-7CB342?style=for-the-badge)](https://developer.android.com/topic/libraries/data-binding)
+[![ViewBinding](https://img.shields.io/badge/ViewBinding-7CB342?style=for-the-badge)](https://developer.android.com/topic/libraries/view-binding)
+[![Moshi](https://img.shields.io/badge/Moshi-4CAF50?style=for-the-badge)](https://github.com/square/moshi)
+[![WebView](https://img.shields.io/badge/WebView-4285F4?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/reference/android/webkit/WebView)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://www.w3.org/html/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Material Design](https://img.shields.io/badge/Material%20Design-4285F4?logo=material-design&logoColor=white&style=for-the-badge)](https://material.io/design)
 
 ## 📋 프로젝트 구조
 
 ```
-├── database/                         # Room 데이터베이스 레이어
-│   ├── AcmeDatabase.kt               # 메인 데이터베이스 설정 및 싱글톤 관리
-│   ├── dao/                          # 데이터 액세스 객체
-│   │   ├── TicketDao.kt              # 티켓 CRUD 작업
-│   │   └── UserDao.kt                # 사용자 인증 작업
-│   └── model/                        # 데이터베이스 엔티티
-│       ├── Ticket.kt                 # 서비스 티켓 데이터 모델
-│       └── User.kt                   # 사용자 계정 데이터 모델
-├── repository/                       # Repository 패턴 구현
-│   ├── TicketRepository.kt           # 티켓 데이터 추상화 레이어
-│   └── UserRepository.kt             # 사용자 데이터 추상화 레이어
-├── ui/                               # MVVM 아키텍처 기반 UI 레이어
-│   ├── DbAccessViewModel.kt          # 공통 ViewModel 기본 클래스
-│   ├── login/                        # 로그인 및 회원가입
-│   │   ├── LoginActivity.kt          # 로그인 화면
-│   │   ├── SignUpActivity.kt         # 회원가입 화면
-│   │   ├── LoginSignupViewModel.kt   # 인증 비즈니스 로직
-│   │   └── LoginSignUpFormState.kt   # 폼 검증 상태 관리
-│   ├── dashboard/                    # 메인 대시보드
-│   │   ├── MainActivity.kt           # 티켓 목록 및 메인 기능
-│   │   ├── MainViewModel.kt          # 대시보드 데이터 관리
-│   │   └── TicketsAdapter.kt         # RecyclerView 어댑터
-│   ├── newticket/                    # 티켓 생성 기능
-│   │   ├── NewTicketActivity.kt      # 신규 티켓 등록 화면
-│   │   ├── NewTicketViewModel.kt     # 티켓 생성 로직
-│   │   └── ManageTicketFormState.kt  # 폼 검증 및 상태 관리
-│   ├── editticket/                   # 티켓 수정 기능
-│   │   ├── EditTicketActivity.kt     # 티켓 편집 화면
-│   │   └── EditTicketViewModel.kt    # 티켓 수정 로직
-│   ├── workticket/                   # 티켓 상세 작업
-│   │   ├── WorkTicketActivity.kt     # 티켓 상세 및 작업 화면
-│   │   └── OverviewFragment.kt       # 티켓 개요 프래그먼트
-│   ├── calendar/                     # 일정 관리 기능
-│   │   ├── CalendarActivity.kt       # 캘린더 뷰 화면
-│   │   ├── CalendarViewModel.kt      # 일정 데이터 관리
-│   │   ├── EventsAdapter.kt          # 이벤트 목록 어댑터
-│   │   └── Extensions.kt             # 캘린더 확장 함수
-│   └── directions/                   # 지도 및 길찾기
-│       └── GetDirectionsActivity.kt  # WebView 기반 구글맵 연동
-├── model/                            # 비즈니스 모델
-│   └── DueTicket.kt                  # 만료 예정 티켓 모델
-└── util/                             # 유틸리티 및 공통 기능
-    ├── BindingUtils.kt               # 데이터 바인딩 어댑터
-    ├── CalendarUtil.kt               # 디바이스 캘린더 연동
-    └── Util.kt                       # 공통 유틸리티 함수
+├── data/                              # 데이터 레이어
+│   ├── database/                      # Room 로컬 데이터베이스
+│   │   └── classifieddatabase/        # 지역 매물 데이터베이스
+│   │       ├── Classified.kt          # 매물 정보 엔티티
+│   │       ├── ClassifiedDao.kt       # 데이터 액세스 객체
+│   │       └── ClassifiedDatabase.kt  # 데이터베이스 설정
+│   ├── model/                         # 데이터 모델 클래스
+│   │   ├── DelegateData.kt           # 지역구 대표자 정보
+│   │   ├── ClassifiedApi.kt          # 매물 API 응답 모델
+│   │   ├── Municipality.kt           # 행정구역 모델
+│   │   └── gestiondelegado/          # 대표자 관리 모델
+│   └── network/                       # 네트워크 통신 레이어
+│       └── PortalGobiernoApiService.kt # REST API 서비스
+├── ui/                               # 프레젠테이션 레이어
+│   ├── classified/                   # 지역 매물 기능
+│   │   ├── ClassifiedFragment.kt     # 매물 목록 화면
+│   │   ├── ClassifiedViewModel.kt    # 매물 비즈니스 로직
+│   │   ├── ClassifiedAdapter.kt      # RecyclerView 어댑터
+│   │   └── classifieddetail/         # 매물 상세 정보
+│   ├── gestiondelegado/              # 지역구 대표자 관리
+│   │   ├── GestionDelegadoFragment.kt # 대표자 메뉴 화면
+│   │   └── gestiondelegadosection/   # 대표자 서비스 탭
+│   │       ├── GestionSectionActivity.kt # ViewPager2 기반 탭 화면
+│   │       ├── GestionSectionViewModel.kt # 공통 비즈니스 로직
+│   │       ├── DelegadoDataFragment.kt    # 대표자 정보 조회
+│   │       ├── DispatchFragment.kt        # 온라인 민원 신청
+│   │       └── ProcedureFollowUpFragment.kt # 민원 처리 추적
+│   └── goverment/                    # 정부 서비스 WebView
+│       └── GovernmentFragment.kt     # JavaScript 인젝션 WebView
+├── misc/                            # 유틸리티 및 공통 기능
+│   ├── Util.kt                      # 날짜 형식화 등 유틸리티
+│   └── Converters.kt                # Room 타입 컨버터
+└── BindingUtils.kt                  # 데이터 바인딩 어댑터
 ```
 
 ## 🌟 주요업무
-- 반응형 디자인이 적용된 오프라인 AS 티켓 관리 앱 구현
-- 맞춤형 이벤트 시각화 및 Android Calendar Provider API를 연동한 인터랙티브 캘린더 개발
-- 구글 맵 연동을 통한 티켓 위치 주소 검색 및 길안내 기능 제공
-- 안정적인 사용자 인증 시스템 및 오류 처리, 입력값 검증 구현
+- MVVM 아키텍처, 코루틴, JetPack 컴포넌트를 도입해 레거시 코드 현대화
+- 지역구 대표자 관리 시스템: Retrofit/Moshi 활용 민원 신청, 회의 일정 관리, 처리 현황 추적 등 주요 기능 구현으로 행정 업무 자동화
+- 지역 매물 피드 시스템 구현: API 연동과 오프라인 데이터 캐싱, 실시간 동기화, 이미지 캐러셀, 네트워크 상태 모니터링 기능 통합
+- 시도의회 포털 통합: JavaScript 인젝션 및 WebView 커스터마이징으로 데스크톱 중심 UI를 모바일용으로 최적화
 
 ## 🚀 주요성과
-- 티켓 위치 검색 및 길안내 소요 시간 20% 단축
-- 캘린더 연동으로 업무 효율성 향상
+- 레거시 코드 현대화로 앱 안정성 및 유지보수성 향상
+- 행정 업무 자동화로 민원 처리 프로세스 간소화
+- 오프라인 우선 설계로 모바일 사용자 접근성 개선
 
 <br><br><br>

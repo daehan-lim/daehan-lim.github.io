@@ -217,7 +217,7 @@ body {
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&fontSize=45&animation=fadeIn&fontAlignY=38&desc=&descAlignY=51&descAlign=62" alt="Header" style="display: block; width: 100%; height: auto; margin: 0; padding: 0; border-radius: 8px;" />
 
-<img src="../../../images/cooki/app_icon.png" alt="Project Icon" style="position: absolute; left: 40px; bottom: -10px; width: 80px; height: 80px; border-radius: 20px; object-fit: cover;" />
+<img src="../../images/cooki/app_icon.png" alt="Project Icon" style="position: absolute; left: 40px; bottom: -10px; width: 80px; height: 80px; border-radius: 20px; object-fit: cover;" />
 
 </div>
 
@@ -234,13 +234,13 @@ body {
 **🔗 App Store:** [apps.apple.com/kr/app/cooki/id6747327839](https://apps.apple.com/kr/app/cooki/id6747327839)
 
 <div class="image-row">
-  <img src="../../../images/cooki/1_ad.png" alt="1 ad screen" class="image-item" />
-  <img src="../../../images/cooki/2_ad.png" alt="2 ad screen" class="image-item" />
-  <img src="../../../images/cooki/3_recipe_generation.png" alt="Recipe generation screen" class="image-item" />
-  <img src="../../../images/cooki/4_recipe_detail.png" alt="Recipe detail screen" class="image-item" />
-  <img src="../../../images/cooki/5_community.png" alt="Community screen" class="image-item" />
-  <img src="../../../images/cooki/6_review.png" alt="Review screen" class="image-item" />
-  <img src="../../../images/cooki/7_my_recipes.png" alt="My recipes screen" class="image-item" />
+  <img src="../../images/cooki/1_ad.png" alt="1 ad screen" class="image-item" />
+  <img src="../../images/cooki/2_ad.png" alt="2 ad screen" class="image-item" />
+  <img src="../../images/cooki/3_recipe_generation.png" alt="Recipe generation screen" class="image-item" />
+  <img src="../../images/cooki/4_recipe_detail.png" alt="Recipe detail screen" class="image-item" />
+  <img src="../../images/cooki/5_community.png" alt="Community screen" class="image-item" />
+  <img src="../../images/cooki/6_review.png" alt="Review screen" class="image-item" />
+  <img src="../../images/cooki/7_my_recipes.png" alt="My recipes screen" class="image-item" />
 </div>
 <span style="display: block; height: 11px;"></span>
 
@@ -606,7 +606,7 @@ detectAndUpdateLanguage(reviewId); // await 제거로 백그라운드 실행
 ## 🎞️ 시연 영상
 <div align="center"> 
 <a href="https://www.youtube.com/watch?v=0cTYv7v8H4A">
-  <img src="../../../images/cooki/video_preview.png" alt="Watch the Video" width="230" />
+  <img src="../../images/cooki/video_preview.png" alt="Watch the Video" width="230" />
 </a>
 </div>
 <br>
