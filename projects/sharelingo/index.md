@@ -499,21 +499,21 @@ String? calculateDistanceFrom(GeoPoint? otherLocation) {
 
 **1. Onboarding User Experience Optimization**
 
-- **Problem**
-  Users were abandoning the app when location permission requests were denied, either permanently or temporarily. The app couldn't distinguish between different types of denials, so users received generic error messages without clear next steps.
+- **Problem**  
+  Location permission denial caused app usage restrictions or errors, leading to user abandonment. Lack of distinction between temporary and permanent denial prevented appropriate guidance messaging.
 
-- **Analysis Process**
-  - Studied Geolocator package permission states and user flow implications
+- **Solution Process**  
+  - Analyzed Geolocator package permission states and user flow implications
   - Recognized that location features should be optional, not required for core app functionality
   - Identified need to provide clear guidance and alternatives for each permission scenario
 
-- **Solution**
-  - Created specific handling for 4 distinct location permission states:
+- **Solution**  
+  - Created specific handling for 4 distinct location permission states, with tailored user guidance messages:
     - `success`: Location acquired successfully
-    - `deniedTemporarily`: User can be asked again—show retry guidance
-    - `deniedForever`: User blocked permission—provide settings navigation instructions
-    - `error`: Technical issue—offer retry or alternative path
-  - Added "Continue without location" option to ensure users can always proceed
+    - `deniedTemporarily`: User can be asked again — show retry guidance
+    - `deniedForever`: User blocked permission — provide settings navigation instructions
+    - `error`: Technical issue — offer retry or alternative path
+  - Added "Continue without location" option to ensure app usage continuity
 
 ```dart
 enum LocationStatus { success, deniedTemporarily, deniedForever, error }
@@ -549,22 +549,22 @@ Future<(LocationStatus, Position?)> getPosition() async {
 }
 ```
 
-- **Results**
-  Improved onboarding completion rate by **35%** through clearer guidance and alternative pathways
+- **Results**  
+  Improved onboarding completion rate by **35%** and enhanced user experience through permission state-specific guidance
 
-**2. Firebase Configuration in GitHub Actions**
+**2. Firebase Configuration Files Missing in GitHub Actions**
 
-- **Problem**
-  CI pipeline needed `firebase_options.dart` file to build the app, but this file contains sensitive data and can't be committed to version control. This caused build failures with missing file errors.
+- **Problem**  
+  CI pipeline required `firebase_options.dart` file to build the app, but this file contains sensitive data and can't be committed to version control. This caused build failures with missing file errors.
 
-- **Initial approach**
+- **Initial approach**  
   - Tried copying file contents directly into GitHub Secrets
-  - Failed due to multiline content and special characters breaking the secret storage
+  - Could not input due to multiline content and special characters
 
-- **Root cause analysis**
-  GitHub Secrets handle multiline and special characters inconsistently, and we needed separate configuration files for different platforms (iOS/Android)
+- **Root cause analysis**  
+  GitHub Secrets handle multiline and special characters inconsistently
 
-- **Solution**
+- **Solution**  
   - Encoded all Firebase configuration files using Base64 to create single-line, safe text strings
   - Stored encoded versions in GitHub Secrets
   - Modified CI workflow to decode files at build time and place them in correct directories
@@ -576,24 +576,24 @@ Future<(LocationStatus, Position?)> getPosition() async {
     echo "${{ secrets.FIREBASE_DART_OPTIONS }}" | base64 --decode > lib/firebase_options.dart
 ```
 
-- **Results**
-  Eliminated configuration-related build failures and established reliable automated deployment pipeline
+- **Results**  
+  Eliminated configuration-related build failures due to missing Firebase configuration files, establishing a reliable automated deployment pipeline
 
 **3. Profile Update Data Synchronization**
 
-- **Problem**
-  When users updated their profiles, changes needed to propagate to all their existing posts and comments. Client-side batch updates risked partial failures due to network issues or app crashes, potentially leaving data in inconsistent states.
+- **Problem**  
+  When users updated their profiles, changes needed to propagate to all their existing posts and comments. Client-side processing risked partial failures due to network errors or app crashes, potentially causing data inconsistency.
 
-- **Analysis**
+- **Analysis**  
   - **Client-side limitations**: Large batch operations vulnerable to interruption, leading to partial updates
   - **Server-side advantages**: Firebase Cloud Functions provide transaction guarantees and reliable execution
 
-- **Solution**
+- **Solution**  
   - Implemented Cloud Functions triggers that detect profile changes and automatically update related content
-  - Used `collectionGroup` queries to efficiently find and update comments across all posts
-  - Leveraged Promise.all for parallel processing to optimize performance while maintaining data integrity
+  - Used `collectionGroup` queries to efficiently query and update comments across all posts
+  - Optimized update performance through parallel processing with Promise.all
 
-- **Results**
+- **Results**  
   Ensured complete data consistency across all user-generated content while maintaining optimal update performance
 
 ## 🎞️ Video
