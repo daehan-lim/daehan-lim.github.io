@@ -75,7 +75,7 @@ code.language-plaintext.highlighter-rouge {
 #nav-menu a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 14px;
   font-weight: bold;
   font-size: 14px;
   transition: color 0.3s ease;

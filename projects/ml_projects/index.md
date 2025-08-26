@@ -28,7 +28,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 #nav-menu a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 14px;
   font-weight: bold;
   font-size: 14px;
   transition: color 0.3s ease;
