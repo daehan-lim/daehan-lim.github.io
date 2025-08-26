@@ -225,7 +225,7 @@ body {
 **🕒 Duration:** May 16, 2025 ~ May 27, 2025 (2 weeks)  
 **📱 Platform:** Flutter cross-platform app (Android, iOS)  
 **👥 Team Size:** 4 developers  
-**💼 Role:** Team Leader, CI/CD pipeline implementation, authentication system, profile management, feed filtering, Google Maps integration, onboarding flow  
+**💼 Role:** Team Leader, CI/CD pipeline, authentication system, profile management, feed filtering, Google Maps integration, onboarding flow  
 **🛠️ Key Technologies:** `Flutter` `Firebase` `Riverpod` `Clean Architecture` `Google OAuth` `Firestore` `Cloud Functions` `GitHub Actions` `VWorld API`  
 **🔗 GitHub:** [zero-to-one-flutter/flutter-share-lingo](https://github.com/zero-to-one-flutter/flutter-share-lingo)  
 **🔗 Play Store:** [ShareLingo on Play Store](https://play.google.com/store/apps/details?id=com.zerotoone.sharelingo&hl=kr)
@@ -247,10 +247,10 @@ body {
 
 ## 📖 Project Background
 
-- Among approximately [1.5 billion](https://www.thoughtco.com/how-many-people-learn-english-globally-1210367) language learners worldwide, [68%](https://www.lingomelo.com/blog-page/language-learning-statistics) struggle with grammar and [53%](https://www.lingomelo.com/blog-page/language-learning-statistics) face difficulties with vocabulary acquisition. The lack of real conversation opportunities with native speakers creates a critical gap in practical language experience.
-- Social media-style language learning platforms provide learners with natural practice environments and cultural exchange opportunities, complementing traditional learning methods.
-- Language learners need an efficient matching system to find appropriate exchange partners based on their native and target language combinations, enabling mutual assistance.
-- The project aims to improve practical communication skills by connecting effective language exchange partners through smart filtering based on language combinations and regional matching, providing a natural language practice environment through social feed interactions.
+- There are approximately [1.5 billion](https://www.thoughtco.com/how-many-people-learn-english-globally-1210367) language learners worldwide, with [68%](https://www.lingomelo.com/blog-page/language-learning-statistics) struggling with grammar and [53%](https://www.lingomelo.com/blog-page/language-learning-statistics) facing vocabulary challenges. Many learners lack opportunities to practice with native speakers, creating a significant gap in practical language experience.
+- Social platforms designed for language learning provide students with natural environments to practice and exchange language and cultural knowledge, supplementing traditional classroom methods.
+- Language learners need efficient ways to find practice partners who can help them—someone whose native language matches their target language, and vice versa.
+- The project aims to connect language exchange partners through smart filtering based on their native and target languages and their geographic proximity, providing a natural language practice environment through social feed interactions.
 
 ## 🛠️ Tech Stack
 
@@ -329,114 +329,113 @@ body {
 
 ### Project Leadership and Development Process Management
 
-- **Led 4-person team project from concept to production deployment**
-  - Successfully managed all phases from app planning, development, deployment to operations, culminating in Play Store launch
-  - Coordinated work distribution and progress tracking among 4 team members through systematic project management
-  - Conducted daily scrum meetings and tracked feature-specific progress for each team member
+- **Led 4-person development team from concept through Play Store deployment**
+  - Oversaw entire product lifecycle including planning, development, testing, and launch
+  - Managed task allocation and tracked feature development progress across team members through daily scrum meetings
 
-- **Technical decision-making and development standardization**
-  - Led technology stack selection, Clean Architecture pattern adoption, and overall project structure design
-  - Implemented mandatory PR code review process with personal review oversight, maintaining consistent code quality and reducing bug occurrence by **50%**
-  - Guided team discussions for UI improvements and optimized user experience across all screens
-  - Established team Git branching strategy and development environment standardization to enhance collaboration efficiency
-  - Standardized coding conventions to improve code readability and maintainability
+- **Established technical standards and development practices**
+  - Drove technology stack selection, Clean Architecture pattern adoption, and overall system architecture decisions
+  - Required code review approval for all pull requests and personally reviewed submissions, maintaining consistent quality standards and reducing bug occurrence by **50%**
+  - Guided team discussions for UI improvements and optimized user experience across different screens
+  - Established Git branching strategy to improve team collaboration efficiency
+  - Implemented consistent coding standards to improve code readability and maintainability
 
 ### CI/CD Pipeline Implementation
 
 - **Built GitHub Actions-based CI/CD pipeline, improving development efficiency by 70%**
-  - Implemented automated testing and `flutter analyze` code quality verification at Pull Request stage, reducing manual review time by **50%**
-  - Streamlined QA testing process with automatic APK builds and `GitHub Artifacts` uploads when pushing to `test-apk` branch
-  - Secured sensitive information and ensured CI environment stability through Base64 encoding of `Firebase` configuration files stored in `GitHub Secrets`
+  - Automated testing and `flutter analyze` code quality checks on every pull request, reducing manual review time by **50%**
+  - Streamlined QA process with automatic APK builds uploaded to `GitHub Artifacts` when pushing to `test-apk` branch
+  - Secured sensitive configuration data by Base64-encoding `Firebase` files and storing them in `GitHub Secrets`
 
 ### Google OAuth Authentication and User Management System
 
-- **Implemented one-click social login system**
-  - Built seamless one-click login system integrating `Google Sign-In` with `Firebase Authentication`
-  - Implemented intelligent entry point system automatically distinguishing new and existing users, routing to appropriate onboarding or main screen
+- **Implemented seamless social login**
+  - Built one-click authentication system using `Google Sign-In` with `Firebase Authentication`
+  - Created routing logic that automatically directs new users to onboarding and existing users to the feed
 
-- **Comprehensive user profile system**
-  - Developed complete profile page and profile editing functionality
+- **Built comprehensive user profile system**
+  - Developed complete profile screen and profile editing functionality
   - Implemented settings page with logout functionality
-  - Managed multi-dimensional user information including name, birthdate, language preferences, bio, hobbies, and location
-  - Utilized PopScope for back button control, preventing unintended data loss
+  - Managed multidimensional user information including name, birthdate, language preferences, bio, hobbies, and location
+  - Used PopScope to prevent accidental data loss when users navigate away from editing screens
 
-- **Google Maps Static API profile backgrounds**
+- **Google Maps Static API integration**
   - Implemented personalized map backgrounds centered on user location using `Google Maps Static API`
-  - Enhanced location privacy protection through zoom level restrictions, displaying approximate regional information rather than exact addresses
-  - Implemented fallback system automatically switching to default image when map loading fails
+  - Protected user privacy by limiting zoom levels to show approximate area rather than specific addresses
+  - Implemented automatic fallback to default image when map loading fails
 
-### Multi-step Onboarding and Location-based Matching System
+### Multi-step Onboarding and Location-based Matching
 
-- **5-step onboarding process implementation**
-  - Optimized UX through 5-step onboarding process allowing users to input essential information without feeling overwhelmed
-  - Ensured data quality through real-time validation at each step (adult verification, preventing duplicate native and target languages)
+- **Created user-friendly 5-step onboarding**
+  - Broke complex signup process into digestible steps to reduce user dropoff
+  - Added real-time validation at each step (age verification, preventing users from selecting the same native and target languages)
 
-- **VWorld API location services integration**
-  - Integrated `VWorld API` to convert GPS coordinates to district-level information, providing accurate regional data
-  - Implemented robust location services handling various scenarios including location permission denial
-  - Supported local community formation through location-based nearby user filtering
+- **Integrated VWorld API for location services**
+  - Connected to `VWorld API` to convert GPS coordinates into district-level location data
+  - Built robust permission handling for various location access scenarios
+  - Enabled location-based filtering to help users find nearby language partners
 
-### Language Learning Customized 4-Tab Feed Implementation and Filtering Logic
+### Customized Feed System with 4 Targeted Tabs
 
-- `All` tab: Basic feed displaying all posts in chronological order
-- `Recommended` tab: Filtered posts from users whose native language matches your target language and vice versa, enabling mutual language exchange
-- `Peers` tab: Posts from users with identical native and target language combinations, providing learning motivation
-- `Nearby` tab: Posts from users in the same district, supporting offline meetup connections
+- `All` tab: Chronological feed of all user posts
+- `Recommended` tab: Shows posts from users whose native language is your target language and whose target language is your native language—perfect for mutual language exchange
+- `Peers` tab: Displays posts from users learning the same language combination as you, providing study motivation and shared experiences
+- `Nearby` tab: Features posts from users in your district, enabling potential offline meetups
 
-### Firebase Backend Automation and Security System
+### Firebase Backend Automation and Security
 
-- **Cloud Functions-based data consistency management**
-  - Automatically synchronized all related posts and comments when user profile information changed
-  - Ensured data integrity by automatically cleaning up all associated data when users or posts were deleted
-  - Implemented automatic aggregation system updating post comment counts in real-time when comments were created/deleted
-  - Automatically updated post activity timestamps when comment changes occurred
+- **Automated data consistency with Cloud Functions**
+  - Built triggers that automatically update user information across all posts and comments when profiles change
+  - Implemented cleanup functions that remove associated data when users or posts are deleted
+  - Created real-time comment counting system that updates post metadata instantly
+  - Added automatic timestamp updates when posts receive new activity
 
-- **Firestore Security Rules implementation**
-  - Implemented user-specific data ownership verification system through `Firestore Security Rules`
-  - Applied granular permission management for likes and comments, restricting modification/deletion to data owners only
+- **Implemented comprehensive Firestore Security Rules**
+  - Created user-specific access controls ensuring users can only modify their own content
+  - Applied detailed permissions for likes and comments, preventing unauthorized modifications
 
 ### Terms of Service and Privacy Policy
 
-- Implemented terms of service and privacy policy consent process during app first launch
-- Permanently stored consent status using `SharedPreferences` to prevent re-consent requirements
-- Provided in-app browser access to terms and privacy policy using `URL Launcher`, accessible from settings page
+- Built consent flow for app first-launch requiring users to accept terms and privacy policy
+- Used `SharedPreferences` to remember consent status and avoid repeated prompts
+- Integrated `URL Launcher` for in-app access to legal documents, also available through settings
 
-### Architecture, Testing, and Error Handling Systems
+### Architecture, Testing, and Error Handling
 
-- **Complete Clean Architecture implementation**
-  - Achieved clear layer separation between Data, Domain, and Presentation layers
-  - Enabled Mock object injection during testing through `Riverpod`-based dependency injection pattern where all classes receive dependencies through constructors
-  - Implemented `Repository` pattern for data access abstraction, allowing backend transitions from `Firebase` to other systems without business logic changes
+- **Implemented full Clean Architecture**
+  - Separated concerns across Data, Domain, and Presentation layers with clear boundaries
+  - Used `Riverpod` dependency injection allowing all classes to receive dependencies through constructors, enabling easy Mock object substitution for testing
+  - Applied `Repository` pattern for data abstraction, allowing potential migration from `Firebase` to other backends without business logic changes
 
-- **Unit testing implementation**
-  - Ensured code stability and reliability through comprehensive unit testing across all authentication logic layers
-  - Built independent test execution environment using `Mocktail` to isolate external dependencies, enabling tests without `Firebase` or `Google Sign-In`
-  - Achieved comprehensive test coverage including success/failure cases and various scenarios like user login cancellation
-  - Built isolated test environment through Provider overrides for Mock dependency injection in test environments
+- **Built comprehensive testing suite**
+  - Created unit tests covering all authentication logic layers for code reliability
+  - Used `Mocktail` to isolate external dependencies, enabling tests to run without `Firebase` or `Google Sign-In` connections
+  - Covered multiple scenarios including success cases, failures, and user cancellations
+  - Implemented Provider overrides to inject Mock dependencies in test environments
 
-- **Code quality and maintainability improvements**
-  - Built real-time error monitoring system integrating logging with `Firebase Crashlytics`
-  - Enhanced UI consistency and development efficiency through common widget componentization
-  - Minimized database schema change impact on business logic through complete DTO and Entity layer separation
-  - Managed environment-specific configurations and prevented sensitive information exposure through .env files
-  - Provided clear error messaging through custom exception class design
+- **Enhanced code quality and monitoring**
+  - Integrated custom logging with `Firebase Crashlytics` for real-time error tracking and analysis
+  - Created reusable UI components to maintain design consistency and speed up development
+  - Completely separated DTO and Entity layers to minimize impact of database schema changes on business logic
+  - Used `.env` files for environment-specific configuration while protecting sensitive data
+  - Designed custom exception classes that provide clear, actionable error messages
 
 ## 🧭 Technical Decision-Making
 
-**1. Clean Architecture and Dependency Injection Pattern Adoption**
+**1. Clean Architecture and Dependency Injection Pattern**
 
 - **Requirements**
-  Needed scalable architecture for systematic management of complex features during team development, minimizing code conflicts while considering future expansion and maintenance
+  Team needed a scalable structure to manage complex features, minimize merge conflicts, and support future expansion and maintenance
 
 - **Decision**
-  Decided to implement `Clean Architecture` pattern with `Riverpod`-based dependency injection system
-  - **Layer Separation**: Clear responsibility division between Presentation, Domain, and Data layers
-    - **Presentation**: UI widgets, ViewModels, user interaction handling
-    - **Domain**: Business logic (UseCases), entities, Repository interface definitions
-    - **Data**: External data sources (Firebase, APIs), Repository implementations, DTOs
-  - **Dependency Inversion**: Repository interfaces defined in Domain layer and implemented in Data layer, ensuring upper layers don't depend on lower layers
-  - **Testability**: All classes receive dependencies through constructor injection, enabling unit test environments through Mock object injection
-  - **Team Collaboration Standardization**: Maintained code consistency and improved code review efficiency by following identical patterns throughout the project
+  Adopted `Clean Architecture` with `Riverpod` dependency injection
+  - **Clear layer separation**: Presentation handles UI, Domain contains business logic, Data manages external services
+    - **Presentation**: UI components, ViewModels, user interactions
+    - **Domain**: Business rules (UseCases), entities, Repository contracts
+    - **Data**: External APIs (Firebase, REST), Repository implementations, DTOs
+  - **Dependency inversion**: Repository interfaces live in Domain layer, implementations in Data layer, preventing high-level modules from depending on low-level details
+  - **Testability**: Constructor injection throughout enables Mock object substitution for isolated unit testing
+  - **Team consistency**: Uniform patterns across codebase improved code review efficiency and maintainability
 
 ```dart
 // Repository Interface (Domain Layer)
@@ -466,17 +465,17 @@ final authRepositoryProvider = Provider<AuthRepository>(
 );
 ```
 
-**2. GeoPoint Extension Design for User Distance Calculation**
+**2. GeoPoint Extension for Distance Calculations**
 
 - **Requirements**
-  Need to intuitively display actual proximity between users
+  Need intuitive way to show users how far apart they are from potential language partners
 
 - **Decision**
-  Decided to implement distance calculation logic using `GeoPoint Extension` approach
-  - **Extensibility**: Added methods directly to `GeoPoint` objects, enabling simple usage as `geoPoint.distanceFrom(otherPoint)` anywhere in the codebase
-  - **Performance**: Immediate distance information through client-side calculation without server requests
-  - **Accuracy**: Precise distance calculation considering Earth's curvature using Geolocator package's `distanceBetween` method
-  - **Separation of Concerns**: Distance formatting (e.g., `"3.2 km"`) handled at ViewModel/UI layer, separating logic from presentation
+  Created `GeoPoint Extension` with distance calculation methods
+  - **Convenience**: Extension methods enable clean usage like `geoPoint.distanceFrom(otherPoint)` anywhere in the codebase
+  - **Performance**: Client-side calculations provide immediate results without server roundtrips
+  - **Accuracy**: Leveraged Geolocator package's `distanceBetween` method for precise calculations accounting for Earth's curvature
+  - **Separation of concerns**: Distance formatting (e.g., `"3.2 km"`) handled in presentation layer, keeping logic focused
 
 ```dart
 extension GeoPointExtensions on GeoPoint {
@@ -488,7 +487,7 @@ extension GeoPointExtensions on GeoPoint {
   }
 }
 
-// Utilization in UserGlobalViewModel
+// Usage in UserGlobalViewModel
 String? calculateDistanceFrom(GeoPoint? otherLocation) {
   final userLocation = state?.location;
   if (userLocation == null || otherLocation == null) return null;
@@ -502,20 +501,20 @@ String? calculateDistanceFrom(GeoPoint? otherLocation) {
 **1. Onboarding User Experience Optimization**
 
 - **Problem**
-  Location permission denial caused app usage restrictions or errors, leading to user churn. Lack of distinction between temporary and permanent denial prevented appropriate guidance messaging.
+  Users were abandoning the app when location permission requests were denied, either permanently or temporarily. The app couldn't distinguish between different types of denials, so users received generic error messages without clear next steps.
 
-- **Solution Process**
-  - Analyzed permission state scenarios using Geolocator package
-  - Determined that location functionality was optional rather than mandatory, redesigning to allow app usage even with permission denial
-  - Identified need for clear situation explanation and alternative options for users
+- **Analysis Process**
+  - Studied Geolocator package permission states and user flow implications
+  - Recognized that location features should be optional, not required for core app functionality
+  - Identified need to provide clear guidance and alternatives for each permission scenario
 
 - **Solution**
-  - Segmented location permission status into 4 categories with tailored user guidance messages:
-    - `success`: Normal location information acquisition
-    - `deniedTemporarily`: Temporary denial - guidance for permission re-request
-    - `deniedForever`: Permanent denial - guidance to settings app
-    - `error`: Technical error - retry or proceed without location guidance
-  - Added "Continue without location" button to ensure app usage continuity
+  - Created specific handling for 4 distinct location permission states:
+    - `success`: Location acquired successfully
+    - `deniedTemporarily`: User can be asked again—show retry guidance
+    - `deniedForever`: User blocked permission—provide settings navigation instructions
+    - `error`: Technical issue—offer retry or alternative path
+  - Added "Continue without location" option to ensure users can always proceed
 
 ```dart
 enum LocationStatus { success, deniedTemporarily, deniedForever, error }
@@ -551,27 +550,25 @@ Future<(LocationStatus, Position?)> getPosition() async {
 }
 ```
 
-- **Final Result**
-  Improved onboarding completion rate by **35%** and enhanced user experience through permission state-specific guidance
+- **Results**
+  Improved onboarding completion rate by **35%** through clearer guidance and alternative pathways
 
-**2. Firebase Configuration File Missing in GitHub Actions**
+**2. Firebase Configuration in GitHub Actions**
 
 - **Problem**
-  GitHub Actions workflow required `firebase_options.dart` file but couldn't commit to Git for security reasons, causing `Target of URI doesn't exist: firebase_options.dart` errors during CI builds
+  CI pipeline needed `firebase_options.dart` file to build the app, but this file contains sensitive data and can't be committed to version control. This caused build failures with missing file errors.
 
-- **Initial Attempt**
-  - Pasted configuration file content directly into GitHub Secret
-  - File corruption due to line breaks and special characters, making input impossible
+- **Initial approach**
+  - Tried copying file contents directly into GitHub Secrets
+  - Failed due to multiline content and special characters breaking the secret storage
 
-- **Problem Analysis**
-  GitHub Secrets had unstable multiline and special character handling, and different configuration file formats were needed for iOS/Android platforms
-
-- **Solution Approach**
-  Verified that Base64 encoding converts to binary-safe strings storable in single lines, with original content restorable through decoding
+- **Root cause analysis**
+  GitHub Secrets handle multiline and special characters inconsistently, and we needed separate configuration files for different platforms (iOS/Android)
 
 - **Solution**
-  - Encoded 3 Firebase configuration files individually in Base64 and stored in GitHub Secrets
-  - Automated platform-specific directory creation in workflow, then decoded and restored as files
+  - Encoded all Firebase configuration files using Base64 to create single-line, safe text strings
+  - Stored encoded versions in GitHub Secrets
+  - Modified CI workflow to decode files at build time and place them in correct directories
 
 ```yml
 - name: Decode firebase_options.dart
@@ -580,27 +577,27 @@ Future<(LocationStatus, Position?)> getPosition() async {
     echo "${{ secrets.FIREBASE_DART_OPTIONS }}" | base64 --decode > lib/firebase_options.dart
 ```
 
-- **Final Result**
-  Completely resolved build failures due to missing Firebase configuration files, establishing stable automation environment
+- **Results**
+  Eliminated configuration-related build failures and established reliable automated deployment pipeline
 
-**3. Profile Update Data Synchronization Optimization**
+**3. Profile Update Data Synchronization**
 
 - **Problem**
-  When users modified profile information, changes needed to be reflected across all their posts and comments. Client-side processing risked partial update failures due to network errors or app termination, potentially causing data inconsistency.
+  When users updated their profiles, changes needed to propagate to all their existing posts and comments. Client-side batch updates risked partial failures due to network issues or app crashes, potentially leaving data in inconsistent states.
 
-- **Solution Process**
-  - **Client Processing Limitations**: Confirmed possibility of data inconsistency when network disconnection or app termination occurred during bulk updates, resulting in partial updates
-  - **Server-side Processing Review**: Identified that Firebase Cloud Functions' transaction-based processing could guarantee completeness
+- **Analysis**
+  - **Client-side limitations**: Large batch operations vulnerable to interruption, leading to partial updates
+  - **Server-side advantages**: Firebase Cloud Functions provide transaction guarantees and reliable execution
 
 - **Solution**
-  - Automatically synchronized related data when user information changes were detected in Cloud Functions
-  - Efficiently queried and updated comments across all subcollections using `collectionGroup` queries
-  - Optimized update performance through parallel processing with Promise.all
+  - Implemented Cloud Functions triggers that detect profile changes and automatically update related content
+  - Used `collectionGroup` queries to efficiently find and update comments across all posts
+  - Leveraged Promise.all for parallel processing to optimize performance while maintaining data integrity
 
-- **Final Result**
-  Ensured data consistency during profile modifications while maintaining optimal performance
+- **Results**
+  Ensured complete data consistency across all user-generated content while maintaining optimal update performance
 
-## 🎞️ 시연 영상
+## 🎞️ Video Demo
 <div align="center"> 
 <a href="https://www.youtube.com/watch?v=z3Bbhermz1M">
   <img src="../../images/sharelingo/video_preview.png" alt="Watch the Video" width="230" />
