@@ -54,7 +54,7 @@ h1 {
 
 /* Adjust content padding for the fixed navbar */
 body {
-  padding-top: 75px; /* Adjusted for taller navbar */
+  padding-top: 50px; /* Adjusted for taller navbar */
 }
 
 /* Hamburger Menu (Toggle Button) */
