@@ -589,7 +589,7 @@ final generated = results[0] as GeneratedRecipe?;
 final imageUrl = results[1] as String?;
 ```
 
-- **최종 결과**
+- **최종 결과**  
   레시피 생성 전체 소요 시간을 **40% 단축**하여 사용자 대기 시간을 크게 줄였으며, 이미지 포함 레시피 생성의 만족도를 현저히 향상.
 
 **2. 리뷰 언어 감지 최적화**
@@ -635,7 +635,7 @@ detectAndUpdateLanguage(reviewId); // await 제거로 백그라운드 실행
   - 이미지 선택 시 `maxWidth: 768, maxHeight: 768`으로 리사이징하여 불필요한 타일 생성 방지
   - `Flutter Image Compress`로 JPEG 85% 품질 압축, 해상도 유지하면서 파일 용량 대폭 축소
 
-- **결과 및 효과**
+- **결과 및 효과**  
   이미지 리사이징과 압축을 통해 API 토큰 사용량을 **35% 절감**하고, 업로드 시간을 단축하여 AI 레시피 생성 속도 향상.
 
 **4. 다중 이미지 병렬 업로드 시 파일명 충돌 문제**
