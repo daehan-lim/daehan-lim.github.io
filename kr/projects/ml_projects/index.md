@@ -1,3 +1,4 @@
+<!--suppress CssUnusedSymbol, JSUnusedLocalSymbols -->
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 /* Navigation Menu Styles */
@@ -39,24 +40,32 @@
   color: white;
   text-decoration: none;
   margin: 0 16px;
+  font-weight: bold;
   font-size: 16px;
   transition: color 0.3s ease;
+}
+
+#nav-menu > div:first-child a {
+  font-size: 13px;
+  margin: 0 7px;
+  padding: 5px 11px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
   font-weight: 700; /* Increase from bold to 700 */
   -webkit-font-smoothing: antialiased; /* Better text rendering */
   -moz-osx-font-smoothing: grayscale;
 }
 
-#nav-menu > div:first-child a {
-  font-size: 14px;
-  margin: 0 10px;
+#nav-menu > div:first-child a.active {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  transform: translateY(-1px);
 }
 
-#nav-menu a.active {
-  color: #f1c40f; /* Same yellow as your hover effect */
-}
-
-#nav-menu a:hover {
-  color: #f1c40f;
+#nav-menu > div:first-child a:hover {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
 }
 
 /* Adjust content padding for the fixed navbar */
@@ -81,37 +90,37 @@ body {
 }
 
 @media (max-width: 768px) {
-#nav-links {
-  display: none; /* Hide links initially on mobile */
-  flex-direction: column;
-  align-items: center;
-  background-color: #21427D; /* Match navbar background */
-  width: 100%;
-  position: absolute;
-  top: 60px; /* Space below navbar */
-  left: 0;
-  padding: 15px 0; /* Add spacing around links */
-  z-index: 1000; /* Ensure it doesn't overlap the toggle button */
-}
+  #nav-links {
+    display: none; /* Hide links initially on mobile */
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #3464e1 0%, #764ba2 100%); /* Match navbar background */
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Space below navbar */
+    left: 0;
+    padding: 15px 0; /* Add spacing around links */
+    z-index: 1000; /* Ensure it doesn't overlap the toggle button */
+  }
 
-#nav-links.active {
-  display: flex; /* Show links when active */
-}
+  #nav-links.active {
+    display: flex; /* Show links when active */
+  }
 
-#nav-links a {
-  margin: 15px 0; /* Added vertical spacing */
-}
+  #nav-links a {
+    margin: 15px 0; /* Added vertical spacing */
+  }
 
-#nav-menu-toggle {
-  display: block; /* Show hamburger menu */
-}
+  #nav-menu-toggle {
+    display: block; /* Show hamburger menu */
+  }
 }
 </style>
 
 <div id="nav-menu">
   <div style="margin-left: 20px;">
     <a href="/projects/ml_projects">EN</a>
-    <a href="/projects/ml_projects/kr" class="active">KR</a>
+    <a href="/kr/projects/ml_projects">KR</a>
   </div>
 
 <span id="nav-menu-toggle">☰</span>
@@ -182,6 +191,32 @@ body {
         adjustScroll(e, this.getAttribute('href'));
       });
     });
+
+    // Fix EN/KR active states based on current page
+    function updateLanguageButtons() {
+      const currentPath = window.location.pathname;
+      const enButton = document.querySelector('a[href="/projects/ml_projects"]');
+      const krButton = document.querySelector('a[href="/kr/projects/ml_projects"]');
+      
+      // Remove active class from both buttons first
+      if (enButton) enButton.classList.remove('active');
+      if (krButton) krButton.classList.remove('active');
+      
+      // Check for KR pages first (more specific)
+      if (currentPath.includes('/kr')) {
+        if (krButton) krButton.classList.add('active');
+      } 
+      // Then check for EN pages (root, index, etc.)
+      else {
+        if (enButton) enButton.classList.add('active');
+      }
+    }
+
+    // Update buttons on page load
+    updateLanguageButtons();
+
+    // Update buttons when navigation occurs (for SPAs)
+    window.addEventListener('popstate', updateLanguageButtons);
   });
 </script>
 

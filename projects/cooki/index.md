@@ -40,11 +40,11 @@ code.language-plaintext.highlighter-rouge {
 .image-row {
   display: flex;
   overflow-x: auto;
-  border: 2px solid #ccc;
-  padding: 6px;
-  border-radius: 8px;
-  gap: 5px;
-  align-items: flex-start;
+  padding: 10px !important;
+  gap: 20px !important;
+  align-items: flex-start !important;
+  border: none !important;
+  border-radius: 0 !important;
 }
 
 .image-item {
@@ -52,6 +52,9 @@ code.language-plaintext.highlighter-rouge {
   height: auto !important;
   display: block !important;
   flex-shrink: 0 !important;
+  border-radius: 20px !important; /* force rounded corners */
+  border: 1px solid #e0e0e0 !important; /* force light border */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05) !important; /* force shadow */
 }
 
 .linked-image {

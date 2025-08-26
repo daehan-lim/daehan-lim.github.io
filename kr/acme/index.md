@@ -77,12 +77,27 @@ code.language-plaintext.highlighter-rouge {
   transition: color 0.3s ease;
 }
 
-#nav-menu > div:first-child a { 
-    margin: 0 10px;
+#nav-menu > div:first-child a {
+  font-size: 13px;
+  margin: 0 7px;
+  padding: 5px 11px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  font-weight: 700; /* Increase from bold to 700 */
+  -webkit-font-smoothing: antialiased; /* Better text rendering */
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#nav-menu a:hover {
-  color: #f1c40f;
+#nav-menu > div:first-child a.active {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  transform: translateY(-1px);
+}
+
+#nav-menu > div:first-child a:hover {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
 }
 
 /* Adjust content padding for the fixed navbar */
@@ -136,7 +151,8 @@ body {
 
 <div id="nav-menu">
   <div style="margin-left: 20px;">
-    <a href="/" class="active"></a> 
+    <a href="/projects/acme">EN</a>
+    <a href="/kr/acme">KR</a>
   </div>
 
 <span id="nav-menu-toggle">☰</span>
@@ -207,6 +223,32 @@ body {
         adjustScroll(e, this.getAttribute('href'));
       });
     });
+
+    // Fix EN/KR active states based on current page
+    function updateLanguageButtons() {
+      const currentPath = window.location.pathname;
+      const enButton = document.querySelector('a[href="/projects/acme"]');
+      const krButton = document.querySelector('a[href="/kr/acme"]');
+      
+      // Remove active class from both buttons first
+      if (enButton) enButton.classList.remove('active');
+      if (krButton) krButton.classList.remove('active');
+      
+      // Check for KR pages first (more specific)
+      if (currentPath.includes('/kr')) {
+        if (krButton) krButton.classList.add('active');
+      } 
+      // Then check for EN pages (root, index, etc.)
+      else {
+        if (enButton) enButton.classList.add('active');
+      }
+    }
+
+    // Update buttons on page load
+    updateLanguageButtons();
+
+    // Update buttons when navigation occurs (for SPAs)
+    window.addEventListener('popstate', updateLanguageButtons);
   });
 </script>
 
