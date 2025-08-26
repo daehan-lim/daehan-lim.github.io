@@ -288,7 +288,7 @@ body {
 
 ## 📖 프로젝트 배경
 
-- 요리 초보자의 [27%](https://shop.linzheritageangus.com/clueless-cooks-report)가 처음부터 요리하는 것을 두려워하고, [38%](https://yougov.co.uk/society/articles/43386-how-confident-are-britons-kitchen)가 레시피 없이 요리하는 것에 자신감이 없다는 조사들의 결과에서 보듯이, 접근하기 쉬운 개인화된 요리 가이드에 대한 니즈가 명확히 존재
+- 요리 초보자 중 [27%](https://shop.linzheritageangus.com/clueless-cooks-report)가 처음부터 요리하는 것을 두려워하고, [38%](https://yougov.co.uk/society/articles/43386-how-confident-are-britons-kitchen)가 레시피 없이 요리하는 것에 자신감이 없다는 조사들의 결과에서 보듯이, 접근하기 쉬운 개인화된 요리 가이드에 대한 니즈가 명확히 존재
 - 특히 냉장고 속 남은 재료로 즉석 요리를 만들고 싶어하는 사용자들이 적절한 레시피를 찾는 데 어려움을 겪고 있으며, 기존 레시피 앱들은 단순 검색 기반으로만 제공되어 이러한 개별적 상황을 반영하지 못하는 한계 보유
 - 이에 따라 생성형 AI를 활용하여 사용자의 보유 재료나 음식 사진을 바탕으로 실시간 맞춤형 레시피를 생성하고, 커뮤니티 기반 경험 공유가 가능한 통합 플랫폼 개발 필요성 확인
 - 요리 진입 장벽을 낮추고 개인 상황에 최적화된 요리 솔루션을 제공함으로써, 누구나 쉽게 요리를 시작하고 즐길 수 있는 환경 조성을 목표로 프로젝트 기획
