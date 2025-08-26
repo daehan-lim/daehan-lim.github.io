@@ -239,7 +239,7 @@ body {
         if (krButton) krButton.classList.add('active');
       } 
       // Then check for EN pages (root, index, etc.)
-      else if (currentPath === '/' || currentPath === '/index.html' || currentPath === '') {
+      else {
         if (enButton) enButton.classList.add('active');
       }
     }
