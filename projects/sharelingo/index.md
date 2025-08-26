@@ -400,7 +400,6 @@ body {
   - Developed complete profile screen and profile editing functionality
   - Implemented settings page with logout functionality
   - Managed multidimensional user information including name, birthdate, language preferences, bio, hobbies, and location
-  - Used PopScope to prevent accidental data loss when users navigate away from editing screens
 
 - **Google Maps Static API integration**
   - Implemented personalized map backgrounds centered on user location using `Google Maps Static API`
