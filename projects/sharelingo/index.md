@@ -325,7 +325,7 @@ body {
 ├── main.dart                          # App entry point
 ```
 
-## 🌟 Key Achievements & Implementation
+## 🌟 Main Contributions
 
 ### Project Leadership and Development Process Management
 
@@ -366,31 +366,30 @@ body {
 
 ### Multi-step Onboarding and Location-based Matching
 
-- **Created user-friendly 5-step onboarding**
-  - Broke complex signup process into digestible steps to reduce user dropoff
-  - Added real-time validation at each step (age verification, preventing users from selecting the same native and target languages)
+- **5-step onboarding flow**
+  - Optimized UX through 5-step onboarding process allowing users to input essential information without feeling overwhelmed
+  - Added real-time validation at each step (age verification, preventing duplicate native and target languages, etc.)
 
-- **Integrated VWorld API for location services**
+- **VWorld API location services integration**
   - Connected to `VWorld API` to convert GPS coordinates into district-level location data
-  - Built robust permission handling for various location access scenarios
-  - Enabled location-based filtering to help users find nearby language partners
+  - Built robust permission handling for various location access scenarios including permission denial
+  - Enabled location-based filtering to help users find posts by nearby language partners
 
-### Customized Feed System with 4 Targeted Tabs
+### Customized Feed Filtering with 4 Targeted Tabs
 
 - `All` tab: Chronological feed of all user posts
-- `Recommended` tab: Shows posts from users whose native language is your target language and whose target language is your native language—perfect for mutual language exchange
+- `Recommended` tab: Shows posts from users whose native language is your target language and whose target language is your native language, enabling mutual language exchange
 - `Peers` tab: Displays posts from users learning the same language combination as you, providing study motivation and shared experiences
-- `Nearby` tab: Features posts from users in your district, enabling potential offline meetups
+- `Nearby` tab: Features posts from users in the same district, enabling potential offline meetups
 
 ### Firebase Backend Automation and Security
 
 - **Automated data consistency with Cloud Functions**
-  - Built triggers that automatically update user information across all posts and comments when profiles change
-  - Implemented cleanup functions that remove associated data when users or posts are deleted
+  - Built triggers that automatically update user information across all posts and comments when profile information changes
+  - Implemented cleanup functions that remove associated data when users or posts are deleted, ensuring data integrity
   - Created real-time comment counting system that updates post metadata instantly
-  - Added automatic timestamp updates when posts receive new activity
 
-- **Implemented comprehensive Firestore Security Rules**
+- **Implemented Firestore Security Rules**
   - Created user-specific access controls ensuring users can only modify their own content
   - Applied detailed permissions for likes and comments, preventing unauthorized modifications
 
@@ -398,23 +397,23 @@ body {
 
 - Built consent flow for app first-launch requiring users to accept terms and privacy policy
 - Used `SharedPreferences` to remember consent status and avoid repeated prompts
-- Integrated `URL Launcher` for in-app access to legal documents, also available through settings
+- Integrated `URL Launcher` for in-app access to terms and privacy policy, also available from the settings screen
 
 ### Architecture, Testing, and Error Handling
 
 - **Implemented full Clean Architecture**
   - Separated concerns across Data, Domain, and Presentation layers with clear boundaries
-  - Used `Riverpod` dependency injection allowing all classes to receive dependencies through constructors, enabling easy Mock object substitution for testing
+  - Used `Riverpod` dependency injection allowing all classes to receive dependencies through constructors, enabling easy Mock object injection for testing
   - Applied `Repository` pattern for data abstraction, allowing potential migration from `Firebase` to other backends without business logic changes
 
-- **Built comprehensive testing suite**
+- **Unit testing implementation**
   - Created unit tests covering all authentication logic layers for code reliability
   - Used `Mocktail` to isolate external dependencies, enabling tests to run without `Firebase` or `Google Sign-In` connections
-  - Covered multiple scenarios including success cases, failures, and user cancellations
-  - Implemented Provider overrides to inject Mock dependencies in test environments
+  - Covered multiple scenarios including success cases, failures, and user login cancellations
+  - Built isolated test environment through Provider overrides to inject Mock dependencies
 
-- **Enhanced code quality and monitoring**
-  - Integrated custom logging with `Firebase Crashlytics` for real-time error tracking and analysis
+- **Enhanced code quality and maintainability**
+  - Built real-time error monitoring system integrating local logging with `Firebase Crashlytics`
   - Created reusable UI components to maintain design consistency and speed up development
   - Completely separated DTO and Entity layers to minimize impact of database schema changes on business logic
   - Used `.env` files for environment-specific configuration while protecting sensitive data
@@ -424,16 +423,16 @@ body {
 
 **1. Clean Architecture and Dependency Injection Pattern**
 
-- **Requirements**
-  Team needed a scalable structure to manage complex features, minimize merge conflicts, and support future expansion and maintenance
+- **Requirements**  
+  Team needed a scalable structure to manage complex features, minimize code conflicts, and support future expansion and maintenance
 
-- **Decision**
+- **Decision**  
   Adopted `Clean Architecture` with `Riverpod` dependency injection
-  - **Clear layer separation**: Presentation handles UI, Domain contains business logic, Data manages external services
+  - **Layer separation**: Clear responsibility division between Presentation, Domain, and Data layers
     - **Presentation**: UI components, ViewModels, user interactions
-    - **Domain**: Business rules (UseCases), entities, Repository contracts
-    - **Data**: External APIs (Firebase, REST), Repository implementations, DTOs
-  - **Dependency inversion**: Repository interfaces live in Domain layer, implementations in Data layer, preventing high-level modules from depending on low-level details
+    - **Domain**: Business logic (UseCases), entities, Repository interface definitions
+    - **Data**: External data sources (Firebase, APIs), Repository implementations, DTOs
+  - **Dependency inversion**: Repository interfaces defined in Domain layer and implemented in Data layer, ensuring upper layers don't depend on lower layers
   - **Testability**: Constructor injection throughout enables Mock object substitution for isolated unit testing
   - **Team consistency**: Uniform patterns across codebase improved code review efficiency and maintainability
 
@@ -467,13 +466,13 @@ final authRepositoryProvider = Provider<AuthRepository>(
 
 **2. GeoPoint Extension for Distance Calculations**
 
-- **Requirements**
-  Need intuitive way to show users how far apart they are from potential language partners
+- **Requirements**  
+  Need intuitive way to show users actual proximity from potential language partners
 
-- **Decision**
+- **Decision**  
   Created `GeoPoint Extension` with distance calculation methods
-  - **Convenience**: Extension methods enable clean usage like `geoPoint.distanceFrom(otherPoint)` anywhere in the codebase
-  - **Performance**: Client-side calculations provide immediate results without server roundtrips
+  - **Convenience**: Added methods directly to `GeoPoint` objects,enabling clean usage like `geoPoint.distanceFrom(otherPoint)` anywhere in the codebase
+  - **Performance**: Client-side calculations provide immediate results without server requests
   - **Accuracy**: Leveraged Geolocator package's `distanceBetween` method for precise calculations accounting for Earth's curvature
   - **Separation of concerns**: Distance formatting (e.g., `"3.2 km"`) handled in presentation layer, keeping logic focused
 
@@ -597,7 +596,7 @@ Future<(LocationStatus, Position?)> getPosition() async {
 - **Results**
   Ensured complete data consistency across all user-generated content while maintaining optimal update performance
 
-## 🎞️ Video Demo
+## 🎞️ Video
 <div align="center"> 
 <a href="https://www.youtube.com/watch?v=z3Bbhermz1M">
   <img src="../../images/sharelingo/video_preview.png" alt="Watch the Video" width="230" />
