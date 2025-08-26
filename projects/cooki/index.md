@@ -40,11 +40,11 @@ code.language-plaintext.highlighter-rouge {
 .image-row {
   display: flex;
   overflow-x: auto;
-  padding: 10px !important;
-  gap: 20px !important;
-  align-items: flex-start !important;
-  border: none !important;
-  border-radius: 0 !important;
+  border: 2px solid #ccc;
+  padding: 6px;
+  border-radius: 8px;
+  gap: 5px;
+  align-items: flex-start;
 }
 
 .image-item {
@@ -52,9 +52,6 @@ code.language-plaintext.highlighter-rouge {
   height: auto !important;
   display: block !important;
   flex-shrink: 0 !important;
-  border-radius: 20px !important; /* force rounded corners */
-  border: 1px solid #e0e0e0 !important; /* force light border */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05) !important; /* force shadow */
 }
 
 .linked-image {
@@ -63,12 +60,13 @@ code.language-plaintext.highlighter-rouge {
 }
 
 .markdown-body {
-    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
     font-weight: 400 !important;
-    word-break: keep-all !important;
-    letter-spacing: -0.3px !important;
-    line-height: 1.8 !important;
-    font-size: 17px !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    letter-spacing: 0.02em !important;
+    line-height: 1.6 !important;
+    font-size: 16px !important;
 }
 
 #nav-menu a {
@@ -80,12 +78,27 @@ code.language-plaintext.highlighter-rouge {
   transition: color 0.3s ease;
 }
 
-#nav-menu > div:first-child a { 
-    margin: 0 10px;
+#nav-menu > div:first-child a {
+  font-size: 13px;
+  margin: 0 7px;
+  padding: 5px 11px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  font-weight: 700; /* Increase from bold to 700 */
+  -webkit-font-smoothing: antialiased; /* Better text rendering */
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#nav-menu a:hover {
-  color: #f1c40f;
+#nav-menu > div:first-child a.active {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  transform: translateY(-1px);
+}
+
+#nav-menu > div:first-child a:hover {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
 }
 
 /* Adjust content padding for the fixed navbar */
@@ -139,7 +152,8 @@ body {
 
 <div id="nav-menu">
   <div style="margin-left: 20px;">
-    <a href="/" class="active"></a> 
+    <a href="/projects/cooki">EN</a>
+    <a href="/kr/cooki">KR</a>
   </div>
 
 <span id="nav-menu-toggle">☰</span>
@@ -204,12 +218,38 @@ body {
       });
     });
 
-    // Handle all Markdown links with hash anchors
+    // Handle all markdown links with hash anchors
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         adjustScroll(e, this.getAttribute('href'));
       });
     });
+
+    // Fix EN/KR active states based on current page
+    function updateLanguageButtons() {
+      const currentPath = window.location.pathname;
+      const enButton = document.querySelector('a[href="/projects/cooki"]');
+      const krButton = document.querySelector('a[href="/kr/cooki"]');
+      
+      // Remove active class from both buttons first
+      if (enButton) enButton.classList.remove('active');
+      if (krButton) krButton.classList.remove('active');
+      
+      // Check for KR pages first (more specific)
+      if (currentPath.includes('/kr')) {
+        if (krButton) krButton.classList.add('active');
+      } 
+      // Then check for EN pages (root, index, etc.)
+      else {
+        if (enButton) enButton.classList.add('active');
+      }
+    }
+
+    // Update buttons on page load
+    updateLanguageButtons();
+
+    // Update buttons when navigation occurs (for SPAs)
+    window.addEventListener('popstate', updateLanguageButtons);
   });
 </script>
 
