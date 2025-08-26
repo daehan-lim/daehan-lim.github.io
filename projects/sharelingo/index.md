@@ -60,12 +60,13 @@ code.language-plaintext.highlighter-rouge {
 }
 
 .markdown-body {
-    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
     font-weight: 400 !important;
-    word-break: keep-all !important;
-    letter-spacing: -0.3px !important;
-    line-height: 1.8 !important;
-    font-size: 17px !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    letter-spacing: 0.02em !important;
+    line-height: 1.6 !important;
+    font-size: 16px !important;
 }
 
 #nav-menu a {
