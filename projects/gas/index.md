@@ -287,7 +287,7 @@ body {
 
 ## 📖 Project Background
 
-Cuba's national gas utility company faced operational inefficiencies and customer service challenges due to their manual gas consumption recording and calculation processes. The existing system required all procedures from gas meter readings to billing calculations to be performed manually, resulting in time-consuming operations and high potential for calculation errors. Additionally, the lack of systematic educational materials for gas meter reading methods and customer support infrastructure created significant difficulties for users. This comprehensive gas consumption management app project was initiated to address these issues through automated usage calculations, data visualization, and offline-first design.
+Cuba's national Manufactured Gas Company faced operational inefficiencies due to their manual gas consumption recording and billing calculation. All procedures from gas meter readings to billing calculations required manual work, leading to time-intensive operations and increased risk of calculation errors. Additionally, customers lacked systematic educational resources for gas meter reading methods and had limited access to customer support. This project developed a comprehensive mobile solution to automate usage calculations, provide educational resources through a video guide, and implement offline-first design for reliable operation.
 
 ## 📋 Project Structure
 
@@ -326,75 +326,76 @@ Cuba's national gas utility company faced operational inefficiencies and custome
 
 ## 🌟 Main Contributions
 
-### Room Database-based Offline Data Management and Usage Data Storage
-- **MVVM Architecture and Repository Pattern Implementation**
-  - Abstracted data access layer through `ConsumptionDao` and separated business logic concerns
-  - Implemented asynchronous database operations using `Coroutines` and `suspend` functions to prevent UI thread blocking
+### Room Database-based Offline Data Management and Storage
+- **Implemented MVVM architecture with Repository pattern**
+  - Created data access layer abstraction through `ConsumptionDao` to separate business logic
+  - Used `Coroutines` and `suspend` functions for asynchronous database operations, preventing UI thread blocking
   - Built reactive UI with `LiveData` and `ViewModel` for lifecycle-aware data binding
-  - Applied Singleton pattern and `fallbackToDestructiveMigration()` for stable database management
+  - Applied Singleton pattern with `fallbackToDestructiveMigration()` for stable database management
 
-- **Efficient Data CRUD Operations Implementation**
-  - Optimized complex queries including monthly consumption retrieval, yearly data filtering, and automatic integration of latest meter readings
-  - Built continuous data input environment through automatic integration of previous month's meter readings
+- **Implemented Efficient Data CRUD Operations**
+  - Implemented monthly consumption retrieval, yearly data filtering, and automatic integration of latest meter readings
+  - Ensured data continuity by automatically loading previous month's meter readings
 
-### Automated Gas Usage Calculation and Validation System Development
+### Automated Gas Usage Calculation with Real-Time Validation
 - **Real-time Input Validation and Error Prevention**
-  - Implemented immediate error alerts and input blocking when current meter reading is less than previous reading
-  - Built real-time field validation UI using `TextInputLayout`'s `errorEnabled` property
-  - Minimized user input errors through immediate feedback for missing required fields
+  - Implemented immediate error alerts and input blocking when current meter readings are lower than previous readings
+  - Created real-time field validation UI using `TextInputLayout`'s `errorEnabled` property
+  - Provided instant feedback for missing required fields, minimizing user input errors
 
-- **Automated Usage Calculation and Fee Determination**
-  - Implemented consistent fee calculation logic using `PAYMENT_COEFFICIENT` constant (2.5)
-  - Enabled immediate result verification through real-time conversion calculations between gas usage (㎥) and fees (pesos)
-  - Presented calculation results through HTML formatting and `AlertDialog`
+- **Developed automated billing calculation system**
+  - Implemented consistent fee calculation using `PAYMENT_COEFFICIENT` constant (2.5)
+  - Enabled immediate result verification through real-time conversion between gas usage (㎥) and fees (pesos)
+  - Presented calculation results through formatted HTML display and `AlertDialog` interface
 
-### Interactive Data Visualization Implementation Using MPAndroidChart
-- **Annual/Monthly Consumption Pattern Analysis Charts**
-  - Visualized monthly gas consumption using `BarChart` with animation effects to enhance user experience
-  - Supported multi-perspective data analysis through peso/㎥ unit conversion filtering
+### Interactive Data Visualization Using MPAndroidChart
+- **Built annual and monthly consumption analysis charts**
+  - Implemented `BarChart` visualization for monthly gas consumption patterns with animation effects, enhancing user experience
+  - Added peso/㎥ unit conversion filtering for multi-perspective data analysis
 
-- **Responsive Chart UI and User Interaction**
-  - Implemented automatic chart layout adjustment and label density optimization based on portrait/landscape orientation
-  - Built intuitive year selection interface using `MonthPickerDialog`
+- **Created responsive chart interface**
+  - Implemented responsive chart design that adapts to device orientation with optimized label spacing
+  - Integrated `MonthPickerDialog` for intuitive year selection interface
 
-### VideoView-based Gas Meter Reading Method Learning through Video Guide
-- **Full-screen Support Video Player Development**
-  - Customized `MediaController` to add full-screen button and implement screen rotation control
-  - Provided immersive viewing environment through `SystemUI` hiding during automatic portrait/landscape mode transitions
-  - Implemented seamless user experience through video playback position saving and restoration
+### VideoView-based Educational Video Guide
+- **Developed full-screen video player for meter reading tutorial**
+  - Customized `MediaController` with full-screen button and screen rotation controls
+  - Implemented immersive viewing experience with automatic `SystemUI` hiding during orientation changes
+  - Built video playback position saving and restoration for uninterrupted user experience
 
 - **Lifecycle-aware Media Management**
-  - Prevented memory leaks through proper video resource management in `onStart()`, `onStop()`, and `onPause()`
-  - Implemented automatic portrait mode restoration and placeholder screen display upon video completion
-  - Eliminated network dependencies through offline video playback using `raw` resources
+  - Prevented memory leaks through proper video resource management across `onStart()`, `onStop()`, and `onPause()` lifecycle events
+  - Added automatic portrait mode restoration and placeholder screen display when video completes
+  - Used `raw` resources for offline video playback, eliminating network dependencies
 
-### RecyclerView-based Branch Office Contact Directory Implementation
-- Simplified customer inquiry handling process by integrating branch office contact directory for customer support
-- Implemented native app integration using `Intent.ACTION_CALL` and `Intent.ACTION_SENDTO`
-- Provided alternative dial action when permission is denied with dynamic `CALL_PHONE` permission requests
-- Built reusable view binding logic using `@BindingAdapter`
+### Customer Support Directory with Direct Communication
+- **Built branch office contact directory**
+  - Integrated contact information to streamline customer inquiry processes
+  - Implemented direct calling functionality using `Intent.ACTION_CALL` and SMS via `Intent.ACTION_SENDTO`
+  - Added dynamic `CALL_PHONE` permission handling with fallback to dialer app when permission is denied
+  - Built reusable view binding logic using `@BindingAdapter`
 
-### User Experience Optimization and Accessibility Enhancement
-- **Bottom Navigation and Fragment-based Screen Transitions**
-  - Implemented automatic navigation state management through `setupWithNavController()`
-  - Built app exit confirmation dialog through `onBackPressed()` override
-- **Consistent Action Bar Design with Toolbar**
-  - Implemented options menu for immediate access to History and About features
-- Built differentiated typography through custom font application (`segoe_ui`, `seguisb`)
-- Implemented splash screen using gas utility company logo and brand colors
-- Integrated 6 social media platforms including Facebook, Instagram, Twitter, Telegram, LinkedIn
-- Provided additional information access channels through external browser integration via `Intent.ACTION_VIEW`
+### User Experience Optimization & Accessibility Improvements
+- Built Bottom Navigation with Fragment-based screen transitions
+  - Automated navigation state management using `setupWithNavController()`
+  - Added exit confirmation dialog through `onBackPressed()` override
+- Designed consistent Toolbar-based action bar
+  - Included option menus for quick access to features like History and About
+- Applied custom typography using `segoe_ui` and `seguisb` fonts for distinctive branding
+- Designed splash screen with company logo and brand colors
+- Integrated social media platform links for Facebook, Instagram, Twitter, Telegram, LinkedIn
+- Enabled access to external resources through browser integration with `Intent.ACTION_VIEW`
 
-### Development Efficiency and Code Quality Enhancement
-- **Data Binding and ViewBinding Implementation**
-  - Ensured type safety between XML layouts and Kotlin code while eliminating `findViewById()`
-  - Implemented declarative UI updates through `@{viewModel.property}` syntax
-  - Prevented UI flickering through immediate binding processing using `executePendingBindings()`
+### Development Best Practices and Code Quality
+- **Applied Data Binding and ViewBinding**
+  - Ensured type safety between XML layouts and Kotlin code while eliminating `findViewById()` calls
+  - Implemented declarative UI updates using `@{viewModel.property}` syntax
+  - Used `executePendingBindings()` for immediate binding processing to prevent UI flickering
 
-## 🚀 Results and Improvement Effects
-- **70% Reduction in Processing Time**: Significantly reduced gas billing calculation time through transition from manual to automated calculations
-- **Offline-first Design**: Enabled all core functionality usage without network connectivity through Room local database
-- **Enhanced User Satisfaction**: Supported meter reading method learning through intuitive UI/UX and video guides
-- **Improved Customer Support**: Simplified customer inquiry handling process and enhanced accessibility through integrated branch office contacts
+## 🚀 Results and Impact
+- **70% reduction in operational times**: Significantly reduced gas company's operational times through transition from manual to automated gas billing calculations
+- **Offline-first design**: All core features operate without network connectivity through Room local database
+- **Enhanced user satisfaction**: Video tutorials and intuitive UI/UX improved meter reading comprehension
+- **Streamlined customer support**: Integrated branch office contacts simplified customer inquiry handling and improved accessibility
 
 <br><br><br>
