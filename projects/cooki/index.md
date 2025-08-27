@@ -289,10 +289,10 @@ body {
 
 ## 📖 Project Background
 
-- Research shows that [27%](https://shop.linzheritageangus.com/clueless-cooks-report) of cooking beginners fear cooking from scratch, and [38%](https://yougov.co.uk/society/articles/43386-how-confident-are-britons-kitchen) lack confidence cooking without recipes, highlighting a clear need for accessible, personalized cooking guidance.
-- Users particularly struggle to find appropriate recipes when wanting to create quick meals from leftover ingredients in their refrigerator. Existing recipe apps only provide simple search-based functionality and cannot accommodate individual situations and constraints.
+- Research shows that [27%](https://shop.linzheritageangus.com/clueless-cooks-report) of cooking beginners fear cooking from scratch, and [38%](https://yougov.co.uk/society/articles/43386-how-confident-are-britons-kitchen) lack confidence cooking without recipes, demonstrating the need for accessible, personalized cooking guidance.
+- Users struggle to find suitable recipes for quick meals using leftover refrigerator ingredients. Existing recipe apps only provide simple search-based functionality and cannot accommodate individual situations and constraints.
 - This led to identifying the need for an integrated platform that leverages generative AI to create real-time personalized recipes based on users' available ingredients or food photos, while enabling community-based experience sharing.
-- The project aims to lower barriers to cooking entry and provide cooking solutions optimized for individual circumstances, creating an environment where anyone can easily start and enjoy cooking.
+- The project aims to lower cooking barriers and provide cooking solutions optimized for individual circumstances, creating an environment where anyone can easily start and enjoy cooking.
 
 ## 🛠️ Tech Stack
 
@@ -320,81 +320,75 @@ body {
 ## 🌟 Main Contributions
 
 ### AI Recipe Generation and Management System
-
 - **Built `Gemini AI`-based multimodal recipe generation system**
   - Integrated `Gemini 2.0-flash` model for multimodal recipe generation from text input and image recognition
   - Implemented custom prompt engineering using `Few-shot` techniques with user preferences (spiciness level, child-friendly options, etc.)
   - Developed multilingual prompt configuration and fallback JSON system for non-food images to ensure system stability
   - Maintained consistent recipe quality through strict enforcement of category, ingredient, and cooking time specifications
-  - Built token counting and cost monitoring system to track input/output token usage and real-time API costs
+  - Created token counting and cost monitoring utility to track input/output token usage and real-time API costs
 
-- **Implemented AI input validation system and quality improvements**
+- **AI input validation and quality improvements**
   - Built separate input validation system using `Gemini 1.5-flash` model
-  - Created preprocessing logic to filter non-recipe inputs, command manipulation attempts, and prompt injection attacks
-  - Implemented 2-stage validation system separating input validation from recipe generation, reducing inappropriate recipe generation rate **from 85% to 12%**
-  - Defined structured response format using `JSON Schema` to reduce parsing errors
+  - Created preprocessing logic to filter out non-recipe inputs, command manipulation attempts, and prompt injection attacks
+  - Implemented a 2-stage validation system separating input validation from recipe generation, reducing inappropriate recipe generation rate **from 85% to 12%**
 
 - **Recipe storage and management system**
   - Implemented recipe and image storage functionality through `Firestore` and `Firebase Storage` integration
-  - Optimized processing by changing from sequential to parallel execution, running AI recipe generation and image upload concurrently to reduce generation time by **40%**
-  - Developed recipe editing, deletion, public/private settings, and community sharing features
-  - Utilized `Flutter Image Compress` for image compression and resizing to reduce upload time and optimize storage costs, achieving **35% reduction** in API token usage and improved generation speed
+  - Optimized recipe generation by running AI generation and image upload concurrently, reducing total processing time **by 40%**
+  - Implemented recipe editing, deletion and community sharing toggle
+  - Used `Flutter Image Compress` for image compression and resizing to reduce upload time and optimize storage costs, achieving a **35% reduction** in API token usage and improved generation speed
 
 ### Review System and Translation Features
-
 - **Review management and interaction features**
-  - Developed comprehensive review system including star ratings, text, and images (up to 5 photos)
+  - Developed review system including star ratings, text, and images (up to 5 photos)
   - Implemented review creation, editing, deletion, and content reporting system for inappropriate content
   - Enhanced usability with chronological and rating-based sorting options
   - Improved review query performance using `Firestore` subcollection structure
-  - Reduced processing time by **40%** through individual compression and parallel upload for multiple images
-  - Provided consistent user experience during editing through hybrid system that integrates existing remote images with newly added local images
+  - Reduced processing time **by 40%** through individual compression and parallel upload for multiple images
+  - Provided consistent user experience during editing through a hybrid system that integrates existing server images with newly added local images
 
 - **Multilingual review translation system**
-  - Implemented real-time translation functionality through `Google Cloud Translation API` and `Firebase Cloud Functions` integration
-  - Introduced automatic language detection system during review creation to support seamless communication between multilingual users
-  - Improved user experience by processing review language detection asynchronously in the background, reducing review completion time by **approximately 3 seconds**
+  - Implemented automated review translation functionality with `Google Cloud Translation API` and `Firebase Cloud Functions`
+  - Introduced automatic language detection during review creation to support seamless communication between multilingual users
+  - Optimized review submission by processing language detection asynchronously in the background, reducing submission time by **approximately 3 seconds**
 
 ### Internationalization and Speech Recognition
-
 - **Language settings and internationalization system**
   - Implemented Korean/English multilingual UI using `Flutter l10n`
-  - Built language preference storage using `SharedPreferences` with real-time language switching through settings page
-  - Enhanced first-user experience through automatic device language detection and default language configuration
+  - Stored language preferences using `SharedPreferences` and enabled real-time language switching via settings
+  - Enhanced new user experience through automatic device language detection, defaulting to English for unsupported languages
 
 - **Speech recognition-based search system**
-  - Implemented voice input-based recipe search through `Flutter Speech-to-Text` plugin integration
-  - Improved accessibility with Korean/English speech recognition support
-  - Developed real-time text conversion during voice input with comprehensive error handling logic
+  - Added voice input capability to recipe search using `Flutter Speech-to-Text` plugin
+  - Improved accessibility with multilingual (Korean/English) speech recognition support
+  - Developed real-time text conversion during voice input with error handling logic
 
 ### Recipe External Sharing Feature
 
 - Implemented combined text and image sharing functionality using `Share Plus` package
 - Created readable shared content through structured formatting of recipe information
-- Enabled easy recipe sharing to various platforms including KakaoTalk, email, and memo apps through Android/iOS native sharing sheets
+- Enabled easy recipe sharing to various platforms including WhatsApp, email, and memo apps through Android/iOS native sharing sheets
 
 ### UI/UX Optimization and Performance Improvements
 
 - Built client-side form validation system with real-time validation for essential fields including recipe title, ingredients, and cooking steps
-- Enhanced review image viewing convenience with image viewer featuring zoom, pinch-to-zoom, and swipe functionality
+- Enhanced review image viewing experience with image viewer featuring zoom, pan, and swipe navigation
 - Reduced repeated loading time and data usage through image caching using `CachedNetworkImage`
 - Improved perceived performance during data loading and enhanced user waiting experience with `Shimmer` loading animations
-- Implemented user data loss prevention system with confirmation dialogs using `PopScope`
+- Used PopScope to prevent accidental data loss when users navigate away from editing screens
 
-### Architecture and Exception Handling System
-
-- **Comprehensive exception handling and user experience assurance**
+## Architecture and Exception Handling System
+- **Exception handling and error management**
   - Prevented app crashes by catching all exceptions from internal layers in `ViewModel` try-catch blocks
-  - Implemented 2-stage error processing: converting caught exceptions to domain-specific `Enum` error keys, then mapping to internationalized messages in UI, separating technical exceptions from user messages
-  - Achieved complete separation of internationalization dependencies from business logic, enabling `ViewModel` unit testing environment and proper separation of concerns
-  - Provided appropriate user guidance for various exception scenarios including network errors and file processing failures through consistent error flow
+  - Built 2-stage error processing system: exceptions are converted to domain-specific `Enum` error codes, then mapped to internationalized messages in the UI
+  - Completely separated internationalization dependencies from business logic, enabling `ViewModel` unit testing environment and proper separation of concerns
+  - Provided appropriate user guidance for various exception scenarios including network errors and file processing failures
 
 - **Code quality and maintainability improvements**
-  - Applied layered structure based on `MVVM` architecture and `Repository`/`DataSource` patterns to separate responsibilities and enhance reusability
-  - Simplified state flow and improved maintenance efficiency through global state management with `Riverpod` and feature-specific `ViewModel` design
-  - Ensured UI consistency and increased development efficiency through common widget componentization
-  - Built real-time error monitoring system by integrating logging with `Firebase Crashlytics`
-  - Prevented runtime errors through `DTO` and `Entity` layer separation for type safety
+  - Applied `MVVM` architecture with `Repository` and `DataSource` patterns for clear separation of concerns
+  - Implemented global state management with `Riverpod` and feature-specific `ViewModels` for predictable state updates
+  - Built a real-time error monitoring system by integrating local logging with `Firebase Crashlytics`
+  - Completely separated DTO and Entity layers to minimize impact of database schema changes on business logic
 
 ## 🧭 Technical Decision-Making
 
@@ -408,7 +402,7 @@ body {
   - **Stage 1 Validation**: `Gemini 1.5-flash` dedicated to input validation, filtering non-recipe inputs, command manipulation, and prompt injection attempts
   - **Stage 2 Generation**: `Gemini 2.0-flash` handles actual recipe generation, leveraging latest model performance and stability
   - **JSON Schema Enforcement**: Structured response format prevents parsing errors and ensures consistent data quality
-  - **Token Optimization**: Simple boolean response in validation stage saves API costs, complex recipe data requested only in generation stage
+  - **Token Optimization**: Simple boolean response in validation stage saves API costs. Complex recipe data requested only in generation stage
 
 ```dart
 // Validation Model Configuration
@@ -431,6 +425,7 @@ _recipeGenerationModel = googleAI.generativeModel(
   ),
 );
 ```
+<span style="display: block; height: 1px;"></span>
 
 **2. Firebase Cloud Functions-based Translation System**
 
@@ -469,18 +464,19 @@ exports.translateText = onCall({ region: "asia-northeast3" }, async (request) =>
   }
 });
 ```
+<span style="display: block; height: 1px;"></span>
 
 **3. Unified Logging and Crash Monitoring Utility**
 
 - **Requirements**  
-  Collaborative environment requires consistent error handling, development team needs rapid identification and response to user environment exceptions after production deployment, and logging methods must be unified for local debugging and remote monitoring
+  Collaborative environment requires consistent error handling, and development team needs rapid identification and response to user environment exceptions after production deployment.
 
 - **Decision**  
   Developed logging utility with `Firebase Crashlytics` integration
   - **Single Entry Point**: Unified logging approach through single `logError()` function for all exception handling
   - **Dual Output**: Immediate visibility during development through Dart's `log()` function, automatic collection in production via `Crashlytics`
   - **Context Information**: Structured error information, stack traces, and optional descriptions improve debugging efficiency
-  - **Reusability**: Same interface for exception handling and logging throughout entire project
+  - **Reusability**: Same interface for exception handling and logging throughout the entire project
   - **Framework-level Exception Capture**: Used `runZonedGuarded` to detect and log Flutter framework-level exceptions, preventing app crashes
 
 ```dart
@@ -514,7 +510,7 @@ try {
 }
 ```
 
-**4. Multimodal Prompt Engineering Architecture**
+**4. Multimodal Prompt Engineering**
 
 - **Requirements**  
   Recipe generation must handle various scenarios including text input, image input, or combinations of both, while providing consistent quality results for both Korean and English users
@@ -558,11 +554,11 @@ Future<String> _buildRecipePrompt({
 **1. Recipe Generation and Image Upload Parallel Processing Optimization**
 
 - **Problem**  
-  Initial sequential processing approach required waiting for AI recipe generation completion before starting image upload, resulting in long overall processing time and extended user wait times
+  Initial sequential processing approach required waiting for AI recipe generation completion before starting image upload, resulting in extended user wait times
 
 - **Solution Process**
   - Confirmed that recipe generation and image upload are independent tasks with no dependencies
-  - Verified that using `Future.wait()` enables simultaneous execution of both tasks to reduce total processing time
+  - Using `Future.wait()` enables simultaneous execution of both tasks to reduce total processing time
   - Designed structure to safely handle partial failures and error scenarios
 
 - **Solution**
