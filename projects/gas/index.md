@@ -266,7 +266,7 @@ body {
 # Gas Consumption Manager
 
 ## 📝 Overview
-**📌 App Introduction:** Android application automating manual gas usage management for Cuba's national Manufactured Gas Company
+**📌 App Introduction:** Android application automating manual gas usage management for Cuba's national Manufactured Gas Company  
 **🕒 Duration:** February 20, 2021 ~ March 18, 2021 (1 month)  
 **📱 Platform:** Android native app  
 **🏢 Company:** Desoft (Cuba's national software development company)  
