@@ -272,7 +272,6 @@ body {
 **🛠️ 사용 기술:** `Android` `Kotlin` `Coroutines` `MVVM` `Room` `Retrofit` `Moshi` `Navigation` `Material Design` `Glide` `Lottie` `ViewBinding`<br>
 **🔗 GitHub:** [daehan-lim/cubadebate-app](https://github.com/daehan-lim/cubadebate-app)
 
-
 <div class="image-row">
   <!--
   <a href="https://www.youtube.com/watch?v=4SEpMDPFkHw" target="_blank" class="linked-image">

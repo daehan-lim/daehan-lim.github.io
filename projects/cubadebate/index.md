@@ -261,18 +261,17 @@ body {
 
 </div>
 
-# Cubadebate 뉴스 앱
+# Cubadebate News App
 
-## 📝 개요
-**📌 앱 소개:** 맞춤형 콘텐츠 제공 및 오프라인 저장 기능을 갖춘 뉴스 앱  
-**🕒 기간:** 2021.03.15 ~ 2021.06.30 (3.5개월)<br>
-**📱 플랫폼:** 안드로이드 네이티브 앱<br>
-**🏢 회사명:** Desoft (쿠바 국영 소프트웨어 개발사)<br>
-**👥 개발 인원:** 1명  
-**💼 역할:** UI/UX 설계 및 전체 안드로이드 앱 개발 담당<br>
-**🛠️ 사용 기술:** `Android` `Kotlin` `Coroutines` `MVVM` `Room` `Retrofit` `Moshi` `Navigation` `Material Design` `Glide` `Lottie` `ViewBinding`<br>
+## 📝 Overview
+**📌 App Introduction:** News app with personalized content delivery and offline storage capabilities  
+**🕒 Duration:** March 15, 2021 ~ June 30, 2021 (3.5 months)  
+**📱 Platform:** Android native app  
+**🏢 Company:** Desoft (Cuban state-owned software development company)  
+**👥 Team Size:** 1 developer  
+**💼 Role:** UI/UX design and complete Android app development  
+**🛠️ Key Technologies:** `Android` `Kotlin` `Coroutines` `MVVM` `Room` `Retrofit` `Moshi` `Navigation` `Material Design` `Glide` `Lottie` `ViewBinding`  
 **🔗 GitHub:** [daehan-lim/cubadebate-app](https://github.com/daehan-lim/cubadebate-app)
-
 
 <div class="image-row">
   <!--
@@ -291,12 +290,12 @@ body {
 </div>
 <span style="display: block; height: 11px;"></span>
 
-## 📖 프로젝트 배경
+## 📖 Project Background
 
-- 쿠바의 열악한 네트워크 환경(높은 데이터 비용, 불안정한 연결)과 웹사이트 기반 뉴스 플랫폼의 한계를 극복하기 위해 모바일에 최적화된 뉴스 앱 개발의 필요성을 확인
-- 기존 웹사이트는 사용자가 관심 있는 뉴스를 찾는 데 평균 2분 이상 소요되었고, 맞춤형 뉴스 소비가 사실상 어려운 상황
-- 이에 따라 데이터 사용량 절약, 오프라인 접근성 확보, 개인화 기능 등을 제공할 수 있는 안드로이드 네이티브 앱으로 전환하는 프로젝트를 기획
-- 오프라인 저장, 음성 지원 등 직관적이고 접근성 높은 모바일 UX를 통해 쿠바 사용자들에게 실질적 가치를 제공하고, 정보 접근성 향상을 목표로 함
+- Identified the need to develop a mobile-optimized news app to overcome Cuba's challenging network environment (high data costs, unstable connections) and the limitations of the existing website-based news platform
+- The existing website required users an average of over 2 minutes to find news they were interested in, making personalized news consumption practically impossible
+- Planned a transition to an Android native app that could provide data usage savings, offline accessibility, and personalization features
+- Aimed to provide genuine value to Cuban users and improve information accessibility through intuitive, highly accessible mobile UX including offline storage and voice support
 
 ## 🛠️ Tech Stack
 
@@ -314,116 +313,116 @@ body {
 ![JSoup](https://img.shields.io/badge/JSoup-1.13.1-green.svg)
 ![Material Dialogs](https://img.shields.io/badge/Material%20Dialogs-3.3.0-purple.svg)
 
-## 📋 프로젝트 구조
+## 📋 Project Structure
 
 ```
-├── database/                        # 로컬 데이터베이스 관련 클래스
-│   ├── CubadebateDatabase.kt        # Room 데이터베이스 메인 클래스
-│   ├── converters/                  # 데이터 타입 변환기
-│   ├── dao/                         # 데이터 액세스 객체
-│   │   ├── PostDao.kt               # 게시글 관련 데이터 액세스
-│   │   ├── RecentCategoryDao.kt     # 최근 카테고리 데이터 액세스
-│   │   └── TagDao.kt                # 태그 관련 데이터 액세스
-│   └── model/                       # 데이터베이스 엔티티 모델
-│       ├── post/                    # 게시글 관련 엔티티
-│       │   ├── DatabasePost.kt      # 게시글 메인 엔티티
-│       │   ├── DatabaseCategory.kt  # 카테고리 엔티티
-│       │   └── ...(기타 게시글 관련 엔티티)
-│       ├── savedpost/               # 저장된 게시글 관련 엔티티
-│       │   ├── SavedPost.kt         # 저장된 게시글 메인 엔티티
-│       │   ├── SavedCategory.kt     # 저장된 게시글 카테고리
-│       │   └── ...(기타 저장된 게시글 관련 엔티티)
-│       ├── ...(기타 엔티티들)
+├── database/                        # Local database related classes
+│   ├── CubadebateDatabase.kt        # Room database main class
+│   ├── converters/                  # Data type converters
+│   ├── dao/                         # Data access objects
+│   │   ├── PostDao.kt               # Post-related data access
+│   │   ├── RecentCategoryDao.kt     # Recent category data access
+│   │   └── TagDao.kt                # Tag-related data access
+│   └── model/                       # Database entity models
+│       ├── post/                    # Post-related entities
+│       │   ├── DatabasePost.kt      # Post main entity
+│       │   ├── DatabaseCategory.kt  # Category entity
+│       │   └── ...(other post entities)
+│       ├── savedpost/               # Saved post entities
+│       │   ├── SavedPost.kt         # Saved post main entity
+│       │   ├── SavedCategory.kt     # Saved post category
+│       │   └── ...(other saved post entities)
+│       ├── ...(other entities)
 │
-├── model/                           # 데이터 모델 클래스
-│   ├── api/                         # API 응답 모델
-│   │   ├── comment/                 # 댓글 API 모델
-│   │   │   ├── Content.kt           # 댓글 내용
-│   │   │   └── ResponseComment.kt   # 댓글 응답 모델
-│   │   ├── post/                    # 게시글 API 모델
-│   │   │   ├── NetworkPost.kt       # 네트워크 게시글 모델
-│   │   │   └── ...(기타 API 모델들)
-│   ├── categories/                  # 카테고리 관련 모델
+├── model/                           # Data model classes
+│   ├── api/                         # API response models
+│   │   ├── comment/                 # Comment API models
+│   │   │   ├── Content.kt           # Comment content
+│   │   │   └── ResponseComment.kt   # Comment response model
+│   │   ├── post/                    # Post API models
+│   │   │   ├── NetworkPost.kt       # Network post model
+│   │   │   └── ...(other API models)
+│   ├── categories/                  # Category-related models
 │   │   └── MyCategoriesGridViewItem.kt
-│   ├── comment/                     # 댓글 도메인 모델
-│   │   └── Comment.kt               # 댓글 정보
-│   └── post/                        # 게시글 도메인 모델
-│       ├── Post.kt                  # 게시글 메인 모델
-│       ├── Category.kt              # 카테고리 모델
-│       └── ...(기타 게시글 관련 모델)
+│   ├── comment/                     # Comment domain models
+│   │   └── Comment.kt               # Comment information
+│   └── post/                        # Post domain models
+│       ├── Post.kt                  # Post main model
+│       ├── Category.kt              # Category model
+│       └── ...(other post models)
 │
-├── network/                         # 네트워크 통신 관련 클래스
-│   └── CubadebateApiService.kt      # Retrofit API 서비스 인터페이스
+├── network/                         # Network communication classes
+│   └── CubadebateApiService.kt      # Retrofit API service interface
 │
-├── repository/                      # 데이터 저장소 (Repository 패턴)
-│   ├── PostRepository.kt            # 게시글 데이터 관리
-│   ├── RecentCategoryRepository.kt  # 최근 카테고리 데이터 관리
-│   └── TagRepository.kt             # 태그 데이터 관리
+├── repository/                      # Data repository (Repository pattern)
+│   ├── PostRepository.kt            # Post data management
+│   ├── RecentCategoryRepository.kt  # Recent category data management
+│   └── TagRepository.kt             # Tag data management
 │
-├── ui/                              # 사용자 인터페이스 관련 클래스
-│   ├── CoroutineBaseViewModel.kt    # 코루틴 기반 베이스 뷰모델
-│   ├── PostsViewModel.kt            # 게시글 공통 뷰모델
-│   ├── HeadingsAdapter.kt           # 게시글 목록 어댑터
-│   ├── EndlessRecyclerViewScrollListener.kt  # 무한 스크롤 리스너
+├── ui/                              # User interface classes
+│   ├── CoroutineBaseViewModel.kt    # Coroutine-based base view model
+│   ├── PostsViewModel.kt            # Common post view model
+│   ├── HeadingsAdapter.kt           # Post list adapter
+│   ├── EndlessRecyclerViewScrollListener.kt  # Infinite scroll listener
 
-│   ├── main/                        # 메인 화면 관련 클래스
-│   │   ├── MainActivity.kt          # 메인 액티비티
-│   │   ├── MainActivityViewModel.kt # 메인 액티비티 뷰모델
-│   ├── categories/                  # 카테고리별 화면
-│   │   ├── BaseCategoryFragment.kt  # 카테고리 베이스 프래그먼트
-│   │   ├── HomeFragment.kt          # 홈 프래그먼트
-│   ├── details/                     # 게시글 상세 화면
-│   ├── comments/                    # 댓글 관련 화면
-│   │   ├── CommentsActivity.kt      # 댓글 액티비티
-│   │   ├── CommentsFragment.kt      # 댓글 프래그먼트
-│   │   ├── RepliesFragment.kt       # 댓글 답글 프래그먼트
-│   │   └── ...(ViewModels 및 기타 클래스)
-│   ├── search/                      # 검색 관련 화면
-│   ├── saved/                       # 저장된 게시글 화면
-│   ├── forme/                       # 개인화 추천 화면
-│   │   ├── ForMeFragment.kt         # 추천 메인 프래그먼트
-│   │   ├── MyCategoriesFragment.kt  # 내 카테고리 프래그먼트
-│   │   ├── MyTopicsFragment.kt      # 내 토픽 프래그먼트
-│   │   └── ...(ViewModels 및 기타 클래스)
+│   ├── main/                        # Main screen classes
+│   │   ├── MainActivity.kt          # Main activity
+│   │   ├── MainActivityViewModel.kt # Main activity view model
+│   ├── categories/                  # Category screens
+│   │   ├── BaseCategoryFragment.kt  # Category base fragment
+│   │   ├── HomeFragment.kt          # Home fragment
+│   ├── details/                     # Post detail screen
+│   ├── comments/                    # Comment-related screens
+│   │   ├── CommentsActivity.kt      # Comments activity
+│   │   ├── CommentsFragment.kt      # Comments fragment
+│   │   ├── RepliesFragment.kt       # Comment replies fragment
+│   │   └── ...(ViewModels and other classes)
+│   ├── search/                      # Search screens
+│   ├── saved/                       # Saved posts screen
+│   ├── forme/                       # Personalized recommendation screen
+│   │   ├── ForMeFragment.kt         # Recommendation main fragment
+│   │   ├── MyCategoriesFragment.kt  # My categories fragment
+│   │   ├── MyTopicsFragment.kt      # My topics fragment
+│   │   └── ...(ViewModels and other classes)
 │   │
-│   ├── headingspertag/              # 태그별 게시글 화면
-│   ├── subscription/                # 구독 관련 화면
-│   └── settings/                    # 설정 관련 화면
-│       ├── categories/              # 카테고리 관리
-│       └── topics/                  # 토픽 관리
+│   ├── headingspertag/              # Posts by tag screen
+│   ├── subscription/                # Subscription screens
+│   └── settings/                    # Settings screens
+│       ├── categories/              # Category management
+│       └── topics/                  # Topic management
 │
-└── util/                            # 유틸리티 클래스 및 헬퍼 함수
-    ├── ActivityUtils.kt             # 액티비티 관련 유틸리티
-    ├── BindingUtils.kt              # 데이터 바인딩 관련 유틸리티
-    ├── MappingUtils.kt              # 데이터 매핑 유틸리티
-    ├── PostUtils.kt                 # 게시글 관련 유틸리티
-    ├── PreferenceManager.kt         # 설정 관리 유틸리티
-    └── Util.kt                      # 일반 유틸리티 함수
+└── util/                            # Utility classes and helper functions
+    ├── ActivityUtils.kt             # Activity utilities
+    ├── BindingUtils.kt              # Data binding utilities
+    ├── MappingUtils.kt              # Data mapping utilities
+    ├── PostUtils.kt                 # Post utilities
+    ├── PreferenceManager.kt         # Settings management utilities
+    └── Util.kt                      # General utility functions
 ```
 
-## 🌟 수행 내용 및 성과
-- 기존 웹사이트 사용 패턴과 사용자 피드백을 분석하여 동적 카테고리/주제 선택 및 실시간 관리 기반의 맞춤형 뉴스 피드 시스템 구축
-  - 주제 관리 인터페이스에 동적 검색과 게시물 수 표시, 자동 목록 재정렬 기능 구현
-  - 평균 콘텐츠 **검색 시간 75% 단축** (2분 → 30초)
-- Room DB를 활용한 기사 및 이미지 오프라인 저장 시스템 구현으로 데이터 사용량 최대 **30% 절감**
-- 기사 내 텍스트 검색, 음성합성(TTS) 및 음성 인식 기능 통합
-- 실시간 기사 검색/필터링, 다중 레벨 댓글, 무한 스크롤 인터페이스 구현으로 사용자 참여도 개선
-- 사용자 기록 기반의 카테고리 자동 반영 기능을 갖춘 네비게이션 드로어 구현
-- 부드러운 애니메이션이 적용된 머티리얼 디자인 기반 UI 설계
-- 웹사이트 대비 **접근성 40% 향상**
+## 🌟 Main Contributions
+- Built a personalized news feed system based on dynamic category/topic selection and real-time management by analyzing existing website usage patterns and user feedback
+  - Implemented dynamic search and post count display in the topic management interface with automatic list reordering functionality
+  - **Reduced average content discovery time by 75%** (from 2 minutes to 30 seconds)
+- Implemented offline storage system for articles and images using Room DB, achieving up to **30% reduction in data usage**
+- Integrated in-article text search, text-to-speech (TTS), and voice recognition features
+- Improved user engagement through real-time article search/filtering, multi-level comments, and infinite scroll interface
+- Implemented navigation drawer with automatic category reflection based on user history
+- Designed Material Design-based UI with smooth animations
+- **Improved accessibility by 40%** compared to the website
 
-## 🧭 기술적 의사결정
+## 🧭 Technical Decision-Making
 
-**1. 오프라인 저장 아키텍처 선택**
+**1. Offline Storage Architecture Selection**
 
-- **요구 사항**  
-  불안정한 네트워크 환경에서도 뉴스 기사를 오프라인으로도 안정적으로 저장하고 접근할 수 있어야 함
+- **Requirements**  
+  Users needed reliable offline access to news articles even in unstable network environments
 
-- **의사 결정**  
-  `Room Database`를 활용한 포괄적인 캐싱 시스템 구축을 결정
-  - SQLite 기반의 안정성과 Android Jetpack의 통합으로 타입 안전성과 컴파일 타임 검증 보장
-  - 기사 텍스트와 내용, 이미지를 로컬에 저장하는 구조
-  - 북마크 기능을 통해 사용자가 선택한 콘텐츠의 완전한 오프라인 접근 보장
+- **Decision**  
+  Built comprehensive caching system using `Room Database`
+  - Ensured stability and type safety with SQLite foundation and Android Jetpack integration, providing compile-time verification
+  - Created structure to store article text, content, and images locally
+  - Guaranteed complete offline access to user-selected content through bookmark functionality
 
 ```kotlin
 @Entity(tableName = "posts")
@@ -436,34 +435,33 @@ data class DatabasePost(
     val isSaved: Boolean = false
 )
 ```
-<span style="display: block; height: 1px;"></span>
 
-**2. MVVM 아키텍처 도입**
+**2. MVVM Architecture Implementation**
 
-- **요구 사항**  
-  복잡한 뉴스 데이터 흐름과 UI 상태를 체계적으로 관리하고, 네트워크와 로컬 데이터 소스를 효율적으로 통합해야 함
+- **Requirements**  
+  Needed systematic management of complex news data flows and UI states while efficiently integrating network and local data sources
 
-- **의사 결정**  
-  `MVVM`와 `Repository` 패턴을 결합한 계층형 아키텍처 구축을 결정
-  - **관심사 분리**: View-ViewModel-Repository 구조로 각 계층의 책임을 명확히 분리하여 코드 유지보수성 향상
-  - **LiveData 활용**: UI 생명주기를 인식하는 관찰 가능한 데이터로 메모리 누수 방지와 자동 UI 업데이트 보장
-  - **Repository 패턴**: 단일 진실 공급원(Single Source of Truth) 원칙에 따라 네트워크와 로컬 데이터베이스를 추상화하여 데이터 접근 로직 통합 관리
+- **Decision**  
+  Built layered architecture combining `MVVM` with `Repository` pattern
+  - **Separation of concerns**: Clear responsibility division across View-ViewModel-Repository structure improved code maintainability
+  - **LiveData utilization**: Lifecycle-aware observable data prevented memory leaks and ensured automatic UI updates
+  - **Repository pattern**: Abstracted network and local database access following Single Source of Truth principle for unified data access logic management
 
 ```kotlin
 class PostRepository(private val database: CubadebateDatabase) {
     suspend fun getPosts(categoryId: Long?): MutableList<Post> {
         return withContext(Dispatchers.IO) {
             try {
-                // 네트워크에서 최신 데이터 가져오기 시도
+                // Attempt to fetch latest data from network
                 val networkPosts = when(categoryId) {
                     null -> CubadebateApi.retrofitService.getPostsAsync()
                     else -> CubadebateApi.retrofitService.getPostsByCategoryAsync(categoryId)
                 }.await()
                 
-                // 로컬 DB에 저장 후 반환
+                // Save to local DB and return
                 networkPosts.map { it.mapToPost() }
             } catch (e: Exception) {
-                // 네트워크 실패 시 로컬 데이터 반환
+                // Return local data on network failure
                 getPostsFromDb(categoryId)
             }
         }
@@ -471,23 +469,23 @@ class PostRepository(private val database: CubadebateDatabase) {
 }
 ```
 
-## 🌱 문제 해결
+## 🌱 Problem Solving
 
-**1. 사용자 중심의 콘텐츠 탐색 개선**
+**1. User-Centric Content Discovery Enhancement**
 
-- **문제 상황**  
-  기존 웹사이트에서 사용자들이 관심 있는 주제의 뉴스를 자유롭게 찾아보거나 구독하는 것이 어려웠고 맞춤형 뉴스 소비가 사실상 불가능한 상황
+- **Problem**  
+  Users found it difficult to freely explore or subscribe to news on topics of interest through the existing website, making personalized news consumption practically impossible
 
-- **해결 과정**
-  - 웹사이트 사용 패턴과 사용자 피드백을 분석하여 특정 주제의 콘텐츠를 찾는 데 평균 2분 이상 소요된다는 문제점 파악
-  - 전체 주제를 한눈에 탐색하고 실시간으로 검색할 수 있는 인터페이스를 설계
-  - 주제별 게시물 수를 표시하고 선택된 주제가 즉시 상단으로 이동하는 직관적인 UI 구현
-  - `RecyclerView`와 `Room Database`를 활용하여 사용자가 선택한 주제들의 뉴스만 모아볼 수 있는 맞춤형 피드 시스템 개발
+- **Solution Process**
+  - Analyzed website usage patterns and user feedback, identifying that finding specific topic content took an average of over 2 minutes
+  - Designed an interface enabling comprehensive topic browsing and real-time search capabilities
+  - Implemented intuitive UI showing post counts by topic with selected topics automatically moving to the top
+  - Developed personalized feed system using `RecyclerView` and `Room Database` to aggregate news from user-selected topics
 
-- **최종 결과**  
-  웹사이트 대비 콘텐츠 평균 검색 시간이 30초로 약 **75% 단축**되었고, 개인화된 뉴스 소비 경험을 통해 플랫폼의 사용성이 크게 향상
+- **Results**  
+  Reduced average content discovery time to 30 seconds, achieving approximately **75% improvement** over the website, while significantly enhancing platform usability through personalized news consumption experience
 
-## 🎞️ 시연 영상
+## 🎞️ Demo Video
 <div align="center"> 
 <a href="https://www.youtube.com/watch?v=4SEpMDPFkHw">
   <img src="../../images/cubadebate/video_preview.png" alt="Watch the Video" width="230" />
