@@ -263,16 +263,16 @@ body {
 
 </div>
 
-# 가스 소비 관리 앱
+# Gas Consumption Manager
 
-## 📝 개요
-**📌 앱 소개:** 국영 가스 공사의 수기식 가스 사용량 관리를 자동화하는 안드로이드 앱  
-**🕒 기간:** 2021.02.20 ~ 2021.03.18 (1개월)  
-**📱 플랫폼:** Android 네이티브 앱  
-**🏢 회사명:** Desoft (쿠바 국영 소프트웨어 개발사)  
-**👥 개발 인원:** 1명  
-**💼 역할:** 전체 안드로이드 앱 개발 담당  
-**🛠️ 사용 기술:** `Android` `Kotlin` `Coroutines` `MVVM` `Room` `VideoView` `Jetpack` `Material Design` `Data Binding` `Navigation` `MPAndroidChart`  
+## 📝 Overview
+**📌 App Introduction:** Android application automating manual gas usage management for Cuba's national Manufactured Gas Company
+**🕒 Duration:** February 20, 2021 ~ March 18, 2021 (1 month)  
+**📱 Platform:** Android native app  
+**🏢 Company:** Desoft (Cuba's national software development company)  
+**👥 Team Size:** 1 developer  
+**💼 Role:** Full Android app development  
+**🛠️ Key Technologies:** `Android` `Kotlin` `Coroutines` `MVVM` `Room` `VideoView` `Jetpack` `Material Design` `Data Binding` `Navigation` `MPAndroidChart`  
 **🔗 GitHub:** [daehan-lim/gas-consumption-manager](https://github.com/daehan-lim/gas-consumption-manager)
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
@@ -285,130 +285,116 @@ body {
 </div>
 <span style="display: block; height: 11px;"></span>
 
-## 📖 프로젝트 배경
+## 📖 Project Background
 
-쿠바 국영 가스 공사에서 기존의 수기식 가스 사용량 기록 및 계산 프로세스로 인한 업무 효율성 저하와 사용자 불편을 해결하기 위해 모바일 자동화 솔루션의 필요성이 대두되었습니다. 기존 시스템은 가스 계량기 검침부터 요금 계산까지 모든 과정이 수동으로 이루어져 시간이 많이 소요되고 계산 오류가 발생할 가능성이 높았습니다. 또한 가스 계량기 검침 방법에 대한 교육 자료와 고객 지원 체계가 체계적으로 구축되지 않아 사용자들이 어려움을 겪고 있었습니다. 이에 따라 사용량 자동 계산, 데이터 시각화, 오프라인 우선 설계를 통한 종합적인 가스 소비 관리 앱 개발 프로젝트를 기획하게 되었습니다.
+Cuba's national gas utility company faced operational inefficiencies and customer service challenges due to their manual gas consumption recording and calculation processes. The existing system required all procedures from gas meter readings to billing calculations to be performed manually, resulting in time-consuming operations and high potential for calculation errors. Additionally, the lack of systematic educational materials for gas meter reading methods and customer support infrastructure created significant difficulties for users. This comprehensive gas consumption management app project was initiated to address these issues through automated usage calculations, data visualization, and offline-first design.
 
-## 🛠️ Tech Stack
-
-[![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white&style=for-the-badge)](https://kotlinlang.org)
-[![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com)
-[![MVVM](https://img.shields.io/badge/MVVM-FF5252?style=for-the-badge)](https://developer.android.com/topic/architecture)
-[![Material Design](https://img.shields.io/badge/Material%20Design-%234285F4?logo=material-design&logoColor=white&style=for-the-badge)](https://m3.material.io)
-[![Jetpack](https://img.shields.io/badge/Jetpack-F57C00?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/jetpack)
-[![Coroutines](https://img.shields.io/badge/Coroutines-7F52FF?logo=kotlin&logoColor=white&style=for-the-badge)](https://kotlinlang.org/docs/coroutines-overview.html)
-[![Navigation](https://img.shields.io/badge/Navigation-AB47BC?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/guide/navigation)
-[![LiveData](https://img.shields.io/badge/LiveData-3F51B5?style=for-the-badge)](https://developer.android.com/topic/libraries/architecture/livedata)
-[![Room Database](https://img.shields.io/badge/Room-3DDC84?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/training/data-storage/room)
-[![Lifecycle](https://img.shields.io/badge/Lifecycle-2196F3?logo=android&logoColor=white&style=for-the-badge)](https://developer.android.com/jetpack/androidx/releases/lifecycle)
-[![MPAndroidChart](https://img.shields.io/badge/MP%20Android%20Chart-2196F3?style=for-the-badge)](https://github.com/PhilJay/MPAndroidChart)
-
-## 📋 프로젝트 구조
+## 📋 Project Structure
 
 ```
-├── features/                          # 기능별 모듈 구조
-│   ├── consumption/                   # 가스 소비량 계산 기능
-│   │   ├── ConsumptionFragment.kt     # 소비량 입력 및 계산 UI
-│   │   ├── ConsumptionViewModel.kt    # 소비량 계산 비즈니스 로직
+├── features/                           # Feature-based modular structure
+│   ├── consumption/                    # Gas consumption calculation feature
+│   │   ├── ConsumptionFragment.kt      # Consumption input and calculation UI
+│   │   ├── ConsumptionViewModel.kt     # Consumption calculation business logic
 │   │   └── ConsumptionViewModelFactory.kt
-│   ├── history/                       # 사용량 이력 및 차트 분석
-│   │   ├── HistoryActivity.kt         # 차트 기반 분석 화면
-│   │   ├── HistoryViewModel.kt        # 차트 데이터 처리 로직
+│   ├── history/                        # Usage history and chart analytics
+│   │   ├── HistoryActivity.kt          # Chart-based analysis screen
+│   │   ├── HistoryViewModel.kt         # Chart data processing logic
 │   │   └── HistoryViewModelFactory.kt
-│   ├── offices/                       # 영업소 연락처 디렉터리
-│   │   ├── ComercialOfficesFragment.kt # 영업소 목록 UI
-│   │   ├── ComercialOfficesAdapter.kt  # RecyclerView 어댑터
+│   ├── offices/                        # Branch office contact directory
+│   │   ├── ComercialOfficesFragment.kt # Branch office list UI
+│   │   ├── ComercialOfficesAdapter.kt  # RecyclerView adapter
 │   │   └── ComercialOfficesViewModel.kt
-│   ├── readcounter/                   # 계량기 검침 가이드
-│   │   ├── ReadCounterFragment.kt     # 동영상 가이드 화면
+│   ├── readcounter/                    # Meter reading guide
+│   │   ├── ReadCounterFragment.kt      # Video guide screen
 │   │   └── ReadCounterViewModel.kt
-│   ├── about/                         # 앱 정보 및 연락처
+│   ├── about/                          # App information and contacts
 │   │   └── AboutActivity.kt
-│   └── splash/                        # 스플래시 화면
+│   └── splash/                         # Splash screen
 │       └── SplashActivity.kt
-├── database/                          # Room 데이터베이스 레이어
-│   ├── Consumption.kt                 # 소비량 데이터 엔티티
-│   ├── ConsumptionDao.kt             # 데이터 액세스 객체
-│   └── ConsumptionDatabase.kt        # 데이터베이스 설정
-├── model/                            # 데이터 모델
-│   └── ComercialOffice.kt           # 영업소 정보 모델
-├── util/                             # 유틸리티 클래스
-│   ├── BindingUtils.kt              # 데이터 바인딩 어댑터
-│   └── Util.kt                      # 공통 유틸리티 함수
-└── MainActivity.kt                   # 메인 액티비티 및 네비게이션
+├── database/                           # Room database layer
+│   ├── Consumption.kt                  # Consumption data entity
+│   ├── ConsumptionDao.kt               # Data access object
+│   └── ConsumptionDatabase.kt          # Database configuration
+├── model/                              # Data models
+│   └── ComercialOffice.kt              # Branch office information model
+├── util/                               # Utility classes
+│   ├── BindingUtils.kt                 # Data binding adapters
+│   └── Util.kt                         # Common utility functions
+└── MainActivity.kt                     # Main activity and navigation
 ```
 
-## 🌟 수행 내용
+## 🌟 Main Contributions
 
-### Room 데이터베이스 기반 오프라인 데이터 관리 및 사용량 데이터 저장
-- **MVVM 아키텍처와 Repository 패턴 적용**
-  - `ConsumptionDao`를 통한 데이터 액세스 레이어 추상화 및 비즈니스 로직 분리
-  - `Coroutines`와 `suspend` 함수를 활용한 비동기 데이터베이스 작업 처리로 UI 스레드 블로킹 방지
-  - `LiveData`와 `ViewModel`을 통한 반응형 UI 구현 및 생명주기 인식 데이터 바인딩
-  - Singleton 패턴과 `fallbackToDestructiveMigration()`을 적용한 안정적인 데이터베이스 관리
+### Room Database-based Offline Data Management and Usage Data Storage
+- **MVVM Architecture and Repository Pattern Implementation**
+  - Abstracted data access layer through `ConsumptionDao` and separated business logic concerns
+  - Implemented asynchronous database operations using `Coroutines` and `suspend` functions to prevent UI thread blocking
+  - Built reactive UI with `LiveData` and `ViewModel` for lifecycle-aware data binding
+  - Applied Singleton pattern and `fallbackToDestructiveMigration()` for stable database management
 
-- **효율적인 데이터 CRUD 작업 구현**
-  - 월별 소비량 조회, 연도별 데이터 필터링, 최신 검침값 자동 연동 등 복합 쿼리 최적화
-  - 이전 달 검침값 자동 연동으로 연속성 있는 데이터 입력 환경 구현
+- **Efficient Data CRUD Operations Implementation**
+  - Optimized complex queries including monthly consumption retrieval, yearly data filtering, and automatic integration of latest meter readings
+  - Built continuous data input environment through automatic integration of previous month's meter readings
 
-### 가스 사용량 자동 계산 및 검증 시스템 개발
-- **실시간 입력 검증 및 오류 방지**
-  - 이전 검침값보다 현재 검침값이 작을 경우 즉시 오류 알림 및 입력 차단 기능
-  - `TextInputLayout`의 `errorEnabled` 속성을 활용한 실시간 필드 검증 UI 구현
-  - 필수 입력값 누락 시 즉시 피드백 제공으로 사용자 입력 오류 최소화
+### Automated Gas Usage Calculation and Validation System Development
+- **Real-time Input Validation and Error Prevention**
+  - Implemented immediate error alerts and input blocking when current meter reading is less than previous reading
+  - Built real-time field validation UI using `TextInputLayout`'s `errorEnabled` property
+  - Minimized user input errors through immediate feedback for missing required fields
 
-- **자동 사용량 계산 및 요금 산정**
-  - `PAYMENT_COEFFICIENT` 상수(2.5)를 활용한 일관된 요금 계산 로직 구현
-  - 가스 사용량(㎥)과 요금(페소) 간 실시간 변환 계산으로 즉시 결과 확인 가능
-  - HTML 포맷팅을 통한 계산 결과의 표시 및 `AlertDialog`를 통한 결과 제시
+- **Automated Usage Calculation and Fee Determination**
+  - Implemented consistent fee calculation logic using `PAYMENT_COEFFICIENT` constant (2.5)
+  - Enabled immediate result verification through real-time conversion calculations between gas usage (㎥) and fees (pesos)
+  - Presented calculation results through HTML formatting and `AlertDialog`
 
-### MPAndroidChart 기반 인터랙티브 데이터 시각화 구현
-- **연도별/월별 소비 패턴 분석 차트**
-  - `BarChart`를 활용한 월별 가스 소비량 시각화 및 애니메이션 효과로 사용자 경험 향상
-  - 페소/㎥ 단위 전환 필터링 기능으로 다양한 관점의 데이터 분석 지원
+### Interactive Data Visualization Implementation Using MPAndroidChart
+- **Annual/Monthly Consumption Pattern Analysis Charts**
+  - Visualized monthly gas consumption using `BarChart` with animation effects to enhance user experience
+  - Supported multi-perspective data analysis through peso/㎥ unit conversion filtering
 
-- **반응형 차트 UI 및 사용자 인터랙션**
-  - 세로/가로 모드에 따른 차트 레이아웃 자동 조정 및 라벨 밀도 최적화
-  - `MonthPickerDialog`를 활용한 직관적인 연도 선택 인터페이스 구현
+- **Responsive Chart UI and User Interaction**
+  - Implemented automatic chart layout adjustment and label density optimization based on portrait/landscape orientation
+  - Built intuitive year selection interface using `MonthPickerDialog`
 
-### VideoView 기반 가스 계량기 검침 방법 학습을 위한 동영상 가이드
-- **전체화면 지원 동영상 플레이어 개발**
-  - `MediaController`를 커스터마이징하여 전체화면 버튼 추가 및 화면 회전 제어 구현
-  - 세로/가로 모드 자동 전환 시 `SystemUI` 숨김 처리로 몰입형 시청 환경 제공
-  - 동영상 재생 위치 저장 및 복원 기능으로 끊김 없는 사용자 경험 구현
+### VideoView-based Gas Meter Reading Method Learning through Video Guide
+- **Full-screen Support Video Player Development**
+  - Customized `MediaController` to add full-screen button and implement screen rotation control
+  - Provided immersive viewing environment through `SystemUI` hiding during automatic portrait/landscape mode transitions
+  - Implemented seamless user experience through video playback position saving and restoration
 
-- **생명주기 인식 미디어 관리**
-  - `onStart()`, `onStop()`, `onPause()`에서의 적절한 동영상 리소스 관리로 메모리 누수 방지
-  - 동영상 완료 시 자동 세로 모드 복원 및 플레이스홀더 화면 표시
-  - `raw` 리소스를 활용한 오프라인 동영상 재생으로 네트워크 의존성 제거
+- **Lifecycle-aware Media Management**
+  - Prevented memory leaks through proper video resource management in `onStart()`, `onStop()`, and `onPause()`
+  - Implemented automatic portrait mode restoration and placeholder screen display upon video completion
+  - Eliminated network dependencies through offline video playback using `raw` resources
 
-### RecyclerView 기반 영업소 연락처 디렉터리 구현
-  - 고객 지원을 위한 영업소 연락처 디렉터리 통합으로 고객 문의 처리 과정 단순화
-  - `Intent.ACTION_CALL`과 `Intent.ACTION_SENDTO`를 활용한 네이티브 앱 연동
-  - `CALL_PHONE` 권한 동적 요청 및 권한 거부 시 대체 다이얼 액션 제공
-  - `@BindingAdapter`를 활용한 재사용 가능한 뷰 바인딩 로직 구현
+### RecyclerView-based Branch Office Contact Directory Implementation
+- Simplified customer inquiry handling process by integrating branch office contact directory for customer support
+- Implemented native app integration using `Intent.ACTION_CALL` and `Intent.ACTION_SENDTO`
+- Provided alternative dial action when permission is denied with dynamic `CALL_PHONE` permission requests
+- Built reusable view binding logic using `@BindingAdapter`
 
-### 사용자 경험 최적화 및 접근성 향상
-  - Bottom Navigation과 Fragment 기반 화면 전환
-    - `setupWithNavController()`를 통한 자동 네비게이션 상태 관리
-    - `onBackPressed()` 오버라이드를 통한 앱 종료 확인 다이얼로그 구현
-  - Toolbar 기반 일관된 액션바 설계
-    - History, About 기능으로의 즉시 접근을 위한 옵션 메뉴 등 구현
-  - Custom Font(`segoe_ui`, `seguisb`) 적용으로 차별화된 타이포그래피 구현
-  - 가스 공사 로고와 브랜드 컬러를 활용한 스플래시 화면 구현
-  - Facebook, Instagram, Twitter, Telegram, LinkedIn 등 6개 소셜 미디어 플랫폼 연동
-  - `Intent.ACTION_VIEW`를 통한 외부 브라우저 연동으로 추가 정보 접근 경로 제공
+### User Experience Optimization and Accessibility Enhancement
+- **Bottom Navigation and Fragment-based Screen Transitions**
+  - Implemented automatic navigation state management through `setupWithNavController()`
+  - Built app exit confirmation dialog through `onBackPressed()` override
+- **Consistent Action Bar Design with Toolbar**
+  - Implemented options menu for immediate access to History and About features
+- Built differentiated typography through custom font application (`segoe_ui`, `seguisb`)
+- Implemented splash screen using gas utility company logo and brand colors
+- Integrated 6 social media platforms including Facebook, Instagram, Twitter, Telegram, LinkedIn
+- Provided additional information access channels through external browser integration via `Intent.ACTION_VIEW`
 
-### 개발 효율성 및 코드 품질 향상
-- **Data Binding과 ViewBinding 적용**
-  - XML 레이아웃과 Kotlin 코드 간 타입 안전성 확보 및 `findViewById()` 제거
-  - `@{viewModel.property}` 문법을 통한 선언적 UI 업데이트 구현
-  - `executePendingBindings()`를 활용한 즉시 바인딩 처리로 UI 깜빡임 방지
+### Development Efficiency and Code Quality Enhancement
+- **Data Binding and ViewBinding Implementation**
+  - Ensured type safety between XML layouts and Kotlin code while eliminating `findViewById()`
+  - Implemented declarative UI updates through `@{viewModel.property}` syntax
+  - Prevented UI flickering through immediate binding processing using `executePendingBindings()`
 
-## 🚀 성과 및 개선 효과
-- **업무 처리 시간 70% 단축**: 수기 계산에서 자동 계산으로 전환하여 가스 요금 산정 시간 대폭 감소
-- **오프라인 우선 설계**: Room 로컬 데이터베이스를 통해 네트워크 연결 없이도 모든 핵심 기능 사용 가능
-- **사용자 만족도 향상**: 직관적인 UI/UX와 동영상 가이드를 통한 계량기 검침 방법 학습 지원
-- **고객 지원 개선**: 통합된 영업소 연락처로 고객 문의 처리 과정 단순화 및 접근성 강화
+## 🚀 Results and Improvement Effects
+- **70% Reduction in Processing Time**: Significantly reduced gas billing calculation time through transition from manual to automated calculations
+- **Offline-first Design**: Enabled all core functionality usage without network connectivity through Room local database
+- **Enhanced User Satisfaction**: Supported meter reading method learning through intuitive UI/UX and video guides
+- **Improved Customer Support**: Simplified customer inquiry handling process and enhanced accessibility through integrated branch office contacts
 
 <br><br><br>

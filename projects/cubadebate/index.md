@@ -267,7 +267,7 @@ body {
 **📌 App Introduction:** News reader app with personalized content delivery and offline storage capability  
 **🕒 Duration:** March 15, 2021 ~ June 30, 2021 (3.5 months)  
 **📱 Platform:** Android native app  
-**🏢 Company:** Desoft (Cuban national software development company)  
+**🏢 Company:** Desoft (Cuba's national software development company)  
 **👥 Team Size:** 1 developer  
 **💼 Role:** UI/UX design and complete Android app development  
 **🛠️ Key Technologies:** `Android` `Kotlin` `Coroutines` `MVVM` `Room` `Retrofit` `Moshi` `Navigation` `Material Design` `Glide` `Lottie` `ViewBinding`  
