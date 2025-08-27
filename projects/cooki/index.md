@@ -377,7 +377,7 @@ body {
 - Improved perceived performance during data loading and enhanced user waiting experience with `Shimmer` loading animations
 - Used PopScope to prevent accidental data loss when users navigate away from editing screens
 
-## Architecture and Exception Handling System
+### Architecture and Exception Handling System
 - **Exception handling and error management**
   - Prevented app crashes by catching all exceptions from internal layers in `ViewModel` try-catch blocks
   - Built 2-stage error processing system: exceptions are converted to domain-specific `Enum` error codes, then mapped to internationalized messages in the UI
