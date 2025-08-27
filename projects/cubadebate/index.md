@@ -485,7 +485,7 @@ class PostRepository(private val database: CubadebateDatabase) {
 - **Results**  
   Reduced average content discovery time to 30 seconds, achieving approximately **75% improvement** over the website, while significantly enhancing platform usability with personalized content features
 
-## 🎞️ Demo Video
+## 🎞️ Video
 <div align="center"> 
 <a href="https://www.youtube.com/watch?v=4SEpMDPFkHw">
   <img src="../../images/cubadebate/video_preview.png" alt="Watch the Video" width="230" />
