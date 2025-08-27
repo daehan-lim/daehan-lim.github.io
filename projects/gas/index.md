@@ -324,7 +324,7 @@ Cuba's national Manufactured Gas Company faced operational inefficiencies due to
 └── MainActivity.kt                     # Main activity and navigation
 ```
 
-## 🌟 Main Contributions
+## 🌟 Implementation Details
 
 ### Room Database-based Offline Data Management and Storage
 - **Implemented MVVM architecture with Repository pattern**

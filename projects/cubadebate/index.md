@@ -400,7 +400,7 @@ body {
     └── Util.kt                      # General utility functions
 ```
 
-## 🌟 Main Contributions
+## 🌟 Implementation Details and Results
 - Built customizable news feed system with dynamic category/topic selection and real-time management by analyzing existing website usage patterns and user feedback
   - Implemented real-time topic management system with dynamic search, post count display, and automatic list reordering
   - Reduced average content discovery time **by 75%** (from 2 minutes to 30 seconds)
