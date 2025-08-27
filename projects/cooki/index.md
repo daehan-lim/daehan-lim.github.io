@@ -559,7 +559,6 @@ Future<String> _buildRecipePrompt({
 - **Solution Process**
   - Confirmed that recipe generation and image upload are independent tasks with no dependencies
   - Using `Future.wait()` enables simultaneous execution of both tasks to reduce total processing time
-  - Designed structure to safely handle partial failures and error scenarios
 
 - **Solution**
   - Extracted image upload logic from existing `_saveRecipe()` method into separate `_uploadImageIfNeeded()` method
@@ -589,22 +588,22 @@ final imageUrl = results[1] as String?;
 ```
 
 - **Results**  
-  Reduced total recipe generation time by **40%**, significantly improving user satisfaction with image-inclusive recipe generation
+  Reduced total recipe generation time by **40%**, significantly improving user satisfaction when generating recipes from images
 
 **2. Review Language Detection Optimization**
 
 - **Problem**  
   Language detection API calls during review creation were processed synchronously, requiring users to wait over 3 seconds for review save completion, creating usability issues
 
-- **Solution Process**
-  - Analysis of review creation flow revealed language detection is not a prerequisite for review saving
+- **Analysis**
+  - Analysis of review creation flow revealed that language detection is not a prerequisite for saving reviews
   - Considered user experience priorities to evaluate separating review saving from language detection tasks
   - Identified that language detection results are not immediately necessary and only required when using translation features
 
 - **Solution**
-  - Modified system to execute language detection asynchronously in background after review save completion
-  - Removed `await` keyword so language detection processes on separate thread without UI blocking
-  - Maintained consistent processing flow by securing `reviewId` in advance even for existing review edits
+  - Modified the system to execute language detection asynchronously in the background after saving the review
+  - Removed `await` keyword so language detection processes on a separate thread without UI blocking
+  - Maintained consistent processing flow by obtaining the `reviewId` for background language detection
   - Isolated language detection failures to prevent impact on core review functionality
 
 ```dart
@@ -617,32 +616,32 @@ final reviewId = await saveReview(review);
 detectAndUpdateLanguage(reviewId); // Background execution without await
 ```
 
-- **Results**  
-  Reduced review creation completion time by **approximately 3 seconds** while maintaining translation feature accuracy and providing immediate review save experience
+- **Results**
+  Reduced review creation time by approximately **3 seconds**, while maintaining translation accuracy and providing instant review saving
 
-**3. Image Resizing and Compression Optimization for API Cost Reduction and Performance Enhancement**
+**3. Image Optimization to Reduce API Costs and Improve Performance**
 
 - **Problem**  
-  Sending high-resolution smartphone images directly to `Gemini AI` increases tile count due to higher resolution, raising API token usage and costs. Large file sizes cause upload speed degradation and recipe generation delays
+  High-resolution smartphone images sent directly to `Gemini AI` increased tile count, raising API token usage and costs. Large file sizes caused slower uploads and delayed recipe generation
 
-- **Problem Analysis Process**
-  - **Confirmed tile-based billing structure**: Higher resolution → More tiles → Increased token usage and costs
-  - **Analyzed relationship between file size and transfer speed**: Larger files cause upload delays
+- **Analysis**
+  - **Confirmed tile-based billing**: Higher resolution → More tiles → Increased token usage and costs
+  - **Analyzed file size impact**: Larger files slow down uploads
   - **Evaluated quality vs performance tradeoffs**: Tested quality and speed across different resizing and compression levels
 
-- **Solution Implementation**
-  - Applied resizing with `maxWidth: 768, maxHeight: 768` during image selection to prevent unnecessary tile generation
-  - Used `Flutter Image Compress` for 85% JPEG quality compression, significantly reducing file size while maintaining resolution
+- **Solution**
+  - Resized images to `maxWidth: 768, maxHeight: 768` during picking to reduce tile count
+  - Applied `Flutter Image Compress` with 85% JPEG quality, reducing file size while maintaining acceptable image quality
 
-- **Results and Impact**  
-  Achieved **35% reduction** in API token usage through image resizing and compression, shortened upload time, and improved AI recipe generation speed
+- **Results**  
+  Achieved **35% reduction** in API token usage, faster upload times, and improved recipe generation speed
 
-**4. Multiple Image Parallel Upload Filename Collision Issue**
-- **Problem**: HTTP 400 errors occurred in `Firebase Storage` when compressing and uploading multiple images simultaneously, especially frequent with 3+ image selections
-- **Initial Investigation**: Checked `Firebase Storage` rules, quotas, and network status → All normal
-- **Root Cause Analysis**: Filename generation based on `DateTime.now().millisecondsSinceEpoch` created identical values during parallel processing, with collision potential in both compression and upload processes
+**4. Filename Collision in Parallel Image Uploads**
+- **Problem**: HTTP 400 errors in `Firebase Storage` when uploading multiple images simultaneously, especially with 3+ images
+- **Investigation**: Checked `Firebase Storage` rules, quotas, and network connectivity → All normal
+- **Root Cause Analysis**: Filename generation using `DateTime.now().millisecondsSinceEpoch` created identical values during parallel processing, with collision potential in both compression and upload processes
 - **Solution**: Changed filename generation logic from `millisecondsSinceEpoch` → `microsecondsSinceEpoch` for 1000x higher precision
-- **Results**: **100% resolution** of collision errors, supporting stable parallel upload of images and improved user experience
+- **Results**: Completely eliminated collision errors and enabled stable parallel image uploads
 
 ## 🎞️ Video
 <div align="center"> 
