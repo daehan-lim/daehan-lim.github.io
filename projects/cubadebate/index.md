@@ -264,10 +264,10 @@ body {
 # Cubadebate News App
 
 ## 📝 Overview
-**📌 App Introduction:** News app with personalized content delivery and offline storage capabilities  
+**📌 App Introduction:** News reader app with personalized content delivery and offline storage capability  
 **🕒 Duration:** March 15, 2021 ~ June 30, 2021 (3.5 months)  
 **📱 Platform:** Android native app  
-**🏢 Company:** Desoft (Cuban state-owned software development company)  
+**🏢 Company:** Desoft (Cuban national software development company)  
 **👥 Team Size:** 1 developer  
 **💼 Role:** UI/UX design and complete Android app development  
 **🛠️ Key Technologies:** `Android` `Kotlin` `Coroutines` `MVVM` `Room` `Retrofit` `Moshi` `Navigation` `Material Design` `Glide` `Lottie` `ViewBinding`  
@@ -293,9 +293,9 @@ body {
 ## 📖 Project Background
 
 - Identified the need to develop a mobile-optimized news app to overcome Cuba's challenging network environment (high data costs, unstable connections) and the limitations of the existing website-based news platform
-- The existing website required users an average of over 2 minutes to find news they were interested in, making personalized news consumption practically impossible
+- The existing website required users an average of over 2 minutes to find articles of interest, with no way to customize content based on user preferences
 - Planned a transition to an Android native app that could provide data usage savings, offline accessibility, and personalization features
-- Aimed to provide genuine value to Cuban users and improve information accessibility through intuitive, highly accessible mobile UX including offline storage and voice support
+- Aimed to help Cuban users access relevant news more easily through intuitive, accessible mobile UX including offline storage and voice support
 
 ## 🛠️ Tech Stack
 
@@ -401,15 +401,15 @@ body {
 ```
 
 ## 🌟 Main Contributions
-- Built a personalized news feed system based on dynamic category/topic selection and real-time management by analyzing existing website usage patterns and user feedback
-  - Implemented dynamic search and post count display in the topic management interface with automatic list reordering functionality
-  - **Reduced average content discovery time by 75%** (from 2 minutes to 30 seconds)
-- Implemented offline storage system for articles and images using Room DB, achieving up to **30% reduction in data usage**
+- Built customizable news feed system with dynamic category/topic selection and real-time management by analyzing existing website usage patterns and user feedback
+  - Implemented real-time topic management system with dynamic search, post count display, and automatic list reordering
+  - Reduced average content discovery time **by 75%** (from 2 minutes to 30 seconds)
+- Implemented robust offline storage for articles and images using Room DB, reducing data usage by **up to 30%**
 - Integrated in-article text search, text-to-speech (TTS), and voice recognition features
-- Improved user engagement through real-time article search/filtering, multi-level comments, and infinite scroll interface
-- Implemented navigation drawer with automatic category reflection based on user history
+- Implemented real-time article search/filtering, multi-level commenting interface, and infinite scroll, improving user engagement
+- Built navigation drawer that tracks recently visited categories for easy navigation
 - Designed Material Design-based UI with smooth animations
-- **Improved accessibility by 40%** compared to the website
+- Improved accessibility **by 40%** compared to the website
 
 ## 🧭 Technical Decision-Making
 
@@ -419,10 +419,10 @@ body {
   Users needed reliable offline access to news articles even in unstable network environments
 
 - **Decision**  
-  Built comprehensive caching system using `Room Database`
-  - Ensured stability and type safety with SQLite foundation and Android Jetpack integration, providing compile-time verification
-  - Created structure to store article text, content, and images locally
-  - Guaranteed complete offline access to user-selected content through bookmark functionality
+  Implemented robust offline storage using `Room Database`
+  - Leveraged SQLite's reliability and Android Jetpack's type safety for stable data operations with compile-time verification
+  - Built architecture to store article text, content, and images locally
+  - Enabled complete offline access to user-selected content through bookmark functionality
 
 ```kotlin
 @Entity(tableName = "posts")
@@ -474,16 +474,16 @@ class PostRepository(private val database: CubadebateDatabase) {
 **1. User-Centric Content Discovery Enhancement**
 
 - **Problem**  
-  Users found it difficult to freely explore or subscribe to news on topics of interest through the existing website, making personalized news consumption practically impossible
+  Users found it difficult to freely explore or subscribe to news on topics of interest through the existing website, with no way to customize content based on user preferences
 
-- **Solution Process**
+- **Analysis**
   - Analyzed website usage patterns and user feedback, identifying that finding specific topic content took an average of over 2 minutes
-  - Designed an interface enabling comprehensive topic browsing and real-time search capabilities
+  - Designed an interface enabling users to browse all topics at once with real-time search capabilities
   - Implemented intuitive UI showing post counts by topic with selected topics automatically moving to the top
   - Developed personalized feed system using `RecyclerView` and `Room Database` to aggregate news from user-selected topics
 
 - **Results**  
-  Reduced average content discovery time to 30 seconds, achieving approximately **75% improvement** over the website, while significantly enhancing platform usability through personalized news consumption experience
+  Reduced average content discovery time to 30 seconds, achieving approximately **75% improvement** over the website, while significantly enhancing platform usability with personalized content features
 
 ## 🎞️ Demo Video
 <div align="center"> 
