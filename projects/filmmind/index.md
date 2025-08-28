@@ -264,7 +264,7 @@ body {
 # FilmMind - Movie Information App
 
 ## 📝 Overview
-**📌 App Introduction:** Movie information and recommendation app powered by TMDB API  
+**📌 App Introduction:** Movie information and recommendation app using TMDB API  
 **🕒 Duration:** May 13, 2025 ~ May 15, 2025 (3 days)  
 **📱 Platform:** Flutter cross-platform app (iOS, Android)  
 **👥 Team Size:** 1 developer (solo project)  
@@ -288,7 +288,7 @@ body {
 
 ## 📖 Project Description
 
-FilmMind is a Flutter-based mobile application that provides comprehensive movie information across multiple categories including now playing, popular movies, top-rated films, and upcoming releases using the TMDB API. Built with Clean Architecture patterns and MVVM structure for scalability and maintainability, the app features smooth Hero Animations for seamless screen transitions and integrated Google/Naver search functionality, creating an intuitive environment for users to explore movie information and access additional details effortlessly.
+FilmMind is a Flutter mobile app that displays movie information across multiple categories including now playing, popular movies, top-rated films, and upcoming releases using the TMDB API. The app uses Clean Architecture with MVVM pattern, features smooth Hero Animations between screens, and includes Google/Naver search integration for additional movie details.
 
 ## 🛠️ Tech Stack
 
@@ -350,68 +350,68 @@ FilmMind is a Flutter-based mobile application that provides comprehensive movie
 └── main.dart                          # App entry point  
 ```
 
-## 🌟 Main Contributions and Achievements
+## 🌟 Implementation & Achievements
 
-### Clean Architecture-Based App Structure Design
+### Clean Architecture-Based App Structure
 - **Layered architecture implementation**
-  - Implemented separation of concerns across `Domain`, `Data`, and `Presentation` layers following dependency inversion principles
-  - Built global state management with `Riverpod` and implemented `Provider`-based dependency injection
-  - Applied `MVVM` pattern to separate UI from business logic, establishing unidirectional data flow
-  - Encapsulated business logic through `Repository` pattern and `UseCase` layers, creating testable and maintainable code structure
+  - Separated `Domain`, `Data`, and `Presentation` layers with clear boundaries
+  - Built global state management using `Riverpod` and implemented `Provider`-based dependency injection
+  - Adopted `MVVM` pattern for clear separation of UI and business logic
+  - Built a testable code structure using `Repository` pattern and `UseCase` layer to encapsulate business logic
 
 ### TMDB API Integration and Movie Data Processing
-- Built real-time data retrieval for 4 categories: now playing, popular movies, top-rated films, and upcoming releases
-- Implemented stable API communication using `Dio` HTTP client with `Bearer Token` authentication
-- Integrated individual movie detail API for comprehensive information including genres, production companies, budget, revenue, and runtime
-- Enhanced budget/revenue information readability using currency formatting and number formatting `Extensions`
+- Fetched real-time data for four categories: *Now Playing*, *Popular*, *Top Rated*, and *Upcoming*
+- Used `Dio` HTTP client with `Bearer Token` authentication for secure API calls
+- Built individual movie detail pages with comprehensive information including genres, production companies, budget, revenue, and runtime
+- Enhanced budget/revenue information display using custom currency and number formatting `Extensions`
 
-### UI/UX and Animation Implementation
-- **Hero Animation-based screen transitions**
-  - Implemented `Hero Animation` with category-specific unique tags for smooth screen transitions when movie posters are clicked
-  - Established visual continuity from main screen to detail screen, achieving native app-level user experience
-  - Prevented animation conflicts when the same movie is selected from multiple categories through proper `Hero` tag matching
+### UI/UX and Animation Features
+- **Hero Animation for screen transitions**
+  - Implemented `Hero Animation` with unique tags per category for smooth poster-to-detail transitions
+  - Maintained visual continuity when navigating between screens
+  - Prevented animation conflicts when the same movie appears across multiple categories through proper `Hero` tag matching
 
-- **UI/UX enhancements**
-  - Integrated Google and Naver search through popup menu on movie detail pages for additional movie information lookup
-  - Provided seamless in-app search experience through URL encoding and in-app browser implementation
-  - Reduced repeated loading times and saved data usage through `CachedNetworkImage` image caching
-  - Implemented `Shimmer` loading animations to improve perceived performance during data loading and enhance user waiting experience
-  - Created visually impactful popular movie ranking number overlay design using `Transform.translate`
-  - Achieved efficient space utilization through horizontal scroll `ListView` with differentiated layouts for each category
-  - Applied default dark mode to enhance visual immersion with movie posters and reduce eye strain
+- **User interface enhancements**
+  - Integrated Google and Naver search through popup menu on movie detail pages for additional movie information
+  - Provided seamless in-app browsing experience with embedded browser support
+  - Reduced repeated loading time and data usage through image caching using `CachedNetworkImage`
+  - Improved perceived performance during data loading and enhanced user waiting experience with `Shimmer` loading animations
+  - Created visually appealing popular movie ranking number overlay using `Transform.translate`
+  - Utilized horizontal `ListView` and category-specific layouts for efficient space usage
+  - Applied default dark mode to enhance visual focus on movie posters and reduce eye strain
 
-### Comprehensive Unit Testing Implementation
+### Comprehensive Unit Testing
 - Wrote unit tests for all layers from `DataSource` to `ViewModel`, ensuring business logic stability
-- Implemented test cases for JSON parsing, API communication, and data transformation processes to guarantee data processing reliability
-- Built isolated test environment using `Mocktail` for dependency mocking and `Provider` overrides, eliminating external API dependencies
+- Covered JSON parsing, API communication, data transformation processes, etc.
+- Built isolated test environment with `Mocktail` for dependency mocking and `Provider` overrides, eliminating external API dependencies
 
 ### GitHub Actions CI Pipeline
-- Established automated test execution and code quality verification based on `Pull Request` and `Push` events, reducing manual review time
-- Implemented secure API key management through environment variables and protected sensitive information using `GitHub Secrets`
+- Automated testing and code quality checks on `Pull Request` and `Push` events, reducing manual review time
+- Configured secure API key management using GitHub Secrets and environment variables
 - Built fully automated workflow from Flutter dependency installation to APK artifact upload
 
-### Development Efficiency and Code Quality
-- Reduced code duplication and improved maintenance efficiency through reusable widget componentization
-- Enhanced code readability using `Extension` methods
+### Development Best Practices
+- Reduced code duplication through reusable widget componentization
+- Enhanced code readability using custom `Extension` methods
 - Established design consistency through common style and theme systems
-- Minimized external API dependencies and protected domain models through separation of `Entity` and `DTO`
+- Minimized external API dependencies by separating `Entity` and `DTO` layers
 
 ## 🌱 Problem Solving
 
 **1. Hero Animation Tag Duplication Conflict**
 
 - **Problem**  
-  While developing a movie information app with Flutter, I implemented `Hero Animation` for smooth transitions from home screen to detail screen when movie posters are clicked. However, the error `There are multiple heroes that share the same tag within a subtree` occurred, preventing animations from working properly.
+  Multiple movies appeared in different categories, causing `Hero` animation conflicts with the error: `There are multiple heroes that share the same tag within a subtree`.
 
 - **Root Cause Analysis**
   - Initially created `Hero` tags based only on movie ID using format `'movie-image-${movie.id}'`
-  - Same movies appeared across multiple categories ('Now Playing', 'Popular', 'Top Rated', 'Upcoming'), causing multiple identical `Hero` tags to exist on one screen
+  - Same movies appeared across multiple categories ('Now Playing', 'Popular', 'Top Rated', 'Upcoming'), causing duplicate `Hero` tags on the same screen
   - This violated Flutter's constraint that all `Hero` tags within a screen must be unique
 
 - **Solution**
-  - Implemented unique tag generation system combining movie ID and category name: `'movie-image-${movie.id}-$categoryName'`
-  - Modified detail page navigation to pass category information, ensuring matching tag format for `Hero Animation`
-  - Gave each category independent `Hero` tags, completely resolving duplication issues
+  - Ensured unique tag generation by combining movie ID and category name: `'movie-image-${movie.id}-$categoryName'`
+  - Modified detail page navigation to pass category information for proper tag matching
+  - Each movie poster now has a unique `Hero` tag regardless of category overlap
 
 ```dart
 // Updated Hero tag generation
@@ -422,21 +422,21 @@ Hero(
 ```
 
 - **Results**  
-  Achieved smooth animation transitions without conflicts, even when the same movie appears in multiple categories, each with unique `Hero` tags
+  Eliminated animation conflicts while maintaining smooth transitions between screens.
 
 **2. TMDB API Key Security Management in GitHub Actions**
 
 - **Problem**  
-  The CI pipeline required `TMDB Bearer Token` but couldn't hardcode it in the source code, causing build failures due to missing environment variables.
+  The CI pipeline required `TMDB Bearer Token` for successful builds, but the token couldn't be hardcoded in the repository for security reasons, causing build failures due to missing environment variables.
 
-- **Solution Process**
-  - Identified that Flutter's `flutter_dotenv` package requires `.env` file at runtime
-  - Confirmed that environment variable files cannot be committed to Git for security reasons
+- **Analysis**
+  - Identified that Flutter's `flutter_dotenv` package requires a `.env` file at runtime
+  - Recognized that environment variable files cannot be committed to Git for security reasons
   - Explored secure environment variable management using `GitHub Secrets`
 
 - **Solution**
-  - Registered `TMDB_BEARER_TOKEN` as a Secret in GitHub Repository Settings
-  - Injected Secret as environment variable in `GitHub Actions` workflow to dynamically create `.env` file
+  - Registered `TMDB_BEARER_TOKEN` as a Secret in GitHub repository settings
+  - Modified `GitHub Actions` workflow to inject the secret as an environment variable and dynamically create the `.env` file during builds
 
 ```yml
 - name: Create .env file
@@ -451,7 +451,7 @@ Hero(
 ```
 
 - **Results**  
-  Established stable build and test execution environment in automated CI pipeline without API key exposure risks
+  Successfully established a secure automated CI pipeline without exposing API credentials, enabling reliable build and test execution.
 
 ## 🎞️ Video
 <div align="center"> 
