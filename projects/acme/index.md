@@ -153,7 +153,7 @@ body {
 <div id="nav-menu">
   <div style="margin-left: 20px;">
     <a href="/projects/acme">EN</a>
-    <a href="/kr/acme">KR</a>
+    <a href="/kr/projects/acme">KR</a>
   </div>
 
 <span id="nav-menu-toggle">☰</span>
@@ -229,7 +229,7 @@ body {
     function updateLanguageButtons() {
       const currentPath = window.location.pathname;
       const enButton = document.querySelector('a[href="/projects/acme"]');
-      const krButton = document.querySelector('a[href="/kr/acme"]');
+      const krButton = document.querySelector('a[href="/kr/projects/acme"]');
       
       // Remove active class from both buttons first
       if (enButton) enButton.classList.remove('active');

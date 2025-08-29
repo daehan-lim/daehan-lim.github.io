@@ -152,7 +152,7 @@ body {
 <div id="nav-menu">
   <div style="margin-left: 20px;">
     <a href="/projects/filmmind">EN</a>
-    <a href="/kr/filmmind">KR</a>
+    <a href="/kr/projects/filmmind">KR</a>
   </div>
 
 <span id="nav-menu-toggle">☰</span>
@@ -228,7 +228,7 @@ body {
     function updateLanguageButtons() {
       const currentPath = window.location.pathname;
       const enButton = document.querySelector('a[href="/projects/filmmind"]');
-      const krButton = document.querySelector('a[href="/kr/filmmind"]');
+      const krButton = document.querySelector('a[href="/kr/projects/filmmind"]');
       
       // Remove active class from both buttons first
       if (enButton) enButton.classList.remove('active');
@@ -256,7 +256,7 @@ body {
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&fontSize=45&animation=fadeIn&fontAlignY=38&desc=&descAlignY=51&descAlign=62" alt="Header" style="display: block; width: 100%; height: auto; margin: 0; padding: 0; border-radius: 8px;" />
 
-<img src="../../images/filmmind/app_logo.png" alt="Project Icon" style="position: absolute; left: 40px; bottom: -10px; width: 80px; height: 80px; border-radius: 20px; object-fit: cover;" />
+<img src="../../../images/filmmind/app_logo.png" alt="Project Icon" style="position: absolute; left: 40px; bottom: -10px; width: 80px; height: 80px; border-radius: 20px; object-fit: cover;" />
 
 </div>
 
@@ -272,15 +272,15 @@ body {
 **🔗 GitHub:** [daehan-lim/flutter-film-mind-app](https://github.com/daehan-lim/flutter-film-mind-app)
 
 <div class="image-row">
-  <img src="../../images/filmmind/1_home.png" alt="1 home screen" class="image-item" />
-  <img src="../../images/filmmind/7_home_scroll.png" alt="7 home scroll screen" class="image-item" />
-  <img src="../../images/filmmind/3_detail.png" alt="3 detail screen" class="image-item" />
-  <img src="../../images/filmmind/4_detail_loading.png" alt="4 detail loading screen" class="image-item" />
-  <img src="../../images/filmmind/5_detail_scroll1.png" alt="5 detail scroll 1 screen" class="image-item" />
-  <img src="../../images/filmmind/6_detail_scroll2.png" alt="6 detail scroll 2 screen" class="image-item" />
-  <img src="../../images/filmmind/2_home_loading.png" alt="2 home loading screen" class="image-item" />
-  <img src="../../images/filmmind/8_naver.png" alt="8 Naver screen" class="image-item" />
-  <img src="../../images/filmmind/9_google.png" alt="9 Google screen" class="image-item" />
+  <img src="../../../images/filmmind/1_home.png" alt="1 home screen" class="image-item" />
+  <img src="../../../images/filmmind/7_home_scroll.png" alt="7 home scroll screen" class="image-item" />
+  <img src="../../../images/filmmind/3_detail.png" alt="3 detail screen" class="image-item" />
+  <img src="../../../images/filmmind/4_detail_loading.png" alt="4 detail loading screen" class="image-item" />
+  <img src="../../../images/filmmind/5_detail_scroll1.png" alt="5 detail scroll 1 screen" class="image-item" />
+  <img src="../../../images/filmmind/6_detail_scroll2.png" alt="6 detail scroll 2 screen" class="image-item" />
+  <img src="../../../images/filmmind/2_home_loading.png" alt="2 home loading screen" class="image-item" />
+  <img src="../../../images/filmmind/8_naver.png" alt="8 Naver screen" class="image-item" />
+  <img src="../../../images/filmmind/9_google.png" alt="9 Google screen" class="image-item" />
 
 </div>
 <span style="display: block; height: 11px;"></span>
@@ -456,7 +456,7 @@ Hero(
 ## 🎞️ 시연 영상
 <div align="center"> 
 <a href="https://www.youtube.com/watch?v=OKqoMnWGQ5o">
-  <img src="../../images/filmmind/video_preview.png" alt="Watch the Video" width="230" />
+  <img src="../../../images/filmmind/video_preview.png" alt="Watch the Video" width="230" />
 </a>
 </div>
 <br>

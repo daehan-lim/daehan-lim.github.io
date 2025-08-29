@@ -152,7 +152,7 @@ body {
 <div id="nav-menu">
   <div style="margin-left: 20px;">
     <a href="/projects/yellow_pages">EN</a>
-    <a href="/kr/yellow_pages">KR</a>
+    <a href="/kr/projects/yellow_pages">KR</a>
   </div>
 
 <span id="nav-menu-toggle">☰</span>
@@ -228,7 +228,7 @@ body {
     function updateLanguageButtons() {
       const currentPath = window.location.pathname;
       const enButton = document.querySelector('a[href="/projects/yellow_pages"]');
-      const krButton = document.querySelector('a[href="/kr/yellow_pages"]');
+      const krButton = document.querySelector('a[href="/kr/projects/yellow_pages"]');
       
       // Remove active class from both buttons first
       if (enButton) enButton.classList.remove('active');
@@ -257,7 +257,7 @@ body {
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&fontSize=45&animation=fadeIn&fontAlignY=38&desc=&descAlignY=51&descAlign=62" alt="Header" style="display: block; width: 100%; height: auto; margin: 0; padding: 0; border-radius: 8px;" />
 
 <div style="position:absolute;left:40px;bottom:-10px;width:80px;height:80px;background:white;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,0.15);">
-<img src="../../images/yellow_pages/app_icon.png" alt="Project Icon" style="max-width:80%;max-height:80%;object-fit:contain;" />
+<img src="../../../images/yellow_pages/app_icon.png" alt="Project Icon" style="max-width:80%;max-height:80%;object-fit:contain;" />
 </div>
 
 </div>
@@ -275,12 +275,12 @@ body {
 **🔗 GitHub:** [daehan-lim/cuban-yellow-pages](https://github.com/daehan-lim/cuban-yellow-pages)
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="../../images/yellow_pages/1_home.png" width="240" style="margin-right: 5px;" alt="Home screen"/>
-  <img src="../../images/yellow_pages/2_green_pages.png" width="240" style="margin-right: 5px;" alt="Green pages screen"/>
-  <img src="../../images/yellow_pages/3_informative_pages.png" width="240" style="margin-right: 5px;" alt="Informative pages screen"/>
-  <img src="../../images/yellow_pages/4_internet.png" width="240" style="margin-right: 5px;" alt="Internet screen"/>
-  <img src="../../images/yellow_pages/5_long_distance.png" width="240" style="margin-right: 5px;" alt="Long distance screen"/>
-  <img src="../../images/yellow_pages/6_advertisement.png" width="240" alt="Advertisement screen"/>
+  <img src="../../../images/yellow_pages/1_home.png" width="240" style="margin-right: 5px;" alt="Home screen"/>
+  <img src="../../../images/yellow_pages/2_green_pages.png" width="240" style="margin-right: 5px;" alt="Green pages screen"/>
+  <img src="../../../images/yellow_pages/3_informative_pages.png" width="240" style="margin-right: 5px;" alt="Informative pages screen"/>
+  <img src="../../../images/yellow_pages/4_internet.png" width="240" style="margin-right: 5px;" alt="Internet screen"/>
+  <img src="../../../images/yellow_pages/5_long_distance.png" width="240" style="margin-right: 5px;" alt="Long distance screen"/>
+  <img src="../../../images/yellow_pages/6_advertisement.png" width="240" alt="Advertisement screen"/>
 
 </div>
 <span style="display: block; height: 11px;"></span>
