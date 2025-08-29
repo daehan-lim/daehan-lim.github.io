@@ -310,8 +310,8 @@ FilmMind is a Flutter mobile app that displays movie information across multiple
 ``` 
 ├── app/                               # App-wide settings, constants, and themes  
 │   ├── constants/                     # App constant definitions  
-│   │   ├── app_colors.dart            # Color scheme definitions  
-│   │   ├── app_constants.dart         # Constant values  
+│   │   ├── app_colors.dart            # Color constants  
+│   │   ├── app_constants.dart         # General app constants  
 │   │   └── app_styles.dart            # Style definitions  
 │   └── theme.dart                     # App theme configuration  
 

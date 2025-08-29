@@ -288,7 +288,7 @@ body {
 
 ## 📖 Project Description
 
-PlaceFinder is a location-based search application that leverages Naver Local Search API and VWorld API to enable users to search for places by name or address. The app supports GPS-based current location search and integrates with various map applications, providing an intuitive mobile environment where users can explore nearby places and access detailed information seamlessly.
+PlaceFinder helps users discover nearby places by searching by place names or addresses. The app uses Naver Local Search API and VWorld API to provide GPS-based location search and supports seamless redirection to popular map applications. Users can quickly explore local businesses, restaurants, and points of interest while accessing detailed information through in-app web view integration.
 
 ## 🛠️ Tech Stack
 
@@ -306,26 +306,26 @@ PlaceFinder is a location-based search application that leverages Naver Local Se
 ## 📋 Project Structure
 
 ```
-├── app/                              # Application configuration and setup files
+├── app/                              # App configuration and setup files
 │   ├── constants/                    # App-wide constant definitions
-│   │   ├── app_colors.dart           # App color theme and color constants
-│   │   ├── app_constants.dart        # General app constants (strings, numbers, etc.)
-│   │   └── app_styles.dart           # App text styles, spacing, and style constants
-│   ├── app_providers.dart            # Riverpod provider setup and global state definitions
+│   │   ├── app_colors.dart           # Color constants
+│   │   ├── app_constants.dart        # General app constants
+│   │   └── app_styles.dart           # Style definitions
+│   ├── app_providers.dart            # App theme configuration
 │   └── theme.dart                    # MaterialApp theme configuration
 │
-├── core/                             # Core functionality and common utility classes
+├── core/                             # Core functionality and common utilities
 │   ├── exceptions/                   # App-wide exception classes
-│   │   └── data_exceptions.dart      # API and data-related exception definitions
-│   ├── services/                     # Business logic and external service integrations
+│   │   └── data_exceptions.dart      # Data-related exception classes
+│   ├── services/                     # External service integrations
 │   │   └── map_launcher_service.dart
 │   └── utils/                        # Helper functions and utility classes
 │       ├── geolocator_util.dart
 │       ├── snackbar_util.dart
 │       └── string_format_utils.dart
 │
-├── data/                             # Data-related classes and data access layer
-│   ├── dto/                          # Data Transfer Objects (for direct API response mapping)
+├── data/                             # Data layer and data access
+│   ├── dto/                          # Data Transfer Objects
 │   │   ├── naver_place_dto.dart
 │   │   └── vworld_district_dto.dart
 │   ├── model/                        # Data models used within the app
