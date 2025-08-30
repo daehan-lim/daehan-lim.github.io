@@ -354,7 +354,7 @@ body {
 
 - **장소명/주소 검색**: 검색창에 키워드를 입력하여 네이버 지역 검색 API를 통해 장소 검색
 - **현재 위치 기반 검색**: GPS 아이콘을 클릭하여 현재 위치 주변의 장소를 검색
-- **장소 상세 정보**: 검색된 장소를 클릭하면 네이버 웹페이지를 통해 상세 정보 확인 가능
+- **장소 상세 정보**: 검색된 장소를 클릭하면 해당 장소의 웹페이지를 통해 상세 정보 확인 가능
 - **지도 앱 연동**: 장소를 선택하여 사용자 기기에 설치된 지도 앱에서 해당 위치를 열어볼 수 있음
 - **네이버 검색 기능**: 각 장소 카드의 "네이버 검색" 버튼으로 Android에서는 Custom Tabs, iOS에서는 SFSafariViewController를 사용하여 앱 내에서 네이버 검색 결과를 확인 가능
 
@@ -392,14 +392,12 @@ body {
   - `ApiException`, `NetworkException`, `EnvFileException` 등 상황별 맞춤형 예외 클래스 구현
   - 네트워크 연결 오류, 검색 결과 없음, 환경 변수 누락 등에 대한 직관적인 에러 메시지 제공
   - 연속 스낵바 중복 방지 로직으로 사용자 알림 경험 최적화
-  - 빈 검색어 입력 시 즉시 차단하여 불필요한 API 요청 방지
-  - URL 유효성 검증으로 잘못된 링크 접근 차단
-  - 유효하지 않은 링크나 빈 링크에 대한 스낵바 알림으로 사용자 피드백 강화
+  - 빈 검색어 입력과 검색 진행 중 중복 요청을 차단하는 입력 검증 로직 구현으로 불필요한 API 요청 방지
+  - 장소 정보 확인 시 URL 유효성 검증으로 유효하지 않은 링크나 빈 링크 접근 차단 및 스낵바 알림 표시
 
 - **사용자 친화적 UI/UX 구현**
   - 검색창 클리어 버튼과 검색 아이콘 프리픽스로 직관적인 검색 인터페이스 구성
   - 긴 주소에 대한 `Tooltip` 제공으로 가독성 향상
-  - 검색 진행 중 중복 요청 방지 로직으로 시스템 안정성 확보
   - `InkWell` 효과와 그림자를 활용한 카드 형태 리스트 아이템 구현
   - `GestureDetector`를 통한 화면 터치 시 키보드 자동 숨김 기능으로 사용자 편의성 향상
 
@@ -423,37 +421,29 @@ body {
 **iOS 지도 앱 연동 Silent Failure 문제**
 
 - **문제 상황**  
-  - iOS에서 네이버 지도가 설치되지 않은 상태에서 `launchUrl()`을 통해 커스텀 스킴(`nmap://`)을 실행하면 아무런 반응 없이 조용히 실패 
-  - `try/catch`로 설정한 `Apple Maps` fallback도 실행되지 않는 silent failure 발생 
-  - 콘솔에도 아무런 예외 로그가 찍히지 않아 사용자가 아무 피드백도 받지 못하는 상황
+  iOS에서 네이버 지도가 설치되지 않은 상태에서 `launchUrl()`을 통해 커스텀 스킴(`nmap://`)을 실행하면 아무런 반응 없이 조용히 실패. `try/catch`로 설정한 `Apple Maps` fallback도 실행되지 않아 사용자가 아무 피드백이나 대안도 받지 못하는 상황
 
-- **초기 접근 방식을 선택한 배경**  
-  - 이전 Android 개발에서 `canLaunchUrl()`의 신뢰성 문제를 경험함. 실행 가능한 `geo:` URI에 대해서도 `false`를 반환하는 현상을 겪었던 것이 주요 원인
+- **초기 접근 방식 및 배경**
+  - Android 구현에서 `canLaunchUrl()`의 신뢰성 문제를 경험함. 실행 가능한 `geo:` URI에 대해서도 `false`를 반환하는 현상 발생:
 
   ```dart
   if (await canLaunchUrl(Uri.parse('geo:0,0?q=$encoded'))) {
-    // 분명히 실행 가능한 URI임에도 불구하고 false를 반환
+    // 실행 가능한 URI임에도 불구하고 false를 반환
   }
   ```
 
-  - 이러한 Android에서의 경험을 바탕으로 iOS에서도 `canLaunchUrl()`이 신뢰하기 어려울 것이라 판단하여 양쪽 플랫폼 모두 `try/catch` 방식으로 실패 처리를 선택
+  - 이러한 Android에서의 경험을 바탕으로 iOS에서도 `canLaunchUrl()`이 신뢰하기 어려울 것이라 판단하여 양쪽 플랫폼 모두 `try/catch` 방식으로 실패 처리 선택
 
 - **초기 구현 및 실패 원인**
   ```dart
   static Future<void> openInMap(String queryAddress) async {
-    ...
     if (Platform.isIOS) { 
-      final naverUri = Uri.parse('nmap://search?query=$encoded&appname=$appName');
       try {
         await launchUrl(naverUri, mode: LaunchMode.externalApplication);
       } catch (e) {
-        log('Failed to open Naver Maps. Falling back to Apple Maps: $e');
+        // iOS에서는 이 catch 블록이 실행되지 않음
         final appleUri = Uri.parse('http://maps.apple.com/?q=$encoded');
-        try {
-          await launchUrl(appleUri, mode: LaunchMode.externalApplication);
-        } catch (e2) {
-          log('Failed to open Apple Maps: $e2');
-        }
+        await launchUrl(appleUri, mode: LaunchMode.externalApplication);
       }
     }
   }
@@ -466,33 +456,27 @@ body {
 
 - **플랫폼별 동작 차이 분석**  
   공식 문서와 GitHub 이슈 검토 결과 핵심 차이점을 파악:
-  - **iOS**: 처리할 앱이 없는 경우에도 예외를 던지지 않고 조용히 실패하며, 별다른 반응 없이 호출이 끝나는 경우 존재
-  - **Android**: `geo:` 스킴 등에 대해 예외 기반 처리가 상대적으로 안정적으로 작동
-  - iOS에서는 실제로 `launchUrl()` 호출 전에 `canLaunchUrl()`로 실행 가능 여부를 반드시 사전 체크해야 fallback이 정상 작동
+  - **iOS**: URL 스킴을 처리할 앱이 없으면 조용히 실패하며, `canLaunchUrl()`로 사전 검증 필요
+  - **Android**: `geo:`와 같은 표준 스킴에 대해 예외 기반 처리가 안정적으로 작동
 
 - **최종 해결 방법**  
-  플랫폼별 특성에 맞는 분기 처리로 해결:
+  각 OS의 특성에 맞는 플랫폼별 처리 구현:
 
   ```dart
   static Future<void> openInMap(String queryAddress) async {
-    ...
     if (Platform.isIOS) { 
       final naverUri = Uri.parse('nmap://search?query=$encoded&appname=$appName');
       if (await canLaunchUrl(naverUri)) {
         await launchUrl(naverUri, mode: LaunchMode.externalApplication);
-        log('opened in Naver Map');
       } else {
-        log('Naver Map not available. Falling back to Apple Maps');
+        // 네이버 지도 사용 불가, Apple Maps 사용
         final appleUri = Uri.parse('http://maps.apple.com/?q=$encoded');
         if (await canLaunchUrl(appleUri)) {
           await launchUrl(appleUri, mode: LaunchMode.externalApplication);
-        } else {
-          log('Failed to open Apple Maps');
         }
       }
     } else {
-      // Android: 기존 try/catch 방식 유지 (geo 스킴에서 안정적으로 작동)
-      final geoUri = Uri.parse('geo:0,0?q=$encoded');
+      // Android: geo URI에 대한 try/catch 방식 유지
       try {
         await launchUrl(geoUri, mode: LaunchMode.externalApplication);
       } catch (e) {
@@ -503,12 +487,11 @@ body {
   ```
 
 - **배운 점**
-  - **플랫폼별 URL 스킴 처리 차이**: Android와 iOS는 외부 앱 연동 실패 시 완전히 다른 방식으로 동작
+  - **플랫폼별 동작**: 크로스 플랫폼 개발에서 각 플랫폼의 외부 앱 연동 고유 처리 방식을 이해하는 것의 중요성을 깨달음. 한 플랫폼에서의 경험을 다른 플랫폼에 그대로 적용하면 안 됨
   - **iOS에서 canLaunchUrl()의 중요성**: Android에서의 신뢰성 문제와 달리 iOS에서는 필수적인 사전 체크 도구로 활용해야 함
-  - **크로스 플랫폼 개발 시 주의점**: 한 플랫폼에서의 경험을 다른 플랫폼에 그대로 적용하면 안 되며, 각 플랫폼의 고유한 특성을 이해하고 대응해야 함
-  - **Silent Failure 디버깅**: 예외가 발생하지 않는 상황에서의 문제 해결 접근법
+  - **Silent Failure 디버깅**: 예외가 발생하지 않는 상황에서의 문제 해결 접근법 학습
 
 - **최종 결과**  
-  iOS에서 네이버 지도 미설치 시 Apple Maps로 정상 fallback되며, 플랫폼별 최적화된 지도 앱 연동으로 안정적인 지도 실행 환경 구축
+  문제가 해결되었고, iOS에서 네이버 지도 미설치 시 Apple Maps로 정상 fallback되며, 플랫폼별 최적화된 지도 앱 연동으로 안정적인 지도 실행 환경 구축
 
 <br><br><br>

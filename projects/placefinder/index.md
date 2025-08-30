@@ -306,103 +306,99 @@ PlaceFinder helps users discover nearby places by searching by place names or ad
 ## 📋 Project Structure
 
 ```
-├── app/                              # App configuration and setup files
-│   ├── constants/                    # App-wide constant definitions
-│   │   ├── app_colors.dart           # Color constants
-│   │   ├── app_constants.dart        # General app constants
-│   │   └── app_styles.dart           # Style definitions
-│   ├── app_providers.dart            # App theme configuration
-│   └── theme.dart                    # MaterialApp theme configuration
+├── app/                               # App configuration and setup files
+│   ├── constants/                     # App-wide constant definitions
+│   │   ├── app_colors.dart            # Color constants
+│   │   ├── app_constants.dart         # General app constants
+│   │   └── app_styles.dart            # Style definitions
+│   ├── app_providers.dart             # Riverpod provider setup
+│   └── theme.dart                     # App theme configuration
 │
-├── core/                             # Core functionality and common utilities
-│   ├── exceptions/                   # App-wide exception classes
-│   │   └── data_exceptions.dart      # Data-related exception classes
-│   ├── services/                     # External service integrations
+├── core/                              # Core functionality and common utilities
+│   ├── exceptions/                    # App-wide exception classes
+│   │   └── data_exceptions.dart       # Data-related exception classes
+│   ├── services/                      # External service integrations
 │   │   └── map_launcher_service.dart
-│   └── utils/                        # Helper functions and utility classes
+│   └── utils/                         # Helper functions and utility classes
 │       ├── geolocator_util.dart
 │       ├── snackbar_util.dart
 │       └── string_format_utils.dart
 │
-├── data/                             # Data layer and data access
-│   ├── dto/                          # Data Transfer Objects
+├── data/                              # Data layer and data access
+│   ├── dto/                           # Data Transfer Objects
 │   │   ├── naver_place_dto.dart
 │   │   └── vworld_district_dto.dart
-│   ├── model/                        # Data models used within the app
-│   │   └── place.dart                # Model class representing place information
-│   ├── network/                      # Network communication related classes
+│   ├── model/                         # Data models
+│   │   └── place.dart
+│   ├── network/                       # Network communication
 │   │   └── dio_clients.dart
-│   └── repository/                   # Data access and business logic implementation
+│   └── repository/                    # Repository implementations
 │       └── location_repository.dart
 │
-├── ui/                               # User interface related code
-│   ├── pages/                        # Main app screens
-│   │   ├── home/                     # Home screen related files
+├── ui/                                # User interface
+│   ├── pages/                         # App screens
+│   │   ├── home/                      # Home screen
 │   │   │   ├── home_page.dart
 │   │   │   ├── home_view_model.dart
-│   │   │   └── widgets/              # Home screen specific widgets
+│   │   │   └── widgets/
 │   │   │       └── home_list_item.dart
-│   │   └── web/                      # WebView screen related files
+│   │   └── web/                       # WebView screen
 │   │       ├── place_web_page.dart
 │   │       └── place_web_page_view_model.dart
-│   └── widgets/                      # Reusable common widgets throughout the app
+│   └── widgets/                       # Common widgets
 │       └── error_layout.dart
 │
-└── main.dart                         # App entry point
+└── main.dart                          # App entry point
 ```
 
 ## 🎯 Key Features
 
-- **Place Name/Address Search**: Enter keywords in the search bar to find places through Naver Local Search API
-- **Current Location-Based Search**: Click the GPS icon to search for places around your current location
-- **Place Details**: Click on searched places to view detailed information through Naver web pages
-- **Map App Integration**: Select places to open them in map apps installed on your device
-- **Naver Search Integration**: Use the "Search on Naver" button on each place card to view Naver search results within the app using Custom Tabs on Android and SFSafariViewController on iOS
+- **Place Search**: Search for locations by entering place names or addresses through Naver Local Search API
+- **GPS Location Search**: Find nearby places using current GPS location with one-tap access
+- **Detailed Place Information**: Click on any search result to view detailed information through the place's web page
+- **Map App Integration**: Launch places directly in device map apps (Google Maps, Apple Maps, Naver Map, etc.)
+- **In-App Naver Search**: Browse Naver search results within the app using Custom Tabs (Android) and SFSafariViewController (iOS)
 
-## 🌟 Key Contributions and Achievements
+## 🌟 Implementation & Achievements
 
-### Real-time Location-Based Search System Implementation
-- Integrated `Geolocator` for GPS coordinate acquisition with `VWorld API` to automatically recognize administrative districts of user's current location
-- Implemented automatic nearby place loading on app startup to enhance user convenience
-- Built stable location recognition environment with location permission handling and exception management
+### Real-time Location-Based Search
+- Integrated `Geolocator` for GPS coordinate acquisition with `VWorld API` to automatically identify user's current administrative district
+- Implemented automatic nearby place loading on app startup to enhance user convenience with immediate local results
+- Built reliable location detection with location permission handling and exception management
 - Provided intuitive user experience by automatically setting search bar text to "[My Location] District Name" format
 
-### Integrated Utilization of Naver Local Search API and VWorld API
-- Implemented stable API communication through `Bearer Token`-based authentication and `Dio` HTTP client
-- Built comprehensive place data processing including place names, categories, addresses, and link information
-- Implemented clean data display through HTML tag removal and string formatting utilities
-- Supported precise location-based search through `VWorld API`'s coordinate-based administrative district information lookup
-- Managed consistent HTTP configuration through `BaseOptions`
-- Ensured responsiveness with 10-second connection/reception timeout settings for `Dio` client
-- Enhanced development efficiency using `LogInterceptor` in debug mode
+### Naver Local Search API and VWorld API Integration
+- Implemented secure API communication through `Bearer Token` authentication and `Dio` HTTP client
+- Processed place names, categories, addresses, and links with HTML tag cleaning and string formatting utilities
+- Supported coordinate-to-address conversion via VWorld API for accurate location identification
+- Configured `BaseOptions` for consistent HTTP settings with 10-second connection/reception timeout and debug logging through `LogInterceptor`
 
-### Native App Integration and Enhanced User Experience
+### Native App Integration and User Experience Enhancement
 - **Platform-Specific Map App Integration**
-  - **Android**: Implemented system allowing users to select from installed map apps (Google Maps, Naver Map, KakaoMap, etc.) through `Geo URI`
-  - **iOS**: Built automatic branching system based on Naver Map installation status, prioritizing Naver Map execution with `Apple Maps` as fallback
-  - Provided seamless user workflow through `URL Launcher`-based external app integration
-  - Enabled additional information access within the app through "Search on Naver" button on place cards
+  - Android: Implements `Geo URI` scheme allowing users to choose from installed map apps (Google Maps, Naver Map, KakaoMap)
+  - iOS: Detects Naver Map installation and automatically falls back to Apple Maps when unavailable
+  - Implemented `URL Launcher` integration for smooth transitions to map applications
+  - Added 'Search on Naver' buttons to each place listing for accessing additional details within the app
 
-- **InAppWebView-Based Detailed Information Lookup**
+- **InAppWebView-Based Detailed Information Access**
   - Implemented mobile-optimized web page loading with `Custom User Agent` configuration
-  - Improved user waiting time perception through loading indicators and error handling
+  - Improved user wait time perception through loading indicators and error handling
   - Provided integrated in-app experience using `InAppBrowserView` mode for Naver search integration
 
 ### Robust Exception Handling and User Feedback
 - **Layered Exception Handling System**
-  - Implemented situation-specific custom exception classes including `ApiException`, `NetworkException`, `EnvFileException`
+  - Implemented custom exception classes including `ApiException`, `NetworkException`, `EnvFileException` for specific scenarios
   - Provided intuitive error messages for network connection errors, no search results, missing environment variables, etc.
   - Optimized user notification experience with duplicate snackbar prevention logic
-  - Prevented unnecessary API requests by immediately blocking empty search queries
-  - Enhanced user feedback through URL validation to block invalid link access
-  - Strengthened user feedback with snackbar notifications for invalid or empty links
+  - Implemented input validation to block empty search queries and prevent duplicate API requests during active searches, reducing unnecessary network calls
+  - Improved user feedback for place details by preventing access to invalid or empty links and displaying snackbar notifications
 
 - **User-Friendly UI/UX Implementation**
-  - Built intuitive search interface with search bar clear button and search icon prefix
+  - Added search bar with clear button, GPS icon, and loading indicators for better user interaction
   - Enhanced readability by providing `Tooltip` for long addresses
   - Secured system stability with duplicate request prevention logic during active searches
   - Implemented card-style list items using `InkWell` effects and shadows
-  - Enhanced user convenience with automatic keyboard hiding on screen touch through `GestureDetector`
+  - Added automatic keyboard hiding on screen touch through `GestureDetector` for better user convenience
 
 ### Development Efficiency and Code Quality
 - **Riverpod-Based State Management**
@@ -411,89 +407,73 @@ PlaceFinder helps users discover nearby places by searching by place names or ad
   - Ensured data integrity and minimized external API dependencies through separation of `DTO` and `Model`
 
 - **Environment Variable Security Management**
-  - Implemented secure API key handling and environment-specific configuration separation using `flutter_dotenv`
-  - Provided development environment setup guide through `.env.example` file
+  - Secured API keys and separated environment-specific configurations using `flutter_dotenv`
+  - Provided a `.env.example` file to guide development environment configuration
 
 - **Reusable Component Design**
   - Implemented independent widget components including `HomeListItem`, `MessageLayout`
   - Eliminated code duplication through common utility classes like `StringFormatUtils`, `SnackbarUtil`
-  - Ensured design consistency through unified app theme and color system
+  - Ensured design consistency through unified app theme file and color system
 
 ## 🌱 Problem Solving
 
-**iOS Map App Integration Silent Failure Issue**
+**iOS Map App Integration Silent Failure**
 
-- **Problem Situation**
-  - On iOS, when Naver Map is not installed and `launchUrl()` is called with a custom scheme (`nmap://`), it fails silently without any response
-  - The `Apple Maps` fallback configured with `try/catch` also doesn't execute, resulting in silent failure
-  - No exception logs appear in console, leaving users without any feedback
+- **Problem**  
+  On iOS, when Naver Map is not installed and `launchUrl()` is called with the `nmap://` custom scheme, it fails silently without any response. The `Apple Maps` fallback configured with `try/catch` never executes, leaving users with no feedback or alternative action.
 
-- **Background for Initial Approach Selection**
-  - Previous Android development experience with `canLaunchUrl()` reliability issues was the main factor. I had encountered cases where it returned `false` even for executable `geo:` URIs
+- **Initial Approach and Reasoning**  
+  - I had experienced reliability issues with `canLaunchUrl()` in the Android implementation. It would return `false` even for executable `geo:` URIs:
 
   ```dart
   if (await canLaunchUrl(Uri.parse('geo:0,0?q=$encoded'))) {
-    // Despite being an executable URI, it returned false
+    // Would return false despite being executable
   }
   ```
 
-  - Based on this Android experience, I judged that `canLaunchUrl()` would be unreliable on iOS as well, so I chose the `try/catch` approach for failure handling on both platforms
+  - After encountering this Android behavior, I assumed `canLaunchUrl()` would be equally unreliable on iOS, so I used `try/catch` for failure handling on both platforms
 
-- **Initial Implementation and Failure Analysis**
+- **Why the Initial Solution Failed**
   ```dart
   static Future<void> openInMap(String queryAddress) async {
-    ...
     if (Platform.isIOS) { 
-      final naverUri = Uri.parse('nmap://search?query=$encoded&appname=$appName');
       try {
         await launchUrl(naverUri, mode: LaunchMode.externalApplication);
       } catch (e) {
-        log('Failed to open Naver Maps. Falling back to Apple Maps: $e');
+        // This catch block never executes on iOS
         final appleUri = Uri.parse('http://maps.apple.com/?q=$encoded');
-        try {
-          await launchUrl(appleUri, mode: LaunchMode.externalApplication);
-        } catch (e2) {
-          log('Failed to open Apple Maps: $e2');
-        }
+        await launchUrl(appleUri, mode: LaunchMode.externalApplication);
+      
       }
     }
   }
   ```
 
-  - Contrary to expectations, this approach didn't work at all on iOS:
-  - `launchUrl()` doesn't throw exceptions even when Naver Map is not installed
-  - Therefore, the `catch` block never executes
-  - The fallback `Apple Maps` execution is also ignored
+  The approach failed because iOS `launchUrl()` doesn't throw exceptions for unavailable apps - it just silently does nothing, so the catch block never executes and Apple Maps never launches.
 
-- **Platform-Specific Behavior Difference Analysis**  
-  After reviewing official documentation and GitHub issues, I identified key differences:
-  - **iOS**: Even when no app can handle the request, it doesn't throw exceptions and fails silently, with calls ending without any response in some cases
-  - **Android**: Exception-based handling works relatively stable for `geo:` schemes and similar
-  - On iOS, you must check executability with `canLaunchUrl()` before calling `launchUrl()` for fallback to work properly
-
+- **Platform-Specific Behavior Analysis**  
+  After reviewing documentation and GitHub issues, I discovered the key differences:
+  - **iOS**: Fails silently when no app can handle the URL scheme, requiring pre-validation with `canLaunchUrl()`
+  - **Android**: Exception-based handling works reliably for standard schemes like `geo:`
+  
 - **Final Solution**  
-  Resolved through platform-specific branching that matches each platform's characteristics:
+  Implemented platform-specific handling that works with each OS's characteristics:
 
   ```dart
   static Future<void> openInMap(String queryAddress) async {
-    ...
     if (Platform.isIOS) { 
       final naverUri = Uri.parse('nmap://search?query=$encoded&appname=$appName');
       if (await canLaunchUrl(naverUri)) {
         await launchUrl(naverUri, mode: LaunchMode.externalApplication);
-        log('opened in Naver Map');
       } else {
-        log('Naver Map not available. Falling back to Apple Maps');
+        // Naver Map unavailable, use Apple Maps
         final appleUri = Uri.parse('http://maps.apple.com/?q=$encoded');
         if (await canLaunchUrl(appleUri)) {
           await launchUrl(appleUri, mode: LaunchMode.externalApplication);
-        } else {
-          log('Failed to open Apple Maps');
         }
       }
     } else {
-      // Android: Maintain existing try/catch approach (works stably with geo scheme)
-      final geoUri = Uri.parse('geo:0,0?q=$encoded');
+      // Android: Keep try/catch approach for geo URIs
       try {
         await launchUrl(geoUri, mode: LaunchMode.externalApplication);
       } catch (e) {
@@ -503,13 +483,12 @@ PlaceFinder helps users discover nearby places by searching by place names or ad
   }
   ```
 
-- **Lessons Learned**
-  - **Platform-Specific URL Scheme Handling Differences**: Android and iOS behave completely differently when external app integration fails
-  - **Importance of canLaunchUrl() on iOS**: Unlike reliability issues on Android, it must be used as an essential pre-check tool on iOS
-  - **Cross-Platform Development Considerations**: Experiences from one platform should not be directly applied to another; understanding and responding to each platform's unique characteristics is essential
-  - **Silent Failure Debugging**: Problem-solving approaches for situations where exceptions don't occur
+- **Key Insights**
+  - **Platform-Specific Behavior**: Realized the importance of understanding each platform's unique handling of external app integration in cross-platform development. Experiences from one platform should not be directly applied to another
+  - **Importance of canLaunchUrl() on iOS**: Unlike the reliability issues on Android, it's an essential pre-check tool on iOS
+  - **Debugging Silent Failures**: Learned approaches for troubleshooting issues where no exceptions occur
 
-- **Final Results**  
-  On iOS, when Naver Map is not installed, it properly falls back to Apple Maps, establishing a stable map launch environment with platform-optimized map app integration
+- **Results**  
+  Resolved issue and achieved reliable map app integration on both platforms: iOS users get Naver Map when available, with Apple Maps fallback, while Android users can choose from their installed map applications
 
 <br><br><br>
