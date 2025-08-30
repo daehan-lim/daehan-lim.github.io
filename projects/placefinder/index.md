@@ -374,8 +374,8 @@ PlaceFinder helps users discover nearby places by searching by place names or ad
 
 ### Native App Integration and User Experience Enhancement
 - **Platform-Specific Map App Integration**
-  - Android: Implements `Geo URI` scheme allowing users to choose from installed map apps (Google Maps, Naver Map, KakaoMap)
-  - iOS: Detects Naver Map installation and automatically falls back to Apple Maps when unavailable
+  - **Android**: Implements `Geo URI` scheme allowing users to choose from installed map apps (Google Maps, Naver Map, KakaoMap)
+  - **iOS**: Detects Naver Map installation and automatically falls back to Apple Maps when unavailable
   - Implemented `URL Launcher` integration for smooth transitions to map applications
   - Added 'Search on Naver' buttons to each place listing for accessing additional details within the app
 
