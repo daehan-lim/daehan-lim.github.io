@@ -365,7 +365,6 @@ PlaceFinder helps users discover nearby places by searching by place names or ad
 - Integrated `Geolocator` for GPS coordinate acquisition with `VWorld API` to automatically identify user's current administrative district
 - Implemented automatic nearby place loading on app startup to enhance user convenience with immediate local results
 - Built reliable location detection with location permission handling and exception management
-- Provided intuitive user experience by automatically setting search bar text to "[My Location] District Name" format
 
 ### Naver Local Search API and VWorld API Integration
 - Implemented secure API communication through `Bearer Token` authentication and `Dio` HTTP client
