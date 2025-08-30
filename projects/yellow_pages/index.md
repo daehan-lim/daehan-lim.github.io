@@ -97,8 +97,9 @@ code.language-plaintext.highlighter-rouge {
 }
 
 #nav-menu > div:first-child a:hover {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: rgba(255, 255, 255, 0.25); /* Brighter white overlay */
   color: white;
+  transform: translateY(-1px);
 }
 
 /* Home button styles */
@@ -117,12 +118,6 @@ code.language-plaintext.highlighter-rouge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-}
-
-#home-button:hover {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  color: white;
-  transform: translateY(-1px);
 }
 
 #home-button svg {
