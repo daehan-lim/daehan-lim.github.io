@@ -433,7 +433,7 @@ body {
   ```
 
   - 이러한 Android에서의 경험을 바탕으로 iOS에서도 `canLaunchUrl()`이 신뢰하기 어려울 것이라 판단하여 양쪽 플랫폼 모두 `try/catch` 방식으로 실패 처리 선택
-
+<span style="display: block; height: 8px;"></span>
 - **초기 구현 및 실패 원인**
   ```dart
   static Future<void> openInMap(String queryAddress) async {
@@ -453,7 +453,7 @@ body {
   - `launchUrl()`은 Naver Map이 설치되어 있지 않더라도 예외를 던지지 않음
   - 따라서 `catch` 블록이 실행되지 않음
   - fallback으로 준비한 `Apple Maps` 실행도 무시됨
-
+<span style="display: block; height: 8px;"></span>
 - **플랫폼별 동작 차이 분석**  
   공식 문서와 GitHub 이슈 검토 결과 핵심 차이점을 파악:
   - **iOS**: URL 스킴을 처리할 앱이 없으면 조용히 실패하며, `canLaunchUrl()`로 사전 검증 필요
@@ -486,7 +486,7 @@ body {
   }
   ```
 
-- **배운 점**
+- **핵심 인사이트**
   - **플랫폼별 동작**: 크로스 플랫폼 개발에서 각 플랫폼의 외부 앱 연동 고유 처리 방식을 이해하는 것의 중요성을 깨달음. 한 플랫폼에서의 경험을 다른 플랫폼에 그대로 적용하면 안 됨
   - **iOS에서 canLaunchUrl()의 중요성**: Android에서의 신뢰성 문제와 달리 iOS에서는 필수적인 사전 체크 도구로 활용해야 함
   - **Silent Failure 디버깅**: 예외가 발생하지 않는 상황에서의 문제 해결 접근법 학습
