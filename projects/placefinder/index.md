@@ -395,7 +395,6 @@ PlaceFinder helps users discover nearby places by searching by place names or ad
 - **User-Friendly UI/UX Implementation**
   - Added search bar with clear button, GPS icon, and loading indicators for better user interaction
   - Enhanced readability by providing `Tooltip` for long addresses
-  - Secured system stability with duplicate request prevention logic during active searches
   - Implemented card-style list items using `InkWell` effects and shadows
   - Added automatic keyboard hiding on screen touch through `GestureDetector` for better user convenience
 
