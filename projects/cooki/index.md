@@ -370,7 +370,7 @@ body {
 [![Speech Recognition](https://img.shields.io/badge/Speech_Recognition-9C27B0?style=for-the-badge)](https://pub.dev/packages/speech_to_text)
 [![Easy Image Viewer](https://img.shields.io/badge/Easy_Image_Viewer-795548?style=for-the-badge)](https://pub.dev/packages/easy_image_viewer)
 
-## 🌟 Main Contributions
+## 🌟 Key Contributions
 
 ### AI Recipe Generation and Management System
 - **Built `Gemini AI`-based multimodal recipe generation system**

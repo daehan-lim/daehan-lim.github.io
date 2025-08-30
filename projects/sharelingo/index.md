@@ -421,7 +421,7 @@ body {
 ├── main.dart                          # App entry point
 ```
 
-## 🌟 Main Contributions
+## 🌟 Key Contributions
 
 ### Project Leadership and Development Process Management
 
