@@ -107,7 +107,7 @@ code.language-plaintext.highlighter-rouge {
   font-weight: 700;
   font-size: 13px;
   padding: 5px 11px;
-  border-radius: 20px;
+  border-radius: 50%; /* Changed from 20px to make it circular */
   background: rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
   -webkit-font-smoothing: antialiased;
@@ -116,6 +116,9 @@ code.language-plaintext.highlighter-rouge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 36px; 
+  height: 27px;
+  box-sizing: border-box;
 }
 
 #home-button:hover {
@@ -125,8 +128,8 @@ code.language-plaintext.highlighter-rouge {
 }
 
 #home-button svg {
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
   fill: currentColor;
 }
 
