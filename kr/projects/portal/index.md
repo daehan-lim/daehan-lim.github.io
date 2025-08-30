@@ -100,6 +100,36 @@ code.language-plaintext.highlighter-rouge {
   color: white;
 }
 
+/* Home button styles */
+#home-button {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 5px 11px;
+  border-radius: 50%; /* Changed from 20px to make it circular */
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home-button:hover {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  transform: translateY(-1px);
+}
+
+#home-button svg {
+  width: 16px;
+  height: 22px;
+  fill: currentColor;
+}
+
 /* Adjust content padding for the fixed navbar */
 body {
   padding-top: 50px; /* Adjusted for taller navbar */
@@ -150,7 +180,13 @@ body {
 </style>
 
 <div id="nav-menu">
-  <div style="margin-left: 20px;">
+  <!-- Home button first -->
+  <div style="margin-left: 20px; display: flex; align-items: center;">
+    <a href="/" id="home-button">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 3l9 7.5v10.5h-6v-6h-6v6H3V10.5L12 3z"/>
+      </svg>
+    </a>
     <a href="/projects/portal">EN</a>
     <a href="/kr/projects/portal">KR</a>
   </div>
@@ -244,11 +280,28 @@ body {
       }
     }
 
+    function updateHomeButton() {
+      const currentPath = window.location.pathname;
+      const homeButton = document.getElementById('home-button');
+      
+      if (homeButton) {
+        if (currentPath.includes('/kr')) {
+          homeButton.href = '/kr';
+        } else {
+          homeButton.href = '/';
+        }
+      }
+    }
+
     // Update buttons on page load
     updateLanguageButtons();
-
+    updateHomeButton();
+    
     // Update buttons when navigation occurs (for SPAs)
-    window.addEventListener('popstate', updateLanguageButtons);
+    window.addEventListener('popstate', function() {
+      updateLanguageButtons();
+      updateHomeButton();
+    });
   });
 </script>
 
