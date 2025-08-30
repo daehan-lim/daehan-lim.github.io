@@ -93,7 +93,6 @@ code.language-plaintext.highlighter-rouge {
 #nav-menu > div:first-child a.active {
   background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   color: white;
-  transform: translateY(-1px);
 }
 
 #nav-menu > div:first-child a:hover {
