@@ -430,7 +430,7 @@ PlaceFinder helps users discover nearby places by searching by place names or ad
   ```
 
   - After encountering this Android behavior, I assumed `canLaunchUrl()` would be equally unreliable on iOS, so I used `try/catch` for failure handling on both platforms
-
+<span style="display: block; height: 8px;"></span>
 - **Why the Initial Solution Failed**
   ```dart
   static Future<void> openInMap(String queryAddress) async {
