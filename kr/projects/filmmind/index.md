@@ -301,6 +301,7 @@ body {
     window.addEventListener('popstate', function() {
       updateLanguageButtons();
       updateHomeButton();
+    });
   });
 </script>
 
