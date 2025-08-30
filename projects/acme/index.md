@@ -316,15 +316,15 @@ body {
 
 </div>
 
-# ACME - 서비스 티켓 관리 솔루션
+# ACME - Field service management app
 
-## 📝 개요
-**📌 앱 소개:** 티켓 관리 시스템에 맞춤형 캘린더와 오프라인 기능, 지도 기능을 통합한 AS 관리 안드로이드 앱  
-**🕒 기간:** 2021.05 ~ 2021.06   
-**📱 플랫폼:** Android 네이티브 앱   
-**👥 개발 인원:** 1명  
-**💼 역할:** 전체 안드로이드 앱 개발 담당  
-**🛠️ 주요 사용 기술:** `Android` `Kotlin` `MVVM` `Jetpack` `Room` `Calendar Provider API` `Data Binding` `WebView`  
+## 📝 Overview
+**📌 App Introduction:** Android field management app integrating custom calendar functionality, offline capabilities, and navigation features  
+**🕒 Duration:** May 2021 ~ June 2021 (2 months)  
+**📱 Platform:** Android native app  
+**👥 Team Size:** 1 developer  
+**💼 Role:** Full Android app development  
+**🛠️ Key Technologies:** `Android` `Kotlin` `MVVM` `Jetpack` `Room` `Calendar Provider API` `Data Binding` `WebView`  
 **🔗 GitHub:** [daehan-lim/acme](https://github.com/daehan-lim/acme)
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
@@ -357,64 +357,64 @@ body {
 [![LiveData](https://img.shields.io/badge/LiveData-3F51B5?style=for-the-badge)](https://developer.android.com/topic/libraries/architecture/livedata)
 [![Material Design](https://img.shields.io/badge/Material%20Design-4285F4?logo=material-design&logoColor=white&style=for-the-badge)](https://material.io/design)
 
-## 📋 프로젝트 구조
+## 📋 Project Structure
 
 ```
-├── database/                         # Room 데이터베이스 레이어
-│   ├── AcmeDatabase.kt               # 메인 데이터베이스 설정 및 싱글톤 관리
-│   ├── dao/                          # 데이터 액세스 객체
-│   │   ├── TicketDao.kt              # 티켓 CRUD 작업
-│   │   └── UserDao.kt                # 사용자 인증 작업
-│   └── model/                        # 데이터베이스 엔티티
-│       ├── Ticket.kt                 # 서비스 티켓 데이터 모델
-│       └── User.kt                   # 사용자 계정 데이터 모델
-├── repository/                       # Repository 패턴 구현
-│   ├── TicketRepository.kt           # 티켓 데이터 추상화 레이어
-│   └── UserRepository.kt             # 사용자 데이터 추상화 레이어
-├── ui/                               # MVVM 아키텍처 기반 UI 레이어
-│   ├── DbAccessViewModel.kt          # 공통 ViewModel 기본 클래스
-│   ├── login/                        # 로그인 및 회원가입
-│   │   ├── LoginActivity.kt          # 로그인 화면
-│   │   ├── SignUpActivity.kt         # 회원가입 화면
-│   │   ├── LoginSignupViewModel.kt   # 인증 비즈니스 로직
-│   │   └── LoginSignUpFormState.kt   # 폼 검증 상태 관리
-│   ├── dashboard/                    # 메인 대시보드
-│   │   ├── MainActivity.kt           # 티켓 목록 및 메인 기능
-│   │   ├── MainViewModel.kt          # 대시보드 데이터 관리
-│   │   └── TicketsAdapter.kt         # RecyclerView 어댑터
-│   ├── newticket/                    # 티켓 생성 기능
-│   │   ├── NewTicketActivity.kt      # 신규 티켓 등록 화면
-│   │   ├── NewTicketViewModel.kt     # 티켓 생성 로직
-│   │   └── ManageTicketFormState.kt  # 폼 검증 및 상태 관리
-│   ├── editticket/                   # 티켓 수정 기능
-│   │   ├── EditTicketActivity.kt     # 티켓 편집 화면
-│   │   └── EditTicketViewModel.kt    # 티켓 수정 로직
-│   ├── workticket/                   # 티켓 상세 작업
-│   │   ├── WorkTicketActivity.kt     # 티켓 상세 및 작업 화면
-│   │   └── OverviewFragment.kt       # 티켓 개요 프래그먼트
-│   ├── calendar/                     # 일정 관리 기능
-│   │   ├── CalendarActivity.kt       # 캘린더 뷰 화면
-│   │   ├── CalendarViewModel.kt      # 일정 데이터 관리
-│   │   ├── EventsAdapter.kt          # 이벤트 목록 어댑터
-│   │   └── Extensions.kt             # 캘린더 확장 함수
-│   └── directions/                   # 지도 및 길찾기
-│       └── GetDirectionsActivity.kt  # WebView 기반 구글맵 연동
-├── model/                            # 비즈니스 모델
-│   └── DueTicket.kt                  # 만료 예정 티켓 모델
-└── util/                             # 유틸리티 및 공통 기능
-    ├── BindingUtils.kt               # 데이터 바인딩 어댑터
-    ├── CalendarUtil.kt               # 디바이스 캘린더 연동
-    └── Util.kt                       # 공통 유틸리티 함수
+├── database/                         # Room database layer
+│   ├── AcmeDatabase.kt               # Main database configuration
+│   ├── dao/                          # Data access objects
+│   │   ├── TicketDao.kt              # Ticket CRUD operations
+│   │   └── UserDao.kt                # User authentication operations
+│   └── model/                        # Database entities
+│       ├── Ticket.kt                 # Service ticket data model
+│       └── User.kt                   # User account data model
+├── repository/                       # Repository pattern implementation
+│   ├── TicketRepository.kt           # Ticket data abstraction layer
+│   └── UserRepository.kt             # User data abstraction layer
+├── ui/                               # MVVM architecture-based UI layer
+│   ├── DbAccessViewModel.kt          # Common ViewModel base class
+│   ├── login/                        # Authentication features
+│   │   ├── LoginActivity.kt          # Login screen
+│   │   ├── SignUpActivity.kt         # Registration screen
+│   │   ├── LoginSignupViewModel.kt   # Authentication business logic
+│   │   └── LoginSignUpFormState.kt   # Form validation state management
+│   ├── dashboard/                    # Main dashboard
+│   │   ├── MainActivity.kt           # Ticket list and main features
+│   │   ├── MainViewModel.kt          # Dashboard data management
+│   │   └── TicketsAdapter.kt         # RecyclerView adapter
+│   ├── newticket/                    # Ticket creation feature
+│   │   ├── NewTicketActivity.kt      # New ticket registration screen
+│   │   ├── NewTicketViewModel.kt     # Ticket creation logic
+│   │   └── ManageTicketFormState.kt  # Form validation and state management
+│   ├── editticket/                   # Ticket modification feature
+│   │   ├── EditTicketActivity.kt     # Ticket editing screen
+│   │   └── EditTicketViewModel.kt    # Ticket modification logic
+│   ├── workticket/                   # Ticket detail management
+│   │   ├── WorkTicketActivity.kt     # Ticket details and work screen
+│   │   └── OverviewFragment.kt       # Ticket overview fragment
+│   ├── calendar/                     # Schedule management feature
+│   │   ├── CalendarActivity.kt       # Calendar view screen
+│   │   ├── CalendarViewModel.kt      # Schedule data management
+│   │   ├── EventsAdapter.kt          # Event list adapter
+│   │   └── Extensions.kt             # Calendar extension functions
+│   └── directions/                   # Maps and navigation
+│       └── GetDirectionsActivity.kt  # WebView-based Google Maps integration
+├── model/                            # Business models
+│   └── DueTicket.kt                  # Due ticket model
+└── util/                             # Utilities and common features
+    ├── BindingUtils.kt               # Data binding adapters
+    ├── CalendarUtil.kt               # Device calendar integration
+    └── Util.kt                       # Common utility functions
 ```
 
-## 🌟 주요업무
-- 반응형 디자인이 적용된 오프라인 AS 티켓 관리 앱 구현
-- 맞춤형 이벤트 시각화 및 Android Calendar Provider API를 연동한 인터랙티브 캘린더 개발
-- 구글 맵 연동을 통한 티켓 위치 주소 검색 및 길안내 기능 제공
-- 안정적인 사용자 인증 시스템 및 오류 처리, 입력값 검증 구현
+## 🌟 Implementation Details
+- Implemented offline service ticket management app with responsive design
+- Developed interactive calendar with custom event visualization and Android Calendar Provider API integration for syncing events to device calendar
+- Built ticket location address search and navigation functionality through embedded Google Maps integration via WebViews
+- Created user registration and authentication flows with input validation and error feedback
 
-## 🚀 주요성과
-- 티켓 위치 검색 및 길안내 소요 시간 20% 단축
-- 캘린더 연동으로 업무 효율성 향상
+## 🚀 Results and Impact
+- 20% reduction in ticket location search and navigation time
+- Improved task scheduling efficiency through calendar integration
 
 <br><br><br>
