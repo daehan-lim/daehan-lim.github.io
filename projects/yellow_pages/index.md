@@ -341,7 +341,7 @@ body {
 
 ## 📖 Project Background
 
-Cuba's expensive internet data rates and unstable network connectivity severely limited mobile accessibility to existing websites. The web-based directory required constant online connection, preventing offline information access and failing to leverage native mobile device capabilities like business location visualization and direct call functionality. Citizens faced particular challenges accessing government service information and telecommunications data offline. Recognizing these limitations, ETECSA identified the need for a mobile phone directory solution that would minimize data usage through offline functionality and mobile optimization while maintaining access to official data sources.
+ETECSA operated a Yellow Pages website for business and contact directory services, but Cuba's high internet costs and unreliable network connections severely limited mobile accessibility to this web-based platform. The website required constant connectivity, preventing offline access to information and missing opportunities to use native mobile features like offline mapping and direct calling. Users struggled to access directory information and government services without reliable internet access. ETECSA needed a mobile-first phone directory solution that could leverage their existing directory data and minimize data consumption.
 
 ## 🛠️ Tech Stack
 
@@ -360,34 +360,32 @@ Cuba's expensive internet data rates and unstable network connectivity severely 
 ![Material Design](https://img.shields.io/badge/Material%20Design-%234285F4.svg?style=for-the-badge&logo=material-design&logoColor=white)
 
 ## 🌟 Key Contributions
-- Implemented real-time phone directory search system using enterprise-grade APIs
-- Developed offline location services through embedded map file-based vector mapping system
-- Built offline access and automatic background synchronization for government service information and telecommunications data
-- Created responsive search interface with dynamic filtering and efficient pagination
-- Optimized stability and user experience through comprehensive unit, UI, and compatibility testing
+- Successfully developed Cuba's first Yellow Pages Android app, implementing a hybrid system combining online business searches with offline capabilities
+- Developed offline location services using embedded vector maps
+- Implemented automated background synchronization for offline government service content, using chunk-based transmission
+- Built responsive search interface with dynamic filtering and efficient pagination
+- Optimized stability and user experience through comprehensive unit, UI, and compatibility tests
 
 ## 🚀 Results and Impact
-- Developed the telecommunications company's first mobile directory app, winning national computer engineering competition
-- Achieved 85% reduction in data usage through offline vector mapping system
-- Improved synchronization success rate from 65% to 98% in unstable network environments by implementing chunk-based transmission system
+- Reduced data usage by 85% through offline vector mapping
+- Improved synchronization success rate from 65% to 98% in unstable network environments by implementing chunk-based transmission
 
 ## 🌱 Problem Solving
 
-**Data Synchronization in Unstable Network Environments**
+**Data Synchronization in Unstable Network Conditions**
 
-- **Problem Situation**
+- **Problem**
   - Data synchronization success rate with server reached only 65% during beta testing
-  - Repeated situations where synchronization failures required starting from scratch, causing significant user frustration
+  - Synchronization failures required complete restart, causing significant user frustration
   - High data costs deterred users from attempting synchronization altogether
 - **Root Cause Analysis**
-  - **Network log analysis**: Discovered that attempting to transmit large data sets in single requests was the primary failure cause in unstable network environments
-  - **User feedback collection**: Confirmed that progress reset upon transmission failure was the biggest user complaint
+  - **Network log Analysis**: Found that attempts to transmit large volumes of data in a single transfer were the main cause of failure in unstable network conditions
+  - **User Feedback Collection**: Identified that the biggest complaint was progress being reset to the beginning whenever data transfer failed
 - **Solution Process**
-  - **Chunk-based data transmission**: Implemented data segmentation into 500KB chunks for transmission
-  - **Progress preservation**: Used SQLite to store transmission status of each chunk, maintaining progress even after failures
-  - **Automatic retry mechanism**: Implemented automatic retry based on network status using `WorkManager`
-  - **Failure handling**: Immediately switched to local cache when network failures occurred to ensure user experience continuity
-- **Final Results**  
-  Improved synchronization success rate to 98% and significantly enhanced user satisfaction through reduced data consumption and offline usage support
+  - **Chunk-based data transfer**: Split large data into 500KB segments for transmission
+  - **Progress tracking**: Used SQLite to save the transfer state of each chunk, preserving progress through failures
+  - **Automatic retry mechanism**: Implemented network-aware automatic retry logic using `WorkManager`
+- **Results**  
+  Increased synchronization success rate to 98% and significantly improved user satisfaction
 
 <br><br><br>
