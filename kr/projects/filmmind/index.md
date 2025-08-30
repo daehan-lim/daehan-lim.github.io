@@ -187,8 +187,8 @@ body {
         <path d="M12 3l9 7.5v10.5h-6v-6h-6v6H3V10.5L12 3z"/>
       </svg>
     </a>
-    <a href="/projects/placefinder">EN</a>
-    <a href="/kr/projects/placefinder">KR</a>
+    <a href="/projects/filmmind">EN</a>
+    <a href="/kr/projects/filmmind">KR</a>
   </div>
 
 <span id="nav-menu-toggle">☰</span>
@@ -295,12 +295,12 @@ body {
 
     // Update buttons on page load
     updateLanguageButtons();
-    updateHomeButton(); // Add this line
+    updateHomeButton();
     
     // Update buttons when navigation occurs (for SPAs)
     window.addEventListener('popstate', function() {
       updateLanguageButtons();
-      updateHomeButton(); // Add this line
+      updateHomeButton();
   });
 </script>
 
