@@ -116,9 +116,6 @@ code.language-plaintext.highlighter-rouge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px; 
-  height: 27px;
-  box-sizing: border-box;
 }
 
 #home-button:hover {
@@ -128,8 +125,8 @@ code.language-plaintext.highlighter-rouge {
 }
 
 #home-button svg {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 22px;
   fill: currentColor;
 }
 
