@@ -44,12 +44,12 @@ h1 {
 #nav-menu > div:first-child a.active {
   background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   color: white;
-  transform: translateY(-1px);
 }
 
 #nav-menu > div:first-child a:hover {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: rgba(255, 255, 255, 0.25); /* Brighter white overlay */
   color: white;
+  transform: translateY(-1px);
 }
 
 /* Adjust content padding for the fixed navbar */
