@@ -41,7 +41,7 @@
     margin: 0 16px;
     font-size: 16px;
     transition: color 0.3s ease;
-    font-weight: 700; /* Increase from bold to 700 */
+    font-weight: 700; 
     -webkit-font-smoothing: antialiased; /* Better text rendering */
     -moz-osx-font-smoothing: grayscale;
   }
@@ -61,7 +61,7 @@
 
   /* Adjust content padding for the fixed navbar */
   body {
-    padding-top: 50px; /* Adjusted for taller navbar */
+    padding-top: 50px; 
   }
 
   /* Hamburger Menu (Toggle Button) */
@@ -99,7 +99,7 @@
     }
 
     #nav-links a {
-      margin: 15px 0; /* Added vertical spacing */
+      margin: 15px 0; /* Vertical spacing */
     }
 
     #nav-menu-toggle {

@@ -87,7 +87,7 @@ code.language-plaintext.highlighter-rouge {
 
 /* Adjust content padding for the fixed navbar */
 body {
-  padding-top: 50px; /* Adjusted for taller navbar */
+  padding-top: 50px; 
 }
 
 /* Hamburger Menu (Toggle Button) */
@@ -125,7 +125,7 @@ body {
   }
 
   #nav-links a {
-    margin: 15px 0; /* Added vertical spacing */
+    margin: 15px 0; /* Vertical spacing */
   }
 
   #nav-menu-toggle {

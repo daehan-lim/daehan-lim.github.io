@@ -38,7 +38,7 @@ h1, h2 {
 
   /* Adjust content padding for the fixed navbar */
   body {
-    padding-top: 50px; /* Adjusted for taller navbar */
+    padding-top: 50px; 
   }
 
   /* Hamburger Menu (Toggle Button) */
@@ -76,7 +76,7 @@ h1, h2 {
     }
 
     #nav-links a {
-      margin: 15px 0; /* Added vertical spacing */
+      margin: 15px 0; /* Vertical spacing */
     }
 
     #nav-menu-toggle {

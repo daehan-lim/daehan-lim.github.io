@@ -32,9 +32,9 @@ code .p {
 }
 
 code.language-plaintext.highlighter-rouge {
-  color: #EB5757 !important;                 /* strong red text */
-  border-radius: 4px;                        /* rounded corners */
-  padding: 0.2em 0.4em;                      /* small breathing space */
+  color: #EB5757 !important;    /* strong red text */
+  border-radius: 4px;           /* rounded corners */
+  padding: 0.2em 0.4em;         /* small breathing space */
 }
 
 .image-row {
@@ -85,7 +85,7 @@ code.language-plaintext.highlighter-rouge {
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
-  font-weight: 700; /* Increase from bold to 700 */
+  font-weight: 700; 
   -webkit-font-smoothing: antialiased; /* Better text rendering */
   -moz-osx-font-smoothing: grayscale;
 }
@@ -101,33 +101,9 @@ code.language-plaintext.highlighter-rouge {
   transform: translateY(-1px);
 }
 
-/* Home button styles */
-#home-button {
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 13px;
-  padding: 5px 11px;
-  border-radius: 50%; /* Changed from 20px to make it circular */
-  background: rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin-right: 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#home-button svg {
-  width: 16px;
-  height: 22px;
-  fill: currentColor;
-}
-
 /* Adjust content padding for the fixed navbar */
 body {
-  padding-top: 50px; /* Adjusted for taller navbar */
+  padding-top: 50px; 
 }
 
 /* Hamburger Menu (Toggle Button) */
@@ -165,7 +141,7 @@ body {
   }
 
   #nav-links a {
-    margin: 15px 0; /* Added vertical spacing */
+    margin: 15px 0; /* Vertical spacing */
   }
 
   #nav-menu-toggle {
@@ -275,28 +251,11 @@ body {
       }
     }
 
-    function updateHomeButton() {
-      const currentPath = window.location.pathname;
-      const homeButton = document.getElementById('home-button');
-      
-      if (homeButton) {
-        if (currentPath.includes('/kr')) {
-          homeButton.href = '/kr';
-        } else {
-          homeButton.href = '/';
-        }
-      }
-    }
-
     // Update buttons on page load
     updateLanguageButtons();
-    updateHomeButton();
-    
+
     // Update buttons when navigation occurs (for SPAs)
-    window.addEventListener('popstate', function() {
-      updateLanguageButtons();
-      updateHomeButton();
-    });
+    window.addEventListener('popstate', updateLanguageButtons);
   });
 </script>
 

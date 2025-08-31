@@ -41,7 +41,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
-  font-weight: 700; /* Increase from bold to 700 */
+  font-weight: 700; 
   -webkit-font-smoothing: antialiased; /* Better text rendering */
   -moz-osx-font-smoothing: grayscale;
 }
@@ -83,7 +83,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 /* Adjust content padding for the fixed navbar */
 body {
-  padding-top: 50px; /* Adjusted for taller navbar */
+  padding-top: 50px; 
 }
 
 /* Hamburger Menu (Toggle Button) */
@@ -121,7 +121,7 @@ body {
   }
 
   #nav-links a {
-    margin: 15px 0; /* Added vertical spacing */
+    margin: 15px 0; /* Vertical spacing */
   }
 
   #nav-menu-toggle {

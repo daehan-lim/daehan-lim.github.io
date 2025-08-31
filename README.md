@@ -1,4 +1,6 @@
+<!--suppress CssUnusedSymbol, JSUnusedLocalSymbols -->
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 /* Navigation Menu Styles */
 #nav-menu {
   position: fixed;
@@ -7,7 +9,7 @@
   width: 100%;
   background: linear-gradient(135deg, #3464e1 0%, #764ba2 100%); /* Navbar color */
   color: white;
-  padding: 19px 0; /* Navbar height */
+  padding: 15px 0; /* Navbar height */
   z-index: 1000;
   display: flex;
   justify-content: space-between; /* Space between items */
@@ -17,19 +19,46 @@
 
 h1, h2 {
   color: #6951af !important;
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
 }
 
 h1 {
   font-size: 36px !important;
 }
 
+code {
+  background: #f5f5f5;
+  color: #3464e1;
+  border-radius: 4px;                        /* rounded corners */
+  padding: 0.2em 0.4em;                      /* small breathing space */
+}
+
+.project-preview {
+  width: 100%; /* responsive full width of container */
+  aspect-ratio: 1160 / 663; /* keeps Cubadebate's ratio */
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  object-fit: cover; /* fills space without distortion */
+}
+
+.ko {
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  word-break: keep-all;
+  letter-spacing: -0.3px;
+  line-height: 1.8; 
+  font-size: 17px;
+}
+
 #nav-menu a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-  font-size: 14px;
+  margin: 0 16px;
+  font-size: 16px;
   transition: color 0.3s ease;
+  font-weight: 700; 
+  -webkit-font-smoothing: antialiased; /* Better text rendering */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #nav-menu > div:first-child a {
@@ -54,7 +83,7 @@ h1 {
 
 /* Adjust content padding for the fixed navbar */
 body {
-  padding-top: 50px; /* Adjusted for taller navbar */
+  padding-top: 50px; 
 }
 
 /* Hamburger Menu (Toggle Button) */
@@ -78,7 +107,7 @@ body {
     display: none; /* Hide links initially on mobile */
     flex-direction: column;
     align-items: center;
-    background-color: #21427D; /* Match navbar background */
+    background: linear-gradient(135deg, #3464e1 0%, #764ba2 100%); /* Match navbar background */
     width: 100%;
     position: absolute;
     top: 60px; /* Space below navbar */
@@ -86,13 +115,13 @@ body {
     padding: 15px 0; /* Add spacing around links */
     z-index: 1000; /* Ensure it doesn't overlap the toggle button */
   }
-
+  
   #nav-links.active {
     display: flex; /* Show links when active */
   }
   
   #nav-links a {
-    margin: 15px 0; /* Added vertical spacing */
+    margin: 15px 0; /* Vertical spacing */
   }
   
   #nav-menu-toggle {
@@ -205,8 +234,6 @@ body {
 </script>
 
 # Daehan Lim
-**Previous name:** Penjan Antonio Eng Lim
-<div style="height: 14px;"></div>
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23764ba2&size=24&width=600&height=45&lines=Welcome+to+my+portfolio!;I'm+Daehan%2C+innovating+digital+solutions)](https://git.io/typing-svg)
 
@@ -217,345 +244,151 @@ body {
   <a href="mailto:penjan.eng@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
   </a>
-  <span style="display: block; height: 5px;"></span>
-  <img src="https://img.shields.io/badge/🌏_Location-Seoul,_Korea-1F6FEB?style=flat-square" alt="Location Badge">
-  <img src="https://img.shields.io/badge/📍_Citizenship-South_Korea_|_Cuba-1F6FEB?style=flat-square" alt="Citizenship Badge">
-  <img src="https://img.shields.io/badge/✓_Status-Available_for_Hire-success?style=flat-square" alt="Availability Badge">
-  <span style="display: block; height: 5px;"></span>
-  <img src="https://img.shields.io/badge/🗣_English-Fluent_(TOEIC_950)-2ea44f?style=flat-square" alt="English Language Badge">
-  <img src="https://img.shields.io/badge/🗣_Korean-Advanced_(TOPIK_6)-2ea44f?style=flat-square" alt="Korean Language Badge">
-  <img src="https://img.shields.io/badge/🗣_Spanish-Native-2ea44f?style=flat-square" alt="Spanish Language Badge">
+  <a href="https://github.com/daehan-lim">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
+  </a>
 </div>
 
 ## 👋 About Me
-Software engineer with a strong foundation in mobile app development and data-driven applications. Experienced in developing robust, maintainable, user-centric Android applications using Kotlin, MVVM, Coroutines, Jetpack, and REST APIs. Also familiar with Flutter for cross-platform development and with JavaScript. Advanced expertise in data processing and algorithm optimization from AI/ML research background, enabling development of highly efficient and scalable mobile applications.
+Mobile app developer who led a 4-person team and implemented CI/CD pipelines and a code review process that reduced manual testing time by 50%. Strong native Android development background with expertise in platform-specific optimizations. 
 
-## 🛠️ Technical Skills
+With an AI master's degree and LLM integration experience, I can effectively integrate generative AI features into mobile applications. Reduced inappropriate recipe generation rates from 85% to 12% by implementing prompt engineering and a custom validation model.
 
-### Core Mobile App Development
-[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
-[![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
-[![Riverpod](https://img.shields.io/badge/Riverpod-02569B?style=for-the-badge)](https://riverpod.dev/)
-[![Provider](https://img.shields.io/badge/Provider-02569B?style=for-the-badge)](https://pub.dev/packages/provider)
-[![KOTLIN](https://img.shields.io/badge/KOTLIN-7F52FF?logo=KOTLIN&logoColor=white&style=for-the-badge)](https://kotlinlang.org)
-[![JAVA](https://img.shields.io/badge/JAVA-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com)
-[![MVVM](https://img.shields.io/badge/MVVM-ed9242?style=for-the-badge)](https://developer.android.com/topic/architecture)
-[![Clean Architecture](https://img.shields.io/badge/Clean_Architecture-4CAF50?style=for-the-badge)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
-[![Location Services](https://img.shields.io/badge/Location_Services-4285F4?style=for-the-badge&logo=google-maps&logoColor=white)](https://developers.google.com/maps/documentation)
-[![i18n](https://img.shields.io/badge/i18n_다국어_지원-FF6B6B?style=for-the-badge)](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
-[![Speech Recognition](https://img.shields.io/badge/Speech_Recognition-9C27B0?style=for-the-badge)](https://pub.dev/packages/speech_to_text)
-[![Image Processing](https://img.shields.io/badge/Image_Processing-FF9800?style=for-the-badge)](https://pub.dev/packages/image)
-[![Coroutines](https://img.shields.io/badge/Coroutines-7E57C2?style=for-the-badge)](https://kotlinlang.org/docs/coroutines-overview.html)
-[![Android](https://img.shields.io/badge/Android-3DDC84?logo=Android&logoColor=white&style=for-the-badge)](https://developer.android.com)
-[![JETPACK](https://img.shields.io/badge/Jetpack-6b52bf?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/jetpack)
-[![Android SDK](https://img.shields.io/badge/Android_SDK-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com)
-[![LiveData](https://img.shields.io/badge/LiveData-1976D2?style=for-the-badge)](https://developer.android.com/topic/libraries/architecture/livedata)
-[![Material Design](https://img.shields.io/badge/Material%20Design-757575?logo=Material-Design&logoColor=white&style=for-the-badge)](https://m3.material.io)
-[![View Binding](https://img.shields.io/badge/View_Binding-00BFA5?style=for-the-badge)](https://developer.android.com/topic/libraries/view-binding)
-[![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)](https://junit.org)
-[![Espresso](https://img.shields.io/badge/Espresso-FF5722?style=for-the-badge)](https://developer.android.com/training/testing/espresso)
-[![Navigation](https://img.shields.io/badge/Navigation-6200EE?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/guide/navigation)
-[![Google Play](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/console)
-[![Android Studio](https://img.shields.io/badge/Android_Studio-4285F4?style=for-the-badge&logo=android-studio&logoColor=white)](https://developer.android.com/studio)
-
-### Data Management & Storage
-[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
-[![Firestore](https://img.shields.io/badge/Firestore-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/products/firestore)
-[![Cloud Functions](https://img.shields.io/badge/Firebase_Cloud_Functions-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)](https://firebase.google.com/products/functions)
-[![Firebase Auth](https://img.shields.io/badge/Firebase_Auth-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/products/auth)
-[![Firebase Storage](https://img.shields.io/badge/Firebase_Storage-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/products/storage)
-[![Crashlytics](https://img.shields.io/badge/Crashlytics-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/products/crashlytics)
-[![Dio](https://img.shields.io/badge/Dio-02569B?style=for-the-badge)](https://pub.dev/packages/dio)
-[![SQLITE](https://img.shields.io/badge/SQLite-003B57?logo=SQLite&logoColor=white&style=for-the-badge)](https://www.sqlite.org)
-[![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sql&logoColor=white)](https://www.sqlite.org)
-[![SharedPreferences](https://img.shields.io/badge/SharedPreferences-4CAF50?style=for-the-badge)](https://developer.android.com/training/data-storage/shared-preferences)
-[![REST API](https://img.shields.io/badge/REST_API-1E90FF?style=for-the-badge)](https://restfulapi.net)
-[![RETROFIT](https://img.shields.io/badge/retrofit-67b586?logo=square&logoColor=white&style=for-the-badge)](https://square.github.io/retrofit)
-[![ROOM](https://img.shields.io/badge/Room-003B57?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/training/data-storage/room)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org)
-[![MOSHI](https://img.shields.io/badge/Moshi-67b586?style=for-the-badge)](https://github.com/square/moshi)
-
-### Additional Languages & Tools
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com)
-[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions)
-[![Gemini AI](https://img.shields.io/badge/Gemini_AI-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
-[![LLM Prompt Engineering](https://img.shields.io/badge/LLM_Prompt_Engineering-FF6B35?style=for-the-badge)](https://platform.openai.com/docs/guides/prompt-engineering)
-[![Google Translate API](https://img.shields.io/badge/Google_Translate_API-4285F4?style=for-the-badge&logo=google-translate&logoColor=white)](https://cloud.google.com/translate)
-[![HTML/CSS](https://img.shields.io/badge/HTML/CSS-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Android Jetpack](https://img.shields.io/badge/Android_Jetpack-6b52bf?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/jetpack)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
-[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![GetIt](https://img.shields.io/badge/GetIt-0175C2?style=for-the-badge)](https://pub.dev/packages/get_it)
-[![OpenAI API](https://img.shields.io/badge/OpenAI-API-412991?style=for-the-badge&logo=openai&logoColor=white)](https://platform.openai.com/)
-[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
-[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
-[![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
-
-## 📂 Projects Overview
-
-**Mobile Applications**
-- [Cubadebate News Reader](#cubadebate-news-reader) - News app with personalized content delivery (2021)<a href="https://github.com/daehan-lim/cubadebate-app" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
-- [Gas Consumption Manager](#gas-consumption-manager) - National utility tracking system (2021)<a href="https://github.com/daehan-lim/gas-consumption-manager" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
-- [ACME App](#acme-app) - Service ticket management solution (2021)<a href="https://github.com/daehan-lim/acme" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
-- [Yellow Pages](#yellow-pages) - Enterprise directory with offline mapping (2020)<a href="https://github.com/daehan-lim/cuban-yellow-pages" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
-- [Government Portal](#government-portal) - Official government platform application (2021)<a href="https://github.com/daehan-lim/government-portal-app" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
-- [Wellness Tracking App](#wellness-tracking-app) - Cross-platform personal development tracker (2021)<a href="https://github.com/daehan-lim/wellness-tracker-flutter" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
-
-**Machine Learning Systems**
-- [Privacy-Preserving Federated Random Forest](#privacy-preserving-federated-random-forest) - Privacy-preserving distributed learning system (2023)<a href="https://arxiv.org/abs/2407.19193" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
-- [RoBERTa News Classification](#roberta-news-classification) - Enhanced topic classification with synthetic data (2024)<a href="https://github.com/daehan-lim/roberta-sport-news-classifier" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
-- [Medical Data Classifier](#medical-data-classifier) - Patient mortality prediction system (2023)<a href="https://github.com/daehan-lim/associative-classifier-mortality-prediction" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
-- [Information Retrieval System](#information-retrieval-system) - Document indexing and search system (2024)<a href="assets/information_retrieval_report.pdf" style="color: #21427D; font-size: 20px; text-decoration: none;">&thinsp;&thinsp;⎆</a>
-
+Successfully deployed Flutter-based apps to Play Store and App Store with features like Firebase backend integration, Clean Architecture implementation, and real-time data synchronization. Achieved a 40% reduction in AI generation time and 35% reduction in API costs through performance optimization.
 
 ## 📱 Mobile Applications
 
-### [Cubadebate News Reader](https://github.com/daehan-lim/cubadebate-app)
-*Feature-rich news reader app enabling personalized content delivery and comprehensive offline access (2021)*
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
 
-<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="images/cubadebate/news_feed.svg" width="240" style="margin-right: 5px;" alt="Cubadebate news feed screen" />
-  <img src="images/cubadebate/news_article.svg" width="240" style="margin-right: 5px;" alt="Cubadebate news article screen" />
-  <img src="images/cubadebate/replies.png" width="240" style="margin-right: 5px;" alt="Cubadebate replies screen" />
-  <img src="images/cubadebate/categories.png" width="240" style="margin-right: 5px;" alt="Cubadebate categories screen" />
-  <img src="images/cubadebate/topics.png" width="240" style="margin-right: 5px;" alt="Cubadebate topics screen" />
-  <img src="images/cubadebate/sms.png" width="240" style="margin-right: 5px;" alt="Cubadebate SMS screen" />
-  <img src="images/cubadebate/search.svg" width="240" style="margin-right: 5px;" alt="Cubadebate search screen" />
-  <img src="images/cubadebate/saved.png" width="240"  alt="Cubadebate saved articles screen" />
+<!--ShareLingo-->
+<a href="projects/sharelingo/" style="text-decoration: none; color: inherit;">
+<div>
+  <img src="images/sharelingo/preview.png" alt="ShareLingo - Language Exchange SNS App" class="project-preview" />
+  <p><strong>ShareLingo<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
+    <span style="font-size: 0.9em;">Language Exchange Social Media App</span><br/> 
+    <code>Flutter</code> <code>Clean Architecture</code> <code>Google OAuth</code> <code>CI/CD</code> <code>Firebase</code> <code>Riverpod</code><br/>
+    <small>May 16, 2025 ~ May 27, 2025 (2 weeks)</small>
+  </p>
 </div>
-<br>
+</a>
 
-<!--
-**Video Walkthrough**
-<div style="border: 4px solid #ccc; border-radius: 12px; padding: 4px; width: fit-content; margin: 0 auto;">
-  <iframe width="236" height="486" src="https://www.youtube.com/embed/4SEpMDPFkHw" frameborder="0" allowfullscreen></iframe>
+<!--Cooki-->
+<a href="projects/cooki/" style="text-decoration: none; color: inherit;">
+<div>
+  <img src="images/cooki/preview2.png" alt="Cooki - AI Recipe Community App" class="project-preview" />
+  <p><strong>Cooki<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
+    <span style="font-size: 0.9em;">AI Recipe Community App</span><br/> 
+    <code>Flutter</code> <code>Gemini API</code> <code>Dio</code> <code>Cloud Functions</code> <code>Riverpod</code> <code>MVVM</code> <code>Firestore</code><br/>
+    <small>June 1, 2025 ~ July 4, 2025 (1 month)</small>
+  </p>
 </div>
-<br><br>
--->
+</a>
 
-**Overview:**
-- Built customizable news feed system with dynamic category and topic selection interfaces, enabling personalized content delivery
-- Implemented offline caching for bookmarking full articles including images, reducing data usage by up to 30%
-- Designed real-time topic management system with dynamic search, post count display, and automatic list reordering, reducing average content discovery time from 2 minutes to 30 seconds
-- Integrated in-article text search, text-to-speech capability and voice recognition capabilities, increasing content accessibility by 40%
-- Built multi-level commenting interface, infinite scroll with efficient data loading, and SMS subscriptions, improving user engagement
-- **Tech Stack:** Android, Kotlin, MVVM, Room, Retrofit, Moshi, Navigation, Material Design, Glide, JSoup, Coroutines, ViewBinding
-
-[🔗 View on GitHub](https://github.com/daehan-lim/cubadebate-app)
-
----
-
-### [Gas Consumption Manager](https://github.com/daehan-lim/gas-consumption-manager)
-*National utility tracking system for automated consumption management (2021)*
-
-<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="images/gas/main.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager main screen" />
-  <img src="images/gas/calendar.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager calendar screen" />
-  <img src="images/gas/chart.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager chart screen" />
-  <img src="images/gas/filter.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager filter screen" />
-  <img src="images/gas/offices.png" width="240" style="margin-right: 5px;" alt="Gas consumption manager offices screen" />
-  <img src="images/gas/video.png" width="240" alt="Gas consumption manager video screen" />
+<!--Cubadebate-->
+<a href="projects/cubadebate/" style="text-decoration: none; color: inherit;">
+<div>
+  <img src="images/cubadebate/preview2.png" alt="Cubadebate News App" class="project-preview" />
+  <p><strong>Cubadebate<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
+    <span style="font-size: 0.9em;">Personalized News Platform</span><br/>
+    <code>Android</code> <code>Kotlin</code> <code>Coroutines</code> <code>MVVM</code> <code>Room</code> <code>Retrofit</code> <code>Glide</code> <code>Lottie</code> <code>ViewBinding</code><br/>
+    <small>March 15, 2021 ~ June 30, 2021 (3.5 months)</small>
+  </p>
 </div>
-<br>
+</a>
 
-**Overview:**
-- Engineered comprehensive utility management app for the National Manufactured Gas Company
-- Implemented offline data persistence with automated consumption calculations
-- Created interactive visualization tools and reporting system, reducing operational times by 70%
-- Built streamlined communication channels with company offices, simplifying the customer support process
-- **Tech Stack**: Android, Kotlin, MVVM, Room, Jetpack, MPAndroidChart, Material Design, Coroutines
-
-[🔗 View on GitHub](https://github.com/daehan-lim/gas-consumption-manager)
-
----
-
-### [ACME App](https://github.com/daehan-lim/acme)
-*Android ticket management app with custom calendar, offline functionality, and location services (2021)*
-
-<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="images/acme/login.png" width="240" style="margin-right: 5px;" alt="ACME app login screen" />
-  <img src="images/acme/signup.png" width="240" style="margin-right: 5px;" alt="ACME app signup screen" />
-  <img src="images/acme/dashboard.png" width="240" style="margin-right: 5px;" alt="ACME app dashboard screen" />
-  <img src="images/acme/ticket_details.png" width="240" style="margin-right: 5px;" alt="ACME app ticket details screen" />
-  <img src="images/acme/edit.png" width="240" style="margin-right: 5px;" alt="ACME app edit screen" />
-  <img src="images/acme/calendar.png" width="240" style="margin-right: 5px;" alt="ACME app calendar screen" />
-  <img src="images/acme/calendar_sync.png" width="240" style="margin-right: 5px;" alt="ACME app calendar sync screen" /> 
-  <img src="images/acme/maps.png" width="240" alt="ACME app maps screen" />
+<!--FilmMind-->
+<a href="projects/filmmind/" style="text-decoration: none; color: inherit;">
+<div>
+  <img src="images/filmmind/preview.png" alt="FilmMind - Movie Information App" class="project-preview" />
+  <p><strong>FilmMind<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
+    <span style="font-size: 0.9em;">Movie Information App</span><br/> 
+    <code>Flutter</code> <code>Riverpod</code> <code>Dio</code> <code>Clean Architecture</code> <code>GitHub Actions</code> <code>TMDB API</code><br/>
+    <small>May 13, 2025 ~ May 15, 2025 (3 days)</small>
+  </p>
 </div>
-<br>
+</a>
 
-**Overview:**
-- Fully offline-capable service ticket management app with responsive design implementation
-- Implemented interactive calendar with custom event visualization and Android Calendar Provider API integration, improving task scheduling efficiency
-- Embedded Google Maps functionality for address search and directions, reducing address lookup and navigation time by approximately 20%
-- Created user registration and authentication flows with input validation and error feedback
-- **Tech Stack**: Android, Kotlin, MVVM, Jetpack, Google Maps, Room, Material Design.
+<!--어디든GO-->
+<a href="projects/placefinder/" style="text-decoration: none; color: inherit;">
+<div>
+  <img src="images/placefinder/preview.png" alt="Go Anywhere - Location Search App" class="project-preview" />
+  <p><strong>Go Anywhere<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
+    <span style="font-size: 0.9em;">Location Search App</span><br/> 
+    <code>Flutter</code> <code>Geolocator</code> <code>InAppWebView</code> <code>Naver API</code> <code>VWorld API</code> <code>Riverpod</code><br/>
+    <small>April 20, 2025 ~ April 22, 2025 (3 days)</small>
+  </p>
+</div>
+</a>
 
-[🔗 View on GitHub](https://github.com/daehan-lim/acme)
+<!--Gas Consumption Management App-->
+<a href="projects/gas/" style="text-decoration: none; color: inherit;">
+<div>
+  <img src="images/gas/preview2.png" alt="Gas Consumption Management App" class="project-preview" />
+  <p><strong>Gas Consumption Management App<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
+    <span style="font-size: 0.9em;">Public Utility Tracking System</span><br/>
+    <code>Android</code> <code>Kotlin</code> <code>Jetpack</code> <code>Room</code> <code>MVVM</code> <code>Coroutines</code> <code>VideoView</code><br/>
+    <small>February 20, 2021 ~ March 18, 2021 (1 month)</small>
+  </p>
+</div>
+</a>
 
----
+<!--ACME-->
+<a href="projects/acme/" style="text-decoration: none; color: inherit;">
+<div>
+ <img src="images/acme/preview.png" alt="ACME - Service Management Android App" class="project-preview" />
+ <p><strong>ACME<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
+   <span style="font-size: 0.9em;">Service Ticket Management Solution</span><br/> 
+   <code>Android</code> <code>Kotlin</code> <code>Room</code> <code>Google Maps API</code> <code>Calendar Provider API</code> <code>MVVM</code> <code>Coroutines</code><br/>
+   <small>May 2021 ~ June 2021</small>
+ </p>
+</div>
+</a>
 
-### [Yellow Pages](https://github.com/daehan-lim/cuban-yellow-pages)
-*Mobile business directory app for Cuba's telecommunications company combining business search with essential telecom services (2020)*
+<!--Yellow Pages-->
+<a href="projects/yellow_pages/" style="text-decoration: none; color: inherit;">
+<div>
+ <img src="images/yellow_pages/preview.png" alt="Yellow Pages - Cuban Phone Directory App" class="project-preview" />
+ <p><strong>Yellow Pages<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
+   <span style="font-size: 0.9em;">Cuban Phone Directory App</span><br/> 
+   <code>Android</code> <code>Java</code> <code>VTM Maps</code> <code>SQLite</code> <code>WebView</code> <code>JUnit</code> <code>Apache HTTP</code><br/>
+   <small>April 2019 ~ May 2020</small>
+ </p>
+</div>
+</a>
 
-<div style="background: linear-gradient(135deg, #1e3c72, #2a5298); padding: 15px; border-radius: 15px; box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);">
-  <div style="display: flex; overflow-x: auto; gap: 30px; padding: 10px 5px;">
-    <!-- Home -->
-    <div style="text-align: center; min-width: 220px;">
-      <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Search businesses, access emergency numbers and business directories</p>
-      <img src="images/yellow_pages/main.jpg" alt="Main screen" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
-    </div>
-    <!-- Green Pages -->
-    <div style="text-align: center; min-width: 220px;">
-      <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Find government procedures, requirements and service schedules</p>
-      <img src="images/yellow_pages/green_home.jpg" alt="Green Pages" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
-    </div>
-    <!-- Info Home -->
-    <div style="text-align: center; min-width: 220px;">
-      <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Browse phone services, customer support and international calls</p>
-      <img src="images/yellow_pages/information_home.jpg" alt="Information Pages" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
-    </div>
-    <!-- Mobile Internet -->
-    <div style="text-align: center; min-width: 220px;">
-      <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Explore mobile internet plans, connection settings and service options</p>
-      <img src="images/yellow_pages/information_mobile_internet.jpg" alt="Mobile Internet" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
-    </div>
-    <!-- Ad Space -->
-    <div style="text-align: center; min-width: 220px;">
-      <p style="color: #f0f0f0; font-size: 16px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.4;">Request advertising space, promote business and increase visibility</p>
-      <img src="images/yellow_pages/publicity.jpg" alt="Advertising Portal" style="width: 100%; height: auto; max-width: 220px; border-radius: 12px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
-    </div>
+<!--Government Portal App-->
+<a href="projects/portal/" style="text-decoration: none; color: inherit;">
+<div>
+ <img src="images/portal/preview.png" alt="Government Portal App" class="project-preview" />
+ <p><strong>Government Portal App<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
+   <span style="font-size: 0.9em;">Official Government Representative Platform Application</span><br/> 
+   <code>Android</code> <code>Kotlin</code> <code>Retrofit</code> <code>Coroutines</code> <code>Room</code> <code>MVVM</code> <code>WebView</code> <code>ViewPager2</code><br/>
+   <small>February 2021 ~ April 2021</small>
+ </p>
+</div>
+</a>
+
+</div>
+
+## 🔬 Machine Learning Projects
+
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; padding: 25px; margin: 20px auto; max-width: 800px; text-align: center; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);">
+  <div style="color: white; margin-bottom: 15px;">
+    <h3 style="margin: 0; font-size: 1.3em; font-weight: 700;">🎓 AI/ML Projects</h3>
+    <p style="color: white; margin: 10px 0 0 0; opacity: 0.9; font-size: 1.1em;">Machine Learning Projects Conducted During Master's Program at Chungnam National University</p>
+  </div>
+  <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
+    <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">Federated Learning</span>
+    <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">NLP Classification Models</span>
+    <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">Medical Data Analyzer</span>
+    <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">Information Retrieval System</span>
+  </div>
+  <div style="margin-top: 20px;">
+    <a href="projects/ml_projects/" style="display: inline-block; background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 700; font-size: 1.1em; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+      View Machine Learning Projects →
+    </a>
   </div>
 </div>
-<br>
-
-**Overview:**
-- Developed Cuba's first Yellow Pages mobile app, implementing enterprise-grade API integration for real-time business search
-- Engineered offline vector mapping system reducing data usage by 85% through embedded map files for business geolocalization
-- Implemented automated background synchronization for offline access to government services and telephone information sections
-- Built responsive search interface with dynamic filters and efficient pagination handling
-- Executed comprehensive software testing, including unit, UI and compatibility tests, optimizing reliability and user experience
-- **Tech Stack**: Android, Java, SQLite, VTM Maps, WebView, HTML, JavaScript, SharedPreferences, JUnit
-
-[🔗 View on GitHub](https://github.com/daehan-lim/cuban-yellow-pages)
-
----
-
-### [Government Portal](https://github.com/daehan-lim/government-portal-app)
-*Android app for the official [government portal](https://www.redpinar.gob.cu/) of the city of Pinar del Rio, Cuba (2021)*
-
-<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="images/portal/menu.png" width="240" style="margin-right: 5px;" />
-  <img src="images/portal/delegado.png" width="240" style="margin-right: 5px;" />
-  <img src="images/portal/form.png" width="240" style="margin-right: 5px;" />
-  <img src="images/portal/code.png" width="240" style="margin-right: 5px;" />
-  <img src="images/portal/guide.png" width="240" /> 
-</div>
-<br>
-
-**Overview:**
-- Modernized legacy codebase by integrating MVVM architecture, Coroutines and JetPack components, improving code maintainability and development workflow
-- Built classified ad feed featuring API integration, offline data caching, real-time synchronization, image carousels, and network status monitoring, improving user accessibility
-- Designed and implemented district representative portal with features like request submission, meeting schedule management and status tracking using Retrofit/Moshi, automating administrative processes
-- Integrated provincial council web portal, optimizing desktop UI for mobile through JavaScript injection and WebView customization
-- **Tech Stack**: Android, Kotlin, MVVM, Retrofit2, Room, Jetpack, ViewPager2, WebView, JavaScript, Coroutines
-
-[🔗 View on GitHub](https://github.com/daehan-lim/government-portal-app)
-
----
-
-### [Wellness Tracking App](https://github.com/daehan-lim/wellness-tracker-flutter)
-*Cross-platform personal development tracker with real-time analytics and insights (2021)*
-
-<div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
-  <img src="images/flutter/image1.jpg" width="240" style="margin-right: 5px;" />
-  <img src="images/flutter/image2.jpg" width="240" style="margin-right: 5px;" />
-  <img src="images/flutter/image3.jpg" width="240" style="margin-right: 5px;" />
-  <img src="images/flutter/image4.jpg" width="240" /> 
-</div>
-<br>
-
-**Overview:**
-
-- Created modular MVVM architecture using Provider for state management and GetIt for dependency injection
-- Implemented secure authentication flow with token management and REST API communication using Dio
-- Developed efficient data persistence layer using SQLite and SharedPreferences
-- Created modular UI components with Material Design and custom form validation with error handling
-- Built dynamic category management system with drag-and-drop reordering using ReorderableSliverList
-- **Tech Stack**: Flutter, Dart, Provider (MVVM), GetIt, Dio, SQLite, SharedPreferences
-
-[🔗 View on GitHub](https://github.com/daehan-lim/wellness-tracker-flutter)
-
----
-
-## 🔬 Machine Learning Systems
-
-### [Privacy-Preserving Federated Random Forest](https://arxiv.org/abs/2407.19193)
-*Privacy-preserving distributed learning system for collaborative model training (2023)*
-
-<img src="images/random_forest.png" width="650" alt="Training process for the privacy-preserving federated random forest model">
-
-**Overview:**
-
-- Designed and implemented a federated learning system for random forests enabling privacy-preserving distributed model training across multiple clients
-- Implemented parallel processing pipeline using Python's ProcessPoolExecutor for efficient multi-client simulation and simultaneous model training, reducing training time by 60%
-- Introduced incremental learning mechanism that enables efficient integration of new clients without full model retraining, improving system scalability
-- Demonstrated system effectiveness through extensive testing across 7 benchmark datasets with sizes ranging up to 88,000 samples and 54 features, achieving a 10% performance improvement compared to the baseline approach
-- Published research in [Expert Systems with Applications](https://www.sciencedirect.com/science/article/pii/S0957417424016099) (SCIE Journal) and resulted in patent filing (Appl. No. 10-2024-0001659)
-- **Tech Stack**: Python, NumPy, Pandas, scikit-learn, Matplotlib, multiprocessing, Graphviz
-
-[🔗 View Details](https://arxiv.org/abs/2407.19193)
-
----
-
-### [RoBERTa News Classification](https://github.com/daehan-lim/roberta-sport-news-classifier)
-*Enhanced topic classification model with synthetic data augmentation (2024)*
-
-<img src="images/roberta_architecture.png" width="350" alt="RoBERTa model architecture">
-
-**Overview:**
-- Developed machine learning model for classifying sports news articles into 5 distinct categories using [RoBERTa](https://huggingface.co/docs/transformers/en/model_doc/roberta) and [BBC Sport dataset](http://mlg.ucd.ie/datasets/bbc.html)
-- Augmented limited training data using GPT-4 generated articles and prompt engineering techniques, improving classification accuracy to 99.5%
-- Employed zero-shot learning strategy to enhance diversity and versatility of the LLM generated articles
-- Executed comprehensive experiments evaluating model performance under various data configurations and training conditions
-- Developed and deployed web application using Streamlit, enabling real-time article classification with detailed performance visualizations
-- **Tech Stack**: Python, PyTorch, Hugging Face Transformers, GPT-4, Streamlit
-
-[🔗 View on GitHub](https://github.com/daehan-lim/roberta-sport-news-classifier)
-
----
-
-### [Medical Data Classifier](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
-*Novel classification system for patient mortality prediction using electronic health records (2023)*
-
-<img src="images/associative_classifier.png" width="420px" alt="Associative classifier - rule generation algorithm">
-
-**Overview:**
-- Developed custom associative classifier tailored for unbalanced healthcare datasets
-- Generated interpretable rules for medical decision-making, enabling healthcare experts to validate model predictions
-- Implemented efficient rule-pruning strategy, reducing rule set by 80% for enhanced model interpretability
-- Achieved superior performance metrics compared to traditional classifiers on real-world hospital data
-- **Tech Stack**: Python, NumPy, Pandas, scikit-learn, Jupyter
-
-[🔗 View on GitHub](https://github.com/daehan-lim/associative-classifier-mortality-prediction)
-
----
-
-### [Information Retrieval System](assets/information_retrieval_report.pdf)
-*Efficient implementation of Boolean and ranked document retrieval (2024)*
-
-**Overview:**
-- Reduced document processing time by 65% compared to sequential search by implementing SPIMI-based inverted indexing
-- Enhanced search precision through Boolean operator (AND, OR, NOT) based filtering
-- Implemented ranked retrieval using TF-IDF weighting and cosine similarity, improving search result relevance
-- Achieved 0.3 second average search response time for 466 English documents
-- Implemented system with optimized memory usage of 2.5MB
-- **Tech Stack**: Python, NLTK, SpaCy, NumPy, contractions
-
-[🔗 View Details](assets/information_retrieval_report.pdf)
-
-<br>
 
 ## 📫 Contact Information
 
@@ -567,6 +400,9 @@ Feel free to reach out through LinkedIn or email for professional opportunities.
   </a>
   <a href="mailto:penjan.eng@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
+  </a>
+  <a href="https://github.com/daehan-lim">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
   </a>
 </div>
 <br>
