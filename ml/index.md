@@ -33,52 +33,13 @@
   <a href="mailto:penjan.eng@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
   </a>
-  <span style="display: block; height: 5px;"></span>
-  <img src="https://img.shields.io/badge/🌏_Location-Seoul,_Korea-1F6FEB?style=flat-square" alt="Location Badge">
-  <img src="https://img.shields.io/badge/📍_Citizenship-South_Korea_|_Cuba-1F6FEB?style=flat-square" alt="Citizenship Badge">
-  <img src="https://img.shields.io/badge/✓_Status-Available_for_Hire-success?style=flat-square" alt="Availability Badge">
-  <span style="display: block; height: 5px;"></span>
-  <img src="https://img.shields.io/badge/🗣_English-Fluent_(TOEIC_950)-2ea44f?style=flat-square" alt="English Language Badge">
-  <img src="https://img.shields.io/badge/🗣_Spanish-Native-2ea44f?style=flat-square" alt="Spanish Language Badge">
-  <img src="https://img.shields.io/badge/🗣_Korean-Advanced_(TOPIK_6)-2ea44f?style=flat-square" alt="Korean Language Badge">
+  <a href="https://github.com/daehan-lim">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
+  </a>
 </div>
 
 ## 👋 About Me
 Innovative machine learning engineer with expertise in deep learning architectures and privacy-preserving algorithms, combining academic research with hands-on development of cutting-edge AI solutions. My technical approach emphasizes creating robust systems that balance high performance with interpretability, particularly in NLP and federated learning environments. Driven by a commitment to developing ethical AI applications, I leverage my versatile programming skills and problem-solving abilities to transform complex data challenges into practical, impactful solutions for real-world implementation.
-
-## 🛠️ Technical Skills
-
-### Programming Languages
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
-[![JAVA](https://img.shields.io/badge/JAVA-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com)
-[![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sql&logoColor=white)](https://www.sqlite.org)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![KOTLIN](https://img.shields.io/badge/KOTLIN-7F52FF?logo=KOTLIN&logoColor=white&style=for-the-badge)](https://kotlinlang.org)
-[![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
-
-### Tools & Frameworks
-[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com)
-[![OpenAI API](https://img.shields.io/badge/OpenAI-API-412991?style=for-the-badge&logo=openai&logoColor=white)](https://platform.openai.com/)
-[![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
-[![REST API](https://img.shields.io/badge/REST_API-1E90FF?style=for-the-badge)](https://restfulapi.net)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org)
-[![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)](https://junit.org)
-[![MOCKK](https://img.shields.io/badge/mockk-2496ED?style=for-the-badge)](https://mockk.io)
-[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
-
-### Domains & Knowledge
-[![Machine Learning](https://img.shields.io/badge/Machine_Learning-01D277?style=for-the-badge)](https://en.wikipedia.org/wiki/Machine_learning)
-[![Deep Learning](https://img.shields.io/badge/Deep_Learning-FF6F00?style=for-the-badge)](https://en.wikipedia.org/wiki/Deep_learning)
-[![NLP](https://img.shields.io/badge/NLP-1F425F?style=for-the-badge)](https://en.wikipedia.org/wiki/Natural_language_processing)
-[![LLMs](https://img.shields.io/badge/LLMs-0078D4?style=for-the-badge)](https://en.wikipedia.org/wiki/Large_language_model)
-[![Transfer Learning](https://img.shields.io/badge/Transfer_Learning-5C2D91?style=for-the-badge)](https://en.wikipedia.org/wiki/Transfer_learning)
-[![Fine-tuning](https://img.shields.io/badge/Fine--tuning-2496ED?style=for-the-badge)](https://en.wikipedia.org/wiki/Fine-tuning)
-[![Text Classification](https://img.shields.io/badge/Text_Classification-3399FF?style=for-the-badge)](https://en.wikipedia.org/wiki/Text_classification)
-[![Sentiment Analysis](https://img.shields.io/badge/Sentiment_Analysis-FF9900?style=for-the-badge)](https://en.wikipedia.org/wiki/Sentiment_analysis)
-[![Prompt Engineering](https://img.shields.io/badge/Prompt_Engineering-9146FF?style=for-the-badge)](https://en.wikipedia.org/wiki/Prompt_engineering)
-[![Federated Learning](https://img.shields.io/badge/Federated_Learning-00ADD8?style=for-the-badge)](https://en.wikipedia.org/wiki/Federated_learning)
 
 ## 📂 Projects Overview
 
