@@ -53,12 +53,10 @@ code {
 #nav-menu a {
   color: white;
   text-decoration: none;
-  margin: 0 16px;
-  font-size: 16px;
+  margin: 0 14px;
+  font-weight: bold;
+  font-size: 14px;
   transition: color 0.3s ease;
-  font-weight: 700; 
-  -webkit-font-smoothing: antialiased; /* Better text rendering */
-  -moz-osx-font-smoothing: grayscale;
 }
 
 #nav-menu > div:first-child a {
@@ -68,6 +66,9 @@ code {
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
+  font-weight: 700; 
+  -webkit-font-smoothing: antialiased; /* Better text rendering */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #nav-menu > div:first-child a.active {
