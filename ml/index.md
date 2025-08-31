@@ -14,7 +14,6 @@
 
 <div id="nav-menu">
   <div style="margin-left: 20px;">
-    <a href=""></a> 
   </div>
 
 <span id="nav-menu-toggle">☰</span>
