@@ -242,8 +242,8 @@
         // Language button activation
         function updateLanguageButtons() {
             const currentPath = window.location.pathname;
-            const enButton = document.querySelector('#nav-menu > div:first-child a[href="/"], #nav-menu > div:first-child a[href^="/projects/"]');
-            const krButton = document.querySelector('#nav-menu > div:first-child a[href="/kr"], #nav-menu > div:first-child a[href^="/kr/projects/"]');
+            const enButton = document.querySelector('#nav-menu a[href="/"]:not(#home-button), #nav-menu a[href^="/projects/"]:not(#home-button)');
+            const krButton = document.querySelector('#nav-menu a[href="/kr"], #nav-menu a[href^="/kr/projects/"]');
 
             // Remove active class from both buttons
             if (enButton) enButton.classList.remove('active');
