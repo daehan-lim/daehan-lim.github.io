@@ -332,7 +332,7 @@ body {
 <span style="display: block; height: 11px;"></span>
 
 ## 📖 Project Background
-The need arose to develop an Android app that would allow citizens to seamlessly access Pinar del Río City's existing web-based government portal on mobile devices. The existing system was optimized for desktop environments, causing inconvenience for mobile users when submitting civil requests, accessing local information, and utilizing administrative services. There was an urgent need to improve mobile accessibility for core administrative services, particularly accessing local representative information, tracking civil petition processing status, and checking local property listings. This led to the development of a government portal app project focused on providing citizen-centered, intuitive mobile services. During the project, I was responsible for modernizing the existing legacy codebase.
+There was a growing need to develop a mobile app that would allow citizens of Pinar del Río, Cuba, to seamlessly access the government portal, which had previously been limited to the existing website. The website was optimized for desktop use, causing inconvenience for mobile users when submitting government requests, accessing local information, or using administrative services. In particular, urgent improvements were needed in mobile accessibility to core services such as access to district representative information, tracking the status of civil requests, and browsing local classified listings. This led to developing a government portal app to provide intuitive mobile services for citizens. As part of this project, I was responsible for modernizing the existing legacy codebase.
 
 ## 🛠️ Tech Stack
 
@@ -390,14 +390,14 @@ The need arose to develop an Android app that would allow citizens to seamlessly
 ```
 
 ## 🌟 Key Contributions
-- Modernized legacy codebase by implementing MVVM architecture, coroutines, and Jetpack components
-- Developed local representative management system with automated administrative workflows including civil petition submission, meeting schedule management, and processing status tracking using Retrofit/Moshi integration
-- Built comprehensive local property feed system featuring API integration with offline data caching, real-time synchronization, image carousel functionality, and network status monitoring
-- Integrated provincial assembly portal through JavaScript injection and WebView customization to optimize desktop-centered UI for mobile usage
+- Modernized the legacy codebase by adopting MVVM architecture, coroutines, and Jetpack components
+- Implemented the district representative management system with automated administrative workflows for civil request submission, meeting schedule management, and processing status tracking using Retrofit/Moshi integration
+- Built the local classifieds feed system with REST API integration, offline data caching, real-time synchronization, image carousel, and network status monitoring
+- Integrated the Provincial Assembly portal by optimizing the desktop-oriented UI for mobile through WebView and JavaScript-based customization
 
 ## 🚀 Results and Impact
-- Enhanced app stability and maintainability through legacy code modernization
-- Streamlined civil petition processing workflows through administrative automation
-- Improved mobile user accessibility through offline-first design approach
+- Improved app stability and maintainability through legacy code modernization
+- Streamlined administrative processes by automating civil request workflows
+- Enhanced mobile accessibility with an offline-first design
 
 <br><br><br>
