@@ -9,7 +9,7 @@
   width: 100%;
   background: linear-gradient(135deg, #3464e1 0%, #764ba2 100%); /* Navbar color */
   color: white;
-  padding: 15px 0; /* Navbar height */
+  padding: 19px 0; /* Navbar height */
   z-index: 1000;
   display: flex;
   justify-content: space-between; /* Space between items */
@@ -39,15 +39,6 @@ code {
   border-radius: 8px;
   border: 1px solid #ddd;
   object-fit: cover; /* fills space without distortion */
-}
-
-.ko {
-  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-weight: 400;
-  word-break: keep-all;
-  letter-spacing: -0.3px;
-  line-height: 1.8; 
-  font-size: 17px;
 }
 
 #nav-menu a {
