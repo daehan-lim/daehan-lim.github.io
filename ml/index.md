@@ -2,7 +2,7 @@
 <style>
 /* Navigation Menu Styles */
 #nav-menu {
-  padding: 15px 0; /* Navbar height */
+  padding: 19px 0; /* Navbar height */
 }
 
 #nav-menu a {
