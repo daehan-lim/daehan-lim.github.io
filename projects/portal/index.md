@@ -310,16 +310,16 @@ body {
 
 </div>
 
-# 정부 포털 앱
+# Government Portal App
 
-## 📝 개요
-**📌 앱 소개:** 쿠바 피나르 델 리오 시의 공식 정부 대표 포털 안드로이드 앱  
-**🕒 기간:** 2021.02 ~ 2021.04  
-**📱 플랫폼:** Android 네이티브 앱  
-**🏢 회사명:** Desoft (쿠바 국영 소프트웨어 개발사)  
-**👥 개발 인원:** 2명  
-**💼 역할:** 레거시 코드 현대화 및 시민 서비스 모듈 UI/UX 설계·개발 담당  
-**🛠️ 사용 기술:** `Kotlin` `MVVM` `Retrofit` `Room` `Jetpack` `ViewPager2` `WebView` `JavaScript` `Coroutines` `Moshi`    
+## 📝 Overview
+**📌 App Introduction:** Android app for the official [government portal](https://www.redpinar.gob.cu/) of the city of Pinar del Rio, Cuba  
+**🕒 Duration:** February 2021 ~ April 2021  
+**📱 Platform:** Native Android app  
+**🏢 Company:** Desoft (Cuba's national software development company)  
+**👥 Team Size:** 2 developers  
+**💼 Role:** Responsible for legacy code modernization and development of citizen service module  
+**🛠️ Key Technologies:** `Kotlin` `MVVM` `Retrofit` `Room` `Jetpack` `ViewPager2` `WebView` `JavaScript` `Coroutines` `Moshi`  
 **🔗 GitHub:** [daehan-lim/government-portal-app](https://github.com/daehan-lim/government-portal-app)
 
 <div style="display: flex; overflow-x: auto; border: 2px solid #ccc; padding: 6px; border-radius: 8px;">
@@ -331,9 +331,8 @@ body {
 </div>
 <span style="display: block; height: 11px;"></span>
 
-## 📖 프로젝트 배경
-
-쿠바 피나르 델 리오 시의 기존 웹사이트 전용 정부 포털을 시민들이 모바일에서도 원활하게 이용할 수 있도록 하기 위한 안드로이드 앱 개발 필요성이 대두되었습니다. 기존 시스템은 데스크톱 환경에 최적화되어 있어 모바일 사용자들이 민원 신청, 지역 정보 조회, 행정 서비스 이용 시 불편함을 겪고 있었습니다. 특히 지역구 대표자 정보 접근, 민원 처리 현황 추적, 지역 매물 정보 확인 등 핵심 행정 서비스의 모바일 접근성 개선이 시급한 상황이었습니다. 이에 따라 시민 중심의 직관적인 모바일 서비스를 제공하는 정부 포털 앱 개발 프로젝트를 진행하게 되었으며, 프로젝트 과정에서 기존 레거시 코드베이스의 현대화 작업을 담당하게 되었습니다.
+## 📖 Project Background
+The need arose to develop an Android app that would allow citizens to seamlessly access Pinar del Río City's existing web-based government portal on mobile devices. The existing system was optimized for desktop environments, causing inconvenience for mobile users when submitting civil requests, accessing local information, and utilizing administrative services. There was an urgent need to improve mobile accessibility for core administrative services, particularly accessing local representative information, tracking civil petition processing status, and checking local property listings. This led to the development of a government portal app project focused on providing citizen-centered, intuitive mobile services. During the project, I was responsible for modernizing the existing legacy codebase.
 
 ## 🛠️ Tech Stack
 
@@ -353,53 +352,52 @@ body {
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Material Design](https://img.shields.io/badge/Material%20Design-4285F4?logo=material-design&logoColor=white&style=for-the-badge)](https://material.io/design)
 
-## 📋 프로젝트 구조
-
+## 📋 Project Structure
 ```
-├── data/                              # 데이터 레이어
-│   ├── database/                      # Room 로컬 데이터베이스
-│   │   └── classifieddatabase/        # 지역 매물 데이터베이스
-│   │       ├── Classified.kt          # 매물 정보 엔티티
-│   │       ├── ClassifiedDao.kt       # 데이터 액세스 객체
-│   │       └── ClassifiedDatabase.kt  # 데이터베이스 설정
-│   ├── model/                         # 데이터 모델 클래스
-│   │   ├── DelegateData.kt           # 지역구 대표자 정보
-│   │   ├── ClassifiedApi.kt          # 매물 API 응답 모델
-│   │   ├── Municipality.kt           # 행정구역 모델
-│   │   └── gestiondelegado/          # 대표자 관리 모델
-│   └── network/                       # 네트워크 통신 레이어
-│       └── PortalGobiernoApiService.kt # REST API 서비스
-├── ui/                               # 프레젠테이션 레이어
-│   ├── classified/                   # 지역 매물 기능
-│   │   ├── ClassifiedFragment.kt     # 매물 목록 화면
-│   │   ├── ClassifiedViewModel.kt    # 매물 비즈니스 로직
-│   │   ├── ClassifiedAdapter.kt      # RecyclerView 어댑터
-│   │   └── classifieddetail/         # 매물 상세 정보
-│   ├── gestiondelegado/              # 지역구 대표자 관리
-│   │   ├── GestionDelegadoFragment.kt # 대표자 메뉴 화면
-│   │   └── gestiondelegadosection/   # 대표자 서비스 탭
-│   │       ├── GestionSectionActivity.kt # ViewPager2 기반 탭 화면
-│   │       ├── GestionSectionViewModel.kt # 공통 비즈니스 로직
-│   │       ├── DelegadoDataFragment.kt    # 대표자 정보 조회
-│   │       ├── DispatchFragment.kt        # 온라인 민원 신청
-│   │       └── ProcedureFollowUpFragment.kt # 민원 처리 추적
-│   └── goverment/                    # 정부 서비스 WebView
-│       └── GovernmentFragment.kt     # JavaScript 인젝션 WebView
-├── misc/                            # 유틸리티 및 공통 기능
-│   ├── Util.kt                      # 날짜 형식화 등 유틸리티
-│   └── Converters.kt                # Room 타입 컨버터
-└── BindingUtils.kt                  # 데이터 바인딩 어댑터
+├── data/                                    # Data layer
+│   ├── database/                            # Room local database
+│   │   └── classifieddatabase/              # Local property database
+│   │       ├── Classified.kt                # Property information entity
+│   │       ├── ClassifiedDao.kt             # Data access object
+│   │       └── ClassifiedDatabase.kt        # Database configuration
+│   ├── model/                               # Data model classes
+│   │   ├── DelegateData.kt                  # Local representative information
+│   │   ├── ClassifiedApi.kt                 # Property API response model
+│   │   ├── Municipality.kt                  # Administrative district model
+│   │   └── gestiondelegado/                 # Representative management models
+│   └── network/                             # Network communication layer
+│       └── PortalGobiernoApiService.kt      # REST API service
+├── ui/                                      # Presentation layer
+│   ├── classified/                          # Local property features
+│   │   ├── ClassifiedFragment.kt            # Property listings screen
+│   │   ├── ClassifiedViewModel.kt           # Property business logic
+│   │   ├── ClassifiedAdapter.kt             # RecyclerView adapter
+│   │   └── classifieddetail/                # Property detail information
+│   ├── gestiondelegado/                     # Local representative management
+│   │   ├── GestionDelegadoFragment.kt       # Representative menu screen
+│   │   └── gestiondelegadosection/          # Representative service tabs
+│   │       ├── GestionSectionActivity.kt    # ViewPager2-based tab interface
+│   │       ├── GestionSectionViewModel.kt   # Shared business logic
+│   │       ├── DelegadoDataFragment.kt      # Representative information lookup
+│   │       ├── DispatchFragment.kt          # Online civil petition submission
+│   │       └── ProcedureFollowUpFragment.kt # Civil petition tracking
+│   └── goverment/                           # Government services WebView
+│       └── GovernmentFragment.kt            # JavaScript injection WebView
+├── misc/                                    # Utilities and common features
+│   ├── Util.kt                              # Date formatting and other utilities
+│   └── Converters.kt                        # Room type converters
+└── BindingUtils.kt                          # Data binding adapters
 ```
 
-## 🌟 주요업무
-- MVVM 아키텍처, 코루틴, JetPack 컴포넌트를 도입해 레거시 코드 현대화
-- 지역구 대표자 관리 시스템: Retrofit/Moshi 활용 민원 신청, 회의 일정 관리, 처리 현황 추적 등 주요 기능 구현으로 행정 업무 자동화
-- 지역 매물 피드 시스템 구현: API 연동과 오프라인 데이터 캐싱, 실시간 동기화, 이미지 캐러셀, 네트워크 상태 모니터링 기능 통합
-- 시도의회 포털 통합: JavaScript 인젝션 및 WebView 커스터마이징으로 데스크톱 중심 UI를 모바일용으로 최적화
+## 🌟 Key Contributions
+- Modernized legacy codebase by implementing MVVM architecture, coroutines, and Jetpack components
+- Developed local representative management system with automated administrative workflows including civil petition submission, meeting schedule management, and processing status tracking using Retrofit/Moshi integration
+- Built comprehensive local property feed system featuring API integration with offline data caching, real-time synchronization, image carousel functionality, and network status monitoring
+- Integrated provincial assembly portal through JavaScript injection and WebView customization to optimize desktop-centered UI for mobile usage
 
-## 🚀 주요성과
-- 레거시 코드 현대화로 앱 안정성 및 유지보수성 향상
-- 행정 업무 자동화로 민원 처리 프로세스 간소화
-- 오프라인 우선 설계로 모바일 사용자 접근성 개선
+## 🚀 Results and Impact
+- Enhanced app stability and maintainability through legacy code modernization
+- Streamlined civil petition processing workflows through administrative automation
+- Improved mobile user accessibility through offline-first design approach
 
 <br><br><br>

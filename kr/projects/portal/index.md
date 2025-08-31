@@ -355,39 +355,39 @@ body {
 ## 📋 프로젝트 구조
 
 ```
-├── data/                              # 데이터 레이어
-│   ├── database/                      # Room 로컬 데이터베이스
-│   │   └── classifieddatabase/        # 지역 매물 데이터베이스
-│   │       ├── Classified.kt          # 매물 정보 엔티티
-│   │       ├── ClassifiedDao.kt       # 데이터 액세스 객체
-│   │       └── ClassifiedDatabase.kt  # 데이터베이스 설정
-│   ├── model/                         # 데이터 모델 클래스
-│   │   ├── DelegateData.kt           # 지역구 대표자 정보
-│   │   ├── ClassifiedApi.kt          # 매물 API 응답 모델
-│   │   ├── Municipality.kt           # 행정구역 모델
-│   │   └── gestiondelegado/          # 대표자 관리 모델
-│   └── network/                       # 네트워크 통신 레이어
-│       └── PortalGobiernoApiService.kt # REST API 서비스
-├── ui/                               # 프레젠테이션 레이어
-│   ├── classified/                   # 지역 매물 기능
-│   │   ├── ClassifiedFragment.kt     # 매물 목록 화면
-│   │   ├── ClassifiedViewModel.kt    # 매물 비즈니스 로직
-│   │   ├── ClassifiedAdapter.kt      # RecyclerView 어댑터
-│   │   └── classifieddetail/         # 매물 상세 정보
-│   ├── gestiondelegado/              # 지역구 대표자 관리
-│   │   ├── GestionDelegadoFragment.kt # 대표자 메뉴 화면
-│   │   └── gestiondelegadosection/   # 대표자 서비스 탭
-│   │       ├── GestionSectionActivity.kt # ViewPager2 기반 탭 화면
-│   │       ├── GestionSectionViewModel.kt # 공통 비즈니스 로직
-│   │       ├── DelegadoDataFragment.kt    # 대표자 정보 조회
-│   │       ├── DispatchFragment.kt        # 온라인 민원 신청
+├── data/                                    # 데이터 레이어
+│   ├── database/                            # Room 로컬 데이터베이스
+│   │   └── classifieddatabase/              # 지역 매물 데이터베이스
+│   │       ├── Classified.kt                # 매물 정보 엔티티
+│   │       ├── ClassifiedDao.kt             # 데이터 액세스 객체
+│   │       └── ClassifiedDatabase.kt        # 데이터베이스 설정
+│   ├── model/                               # 데이터 모델 클래스
+│   │   ├── DelegateData.kt                  # 지역구 대표자 정보
+│   │   ├── ClassifiedApi.kt                 # 매물 API 응답 모델
+│   │   ├── Municipality.kt                  # 행정구역 모델
+│   │   └── gestiondelegado/                 # 대표자 관리 모델
+│   └── network/                             # 네트워크 통신 레이어
+│       └── PortalGobiernoApiService.kt      # REST API 서비스
+├── ui/                                      # 프레젠테이션 레이어
+│   ├── classified/                          # 지역 매물 기능
+│   │   ├── ClassifiedFragment.kt            # 매물 목록 화면
+│   │   ├── ClassifiedViewModel.kt           # 매물 비즈니스 로직
+│   │   ├── ClassifiedAdapter.kt             # RecyclerView 어댑터
+│   │   └── classifieddetail/                # 매물 상세 정보
+│   ├── gestiondelegado/                     # 지역구 대표자 관리
+│   │   ├── GestionDelegadoFragment.kt       # 대표자 메뉴 화면
+│   │   └── gestiondelegadosection/          # 대표자 서비스 탭
+│   │       ├── GestionSectionActivity.kt    # ViewPager2 기반 탭 화면
+│   │       ├── GestionSectionViewModel.kt   # 공통 비즈니스 로직
+│   │       ├── DelegadoDataFragment.kt      # 대표자 정보 조회
+│   │       ├── DispatchFragment.kt          # 온라인 민원 신청
 │   │       └── ProcedureFollowUpFragment.kt # 민원 처리 추적
-│   └── goverment/                    # 정부 서비스 WebView
-│       └── GovernmentFragment.kt     # JavaScript 인젝션 WebView
-├── misc/                            # 유틸리티 및 공통 기능
-│   ├── Util.kt                      # 날짜 형식화 등 유틸리티
-│   └── Converters.kt                # Room 타입 컨버터
-└── BindingUtils.kt                  # 데이터 바인딩 어댑터
+│   └── goverment/                           # 정부 서비스 WebView
+│       └── GovernmentFragment.kt            # JavaScript 인젝션 WebView
+├── misc/                                    # 유틸리티 및 공통 기능
+│   ├── Util.kt                              # 날짜 형식화 등 유틸리티
+│   └── Converters.kt                        # Room 타입 컨버터
+└── BindingUtils.kt                          # 데이터 바인딩 어댑터
 ```
 
 ## 🌟 주요업무
