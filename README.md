@@ -376,7 +376,7 @@ Successfully deployed Flutter-based apps to Play Store and App Store with featur
     <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">IR System</span>
   </div>
   <div style="margin-top: 20px;">
-    <a href="projects/ml_projects/" style="display: inline-block; background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 700; font-size: 1.1em; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+    <a href="projects/ml_projects/" style="display: inline-block; background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 700; font-size: 1.0em; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
       View Machine Learning Projects →
     </a>
   </div>
