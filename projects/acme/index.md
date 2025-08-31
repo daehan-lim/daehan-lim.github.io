@@ -314,7 +314,7 @@ body {
 
 ## 📝 Overview
 **📌 App Introduction:** Android field management app integrating custom calendar functionality, offline capabilities, and navigation features  
-**🕒 Duration:** May 2021 ~ June 2021 (2 months)  
+**🕒 Duration:** May 2021 ~ June 2021  
 **📱 Platform:** Native Android app  
 **👥 Team Size:** 1 developer  
 **💼 Role:** Full Android app development  

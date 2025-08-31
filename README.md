@@ -304,7 +304,7 @@ Successfully deployed Flutter-based apps to Play Store and App Store with featur
 <a href="projects/placefinder/" style="text-decoration: none; color: inherit;">
 <div>
   <img src="images/placefinder/preview.png" alt="Go Anywhere - Location Search App" class="project-preview" />
-  <p><strong>Go Anywhere<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
+  <p><strong>PlaceFinder<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
     <span style="font-size: 0.9em;">Location Search App</span><br/> 
     <code>Flutter</code> <code>Geolocator</code> <code>InAppWebView</code> <code>Naver API</code> <code>VWorld API</code> <code>Riverpod</code><br/>
     <small>April 20, 2025 ~ April 22, 2025 (3 days)</small>
@@ -312,12 +312,12 @@ Successfully deployed Flutter-based apps to Play Store and App Store with featur
 </div>
 </a>
 
-<!--Gas Consumption Management App-->
+<!--Gas Consumption Management-->
 <a href="projects/gas/" style="text-decoration: none; color: inherit;">
 <div>
-  <img src="images/gas/preview2.png" alt="Gas Consumption Management App" class="project-preview" />
-  <p><strong>Gas Consumption Management App<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
-    <span style="font-size: 0.9em;">Public Utility Tracking System</span><br/>
+  <img src="images/gas/preview2.png" alt="Gas Consumption Manager" class="project-preview" />
+  <p><strong>Gas Consumption Manager<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
+    <span style="font-size: 0.9em;">Public utility tracking system</span><br/>
     <code>Android</code> <code>Kotlin</code> <code>Jetpack</code> <code>Room</code> <code>MVVM</code> <code>Coroutines</code> <code>VideoView</code><br/>
     <small>February 20, 2021 ~ March 18, 2021 (1 month)</small>
   </p>
@@ -329,7 +329,7 @@ Successfully deployed Flutter-based apps to Play Store and App Store with featur
 <div>
  <img src="images/acme/preview.png" alt="ACME - Service Management Android App" class="project-preview" />
  <p><strong>ACME<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
-   <span style="font-size: 0.9em;">Service Ticket Management Solution</span><br/> 
+   <span style="font-size: 0.9em;">Field service management app</span><br/> 
    <code>Android</code> <code>Kotlin</code> <code>Room</code> <code>Google Maps API</code> <code>Calendar Provider API</code> <code>MVVM</code> <code>Coroutines</code><br/>
    <small>May 2021 ~ June 2021</small>
  </p>
@@ -353,7 +353,7 @@ Successfully deployed Flutter-based apps to Play Store and App Store with featur
 <div>
  <img src="images/portal/preview.png" alt="Government Portal App" class="project-preview" />
  <p><strong>Government Portal App<span style="color: #21427D; font-size: 15px;">&thinsp;&thinsp;🔗</span></strong><br/>
-   <span style="font-size: 0.9em;">Official Government Representative Platform Application</span><br/> 
+   <span style="font-size: 0.9em;">Official government platform app</span><br/> 
    <code>Android</code> <code>Kotlin</code> <code>Retrofit</code> <code>Coroutines</code> <code>Room</code> <code>MVVM</code> <code>WebView</code> <code>ViewPager2</code><br/>
    <small>February 2021 ~ April 2021</small>
  </p>
