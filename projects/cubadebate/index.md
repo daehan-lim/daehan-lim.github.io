@@ -313,7 +313,7 @@ body {
 ## 📝 Overview
 **📌 App Introduction:** News reader app with personalized content delivery and offline storage capability  
 **🕒 Duration:** March 15, 2021 ~ June 30, 2021 (3.5 months)  
-**📱 Platform:** Android native app  
+**📱 Platform:** Native Android app  
 **🏢 Company:** Desoft (Cuba's national software development company)  
 **👥 Team Size:** 1 developer  
 **💼 Role:** UI/UX design and complete Android app development  
@@ -341,7 +341,7 @@ body {
 
 - Identified the need to develop a mobile-optimized news app to overcome Cuba's challenging network environment (high data costs, unstable connections) and the limitations of the existing website-based news platform
 - The existing website required users an average of over 2 minutes to find articles of interest, with no way to customize content based on user preferences
-- Planned a transition to an Android native app that could provide data usage savings, offline accessibility, and personalization features
+- Planned a transition to an native Android app that could provide data usage savings, offline accessibility, and personalization features
 - Aimed to help Cuban users access relevant news more easily through intuitive, accessible mobile UX including offline storage and voice support
 
 ## 🛠️ Tech Stack

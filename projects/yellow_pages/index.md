@@ -315,7 +315,7 @@ body {
 ## 📝 Overview
 **📌 App Introduction:** Mobile business directory app for Cuba's telecommunications company combining business search with essential telecom services  
 **🕒 Duration:** April 2019 ~ May 2020  
-**📱 Platform:** Android native app  
+**📱 Platform:** Native Android app  
 **🏢 Company:** ETECSA (Cuba's national telecommunications company)  
 **👥 Team Size:** 2 developers (1 for main app, 1 for AR module)  
 **💼 Role:** Lead Android app developer (excluding AR module)  
