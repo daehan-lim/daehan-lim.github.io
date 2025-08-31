@@ -367,13 +367,13 @@ Successfully deployed Flutter-based apps to Play Store and App Store with featur
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; padding: 25px; margin: 20px auto; max-width: 800px; text-align: center; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);">
   <div style="color: white; margin-bottom: 15px;">
     <h3 style="margin: 0; font-size: 1.3em; font-weight: 700;">🎓 AI/ML Projects</h3>
-    <p style="color: white; margin: 10px 0 0 0; opacity: 0.9; font-size: 1.1em;">Machine Learning Projects Conducted During Master's Program at Chungnam National University</p>
+    <p style="color: white; margin: 10px 0 0 0; opacity: 0.9; font-size: 1.1em;">Machine Learning Projects Completed During AI Master’s</p>
   </div>
   <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
     <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">Federated Learning</span>
-    <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">NLP Classification Models</span>
-    <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">Medical Data Analyzer</span>
-    <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">Information Retrieval System</span>
+    <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">NLP Classification Model</span>
+    <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">Medical Data Classifier</span>
+    <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-size: 0.9em;">IR System</span>
   </div>
   <div style="margin-top: 20px;">
     <a href="projects/ml_projects/" style="display: inline-block; background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 700; font-size: 1.1em; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
