@@ -44,25 +44,6 @@
 
 </style>
 
-<div id="nav-menu">
-  <!-- Home button first -->
-  <div style="margin-left: 20px; display: flex; align-items: center;">
-    <a href="/" id="home-button">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 3l9 7.5v10.5h-6v-6h-6v6H3V10.5L12 3z"/>
-      </svg>
-    </a>
-    <a href="/projects/portal">EN</a>
-    <a href="/kr/projects/portal">KR</a>
-  </div>
-
-<span id="nav-menu-toggle">☰</span>
-  <div id="nav-links">
-    <!-- Navigation Links will be dynamically populated -->
-  </div>
-</div>
-
-
 <br><br>
 <nav id="ticker-tape">
     <!-- TradingView Widget BEGIN -->
@@ -152,6 +133,69 @@
   "autosize": true,
   "height": "100%",
   "displayMode": "adaptive"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/?exchange=NASDAQ" rel="noopener nofollow" target="_blank"><span class="blue-text">AAPL chart by TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+  {
+  "symbol": "NASDAQ:AAPL",
+  "chartOnly": false,
+  "dateRange": "12M",
+  "noTimeScale": false,
+  "colorTheme": "light",
+  "isTransparent": false,
+  "locale": "en",
+  "width": "100%",
+  "autosize": true,
+  "height": "100%"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-XAUUSD/?exchange=OANDA" rel="noopener nofollow" target="_blank"><span class="blue-text">XAUUSD chart by TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+  {
+  "symbol": "OANDA:XAUUSD",
+  "chartOnly": false,
+  "dateRange": "12M",
+  "noTimeScale": false,
+  "colorTheme": "light",
+  "isTransparent": false,
+  "locale": "en",
+  "width": "100%",
+  "autosize": true,
+  "height": "100%"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-TSLA/?exchange=NASDAQ" rel="noopener nofollow" target="_blank"><span class="blue-text">TSLA chart by TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+  {
+  "symbol": "NASDAQ:TSLA",
+  "chartOnly": false,
+  "dateRange": "12M",
+  "noTimeScale": false,
+  "colorTheme": "light",
+  "isTransparent": false,
+  "locale": "en",
+  "width": "100%",
+  "autosize": true,
+  "height": "100%"
 }
   </script>
 </div>
