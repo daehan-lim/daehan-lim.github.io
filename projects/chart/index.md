@@ -163,7 +163,8 @@
             "locale": "en",
             "largeChartUrl": "",
             "isTransparent": false,
-            "showSymbolLogo": true
+            "showSymbolLogo": true,
+            "displayMode": "adaptive"
         }
     </script>
 </div>
@@ -184,7 +185,8 @@
   "locale": "en",
   "width": "100%",
   "autosize": true,
-  "height": "100%"
+  "height": "100%",
+  "displayMode": "adaptive"
 }
   </script>
 </div>
@@ -221,6 +223,7 @@
   "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
   "valuesTracking": "1",
   "changeMode": "price-and-percent",
+  "displayMode": "adaptive"
   "symbols": [
     [
       "Apple",
