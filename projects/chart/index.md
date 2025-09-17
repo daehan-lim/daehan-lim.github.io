@@ -62,6 +62,8 @@
   </div>
 </div>
 
+
+<br><br>
 <nav id="ticker-tape">
     <!-- TradingView Widget BEGIN -->
     <div class="tradingview-widget-container">
@@ -133,6 +135,7 @@
     <!-- TradingView Widget END -->
 </nav>
 
+<br><br>
 <div class="tradingview-widget-container">
     <div class="tradingview-widget-container__widget"></div>
     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
@@ -169,7 +172,7 @@
     </script>
 </div>
 
-
+<br><br>
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
@@ -192,7 +195,7 @@
 </div>
 <!-- TradingView Widget END -->
 
-
+<br><br>
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
