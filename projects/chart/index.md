@@ -97,6 +97,29 @@
     </script>
 </div>
 
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITSTAMP-BTCUSD/?exchange=BITSTAMP" rel="noopener nofollow" target="_blank"><span class="blue-text">BTCUSD chart by TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+  {
+  "symbol": "BITSTAMP:BTCUSD",
+  "chartOnly": false,
+  "dateRange": "12M",
+  "noTimeScale": false,
+  "colorTheme": "light",
+  "isTransparent": false,
+  "locale": "en",
+  "width": "100%",
+  "autosize": true,
+  "height": "100%"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
