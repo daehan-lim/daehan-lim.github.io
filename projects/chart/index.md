@@ -44,6 +44,24 @@
 
 </style>
 
+<div id="nav-menu">
+  <!-- Home button first -->
+  <div style="margin-left: 20px; display: flex; align-items: center;">
+    <a href="/" id="home-button">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 3l9 7.5v10.5h-6v-6h-6v6H3V10.5L12 3z"/>
+      </svg>
+    </a>
+    <a href="/projects/portal">EN</a>
+    <a href="/kr/projects/portal">KR</a>
+  </div>
+
+<span id="nav-menu-toggle">☰</span>
+  <div id="nav-links">
+    <!-- Navigation Links will be dynamically populated -->
+  </div>
+</div>
+
 <br><br>
 <nav id="ticker-tape">
     <!-- TradingView Widget BEGIN -->
@@ -153,7 +171,8 @@
   "locale": "en",
   "width": "100%",
   "autosize": true,
-  "height": "100%"
+  "height": "100%",
+  "displayMode": "adaptive"
 }
   </script>
 </div>
@@ -174,7 +193,8 @@
   "locale": "en",
   "width": "100%",
   "autosize": true,
-  "height": "100%"
+  "height": "100%",
+  "displayMode": "adaptive"
 }
   </script>
 </div>
@@ -195,7 +215,8 @@
   "locale": "en",
   "width": "100%",
   "autosize": true,
-  "height": "100%"
+  "height": "100%",
+  "displayMode": "adaptive"
 }
   </script>
 </div>
