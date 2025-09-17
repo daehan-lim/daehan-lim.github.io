@@ -156,10 +156,10 @@
 </div>
 <!-- TradingView Widget END -->
 
+<br>
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/?exchange=NASDAQ" rel="noopener nofollow" target="_blank"><span class="blue-text">AAPL chart by TradingView</span></a></div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
   {
   "symbol": "NASDAQ:AAPL",
@@ -169,7 +169,7 @@
   "colorTheme": "light",
   "isTransparent": false,
   "locale": "en",
-  "width": "100%",
+  "width": "90%",
   "autosize": true,
   "height": "100%",
   "displayMode": "adaptive"
@@ -178,10 +178,10 @@
 </div>
 <!-- TradingView Widget END -->
 
+<br>
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-XAUUSD/?exchange=OANDA" rel="noopener nofollow" target="_blank"><span class="blue-text">XAUUSD chart by TradingView</span></a></div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
   {
   "symbol": "OANDA:XAUUSD",
@@ -191,7 +191,7 @@
   "colorTheme": "light",
   "isTransparent": false,
   "locale": "en",
-  "width": "100%",
+  "width": "90%",
   "autosize": true,
   "height": "100%",
   "displayMode": "adaptive"
@@ -200,10 +200,10 @@
 </div>
 <!-- TradingView Widget END -->
 
+<br>
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-TSLA/?exchange=NASDAQ" rel="noopener nofollow" target="_blank"><span class="blue-text">TSLA chart by TradingView</span></a></div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
   {
   "symbol": "NASDAQ:TSLA",
@@ -213,7 +213,7 @@
   "colorTheme": "light",
   "isTransparent": false,
   "locale": "en",
-  "width": "100%",
+  "width": "90%",
   "autosize": true,
   "height": "100%",
   "displayMode": "adaptive"
@@ -279,7 +279,7 @@
   "fontSize": "10",
   "headerFontSize": "medium",
   "autosize": true,
-  "width": "100%",
+  "width": "80%",
   "height": "100%",
   "noTimeScale": false,
   "hideDateRanges": false,
